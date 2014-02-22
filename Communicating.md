@@ -1,6 +1,6 @@
 ## How
 
-#neovim on freenode
+`#neovim` on freenode
 
 ## Conduct
 
