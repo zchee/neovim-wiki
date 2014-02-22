@@ -4,7 +4,7 @@ Thanks for considering contributing to neovim. To make the process as smooth as 
 
 ## Help with contributing
 
-Ask in #neovim. Raise documentation issues.
+See [Communicating](Communicating). Raise documentation issues.
 
 ## Guidelines
 
