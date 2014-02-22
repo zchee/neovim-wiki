@@ -8,6 +8,10 @@ See [Communicating](Communicating). Raise documentation issues.
 
 ## Guidelines
 
+### Finding something to do
+
+Ask, or pick an issue and comment on it announcing your desire to work on it. Ideally wait until we assign it to you to minimize work duplication.
+
 ### Reporting an issue
 
 - Search existing issues before raising a new one.
@@ -15,6 +19,8 @@ See [Communicating](Communicating). Raise documentation issues.
 - Include as much detail as possible. In particular, we need to know which OS you're using.
 
 ### Pull requests
+
+- Make it clear in the issue tracker what you are working on, so that someone else doesn't duplicate the work.
 
 - Use a feature branch, not master.
 
