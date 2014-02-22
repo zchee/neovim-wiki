@@ -1,0 +1,1 @@
+Welcome to the neovim wiki!
