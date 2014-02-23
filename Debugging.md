@@ -26,3 +26,22 @@ Try setting a breakpoint and start the application:
 `c` to continue running the application
 
 You can now step through source, and you'll see the results in the other window.
+
+### Tmux
+It might be convenient to use your own makefile to quickly start debugging sessions using the above `gdbserver` method. This example will create the debugging session when you type `make debug`.
+This assumes that you have `Makefile` in your github projects parent directory.
+
+```
+.PHONY: dbg-start dbg-attach debug build
+
+build:
+	@$(MAKE) -C neovim
+
+dbg-start: build
+	@tmux new-window -n 'dbg-neovim' 'sudo gdbserver :666 ./neovim/build/src/vim -D'
+
+dbg-attach:
+	@tmux new-window -n 'dbg-cgdb' 'cgdb -x gdb_start.cmd ./neovim/build/src/vim'
+
+debug: dbg-start dbg-attach
+```
