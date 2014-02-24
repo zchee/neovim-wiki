@@ -45,3 +45,9 @@ dbg-attach:
 
 debug: dbg-start dbg-attach
 ```
+
+Here `gdb_start.cmd` includes `gdb` commands to be called when the debugger starts. It needs to attach to the server started in the `dbg-start` rule. Here's an example:
+```
+target remote localhost:666
+br main
+```
