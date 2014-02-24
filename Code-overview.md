@@ -26,9 +26,9 @@ Most code can be found in a file with an obvious name (incomplete list):
 *   [memline.c](../src/memline.c)  storing lines for buffers in memory
 *   [menu.c](../src/menu.c)	   menus
 *   [message.c](../src/message.c)  (error) messages
-*   [ops.c](../src/ops.c)          handling operators ("d", "y", "p")
+*   [ops.c](../src/ops.c)          handling operators (`d`, `y`, `p`)
 *   [option.c](../src/option.c)	   options
-*   [quickfix.c](../src/quickfix.c) quickfix commands (":make", ":cn")
+*   [quickfix.c](../src/quickfix.c) quickfix commands (`:make`, `:cn`)
 *   [regexp.c](../src/regexp.c)	   pattern matching
 *   [screen.c](../src/screen.c)	   updating the windows
 *   [search.c](../src/search.c)	   pattern searching
