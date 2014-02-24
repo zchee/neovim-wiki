@@ -47,9 +47,9 @@ INSERT, CMDLINE, and a few others.
 
 The current window is `curwin`.  The current buffer is `curbuf`.  These point
 to structures with the cursor position in the window, option values, the file
-name, etc.  These are defined in `structs.h`.
+name, etc.  These are defined in [structs.h](../src/structs.h).
 
-All the global variables are declared in `globals.h`.
+All the global variables are declared in [globals.h](../src/globals.h).
 
 
 # The main loop
@@ -66,7 +66,7 @@ this.  It also handles mapping.
 Updating the screen is mostly postponed until a command or a sequence of
 commands has finished.  The work is done by `update_screen()`, which calls
 `win_update()` for every window, which calls `win_line()` for every line.
-See the start of `screen.c` for more explanations.
+See the start of [screen.c](../src/screen.c) for more explanations.
 
 
 # Command-line mode
@@ -86,7 +86,7 @@ command.  It also takes care of while loops.
 `do_one_cmd()` parses the range and generic arguments and puts them in the
 exarg_t and passes it to the function that handles the command.
 
-The `:` commands are listed in `ex_cmds.h`.  The third entry of each item is the
+The `:` commands are listed in [ex_cmds.h](../src/ex_cmds.h).  The third entry of each item is the
 name of the function that handles the command.  The last entry are the flags
 that are used for the command.
 
@@ -97,7 +97,7 @@ The Normal mode commands are handled by the `normal_cmd()` function.  It also
 handles the optional count and an extra character for some commands.  These
 are passed in a `cmdarg_t` to the function that handles the command.
 
-There is a table `nv_cmds` in `normal.c` which lists the first character of every
+There is a table `nv_cmds` in [normal.c](../src/normal.c) which lists the first character of every
 command.  The second entry of each item is the name of the function that
 handles the command.
 
@@ -111,4 +111,4 @@ returns when leaving Insert mode.
 
 # Options
 
-There is a list with all option names in `option.c`, called `options[]`.
+There is a list with all option names in [option.c](../src/option.c), called `options[]`.
