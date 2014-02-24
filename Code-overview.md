@@ -5,6 +5,14 @@ You might also want to read `:help development`.
 
 ## Jumping around
 
+First of all, use `:make tags` to generate a tags file, so that you can use
+the `:tag` command to jump around the source code.
+
+To jump to a function or variable definition, move the cursor on the name and
+use the `CTRL-]` command.  Use `CTRL-T` or `CTRL-O` to jump back.
+
+To jump to a file, move the cursor on its name and use the `gf` command.
+
 Most code can be found in a file with an obvious name (incomplete list):
 *   [buffer.c](../blob/master/src/buffer.c)	   manipulating buffers (loaded files)
 *   [diff.c](../blob/master/src/diff.c)	   diff mode (vimdiff)
