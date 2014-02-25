@@ -1,3 +1,6 @@
+# YouCompleteMe
+Those browsing through the source or working on PRs might find [this](https://gist.github.com/tarruda/8736305) useful 
+
 # Debugging neovim
 **THIS PAGE NEEDS ATTENTION**
 
