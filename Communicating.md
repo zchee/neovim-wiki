@@ -1,6 +1,6 @@
 ## How
 
-`#neovim` on freenode
+`#neovim` on freenode or the [mailing list](https://groups.google.com/forum/#!topic/neovim)
 
 ## Conduct
 
