@@ -8,7 +8,7 @@ See [Communicating](Communicating). Raise documentation issues.
 
 ## What needs to be done
 
-Click the [waffle.io](https://waffle.io/neovim/neovim) badge at the main repository page to see how you can contribute(issues in the second column)
+[![Stories in Ready](https://badge.waffle.io/neovim/neovim.png?label=ready)](https://waffle.io/neovim/neovim)
 
 - [Porting OS layer to libuv](Porting-OS-layer-to-libuv)
 
