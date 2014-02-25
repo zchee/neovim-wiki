@@ -9,13 +9,13 @@ Those browsing through the source or working on PRs might find [this](https://gi
 Use two terminals, one for the debugging session, and one for the neovim instance that will be debugged.
 In the terminal for `neovim`, start a `gdbserver` instance on a specific port like this:
 
-`gdbserver :666 build/vim`
+`gdbserver :666 build/nvim`
 
 This will start a remote debugging session for the binary `build/vim` on port `666`.
 
 You then need to attach to this debugging session in the other terminal:
 
-`gdb build/vim`
+`gdb build/nvim`
 
 Once you entered `gdb`, you need to attach to the remote session:
 
