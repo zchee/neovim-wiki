@@ -1,0 +1,17 @@
+This document gives an overview of how we'll be porting vim to run on top of libuv, which will be the first major step taken by neovim.
+
+Vim has some functions for talking to the OS, these are the mch_* functions declared in src/proto/os_unix.pro(and in many other os-specific files that were removed before the initial import). Most of the OS interaction is done using these functions, so porting vim for libuv will mostly be a job of reimplementing those functions into a new 'os' module(which lives in the 'os' subdirectory). It also important  that we modify any code that makes system calls directly(I've seen a few of those) to use this module instead.
+
+Some functions were already ported by @rjw57 in his [low hanging fruit PR](https://github.com/neovim/neovim/pull/115), anyone interested in helping might wanna start by reading it.
+
+Since vim is completely dependent on blocking IO, most of the functions will be implemented using a combination of mutexes and condition variables, with a background thread doing the actual IO(this is the thread that runs libuv event loop and watchers). In some cases it might not be necessary to use a background thread as shown by @rjw57 in his PR.
+
+Work on porting user input reading(implemented mostly by mch_inchar and a few related functions) started on my [personal topic branch](https://github.com/tarruda/neovim/blob/libuv-os/src/os/io.c). It is mostly working but a few tests are failing.
+
+Disregard libuv-* and other topic branches in the official repo, they were started before the fundraiser and are no longer applicable(will be deleted eventually).
+
+Everyone is encouraged to start a similar topic branch and try to port a function or two from os_unix.c, but before create an issue with a relevant name so others will know that you are working on it. For example, lets say you want to port the function 'mch_can_exe' , create an issue named 'libuv - porting mch_can_exe'. Feel free to send PR if all tests are pass.
+
+We should try to split functions in os_unix.pro into 'categories' to avoid very big files. For example, functions that mess with filesystem should probably go into os/fs.c.
+
+Avoid messing with any code that checks or use signals(eg: those scattered 'got_int' checks) as signal handling will be completely refactored after I finish porting mch_inchar.
