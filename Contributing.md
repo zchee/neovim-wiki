@@ -6,6 +6,12 @@ Thanks for considering contributing to neovim. To make the process as smooth as 
 
 See [Communicating](Communicating). Raise documentation issues.
 
+## What needs to be done
+
+Click the [waffle.io](https://waffle.io/neovim/neovim) badge at the main repository page to see how you can contribute(issues in the second column)
+
+- [Porting OS layer to libuv](Porting-OS-layer-to-libuv)
+
 ## Guidelines
 
 ### Finding something to do
