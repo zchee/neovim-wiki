@@ -11,7 +11,7 @@ In the terminal for `neovim`, start a `gdbserver` instance on a specific port li
 
 `gdbserver :666 build/nvim`
 
-This will start a remote debugging session for the binary `build/vim` on port `666`.
+This will start a remote debugging session for the binary `build/nvim` on port `666`.
 
 You then need to attach to this debugging session in the other terminal:
 
