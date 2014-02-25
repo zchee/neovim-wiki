@@ -41,8 +41,9 @@ Ask, or pick an issue and comment on it announcing your desire to work on it. Id
 - Squash related commits as much as possible.
 
 ### Coding style
+Polling in [#104](https://github.com/neovim/neovim/issues/104), we'd like your opinion!
 
-- Try to match the existing indent style. (TODO: specify)
+- Try to match the existing indent style. 
 
 - Don't abuse the pre-processor.
 
