@@ -1,6 +1,6 @@
 This document gives an overview of how we'll be porting vim to run on top of libuv, which will be the first major step taken by neovim.
 
-Vim has some functions for talking to the OS, these are the mch_* functions declared in src/proto/os_unix.pro(and in many other os-specific files that were removed before the initial import). Most of the OS interaction is done using these functions, so porting vim for libuv will mostly be a job of reimplementing those functions into a new 'os' module(which lives in the 'os' subdirectory). It also important  that we modify any code that makes system calls directly(I've seen a few of those) to use this module instead.
+Vim has some functions for talking to the OS, these are the mch_* functions declared in [src/os_unix.h](https://github.com/neovim/neovim/blob/master/src/os_unix.h) (and in many other os-specific files that were removed before the initial import). Most of the OS interaction is done using these functions, so porting vim for libuv will mostly be a job of reimplementing those functions into a new 'os' module(which lives in the 'os' subdirectory). It also important  that we modify any code that makes system calls directly(I've seen a few of those) to use this module instead.
 
 Some functions were already ported by @rjw57 in his [low hanging fruit PR](https://github.com/neovim/neovim/pull/115), anyone interested in helping might wanna start by reading it.
 
