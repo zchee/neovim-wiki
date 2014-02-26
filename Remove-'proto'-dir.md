@@ -1,4 +1,4 @@
-### Done! (this task was masterfully completed by @scott-linder at [#137](https://github.com/neovim/neovim/issues/137))
+### Done! This task was masterfully completed by @scott-linder at [#155](https://github.com/neovim/neovim/issues/155) the same guy responsible for converting functions from K&R to ANSI at [#91](https://github.com/neovim/neovim/pull/91)
 
 Vim uses a single global header(vim.h) that is included in every module and includes all other headers. This is bad for documentation(no obvious way of knowing the dependencies of a module) and incremental building(changing any header file will cause every module to be rebuilt)
 
