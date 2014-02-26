@@ -11,7 +11,6 @@ See [Communicating](Communicating). Raise documentation issues.
 [![Stories in Ready](https://badge.waffle.io/neovim/neovim.png?label=ready)](https://waffle.io/neovim/neovim)
 
 - [Porting OS layer to libuv](Porting-OS-layer-to-libuv)
-- [Remove 'proto' dir](Remove-'proto'-dir)
 
 ## Guidelines
 
