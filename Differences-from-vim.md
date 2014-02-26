@@ -1,5 +1,3 @@
-# Differences from vim
-
 This page outlines in what ways Neovim currently differs from Vim.
 
 ## Config files
