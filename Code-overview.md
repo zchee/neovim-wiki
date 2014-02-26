@@ -86,7 +86,7 @@ command.  It also takes care of while loops.
 `do_one_cmd()` parses the range and generic arguments and puts them in the
 exarg_t and passes it to the function that handles the command.
 
-The `:` commands are listed in [ex_cmds.h](../blob/master/src/ex_cmds.h). 
+The `:` commands are listed in [ex_cmds_defs.h](../blob/master/src/ex_cmds_defs.h). 
 The third entry of each item is the
 name of the function that handles the command.  The last entry are the flags
 that are used for the command.
