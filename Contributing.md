@@ -2,7 +2,14 @@
 
 Thanks for considering contributing to neovim.
 
-## Non-programming help
+## What needs to be done
+
+[![Stories in Ready](https://badge.waffle.io/neovim/neovim.png?label=ready)](https://waffle.io/neovim/neovim)
+
+- [Porting OS layer to libuv](Porting-OS-layer-to-libuv)
+
+## Non-programming ways to contribute
+
 There are plenty of stuff you can contribute to without being a hardcore C programmer.
 
 ### Use neovim
@@ -24,14 +31,7 @@ Consider spending your hard-earned cash wisely: https://www.bountysource.com/fun
 
 See [Communicating](Communicating). Raise documentation issues.
 
-## What needs to be done
-
-To make the process as smooth as possible we would ask you to follow the guidelines below.
-
-[![Stories in Ready](https://badge.waffle.io/neovim/neovim.png?label=ready)](https://waffle.io/neovim/neovim)
-
-- [Porting OS layer to libuv](Porting-OS-layer-to-libuv)
-
 ## Guidelines
 
-See [CONTRIBUTING.md](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md)
+To make the process as smooth as possible we would ask you to follow the guidelines in 
+ [CONTRIBUTING.md](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md)
