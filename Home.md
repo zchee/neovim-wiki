@@ -11,9 +11,21 @@ Welcome to the neovim wiki!
 ### For developers
 
 - [Contributing](Contributing)
-- [Code overview](Code-overview)
-- [Development tips](Development-tips)
+
+#### Ideas
+
 - [Refactor vim into a library](Refactor-vim-into-a-library)
+
+#### Making sense of the code
+
+- [Code overview](Code-overview)
+
+#### Setting up your tools
+
+- [Development tips](Development-tips)
+- [Generate function callgraphs with doxygen](Generate-callgraphs-with-Doxygen)
+
+#### Writing code
+
 - [Unit testing](Unit-testing)
 - [Moonscript code style](Moonscript-code-style)
-- [Generate function callgraphs with doxygen](Generate-callgraphs-with-Doxygen)
