@@ -5,6 +5,15 @@ Those browsing through the source or working on PRs might find [this](https://gi
 **THIS PAGE NEEDS ATTENTION**
 
 ## GNU/Linux
+
+### Using the vim-lldb plugin
+Get the plugin: https://github.com/gilligan/vim-lldb
+In order to get started:
+  1. Start neovim in a shell
+  2. Open some neovim source file
+  3. :Ltarget attach nvim
+  4. Go to some line you are interested in and do :Lbreakpoint
+
 ### Terminal using `gdb`
 Use two terminals, one for the debugging session, and one for the neovim instance that will be debugged.
 In the terminal for `neovim`, start a `gdbserver` instance on a specific port like this:
