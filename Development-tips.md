@@ -1,6 +1,10 @@
 # YouCompleteMe
 Those browsing through the source or working on PRs might find [this](https://gist.github.com/tarruda/8736305) useful 
 
+# Code Linting
+If you are using Syntastic you can use https://gist.github.com/gilligan/9326904 to add clint.py as checker
+for C files. Note that clint.py needs to be in your path and that you will have to modify g:syntastic_c_checkers because it'll otherwise use gcc or make as default. See the syntastic documentation for details on that.
+
 # Debugging neovim
 **THIS PAGE NEEDS ATTENTION**
 
