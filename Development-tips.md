@@ -5,7 +5,6 @@ Those browsing through the source or working on PRs might find [this](https://gi
 **THIS PAGE NEEDS ATTENTION**
 
 ## GNU/Linux
-
 ### Using the vim-lldb plugin
 Get the plugin: https://github.com/gilligan/vim-lldb
 In order to get started:
