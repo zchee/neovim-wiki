@@ -31,6 +31,9 @@ Write about Neovim and show it to your friends
 ### Money contributions
 Consider spending your hard-earned cash wisely: https://www.bountysource.com/fundraisers/539-neovim-first-iteration
 
+### Help manage the issue tracker
+If you spot a duplicate issue, flag it up with a comment. If you see a report lacking in detail, ask for more.
+
 ## Help with contributing
 
 See [Communicating](Communicating). Raise documentation issues.
