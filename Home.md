@@ -1,4 +1,4 @@
-Welcome to the neovim wiki!
+Welcome to the Neovim wiki!
 
 ### For everyone
 
@@ -6,7 +6,7 @@ Welcome to the neovim wiki!
 
 ### For users
 
-- [Differences from vim](Differences-from-vim)
+- [Differences from Vim](Differences-from-vim)
 
 ### For developers
 
@@ -14,7 +14,7 @@ Welcome to the neovim wiki!
 
 #### Ideas
 
-- [Refactor vim into a library](Refactor-vim-into-a-library)
+- [Refactor Vim into a library](Refactor-vim-into-a-library)
 
 #### Making sense of the code
 
