@@ -1,4 +1,4 @@
-Here's an idea of how vim reads input and transitions between modes. The actual code is much more complex but follows this basic flow:
+Here's an idea of how Vim reads input and transitions between modes. The actual code is much more complex but follows this basic flow:
 
 ```c
 while (1) {
