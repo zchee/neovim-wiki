@@ -8,6 +8,10 @@ Thanks for considering contributing to neovim.
 
 - [Porting OS layer to libuv](Porting-OS-layer-to-libuv)
 
+## Travis
+
+If you make changes to documentation or files that won't affect the current build status, add [ci skip] to the  commit message.
+
 ## Non-programming ways to contribute
 
 There are plenty of stuff you can contribute to without being a hardcore C programmer.
