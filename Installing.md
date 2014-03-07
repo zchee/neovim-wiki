@@ -1,28 +1,42 @@
-## Dependencies
+## Quick install
+
+If you're on one of the following OSes, good news! You can get neovim right away!
+
+### OS X / [homebrew](http://brew.sh)
+
+    brew install --HEAD https://raw.github.com/neovim/neovim/master/neovim.rb
+
+### Arch Linux
+
+Package can be installed from [AUR](https://aur.archlinux.org/packages/neovim-git/)
+
+## Manual install
+
+### Dependencies
 
 <a name="for-debianubuntu"></a>
-### Ubuntu/Debian
+#### Ubuntu/Debian
 
     sudo apt-get install libtool autoconf automake cmake libncurses5-dev g++
 
 <a name="for-centos-rhel"></a>
-### CentOS/RHEL
+#### CentOS/RHEL
 
 If you're using CentOS/RHEL 6 you need at least autoconf version 2.69 for
 compiling the libuv dependency. See joyent/libuv#1158.
 
 <a name="for-freebsd-10"></a>
-### FreeBSD 10
+#### FreeBSD 10
 
     sudo pkg install cmake libtool sha
 
 <a name="for-arch-linux"></a>
-### Arch Linux
+#### Arch Linux
 
     sudo pacman -S base-devel cmake ncurses
 
 <a name="for-os-x"></a>
-### OS X
+#### OS X
 
 * Install [Xcode](https://developer.apple.com/) and [Homebrew](http://brew.sh)
   or [MacPorts](http://www.macports.org)
@@ -50,7 +64,7 @@ certificates or have not set them up correctly:
       echo CA_CERTIFICATE=$(brew --prefix curl-ca-bundle)/share/ca-bundle.crt >> ~/.wgetrc
 
 
-## Building
+### Building
 
 To generate the `Makefile`s:
 
@@ -60,6 +74,3 @@ To build and run the tests:
 
     make test
 
-Using Homebrew on Mac:
-
-    brew install --HEAD https://raw.github.com/neovim/neovim/master/neovim.rb
