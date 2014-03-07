@@ -10,7 +10,7 @@ Thanks for considering contributing to neovim.
 
 ## Travis
 
-If you make changes to documentation or files that won't affect the current build status, add [ci skip] to the  commit message.
+If you make changes to documentation or files that won't affect the current build status, add [ci skip] to the  commit message. See [this](http://docs.travis-ci.com/user/how-to-skip-a-build/) for more details.
 
 ## Non-programming ways to contribute
 
