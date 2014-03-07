@@ -2,10 +2,12 @@ Welcome to the Neovim wiki!
 
 ### For everyone
 
+- [Introduction](Introduction)
 - [Communicating](Communicating)
 
 ### For users
 
+- [Installing](Installing)
 - [Differences from Vim](Differences-from-vim)
 
 ### For developers
