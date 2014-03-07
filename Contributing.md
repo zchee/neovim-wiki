@@ -1,6 +1,6 @@
 ## Thank you
 
-Thanks for considering contributing to neovim.
+Thanks for considering contributing to Neovim.
 
 ## What needs to be done
 
@@ -16,17 +16,17 @@ If you make changes to documentation or files that won't affect the current buil
 
 There are plenty of stuff you can contribute to without being a hardcore C programmer.
 
-### Use neovim
-Use neovim, and report bugs on this GitHub page.
+### Use Neovim
+Use Neovim, and report bugs on this GitHub page.
 
 ### Give support
 Hang around the irc channel #neovim at FreeNode and answer questions.
 
 ### Documentation
-Help document neovim on the GitHub wiki and the neovim documentation project: https://github.com/neovim/docs
+Help document Neovim on the GitHub wiki and the Neovim documentation project: https://github.com/neovim/docs
 
 ### Raise awareness
-Write about neovim and show it to your friends
+Write about Neovim and show it to your friends
 
 ### Money contributions
 Consider spending your hard-earned cash wisely: https://www.bountysource.com/fundraisers/539-neovim-first-iteration
