@@ -1,5 +1,3 @@
-## Introduction
-
 Vim is a powerful text editor with a big community that is constantly
 growing.  Even though the editor is about two decades old, people still extend
 and want to improve it, mostly using vimscript or one of the supported scripting
