@@ -20,10 +20,12 @@ Package can be installed from [AUR](https://aur.archlinux.org/packages/neovim-gi
     sudo apt-get install libtool autoconf automake cmake libncurses5-dev g++
 
 <a name="for-centos-rhel"></a>
-#### CentOS/RHEL
+#### CentOS/RHEL/Fedora
 
 If you're using CentOS/RHEL 6 you need at least autoconf version 2.69 for
-compiling the libuv dependency. See joyent/libuv#1158.
+compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
+
+    sudo yum -y install autoconf automake cmake gcc libtool ncurses-devel
 
 <a name="for-freebsd-10"></a>
 #### FreeBSD 10
