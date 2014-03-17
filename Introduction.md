@@ -71,7 +71,7 @@ Vim has a significant amount of code dedicated to supporting legacy systems and
 compilers. All that code increases the maintenance burden and will be removed.
 
 Most optional features will no longer be optional (see above), with the
-exception of some broken and useless features (e.g.: NetBeans and Sun WorkShop
+exception of some broken and useless features (e.g. NetBeans and Sun WorkShop
 integration) which will be removed permanently. Vi emulation will also be
 removed (setting `nocompatible` will be a no-op).
 
