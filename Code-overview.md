@@ -47,7 +47,7 @@ The current mode is stored in `State`.  The values it can have are `NORMAL`,
 
 The current window is `curwin`.  The current buffer is `curbuf`.  These point
 to structures with the cursor position in the window, option values, the file
-name, etc.  These are defined in [structs.h](../blob/master/src/structs.h).
+name, etc.
 
 All the global variables are declared in [globals.h](../blob/master/src/globals.h).
 
