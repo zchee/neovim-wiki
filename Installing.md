@@ -30,7 +30,7 @@ compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
 <a name="for-freebsd-10"></a>
 #### FreeBSD 10
 
-    sudo pkg install cmake libtool sha
+    sudo pkg install cmake libtool sha automake
 
 <a name="for-arch-linux"></a>
 #### Arch Linux
