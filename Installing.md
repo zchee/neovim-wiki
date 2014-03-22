@@ -17,7 +17,7 @@ Package can be installed from [AUR](https://aur.archlinux.org/packages/neovim-gi
 <a name="for-debianubuntu"></a>
 #### Ubuntu/Debian
 
-    sudo apt-get install libtool autoconf automake cmake libncurses5-dev g++
+    sudo apt-get install libtool autoconf automake cmake libncurses5-dev g++ pkg-config
 
 <a name="for-centos-rhel"></a>
 #### CentOS/RHEL/Fedora
@@ -25,17 +25,17 @@ Package can be installed from [AUR](https://aur.archlinux.org/packages/neovim-gi
 If you're using CentOS/RHEL 6 you need at least autoconf version 2.69 for
 compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
 
-    sudo yum -y install autoconf automake cmake gcc libtool ncurses-devel
+    sudo yum -y install autoconf automake cmake gcc libtool ncurses-devel pkg-config
 
 <a name="for-freebsd-10"></a>
 #### FreeBSD 10
 
-    sudo pkg install cmake libtool sha automake
+    sudo pkg install cmake libtool sha automake pkgconf
 
 <a name="for-arch-linux"></a>
 #### Arch Linux
 
-    sudo pacman -S base-devel cmake ncurses
+    sudo pacman -S base-devel cmake ncurses pkg-config
 
 <a name="for-os-x"></a>
 #### OS X
@@ -46,11 +46,11 @@ compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
 
   Via MacPorts:
 
-      sudo port install libtool automake cmake
+      sudo port install libtool automake cmake pkgconfig
       
   Via Homebrew:
 
-      brew install libtool automake cmake
+      brew install libtool automake cmake pkg-config
 
 If you run into wget certificate errors, you may be missing the root SSL
 certificates or have not set them up correctly:
