@@ -35,7 +35,7 @@ compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
 <a name="for-arch-linux"></a>
 #### Arch Linux
 
-    sudo pacman -S base-devel cmake ncurses pkg-config
+    sudo pacman -S base-devel cmake ncurses pkg-config luajit
 
 <a name="for-os-x"></a>
 #### OS X
