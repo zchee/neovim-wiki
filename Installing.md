@@ -46,7 +46,7 @@ compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
 
   Via MacPorts:
 
-      sudo port install libtool automake cmake pkgconfig
+      sudo port install libtool automake cmake pkgconfig luajit luarocks
       
   Via Homebrew:
 
