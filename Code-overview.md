@@ -40,7 +40,7 @@ Most code can be found in a file with an obvious name (incomplete list):
 *   [window.c](../blob/master/src/window.c)	   handling split windows
 	
 
-# Important variables
+## Important variables
 
 The current mode is stored in `State`.  The values it can have are `NORMAL`,
 `INSERT`, `CMDLINE`, and a few others.
@@ -52,7 +52,7 @@ name, etc.
 All the global variables are declared in [globals.h](../blob/master/src/globals.h).
 
 
-# The main loop
+## The main loop
 
 This is conveniently called `main_loop()`.  It updates a few things and then
 calls `normal_cmd()` to process a command.  This returns when the command is
@@ -69,7 +69,7 @@ commands has finished.  The work is done by `update_screen()`, which calls
 See the start of [screen.c](../blob/master/src/screen.c) for more explanations.
 
 
-# Command-line mode
+## Command-line mode
 
 When typing a `:`, `normal_cmd()` will call `getcmdline()` to obtain a line with
 an Ex command.  `getcmdline()` contains a loop that will handle each typed
@@ -77,7 +77,7 @@ character.  It returns when hitting `<CR>` or `<Esc>` or some other character th
 ends the command line mode.
 
 
-# Ex commands
+## Ex commands
 
 Ex commands are handled by the function `do_cmdline()`.  It does the generic
 parsing of the `:` command line and calls `do_one_cmd()` for each separate
@@ -92,7 +92,7 @@ name of the function that handles the command.  The last entry are the flags
 that are used for the command.
 
 
-# Normal mode commands
+## Normal mode commands
 
 The Normal mode commands are handled by the `normal_cmd()` function.  It also
 handles the optional count and an extra character for some commands.  These
@@ -104,14 +104,19 @@ command.  The second entry of each item is the name of the function that
 handles the command.
 
 
-# Insert mode commands
+## Insert mode commands
 
 When doing an `i` or `a` command, `normal_cmd()` will call the `edit()` function.
 It contains a loop that waits for the next character and handles it.  It
 returns when leaving Insert mode.
 
 
-# Options
+## Options
 
 There is a list with all option names in [option.c](../blob/master/src/option.c),
 called `options[]`.
+
+# Code Overview (Visualization)
+
+![Code visualization generated with facebook/pfff](http://i.imgur.com/GApvG0J.png)
+
