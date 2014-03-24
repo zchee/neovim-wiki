@@ -1,4 +1,4 @@
-**Why Lua was chosen for writing tests and implementing vimscript instead of python/ruby/javascript/<fill with your favorite scripting language> ?**
+**Why Lua was chosen for writing tests and implementing vimscript instead of python/ruby/javascript/(fill with your favorite scripting language) ?**
 
 Lua is a very small language, yet it provides everything we need to implement a language like vimscript, which was created to configure and script the editor. The biggest advantage that languages like python or ruby have over Lua is their huge library collection, but that isn't a factor for our main use case which is to remove many thousands of C sloc by using Lua as a Vimscript runtime. If you are still not convinced about lua, you might want to read [this post](http://www.altdevblogaday.com/2013/02/19/why-lua/).
 
