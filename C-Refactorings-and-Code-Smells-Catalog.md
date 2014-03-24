@@ -98,6 +98,8 @@ Much more can be done. It's not hard to find many of these smells in neovim's
 code right now. Long methods, long parameter lists, conditional complexity,
 uncommunicative names, primitive obsession, and solution sprawl to name a few.
 
+See [the list of functions](http://pastebin.com/TmHJuyCC) from neovim's source code sorted by size, number of parameters... compiled by @cepko33 (#338).
+
 ### Code Smells Within Classes (within .c files)
 
  * **Comments**
