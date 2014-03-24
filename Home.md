@@ -4,6 +4,7 @@ Welcome to the Neovim wiki!
 
 - [Introduction](Introduction)
 - [Communicating](Communicating)
+- [FAQ](FAQ)
 
 ### For users
 
