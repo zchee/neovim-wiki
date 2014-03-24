@@ -8,6 +8,8 @@ Thanks for considering contributing to Neovim.
 
 - [Porting OS layer to libuv](Porting-OS-layer-to-libuv)
 
+Check this [refactoring catalog](https://github.com/neovim/neovim/wiki/C-Refactorings-and-Code-Smells-Catalog) if you want some inspiration on what to work on.
+
 ## Travis
 
 If you make changes to documentation or files that won't affect the current build status, add [ci skip] to the  commit message. See [this](http://docs.travis-ci.com/user/how-to-skip-a-build/) for more details.
