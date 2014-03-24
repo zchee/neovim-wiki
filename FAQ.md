@@ -12,4 +12,4 @@ We'll be using [Luajit](http://luajit.org/), which the fastest scripting runtime
 
 **Ok but why write tests in [Moonscript](http://moonscript.org/)?**
 
-Moonscript is a very nice DSL for writing BDD-like specs, which is how the tests are being written. It also compiles to lua, removing dependency on another runtime for running tests. Another advantage is that Luajit includes a nice [ffi module](http://luajit.org/ext_ffi_api.html) that is great for unit testing C code.
+Moonscript is a very nice DSL for writing BDD-like specs, which is the format we are using for tests. It also compiles to lua, removing dependency on another runtime for running tests. Another advantage is that Luajit includes a nice [ffi module](http://luajit.org/ext_ffi_api.html) that is great for unit testing C code.
