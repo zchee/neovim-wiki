@@ -8,7 +8,7 @@ The idea is to first make Neovim completely scriptable by Lua. Unlike the Lua in
 
 **Right now only vimscript is parsed, now there will will an additional pass for parsing lua. Won't that make the editor slower?**
 
-We'll be using [Luajit](http://luajit.org/), which the fastest scripting runtime out there(just google it). There will be a small overhead in parsing an additional language, but that will be insignificant near the great runtime performance improvement, especially because vimscript is known to be one of the slowest scripting languages(python is significantly faster than it). There is a good chance that plugins will run  faster, improving the editor performance.
+We'll be using [Luajit](http://luajit.org/), which the fastest scripting runtime out there(just google it). Parsing an additional language will cause a small overhead, but that will be insignificant near the great runtime performance improvement, especially because vimscript is known to be one of the slowest scripting languages(python is significantly faster than it). There is a good chance that plugins will run  faster, improving the editor performance.
 
 **Ok but why write tests in [Moonscript](http://moonscript.org/)?**
 
