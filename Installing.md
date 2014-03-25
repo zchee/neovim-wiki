@@ -19,6 +19,8 @@ Package can be installed from [AUR](https://aur.archlinux.org/packages/neovim-gi
 
     sudo apt-get install libtool autoconf automake cmake libncurses5-dev g++ pkg-config
 
+You may also need to install luajit and/or luarocks.
+
 <a name="for-centos-rhel"></a>
 #### CentOS/RHEL/Fedora
 
