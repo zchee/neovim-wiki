@@ -8,7 +8,7 @@ Thanks for considering contributing to Neovim.
 
 - [Porting OS layer to libuv](Porting-OS-layer-to-libuv)
 
-Check this [refactoring catalog](https://github.com/neovim/neovim/wiki/C-Refactorings-and-Code-Smells-Catalog) if you want some inspiration on what to work on.
+Check this [refactoring catalog](https://github.com/neovim/neovim/wiki/C-Refactorings-and-Code-Smells-Catalog) if you want some inspiration on what to work.
 
 ## Travis
 
