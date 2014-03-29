@@ -30,7 +30,15 @@ compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
 <a name="for-freebsd-10"></a>
 #### FreeBSD 10
 
-    sudo pkg install cmake libtool sha automake pkgconf libuv luajit
+    sudo pkg install cmake libtool sha automake pkgconf libuv luajit unzip wget
+
+Note: if you have cmake installed already, you may need to re-install it.  The
+port had to be updated to support SSL for file downloads, so you may not have
+that feature. If you see the download complaining about an md5sum mismatch, and
+the actual md5sum is `d41d8cd98f00b204e9800998ecf8427e`, then this is your issue
+(that's the md5sum of an empty file). Also, make sure you have wget installed.
+Luarocks has bad interactions with curl, at least under FreeBSD, and will die with
+a PANIC in LuaJIT when trying to install a rock.
 
 <a name="for-arch-linux"></a>
 #### Arch Linux
