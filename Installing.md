@@ -27,6 +27,11 @@ compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
 
     sudo yum -y install autoconf automake cmake gcc libtool ncurses-devel pkg-config
 
+<a name="for-opensuse"></a>
+### openSUSE
+
+    sudo zypper install libtool autoconf automake cmake ncurses-devel gcc-c++
+
 <a name="for-freebsd-10"></a>
 #### FreeBSD 10
 
