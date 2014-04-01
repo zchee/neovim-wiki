@@ -5,8 +5,8 @@ This wiki page aims to keep track of what patches from upstream vim have been me
 
 Everyone is welcome to add new relevant patches to the table at the bottom of this page. Some types of patches are **never** relevant, notably:
 
-- Compiler warning fixes (neovim strives to have no warnings at all, for now only on gcc and clang though, so the warnings have already been fixed)
-- `#ifdef` tweaking (i.e.: recently vim decided to enable `FEAT_VISUAL` for all platforms and watch the fallout). Neovim has usually already done that.
+- **Compiler warning fixes**: neovim strives to have no warnings at all, for now only on gcc and clang though, so the warnings have already been fixed.
+- **`#ifdef` tweaking**: an example, recently vim decided to enable `FEAT_VISUAL` for all platforms and watch the fallout. Neovim has usually already done that.
 - ... (add more)
 
 Anything else might be relevant, it is preferable to err on the side of caution and when you don't know, please post in the issue to let others take a look. 
