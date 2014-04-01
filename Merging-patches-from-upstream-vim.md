@@ -9,6 +9,7 @@ Everyone is welcome to add new relevant patches to the table at the bottom of th
 - **#ifdef tweaking**: an example, recently vim decided to enable `FEAT_VISUAL` for all platforms and watch the fallout. Neovim has usually already done that.
 - **Legacy system support**: Fixes for legacy system such as Solaris or Amiga are not used since they are not supported by neovim.
 - (add more...)
+
 Anything else might be relevant, it is preferable to err on the side of caution and when you don't know, please post in the issue to let others take a look. 
 
 Pull requests
