@@ -3,7 +3,7 @@ Description
 
 This wiki page aims to keep track of what patches from upstream vim have been merged since the fork. The fork happened at version 7.4.160. This is a direct offshoot of issue #438 ([link](https://github.com/neovim/neovim/issues/438)).
 
-Everyone is welcome to add new relevant patches to the table at the [bottom of this page](#Table-of-patches). Some types of patches are **never** relevant, notably:
+Everyone is welcome to add new relevant patches to the table at the [bottom of this page](#table-of-patches). Some types of patches are **never** relevant, notably:
 
 - **Compiler warning fixes**: neovim strives to have no warnings at all, for now only on gcc and clang though, so the warnings have already been fixed.
 - **#ifdef tweaking**: an example, recently vim decided to enable `FEAT_VISUAL` for all platforms and watch the fallout. Neovim has usually already done that.
