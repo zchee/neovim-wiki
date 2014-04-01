@@ -66,3 +66,14 @@ Here `gdb_start.cmd` includes `gdb` commands to be called when the debugger star
 target remote localhost:666
 br main
 ```
+
+# Customizing the build process
+You can customize the build process locally on your machine by editing `local.mk` which is included at the top of the main `Makefile` (and listed in `.gitignore`). Be aware that a new target in `local.mk` overrides the default make-target.
+
+Here is a sensible example which adds a target to force a rebuild and doesn't override the default-target:
+```make
+all:
+
+rebuild:
+	rm -rf build && make
+```
