@@ -2,11 +2,11 @@ Automated testing is essential for a project that aims to receive contributions 
 
 The act of testing individual functions is referred here as 'unit testing', even if the function being tested calls the operating system. This is explained here because some may consider as 'unit tests' only those tests that verify a function, method or class in complete isolation, normally using fake code to mock interfaces for external systems needed by the tested code.
 
-For now we'll keep things simple and test the whole function as it is, performing verifications on external systems touched by the function. With time, after we have isolated all system functions in the 'os' directory, we may be able to implement a mock for the 'os' module, so we can perform verifications without touching the operating system(The mock would probably be implementation in moonscript or lua, called from C). 
+For now we'll keep things simple and test the whole function as it is, performing verifications on external systems touched by the function. With time, after we have isolated all system functions in the 'os' directory, we may be able to implement a mock for the 'os' module, so we can perform verifications without touching the operating system (The mock would probably be implementation in moonscript or lua, called from C). 
 
-In neovim, unit testing will be done by compiling it as a shared library that can be loaded and called by luajit's [ffi module](http://luajit.org/ext_ffi.html). The ffi module is capable of parsing very basic C headers(no conditional directives or macro expansions), and we'll make use of this to avoid writing any glue C code(Still requires merging #215).
+In neovim, unit testing will be done by compiling it as a shared library that can be loaded and called by luajit's [ffi module](http://luajit.org/ext_ffi.html). The ffi module is capable of parsing very basic C headers (no conditional directives or macro expansions), and we'll make use of this to avoid writing any glue C code (still requires merging #215).
 
-Each module will have a separate test script(written in moonscript) in the test/unit directory. It might be possible to get started real fast by looking at existing [examples](https://github.com/neovim/neovim/tree/master/test/unit), but to get a deeper understanding of how this works, the best place is the ffi module [documentation](http://luajit.org/ext_ffi.html).
+Each module will have a separate test script (written in moonscript) in the test/unit directory. It might be possible to get started real fast by looking at existing [examples](https://github.com/neovim/neovim/tree/master/test/unit), but to get a deeper understanding of how this works, the best place is the ffi module [documentation](http://luajit.org/ext_ffi.html).
 
 Here are some guidelines for writing tests:
 
