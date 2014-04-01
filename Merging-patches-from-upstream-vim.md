@@ -15,7 +15,15 @@ Anything else might be relevant, it is preferable to err on the side of caution 
 Pull requests
 -------------
 
-Merging in patches from upstream is a good way to get started with contributing to neovim, so don't hesitate to send your pull requests! Do note that the commit message needs to contain a token like `vim-patch:7.4.123` as suggested by @justinmk.
+Merging in patches from upstream is a good way to get started with contributing to neovim, so don't hesitate to send your pull requests! 
+
+Commit message should include:
+
+- a token like `vim-patch:7.4.123`
+- a URL pointing to the Vim online repository commit, e.g.:
+    https://code.google.com/p/vim/source/detail?r=5d03c374712128077ac4c342aad02120ed98df70
+- the original Vim patch commit message, including the author
+    
 
 Table of patches
 ----------------
