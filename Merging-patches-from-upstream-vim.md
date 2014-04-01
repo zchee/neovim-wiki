@@ -1,5 +1,5 @@
 Description
-===========
+-----------
 
 This wiki page aims to keep track of what patches from upstream vim have been merged since the fork. The fork happened at version 7.4.160. This is a direct offshoot of issue #438 ([link](https://github.com/neovim/neovim/issues/438)).
 
@@ -12,12 +12,12 @@ Everyone is welcome to add patches that look relevant to the neovim codebase. So
 Anything else might be relevant, it is preferable to err on the side of caution and when you don't know, please post in the issue to let others take a look. 
 
 Pull requests
-=============
+-------------
 
 Merging in patches from upstream is a good way to get started with contributing to neovim, so don't hesitate to send your pull requests! Do note that the commit message needs to contain a token like `vim-patch:7.4.123` as suggested by @justinmk.
 
 Table of patches
-================
+----------------
 
 Version  | Description | Merged
 ------------------- | --------------- | ----------
