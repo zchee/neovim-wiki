@@ -22,7 +22,7 @@ Table of patches
 
 Version  | Description | Merged
 ------------------- | --------------- | ----------
- [7.4.164](https://code.google.com/p/vim/source/detail?r=a01819fb6e2b5c270dac492ab2fe923ea9301651)  | Problem with event handling on Windows 8. | ✗
+ [7.4.164](https://code.google.com/p/vim/source/detail?r=a01819fb6e2b5c270dac492ab2fe923ea9301651)  | Problem with event handling on Windows 8. | N/A
  [7.4.166](https://code.google.com/p/vim/source/detail?r=5d03c374712128077ac4c342aad02120ed98df70)  | Auto-loading a function for code that won't be executed. | ✗
  [7.4.167](https://code.google.com/p/vim/source/detail?r=22387c8eec43ea8b1b704cad49c8f7187e2fd579)  | Fixes are not tested. Add a test for not autoloading on assignment. | ✗
  [7.4.169](https://code.google.com/p/vim/source/detail?r=4e3a9dd25d428e7c08ed401afc244972e27e08e6)  | ":sleep" puts cursor in the wrong column. | ✗
