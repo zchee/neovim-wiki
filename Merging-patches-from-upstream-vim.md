@@ -34,7 +34,7 @@ Version  | Description | Merged
  [7.4.166](https://code.google.com/p/vim/source/detail?r=5d03c374712128077ac4c342aad02120ed98df70)  | Auto-loading a function for code that won't be executed. ([#445](https://github.com/neovim/neovim/pull/445)) | ✔
  [7.4.167](https://code.google.com/p/vim/source/detail?r=22387c8eec43ea8b1b704cad49c8f7187e2fd579)  | Fixes are not tested. Add a test for not autoloading on assignment. | N/A
  [7.4.169](https://code.google.com/p/vim/source/detail?r=4e3a9dd25d428e7c08ed401afc244972e27e08e6)  | ":sleep" puts cursor in the wrong column. ([#453](https://github.com/neovim/neovim/pull/453)) | ✔
- [7.4.170](https://code.google.com/p/vim/source/detail?r=8122eab8fcdbbdaac62dfbf7c6458cb3e6f46b04)  | Some help tags don't work with ":help". ([#454](https://github.com/neovim/neovim/pull/454)) | ✗
+ [7.4.170](https://code.google.com/p/vim/source/detail?r=8122eab8fcdbbdaac62dfbf7c6458cb3e6f46b04)  | Some help tags don't work with ":help". ([#454](https://github.com/neovim/neovim/pull/454)) | ✔
  [7.4.171](https://code.google.com/p/vim/source/detail?r=beb037a6c2708f539d50840637f70eed0811d93c)  | Redo does not set v:count and v:count1. ([#455](https://github.com/neovim/neovim/pull/455)) | ✗
  [7.4.172](https://code.google.com/p/vim/source/detail?r=391e10afccf6879dcfab8b28cb1587a13eb835c0)  | The blowfish code mentions output feedback, but the code is actually doing cipher feedback. ([#456](https://github.com/neovim/neovim/pull/456)) | ✗
  [7.4.173](https://code.google.com/p/vim/source/detail?r=233ad7b960d0fbeb224b383918113b25c74ebe35)  | When using scrollbind the cursor can end up below the last line.. ([#457](https://github.com/neovim/neovim/pull/457)) | ✗
