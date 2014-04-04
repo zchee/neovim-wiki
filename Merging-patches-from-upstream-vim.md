@@ -41,7 +41,7 @@ Version  | Description | Merged
  [7.4.175](https://code.google.com/p/vim/source/detail?r=6b69d8dde19e32909f4ee3a6337e6a2ecfbb6f72)  | When a wide library function fails, falling back to the non-wide function may do the wrong thing. | N/A
  [runtime](https://code.google.com/p/vim/source/detail?r=1dea14d4c73897e0317779a1c85271629806def5)  | Update runtime files.  Add support for systemverilog. | ✗
  [7.4.178](https://code.google.com/p/vim/source/detail?r=647e6bb15aa3f864eaf447fe77e3e3ae7e37b134)  | The J command does not update '[ and '] marks. ([#458](https://github.com/neovim/neovim/pull/458)) | ✗
- [7.4.181](https://code.google.com/p/vim/source/detail?r=cb5683bcde03796baa7e845fd9a2fcaec3383538)  | When using 'pastetoggle' the status lines are not updated. | ✗
+ [7.4.181](https://code.google.com/p/vim/source/detail?r=cb5683bcde03796baa7e845fd9a2fcaec3383538)  | When using 'pastetoggle' the status lines are not updated. ([#468](https://github.com/neovim/neovim/pull/468)) | ✗
  [7.4.183](https://code.google.com/p/vim/source/detail?r=1e2bfe4f3e903110f27cb6231f6642e721808837)  | MSVC Visual Studio update not supported. | N/A
  [7.4.184](https://code.google.com/p/vim/source/detail?r=9ac2fc63501d3eff92446c03b2822b30b169db5a)  | match() does not work properly with a {count} argument. | ✗
  [7.4.186](https://code.google.com/p/vim/source/detail?r=4d12112c5efae071aecbeed1a7196f18950457b3)  | Insert in Visual mode sometimes gives incorrect results. | ✗
