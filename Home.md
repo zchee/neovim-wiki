@@ -14,6 +14,7 @@ Welcome to the Neovim wiki!
 ### For developers
 
 - [Contributing](Contributing)
+- [Merging patches from upstream vim](Merging-patches-from-upstream-vim)
 
 #### Ideas
 
