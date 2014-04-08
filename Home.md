@@ -5,6 +5,7 @@ Welcome to the Neovim wiki!
 - [Introduction](Introduction)
 - [Communicating](Communicating)
 - [FAQ](FAQ)
+- [Progress/Roadmap](Progress)
 
 ### For users
 
