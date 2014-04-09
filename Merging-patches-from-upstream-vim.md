@@ -87,3 +87,4 @@ Version  | Description | Merged
 [7.4.249](https://code.google.com/p/vim/source/detail?r=0b9a66ea49f435536745be0e0a6154be7b607249)  | Using setreg() with a list of numbers does not work. | ✗
 [7.4.250](https://code.google.com/p/vim/source/detail?r=a8f3f45896288bd7e0a27e0c28c3cc3457ccc507)  | Some test files missing from distribution. | **RFC**
 [7.4.251](https://code.google.com/p/vim/source/detail?r=29eb4c2a33ac701bfcd4d2e2bed7864eba876e0e)  | Crash when BufAdd autocommand wipes out the buffer. | ✗
+[7.4.253](https://code.google.com/p/vim/source/detail?r=4901a36479f200b2e6700ad91c26911d92deb886)  | Crash when using cpp syntax file with pattern using external match. | ✗
