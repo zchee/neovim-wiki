@@ -44,7 +44,7 @@ Version  | Description | Merged
  [7.4.181](https://code.google.com/p/vim/source/detail?r=cb5683bcde03796baa7e845fd9a2fcaec3383538)  | When using 'pastetoggle' the status lines are not updated. ([#468](https://github.com/neovim/neovim/pull/468)) | ✔
  [7.4.183](https://code.google.com/p/vim/source/detail?r=1e2bfe4f3e903110f27cb6231f6642e721808837)  | MSVC Visual Studio update not supported. | N/A
  [7.4.184](https://code.google.com/p/vim/source/detail?r=9ac2fc63501d3eff92446c03b2822b30b169db5a)  | match() does not work properly with a {count} argument. ([#469](https://github.com/neovim/neovim/pull/469)) | ✔
- [7.4.186](https://code.google.com/p/vim/source/detail?r=4d12112c5efae071aecbeed1a7196f18950457b3)  | Insert in Visual mode sometimes gives incorrect results. ([#479](https://github.com/neovim/neovim/pull/479)) | ✗
+ [7.4.186](https://code.google.com/p/vim/source/detail?r=4d12112c5efae071aecbeed1a7196f18950457b3)  | Insert in Visual mode sometimes gives incorrect results. ([#479](https://github.com/neovim/neovim/pull/479)) | ✔
  [7.4.187](https://code.google.com/p/vim/source/detail?r=a1c07956171a133583df42627d3498f935e59988)  | Delete that crosses line break splits multi-byte character. ([#492](https://github.com/neovim/neovim/pull/492)) | ✗
  [7.4.191](https://code.google.com/p/vim/source/detail?r=40f18a1c1592c8b4047f6f2a413557f48a99c55f)  | Escaping a file name for shell commands can't be done without a function. | ✗
  [7.4.192](https://code.google.com/p/vim/source/detail?r=04c4ef8c0a1b757494500e46400552b135135e94)  | Memory leak when giving E853. ([#494](https://github.com/neovim/neovim/pull/494))| ✗
