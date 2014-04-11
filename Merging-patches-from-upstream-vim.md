@@ -47,7 +47,7 @@ Version  | Description | Merged
  [7.4.186](https://code.google.com/p/vim/source/detail?r=4d12112c5efae071aecbeed1a7196f18950457b3)  | Insert in Visual mode sometimes gives incorrect results. ([#479](https://github.com/neovim/neovim/pull/479)) | ✔
  [7.4.187](https://code.google.com/p/vim/source/detail?r=a1c07956171a133583df42627d3498f935e59988)  | Delete that crosses line break splits multi-byte character. ([#492](https://github.com/neovim/neovim/pull/492)) | ✔
  [7.4.191](https://code.google.com/p/vim/source/detail?r=40f18a1c1592c8b4047f6f2a413557f48a99c55f)  | Escaping a file name for shell commands can't be done without a function. | ✗
- [7.4.192](https://code.google.com/p/vim/source/detail?r=04c4ef8c0a1b757494500e46400552b135135e94)  | Memory leak when giving E853. ([#494](https://github.com/neovim/neovim/pull/494))| ✗
+ [7.4.192](https://code.google.com/p/vim/source/detail?r=04c4ef8c0a1b757494500e46400552b135135e94)  | Memory leak when giving E853. ([#494](https://github.com/neovim/neovim/pull/494))| ✔
  [7.4.193](https://code.google.com/p/vim/source/detail?r=a8650e2a0b5a5936f7d503429180df47df2aa775)  | Typos in messages. ([#495](https://github.com/neovim/neovim/pull/495))| ✗
  [7.4.199](https://code.google.com/p/vim/source/detail?r=54b1a90c937380195fad6a52408aa3b4eed6d8d1)  | P doesn't paste over Visual selection. ([#484](https://github.com/neovim/neovim/pull/484))| ✗
  [7.4.201](https://code.google.com/p/vim/source/detail?r=06e5f65c34d8136c3a9d2219429b7eca35cb3a21)  | 'lispwords' is a global option. | ✗
