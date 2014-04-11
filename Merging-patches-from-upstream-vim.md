@@ -54,7 +54,7 @@ Version  | Description | Merged
  [7.4.202](https://code.google.com/p/vim/source/detail?r=22d7af9ff3e5e2b93fdbe8603df2f15155a5976b)  | MS-Windows: non-ASCII font names don't work. | N/A
  [7.4.203](https://code.google.com/p/vim/source/detail?r=fb24b025c7cf07db79a559a3091db42e02c1af86)  | Parsing 'errorformat' is not correct. | ✗
  [7.4.204](https://code.google.com/p/vim/source/detail?r=f5120cbf16b9a9c6e0fbb599a6524e05ecf11393)  | A mapping where the second byte is 0x80 doesn't work. | ✗
- [7.4.205](https://code.google.com/p/vim/source/detail?r=0ace3a24c2a0153f0aaf9b619d3958e7f486705f)  | ":mksession" writes command to move to second argument while it does not exist.  When it does exist the order might be wrong. | ✗
+ [7.4.205](https://code.google.com/p/vim/source/detail?r=0ace3a24c2a0153f0aaf9b619d3958e7f486705f)  | ":mksession" writes command to move to second argument while it does not exist. When it does exist the order might be wrong. ([#508](https://github.com/neovim/neovim/pull/508)) | ✗
  [7.4.207](https://code.google.com/p/vim/source/detail?r=2aa909427e44cd3aac7def024b66e41d0c9d0e0d)  | The cursor report sequence is sometimes not recognized and results in entering replace mode.  | ✗
  [7.4.209](https://code.google.com/p/vim/source/detail?r=bb402c49379de97fcd475fbbbbdc5ed41e5dff07)  | When repeating a filter command "%" and "#" are expanded. | ✗
  [7.4.210](https://code.google.com/p/vim/source/detail?r=420fd9cb86d51a92c4307a746557e81914c6d6c4)  | Visual block mode plus virtual edit doesn't work well with tabs. | ✗
