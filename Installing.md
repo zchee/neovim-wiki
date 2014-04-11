@@ -81,11 +81,27 @@ certificates or have not set them up correctly:
 
 ### Building
 
-To generate the `Makefile`s:
+To generate the `Makefile`s without building:
 
-    make cmake
+```bash
+make cmake
+```
+
+Alternatively, you can build the executable immediately by just calling make (which will invoke `cmake` as required):
+
+```bash
+make
+```
+
+If you decide to try another compiler, you can try something like:
+
+```bash
+rm -rf ./build && make CC="/path/to/my/compiler"
+```
 
 To build and run the tests:
 
-    make test
+```bash
+make test
+```
 
