@@ -39,7 +39,7 @@ Version  | Description | Merged
  [7.4.172](https://code.google.com/p/vim/source/detail?r=391e10afccf6879dcfab8b28cb1587a13eb835c0)  | The blowfish code mentions output feedback, but the code is actually doing cipher feedback. ([#456](https://github.com/neovim/neovim/pull/456)) | ✔
  [7.4.173](https://code.google.com/p/vim/source/detail?r=233ad7b960d0fbeb224b383918113b25c74ebe35)  | When using scrollbind the cursor can end up below the last line.. ([#457](https://github.com/neovim/neovim/pull/457)) | ✔
  [7.4.175](https://code.google.com/p/vim/source/detail?r=6b69d8dde19e32909f4ee3a6337e6a2ecfbb6f72)  | When a wide library function fails, falling back to the non-wide function may do the wrong thing. | N/A
- [runtime](https://code.google.com/p/vim/source/detail?r=1dea14d4c73897e0317779a1c85271629806def5)  | Update runtime files.  Add support for systemverilog. | ✗
+ [runtime](https://code.google.com/p/vim/source/detail?r=1dea14d4c73897e0317779a1c85271629806def5)  | Update runtime files.  Add support for systemverilog. ([docs/#3](https://github.com/neovim/docs/pull/3)) ([vimscript/#3](https://github.com/neovim/vimscript/pull/3))| ✔
  [7.4.178](https://code.google.com/p/vim/source/detail?r=647e6bb15aa3f864eaf447fe77e3e3ae7e37b134)  | The J command does not update '[ and '] marks. ([#458](https://github.com/neovim/neovim/pull/458)) | ✔
  [7.4.181](https://code.google.com/p/vim/source/detail?r=cb5683bcde03796baa7e845fd9a2fcaec3383538)  | When using 'pastetoggle' the status lines are not updated. ([#468](https://github.com/neovim/neovim/pull/468)) | ✔
  [7.4.183](https://code.google.com/p/vim/source/detail?r=1e2bfe4f3e903110f27cb6231f6642e721808837)  | MSVC Visual Studio update not supported. | N/A
