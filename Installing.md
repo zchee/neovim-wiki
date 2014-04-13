@@ -48,7 +48,7 @@ a PANIC in LuaJIT when trying to install a rock.
 <a name="for-arch-linux"></a>
 #### Arch Linux
 
-    sudo pacman -S base-devel cmake ncurses pkg-config luajit
+    sudo pacman -S base-devel cmake ncurses pkg-config luajit unzip
 
 <a name="for-os-x"></a>
 #### OS X
