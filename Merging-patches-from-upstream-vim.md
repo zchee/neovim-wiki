@@ -88,6 +88,6 @@ Version  | Description | Merged
 [7.4.250](https://code.google.com/p/vim/source/detail?r=a8f3f45896288bd7e0a27e0c28c3cc3457ccc507)  | Some test files missing from distribution. | **RFC**
 [7.4.251](https://code.google.com/p/vim/source/detail?r=29eb4c2a33ac701bfcd4d2e2bed7864eba876e0e)  | Crash when BufAdd autocommand wipes out the buffer. ([#534](https://github.com/neovim/neovim/pull/534)) | ✗
 [7.4.253](https://code.google.com/p/vim/source/detail?r=4901a36479f200b2e6700ad91c26911d92deb886)  | Crash when using cpp syntax file with pattern using external match. ([#535](https://github.com/neovim/neovim/pull/535)) | ✗
-[7.4.254](https://code.google.com/p/vim/source/detail?r=251acc686ca41e4bccb037ef44cd7b486774d580)  | Smack support detection is incomplete. | N/A
-[7.4.255](https://code.google.com/p/vim/source/detail?r=5595506b985a198abae41ab0150ee50b8bf1686c)  | Configure check for smack doesn't work with all shells. (David Larson) | N/A
+[7.4.254](https://code.google.com/p/vim/source/detail?r=251acc686ca41e4bccb037ef44cd7b486774d580)  | Smack support detection is incomplete. | **RFC**
+[7.4.255](https://code.google.com/p/vim/source/detail?r=5595506b985a198abae41ab0150ee50b8bf1686c)  | Configure check for smack doesn't work with all shells. (David Larson) | **RFC**
 [7.4.256](https://code.google.com/p/vim/source/detail?r=afb542ea210cb9fc5fa8c5359bb4814370024b80)  | Using systemlist() may cause a crash and does not handle NUL characters properly. | ✗
