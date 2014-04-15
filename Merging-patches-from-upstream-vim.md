@@ -91,3 +91,5 @@ Version  | Description | Merged
 [7.4.254](https://code.google.com/p/vim/source/detail?r=251acc686ca41e4bccb037ef44cd7b486774d580)  | Smack support detection is incomplete. | **RFC**
 [7.4.255](https://code.google.com/p/vim/source/detail?r=5595506b985a198abae41ab0150ee50b8bf1686c)  | Configure check for smack doesn't work with all shells. (David Larson) | **RFC**
 [7.4.256](https://code.google.com/p/vim/source/detail?r=afb542ea210cb9fc5fa8c5359bb4814370024b80)  | Using systemlist() may cause a crash and does not handle NUL characters properly. | ✗
+[7.4.257](https://code.google.com/p/vim/source/detail?r=17903ded5e9a9d49ca73b324657b944f2954d4fd)  | Compiler warning, possibly for mismatch in parameter name. | ✗
+[7.4.258](https://code.google.com/p/vim/source/detail?r=e8ffd1e6c8dc62c604d34e879791404bd15cab33)  | Configure fails if $CC contains options. | ✗
