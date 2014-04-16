@@ -19,7 +19,7 @@ Merging in patches from upstream is a good way to get started with contributing 
 
 Commit message should include:
 
-- a token indicating the Vim patch number, formatted as follows: `vim-patch:7.4.123`
+- a token indicating the Vim patch number, formatted as follows (no space!): `vim-patch:7.4.123`
 - a URL pointing to the Vim online repository commit:
     - https://code.google.com/p/vim/source/detail?r=5d03c374712128077ac4c342aad02120ed98df70
 - the original Vim patch commit message, including the author
