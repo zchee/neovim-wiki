@@ -143,7 +143,7 @@ If you want to install the binary file in a specific location in your system (fo
 
 ```
 cmake -DCMAKE_INSTALL_PREFIX:PATH=~/usr/
-make build
+make install
 ```
 
 If you added `~/usr/bin` to your `$PATH`, you should be able to see the following:
