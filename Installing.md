@@ -96,8 +96,11 @@ Failing the above, you can always try installing the following packages manually
 
 - [lpeg](http://www.inf.puc-rio.br/~roberto/lpeg/)
 - [lua-cmsgpack](https://github.com/antirez/lua-cmsgpack)
-- [busted](http://olivinelabs.com/busted/) (for testing)
-- [moonscript](http://moonscript.org/) (for testing)
+
+For running tests, these are also required:
+
+- [busted](http://olivinelabs.com/busted/) version 1.10.0. The latest version(1.11.0) [seems to be broken](https://github.com/Olivine-Labs/busted/issues/236)
+- [moonscript](http://moonscript.org/)
 
 Keep in mind that some of those packages have their own dependencies which also have to be installed
 
