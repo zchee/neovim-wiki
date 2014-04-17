@@ -94,12 +94,12 @@ make cmake
 
 Failing the above, you can always try installing the following packages manually:
 
-- lpeg
-- lua-cmsgpack
-- busted(for unit testing)
-- moonscript(for unit testing)
+- [lpeg](http://www.inf.puc-rio.br/~roberto/lpeg/)
+- [lua-cmsgpack](https://github.com/antirez/lua-cmsgpack)
+- [busted](http://olivinelabs.com/busted/)(for testing)
+- [moonscript](http://moonscript.org/)(for testing)
 
-Keep in mind that some of those packages have their own dependencies, and those have to be installed too.
+Keep in mind that some of those packages have their own dependencies which also have to be installed
 
 ### Building
 
