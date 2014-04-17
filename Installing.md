@@ -81,7 +81,7 @@ certificates or have not set them up correctly:
 <a name="lua-packages"></a>
 #### Lua packages
 
-A few lua packages are required for the build process. Normally these package will be installed automatically via [luarocks](http://luarocks.org/), but sometimes this will fail(by hanging forever with no feedback) because luarocks.org servers are down. If you experience something similar, try using a mirror and running `make cmake` again:
+A few lua packages are required for the build process. Normally these packages will be installed automatically via [luarocks](http://luarocks.org/), but sometimes this will fail(by hanging forever with no feedback) because luarocks.org servers are down. If you experience something similar, try using a mirror and running `make cmake` again:
 
 ```sh
 cat >> .deps/usr/etc/luarocks/config-5.1.lua << "EOF"
@@ -91,6 +91,15 @@ rocks_servers={
 EOF
 make cmake
 ```
+
+Failing the above, you can always try installing the following packages manually:
+
+- lpeg
+- lua-cmsgpack
+- busted(for unit testing)
+- moonscript(for unit testing)
+
+Keep in mind that some of those packages have their own dependencies, and those have to be installed too.
 
 ### Building
 
