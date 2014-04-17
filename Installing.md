@@ -135,3 +135,20 @@ To build and run the tests:
 make test
 ```
 
+### Installing
+
+After building, the NeoVim binary file should be located in `./bin/nvim`.
+
+If you want to install the binary file in a specific location in your system (for example, ~/usr/bin/nvim):
+
+```
+cmake -DCMAKE_INSTALL_PREFIX:PATH=~/usr/
+make build
+```
+
+If you added `~/usr/bin` to your `$PATH`, you should be able to see the following:
+
+```
+$ which -a nvim
+{path to your $HOME}/usr/bin/nvim
+```
