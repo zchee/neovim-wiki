@@ -81,7 +81,12 @@ certificates or have not set them up correctly:
 <a name="lua-packages"></a>
 #### Lua packages
 
-A few lua packages are required for the build process. Normally these packages will be installed automatically via [luarocks](http://luarocks.org/), but sometimes this will fail(by hanging forever with no feedback) because luarocks.org servers are down. If you experience something similar, try using a mirror and running `make cmake` again:
+A few lua packages are required for the build process. Normally these packages will be installed via [luarocks](http://luarocks.org/)(invoked by cmake automatically), but sometimes this will fail. There are two common causes for this:
+
+- luarocks.org servers are down, in this case luarocks may hang forever with no feedback
+- you need to install the 'unzip' command-line utility, if this is the case luarocks will report something like this: `Warning: Failed searching manifest: Failed loading manifest: Failed extracting manifest file`
+
+For fixing the first error, a luarocks mirror can be used:
 
 ```sh
 cat >> .deps/usr/etc/luarocks/config-5.1.lua << "EOF"
