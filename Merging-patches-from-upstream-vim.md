@@ -81,7 +81,7 @@ Version  | Description | Merged
 [7.4.242](https://code.google.com/p/vim/source/detail?r=f084024c0ddbba46aabfafa2996c3f7d13080ab6)  | getreg() does not distinguish between a NL used for a line break and a NL used for a NUL character. | ✗
 [7.4.243](https://code.google.com/p/vim/source/detail?r=9f8fa56f1906f4f634cd602a7a2b4f8631faf526)  | Cannot use setreg() to add text that includes a NUL. | ✗
 [7.4.244](https://code.google.com/p/vim/source/detail?r=da17c7de616e3829e4f59923ffa138a067928d9e)  | The smack feature causes stray error messages. | **RFC**
-[7.4.245](https://code.google.com/p/vim/source/detail?r=80421d934ebde183ce545ab8d9eb3a4c2065c169)  | Crash for "vim -u NONE -N  -c '&&'". | ✗
+[7.4.245](https://code.google.com/p/vim/source/detail?r=80421d934ebde183ce545ab8d9eb3a4c2065c169)  | Crash for "vim -u NONE -N  -c '&&'". ([#555](https://github.com/neovim/neovim/pull/555)) | ✔
 [7.4.247](https://code.google.com/p/vim/source/detail?r=9f8fa56f1906f4f634cd602a7a2b4f8631faf526)  | When passing input to system() there is no way to keep NUL and NL characters separate. | ✗
 [7.4.248](https://code.google.com/p/vim/source/detail?r=e5f1f2ea0b4a4834791924880f78272ef52eb087)  | Cannot distinguish between NL and NUL in output of system(). | ✗
 [7.4.249](https://code.google.com/p/vim/source/detail?r=0b9a66ea49f435536745be0e0a6154be7b607249)  | Using setreg() with a list of numbers does not work. | ✗
