@@ -64,7 +64,7 @@ Version  | Description | Merged
 [7.4.218](https://code.google.com/p/vim/source/detail?r=ddc3f32a4b2191f829206322d46f0e9c7e365e22)  | It's not easy to remove duplicates from a list. **Add the uniq() function.** ([#525](https://github.com/neovim/neovim/pull/525))| ✔
  [7.4.219](https://code.google.com/p/vim/source/detail?r=37af1e6e91bb1e8ceb89d3ba1c49a04ffd889880)  | When 'relativenumber' or 'cursorline' are set the window is redrawn much to often. ([#517](https://github.com/neovim/neovim/pull/517))| ✔
 [7.4.221](https://code.google.com/p/vim/source/detail?r=a548aae15b3a27a56d814900049785c29c01a37a)  | Quickfix doesn't resize on ":copen 20". ([#527](https://github.com/neovim/neovim/pull/527))| ✔
-[7.4.226](https://code.google.com/p/vim/source/detail?r=b650f2db8f9604124c0ddfb14af0c04bd4ae0580)  | Cursurline highlighting not redrawn when scrolling. | ✗
+[7.4.226](https://code.google.com/p/vim/source/detail?r=b650f2db8f9604124c0ddfb14af0c04bd4ae0580)  | Cursurline highlighting not redrawn when scrolling. ([#554](https://github.com/neovim/neovim/pull/554)) | ✔
 [7.4.229](https://code.google.com/p/vim/source/detail?r=839cca5ec18d560e3714065e54ed38b6e812aaf7)  | Using ":let" for listing variables and the second one is a curly braces expression may fail. ([#528](https://github.com/neovim/neovim/pull/528)) | ✔
 [7.4.230](https://code.google.com/p/vim/source/detail?r=57ecd7a8c0f052296b41b916eb1ae7f2a9a48b27)  | Error when using ":options". | ✗
 [7.4.231](https://code.google.com/p/vim/source/detail?r=0a295a3c9e473512ad3b006a0fb752ad43d19094)  | An error in ":options" is not caught by the tests. | ✗
@@ -72,7 +72,7 @@ Version  | Description | Merged
 [7.4.233](https://code.google.com/p/vim/source/detail?r=22a1d5762ba3a75984e89dcc47a65498f63a6c2c)  | Escaping special characters for using "%" with a shell command is inconsistent, parenthesis are escaped but spaces are not. ([#530](https://github.com/neovim/neovim/pull/530)) | ✔
 [7.4.234](https://code.google.com/p/vim/source/detail?r=d2286df8719d6e99c743e3bf6ac14d1f9debc84d)  | Add v:progpath. ([#531](https://github.com/neovim/neovim/pull/531)) | ✔
 [7.4.235](https://code.google.com/p/vim/source/detail?r=5ab2946f7ce560985830fbc3c453bb0f7a01f385)  | Add the exepath() function. | ✗
-[7.4.236](https://code.google.com/p/vim/source/detail?r=a44087db72386d080e9da870d751daf498004be8)  | Make has("patch-7.4.123") work. | ✗
+[7.4.236](https://code.google.com/p/vim/source/detail?r=a44087db72386d080e9da870d751daf498004be8)  | Make has("patch-7.4.123") work. ([#561](https://github.com/neovim/neovim/pull/561)) | ✗
 [7.4.237](https://code.google.com/p/vim/source/detail?r=71b165a378ad580818f6d497ecf0f8ad054a9683)  | When some patches was not included has("patch-7.4.123") may return true falsely. | ✗
 [7.4.238](https://code.google.com/p/vim/source/detail?r=410ef4f1a3d2f4a6ecad9aaa87dae645d1578a19)  | Add smack support | **RFC**
 [7.4.239](https://code.google.com/p/vim/source/detail?r=98bfec9ea7608f312129475d4ca0ae6d1c6c232e)  | ":e +" does not position cursor at end of the file. ([#532](https://github.com/neovim/neovim/pull/532)) | ✔
