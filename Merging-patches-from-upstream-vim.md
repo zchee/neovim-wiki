@@ -72,8 +72,8 @@ Version  | Description | Merged
 [7.4.233](https://code.google.com/p/vim/source/detail?r=22a1d5762ba3a75984e89dcc47a65498f63a6c2c)  | Escaping special characters for using "%" with a shell command is inconsistent, parenthesis are escaped but spaces are not. ([#530](https://github.com/neovim/neovim/pull/530)) | ✔
 [7.4.234](https://code.google.com/p/vim/source/detail?r=d2286df8719d6e99c743e3bf6ac14d1f9debc84d)  | Add v:progpath. ([#531](https://github.com/neovim/neovim/pull/531)) | ✔
 [7.4.235](https://code.google.com/p/vim/source/detail?r=5ab2946f7ce560985830fbc3c453bb0f7a01f385)  | Add the exepath() function. | ✗
-[7.4.236](https://code.google.com/p/vim/source/detail?r=a44087db72386d080e9da870d751daf498004be8)  | Make has("patch-7.4.123") work. ([#561](https://github.com/neovim/neovim/pull/561)) | ✗
-[7.4.237](https://code.google.com/p/vim/source/detail?r=71b165a378ad580818f6d497ecf0f8ad054a9683)  | When some patches was not included has("patch-7.4.123") may return true falsely. | ✗
+[7.4.236](https://code.google.com/p/vim/source/detail?r=a44087db72386d080e9da870d751daf498004be8)  | Make has("patch-7.4.123") work. ([#561](https://github.com/neovim/neovim/pull/561)) | ✔
+[7.4.237](https://code.google.com/p/vim/source/detail?r=71b165a378ad580818f6d497ecf0f8ad054a9683)  | When some patches was not included has("patch-7.4.123") may return true falsely. ([#569](https://github.com/neovim/neovim/pull/569)) ([docs/#21](https://github.com/neovim/docs/pull/21))| ✗
 [7.4.238](https://code.google.com/p/vim/source/detail?r=410ef4f1a3d2f4a6ecad9aaa87dae645d1578a19)  | Add smack support | **RFC**
 [7.4.239](https://code.google.com/p/vim/source/detail?r=98bfec9ea7608f312129475d4ca0ae6d1c6c232e)  | ":e +" does not position cursor at end of the file. ([#532](https://github.com/neovim/neovim/pull/532)) | ✔
 [7.4.240](https://code.google.com/p/vim/source/detail?r=8d1ba0a23588932d22ad37cbd87ae3bbd4bfeff8)  | ":tjump" shows "\n" as "\\n". ([#533](https://github.com/neovim/neovim/pull/533)) | ✔
