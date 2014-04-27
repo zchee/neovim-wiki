@@ -28,6 +28,13 @@ Commit message should include:
 Table of patches
 ----------------
 
+## Legend ##
+
+✔ Done
+✗ To do (or won't patch ?)
+N/A Won't patch
+RFC Request for comments
+
 Version  | Description | Merged
 ------------------- | --------------- | ----------
  [7.4.164](https://code.google.com/p/vim/source/detail?r=a01819fb6e2b5c270dac492ab2fe923ea9301651)  | Problem with event handling on Windows 8. | N/A
