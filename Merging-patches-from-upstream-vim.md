@@ -106,4 +106,4 @@ Version  | Description | Merged
 [7.4.262](https://code.google.com/p/vim/source/detail?r=0ea551fa607dc443b97c2fba97dc0c9cb0bcf303)  | Duplicate code in regexec(). ([#630](https://github.com/neovim/neovim/pull/630)) | ✗
 [7.4.263](https://code.google.com/p/vim/source/detail?r=af1bb39774f41c28eabd24d80cffc775695bc124)  | GCC 4.8 compiler warning for hiding a declaration (Francois Gannaz) | ✗
 [7.4.264](https://code.google.com/p/vim/source/detail?r=00acac0af680c2d8c82db5258474b121a5908926)  | Can't define a function starting with "g:".  Can't assign a funcref to a buffer-local variable. ([#621](https://github.com/neovim/neovim/pull/621)) | ✔
-[7.4.265](https://code.google.com/p/vim/source/detail?r=8ec9d2196bee0c5108f2d2c196a660a7f4e5f29f)  | Can't call a global function with "g:" in an expression. | ✗
+[7.4.265](https://code.google.com/p/vim/source/detail?r=8ec9d2196bee0c5108f2d2c196a660a7f4e5f29f)  | Can't call a global function with "g:" in an expression. | ✔
