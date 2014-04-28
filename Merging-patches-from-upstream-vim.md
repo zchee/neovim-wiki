@@ -84,7 +84,7 @@ Version  | Description | Merged
 [7.4.238](https://code.google.com/p/vim/source/detail?r=410ef4f1a3d2f4a6ecad9aaa87dae645d1578a19)  | Add smack support | **RFC**
 [7.4.239](https://code.google.com/p/vim/source/detail?r=98bfec9ea7608f312129475d4ca0ae6d1c6c232e)  | ":e +" does not position cursor at end of the file. ([#532](https://github.com/neovim/neovim/pull/532)) | ✔
 [7.4.240](https://code.google.com/p/vim/source/detail?r=8d1ba0a23588932d22ad37cbd87ae3bbd4bfeff8)  | ":tjump" shows "\n" as "\\n". ([#533](https://github.com/neovim/neovim/pull/533)) | ✔
-[7.4.241](https://code.google.com/p/vim/source/detail?r=a63d0cd691dc925283815d17d62f4e948d723a59)  | The string returned by submatch() does not distinguish between a NL from a line break and a NL that stands for a NUL character. ([#611](https://github.com/neovim/neovim/pull/611))| ✔
+[7.4.241](https://code.google.com/p/vim/source/detail?r=a63d0cd691dc925283815d17d62f4e948d723a59)  | The string returned by submatch() does not distinguish between a NL from a line break and a NL that stands for a NUL character. ([#611](https://github.com/neovim/neovim/pull/611)) ([docs/#24](https://github.com/neovim/docs/pull/24))| ✔
 [7.4.242](https://code.google.com/p/vim/source/detail?r=f084024c0ddbba46aabfafa2996c3f7d13080ab6)  | getreg() does not distinguish between a NL used for a line break and a NL used for a NUL character. | ✗
 [7.4.243](https://code.google.com/p/vim/source/detail?r=9f8fa56f1906f4f634cd602a7a2b4f8631faf526)  | Cannot use setreg() to add text that includes a NUL. | ✗
 [7.4.244](https://code.google.com/p/vim/source/detail?r=da17c7de616e3829e4f59923ffa138a067928d9e)  | The smack feature causes stray error messages. | **RFC**
