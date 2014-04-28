@@ -99,7 +99,7 @@ Version  | Description | Merged
 [7.4.255](https://code.google.com/p/vim/source/detail?r=5595506b985a198abae41ab0150ee50b8bf1686c)  | Configure check for smack doesn't work with all shells. (David Larson) | **RFC**
 [7.4.256](https://code.google.com/p/vim/source/detail?r=afb542ea210cb9fc5fa8c5359bb4814370024b80)  | Using systemlist() may cause a crash and does not handle NUL characters properly. | ✗
 [7.4.257](https://code.google.com/p/vim/source/detail?r=17903ded5e9a9d49ca73b324657b944f2954d4fd)  | Compiler warning, possibly for mismatch in parameter name. | N/A
-[7.4.258](https://code.google.com/p/vim/source/detail?r=e8ffd1e6c8dc62c604d34e879791404bd15cab33)  | Configure fails if $CC contains options. | ✗
+[7.4.258](https://code.google.com/p/vim/source/detail?r=e8ffd1e6c8dc62c604d34e879791404bd15cab33)  | Configure fails if $CC contains options. | N/A
 [7.4.259](https://code.google.com/p/vim/source/detail?r=e4cd5bb75029d2c1208f3e31ebde4e03b16e8123)  | Warning for misplaced "const". | **RFC**
 [7.4.260](https://code.google.com/p/vim/source/detail?r=6bc874e4789a0f912b4fd6b23afecf19d80b1605)  | It is possible to define a function with a colon in the name.  It is possible to define a function with a lower case character if a "#" appears after the name. ([#602](https://github.com/neovim/neovim/pull/602))| ✔
 [7.4.261](https://code.google.com/p/vim/source/detail?r=43c6cd07c8defd8505acbe479c6970764c08e6f9)  | When updating the window involves a regexp pattern, an interactive substitute to replace a "\n" with a line break fails. (Ingo Karkat) ([#600](https://github.com/neovim/neovim/pull/600))| ✔
