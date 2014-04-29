@@ -107,3 +107,5 @@ Version  | Description | Merged
 [7.4.263](https://code.google.com/p/vim/source/detail?r=af1bb39774f41c28eabd24d80cffc775695bc124)  | GCC 4.8 compiler warning for hiding a declaration (Francois Gannaz) | N/A
 [7.4.264](https://code.google.com/p/vim/source/detail?r=00acac0af680c2d8c82db5258474b121a5908926)  | Can't define a function starting with "g:".  Can't assign a funcref to a buffer-local variable. ([#621](https://github.com/neovim/neovim/pull/621)) | ✔
 [7.4.265](https://code.google.com/p/vim/source/detail?r=8ec9d2196bee0c5108f2d2c196a660a7f4e5f29f)  | Can't call a global function with "g:" in an expression. ([#641](https://github.com/neovim/neovim/pull/641))| ✔
+[7.4.266](https://code.google.com/p/vim/source/detail?r=8f84e906d454a95d3167678a745dde9de442b604)  |Test 62 fails. | ✗
+[7.4.267](https://code.google.com/p/vim/source/detail?r=8ec9d2196bee0c5108f2d2c196a660a7f4e5f29f)  |The '[ mark is in the wrong position after "gq". (Ingo Karkat) | ✗
