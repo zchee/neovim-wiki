@@ -214,14 +214,14 @@ Server daemon listening on tcp sockets <------ GUI 1 (attach/detach to running i
 <a name="development"></a>
 ### Development on GitHub
 
-Development will happen in the [GitHub organization][], and the code will be
-split across many repositories, unlike the current vim source tree.
+Development happens in the [Neovim GitHub organization][]; the code is
+split across several repositories, unlike the current Vim source tree.
 
-There will be separate repositories for GUIs, plugins, runtime files (official
-vimscript) and distributions. This will let the editor receive improvements much
-faster, as the patches don't have to go all through a single person for approval.
+There are separate repositories for GUIs, plugins, runtime files (official
+vimscript) and distributions. This lets the editor receive improvements much
+faster, because the patches don't have to go through a single person for approval.
 
-Travis will also be used for continuous integration, so pull requests will be
+Travis CI is used for continuous integration, so pull requests are
 automatically checked.
 
 [GitHub organization]: https://github.com/neovim
