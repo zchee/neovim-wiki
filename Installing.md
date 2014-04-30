@@ -6,6 +6,11 @@ If you're on one of the following OSes, good news! You can get neovim right away
 
     brew install --HEAD https://raw.github.com/neovim/neovim/master/neovim.rb
 
+If you'd like to upgrade a previous homebrew install to the latest version of neovim, you just need to run a couple commands:
+
+    brew remove neovim
+    brew install --HEAD https://raw.github.com/neovim/neovim/master/neovim.rb
+
 ### Arch Linux
 
 Package can be installed from [AUR](https://aur.archlinux.org/packages/neovim-git/)
