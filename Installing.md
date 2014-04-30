@@ -25,7 +25,7 @@ Package can be installed from [AUR](https://aur.archlinux.org/packages/neovim-gi
 If you're using CentOS/RHEL 6 you need at least autoconf version 2.69 for
 compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
 
-    sudo yum -y install autoconf automake cmake gcc libtool ncurses-devel pkgconfig
+    sudo yum -y install autoconf automake cmake gcc gcc-c++ libtool ncurses-devel pkgconfig
 
 <a name="for-opensuse"></a>
 ### openSUSE
