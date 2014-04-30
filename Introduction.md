@@ -226,19 +226,3 @@ automatically checked.
 
 [GitHub organization]: https://github.com/neovim
 
-## Status
-
-Here's a list of things that have been done so far:
-
-- Source tree was cleaned up, leaving only files necessary for compilation/testing of the core.
-- Source files were processed with [unifdef][] to remove tons of `FEAT_*` macros.
-- Files were processed with [uncrustify][] to normalize source code formatting.
-- The autotools build system was replaced by [CMake][].
-
-and what is currently being worked on:
-
-- Porting all IO to libuv.
-
-[unifdef]: http://freecode.com/projects/unifdef
-[uncrustify]: http://uncrustify.sourceforge.net/
-[CMake]: http://cmake.org/
