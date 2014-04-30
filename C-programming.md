@@ -4,4 +4,5 @@
 > something you have to be really careful about: the difference between arrays and pointers [...]
 > be judicious: if the variable is simple, use `sizeof(variable)`, if the variable is complex, use `sizeof(the_actual_type)`
 
-[conversion of signed variables to unsigned, on files not checked by `-Wconversion`](https://github.com/neovim/neovim/pull/558#issuecomment-40863654)
+[Conversion of signed variables to unsigned (in files not checked by `-Wconversion`)](https://github.com/neovim/neovim/pull/558#issuecomment-40863654)
+
