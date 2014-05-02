@@ -26,8 +26,8 @@ Thus it would seem that unsigned arithmetic is superior, because it has defined 
 
 **Conclusion**: 
 
+- if there is any chance of underflow or the loop in question is small (definitely less than `2^31` items), use signed arithmetic and a guard before the loop.
 - if there is any chance of overflow, use unsigned arithmetic and possibly guards.
-- if there is any chance of underflow, use signed arithmetic and even stronger guards.
 - if there is a chance of both underflow and overflow, be extremely careful and paranoid (guards/asserts).
 
 ###### Guarded casting
