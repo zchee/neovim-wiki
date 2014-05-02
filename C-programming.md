@@ -14,7 +14,7 @@
 
 There are a few very important things to keep in mind while choosing between signed and unsigned integral types:
 
-- **Unsigned overflow is undefined**, while **signed overflow is defined**. What does this mean? ...
+- **Unsigned overflow is undefined**, while **signed overflow is defined**. This is an unfortunate historical oversight stemming from a time where it wasn't sure what [representation a signed integer would have](http://stackoverflow.com/questions/18195715/why-is-unsigned-integer-overflow-defined-behavior-but-signed-integer-overflow-is). The C standard decided that it shouldn't/couldn't specify what would happen when a signed integer overflows. In modern times, signed integers are always represented in [two's complement](http://en.wikipedia.org/wiki/Two's_complement) form, which has many advantages. What does this mean? If an unsigned integer overflows, it wraps around back to zero (it's modulo addition), if a signed integer overflows, $deity only knows what will happen. We _know_ what would happen if a two's complement integer would overflow, but the compiler can do whatever it wants, because the standard says it is undefined. As a consequence, and optimizing compiler will often assume that a signed integer _cannot_ overflow (please insert mahkoh's undefined behaviour example here).
 
 ###### Guarded casting
 
