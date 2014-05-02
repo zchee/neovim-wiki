@@ -16,11 +16,15 @@ There are a few very important things to keep in mind while choosing between sig
 
 Firstly, **Unsigned overflow is undefined**, while **signed overflow is defined**. This is an unfortunate historical oversight stemming from a time where it wasn't sure what [representation a signed integer would have](http://stackoverflow.com/questions/18195715/why-is-unsigned-integer-overflow-defined-behavior-but-signed-integer-overflow-is). The C standard decided that it shouldn't/couldn't specify what would happen when a signed integer overflows, because each representation would have different behaviour. In modern times, signed integers are always represented in [two's complement](http://en.wikipedia.org/wiki/Two's_complement) form, which has many advantages. 
 
+> An interesting thing to note is that it is possible to force gcc and clang to view signed overflow as defined, by [passing the -fwrapv flag](http://stackoverflow.com/a/4712784/558819). This is, unfortunately, non-standard.
+
 What does this mean, defined vs. undefined? If an unsigned integer overflows, it wraps around back to zero (it's modulo addition), if a signed integer overflows, $deity only knows what will happen. More specifically: we _know_ what would happen if a two's complement signed integer would overflow, but [the compiler can do whatever it wants, because the standard says it is undefined](http://stackoverflow.com/a/18195756/558819). As a consequence, an optimizing compiler will often assume that a signed integer _cannot_ overflow (please insert mahkoh's undefined behaviour example here) and optimize out some if-branches or comparisons. This behaviour can cause loops to run forever. Note that if the conditions are not written carefully, even the well-defined wraparound overflow of unsigned integers can cause non-terminating loops, `(U)INTX_MAX/MIN` are your friends.
+
+Thus it would seem that unsigned arithmetic is superior, because it has defined over- and underflow. But that's not always true. There's a good reason why many languages (like Java) don't expose unsigned types: they can cause difficult to spot errors. One of the most common ones
 
 **Conclusion**: 
 
-- if there is any chance of overflow, use unsigned arithmetic and guards, at least it is defined.
+- if there is any chance of overflow, use unsigned arithmetic and possibly guards.
 - if there is any chance of underflow, use signed arithmetic and even stronger guards.
 - if there is a chance of both underflow and overflow, be extremely careful and paranoid (guards/asserts).
 
