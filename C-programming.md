@@ -10,7 +10,7 @@
 
 (to be filled in)
 
-##### Integer over- and underflow
+##### Unsigned or signed? Beware of integer over- and underflow
 
 ##### Fixed-size vs. generic types
 
