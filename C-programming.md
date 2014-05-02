@@ -10,7 +10,7 @@
 
 (to be filled in)
 
-##### Integer overflow
+##### Integer over- and underflow
 
 ##### Fixed-size vs. generic types
 
