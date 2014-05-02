@@ -42,3 +42,4 @@ There are handy tools that can help while creating, maintaining and transforming
 
 - [Modern source-to-source transformation with Clang and libTooling](http://eli.thegreenplace.net/2014/05/01/modern-source-to-source-transformation-with-clang-and-libtooling/)
 - [How Should You Write a Fast Integer Overflow Check?](http://blog.regehr.org/archives/1139)
+- [include-what-you-use](https://code.google.com/p/include-what-you-use/)
