@@ -12,6 +12,8 @@
 
 ##### Unsigned or signed? Beware of integer over- and underflow
 
+###### Guarded casting
+
 ##### Fixed-size vs. generic types
 
 Should we use `(u)intX_t` and friends over `char`, `short`, `int`, `long` et al.? ...
