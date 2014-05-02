@@ -18,6 +18,12 @@ Firstly, **Unsigned overflow is undefined**, while **signed overflow is defined*
 
 What does this mean, defined vs. undefined? If an unsigned integer overflows, it wraps around back to zero (it's modulo addition), if a signed integer overflows, $deity only knows what will happen. More specifically: we _know_ what would happen if a two's complement signed integer would overflow, but [the compiler can do whatever it wants, because the standard says it is undefined](http://stackoverflow.com/a/18195756/558819). As a consequence, an optimizing compiler will often assume that a signed integer _cannot_ overflow (please insert mahkoh's undefined behaviour example here) and optimize out some if-branches or comparisons.
 
+**Conclusion**: 
+
+- if there is any chance of overflow, use unsigned arithmetic and guards, at least it is defined.
+- if there is any chance of underflow, use signed arithmetic and even stronger guards.
+- if there is a chance of both underflow and overflow, be extremely careful and paranoid (guards/asserts).
+
 ###### Guarded casting
 
 ##### Fixed-size vs. generic types
