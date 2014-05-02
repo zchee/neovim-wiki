@@ -14,7 +14,7 @@
 
 There are a few very important things to keep in mind while choosing between signed and unsigned integral types:
 
-Firstly, **Unsigned overflow is undefined**, while **signed overflow is defined**. This is an unfortunate historical oversight stemming from a time where it wasn't sure what [representation a signed integer would have](http://stackoverflow.com/questions/18195715/why-is-unsigned-integer-overflow-defined-behavior-but-signed-integer-overflow-is). The C standard decided that it shouldn't/couldn't specify what would happen when a signed integer overflows, because each representation would have different behaviour. In modern times, signed integers are always represented in [two's complement](http://en.wikipedia.org/wiki/Two's_complement) form, which has many advantages. 
+Firstly, **unsigned overflow is defined**, while **signed overflow is not**. This is an unfortunate historical oversight stemming from a time where it wasn't sure what [representation a signed integer would have](http://stackoverflow.com/questions/18195715/why-is-unsigned-integer-overflow-defined-behavior-but-signed-integer-overflow-is). The C standard decided that it shouldn't/couldn't specify what would happen when a signed integer overflows, because each representation would have different behaviour. In modern times, signed integers are always represented in [two's complement](http://en.wikipedia.org/wiki/Two's_complement) form, which has many advantages. 
 
 > An interesting thing to note is that it is possible to force gcc and clang to view signed overflow as defined (wraparound, like unsigned), by [passing the -fwrapv flag](http://stackoverflow.com/a/4712784/558819). This is, unfortunately, non-standard.
 
