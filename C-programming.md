@@ -12,6 +12,10 @@
 
 ##### Unsigned or signed? Beware of integer over- and underflow
 
+There are a few very important things to keep in mind while choosing between signed and unsigned integral types:
+
+- **Unsigned overflow is undefined**, while **signed overflow is defined**. What does this mean? ...
+
 ###### Guarded casting
 
 ##### Fixed-size vs. generic types
