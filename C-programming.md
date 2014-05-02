@@ -22,7 +22,7 @@ What does this mean, defined vs. undefined? If an unsigned integer overflows, it
 
 Thus it would seem that unsigned arithmetic is superior, because it has defined over- and underflow. But that's not always true. There's a good reason why many languages (like Java) don't expose unsigned types: they can cause difficult to spot errors. The most common form of `*`flow is **underflow in unsigned arithmetic**. Subtracting 1 from `unsigned int num = 0;` will make it wrap around to `UINT_MAX`. [This is much more common than one would think](http://www.soundsoftware.ac.uk/c-pitfall-unsigned). For this reason alone, it is usually **much** safer to use a plain `int` as a loop counter instead of `uint32_t`/`size_t`/... or another unsigned type. Even seasoned programmers find it difficult to avoid writing unsigned code that doesn't underflow in some cases. That's why
 
-**Problem**: signed code is easier to write, but you have to use casts when comparing to `size_t` (which happens often, as it is the return type of `sizeof`, `strlen` and many others). Casts are ugly and should be avoided if at all possible. But we cannot avoid them everywhere. Sometimes, a trade-off has to be made. Hopefully this section can be amended with examples showing good ways to handle these issues.
+**Problem**: correct signed code is easier to write, but you have to use casts when comparing to `size_t` (which happens often, as it is the return type of `sizeof`, `strlen` and many others). Casts are ugly and should be avoided if at all possible. But we cannot avoid them everywhere. Sometimes, a trade-off has to be made. Hopefully this section can be amended with examples showing good ways to handle these issues.
 
 **Conclusion**: 
 
