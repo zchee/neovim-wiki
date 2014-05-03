@@ -9,4 +9,4 @@ The plugin architecture is going to be replaced. This means there is no support 
 
 ## Removed legacy features
 
-* Removed support for 8.3 filesystem/shortnames #635
+* Removed support for 8.3 filesystem/shortnames [#635](https://github.com/neovim/neovim/pull/635)
