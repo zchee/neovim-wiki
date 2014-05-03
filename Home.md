@@ -15,6 +15,7 @@ Welcome to the Neovim wiki!
 ### For developers
 
 - [Contributing](Contributing)
+- [Style / Conventions](http://neovim.org/development-wiki/style-guide/style-guide.xml)
 - [Merging patches from upstream vim](Merging-patches-from-upstream-vim)
 - [C programming techniques and Neovim-specific guidance](C-programming)
 - [Development documentation CI (Doxygen builds)](http://neovim.menkar.uberspace.de/devdoc/)
