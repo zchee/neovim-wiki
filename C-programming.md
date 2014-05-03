@@ -10,6 +10,12 @@
 
 (to be filled in)
 
+#### Struct organization
+
+https://github.com/neovim/neovim/pull/656#issuecomment-41905534
+
+TODO: link to discussion of legacy Vim struct hack
+
 ##### Unsigned or signed? Beware of integer over- and underflow
 
 There are a few very important things to keep in mind while choosing between signed and unsigned integral types:
