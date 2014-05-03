@@ -1,4 +1,4 @@
-## In Progress
+## In-Progress
 
 * Replace [`eval.c`](https://github.com/neovim/neovim/blob/57cd2d661454cd6686c7d98cafa783ea94495fd5/src/eval.c) (20k lines) by VimL => Lua translator
 * Remove superfluous `#include`s with Google's [include-what-you-use](https://code.google.com/p/include-what-you-use/) [#549](https://github.com/neovim/neovim/issues/549)
@@ -7,7 +7,9 @@
 * Port all IO to libuv
 * msg-pack remote API
 
-## Planned
+## Planned (or in discussion)
+
+Items in the [vNext milestone](https://github.com/neovim/neovim/issues?milestone=1&state=open) are being planned or considered; they have **no specific release target** and may be cancelled or deferred indefinitely.
 
 ## Completed
 
