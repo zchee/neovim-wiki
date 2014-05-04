@@ -6,12 +6,12 @@ Some functions were already ported by @rjw57 in his [low hanging fruit PR](https
 
 Since vim is completely dependent on blocking I/O, most of the functions will be implemented using a combination of mutexes and condition variables, with a background thread doing the actual I/O (this is the thread that runs libuv event loop and watchers). In some cases it might not be necessary to use a background thread as shown by @rjw57 in his PR.
 
-Work on porting user input reading (implemented mostly by mch_inchar and a few related functions) started on my [personal topic branch](https://github.com/tarruda/neovim/blob/libuv-os/src/os/io.c). It is mostly working but a few tests are failing.
+User input reading (implemented mostly by mch_inchar) was ported to libuv in [#395](https://github.com/neovim/neovim/pull/395).
 
-Disregard libuv-* and other topic branches in the official repo, they were started before the fundraiser and are no longer applicable (will be deleted eventually).
+Disregard libuv-* and other topic branches in the official repo, they were started before Neovim was announced and are no longer applicable (will be deleted eventually).
 
-Everyone is encouraged to start a similar topic branch and try to port a function or two from os_unix.c, but  create an issue with a relevant name so others will know that you are working on it. For example, let's say you want to port the function 'mch_can_exe' , create an issue named 'libuv - porting mch_can_exe'. Feel free to send PR if all tests pass.
+Everyone is encouraged to start a similar topic branch and try to port a function or two from `os_unix.c`, but create an issue with a relevant name so others will know that you are working on it. For example, let's say you want to port the function `mch_can_exe`, create an issue named 'libuv - porting mch_can_exe'. Feel free to send PR if all tests pass.
 
-We should try to split functions in os_unix.pro into 'categories' to avoid very big files. For example, functions that mess with filesystem should probably go into os/fs.c.
+Try to split functions in `os_unix.h` into "categories" to avoid very big files. For example, functions that mess with filesystem should probably go into `os/fs.c`.
 
-Avoid messing with any code that checks or use signals (eg: those scattered 'got_int' checks) as signal handling will be completely refactored after I finish porting mch_inchar.
+Avoid messing with any code that checks or uses signals (eg: those scattered `got_int` checks) because signal handling will be completely refactored.
