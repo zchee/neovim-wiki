@@ -47,7 +47,7 @@ Should we use `(u)intX_t` and friends over `char`, `short`, `int`, `long` et al.
 
 ### Tools and aritcles
 
-There are handy tools that can help while creating, maintaining and transforming a codebase, as we are doing with Neovim. Some handy articles:
+There are handy tools that can help while creating, maintaining and transforming a codebase, as we are doing with Neovim. Some articles:
 
 - [Modern source-to-source transformation with Clang and libTooling](http://eli.thegreenplace.net/2014/05/01/modern-source-to-source-transformation-with-clang-and-libtooling/)
 - [How Should You Write a Fast Integer Overflow Check?](http://blog.regehr.org/archives/1139)
