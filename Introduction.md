@@ -224,5 +224,5 @@ faster, because the patches don't have to go through a single person for approva
 Travis CI is used for continuous integration, so pull requests are
 automatically checked.
 
-[GitHub organization]: https://github.com/neovim
+[Neovim GitHub organization]: https://github.com/neovim
 
