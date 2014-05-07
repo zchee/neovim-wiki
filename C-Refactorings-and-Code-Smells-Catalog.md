@@ -149,9 +149,11 @@ TODO
 
 TODO
 
-### CScout
+### Coccinelle
 
-http://www.spinellis.gr/cscout/
+http://coccinelle.lip6.fr/
+
+See #690 for an example of what it can do.
 
 TODO
 
