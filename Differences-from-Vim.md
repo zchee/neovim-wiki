@@ -10,3 +10,4 @@ The plugin architecture is going to be replaced. This means there is no support 
 ## Removed legacy features
 
 * Removed support for 8.3 filesystem/shortnames [#635](https://github.com/neovim/neovim/pull/635)
+* Encryption/blowfish/`cryptmethod` [#699](https://github.com/neovim/neovim/pull/699). (May be partially restored by [#701](https://github.com/neovim/neovim/pull/))
