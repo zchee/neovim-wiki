@@ -1,3 +1,7 @@
+Subpages:
+
+* [C refactorings and code-smells](C-Refactorings-and-Code-Smells-Catalog)
+
 ### C programming techniques and Neovim-specific guidance
 
 [`sizeof(<var>)` vs `sizeof(<type>)`](https://github.com/neovim/neovim/pull/558#discussion_r11767481)
