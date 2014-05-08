@@ -113,4 +113,4 @@ Version  | Description | Merged
 [7.4.269](https://code.google.com/p/vim/source/detail?r=81c26975e8f9dc7435353581346542409403f296)  |CTRL-U in Insert mode does not work after using a cursor key. (Pine Wu) ([#648](https://github.com/neovim/neovim/pull/648))| ✔
 [7.4.270](https://code.google.com/p/vim/source/detail?r=c519c446c5488bfd48c93a03efae4ae3e0c1f162) | Comparing pointers instead of the string they point to. | N/A
 [7.4.271](https://code.google.com/p/vim/source/detail?r=88b0571de4327ba5127a483493bd7d46e6a9850e) | Compiler warning on 64 bit windows. | ✗
-[7.4.272](https://code.google.com/p/vim/source/detail?r=00228400629e28384f7f52556c3c119ba0d0a44d) | Using just "$" does not cause an error message. ([#653](https://github.com/neovim/neovim/pull/653))| ✗
+[7.4.272](https://code.google.com/p/vim/source/detail?r=00228400629e28384f7f52556c3c119ba0d0a44d) | Using just "$" does not cause an error message. ([#653](https://github.com/neovim/neovim/pull/653))| ✔
