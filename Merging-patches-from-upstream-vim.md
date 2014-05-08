@@ -116,3 +116,10 @@ Version  | Description | Merged
 [7.4.272](https://code.google.com/p/vim/source/detail?r=00228400629e28384f7f52556c3c119ba0d0a44d) | Using just "$" does not cause an error message. ([#653](https://github.com/neovim/neovim/pull/653))| ✔
 [runtime](https://code.google.com/p/vim/source/detail?r=306caa30d83b42d79685c472a4829a9aa43e72c8) | Runtime file updates. | ✗
 [7.4.274](https://code.google.com/p/vim/source/detail?r=1ee3fc5b40ae94c2a7fc5a62bca38d4f730f9bb2) | When doing ":update" just before running an external command that changes the file, the timestamp may be unchanged and the file is not reloaded. ([#670](https://github.com/neovim/neovim/pull/670)) | ✔
+[7.4.275](https://code.google.com/p/vim/source/detail?r=8a3117a4887c1e12a1165c9719491f96753787d6) | When changing the type of a sign that hasn't been placed ther is no error message. | ✗
+[7.4.276](https://code.google.com/p/vim/source/detail?r=a6b59ee633a355095e6473ec5e2a7d9088bfb853) | The fish shell is not supported. | ✗
+[7.4.277](https://code.google.com/p/vim/source/detail?r=373204662d82e894b27ee76bc3319bc62c91f6ae) | Using ":sign unplace *" may leave the cursor in the wrong position (Christian Brabandt) | ✗
+[7.4.278](https://code.google.com/p/vim/source/detail?r=b4ce0e1fb5a67d7d6b0bca8eaa3edc2e94a085d8) | list_remove() conflicts with function defined in Sun header file. | ✗
+[7.4.279](https://code.google.com/p/vim/source/detail?r=8e9db1f27a0063df023cc05a760fce73255dad24) | globpath() returns a string, making it difficult to get a list of matches. (Greg Novack) | ✗
+[7.4.280](https://code.google.com/p/vim/source/detail?r=daf7e98675cf395e1ef96f8040567affb2782a11) | When using a session file the relative position of the cursor is not restored if there is another tab. (Nobuhiro Takasaki) | ✗
+[7.4.281](https://code.google.com/p/vim/source/detail?r=24c90f1fec859b54cf2b854b98c4c9e614c46061) | When a session file has more than one tabpage and 'showtabline' is one the positions may be slightly off. | ✗
