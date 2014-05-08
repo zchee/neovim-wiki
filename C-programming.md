@@ -10,6 +10,10 @@ Subpages:
 
 [Conversion of signed variables to unsigned (in files not checked by `-Wconversion`)](https://github.com/neovim/neovim/pull/558#issuecomment-40863654)
 
+#### Scope
+
+It is **undefined behavior** to [access a pointer that was assigned in an inner scope](https://github.com/neovim/neovim/pull/619#discussion_r12261134).
+
 #### Types
 
 (to be filled in)
