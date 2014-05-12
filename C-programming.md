@@ -1,6 +1,7 @@
 Subpages:
 
 * [C refactorings and code-smells](C-Refactorings-and-Code-Smells-Catalog)
+* [Integer type semantics](Integer-types-refactoring-guidelines)
 
 ### C programming techniques and Neovim-specific guidance
 
