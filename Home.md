@@ -1,5 +1,3 @@
-Welcome to the Neovim wiki!
-
 ### For everyone
 
 - [Introduction](Introduction)
@@ -19,6 +17,7 @@ Welcome to the Neovim wiki!
 - [Merging patches from upstream vim](Merging-patches-from-upstream-vim)
 - [C programming techniques and Neovim-specific guidance](C-programming)
     - [C refactorings and code-smells](C-Refactorings-and-Code-Smells-Catalog)
+    - [Integer type semantics](Integer-types-refactoring-guidelines)
 - [Development documentation CI (Doxygen builds)](http://neovim.menkar.uberspace.de/devdoc/)
 
 #### Ideas
