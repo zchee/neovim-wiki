@@ -46,8 +46,19 @@ We should try to keep structs small, if possible. To that end:
 - For example: If a field has clear size semantics and there's no particular reason to impose a restriction on it, use `size_t`/`ptrdiff_t`.
 
 #### External interfaces
-- For functions interfacing other processes over a transport/serialization mechanism, fixed-width types are preferred.
-- For functions part of a public API, native types are preferred.
+- For functions interfacing other processes over a transport/serialization mechanism, fixed-width types are preferred. For example, in `msgpack_rpc.h`:
+
+  ```c
+bool msgpack_rpc_integer_result(uint32_t result,
+                                msgpack_object *req,
+                                msgpack_packer *res);
+```
+
+- For functions part of a public API, native types are preferred. For example, in a hypothetical `libneovim.h`:
+
+  ```c
+int neovim_get_current_buffer(void);
+```
 
 ### Type cascading
 Once you have some input variable you have to deal with (be it a struct field, a function parameter, or even a global), the issue arises whether to cascade that type in code dealing with it, or using a wider type if considered better for some reason. Typical example is, once you have a fixed-width struct field, code dealing with it (function variables/parameters) should also use fixed-width types, or could types we widened to some other enclosing type? In principle, we say:
