@@ -9,7 +9,7 @@
 
 ## Planned (or in discussion)
 
-Items in the [vNext milestone](https://github.com/neovim/neovim/issues?milestone=1&state=open) are being planned or considered; they have **no specific release target** and may be cancelled or deferred indefinitely.
+Items in the [vNext milestone](https://github.com/neovim/neovim/issues?milestone=6&state=open) are being planned or considered; they have **no specific release target** and may be cancelled or deferred indefinitely.
 
 ## Completed
 
