@@ -31,8 +31,16 @@ receive commands asynchronously, and this opens some interesting possibilities
 for plugins:
 
 - They can be written in any programming language.
-- They are sandboxed so there's less chance of the editor crashing due to bugs.
+    - Modern GUIs written in high-level languages that integrate better
+      with the operating system (e.g., C#/WPF on Windows or Ruby/Cocoa on OS X).
+- They are sandboxed so there's less chance of the editor (server) crashing due to bugs.
 - They can perform background work without blocking the editor
+- They can can emit **custom events** that may be handled directly by
+  GUIs (enables implementation of advanced features such as Sublime's minimap).
+- Multiple remote GUIs can attach/detach to share editing sessions.
+- Simplified headless testing.
+- Embedding the editor into other programs. In fact, a GUI can be seen as a
+  program that embeds neovim.
 
 #### UI programs
 
@@ -70,7 +78,7 @@ gui -> vim: {"id": 1, "method": "initClient",
              "params": {"size": {"rows": 20, "columns": 25}}}
 vim -> gui: {"id": 1, "result": {"clientId": 1}}
 vim -> gui: {"method": "redraw", 
-             "params": {"clientId": 1, "lines": {"5": "   Welcome to neovim!   "}}}
+             "params": {"clientId": 1, "lines": {"5": "Welcome to neovim!"}}}
 gui -> vim: {"id": 2, "method": "keyPress", 
              "params": {"keys": ["H", "e", "l", "l", "o"]}}
 vim -> gui: {"method": "redraw", 
