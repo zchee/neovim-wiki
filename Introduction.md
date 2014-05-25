@@ -46,7 +46,7 @@ motivations) that will be performed in the first iteration:
 * [Legacy support and compile-time features](#legacy)
 * [Platform-specific code](#platform)
 * [Development on GitHub](#development)
-* [New plugin architecture](https://github.com/neovim/neovim/wiki/Plugin-UI-architecture)
+* [New plugin architecture](#new-plugin-architecture)
 
 <a name="build"></a>
 ### Migrate to a CMake-based build
@@ -93,27 +93,27 @@ community will be covered.
 
 [libuv]: https://github.com/joyent/libuv
 
-<a name="plugins"></a>
+
 ### New plugin architecture
 
 All code supporting embedded scripting language interpreters will be replaced by
 a new plugin system that will support extensions written in any programming
 language.
 
-Compatibility layers will be provided for vim plugins written in some of the
+Compatibility layers will be provided for legacy Vim plugins written in some of the
 currently supported scripting languages such as Python or Ruby. Most plugins
-should work on neovim with little modifications, if any.
+should work on Neovim with little modifications, if any.
 
-This is how the new plugin system will work:
+This is how the Neovim plugin system works:
 
 - Plugins are long-running programs/jobs (coprocesses) that communicate with vim
   through stdin/stdout using msgpack-rpc or json-rpc.
-- Vim will discover and run these programs at startup, keeping two-way
+- Neovim discovers and runs these programs at startup, keeping two-way
   communication channels with each plugin through its lifetime.
 - Plugins will be able to listen to events and send commands to vim
   asynchronously.
 
-That shows a hypothetical conversation between neovim and a completion plugin
+That shows a hypothetical conversation between Neovim and a completion plugin
 which displays completions when the user presses Ctrl+Space. The above scheme
 gives neovim near limitless extensibility and also improves stability as plugins
 will be automatically isolated from the main executable.
