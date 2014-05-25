@@ -62,3 +62,17 @@ GUI program
          |
          `--> Plugin 3
 ```
+
+Hypothetical GUI session:
+
+```js
+gui -> vim: {"id": 1, "method": "initClient", 
+             "params": {"size": {"rows": 20, "columns": 25}}}
+vim -> gui: {"id": 1, "result": {"clientId": 1}}
+vim -> gui: {"method": "redraw", 
+             "params": {"clientId": 1, "lines": {"5": "   Welcome to neovim!   "}}}
+gui -> vim: {"id": 2, "method": "keyPress", 
+             "params": {"keys": ["H", "e", "l", "l", "o"]}}
+vim -> gui: {"method": "redraw", 
+             "params": {"clientId": 1, "lines": {"1": "Hello", "5": ""}}}
+```
