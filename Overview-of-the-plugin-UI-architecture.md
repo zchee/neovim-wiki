@@ -1,7 +1,5 @@
 (The features described here are not all implemented)
 
-## Overview of the plugin/UI architecture
-
 The msgpack-rpc API allow clients to connect and interact with a running
 Neovim instance. Here are some of the things that can be acomplished by clients:
 
