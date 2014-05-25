@@ -14,6 +14,7 @@
 
 - [Contributing](Contributing)
 - [Style / Conventions](http://neovim.org/development-wiki/style-guide/style-guide.xml)
+- [Plugin-architecture](https://github.com/neovim/neovim/wiki/Plugin-UI-architecture)
 - [Merging patches from upstream vim](Merging-patches-from-upstream-vim)
 - [C programming techniques and Neovim-specific guidance](C-programming)
     - [C refactorings and code-smells](C-Refactorings-and-Code-Smells-Catalog)
