@@ -33,8 +33,8 @@ to achieve the following goals:
 By achieving those goals new developers will soon join the community,
 consequently improving the editor for all users.
 
-It is important to emphasize that this is not a project to rewrite vim from
-scratch or transform it into an IDE (though the new features provided will
+It is important to emphasize that **this is not a project to rewrite Vim from
+scratch** or transform it into an IDE (though the new features provided will
 enable IDE-like distributions of the editor). The changes implemented here
 should have little impact on vim's editing model or vimscript in general. Most
 vimscript plugins should continue to work normally.
@@ -45,9 +45,8 @@ motivations) that will be performed in the first iteration:
 * [Migrate to a CMake-based build](#build)
 * [Legacy support and compile-time features](#legacy)
 * [Platform-specific code](#platform)
-* [New plugin architecture](#plugins)
-* [New GUI architecture](#gui)
 * [Development on GitHub](#development)
+* [New plugin architecture](https://github.com/neovim/neovim/wiki/Plugin-UI-architecture)
 
 <a name="build"></a>
 ### Migrate to a CMake-based build
@@ -113,20 +112,6 @@ This is how the new plugin system will work:
   communication channels with each plugin through its lifetime.
 - Plugins will be able to listen to events and send commands to vim
   asynchronously.
-
-This system will be built on top of a job control mechanism similar to the one
-implemented by the [job control patch][].
-
-Here's an idea of how a plugin session might work using [json-rpc][] (json-rpc version omitted):
-
-```js
-plugin -> neovim: {"id": 1, "method": "listenEvent", "params": {"eventName": "keyPressed"}}
-neovim -> plugin: {"id": 1, "result": true}
-neovim -> plugin: {"method": "event", "params": {"name": "keyPressed", "eventArgs": {"keys": ["C"]}}}
-neovim -> plugin: {"method": "event", "params": {"name": "keyPressed", "eventArgs": {"keys": ["Ctrl", "Space"]}}}
-plugin -> neovim: {"id": 2, "method": "showPopup", "params": {"size": {"width": 10, "height": 2} "position": {"column": 2, "line": 3}, "items": ["Completion1", "Completion2"]}}
-plugin -> neovim: {"id": 2, "result": true}}
-```
 
 That shows a hypothetical conversation between neovim and a completion plugin
 which displays completions when the user presses Ctrl+Space. The above scheme
