@@ -13,7 +13,7 @@ will always be new possibilities.
 
 It's possible to test the current API interactively using the python REPL and
 the [client library](https://github.com/neovim/python-client), but that isn't
-very useful for extending the editor. Normally a Neovim plugin will have the
+very useful for extending the editor. A typical Neovim plugin will have the
 following pseudo code running:
 
 ```
@@ -33,8 +33,8 @@ for plugins:
 
 #### UI programs
 
-UIs will be pretty much like other plugins, except that they work as a bridge
-between the user and the editor. Here's the pseudo code of a UI program:
+UIs are plugins that work as a bridge between the user and the editor. 
+Here's pseudo-code of a UI program:
 
 ```
 while true
