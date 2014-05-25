@@ -3,7 +3,7 @@ growing.  Even though the editor is about two decades old, people still extend
 and want to improve it, mostly using vimscript or one of the supported scripting
 languages.
 
-## Problem
+## Motivation
 
 Over its more than 20 years of life, vim has accumulated about 300k lines of
 scary C89 code that very few people understand or have the guts to mess with.
