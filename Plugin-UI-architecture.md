@@ -1,11 +1,14 @@
 (The features described here are not all implemented)
 
-The msgpack-rpc API allow clients to connect and interact with a running
-Neovim instance. Here are some of the things that can be acomplished by clients:
+
+A contributing factor to legacy Vim's huge codebase is the explicit support for
+dozens of widget toolkits for GUI interfaces. Neovim avoids that by delegating
+GUI implementation to external clients. The client(s) control the Neovim `nvim`
+process via a msgpack-rpc API, which allows them to:
 
 - Execute any vim command
 - Evaluate vimscript expressions
-- Manipulate buffers, windows and tabpages
+- Manipulate buffers, windows and tabs
 - Receive/handle editor events
 
 On top of that, the remote API has been designed for easy extensibility, so there
@@ -42,6 +45,20 @@ while true
 ```
 
 It's almost the same as a non-UI plugin, but they also have to listen
-for user events(keypresses, mouse clicks, etc) and translate these to the
-connected Neovim instance, which in turn will emit 'redraw' events to be
-propagated back to the user.
+for user events (keypresses, mouse clicks, etc) and translate these to the
+connected Neovim instance, which then emits 'redraw' events back to the user.
+
+The difference between plugins and GUIs is that plugins are started by
+Neovim, but Neovim is started by the GUI. Here's a sample process tree:
+
+```
+GUI program
+  |
+  `--> Neovim
+         |
+         `--> Plugin 1
+         |
+         `--> Plugin 2
+         |
+         `--> Plugin 3
+```
