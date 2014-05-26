@@ -13,7 +13,7 @@ process via a msgpack-rpc API, which allows them to:
 On top of that, the remote API has been designed for easy extensibility, so there
 will always be new possibilities. 
 
-**A Neovim plugin is any program that talks to `nvim` through the remote API** (which can be reached via any arbitrary transport mechanism: TCP socket, named pipe, stdin/stdout, ...).
+**A Neovim plugin is any program that talks to `nvim` through the remote API** (which can be reached via any arbitrary transport mechanism: TCP address, named pipe, stdin/stdout, ...).
 
 It's possible to test the current API interactively using the python REPL and
 the [client library](https://github.com/neovim/python-client), but that isn't
@@ -70,6 +70,12 @@ Neovim ------> GUI 1 (attach/detach to running instance)
   |
    `--> Plugin 3
 ```
+
+Here's an outline of the `nvim` startup process:
+
+1. start listening on a socket or TCP address (random unless overridden)
+2. read `.nvimrc`, which may set the UI program path or name
+3. start the UI program, passing the listen address.
 
 Hypothetical GUI session:
 
