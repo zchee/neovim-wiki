@@ -80,8 +80,7 @@ Here's an outline of the `nvim` startup process:
 3. start the UI program, passing the listen address.
 4. open two-way communication channels with all plugins
 
-Here's a hypothetical GUI session showing a conversation between Neovim and a completion plugin
-which displays completions upon <kbd>Ctrl+Space</kbd>:
+Here's a hypothetical GUI session:
 
 ```js
 gui -> vim: {"id": 1, "method": "initClient", 
