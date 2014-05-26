@@ -74,10 +74,14 @@ Neovim ------> GUI 1 (attach/detach to running instance)
 Here's an outline of the `nvim` startup process:
 
 1. start listening on a socket or TCP address (random unless overridden)
-2. read `.nvimrc`, which may set the UI program path or name
+    - UI may be specified as a command-line argument to the `nvim` 
+2. read `.nvimrc`
+    - discover plugins (which may include UI)
 3. start the UI program, passing the listen address.
+4. open two-way communication channels with all plugins
 
-Hypothetical GUI session:
+Here's a hypothetical GUI session showing a conversation between Neovim and a completion plugin
+which displays completions upon <kbd>Ctrl+Space</kbd>:
 
 ```js
 gui -> vim: {"id": 1, "method": "initClient", 
