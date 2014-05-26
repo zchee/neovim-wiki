@@ -60,9 +60,10 @@ connected Neovim instance, which then emits 'redraw' events back to the user.
 Here's a sample process tree:
 
 ```
-Neovim <------ GUI 1 (attach/detach to running instances using tcp sockets)
-  |  ^
-  |  `--------GUI 2 (sharing the same session with GUI 1)
+Neovim ------> GUI 1 (attach/detach to running instance)
+  |  |
+  |  `-------> GUI 2 (communicating on a different socket or transport 
+  |                   mechanism, but sharing the same session with GUI 1)
    `--> Plugin 1
   |
    `--> Plugin 2
