@@ -106,12 +106,6 @@ Moreover, GUIs are implemented as plugins, decoupled from the Neovim core.
 
 See the [Plugin Architecture](Plugin-UI-architecture) page for a detailed overview.
 
-This system can also easily emulate the current scripting language interfaces
-to vim. For example, a plugin can emulate the Python interface by running
-Python scripts sent by vim in its own context and by exposing a `vim` module
-with an API matching the current one. Calls to the API would simply be
-translated to json-rpc messages sent to vim.
-
 [job control patch]: https://groups.google.com/forum/#!topic/vim_dev/QF7Bzh1YABU
 [json-rpc]: http://www.jsonrpc.org/specification
 
