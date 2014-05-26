@@ -1,7 +1,6 @@
 (The features described here are not all implemented)
 
-
-A contributing factor to legacy Vim's huge codebase is the explicit support for
+A contributing factor to legacy Vim's huge codebase is its explicit support for
 dozens of widget toolkits for GUI interfaces. Neovim avoids that by delegating
 GUI implementation to external clients. The client(s) control the Neovim `nvim`
 process via a msgpack-rpc API, which allows them to:
@@ -12,7 +11,9 @@ process via a msgpack-rpc API, which allows them to:
 - Receive/handle editor events
 
 On top of that, the remote API has been designed for easy extensibility, so there
-will always be new possibilities.
+will always be new possibilities. 
+
+**A Neovim plugin is any program that talks to `nvim` through the remote API** (which can be reached via any arbitrary transport mechanism: TCP socket, named pipe, stdin/stdout, ...).
 
 It's possible to test the current API interactively using the python REPL and
 the [client library](https://github.com/neovim/python-client), but that isn't
@@ -52,23 +53,21 @@ while true
     handle(next_vim_or_user_event())
 ```
 
-It's almost the same as a non-UI plugin, but they also have to listen
+It's almost the same as a non-UI plugin, except they must also listen
 for user events (keypresses, mouse clicks, etc) and translate these to the
 connected Neovim instance, which then emits 'redraw' events back to the user.
 
-The difference between plugins and GUIs is that plugins are started by
-Neovim, but Neovim is started by the GUI. Here's a sample process tree:
+Here's a sample process tree:
 
 ```
-GUI program
+Neovim <------ GUI 1 (attach/detach to running instances using tcp sockets)
+  |  ^
+  |  `--------GUI 2 (sharing the same session with GUI 1)
+   `--> Plugin 1
   |
-  `--> Neovim
-         |
-         `--> Plugin 1
-         |
-         `--> Plugin 2
-         |
-         `--> Plugin 3
+   `--> Plugin 2
+  |
+   `--> Plugin 3
 ```
 
 Hypothetical GUI session:
