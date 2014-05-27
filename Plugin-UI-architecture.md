@@ -55,14 +55,14 @@ while true
 
 It's almost the same as a non-UI plugin, except they must also listen
 for user events (keypresses, mouse clicks, etc) and translate these to the
-connected Neovim instance, which then emits 'redraw' events back to the user.
+connected Neovim instance, which then emits *redraw* events back to the user.
 
 Here's a sample process tree:
 
 ```
 Neovim ------> GUI 1 (attach/detach to running instance)
   |  |
-  |   `-------> GUI 2 (communicating on a different socket or transport 
+  |   `------> GUI 2 (communicating on a different socket or transport 
   |                   mechanism, but sharing the same session with GUI 1)
    `--> Plugin 1
   |
