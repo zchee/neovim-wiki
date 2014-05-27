@@ -62,7 +62,7 @@ Here's a sample process tree:
 ```
 Neovim ------> GUI 1 (attach/detach to running instance)
   |  |
-  |  `-------> GUI 2 (communicating on a different socket or transport 
+  |   `-------> GUI 2 (communicating on a different socket or transport 
   |                   mechanism, but sharing the same session with GUI 1)
    `--> Plugin 1
   |
@@ -74,7 +74,7 @@ Neovim ------> GUI 1 (attach/detach to running instance)
 Here's an outline of the `nvim` startup process:
 
 1. start listening on a socket or TCP address (random unless overridden)
-    - UI may be specified as a command-line argument to the `nvim` 
+    - UI may be specified as a command-line argument to `nvim` 
 2. read `.nvimrc`
     - discover plugins (which may include UI)
 3. start the UI program, passing the listen address.
