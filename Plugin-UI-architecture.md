@@ -25,8 +25,8 @@ while true
     handle(next_vim_event())
 ```
 
-If you think about it, it's pretty much how vim plugins currently work: They
-register autocommands to be executed whenever something interesting happen. The
+If you think about it, that's pretty much how legacy Vim plugins currently work: They
+register autocommands to be executed whenever something interesting happens. The
 difference is that Neovim can also propagate events to other processes and
 receive commands asynchronously, and this opens some interesting possibilities
 for plugins:
