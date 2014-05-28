@@ -108,7 +108,7 @@ Version  | Description | Merged
 [7.4.264](https://code.google.com/p/vim/source/detail?r=00acac0af680c2d8c82db5258474b121a5908926)  | Can't define a function starting with "g:".  Can't assign a funcref to a buffer-local variable. ([#621](https://github.com/neovim/neovim/pull/621)) | ✔
 [7.4.265](https://code.google.com/p/vim/source/detail?r=8ec9d2196bee0c5108f2d2c196a660a7f4e5f29f)  | Can't call a global function with "g:" in an expression. ([#641](https://github.com/neovim/neovim/pull/641))| ✔
 [7.4.266](https://code.google.com/p/vim/source/detail?r=8f84e906d454a95d3167678a745dde9de442b604)  |Test 62 fails. ([#647](https://github.com/neovim/neovim/pull/647))| ✔
-[7.4.267](https://code.google.com/p/vim/source/detail?r=75f222d67cea335efbe0274de6340dba174c1e7e)  |The '[ mark is in the wrong position after "gq". (Ingo Karkat) | ✗
+[7.4.267](https://code.google.com/p/vim/source/detail?r=75f222d67cea335efbe0274de6340dba174c1e7e)  |The '[ mark is in the wrong position after "gq". (Ingo Karkat) ([#756](https://github.com/neovim/neovim/pull/756))| ✔
 [7.4.268](https://code.google.com/p/vim/source/detail?r=1a5ed2626b26a982e307a206572121a557adf709)  |Using exists() on a funcref for a script-local function does not work. ([#651](https://github.com/neovim/neovim/pull/651))  | ✔
 [7.4.269](https://code.google.com/p/vim/source/detail?r=81c26975e8f9dc7435353581346542409403f296)  |CTRL-U in Insert mode does not work after using a cursor key. (Pine Wu) ([#648](https://github.com/neovim/neovim/pull/648))| ✔
 [7.4.270](https://code.google.com/p/vim/source/detail?r=c519c446c5488bfd48c93a03efae4ae3e0c1f162) | Comparing pointers instead of the string they point to. | N/A
