@@ -55,7 +55,7 @@ From [Garrido 2000] **2.1 Proposal for a List of C Refactorings** (page
 
 ### Complex refactorings
  
- * **Group a set of variables in a new structure:** legacy systems often overuse
+ * **Group a set of variables in a new structure:** (ex: #775) legacy systems often overuse
 	global variables, which make a program non-reusable. Most changes, as minor
 	as they can be, require global update. However, programmers use global
 	variables when they otherwise should pass many of them as parameters.
@@ -120,7 +120,7 @@ See [the list of functions](http://pastebin.com/TmHJuyCC) from neovim's source c
 ### Code Smells Between Classes (between .c files)
 
  * ~~**Alternative Classes with Different Interfaces**~~
- * **Primitive Obsession**
+ * **Primitive Obsession** #775
  * ~~**Data Class**~~
  * **Data Clumps**
  * ~~**Refused Bequest**~~
