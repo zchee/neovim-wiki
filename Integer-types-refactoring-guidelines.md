@@ -23,15 +23,16 @@ That said, here it goes the advice:
 - `long` with size semantics:
     * signedness conversion easy --> `size_t` <br/>
        (check for signedness conversion usual problems).
-    * signedness conversion difficult --> `ptrdiff_t`  <br/>
+    * signedness conversion difficult --> `ssize`  <br/>
        (for example, complicated code involving subtractions)
+       Note: `ssize` is a project-wide typedef defined in `src/nvim/types.h`.
 - `long` without size semantics --> `int64_t`
 
 ### Int types
 - `int` with size semantics:
     * signedness conversion easy --> `size_t` <br/>
        (check for signedness conversion usual problems).
-    * signedness conversion difficult --> `ptrdiff_t` <br/>
+    * signedness conversion difficult --> `ssize` <br/>
        (for example, complicated code involving substractions) 
 - `int` without size semantics --> `int`
 
@@ -43,7 +44,7 @@ We should try to keep structs small, if possible. To that end:
 - Use fixed width types (`int32_t`, `uint32_t`, etc.), if possible. This is:
 - Do that only if you can be sure that the specified width will always be enough. So:
 - Please don't impose arbitrary/unneeded limits on fields. 
-- For example: If a field has clear size semantics and there's no particular reason to impose a restriction on it, use `size_t`/`ptrdiff_t`.
+- For example: If a field has clear size semantics and there's no particular reason to impose a restriction on it, use `size_t`/`ssize`.
 
 #### External interfaces
 - For functions interfacing other processes over a transport/serialization mechanism, fixed-width types are preferred. For example, in `msgpack_rpc.h`:
@@ -71,8 +72,8 @@ We find [this](http://gustedt.wordpress.com/2013/07/15/a-praise-of-size_t-and-ot
 In loops, we have a *counter* variable and a *limit* expression (*condition* being a comparison between *counter* and *limit*). Issues can arise mainly because of implicit conversions in *limit* expression, as well as mixing different-signedness types in *condition* (i.e., when *counter* and *limit* have types of different signedness). To avoid/reduce implicit conversion and type-signedness-mixing problems:
 
 - If possible, try to avoid different-signedness types in variables within *limit* expression (many errors are because implicit conversion from signed type to unsigned one).
-- In principle, *limit* expression's type determines *counter*'s type. If *limit* expression is `size_t`, so is counter. If *limit* expression is `ptrdiff_t`, so is counter. And so on.
+- In principle, *limit* expression's type determines *counter*'s type. If *limit* expression is `size_t`, so is counter. If *limit* expression is `ssize`, so is counter. And so on.
 - If resulting type of *counter* and *limit* is unsigned:
     * Check *limit* expression  for frontier values (e.g. when size is zero).
     * Avoid *condition* using substractions (unless guarded so that it can be proved for result to always be positive). Prefer equivalent condition using additions on the other side.
-- As an optimization, you could use plain `int` instead of `ptrdiff_t`, or `unsigned int` instead of `size_t`, but only if you are sure that those types will be enough always. Please try not to impose arbitrary/unneeded limits.
+- As an optimization, you could use plain `int` instead of `ssize`, or `unsigned int` instead of `size_t`, but only if you are sure that those types will be enough always. Please try not to impose arbitrary/unneeded limits.
