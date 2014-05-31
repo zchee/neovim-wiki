@@ -142,7 +142,7 @@ make test
 
 ### Installing
 
-After building, the NeoVim binary file should be located in `./bin/nvim`.
+After building, the NeoVim binary file should be located in `./build/bin/nvim`.
 
 If you want to install the binary file in a specific location in your system (for example, ~/usr/bin/nvim):
 
