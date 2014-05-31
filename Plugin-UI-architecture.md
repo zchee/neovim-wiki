@@ -36,7 +36,7 @@ for plugins:
       with the operating system (e.g., C#/WPF on Windows or Ruby/Cocoa on OS X).
 - They are sandboxed so there's less chance of the editor (server) crashing due to bugs.
 - They can perform background work without blocking the editor
-- They can can emit **custom events** that may be handled directly by
+- They can emit **custom events** that may be handled directly by
   GUIs (enables implementation of advanced features such as Sublime's minimap).
 - Multiple remote GUIs can attach/detach to share editing sessions.
 - Simplified headless testing.
