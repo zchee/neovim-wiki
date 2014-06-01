@@ -25,8 +25,9 @@ rebuild:
 	rm -rf build && make
 ```
 
-# YouCompleteMe
-Those browsing through the source or working on PRs might find [this](https://gist.github.com/tarruda/8736305) useful.
+# Navigating the code
+
+- The `contrib/` folder contains a [YouCompleteMe configuration](https://github.com/neovim/neovim/tree/master/contrib/YouCompleteMe) tailored to Neovim.
 
 # Code Linting
 If you are using Syntastic you can use https://gist.github.com/gilligan/9326904 to add clint.py as checker
