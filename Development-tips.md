@@ -1,14 +1,25 @@
+# Building Neovim
+
+### Custom Makefile 
+You can customize the build process locally on your machine by editing `local.mk` which is referenced at the top of the main `Makefile` (and listed in `.gitignore`). **A new target in `local.mk` overrides the default make-target.**
+
+Here is a sensible example which adds a target to force a rebuild and doesn't override the default-target:
+```make
+all:
+
+rebuild:
+	rm -rf build && make
+```
+
 # YouCompleteMe
-Those browsing through the source or working on PRs might find [this](https://gist.github.com/tarruda/8736305) useful 
+Those browsing through the source or working on PRs might find [this](https://gist.github.com/tarruda/8736305) useful.
 
 # Code Linting
 If you are using Syntastic you can use https://gist.github.com/gilligan/9326904 to add clint.py as checker
 for C files. Note that clint.py needs to be in your path and that you will have to modify g:syntastic_c_checkers because it'll otherwise use gcc or make as default. See the syntastic documentation for details on that.
 
-# Debugging neovim
-**THIS PAGE NEEDS ATTENTION**
+# Debugging
 
-## GNU/Linux
 ### Using the vim-lldb plugin
 Get the plugin: https://github.com/gilligan/vim-lldb
 In order to get started:
@@ -17,32 +28,31 @@ In order to get started:
   3. :Ltarget attach nvim
   4. Go to some line you are interested in and do :Lbreakpoint
 
-### Terminal using `gdb`
+### Using `gdb` in the terminal
 Use two terminals, one for the debugging session, and one for the neovim instance that will be debugged.
 In the terminal for `neovim`, start a `gdbserver` instance on a specific port like this:
 
-`gdbserver :666 build/nvim`
+    gdbserver :666 build/nvim
 
 This will start a remote debugging session for the binary `build/nvim` on port `666`.
 
 You then need to attach to this debugging session in the other terminal:
 
-`gdb build/nvim`
+    gdb build/nvim
 
-Once you entered `gdb`, you need to attach to the remote session:
+Once you've entered `gdb`, you need to attach to the remote session:
 
-`target remote localhost:666`
+    target remote localhost:666
 
 You are now attached to the remote debugging session. 
 Try setting a breakpoint and start the application:
 
-`br main` to set the breakpoint.
-
-`c` to continue running the application
+- `br main` to set the breakpoint.
+- `c` to continue running the application
 
 You can now step through source, and you'll see the results in the other window.
 
-### Tmux
+### tmux
 It might be convenient to use your own makefile to quickly start debugging sessions using the above `gdbserver` method. This example will create the debugging session when you type `make debug`.
 This assumes that you have `Makefile` in your github projects parent directory.
 
@@ -62,18 +72,9 @@ debug: dbg-start dbg-attach
 ```
 
 Here `gdb_start.cmd` includes `gdb` commands to be called when the debugger starts. It needs to attach to the server started in the `dbg-start` rule. Here's an example:
+
 ```
 target remote localhost:666
 br main
 ```
 
-# Customizing the build process
-You can customize the build process locally on your machine by editing `local.mk` which is included at the top of the main `Makefile` (and listed in `.gitignore`). Be aware that a new target in `local.mk` overrides the default make-target.
-
-Here is a sensible example which adds a target to force a rebuild and doesn't override the default-target:
-```make
-all:
-
-rebuild:
-	rm -rf build && make
-```
