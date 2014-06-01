@@ -1,7 +1,5 @@
 # Building Neovim
 
-### Build Commands
-
 If you just pulled the Neovim source and want to get a working `nvim` binary,
 
     make
@@ -10,7 +8,7 @@ pulls down third-party dependencies (such as libuv and luajit) into `.deps/`, an
 
 Now that you have dependencies, you can try other build targets. Some suggestions are below.
 
-#### Building a "release" build (optimized, NDEBUG)
+### Building a "release" build (optimized, NDEBUG)
 
     rm build/ ; make clean && make CMAKE_BUILD_TYPE=MinSizeRel
 
