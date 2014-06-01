@@ -8,11 +8,23 @@ pulls down third-party dependencies (such as libuv and luajit) into `.deps/`, an
 
 Now that you have dependencies, you can try other build targets. Some suggestions are below.
 
-### Building a "release" build (optimized, NDEBUG)
+### Run the legacy integration tests
 
-    rm build/ ; make clean && make CMAKE_BUILD_TYPE=MinSizeRel
+    make test
+
+### Run the unit tests
+
+    make unittest
+
+### Build a "release" build (optimized, NDEBUG)
+
+    rm -rf build/ ; make clean && make CMAKE_BUILD_TYPE=MinSizeRel
 
 "MinSizeRel" is CMake jargon for "minimum-sized release". 
+
+Alternative:
+
+    rm -rf build/ ; make cmake CFLAGS='-DSTARTUPTIME -DNDEBUG -Werror' && VERBOSE=1 DEBUG=0 make
 
 ### Custom Makefile 
 You can customize the build process locally on your machine by creating `local.mk` which is referenced at the top of the main `Makefile` (and listed in `.gitignore`). **A new target in `local.mk` overrides the default make-target.**
