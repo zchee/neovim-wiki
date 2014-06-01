@@ -1,9 +1,25 @@
 # Building Neovim
 
-### Custom Makefile 
-You can customize the build process locally on your machine by editing `local.mk` which is referenced at the top of the main `Makefile` (and listed in `.gitignore`). **A new target in `local.mk` overrides the default make-target.**
+### Build Commands
 
-Here is a sensible example which adds a target to force a rebuild and doesn't override the default-target:
+If you just pulled the Neovim source and want to get a working `nvim` binary,
+
+    make
+
+pulls down third-party dependencies (such as libuv and luajit) into `.deps/`, and builds them. If you're missing a dependency such as `libtool`, the configure script will let you know, then you try `make` again.  
+
+Now that you have dependencies, you can try other build targets. Some suggestions are below.
+
+#### Building a "release" build (optimized, NDEBUG)
+
+    rm build/ ; make clean && make CMAKE_BUILD_TYPE=MinSizeRel
+
+"MinSizeRel" is CMake jargon for "minimum-sized release". 
+
+### Custom Makefile 
+You can customize the build process locally on your machine by creating `local.mk` which is referenced at the top of the main `Makefile` (and listed in `.gitignore`). **A new target in `local.mk` overrides the default make-target.**
+
+Here's a sample `local.mk` which adds a target to force a rebuild but *does not* override the default-target:
 ```make
 all:
 
