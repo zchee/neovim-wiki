@@ -51,8 +51,7 @@ motivations) that will be performed in the first iteration:
 <a name="build"></a>
 ### Migrate to a CMake-based build
 
-The source tree has dozens (if not hundreds) of files dedicated to building vim
-with on various platforms with different configurations, and many of these files
+The source tree has dozens (if not hundreds) of files dedicated to building vim on various platforms with different configurations, and many of these files
 look abandoned or outdated. Most users don't care about selecting individual
 features and just compile using `--with-features=huge`, which still generates an
 executable that is small enough even for lightweight systems by today's
