@@ -26,7 +26,7 @@ Alternative:
 
     rm -rf build/ ; make cmake CFLAGS='-Wno-error -DNDEBUG -O3 -U_FORTIFY_SOURCE' && make
 
-- `-U_FORTIFY_SOURCE` (or `-D_FORTIFY_SOURCE=1`) is required because of #223.
+- `-U_FORTIFY_SOURCE` (or `-D_FORTIFY_SOURCE=1`) is required because of [#223](https://github.com/neovim/neovim/issues/223).
 
 ### Set `VERBOSE` to see the full build output
 
