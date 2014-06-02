@@ -24,7 +24,9 @@ Now that you have dependencies, you can try other build targets. Some suggestion
 
 Alternative:
 
-    rm -rf build/ ; make cmake CFLAGS='-DNDEBUG -O3' && DEBUG=0 make
+    rm -rf build/ ; make cmake CFLAGS='-Wno-error -DNDEBUG -O3 -U_FORTIFY_SOURCE' && make
+
+- `-U_FORTIFY_SOURCE` (or `-D_FORTIFY_SOURCE=1`) is required because of #223.
 
 ### Set `VERBOSE` to see the full build output
 
