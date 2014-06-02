@@ -20,7 +20,7 @@ Now that you have dependencies, you can try other build targets. Some suggestion
 
     rm -rf build/ ; make clean && make CMAKE_BUILD_TYPE=MinSizeRel
 
-"MinSizeRel" is CMake jargon for "minimum-sized release". 
+`MinSizeRel` is CMake jargon for "minimum-sized release".  `Release` and `RelWithDebInfo` are also choices.
 
 Alternative:
 
