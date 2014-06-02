@@ -24,7 +24,11 @@ Now that you have dependencies, you can try other build targets. Some suggestion
 
 Alternative:
 
-    rm -rf build/ ; make cmake CFLAGS='-DSTARTUPTIME -DNDEBUG -Werror' && VERBOSE=1 DEBUG=0 make
+    rm -rf build/ ; make cmake CFLAGS='-DNDEBUG -O3' && DEBUG=0 make
+
+### Set `VERBOSE` to see the full build output
+
+    rm -rf build/ ; make cmake && VERBOSE=1 DEBUG=0 make
 
 ### Custom Makefile 
 You can customize the build process locally on your machine by creating `local.mk` which is referenced at the top of the main `Makefile` (and listed in `.gitignore`). **A new target in `local.mk` overrides the default make-target.**
