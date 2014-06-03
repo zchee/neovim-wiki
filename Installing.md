@@ -22,7 +22,7 @@ Package can be installed from [AUR](https://aur.archlinux.org/packages/neovim-gi
 <a name="for-debianubuntu"></a>
 #### Ubuntu/Debian
 
-    sudo apt-get install libtool autoconf automake cmake libncurses5-dev g++ pkg-config libuv-dev libmsgpack-dev
+    sudo apt-get install libtool autoconf automake cmake libncurses5-dev g++ pkg-config
 
 <a name="for-centos-rhel"></a>
 #### CentOS/RHEL/Fedora
