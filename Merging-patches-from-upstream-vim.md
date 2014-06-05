@@ -25,15 +25,10 @@ Commit message should include:
 - the original Vim patch commit message, including the author
     
 
-Table of patches
+Table of Patches
 ----------------
 
-## Legend ##
-
-✔ Done
-✗ To do (or won't patch ?)
-N/A Won't patch
-RFC Request for comments
+✔ Done &nbsp; ✗ To do &nbsp; `N/A` Won't patch &nbsp; `RFC` Request for comments
 
 Version  | Description | Merged
 ------------------- | --------------- | ----------
