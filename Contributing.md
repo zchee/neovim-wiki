@@ -15,6 +15,17 @@ Check this [refactoring catalog](https://github.com/neovim/neovim/wiki/C-Refacto
 
 If you make changes to documentation or files that won't affect the current build status, add [ci skip] to the  commit message. See [this](http://docs.travis-ci.com/user/how-to-skip-a-build/) for more details.
 
+## Coverity
+
+[Coverity Scan](https://scan.coverity.com/) is used to detect defects in the
+code. Check out the [Neovim Coverity](https://scan.coverity.com/projects/2227)
+project to see the info on the latest build.
+
+If you want to see the defects and fix them, you need to request access at the
+**Contributor** level. An Admin will grant you permission as soon as they are
+able. If you join as an **Observer/User**, you won't get to see the defects,
+it'll just add Neovim to your [Dashboard](https://scan.coverity.com/dashboard).
+
 ## Non-programming ways to contribute
 
 There are plenty of stuff you can contribute to without being a hardcore C programmer.
