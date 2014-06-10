@@ -26,6 +26,10 @@ If you want to see the defects and fix them, you need to request access at the
 able. If you join as an **Observer/User**, you won't get to see the defects,
 it'll just add Neovim to your [Dashboard](https://scan.coverity.com/dashboard).
 
+### Coverity Conventions
+
+If you decide to fix a Coverity defect, follow this convention for committing to your branch before you issue the pull request: `Coverity/<id>: <description of what fixed the defect>` where `<id>` is the Coverity ID. The id is also called the CID.
+
 ## Non-programming ways to contribute
 
 There are plenty of stuff you can contribute to without being a hardcore C programmer.
