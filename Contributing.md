@@ -30,7 +30,7 @@ it'll just add Neovim to your [Dashboard](https://scan.coverity.com/dashboard).
 
 If you decide to fix a Coverity defect, follow this convention for your commit messages when you issue the pull request:
 ```
-Coverity/<id>: <description of what fixed the defect>
+coverity/<id>: <description of what fixed the defect>
 ```
 
 where `<id>` is the Coverity ID. The id is also called the CID. For an example, take a look at [Issue #804](https://github.com/neovim/neovim/pull/804).
