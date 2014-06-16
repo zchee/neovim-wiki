@@ -14,30 +14,30 @@ use the `CTRL-]` command.  Use `CTRL-T` or `CTRL-O` to jump back.
 To jump to a file, move the cursor on its name and use the `gf` command.
 
 Most code can be found in a file with an obvious name (incomplete list):
-*   [buffer.c](../blob/master/src/buffer.c)	   manipulating buffers (loaded files)
-*   [diff.c](../blob/master/src/diff.c)	   diff mode (vimdiff)
-*   [eval.c](../blob/master/src/eval.c)	   expression evaluation
-*   [fileio.c](../blob/master/src/fileio.c)	   reading and writing files
-*   [fold.c](../blob/master/src/fold.c)	   folding
-*   [getchar.c](../blob/master/src/getchar.c)  getting characters and key mapping
-*   [mark.c](../blob/master/src/mark.c)	   marks
-*   [mbyte.c](../blob/master/src/mbyte.c)	   multi-byte character handling
-*   [memfile.c](../blob/master/src/memfile.c)  storing lines for buffers in a swapfile
-*   [memline.c](../blob/master/src/memline.c)  storing lines for buffers in memory
-*   [menu.c](../blob/master/src/menu.c)	   menus
-*   [message.c](../blob/master/src/message.c)  (error) messages
-*   [ops.c](../blob/master/src/ops.c)          handling operators (`d`, `y`, `p`)
-*   [option.c](../blob/master/src/option.c)	   options
-*   [quickfix.c](../blob/master/src/quickfix.c) quickfix commands (`:make`, `:cn`)
-*   [regexp.c](../blob/master/src/regexp.c)	   pattern matching
-*   [screen.c](../blob/master/src/screen.c)	   updating the windows
-*   [search.c](../blob/master/src/search.c)	   pattern searching
-*   [spell.c](../blob/master/src/spell.c)	   spell checking
-*   [syntax.c](../blob/master/src/syntax.c)	   syntax and other highlighting
-*   [tag.c](../blob/master/src/tag.c)	   tags
-*   [term.c](../blob/master/src/term.c)	   terminal handling, termcap codes
-*   [undo.c](../blob/master/src/undo.c)	   undo and redo
-*   [window.c](../blob/master/src/window.c)	   handling split windows
+*   [buffer.c](../blob/master/src/nvim/buffer.c)	   manipulating buffers (loaded files)
+*   [diff.c](../blob/master/src/nvim/diff.c)	   diff mode (vimdiff)
+*   [eval.c](../blob/master/src/nvim/eval.c)	   expression evaluation
+*   [fileio.c](../blob/master/src/nvim/fileio.c)	   reading and writing files
+*   [fold.c](../blob/master/src/nvim/fold.c)	   folding
+*   [getchar.c](../blob/master/src/nvim/getchar.c)  getting characters and key mapping
+*   [mark.c](../blob/master/src/nvim/mark.c)	   marks
+*   [mbyte.c](../blob/master/src/nvim/mbyte.c)	   multi-byte character handling
+*   [memfile.c](../blob/master/src/nvim/memfile.c)  storing lines for buffers in a swapfile
+*   [memline.c](../blob/master/src/nvim/memline.c)  storing lines for buffers in memory
+*   [menu.c](../blob/master/src/nvim/menu.c)	   menus
+*   [message.c](../blob/master/src/nvim/message.c)  (error) messages
+*   [ops.c](../blob/master/src/nvim/ops.c)          handling operators (`d`, `y`, `p`)
+*   [option.c](../blob/master/src/nvim/option.c)	   options
+*   [quickfix.c](../blob/master/src/nvim/quickfix.c) quickfix commands (`:make`, `:cn`)
+*   [regexp.c](../blob/master/src/nvim/regexp.c)	   pattern matching
+*   [screen.c](../blob/master/src/nvim/screen.c)	   updating the windows
+*   [search.c](../blob/master/src/nvim/search.c)	   pattern searching
+*   [spell.c](../blob/master/src/nvim/spell.c)	   spell checking
+*   [syntax.c](../blob/master/src/nvim/syntax.c)	   syntax and other highlighting
+*   [tag.c](../blob/master/src/nvim/tag.c)	   tags
+*   [term.c](../blob/master/src/nvim/term.c)	   terminal handling, termcap codes
+*   [undo.c](../blob/master/src/nvim/undo.c)	   undo and redo
+*   [window.c](../blob/master/src/nvim/window.c)	   handling split windows
 	
 
 ## Important variables
@@ -49,7 +49,7 @@ The current window is `curwin`.  The current buffer is `curbuf`.  These point
 to structures with the cursor position in the window, option values, the file
 name, etc.
 
-All the global variables are declared in [globals.h](../blob/master/src/globals.h).
+All the global variables are declared in [globals.h](../blob/master/src/nvim/globals.h).
 
 
 ## The main loop
@@ -66,7 +66,7 @@ this.  It also handles mapping.
 Updating the screen is mostly postponed until a command or a sequence of
 commands has finished.  The work is done by `update_screen()`, which calls
 `win_update()` for every window, which calls `win_line()` for every line.
-See the start of [screen.c](../blob/master/src/screen.c) for more explanations.
+See the start of [screen.c](../blob/master/src/nvim/screen.c) for more explanations.
 
 
 ## Command-line mode
@@ -86,7 +86,7 @@ command.  It also takes care of while loops.
 `do_one_cmd()` parses the range and generic arguments and puts them in the
 exarg_t and passes it to the function that handles the command.
 
-The `:` commands are listed in [ex_cmds_defs.h](../blob/master/src/ex_cmds_defs.h). 
+The `:` commands are listed in [ex_cmds_defs.h](../blob/master/src/nvim/ex_cmds_defs.h). 
 The third entry of each item is the
 name of the function that handles the command.  The last entry are the flags
 that are used for the command.
@@ -98,7 +98,7 @@ The Normal mode commands are handled by the `normal_cmd()` function.  It also
 handles the optional count and an extra character for some commands.  These
 are passed in a `cmdarg_t` to the function that handles the command.
 
-There is a table `nv_cmds` in [normal.c](../blob/master/src/normal.c) which 
+There is a table `nv_cmds` in [normal.c](../blob/master/src/nvim/normal.c) which 
 lists the first character of every
 command.  The second entry of each item is the name of the function that
 handles the command.
@@ -113,7 +113,7 @@ returns when leaving Insert mode.
 
 ## Options
 
-There is a list with all option names in [option.c](../blob/master/src/option.c),
+There is a list with all option names in [option.c](../blob/master/src/nvim/option.c),
 called `options[]`.
 
 # Code Overview (Visualization)
