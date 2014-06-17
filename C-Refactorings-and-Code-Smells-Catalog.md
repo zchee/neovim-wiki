@@ -11,7 +11,7 @@ prescription for the problems that may be found in code. Be flexible.
 A catalog of C refactorings that may guide us while improving neovim's
 codebase.
 
-From [Garrido 2000] **2.1 Proposal for a List of C Refactorings** (page
+From [Garrido 2000][] **2.1 Proposal for a List of C Refactorings** (page
 17)
 
 ### Adding a Program Entity
@@ -83,7 +83,7 @@ From [Garrido 2000] **2.1 Proposal for a List of C Refactorings** (page
 
 ## Code Smells
 
-List of code smells [Jeff Atwood] that may indicate solvable problems and
+List of code smells by [Jeff Atwood][] that may indicate solvable problems and
 inspire neovim contributors. This list was made for object oriented programming,
 but it's not hard to see how most of them apply to C.
 
@@ -158,5 +158,5 @@ See #690 for an example of what it can do.
 TODO
 
 
- - [Garrido, 2000] http://www.lifia.info.unlp.edu.ar/papers/2000/Garrido2000.pdf
- - [Jeff Atwood] http://blog.codinghorror.com/code-smells/
+[Garrido 2000]: http://www.lifia.info.unlp.edu.ar/papers/2000/Garrido2000.pdf
+[Jeff Atwood]: http://blog.codinghorror.com/code-smells/
