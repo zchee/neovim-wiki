@@ -17,7 +17,7 @@
     - [Moonscript code style](Moonscript-code-style)
     - [Merging patches from upstream vim](Merging-patches-from-upstream-vim)
 - [Development tips](Development-tips)
-- [Style / Conventions](http://neovim.org/development-wiki/style-guide/style-guide.xml)
+- [Style / Conventions](http://neovim.org/develop/style-guide.xml)
 - [Plugin Architecture](https://github.com/neovim/neovim/wiki/Plugin-UI-architecture)
 - [C programming techniques and Neovim-specific guidance](C-programming)
     - [C refactorings and code-smells](C-Refactorings-and-Code-Smells-Catalog)
