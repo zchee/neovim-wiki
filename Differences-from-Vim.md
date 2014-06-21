@@ -1,11 +1,22 @@
-This page outlines in what ways Neovim currently differs from Vim.
+This page describes notable differences in Neovim, compared to Vim.
 
-## Config files
+## Configuration
 * Use `.nvimrc` instead of `.vimrc` for storing configuration.
 * Use `.nvim` instead of `.vim` to store configuration files.
 
 ## Plugins
-Neovim has a new [plugin architecture](Plugin-UI-architecture). A compatibility layer is being developed to support legacy Vim plugins.
+
+Neovim has a new [plugin architecture](Plugin-UI-architecture).
+
+## Plugin compatibility layer [#872](https://github.com/neovim/neovim/pull/872)
+
+A compatibility layer is provided to support legacy Vim plugins that depend on
+`if_python`, `if_lua`, `if_ruby` (commands `:python`/`:pyfile`/`:pydo`, `:lua`/`:luafile`/`:luado`, `:ruby`/`:rubyfile`/`:rbydo`, ...), but it has some differences:
+
+- Code runs in another process.
+- `channel_send_call()` blocks until the client responds.
+- There's a hardcoded 3 second timeout before `nvim` assumes the client is stuck (for example, `python << EOF while True: pass EOF` would only block for 3 seconds).
+- The call stack depth is limited to 20 (this should be more than enough for any use case).
 
 ## Removed legacy features
 
