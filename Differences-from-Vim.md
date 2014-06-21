@@ -11,7 +11,7 @@ Neovim has a new [plugin architecture](Plugin-UI-architecture).
 ## Plugin compatibility layer [#872](https://github.com/neovim/neovim/pull/872)
 
 A compatibility layer is provided to support legacy Vim plugins that depend on
-`if_python`, `if_lua`, `if_ruby` (commands `:python`/`:pyfile`/`:pydo`, `:lua`/`:luafile`/`:luado`, `:ruby`/`:rubyfile`/`:rbydo`, ...), but it has some differences:
+`if_python`, `if_lua`, `if_ruby` (commands `:python`/`:pyfile`/`:pydo`, etc.), but it has some differences:
 
 - Code runs in another process.
 - `channel_send_call()` blocks until the client responds.
