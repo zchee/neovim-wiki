@@ -121,7 +121,7 @@ Version  | Description | Merged
 [7.4.282](https://code.google.com/p/vim/source/detail?r=6d0a1132dd71c7f55f7ed53fe99e97c79bfd05a4) | Test 97 fails on Mac. ([#747](https://github.com/neovim/neovim/pull/747))| ✔
 [7.4.283](https://code.google.com/p/vim/source/detail?r=aa99d04fa7e288a8580e3a5d4a9d6433a1572b48) | Compiler warning about unused variable. (Charles Cooper) | ✗
 [7.4.284](https://code.google.com/p/vim/source/detail?r=3c35ca9666e88a8024af6dab585b8e79ab295f83) | Setting 'langmap' in the modeline can cause trouble.  E.g. mapping	    ":" breaks many commands. (Jens-Wolfhard Schicke-Uffmann) ([#748](https://github.com/neovim/neovim/pull/748))| ✔
-[7.4.285](https://code.google.com/p/vim/source/detail?r=5cb1828fd0056de3c166e71fbafc67a74c57d7b1) | When 'relativenumber' is set and deleting lines or undoing that,	    line numbers are not always updated. (Robert Arkwright) | ✗
+[7.4.285](https://code.google.com/p/vim/source/detail?r=5cb1828fd0056de3c166e71fbafc67a74c57d7b1) | When 'relativenumber' is set and deleting lines or undoing that,	    line numbers are not always updated. (Robert Arkwright) ([#749](https://github.com/neovim/neovim/pull/749))| ✔
 [7.4.286](https://code.google.com/p/vim/source/detail?r=be19015ef43cc17825929206790696c2e716035d) | Error messages are inconsistant. (ZyX) ([#750](https://github.com/neovim/neovim/pull/750)) | ✔
 [7.4.287](https://code.google.com/p/vim/source/detail?r=66fe4908b649ba18426af6f69e8ccb01b487dcbd) | Patches for .hgignore don't work, since the file is not in the	    distribution. | N/A
 [7.4.288](https://code.google.com/p/vim/source/detail?r=7965cb6a435ae1ea331c7c2f8740d3d4c3625f3b) | When 'spellfile' is set the screen is not redrawn. ([#751](https://github.com/neovim/neovim/pull/751))| ✔
