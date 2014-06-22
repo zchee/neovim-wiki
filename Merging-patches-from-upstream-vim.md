@@ -112,7 +112,7 @@ Version  | Description | Merged
 [runtime](https://code.google.com/p/vim/source/detail?r=306caa30d83b42d79685c472a4829a9aa43e72c8) | Runtime file updates. | ✗
 [7.4.274](https://code.google.com/p/vim/source/detail?r=1ee3fc5b40ae94c2a7fc5a62bca38d4f730f9bb2) | When doing ":update" just before running an external command that changes the file, the timestamp may be unchanged and the file is not reloaded. ([#670](https://github.com/neovim/neovim/pull/670)) | ✔
 [7.4.275](https://code.google.com/p/vim/source/detail?r=8a3117a4887c1e12a1165c9719491f96753787d6) | When changing the type of a sign that hasn't been placed ther is no error message. ([#738](https://github.com/neovim/neovim/pull/738))| ✔
-[7.4.276](https://code.google.com/p/vim/source/detail?r=a6b59ee633a355095e6473ec5e2a7d9088bfb853) | The fish shell is not supported. | ✗
+[7.4.276](https://code.google.com/p/vim/source/detail?r=a6b59ee633a355095e6473ec5e2a7d9088bfb853) | The fish shell is not supported. ([#773](https://github.com/neovim/neovim/pull/773))| ✗
 [7.4.277](https://code.google.com/p/vim/source/detail?r=373204662d82e894b27ee76bc3319bc62c91f6ae) | Using ":sign unplace *" may leave the cursor in the wrong position (Christian Brabandt) ([#744](https://github.com/neovim/neovim/pull/744))| ✔
 [7.4.278](https://code.google.com/p/vim/source/detail?r=b4ce0e1fb5a67d7d6b0bca8eaa3edc2e94a085d8) | list_remove() conflicts with function defined in Sun header file. | ✗
 [7.4.279](https://code.google.com/p/vim/source/detail?r=8e9db1f27a0063df023cc05a760fce73255dad24) | globpath() returns a string, making it difficult to get a list of matches. (Greg Novack) | ✗
@@ -131,7 +131,7 @@ Version  | Description | Merged
 [7.4.292](https://code.google.com/p/vim/source/detail?r=60cdaa05a6ad31cef55eb6b3dc1f57ecac6fcf79) | Searching for "a" does not match accented "a" with new regexp	    engine, does match with old engine. (David Bürgin)	    "ca" does not match "ca" with accented "a" with either engine. ([#754](https://github.com/neovim/neovim/pull/754))| ✔
 [7.4.293](https://code.google.com/p/vim/source/detail?r=10fc95f48546f438648b8357062e93c9c2c0a377) | It is not possible to ignore composing characters at a specific	    point in a pattern. | ✗
 [7.4.294](https://code.google.com/p/vim/source/detail?r=fdea5ea9afd139ea59dee6bdb3f1675b8b882bdf) | Test files missing from patch. | ✗
-[7.4.295](https://code.google.com/p/vim/source/detail?r=662ae48e7e246a63d38c9f3165b15b62252edaee) | Various typos, bad white space and unclear comments. | ✗
+[7.4.295](https://code.google.com/p/vim/source/detail?r=662ae48e7e246a63d38c9f3165b15b62252edaee) | Various typos, bad white space and unclear comments. ([#833](https://github.com/neovim/neovim/pull/833))| ✗
 [7.4.296](https://code.google.com/p/vim/source/detail?r=53b87d790574b6d19034fb3390987c22fb928c58) | Can't run tests on Solaris. | N/A
 [7.4.297](https://code.google.com/p/vim/source/detail?r=81f5a056b2a582c8109da10cc538dc16a326a34d) | Memory leak from result of get_isolated_shell_name(). | ✗
 [7.4.298](https://code.google.com/p/vim/source/detail?r=156f891d520e93eab5d3ce02784660fb13a3b0d3) | Can't have a funcref start with "t:". ([#815](https://github.com/neovim/neovim/pull/815))| ✔
@@ -141,11 +141,11 @@ Version  | Description | Merged
 [7.4.302](https://code.google.com/p/vim/source/detail?r=df141c80ea3a1ffcbf82d05c1314675231fcfa75) | Signs placed with 'foldcolumn' set don't show up after filler	    lines. ([#817](https://github.com/neovim/neovim/pull/817)) | ✔
 [7.4.303](https://code.google.com/p/vim/source/detail?r=463ef551e9f62b63ac3f85f1f297b668b14bcd09) | When using double-width characters the text displayed on the	    command line is sometimes truncated. ([#818](https://github.com/neovim/neovim/pull/818))| ✔
 [7.4.304](https://code.google.com/p/vim/source/detail?r=fed2e0967f8133ba9a44b0701f151c8d88c4896a) | Cannot always use Python with Vim. | N/A
-[7.4.305](https://code.google.com/p/vim/source/detail?r=63e7cc62402dffb180b40c04c63ceeb5f53957d7) | Making 'ttymouse' empty after the xterm version was requested	    causes problems. (Elijah Griffin) | ✗
-[7.4.306](https://code.google.com/p/vim/source/detail?r=05e1d8afcc5e375bf708ccc9810e2fd1a5a8a3cf) | getchar(0) does not return Esc.	    Matsumoto) | ✗
+[7.4.305](https://code.google.com/p/vim/source/detail?r=63e7cc62402dffb180b40c04c63ceeb5f53957d7) | Making 'ttymouse' empty after the xterm version was requested	    causes problems. (Elijah Griffin) ([#835](https://github.com/neovim/neovim/pull/835)) | ✗
+[7.4.306](https://code.google.com/p/vim/source/detail?r=05e1d8afcc5e375bf708ccc9810e2fd1a5a8a3cf) | getchar(0) does not return Esc.	    Matsumoto) ([#842](https://github.com/neovim/neovim/pull/842)) | ✗
 [7.4.307](https://code.google.com/p/vim/source/detail?r=06c10522d321d98874546b2a4d3b0ae145386f2e) | Can't build without the +termresponse feature. | ✗
-[7.4.308](https://code.google.com/p/vim/source/detail?r=e3d2b8d83bb30c428a051f50791e454fcbc080af) | When using ":diffsplit" on an empty file the cursor is displayed	    on the command line. | ✗
-[7.4.309](https://code.google.com/p/vim/source/detail?r=88a6e9f33822d33b6c32db578750c6c178c63f50) | When increasing the size of the lower window, the upper window	    jumps back to the top. (Ron Aaron) | ✗
+[7.4.308](https://code.google.com/p/vim/source/detail?r=e3d2b8d83bb30c428a051f50791e454fcbc080af) | When using ":diffsplit" on an empty file the cursor is displayed	    on the command line. ([#832](https://github.com/neovim/neovim/pull/832))| ✗
+[7.4.309](https://code.google.com/p/vim/source/detail?r=88a6e9f33822d33b6c32db578750c6c178c63f50) | When increasing the size of the lower window, the upper window	    jumps back to the top. (Ron Aaron) ([#843](https://github.com/neovim/neovim/pull/843))| ✗
 [7.4.310](https://code.google.com/p/vim/source/detail?r=ccac0aa34eeaf46dad4b831461a532fc3fe71096) | getpos()/setpos() don't include curswant. | ✗
 [7.4.311](https://code.google.com/p/vim/source/detail?r=f6f7543043246107075f0d3739c471d51b7226da) | Can't use winrestview to only restore part of the view. | ✗
 [7.4.312](https://code.google.com/p/vim/source/detail?r=66eead134d6800fd4cf2d5d4b135d300c933f09a) | Cannot figure out what argument list is being used for a window. | ✗
