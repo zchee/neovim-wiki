@@ -162,7 +162,7 @@ Version  | Description | Merged
 [7.4.323](https://code.google.com/p/vim/source/detail?r=238f5027830cad22e17a970483af9b160869cdf3) | Substitute() with zero width pattern breaks multi-byte character. | ✗
 [7.4.324](https://code.google.com/p/vim/source/detail?r=c476e0ac8b406693c3877baffa0e97ff25e59b06) | In Ex mode, cyrillic characters are not handled. (Stas Malavin) | ✗
 [7.4.325](https://code.google.com/p/vim/source/detail?r=1f288d2475488c3f44c7248e99019e2612580716) | When starting the gui and changing the window size the status line	    may not be drawn correctly. | N/A
-[7.4.326](https://code.google.com/p/vim/source/detail?r=1dbcb23ae7a8b68ddbc28b4feb794c4c1db12395) | Can't build Tiny version. (Elimar Riesebieter) | ✗
+[7.4.326](https://code.google.com/p/vim/source/detail?r=1dbcb23ae7a8b68ddbc28b4feb794c4c1db12395) | Can't build Tiny version. (Elimar Riesebieter) | N/A
 [7.4.327](https://code.google.com/p/vim/source/detail?r=99d8f2d72dcd4b850de81998cc9b1120c8165762) | When 'verbose' is set to display the return value of a function,	    may get E724 repeatedly. | ✗
 [7.4.328](https://code.google.com/p/vim/source/detail?r=01d9ffdd6e6ffb39faf946e13ec63bd7dc31e162) | Selection of inner block is inconsistent. | ✗
 [7.4.329](https://code.google.com/p/vim/source/detail?r=018df65085f8990c1407442f8c783d4cee72a479) | When moving the cursor and then switching to another window the	    previous window isn't scrolled. (Yukihiro Nakadaira) | ✗
