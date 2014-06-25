@@ -27,10 +27,7 @@ Alternative:
     rm -rf build/ ; make cmake CFLAGS='-Wno-error -DNDEBUG -O3 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1' && make
 
 - `-U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1` is required because of [#223](https://github.com/neovim/neovim/issues/223).
-
-### Set `VERBOSE` to see the full build output
-
-    rm -rf build/ ; make cmake && VERBOSE=1 DEBUG=0 make
+- To see the full build output (including flags send to the compiler by make/CMake), change the `make` step to `VERBOSE=1 make`
 
 ### Custom Makefile 
 You can customize the build process locally on your machine by creating `local.mk` which is referenced at the top of the main `Makefile` (and listed in `.gitignore`). **A new target in `local.mk` overrides the default make-target.**
@@ -110,4 +107,3 @@ Here `gdb_start.cmd` includes `gdb` commands to be called when the debugger star
 target remote localhost:666
 br main
 ```
-
