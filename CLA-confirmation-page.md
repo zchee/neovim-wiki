@@ -1,3 +1,3 @@
-To confirm your signature of the Neovim Contributor License Agreement, add your name and timestamp to this page using the same GitHub account that you entered on the CLA form.
+To confirm your signature of the Neovim Contributor License Agreement, add your name and timestamp to the end of the list below (using the same GitHub account that you entered on the CLA form).
 
-Justin M. Keyes 1403743919344
+1403743919344 Justin M. Keyes
