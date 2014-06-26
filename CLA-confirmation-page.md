@@ -6,5 +6,5 @@ To confirm your signature of the Neovim Contributor License Agreement, add your 
 - 1403744255384 Eduardo Elias Ferreira
 - 1403745019410 Felipe Oliveira Carvalho
 - 1403758378249 Pavel Platto
-
+- 1403765465141 Nicolas Hillegeer
 ===
