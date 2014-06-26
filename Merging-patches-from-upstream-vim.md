@@ -174,7 +174,7 @@ Version  | Description | Merged
 [7.4.335](https://code.google.com/p/vim/source/detail?r=8ad2ecd116021ad5c945426e8bb80d741392b780) | No digraph for the new rouble sign. | ✗
 [7.4.336](https://code.google.com/p/vim/source/detail?r=a42ba1e5099290a86cac1a9ac490c49e82e4c2cf) | Setting 'history' to a big value causes out-of-memory errors. | ✗
 [7.4.337](https://code.google.com/p/vim/source/detail?r=0206ac84ff5fdce6d893c470e0909d2aed547a24) | When there is an error preparing to edit the command line, the command won't be executed. (Hirohito Higashi) | ✗
-[7.4.338](https://code.google.com/p/vim/source/detail?r=ef83b423ebf7de11c1063c795dd2186a9b59b90f) | Cannot wrap lines taking indent into account. | ✗
+[7.4.338](https://code.google.com/p/vim/source/detail?r=ef83b423ebf7de11c1063c795dd2186a9b59b90f) | Cannot wrap lines taking indent into account. | RFC
 [7.4.339](https://code.google.com/p/vim/source/detail?r=fd7110d0c3bf4fea3cfa3d16da6c2a945d327c27) | Local function is available globally. | ✗
 [7.4.340](https://code.google.com/p/vim/source/detail?r=03f95f5e311b84653df70fb3c08a9d92cf21b8f0) | Error from sed about illegal bytes when installing Vim. | N/A
 [7.4.341](https://code.google.com/p/vim/source/detail?r=adc4a84f72eb44dae657af713922a6e2c1f64ae3) | sort() doesn't handle numbers well. | ✗
