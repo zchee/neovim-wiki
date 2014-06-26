@@ -172,3 +172,13 @@ Version  | Description | Merged
 [7.4.333](https://code.google.com/p/vim/source/detail?r=8ae50e3ef8bf733c0869c01b5132d02feffc0955) | Compiler warning for unused function. | ✗
 [7.4.334](https://code.google.com/p/vim/source/detail?r=03d260a8ea0c0c67f424c387dbe2af5754e5e589) | Unitialized variables, causing some problems. | ✗
 [7.4.335](https://code.google.com/p/vim/source/detail?r=8ad2ecd116021ad5c945426e8bb80d741392b780) | No digraph for the new rouble sign. | ✗
+[7.4.336](https://code.google.com/p/vim/source/detail?r=a42ba1e5099290a86cac1a9ac490c49e82e4c2cf) | Setting 'history' to a big value causes out-of-memory errors. | ✗
+[7.4.337](https://code.google.com/p/vim/source/detail?r=0206ac84ff5fdce6d893c470e0909d2aed547a24) | When there is an error preparing to edit the command line, the command won't be executed. (Hirohito Higashi) | ✗
+[7.4.338](https://code.google.com/p/vim/source/detail?r=ef83b423ebf7de11c1063c795dd2186a9b59b90f) | Cannot wrap lines taking indent into account. | ✗
+[7.4.339](https://code.google.com/p/vim/source/detail?r=fd7110d0c3bf4fea3cfa3d16da6c2a945d327c27) | Local function is available globally. | ✗
+[7.4.340](https://code.google.com/p/vim/source/detail?r=03f95f5e311b84653df70fb3c08a9d92cf21b8f0) | Error from sed about illegal bytes when installing Vim. | N/A
+[7.4.341](https://code.google.com/p/vim/source/detail?r=adc4a84f72eb44dae657af713922a6e2c1f64ae3) | sort() doesn't handle numbers well. | ✗
+[7.4.342](https://code.google.com/p/vim/source/detail?r=8dcc6f142460b2d5eee119a174d441d46d95cd99) | Clang gives warnings. | N/A
+[7.4.343](https://code.google.com/p/vim/source/detail?r=539ce56d8f35fe2deb5c4f57335e1adf97ae4e74) | matchdelete() does not always update the right lines. | ✗
+[7.4.344](https://code.google.com/p/vim/source/detail?r=ce284c205558d103326a4c3f22f181774690b3eb) | Unessecary initializations and other things related to matchaddpos(). | ✗
+[7.4.345](https://code.google.com/p/vim/source/detail?r=ea2c5dfee1b04d216ebf992c5f46ecbdfee2854a) | Indent is not updated when deleting indent. | ✗
