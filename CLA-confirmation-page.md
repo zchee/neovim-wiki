@@ -13,4 +13,5 @@ To confirm your signature of the Neovim Contributor License Agreement, add your 
 - 1403866328767 Stefan Hoffmann
 - 1403866937448 John Szakmeister
 - 1403907779333 Florian Walch
+
 ===
