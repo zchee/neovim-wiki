@@ -10,5 +10,6 @@ To confirm your signature of the Neovim Contributor License Agreement, add your 
 - 1403793097247 Rui Abreu Ferreira
 - 1403830208887 Simon Barth
 - 1403849275957 Simen Endsjø
+- 1403866328767 Stefan Hoffmann
 
 ===
