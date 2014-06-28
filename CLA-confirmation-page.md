@@ -15,5 +15,6 @@ To confirm your signature of the Neovim Contributor License Agreement, add your 
 - 1403907779333 Florian Walch
 - 1403912199403 Shane Iler
 - 1403958207125 Klemen Košir
+- 1403959052812 Nikolai Aleksandrovich Pavlov
 
 ===
