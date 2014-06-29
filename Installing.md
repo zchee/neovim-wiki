@@ -130,13 +130,7 @@ Keep in mind that some of those packages have their own dependencies which also 
 
 ### Building
 
-To generate the `Makefile`s without building:
-
-```bash
-make cmake
-```
-
-Alternatively, you can build the executable immediately by just calling make (which will invoke `cmake` as required):
+You can build the `nvim` executable immediately by just calling make (which will invoke `cmake` as required):
 
 ```bash
 make
@@ -148,11 +142,7 @@ If you decide to try another compiler, you can try something like:
 rm -rf ./build && make CC="/path/to/my/compiler"
 ```
 
-To build and run the tests:
-
-```bash
-make test
-```
+See [Building-Neovim](Building-Neovim) for more options.
 
 ### Installing
 
