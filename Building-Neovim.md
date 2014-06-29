@@ -8,15 +8,15 @@ pulls down third-party dependencies (such as libuv and luajit) into `.deps/`, an
 
 Now that you have the dependencies, you can try other build targets and options, explained below.
 
-## Run the legacy integration tests
+## Legacy integration tests
 
     make test
 
-## Run the unit tests
+## Unit tests
 
     make unittest
 
-## Build a "release" build (optimized, NDEBUG)
+## "Release" build (optimized, NDEBUG)
 
     rm -rf build/ ; make clean && make CMAKE_BUILD_TYPE=MinSizeRel
 
@@ -28,6 +28,26 @@ Alternative:
 
 - `-U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1` is required because of [#223](https://github.com/neovim/neovim/issues/223).
 - To see the full build output (including flags send to the compiler by make/CMake), change the `make` step to `VERBOSE=1 make`
+
+## Localization build
+
+Run `make` in the `po/` ("portable object") directory.
+
+```sh
+cd src/nvim/po/
+make
+```
+
+* If you see `msgfmt: command not found`, you need to install [`gettext`](http://en.wikipedia.org/wiki/Gettext) (on Debian/Ubuntu: `sudo apt-get install gettext`).
+
+You should see output like this:
+
+```
+OLD_PO_FILE_INPUT=yes msgfmt -v -o af.mo af.po
+996 translated messages, 198 fuzzy translations, 181 untranslated messages.
+OLD_PO_FILE_INPUT=yes msgfmt -v -o ca.mo ca.po
+1252 translated messages, 76 fuzzy translations, 47 untranslated messages.
+```
 
 ## Custom Makefile 
 You can customize the build process locally on your machine by creating `local.mk` which is referenced at the top of the main `Makefile` (and listed in `.gitignore`). **A new target in `local.mk` overrides the default make-target.**
