@@ -142,7 +142,7 @@ If you decide to try another compiler, you can try something like:
 rm -rf ./build && make CC="/path/to/my/compiler"
 ```
 
-See [Building-Neovim](Building-Neovim) for more options.
+See [Building Neovim](Building-Neovim) for more options.
 
 ### Installing
 
