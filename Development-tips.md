@@ -1,16 +1,16 @@
-# Building Neovim
+## Building Neovim
 
 See the [Building Neovim](../Building-Neovim) page.
 
-# Navigating the code
+## Navigating the code
 
 - The `contrib/` folder contains a [YouCompleteMe configuration](https://github.com/neovim/neovim/tree/master/contrib/YouCompleteMe) tailored to Neovim.
 
-# Code Linting
+## Code Linting
 If you are using Syntastic you can use https://gist.github.com/gilligan/9326904 to add clint.py as checker
 for C files. Note that clint.py needs to be in your path and that you will have to modify g:syntastic_c_checkers because it'll otherwise use gcc or make as default. See the syntastic documentation for details on that.
 
-# Debugging
+## Debugging
 
 ### Using the vim-lldb plugin
 Get the plugin: https://github.com/gilligan/vim-lldb
