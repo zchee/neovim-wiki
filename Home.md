@@ -12,6 +12,7 @@
 
 ### For developers
 
+- [Building Neovim](Building-Neovim)
 - [Contributing](Contributing)
     - [Unit testing](Unit-testing)
     - [Moonscript code style](Moonscript-code-style)
