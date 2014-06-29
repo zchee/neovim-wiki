@@ -1,6 +1,6 @@
 ## Building Neovim
 
-See the [Building Neovim](../Building-Neovim) page.
+See the [Building Neovim](Building-Neovim) page.
 
 ## Navigating the code
 
