@@ -38,8 +38,6 @@ cd src/nvim/po/
 make
 ```
 
-* If you see `msgfmt: command not found`, you need to install [`gettext`](http://en.wikipedia.org/wiki/Gettext) (on Debian/Ubuntu: `sudo apt-get install gettext`).
-
 You should see output like this:
 
 ```
@@ -48,6 +46,13 @@ OLD_PO_FILE_INPUT=yes msgfmt -v -o af.mo af.po
 OLD_PO_FILE_INPUT=yes msgfmt -v -o ca.mo ca.po
 1252 translated messages, 76 fuzzy translations, 47 untranslated messages.
 ```
+
+* If you see `msgfmt: command not found`, you need to install [`gettext`](http://en.wikipedia.org/wiki/Gettext) (on Debian/Ubuntu: `sudo apt-get install gettext`).
+
+## Localization "check"
+
+- `make <language>.ck` generates a detailed report in `check.log`. 
+- To generate the report for *all* language files, run `make check`.
 
 ## Custom Makefile 
 You can customize the build process locally on your machine by creating `local.mk` which is referenced at the top of the main `Makefile` (and listed in `.gitignore`). **A new target in `local.mk` overrides the default make-target.**
