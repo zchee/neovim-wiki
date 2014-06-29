@@ -4,7 +4,9 @@ If you just pulled the Neovim source and want to get a working `nvim` binary,
 
     make
 
-pulls down third-party dependencies (such as libuv and luajit) into `.deps/`, and builds them. If you're missing a dependency such as `libtool`, the configure script will let you know. Install the missing dependencies, then try `make` again.  
+pulls down third-party dependencies (such as libuv and luajit) into `.deps/`, and builds them. If you're missing a dependency such as `libtool`, the configure script will let you know. Install the missing dependencies, then try `make` again.
+
+* To generate the `Makefile`s without building: `make cmake`
 
 Now that you have the dependencies, you can try other build targets and options, explained below.
 
