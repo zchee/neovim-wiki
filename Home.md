@@ -13,10 +13,10 @@
 ### For developers
 
 - [Building Neovim](Building-Neovim)
-- [Contributing](Contributing)
+- **[Contributing](Contributing)**
     - [Unit testing](Unit-testing)
     - [Moonscript code style](Moonscript-code-style)
-    - [Merging patches from upstream vim](Merging-patches-from-upstream-vim)
+    - [Merging patches from upstream Vim](Merging-patches-from-upstream-vim)
 - [Development tips](Development-tips)
 - [Style / Conventions](http://neovim.org/develop/style-guide.xml)
 - [Plugin Architecture](https://github.com/neovim/neovim/wiki/Plugin-UI-architecture)
