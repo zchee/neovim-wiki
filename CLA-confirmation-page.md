@@ -20,4 +20,5 @@ To confirm your signature of the Neovim Contributor License Agreement, add your 
 - 1403964714643 André Twupack
 - 1404125813749 Petter Wahlman
 - 1404127202373 Brandon Coleman
+
 ===
