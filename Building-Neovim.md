@@ -12,11 +12,17 @@ Now that you have the dependencies, you can try other build targets and options,
 
 ## Legacy integration tests
 
+To build and run all integration tests:
+
     make test
 
 ## Unit tests
 
+To build and run all unit tests:
+
     make unittest
+
+* To run a *specific* test file: `TEST_FILE=test/unit/foo.moon make unittest`
 
 ## "Release" build (optimized, NDEBUG)
 
