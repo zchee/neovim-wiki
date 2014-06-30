@@ -18,5 +18,6 @@ To confirm your signature of the Neovim Contributor License Agreement, add your 
 - 1403959052812 Nikolai Aleksandrovich Pavlov
 - 1403960314999 oni-link
 - 1403964714643 André Twupack
+- 1404125813749 Petter Wahlman
 
 ===
