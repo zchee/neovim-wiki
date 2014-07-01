@@ -15,6 +15,7 @@ Items in the [vNext milestone](https://github.com/neovim/neovim/issues?milestone
 
 - Update translations (runtime messages--not user manual):
     - `pt_BR`
+    - `de`
 - Implement msgpack remote API [#509](https://github.com/neovim/neovim/pull/509) [#779](https://github.com/neovim/neovim/pull/779)
 - Remove support for legacy systems and move to C99
     - Removed tons of `FEAT_*` macros with [unifdef]
