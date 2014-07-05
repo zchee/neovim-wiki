@@ -22,8 +22,7 @@ If you're on one of the following OSes, good news! You can get neovim right away
 
 If you'd like to upgrade a previous homebrew install to the latest version of neovim, you just need to run a couple commands:
 
-    brew remove neovim
-    brew install --HEAD https://raw.github.com/neovim/neovim/master/neovim.rb
+    brew reinstall --HEAD https://raw.github.com/neovim/neovim/master/neovim.rb
 
 ### Arch Linux
 
