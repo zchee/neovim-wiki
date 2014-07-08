@@ -18,7 +18,6 @@ To confirm your signature of the Neovim Contributor License Agreement, add your 
 - 1403959052812 Nikolai Aleksandrovich Pavlov
 - 1403960314999 oni-link
 - 1403964714643 André Twupack
-- 1404125813749 Petter Wahlman
 - 1404127202373 Brandon Coleman
 - 1404580659186 Jared Lew Wong
 - 1404827737087 Thomas Wienecke
