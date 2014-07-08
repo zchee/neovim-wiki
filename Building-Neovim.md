@@ -64,12 +64,16 @@ OLD_PO_FILE_INPUT=yes msgfmt -v -o ca.mo ca.po
 
 ## "GNU-like" compiler (GCC, clang, ...) tips
 
-To see the chain of includes, use the `-H` switch (see also [#918](https://github.com/neovim/neovim/issues/918):
+To see the chain of includes, use the `-H` switch (see [#918](https://github.com/neovim/neovim/issues/918)):
 
 ```bash
-# ignore header files in /usr/* as we don't control them anyway and they make the output hard to read
-$ (echo '#include "./src/nvim/buffer.h"' | clang -I.deps/usr/include -Isrc -std=c99 -P -E -H - 2>&1 1>/dev/null | grep -v '/usr/'
+$ (echo '#include "./src/nvim/buffer.h"' |
+clang -I.deps/usr/include -Isrc -std=c99 -P -E -H - 2>&1 1>/dev/null |
+# ignore headers in /usr/*
+grep -v '/usr/'
 ```
+
+`-save-temps` useful to see expanded macros or commented assembly
 
 ## Custom Makefile 
 You can customize the build process locally on your machine by creating `local.mk` which is referenced at the top of the main `Makefile` (and listed in `.gitignore`). **A new target in `local.mk` overrides the default make-target.**
