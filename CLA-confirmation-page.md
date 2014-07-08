@@ -22,4 +22,5 @@ To confirm your signature of the Neovim Contributor License Agreement, add your 
 - 1404127202373 Brandon Coleman
 - 1404580659186 Jared Lew Wong
 - 1404827737087 Thomas Wienecke
+- 1404828053926 Thiago de Arruda Padilha
 ===
