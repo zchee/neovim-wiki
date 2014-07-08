@@ -10,7 +10,7 @@ This will clone the repository into your current directory. You will then need t
 
 Or you can start neovim like this (if neovim is installed and on your path):
 
-    VIM=/path/to/vimscript/runtim/ nvim
+    VIM=/path/to/vimscript/runtime/ nvim
 
 ## Quick install
 
