@@ -67,7 +67,7 @@ OLD_PO_FILE_INPUT=yes msgfmt -v -o ca.mo ca.po
 To see the chain of includes, use the `-H` switch (see [#918](https://github.com/neovim/neovim/issues/918)):
 
 ```bash
-$ (echo '#include "./src/nvim/buffer.h"' |
+$ echo '#include "./src/nvim/buffer.h"' |
 clang -I.deps/usr/include -Isrc -std=c99 -P -E -H - 2>&1 1>/dev/null |
 # ignore headers in /usr/*
 grep -v '/usr/'
