@@ -36,6 +36,10 @@ Note: If you have the following error: `CMAKE_USE_SYSTEM_CURL is ON but a curl i
 
 Package can be installed from [AUR](https://aur.archlinux.org/packages/neovim-git/)
 
+### Gentoo Linux
+
+Package can be installed from [science overlay](http://gpo.zugaina.org/app-editors/neovim)
+
 ## Manual install
 
 ### Dependencies
