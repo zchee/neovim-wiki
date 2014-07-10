@@ -1,14 +1,18 @@
-This page describes notable differences in Neovim, compared to Vim.
+This page describes notable differences in Neovim compared to Vim.
 
 ## Configuration
 * Use `.nvimrc` instead of `.vimrc` for storing configuration.
 * Use `.nvim` instead of `.vim` to store configuration files.
 
+## Defaults
+
+* `'encoding'` defaults to `utf-8` / [#935](https://github.com/neovim/neovim/pull/935)
+
 ## Plugins
 
 Neovim has a new [plugin architecture](Plugin-UI-architecture).
 
-## Plugin compatibility layer [#872](https://github.com/neovim/neovim/pull/872)
+## Plugin compatibility layer [#872](https://github.com/neovim/neovim/pull/872), [#895](https://github.com/neovim/neovim/pull/895)
 
 A compatibility layer is provided to support legacy Vim plugins that depend on
 `if_python`, `if_lua`, `if_ruby` (commands `:python`/`:pyfile`/`:pydo`, etc.), but it has some differences:
