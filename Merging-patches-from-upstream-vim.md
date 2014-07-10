@@ -147,7 +147,7 @@ Version  | Description | Merged
 [7.4.308](https://code.google.com/p/vim/source/detail?r=e3d2b8d83bb30c428a051f50791e454fcbc080af) | When using ":diffsplit" on an empty file the cursor is displayed	    on the command line. ([#832](https://github.com/neovim/neovim/pull/832))| ✗
 [7.4.309](https://code.google.com/p/vim/source/detail?r=88a6e9f33822d33b6c32db578750c6c178c63f50) | When increasing the size of the lower window, the upper window	    jumps back to the top. (Ron Aaron) ([#843](https://github.com/neovim/neovim/pull/843))| ✗
 [7.4.310](https://code.google.com/p/vim/source/detail?r=ccac0aa34eeaf46dad4b831461a532fc3fe71096) | getpos()/setpos() don't include curswant. ([#919](https://github.com/neovim/neovim/pull/919)) | ✗
-[7.4.311](https://code.google.com/p/vim/source/detail?r=f6f7543043246107075f0d3739c471d51b7226da) | Can't use winrestview to only restore part of the view. | ✗
+[7.4.311](https://code.google.com/p/vim/source/detail?r=f6f7543043246107075f0d3739c471d51b7226da) | Can't use winrestview to only restore part of the view. ([#906](https://github.com/neovim/neovim/pull/906))| ✗
 [7.4.312](https://code.google.com/p/vim/source/detail?r=66eead134d6800fd4cf2d5d4b135d300c933f09a) | Cannot figure out what argument list is being used for a window. | ✗
 [7.4.313](https://code.google.com/p/vim/source/detail?r=332a5c2b2956d9b18d85268a724d01deea27ec83) | Changing the return value of getpos() causes an error. (Jie Zhu) | ✗
 [7.4.314](https://code.google.com/p/vim/source/detail?r=4d7af1962d6ce61df65fdc5c86544a61951f9517) | Completion messages can get in the way of a plugin. | ✗
