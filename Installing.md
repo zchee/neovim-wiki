@@ -20,7 +20,7 @@ If you're on one of the following OSes, good news! You can get neovim right away
 
     brew install --HEAD https://raw.github.com/neovim/neovim/master/neovim.rb
 
-If you'd like to upgrade a previous homebrew install to the latest version of neovim, you just need to run a couple commands:
+If you'd like to upgrade a previous homebrew install to the latest version of neovim, just run:
 
     brew reinstall --HEAD https://raw.github.com/neovim/neovim/master/neovim.rb
 
