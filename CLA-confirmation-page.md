@@ -24,5 +24,5 @@ To confirm your signature of the Neovim Contributor License Agreement, add your 
 - 1404828053926 Thiago de Arruda Padilha
 - 1404855341000 Fredrik Fornwall
 - 1404877338719 Douglas Schneider
-
+- 1404852155761 Scott Prager
 ===
