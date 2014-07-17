@@ -94,12 +94,32 @@ if has('neovim')
 endif
 ```
 
-### Troubleshooting
+### Troubleshooting python/clipboard issues
 
-If something is not working, you can check the logs for error messages.
-~/.nvimlog will probably contain information about errors while starting the
-python host. To enable logging on the python process, set the
-NEOVIM_PYTHON_LOG_FILE environment variable, eg:
+Here are common causes for errors:
+
+- The python client is outdated, try `pip uninstall neovim && pip install neovim`
+- The clipboard module(nvim_clipboard.py) was not found, possible causes:
+  - The filename doesn't start with 'nvim_'. This is a requirement of the python plugin host, which will only 
+    load modules prefixed with 'nvim_'
+  - The file was not installed in the right directory. It must be in a directory that is automatically found
+    by the module loader used in the classic python-vim bridge(runtime/pythonx or runtime/python2)
+- In some distros(eg: archlinux) 'python' refers to python3. If that's your case, try `let s:python_host_init = 'python2 -c "import neovim; neovim.start_host()"'` as the bootstrap command
+
+
+The logs will probably contain useful debugging information . ~/.nvimlog contains Neovim-specific messages(such as problems before the python host is initialized). Here's the typical ~/.nvimlog output when python/clipboard are correctly initialized(they will be if python plugins are loaded in your vimrc)
+
+```
+2014/07/17 11:19:15 [info @ provider_register:96] 18093 - Registered channel 1 as the provider for "python_execute"
+2014/07/17 11:19:15 [info @ provider_register:96] 18093 - Registered channel 1 as the provider for "python_execute_file"
+2014/07/17 11:19:15 [info @ provider_register:96] 18093 - Registered channel 1 as the provider for "python_do_range"
+2014/07/17 11:19:15 [info @ provider_register:96] 18093 - Registered channel 1 as the provider for "python_eval"
+2014/07/17 11:19:15 [info @ provider_register:96] 18093 - Registered channel 1 as the provider for "clipboard_get"
+2014/07/17 11:19:15 [info @ provider_register:96] 18093 - Registered channel 1 as the provider for "clipboard_set"
+2014/07/17 11:19:15 [info @ main_loop:556] 18093 - Starting Neovim main loop.
+```
+
+To enable logging on the python process, set the NEOVIM_PYTHON_LOG_FILE environment variable, eg:
 
 ```
 NEOVIM_PYTHON_LOG_FILE=python.log nvim
@@ -108,8 +128,8 @@ NEOVIM_PYTHON_LOG_FILE=python.log nvim
 As explained, not all python plugins will perform well(or even work) with
 Neovim. One example is YouCompleteMe, which gets really slow for big files.
 [This branch](https://github.com/tarruda/YouCompleteMe/tree/nvim2) contains a
-patch that improves YouCompleteMe performance with Neovim, it can be used as a
-temporary workaround until the problems with the python client are fixed
+patch that improves YCM performance with Neovim, it can be used as a
+temporary workaround for YCM users until the problems with the python client are fixed
 
 If you are running into performance problems with other python plugins, it's
 possible to create a cProfile report using the NEOVIM_PYTHON_PROFILE
