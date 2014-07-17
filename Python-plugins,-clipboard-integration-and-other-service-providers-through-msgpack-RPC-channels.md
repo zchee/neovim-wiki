@@ -56,7 +56,7 @@ python interpreter, and the command is called the first time a python command
 is used(`has('python')` will return true if the command is executable). The
 string must be .in the same format as the `shell` option(:help 'shell').
 
-For now, clipboard also depends on python:
+For now, clipboard also depends on python(This will change once we have GUIs working):
 
 - Install the 'xerox' module: `pip install xerox`
 - Create a ~/.vim/pythonx/nvim_clipboard.py file with the following contents:
@@ -79,6 +79,17 @@ The following option is available to simplify clipboard integration:
 
 ```vim
 if has('neovim')
+  set unnamedclip " Automatically use clipboard as storage for the unnamed register
+endif
+```
+
+The python script above implements the "clipboard provider", and it's automatically loaded when the python host is started. If you load python plugins in your vimrc, that will happen transparently after the first call to the `python` command, but it's also possible to configure Neovim to bootstrap the python host the first time the clipboard register is needed. Here's a vimrc snippet that automatically activates clipboard or python plugins(independently of each other):
+
+```vim
+if has('neovim')
+  let s:python_host_init = 'python -c "import neovim; neovim.start_host()"'
+  let &initpython = s:python_host_init
+  let &initclipboard = s:python_host_init
   set unnamedclip " Automatically use clipboard as storage for the unnamed register
 endif
 ```
