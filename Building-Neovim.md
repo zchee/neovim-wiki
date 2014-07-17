@@ -75,6 +75,18 @@ grep -v '/usr/'
 
 `-save-temps` useful to see expanded macros or commented assembly
 
+## Xcode and MSVC project files
+
+CMake has a `-G` option for exporting to many [project file formats](http://www.cmake.org/cmake/help/v2.8.8/cmake.html#section_Generators) such as Xcode and Visual Studio. 
+
+For example, to use Xcode's static analysis GUI ([#167](https://github.com/neovim/neovim/issues/167#issuecomment-36136018)), you need to generate an Xcode project file from the Neovim makefile (where `neovim/` is the top-level Neovim source code directory containing the main `Makefile`):
+
+```bash
+cmake -G Xcode neovim/
+```
+
+then open the resulting project file in Xcode.
+
 ## Custom Makefile 
 You can customize the build process locally on your machine by creating `local.mk` which is referenced at the top of the main `Makefile` (and listed in `.gitignore`). **A new target in `local.mk` overrides the default make-target.**
 
