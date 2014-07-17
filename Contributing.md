@@ -6,6 +6,7 @@ Thanks for considering contributing to Neovim.
 
 [![Stories in Ready](https://badge.waffle.io/neovim/neovim.png?label=ready)](https://waffle.io/neovim/neovim)
 
+- [Entry-level issues](https://github.com/neovim/neovim/issues?labels=entry-level&state=open)
 - [Porting OS layer to libuv](Porting-OS-layer-to-libuv)
 - [Merging patches from upstream vim](Merging patches from upstream vim)
 
