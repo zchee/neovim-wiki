@@ -94,7 +94,7 @@ if has('neovim')
 endif
 ```
 
-### Troubleshotting
+### Troubleshooting
 
 If something is not working, you can check the logs for error messages.
 ~/.nvimlog will probably contain information about errors while starting the
