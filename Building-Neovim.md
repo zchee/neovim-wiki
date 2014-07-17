@@ -59,7 +59,7 @@ OLD_PO_FILE_INPUT=yes msgfmt -v -o ca.mo ca.po
 
 ## Localization "check"
 
-- `make <language>.ck` generates a detailed report in `check.log`. 
+- `make <language>.ck` generates a detailed report in `./build/src/nvim/po/check-${LANG}.log`.
 - To generate the report for *all* language files, run `make check`.
 
 ## "GNU-like" compiler (GCC, clang, ...) tips
