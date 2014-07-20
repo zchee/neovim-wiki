@@ -8,6 +8,10 @@ This page describes notable differences in Neovim compared to Vim.
 
 * `'encoding'` defaults to `utf-8` / [#935](https://github.com/neovim/neovim/pull/935)
 
+## Features
+
+* Neovim always ships with all features, in contrast to Vim which may have certain features removed depending on how it was built (this is called *compile-time feature selection*). This is like if Vim's "HUGE" build was the only Vim release type (except Neovim is smaller than Vim's "HUGE" build).
+
 ## Plugins
 
 Neovim has a new [plugin architecture](Plugin-UI-architecture).
