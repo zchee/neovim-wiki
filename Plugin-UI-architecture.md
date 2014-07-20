@@ -1,5 +1,3 @@
-(The features described here are not all implemented)
-
 A contributing factor to legacy Vim's huge codebase is its explicit support for
 dozens of widget toolkits for GUI interfaces. Neovim avoids that by delegating
 GUI implementation to external clients. The client(s) control the Neovim `nvim`
