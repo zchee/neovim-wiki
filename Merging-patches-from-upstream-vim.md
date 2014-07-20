@@ -130,7 +130,7 @@ Version  | Description | Merged
 [7.4.291](https://code.google.com/p/vim/source/detail?r=b5972833add9de714f4651e26fd9ea63ec4a880c) | Compiler warning for int to pointer of different size when DEBUG	    is defined. ([#879](https://github.com/neovim/neovim/pull/879))| ✔
 [7.4.292](https://code.google.com/p/vim/source/detail?r=60cdaa05a6ad31cef55eb6b3dc1f57ecac6fcf79) | Searching for "a" does not match accented "a" with new regexp	    engine, does match with old engine. (David Bürgin)	    "ca" does not match "ca" with accented "a" with either engine. ([#754](https://github.com/neovim/neovim/pull/754))| ✔
 [7.4.293](https://code.google.com/p/vim/source/detail?r=10fc95f48546f438648b8357062e93c9c2c0a377) | It is not possible to ignore composing characters at a specific	    point in a pattern. ([#972](https://github.com/neovim/neovim/pull/972)) | ✗
-[7.4.294](https://code.google.com/p/vim/source/detail?r=fdea5ea9afd139ea59dee6bdb3f1675b8b882bdf) | Test files missing from patch. | ✗
+[7.4.294](https://code.google.com/p/vim/source/detail?r=fdea5ea9afd139ea59dee6bdb3f1675b8b882bdf) | Test files missing from patch. ([#972](https://github.com/neovim/neovim/pull/972)) | ✗
 [7.4.295](https://code.google.com/p/vim/source/detail?r=662ae48e7e246a63d38c9f3165b15b62252edaee) | Various typos, bad white space and unclear comments. ([#833](https://github.com/neovim/neovim/pull/833))| ✔
 [7.4.296](https://code.google.com/p/vim/source/detail?r=53b87d790574b6d19034fb3390987c22fb928c58) | Can't run tests on Solaris. | N/A
 [7.4.297](https://code.google.com/p/vim/source/detail?r=81f5a056b2a582c8109da10cc538dc16a326a34d) | Memory leak from result of get_isolated_shell_name(). | ✗
