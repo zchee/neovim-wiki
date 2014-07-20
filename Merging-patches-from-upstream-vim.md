@@ -154,7 +154,7 @@ Version  | Description | Merged
 [7.4.315](https://code.google.com/p/vim/source/detail?r=646616b6ff4defcc7bef0b198b540f6d965a8126) | Fixes for computation of topline not tested. | ✗
 [7.4.316](https://code.google.com/p/vim/source/detail?r=0fc665889e8f0af532cb4e3be2f0ff0421bf2fbc) | Warning from 64-bit compiler. | ✗
 [7.4.317](https://code.google.com/p/vim/source/detail?r=8ffcb546d782121dfc9d88c7edc6f62421efce89) | Crash when starting gvim.  Issue 230. | ✗
-[7.4.318](https://code.google.com/p/vim/source/detail?r=5c47dacf397c1c65d2dfc237b3ff395c66ec3d4d) | Check for whether a highlight group has settings ignores fg and bg	    color settings. | ✗
+[7.4.318](https://code.google.com/p/vim/source/detail?r=5c47dacf397c1c65d2dfc237b3ff395c66ec3d4d) | Check for whether a highlight group has settings ignores fg and bg color settings. ([#968](https://github.com/neovim/neovim/pull/968))| RFC
 [7.4.319](https://code.google.com/p/vim/source/detail?r=a076237d1c3849535681e82946a9041ed5525d7f) | Crash when putting zero bytes on the clipboard. | ✗
 [7.4.320](https://code.google.com/p/vim/source/detail?r=f7bc601823e5c81e2ca412506a42eff9fd790ace) | Possible crash when an BufLeave autocommand deletes the buffer. | ✗
 [7.4.321](https://code.google.com/p/vim/source/detail?r=c052937aae8ca5082f308b8ff0712c7eccdd30c8) | Can't build with strawberry perl 5.20 + mingw-w64-4.9.0. | N/A
