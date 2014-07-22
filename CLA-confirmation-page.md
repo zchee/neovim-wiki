@@ -1,4 +1,6 @@
-To confirm your signature of the Neovim Contributor License Agreement, add your name and timestamp to the end of the list below (using the same GitHub account that you entered on the CLA form).
+To confirm your signature of the [Neovim Contributor License Agreement (CLA)](https://docs.google.com/forms/d/1u54bpbwzneDIRltFx1TGi2evKxY3w0cOV3vlpj8DPbg/viewform), add your name and timestamp to the end of the list below, using the same GitHub account that you entered on the the CLA. 
+
+The timestamp is sent by the CLA form. Please don't modify this page until you have signed the CLA.
 
 ===
 - 1403806484871 John Schmidt
@@ -25,6 +27,5 @@ To confirm your signature of the Neovim Contributor License Agreement, add your 
 - 1404855341000 Fredrik Fornwall
 - 1404877338719 Douglas Schneider
 - 1404852155761 Scott Prager
-- 1405997340666 John Tyree
 
 ===
