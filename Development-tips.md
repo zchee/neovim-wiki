@@ -12,41 +12,44 @@ for C files. Note that clint.py needs to be in your path and that you will have 
 
 ## Debugging
 
-### Using the vim-lldb plugin
-Get the plugin: https://github.com/gilligan/vim-lldb
-In order to get started:
-  1. Start neovim in a shell
-  2. Open some neovim source file
-  3. :Ltarget attach nvim
-  4. Go to some line you are interested in and do :Lbreakpoint
+### Using `lldb` to step through unit tests
+
+```bash
+$ lldb .deps/usr/bin/luajit -- .deps/usr/bin/busted_bootstrap --lpath="./build/?.lua" --pattern=.moon test
+```
+
+### Using the `vim-lldb` plugin
+
+  1. Install the plugin: https://github.com/gilligan/vim-lldb
+  2. Open a C source file
+  3. `:Ltarget attach nvim`
+  4. Go to some line you are interested in, then do `:Lbreakpoint`
 
 ### Using `gdb` in the terminal
-Use two terminals, one for the debugging session, and one for the neovim instance that will be debugged.
-In the terminal for `neovim`, start a `gdbserver` instance on a specific port like this:
 
-    gdbserver :666 build/nvim
+Open two terminals, one for the debugging session, and one for the Neovim instance that will be debugged.
+In the terminal for `nvim`, start a `gdbserver` instance on a specific port like this:
 
-This will start a remote debugging session for the binary `build/nvim` on port `666`.
+    gdbserver :6666 build/bin/nvim
 
 You then need to attach to this debugging session in the other terminal:
 
-    gdb build/nvim
+    gdb build/bin/nvim
 
 Once you've entered `gdb`, you need to attach to the remote session:
 
-    target remote localhost:666
+    target remote localhost:6666
 
-You are now attached to the remote debugging session. 
-Try setting a breakpoint and start the application:
+You are now attached to the remote debugging session. Try setting a breakpoint and start the application:
 
 - `br main` to set the breakpoint.
 - `c` to continue running the application
 
 You can now step through source, and you'll see the results in the other window.
 
-### tmux
-It might be convenient to use your own makefile to quickly start debugging sessions using the above `gdbserver` method. This example will create the debugging session when you type `make debug`.
-This assumes that you have `Makefile` in your github projects parent directory.
+### Using `gdb` in tmux
+
+Consider using a [custom makefile](https://github.com/neovim/neovim/wiki/Building-Neovim#custom-makefile) to quickly start debugging sessions using the above `gdbserver` method. This example will create the debugging session when you type `make debug`. This assumes that you have `Makefile` in the top-level directory.
 
 ```
 .PHONY: dbg-start dbg-attach debug build
@@ -55,17 +58,17 @@ build:
 	@$(MAKE) -C neovim
 
 dbg-start: build
-	@tmux new-window -n 'dbg-neovim' 'sudo gdbserver :666 ./neovim/build/src/vim -D'
+	@tmux new-window -n 'dbg-neovim' 'sudo gdbserver :6666 ./build/bin/nvim -D'
 
 dbg-attach:
-	@tmux new-window -n 'dbg-cgdb' 'cgdb -x gdb_start.cmd ./neovim/build/src/vim'
+	@tmux new-window -n 'dbg-cgdb' 'cgdb -x gdb_start.sh ./build/bin/nvim'
 
 debug: dbg-start dbg-attach
 ```
 
-Here `gdb_start.cmd` includes `gdb` commands to be called when the debugger starts. It needs to attach to the server started in the `dbg-start` rule. Here's an example:
+Here `gdb_start.sh` includes `gdb` commands to be called when the debugger starts. It needs to attach to the server started by the `dbg-start` rule. For example:
 
 ```
-target remote localhost:666
+target remote localhost:6666
 br main
 ```
