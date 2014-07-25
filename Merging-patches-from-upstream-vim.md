@@ -172,7 +172,7 @@ Version  | Description | Merged
 [7.4.333](https://code.google.com/p/vim/source/detail?r=8ae50e3ef8bf733c0869c01b5132d02feffc0955) | Compiler warning for unused function. | ✗
 [7.4.334](https://code.google.com/p/vim/source/detail?r=03d260a8ea0c0c67f424c387dbe2af5754e5e589) | Unitialized variables, causing some problems. | ✗
 [7.4.335](https://code.google.com/p/vim/source/detail?r=8ad2ecd116021ad5c945426e8bb80d741392b780) | No digraph for the new rouble sign. | ✗
-[7.4.336](https://code.google.com/p/vim/source/detail?r=a42ba1e5099290a86cac1a9ac490c49e82e4c2cf) | Setting 'history' to a big value causes out-of-memory errors. | ✗
+[7.4.336](https://code.google.com/p/vim/source/detail?r=a42ba1e5099290a86cac1a9ac490c49e82e4c2cf) | Setting 'history' to a big value causes out-of-memory errors. [#991](https://github.com/neovim/neovim/pull/991)) | RFC
 [7.4.337](https://code.google.com/p/vim/source/detail?r=0206ac84ff5fdce6d893c470e0909d2aed547a24) | When there is an error preparing to edit the command line, the command won't be executed. (Hirohito Higashi) | ✗
 [7.4.338](https://code.google.com/p/vim/source/detail?r=ef83b423ebf7de11c1063c795dd2186a9b59b90f) | Cannot wrap lines taking indent into account. | RFC
 [7.4.339](https://code.google.com/p/vim/source/detail?r=fd7110d0c3bf4fea3cfa3d16da6c2a945d327c27) | Local function is available globally. | ✗
