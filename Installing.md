@@ -32,6 +32,18 @@ Substitute `reinstall` for the `install` command to upgrade from a previous vers
 
 Note: If you have the following error: `CMAKE_USE_SYSTEM_CURL is ON but a curl is not found`, you are missing the dependency for cURL that allows SSL downloads. Refer back to your distro's section in the [Linuxbrew Dependencies](https://github.com/Homebrew/linuxbrew#dependencies) to fix this.
 
+### Ubuntu
+
+Neovim has been added to a [Personal Package Archive](https://launchpad.net/~rudenko/+archive/ubuntu/neovim) which allows you to install it using `apt-get` for versions [12.04 and on](https://wiki.ubuntu.com/Releases).
+
+Just run the following commands:
+
+```bash
+sudo add-apt-repository ppa:rudenko/neovim
+sudo apt-get update
+sudo apt-get install neovim 
+```
+
 ### Arch Linux
 
 Package can be installed from [AUR](https://aur.archlinux.org/packages/neovim-git/)
