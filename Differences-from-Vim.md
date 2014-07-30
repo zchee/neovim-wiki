@@ -32,6 +32,5 @@ A compatibility layer is provided to support legacy Vim plugins that depend on
 * Encryption/blowfish/`cryptmethod` [#699](https://github.com/neovim/neovim/pull/699). (May be partially restored by [#701](https://github.com/neovim/neovim/issues/701))
 * `:shell`
 * `:mode` does not accept an argument (this was for MS-DOS) [#588](https://github.com/neovim/neovim/pull/588)
-* Removed options:
-    * `'textauto'`
-    * `'textmode'`
+* `'textauto'`
+* `'textmode'`
