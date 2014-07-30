@@ -31,3 +31,4 @@ A compatibility layer is provided to support legacy Vim plugins that depend on
 * Removed support for 8.3 filesystem/shortnames [#635](https://github.com/neovim/neovim/pull/635)
 * Encryption/blowfish/`cryptmethod` [#699](https://github.com/neovim/neovim/pull/699). (May be partially restored by [#701](https://github.com/neovim/neovim/issues/701))
 * `:shell`
+* `:mode` does not accept an argument (this was for MS-DOS)
