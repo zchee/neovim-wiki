@@ -2,7 +2,6 @@
 
 * Replace [`eval.c`](https://github.com/neovim/neovim/blob/57cd2d661454cd6686c7d98cafa783ea94495fd5/src/eval.c) (20k lines) by VimL => Lua translator
 * Remove superfluous `#include`s with Google's [include-what-you-use](https://code.google.com/p/include-what-you-use/) [#549](https://github.com/neovim/neovim/issues/549)
-* Use pipes instead of temp files ([#473](https://github.com/neovim/neovim/issues/473) [#807](https://github.com/neovim/neovim/pull/807)) for `system()` calls and shell operations (improves reliability: [1](https://groups.google.com/d/msg/vim_use/JSXaM9YjWKo/HtHn36WFb_kJ), [2](https://groups.google.com/d/msg/vim_use/adD_-9yBCEU/Y0ul-OwXGpYJ), [3](https://github.com/mattn/gist-vim/issues/48#issuecomment-12916349), [4](https://groups.google.com/d/msg/vim_use/oU7y-hmQoNc/2qQnkPl6aKkJ))
 * Avoid unnecessary `STRLEN`
 * Port all IO to libuv
 
@@ -14,6 +13,7 @@ Items in the [vNext milestone](https://github.com/neovim/neovim/issues?milestone
 
 ## Completed
 
+- Implement `system()` with pipes instead of temp files ([#473](https://github.com/neovim/neovim/issues/473) [#978](https://github.com/neovim/neovim/pull/978)) to improve [performance](https://github.com/neovim/neovim/pull/978#issuecomment-50092527) and reliability ([1](https://groups.google.com/d/msg/vim_use/JSXaM9YjWKo/HtHn36WFb_kJ), [2](https://groups.google.com/d/msg/vim_use/adD_-9yBCEU/Y0ul-OwXGpYJ), [3](https://github.com/mattn/gist-vim/issues/48#issuecomment-12916349), [4](https://groups.google.com/d/msg/vim_use/oU7y-hmQoNc/2qQnkPl6aKkJ))
 - Update translations (runtime messages--not user manual):
     - `pt_BR`
     - `de`
