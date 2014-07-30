@@ -7,9 +7,9 @@
 
 ## Planned
 
-Items in the [first release milestone](https://github.com/neovim/neovim/issues?milestone=5&state=open) provide a rough estimate of progress towards a production-quality, cross-platform packaged product.
+Items in the [first release milestone](https://github.com/neovim/neovim/milestones/first%20release) provide a rough estimate of progress towards a production-quality, cross-platform packaged product.
 
-Items in the [vNext milestone](https://github.com/neovim/neovim/issues?milestone=6&state=open) are being planned or considered; they have **no release target** and may be cancelled or deferred indefinitely.
+Items in the [vNext milestone](https://github.com/neovim/neovim/milestones/vNext) are being planned or considered; they have **no release target** and may be cancelled or deferred indefinitely.
 
 ## Completed
 
