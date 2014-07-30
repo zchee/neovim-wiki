@@ -192,7 +192,7 @@ Version  | Description | Merged
 [7.4.353](https://code.google.com/p/vim/source/detail?r=d42a1d3b74d40f580359dbd139d2d0dfa7235252) | 'breakindent' doesn't work with the 'list' option. | ✗
 [7.4.354](https://code.google.com/p/vim/source/detail?r=5deaa4e9812d4b4ae59d8a3e70bf19983e07e6da) | Compiler warning. | ✗
 [7.4.355](https://code.google.com/p/vim/source/detail?r=9a4efda75b5ef0f496d6a29c0a4dfcc7c03412f9) | Several problems with Javascript indenting. | ✗
-[7.4.356](https://code.google.com/p/vim/source/detail?r=34465a179ce21c827cab4c65a75e6b490600a96f) | Mercurial does not ignore memfile_test. (Daniel Hahler) | ✗
+[7.4.356](https://code.google.com/p/vim/source/detail?r=34465a179ce21c827cab4c65a75e6b490600a96f) | Mercurial does not ignore memfile_test. (Daniel Hahler) | N/A
 [7.4.357](https://code.google.com/p/vim/source/detail?r=4eedfc4911a1db9c4874689f6c652be0094838f2) | After completion some characters are not redrawn. | ✗
 [7.4.358](https://code.google.com/p/vim/source/detail?r=771b97ba3b4768c77f2070423a93152d6977f012) | Sort is not always stable. | ✗
 [7.4.359](https://code.google.com/p/vim/source/detail?r=182c7b987283a567121e9c43d831779d1c88645f) | When 'ttymouse' is set to 'uxterm' the xterm version is not requested. (Tomas Janousek) | ✗
@@ -216,12 +216,12 @@ Version  | Description | Merged
 [7.4.377](https://code.google.com/p/vim/source/detail?r=255561411d7ae4b3c713bfb2e2f13c5f08ce0c61) | When 'equalalways' is set a split may report "no room" even though there is plenty of room. | ✗
 [7.4.378](https://code.google.com/p/vim/source/detail?r=75ae211df37d789c54f660ccddddd0e370aa67ae) | Title of quickfist list is not kept for setqflist(list, 'r'). | ✗
 [7.4.379](https://code.google.com/p/vim/source/detail?r=16cfdf28be40ccbefaeb80ec574a098362a36a34) | Accessing freed memory after using setqflist(list, 'r'). (Lcd) | ✗
-[7.4.380](https://code.google.com/p/vim/source/detail?r=7cfbad4a78bf306e5aaf84dc9c29b48e7d77c1ef) | Loading python may cause Vim to exit. | ✗
+[7.4.380](https://code.google.com/p/vim/source/detail?r=7cfbad4a78bf306e5aaf84dc9c29b48e7d77c1ef) | Loading python may cause Vim to exit. | N/A
 [7.4.381](https://code.google.com/p/vim/source/detail?r=0a3d958e346ee051667d3e541273b78fb1dfed9a) | Get u_undo error when backspacing in Insert mode deletes more than one line break. (Ayberk Ozgur) | ✗
 [7.4.382](https://code.google.com/p/vim/source/detail?r=dbd7dc1ea2e6bd0fc3c9ec7faec76382412d0129) | Mapping characters may not work after typing Esc in Insert mode. | ✗
 [7.4.383](https://code.google.com/p/vim/source/detail?r=2f02675bc4b051fff7be63f5107f659045a010e1) | Bad interaction between preview window and omnifunc. | ✗
 [7.4.384](https://code.google.com/p/vim/source/detail?r=6f88e2dafbf637f573372bb7d8957fe4f2fd0843) | Test 102 fails when compiled with small features. | ✗
-[7.4.385](https://code.google.com/p/vim/source/detail?r=6e24b97dde6930a62ade6bee725babf4a39bb0a4) | When building with tiny or small features building the .mo files fails. | ✗
+[7.4.385](https://code.google.com/p/vim/source/detail?r=6e24b97dde6930a62ade6bee725babf4a39bb0a4) | When building with tiny or small features building the .mo files fails. | N/A
 [7.4.386](https://code.google.com/p/vim/source/detail?r=09af7cb358f0bafd4b7437ff580f4cd7e15b74a1) | When splitting a window the changelist position is wrong. | ✗
 [7.4.387](https://code.google.com/p/vim/source/detail?r=975d96776111914f69c8a0b98ef7db3bbb83cd10) | "4gro" replaces one character then executes "ooo". (Urtica Dioica) | ✗
 [7.4.388](https://code.google.com/p/vim/source/detail?r=76e7fb736c0e9d06b97ff95ee8baad1fb09d420b) | With 'linebreak' set and 'list' unset a Tab is not counted properly. (Kent Sibilev) | ✗
