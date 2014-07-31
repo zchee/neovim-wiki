@@ -167,7 +167,7 @@ Version  | Description | Merged
 [7.4.328](https://code.google.com/p/vim/source/detail?r=01d9ffdd6e6ffb39faf946e13ec63bd7dc31e162) | Selection of inner block is inconsistent. ([#970](https://github.com/neovim/neovim/pull/970))| RFC
 [7.4.329](https://code.google.com/p/vim/source/detail?r=018df65085f8990c1407442f8c783d4cee72a479) | When moving the cursor and then switching to another window the	    previous window isn't scrolled. (Yukihiro Nakadaira) | ✗
 [7.4.330](https://code.google.com/p/vim/source/detail?r=f9fa2e506b9f07549cd91074835c5c553db7b3a7) | Using a regexp pattern to highlight a specific position can be	    slow. | ✗
-[7.4.331](https://code.google.com/p/vim/source/detail?r=6d984caa0409fd284722c44cb09a0a2b5360bd4f) | Relative numbering not updated after a linewise yank.  Issue 235. | ✗
+[7.4.331](https://code.google.com/p/vim/source/detail?r=6d984caa0409fd284722c44cb09a0a2b5360bd4f) | Relative numbering not updated after a linewise yank.  Issue 235. ([#1017](https://github.com/neovim/neovim/pull/1017))| RFC
 [7.4.332](https://code.google.com/p/vim/source/detail?r=8fed02d53b45848b0fff60de13d06858963cfb17) | GTK: When a sign icon doesn't fit exactly there can be ugly gaps. | N/A
 [7.4.333](https://code.google.com/p/vim/source/detail?r=8ae50e3ef8bf733c0869c01b5132d02feffc0955) | Compiler warning for unused function. | ✗
 [7.4.334](https://code.google.com/p/vim/source/detail?r=03d260a8ea0c0c67f424c387dbe2af5754e5e589) | Unitialized variables, causing some problems. | ✗
