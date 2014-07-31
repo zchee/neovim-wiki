@@ -1,17 +1,3 @@
-### Notice: 
-
-The runtime is currently packaged in a separate repo. To have neovim function as you would expect, clone the [vimscript](https://github.com/neovim/vimscript) repository with the following command:
-
-    git clone https://github.com/neovim/vimscript.git
-
-This will clone the repository into your current directory. You will then need to set the environment variable, `$VIM`, to the path to the subdirectory `runtime`. To have this happen at the initialization of your shell session add the following line to your .bashrc:
-
-    export VIM=/path/to/vimscript/runtime/
-
-Or you can start neovim like this (if neovim is installed and on your path):
-
-    VIM=/path/to/vimscript/runtime/ nvim
-
 ## Quick install
 
 If you're on one of the following OSes, good news! You can get neovim right away!
