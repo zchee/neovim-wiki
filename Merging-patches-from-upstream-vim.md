@@ -68,7 +68,7 @@ Version  | Description | Merged
 [7.4.221](https://code.google.com/p/vim/source/detail?r=a548aae15b3a27a56d814900049785c29c01a37a)  | Quickfix doesn't resize on ":copen 20". ([#527](https://github.com/neovim/neovim/pull/527))| ✔
 [7.4.226](https://code.google.com/p/vim/source/detail?r=b650f2db8f9604124c0ddfb14af0c04bd4ae0580)  | Cursurline highlighting not redrawn when scrolling. ([#554](https://github.com/neovim/neovim/pull/554)) | ✔
 [7.4.229](https://code.google.com/p/vim/source/detail?r=839cca5ec18d560e3714065e54ed38b6e812aaf7)  | Using ":let" for listing variables and the second one is a curly braces expression may fail. ([#528](https://github.com/neovim/neovim/pull/528)) | ✔
-[7.4.230](https://code.google.com/p/vim/source/detail?r=57ecd7a8c0f052296b41b916eb1ae7f2a9a48b27)  | Error when using ":options". | ✗
+[7.4.230](https://code.google.com/p/vim/source/detail?r=57ecd7a8c0f052296b41b916eb1ae7f2a9a48b27)  ([#938](https://github.com/neovim/neovim/pull/938)) | Error when using ":options". | ✔
 [7.4.231](https://code.google.com/p/vim/source/detail?r=0a295a3c9e473512ad3b006a0fb752ad43d19094)  | An error in ":options" is not caught by the tests. | ✗
 [7.4.232](https://code.google.com/p/vim/source/detail?r=845608965bd9d0b2755997a7be812746885ff105)  | ":%s/\n//" uses a lot of memory. ([#529](https://github.com/neovim/neovim/pull/529)) | ✔
 [7.4.233](https://code.google.com/p/vim/source/detail?r=22a1d5762ba3a75984e89dcc47a65498f63a6c2c)  | Escaping special characters for using "%" with a shell command is inconsistent, parenthesis are escaped but spaces are not. ([#530](https://github.com/neovim/neovim/pull/530)) | ✔
@@ -109,7 +109,7 @@ Version  | Description | Merged
 [7.4.270](https://code.google.com/p/vim/source/detail?r=c519c446c5488bfd48c93a03efae4ae3e0c1f162) | Comparing pointers instead of the string they point to. | N/A
 [7.4.271](https://code.google.com/p/vim/source/detail?r=88b0571de4327ba5127a483493bd7d46e6a9850e) | Compiler warning on 64 bit windows. | ✗
 [7.4.272](https://code.google.com/p/vim/source/detail?r=00228400629e28384f7f52556c3c119ba0d0a44d) | Using just "$" does not cause an error message. ([#653](https://github.com/neovim/neovim/pull/653))| ✔
-[runtime](https://code.google.com/p/vim/source/detail?r=306caa30d83b42d79685c472a4829a9aa43e72c8) | Runtime file updates. | ✗
+[runtime](https://code.google.com/p/vim/source/detail?r=306caa30d83b42d79685c472a4829a9aa43e72c8) | Runtime file updates. ([#938](https://github.com/neovim/neovim/pull/938)) | ✔
 [7.4.274](https://code.google.com/p/vim/source/detail?r=1ee3fc5b40ae94c2a7fc5a62bca38d4f730f9bb2) | When doing ":update" just before running an external command that changes the file, the timestamp may be unchanged and the file is not reloaded. ([#670](https://github.com/neovim/neovim/pull/670)) | ✔
 [7.4.275](https://code.google.com/p/vim/source/detail?r=8a3117a4887c1e12a1165c9719491f96753787d6) | When changing the type of a sign that hasn't been placed ther is no error message. ([#738](https://github.com/neovim/neovim/pull/738))| ✔
 [7.4.276](https://code.google.com/p/vim/source/detail?r=a6b59ee633a355095e6473ec5e2a7d9088bfb853) | The fish shell is not supported. ([#773](https://github.com/neovim/neovim/pull/773))| ✗
