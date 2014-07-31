@@ -68,7 +68,7 @@ Version  | Description | Merged
 [7.4.221](https://code.google.com/p/vim/source/detail?r=a548aae15b3a27a56d814900049785c29c01a37a)  | Quickfix doesn't resize on ":copen 20". ([#527](https://github.com/neovim/neovim/pull/527))| ✔
 [7.4.226](https://code.google.com/p/vim/source/detail?r=b650f2db8f9604124c0ddfb14af0c04bd4ae0580)  | Cursurline highlighting not redrawn when scrolling. ([#554](https://github.com/neovim/neovim/pull/554)) | ✔
 [7.4.229](https://code.google.com/p/vim/source/detail?r=839cca5ec18d560e3714065e54ed38b6e812aaf7)  | Using ":let" for listing variables and the second one is a curly braces expression may fail. ([#528](https://github.com/neovim/neovim/pull/528)) | ✔
-[7.4.230](https://code.google.com/p/vim/source/detail?r=57ecd7a8c0f052296b41b916eb1ae7f2a9a48b27)  ([#938](https://github.com/neovim/neovim/pull/938)) | Error when using ":options". | ✔
+[7.4.230](https://code.google.com/p/vim/source/detail?r=57ecd7a8c0f052296b41b916eb1ae7f2a9a48b27)  | Error when using ":options". ([#938](https://github.com/neovim/neovim/pull/938)) | ✗
 [7.4.231](https://code.google.com/p/vim/source/detail?r=0a295a3c9e473512ad3b006a0fb752ad43d19094)  | An error in ":options" is not caught by the tests. | ✗
 [7.4.232](https://code.google.com/p/vim/source/detail?r=845608965bd9d0b2755997a7be812746885ff105)  | ":%s/\n//" uses a lot of memory. ([#529](https://github.com/neovim/neovim/pull/529)) | ✔
 [7.4.233](https://code.google.com/p/vim/source/detail?r=22a1d5762ba3a75984e89dcc47a65498f63a6c2c)  | Escaping special characters for using "%" with a shell command is inconsistent, parenthesis are escaped but spaces are not. ([#530](https://github.com/neovim/neovim/pull/530)) | ✔
