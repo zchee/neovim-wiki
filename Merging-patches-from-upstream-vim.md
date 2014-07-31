@@ -163,7 +163,7 @@ Version  | Description | Merged
 [7.4.324](https://code.google.com/p/vim/source/detail?r=c476e0ac8b406693c3877baffa0e97ff25e59b06) | In Ex mode, cyrillic characters are not handled. (Stas Malavin) | ✗
 [7.4.325](https://code.google.com/p/vim/source/detail?r=1f288d2475488c3f44c7248e99019e2612580716) | When starting the gui and changing the window size the status line	    may not be drawn correctly. | N/A
 [7.4.326](https://code.google.com/p/vim/source/detail?r=1dbcb23ae7a8b68ddbc28b4feb794c4c1db12395) | Can't build Tiny version. (Elimar Riesebieter) | N/A
-[7.4.327](https://code.google.com/p/vim/source/detail?r=99d8f2d72dcd4b850de81998cc9b1120c8165762) | When 'verbose' is set to display the return value of a function, may get E724 repeatedly. ([#1010](https://github.com/neovim/neovim/pull/1010))| ✗
+[7.4.327](https://code.google.com/p/vim/source/detail?r=99d8f2d72dcd4b850de81998cc9b1120c8165762) | When 'verbose' is set to display the return value of a function, may get E724 repeatedly. ([#1010](https://github.com/neovim/neovim/pull/1010))| RFC
 [7.4.328](https://code.google.com/p/vim/source/detail?r=01d9ffdd6e6ffb39faf946e13ec63bd7dc31e162) | Selection of inner block is inconsistent. ([#970](https://github.com/neovim/neovim/pull/970))| RFC
 [7.4.329](https://code.google.com/p/vim/source/detail?r=018df65085f8990c1407442f8c783d4cee72a479) | When moving the cursor and then switching to another window the	    previous window isn't scrolled. (Yukihiro Nakadaira) | ✗
 [7.4.330](https://code.google.com/p/vim/source/detail?r=f9fa2e506b9f07549cd91074835c5c553db7b3a7) | Using a regexp pattern to highlight a specific position can be	    slow. | ✗
