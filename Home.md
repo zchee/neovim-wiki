@@ -23,7 +23,7 @@
 - [C programming techniques and Neovim-specific guidance](C-programming)
     - [C refactorings and code-smells](C-Refactorings-and-Code-Smells-Catalog)
     - [Integer type semantics](Integer-types-refactoring-guidelines)
-- [Documentation (built with Doxygen)](http://neovim.org/doc/dev)
+- [Documentation](http://neovim.org/doc/)
     - [Code overview](Code-overview)
     - [How to generate function callgraphs with doxygen](Generate-callgraphs-with-Doxygen)
 
