@@ -1,13 +1,10 @@
-Description
------------
+This wiki page aims to keep track of what patches from upstream Vim have been merged since the fork. The fork happened at version 7.4.160. This is a direct offshoot of [issue #438](https://github.com/neovim/neovim/issues/438).
 
-This wiki page aims to keep track of what patches from upstream vim have been merged since the fork. The fork happened at version 7.4.160. This is a direct offshoot of [issue #438](https://github.com/neovim/neovim/issues/438).
+Everyone is welcome to add new relevant patches to the table [below](#table-of-patches). Some types of patches are **never** relevant, notably:
 
-Everyone is welcome to add new relevant patches to the table at the [bottom of this page](#table-of-patches). Some types of patches are **never** relevant, notably:
-
-- **Compiler warning fixes**: neovim strives to have no warnings at all, for now only on gcc and clang though, so the warnings have already been fixed.
-- **#ifdef tweaking**: an example, recently vim decided to enable `FEAT_VISUAL` for all platforms and watch the fallout. Neovim has usually already done that.
-- **Legacy system support**: Fixes for legacy systems such as Solaris, Amiga, Xenix are not needed since they are not supported by neovim.
+- **Compiler warning fixes**: Neovim strives to have no warnings at all, and has a very different build system from Vim.
+- **#ifdef tweaking**: For example, Vim decided to enable `FEAT_VISUAL` for all platforms and watch the fallout. Neovim has already done that.
+- **Legacy system support**: Fixes for legacy systems such as Solaris, Amiga, Xenix, Mac OS 9, Windows 95, MS-DOS, are not needed because they are not supported by Neovim.
 - (add more...)
 
 Anything else might be relevant, it is preferable to err on the side of caution and when you don't know, please post in the issue to let others take a look. 
@@ -15,9 +12,9 @@ Anything else might be relevant, it is preferable to err on the side of caution 
 Pull requests
 -------------
 
-Merging in patches from upstream is a good way to get started with contributing to neovim, so don't hesitate to send your pull requests! 
+Merging in patches from upstream is a good way to get started with contributing to Neovim, so don't hesitate to send your pull requests! 
 
-Commit message should include:
+[Commit message](https://github.com/neovim/neovim/commit/4ccf1125ff569eccfc34abc4ad794044c5ab7455) should include:
 
 - a token indicating the Vim patch number, formatted as follows (no space!): `vim-patch:7.4.123`
 - a URL pointing to the Vim online repository commit:
@@ -112,7 +109,7 @@ Version  | Description | Merged
 [runtime](https://code.google.com/p/vim/source/detail?r=306caa30d83b42d79685c472a4829a9aa43e72c8) | Runtime file updates. ([#938](https://github.com/neovim/neovim/pull/938)) | ✔
 [7.4.274](https://code.google.com/p/vim/source/detail?r=1ee3fc5b40ae94c2a7fc5a62bca38d4f730f9bb2) | When doing ":update" just before running an external command that changes the file, the timestamp may be unchanged and the file is not reloaded. ([#670](https://github.com/neovim/neovim/pull/670)) | ✔
 [7.4.275](https://code.google.com/p/vim/source/detail?r=8a3117a4887c1e12a1165c9719491f96753787d6) | When changing the type of a sign that hasn't been placed ther is no error message. ([#738](https://github.com/neovim/neovim/pull/738))| ✔
-[7.4.276](https://code.google.com/p/vim/source/detail?r=a6b59ee633a355095e6473ec5e2a7d9088bfb853) | The fish shell is not supported. ([#773](https://github.com/neovim/neovim/pull/773))| ✗
+[7.4.276](https://code.google.com/p/vim/source/detail?r=a6b59ee633a355095e6473ec5e2a7d9088bfb853) | The fish shell is not supported. ([#977](https://github.com/neovim/neovim/pull/977))| ✗
 [7.4.277](https://code.google.com/p/vim/source/detail?r=373204662d82e894b27ee76bc3319bc62c91f6ae) | Using ":sign unplace *" may leave the cursor in the wrong position (Christian Brabandt) ([#744](https://github.com/neovim/neovim/pull/744))| ✔
 [7.4.278](https://code.google.com/p/vim/source/detail?r=b4ce0e1fb5a67d7d6b0bca8eaa3edc2e94a085d8) | list_remove() conflicts with function defined in Sun header file. | ✗
 [7.4.279](https://code.google.com/p/vim/source/detail?r=8e9db1f27a0063df023cc05a760fce73255dad24) | globpath() returns a string, making it difficult to get a list of matches. (Greg Novack) | ✗
