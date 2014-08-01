@@ -142,7 +142,7 @@ Version  | Description | Merged
 [7.4.306](https://code.google.com/p/vim/source/detail?r=05e1d8afcc5e375bf708ccc9810e2fd1a5a8a3cf) | getchar(0) does not return Esc.	    Matsumoto) ([#842](https://github.com/neovim/neovim/pull/842)) | ✔
 [7.4.307](https://code.google.com/p/vim/source/detail?r=06c10522d321d98874546b2a4d3b0ae145386f2e) | Can't build without the +termresponse feature. | ✗
 [7.4.308](https://code.google.com/p/vim/source/detail?r=e3d2b8d83bb30c428a051f50791e454fcbc080af) | When using ":diffsplit" on an empty file the cursor is displayed	    on the command line. ([#832](https://github.com/neovim/neovim/pull/832))| ✔
-[7.4.309](https://code.google.com/p/vim/source/detail?r=88a6e9f33822d33b6c32db578750c6c178c63f50) | When increasing the size of the lower window, the upper window	    jumps back to the top. (Ron Aaron) ([#843](https://github.com/neovim/neovim/pull/843))| ✗
+[7.4.309](https://code.google.com/p/vim/source/detail?r=88a6e9f33822d33b6c32db578750c6c178c63f50) | When increasing the size of the lower window, the upper window	    jumps back to the top. (Ron Aaron) ([#843](https://github.com/neovim/neovim/pull/843))| ✔
 [7.4.310](https://code.google.com/p/vim/source/detail?r=ccac0aa34eeaf46dad4b831461a532fc3fe71096) | getpos()/setpos() don't include curswant. ([#919](https://github.com/neovim/neovim/pull/919)) | ✗
 [7.4.311](https://code.google.com/p/vim/source/detail?r=f6f7543043246107075f0d3739c471d51b7226da) | Can't use winrestview to only restore part of the view. ([#906](https://github.com/neovim/neovim/pull/906))| ✗
 [7.4.312](https://code.google.com/p/vim/source/detail?r=66eead134d6800fd4cf2d5d4b135d300c933f09a) | Cannot figure out what argument list is being used for a window. | ✗
