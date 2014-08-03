@@ -12,6 +12,16 @@ for C files. Note that clint.py needs to be in your path and that you will have 
 
 ## Debugging
 
+### Core dump
+
+Core dumps by default are disabled [disabled on Ubuntu](http://stackoverflow.com/a/18368068/152142) and OS X. 
+
+    ulimit -c unlimited
+
+to enable core dumping. If you then reproduce a segfault in `nvim`, it will "dump core". Typically this means a `core` file will appear in the current directory (or check `/var/log/apport.log` to see where it was written). You can then get a backtrace from the `core` with:
+
+    gdb -q -n -ex bt -batch ./build/bin/nvim core > backtrace.txt
+
 ### Using `lldb` to step through unit tests
 
 ```bash
