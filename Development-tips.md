@@ -14,7 +14,7 @@ for C files. Note that clint.py needs to be in your path and that you will have 
 
 ### Core dump
 
-Core dumps by default are disabled [disabled on Ubuntu](http://stackoverflow.com/a/18368068/152142) and OS X. 
+Core dumps by default are [disabled on Ubuntu](http://stackoverflow.com/a/18368068/152142) and OS X. 
 
     ulimit -c unlimited
 
