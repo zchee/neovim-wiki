@@ -37,3 +37,5 @@ Items in the [vNext milestone](https://github.com/neovim/neovim/milestones/vNext
 - Use portable string format tokens [#574](https://github.com/neovim/neovim/pull/574)
     - First step towards building on Windows
 - [Reduce indiscriminate redraws](https://github.com/neovim/neovim/pull/485#issuecomment-39924973) to improve performance
+- Remove 'proto' directory [#155](https://github.com/neovim/neovim/issues/155)
+    - Vim uses a single global header `vim.h` that is included in every module and includes all other headers. This is bad for documentation (module dependencies are obscured) and incremental building (changing any header file will cause every module to be rebuilt)
