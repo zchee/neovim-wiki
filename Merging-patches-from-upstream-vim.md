@@ -157,7 +157,7 @@ Version  | Description | Merged
 [7.4.321](https://code.google.com/p/vim/source/detail?r=c052937aae8ca5082f308b8ff0712c7eccdd30c8) | Can't build with strawberry perl 5.20 + mingw-w64-4.9.0. | N/A
 [7.4.322](https://code.google.com/p/vim/source/detail?r=fd96c55d683d76ece4ba01490d9796c13c988cdc) | Using "msgfmt" is hard coded, cannot use "gmsgfmt". | N/A
 [7.4.323](https://code.google.com/p/vim/source/detail?r=238f5027830cad22e17a970483af9b160869cdf3) | Substitute() with zero width pattern breaks multi-byte character. ([#967](https://github.com/neovim/neovim/pull/967)) | RFC
-[7.4.324](https://code.google.com/p/vim/source/detail?r=c476e0ac8b406693c3877baffa0e97ff25e59b06) | In Ex mode, cyrillic characters are not handled. (Stas Malavin) | ✗
+[7.4.324](https://code.google.com/p/vim/source/detail?r=c476e0ac8b406693c3877baffa0e97ff25e59b06) | In Ex mode, cyrillic characters are not handled. (Stas Malavin) ([#1049](https://github.com/neovim/neovim/pull/1049)) | RFC
 [7.4.325](https://code.google.com/p/vim/source/detail?r=1f288d2475488c3f44c7248e99019e2612580716) | When starting the gui and changing the window size the status line	    may not be drawn correctly. | N/A
 [7.4.326](https://code.google.com/p/vim/source/detail?r=1dbcb23ae7a8b68ddbc28b4feb794c4c1db12395) | Can't build Tiny version. (Elimar Riesebieter) | N/A
 [7.4.327](https://code.google.com/p/vim/source/detail?r=99d8f2d72dcd4b850de81998cc9b1120c8165762) | When 'verbose' is set to display the return value of a function, may get E724 repeatedly. ([#1010](https://github.com/neovim/neovim/pull/1010))| RFC
