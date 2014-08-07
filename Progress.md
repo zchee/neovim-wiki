@@ -24,7 +24,7 @@ Items in the [vNext milestone](https://github.com/neovim/neovim/milestones/vNext
     - Removed tons of `FEAT_*` macros with [unifdef]
     - Reduce C code from 300k lines to 170k
 - Enable modern compiler features and [optimizations](https://github.com/neovim/neovim/pull/426)
-- Formatt entire source with [uncrustify]
+- Format entire source with [uncrustify]
 - Replace autotools build system with [CMake]
 - Implement [continuous integration] and [test coverage]
 - 120+ new unit tests
