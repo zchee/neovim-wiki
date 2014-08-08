@@ -34,3 +34,4 @@ A compatibility layer is provided to support legacy Vim plugins that depend on
 * `:mode` does not accept an argument (this was for MS-DOS) [#588](https://github.com/neovim/neovim/pull/588)
 * `'textauto'`
 * `'textmode'`
+* EBCDIC
