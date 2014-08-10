@@ -16,6 +16,20 @@ To build and run all integration tests:
 
     make test
 
+### Vroom tests
+
+Neovim will now use [vroom](https://github.com/google/vroom/blob/master/examples/basics.vroom) to write tests/specifications. To install vroom a python installation is required:
+
+```
+pip install neovim
+git clone git://github.com/google/vroom
+cd vroom
+python setup.py build
+python setup.py install
+```
+
+A simple way to install python and it's packages without requiring root is to use [pyenv](https://github.com/yyuu/pyenv)
+
 ## Unit tests
 
 To build and run all unit tests:
