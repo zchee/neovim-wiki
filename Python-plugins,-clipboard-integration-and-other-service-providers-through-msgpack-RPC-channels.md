@@ -108,9 +108,7 @@ To enable logging on the python process, set the NEOVIM_PYTHON_LOG_FILE environm
 NEOVIM_PYTHON_LOG_FILE=python.log nvim
 ```
 
-As explained, not all python plugins will perform well(or even work) with Neovim. One example is YouCompleteMe, which gets really slow for big files. [This branch](https://github.com/tarruda/YouCompleteMe/tree/nvim2) contains a patch that improves YCM performance with Neovim, it can be used as a temporary workaround for YCM users until the problems with the python client are fixed
-
-If you are running into performance problems with other python plugins, it's possible to create a cProfile report to help diagnose the bottleneck:
+As explained, not all python plugins will perform well(or even work) with Neovim. If you are running into performance problems with other python plugins, it's possible to create a cProfile report to help diagnose possible bottlenecks:
 
 ```
 NEOVIM_PYTHON_PROFILE=1 nvim && cat .nvim-python-client.profile
