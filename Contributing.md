@@ -6,9 +6,9 @@ Thanks for considering contributing to Neovim.
 
 [![Stories in Ready](https://badge.waffle.io/neovim/neovim.png?label=ready)](https://waffle.io/neovim/neovim)
 
-- [Entry-level issues](https://github.com/neovim/neovim/issues?labels=entry-level&state=open)
+- [Entry-level issues](https://github.com/neovim/neovim/labels/entry-level)
 - [Porting OS layer to libuv](Porting-OS-layer-to-libuv)
-- [Merging patches from upstream vim](Merging patches from upstream vim)
+- [Merging patches from upstream vim](Merging-patches-from-upstream-vim)
 
 Check this [refactoring catalog](https://github.com/neovim/neovim/wiki/C-Refactorings-and-Code-Smells-Catalog) if you want some inspiration on what to work on.
 
@@ -47,7 +47,7 @@ Use Neovim, and report bugs on this GitHub page.
 Hang around the irc channel #neovim at FreeNode and answer questions.
 
 ### Documentation
-Help document Neovim on the GitHub wiki and the Neovim documentation project: https://github.com/neovim/docs
+Help document Neovim by editing this wiki or making pull requests for [`runtime/doc/`](https://github.com/neovim/neovim/tree/master/runtime/doc).
 
 ### Raise awareness
 Write about Neovim and show it to your friends
