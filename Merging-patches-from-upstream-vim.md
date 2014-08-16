@@ -1,26 +1,29 @@
-This wiki page aims to keep track of what patches from upstream Vim have been merged since the fork. The fork happened at version 7.4.160. This is a direct offshoot of [issue #438](https://github.com/neovim/neovim/issues/438).
+Neovim was forked from Vim 7.4.160; it is kept up-to-date with relevant Vim patches in order to avoid duplicate work. For details, see [issue #438](https://github.com/neovim/neovim/issues/438).
 
-Everyone is welcome to add new relevant patches to the table [below](#table-of-patches). Some types of patches are **never** relevant, notably:
+Everyone is welcome to send pull requests for relevant Vim patches (see [below](#pull-requests)). But some types of patches are **not relevant to Neovim:**
 
 - **Compiler warning fixes**: Neovim strives to have no warnings at all, and has a very different build system from Vim.
 - **#ifdef tweaking**: For example, Vim decided to enable `FEAT_VISUAL` for all platforms and watch the fallout. Neovim has already done that.
 - **Legacy system support**: Fixes for legacy systems such as Solaris, Amiga, Xenix, Mac OS 9, Windows 95, MS-DOS, are not needed because they are not supported by Neovim.
-- (add more...)
+- Most **GUI-related** changes: Neovim GUIs are implemented external to the core C codebase.
 
-Anything else might be relevant, it is preferable to err on the side of caution and when you don't know, please post in the issue to let others take a look. 
+Anything else might be relevant; err on the side of caution, and post an issue if you aren't sure. 
+
+Merge tips
+----------
+
+- Where Vim code uses `malloc()` and friends, merges to Neovim [should use `xmalloc` and related `memory.c` "x-functions"](https://github.com/neovim/neovim/pull/691#issuecomment-52400360).
+- Where Vim code uses `vim_free()`, Neovim uses `free()`.
 
 Pull requests
 -------------
 
-Merging in patches from upstream is a good way to get started with contributing to Neovim, so don't hesitate to send your pull requests! 
+Please include `vim-patch:7.4.xxx` in the *pull request* title. In addition, the [*commit message*](https://github.com/neovim/neovim/commit/4ccf1125ff569eccfc34abc4ad794044c5ab7455) should include:
 
-[Commit message](https://github.com/neovim/neovim/commit/4ccf1125ff569eccfc34abc4ad794044c5ab7455) should include:
-
-- a token indicating the Vim patch number, formatted as follows (no space!): `vim-patch:7.4.123`
-- a URL pointing to the Vim online repository commit:
+- A token indicating the Vim patch number, formatted as follows (no space!): `vim-patch:7.4.123`
+- A URL pointing to the Vim commit:
     - https://code.google.com/p/vim/source/detail?r=5d03c374712128077ac4c342aad02120ed98df70
-- the original Vim patch commit message, including the author
-    
+- The original Vim commit message, including the author
 
 Table of Patches
 ----------------
