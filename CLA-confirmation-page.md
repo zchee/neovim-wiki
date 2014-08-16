@@ -32,5 +32,4 @@ The timestamp is sent by the CLA form. Please don't modify this page until you h
 - 1406603190363 Austin Walker
 - 1407083027021 Damián Silvani
 - 1408125834698 Adam Lamers
-
-===
+- 1408172880560 Joey Gouly
