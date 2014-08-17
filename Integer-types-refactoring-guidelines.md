@@ -7,19 +7,19 @@ In many different tasks, the need arises to refactor integer types, mainly to:
 - avoid possible data truncation because of explicit casting.
 - etc.
 
-It's important for us to reach an agreement on how this kind of refactorings should be done.
-However, something must be said before giving that advice: 
+It's important to agree on how this kind of refactoring should be done.
+However: 
 
 - This is a difficult thing to get completely right. No hard-and-fast set of rules will match every possible situation.
-- **This set of guidelines intends to be a framework establishing principles** to help people new to confront these problems, and for more experienced people to have a consensus so that code is homogeneous. 
+- **This set of guidelines intends to be a framework establishing principles** to help new people to confront these problems, and for more experienced people to have a consensus so that code is homogeneous. 
 - **It does not intend to be a set of mechanical rules to be applied without further thinking, or to be dogmatic about**.
 - Every particular case should be carefully analyzed before taking actions on it.
 
-That said, here it goes the advice:
+That said, here goes the advice:
 
 ### Long types
 - `long_u` with size semantics (all, or mostly all) --> `size_t`
-- `long_u` withouth size semantics (rare, if ever) --> `uint64_t`
+- `long_u` without size semantics (rare, if ever) --> `uint64_t`
 - `long` with size semantics:
     * signedness conversion easy --> `size_t` <br/>
        (check for signedness conversion usual problems).
@@ -33,7 +33,7 @@ That said, here it goes the advice:
     * signedness conversion easy --> `size_t` <br/>
        (check for signedness conversion usual problems).
     * signedness conversion difficult --> `ssize` <br/>
-       (for example, complicated code involving substractions) 
+       (for example, complicated code involving subtractions) 
 - `int` without size semantics --> `int`
 
 ### Special cases
