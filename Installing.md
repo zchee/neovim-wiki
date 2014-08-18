@@ -38,6 +38,13 @@ Package can be installed from [AUR](https://aur.archlinux.org/packages/neovim-gi
 
 Package can be installed from [science overlay](http://gpo.zugaina.org/app-editors/neovim)
 
+### openSUSE
+
+Third-party packages are available for openSUSE 13.1/Factory, you can install them through the [1 Click Install](http://software.opensuse.org/package/neovim?search_term=Neovim) or manually using
+
+    zypper ar http://download.opensuse.org/repositories/home:/ruiabreuferreira/openSUSE_13.1/ home:ruiabreuferreira
+    zypper in neovim
+
 ## Manual install
 
 ### Dependencies
