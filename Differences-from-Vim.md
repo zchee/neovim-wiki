@@ -24,7 +24,7 @@ A compatibility layer is provided to support legacy Vim plugins that depend on
 
 - Code runs in another process.
 - `channel_send_call()` blocks until the client responds.
-- There's a hardcoded 3 second timeout before `nvim` assumes the client is stuck (for example, `python << EOF while True: pass EOF` would only block for 3 seconds).
+- ~~There's a hardcoded 3 second timeout before `nvim` assumes the client is stuck (for example, `python << EOF while True: pass EOF` would only block for 3 seconds).~~
 - The call stack depth is limited to 20 (this should be more than enough for any use case).
 
 ## Removed legacy features
