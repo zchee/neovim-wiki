@@ -7,6 +7,7 @@ This page describes notable differences in Neovim compared to Vim.
 ## Defaults
 
 * `'encoding'` defaults to `utf-8` / [#935](https://github.com/neovim/neovim/pull/935)
+* `'ttyfast'` defaults to "on" / [#1045](https://github.com/neovim/neovim/issues/1045)
 
 ## Features
 
