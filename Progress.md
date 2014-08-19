@@ -1,7 +1,7 @@
 ## In-Progress
 
 * Replace [`eval.c`](https://github.com/neovim/neovim/blob/57cd2d661454cd6686c7d98cafa783ea94495fd5/src/eval.c) (20k lines) by VimL => Lua translator
-* Remove superfluous `#include`s with Google's [include-what-you-use](https://code.google.com/p/include-what-you-use/) [#549](https://github.com/neovim/neovim/issues/549)
+* Remove superfluous `#include`s with [include-what-you-use](https://code.google.com/p/include-what-you-use/) [#549](https://github.com/neovim/neovim/issues/549) ([why?](http://zeuxcg.org/2010/11/15/include-rules/))
 * Avoid unnecessary `STRLEN`
 * Port all IO to libuv
 
