@@ -1,6 +1,6 @@
-## Quick install
+## Packaged Install
 
-If you're on one of the following OSes, good news! You can get neovim right away!
+If you're on one of these systems, you can get Neovim right away!
 
 ### OS X / [homebrew](http://brew.sh)
 
@@ -45,7 +45,7 @@ Third-party packages are available for openSUSE 13.1/Factory, you can install th
     zypper ar http://download.opensuse.org/repositories/home:/ruiabreuferreira/openSUSE_13.1/ home:ruiabreuferreira
     zypper in neovim
 
-## Manual install
+## Manual Install
 
 ### Dependencies
 
@@ -162,9 +162,7 @@ See [Building Neovim](Building-Neovim) for more options.
 
 ### Installing
 
-After building, the NeoVim binary file should be located in `./build/bin/nvim`.
-
-If you want to install the binary file in a specific location in your system (for example, ~/usr/bin/nvim):
+After building, the Neovim binary file will be in `./build/bin/nvim`. If you want to install the binary file in a specific location in your system (for example, ~/usr/bin/nvim):
 
 ```
 cmake -DCMAKE_INSTALL_PREFIX:PATH=~/usr/
