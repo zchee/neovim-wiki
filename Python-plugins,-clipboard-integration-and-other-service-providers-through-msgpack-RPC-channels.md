@@ -25,7 +25,7 @@ With that said, here are the steps necessary to test python plugins with Neovim:
 - Make sure you have python installed. python3 is not supported yet(This is a
   limitation of the python client).
 - Install the python client: `pip install neovim`
-- On the top of your vimrc(or before any code that checks for `has('python')`),
+- On the top of your nvimrc(or before any code that checks for `has('python')`),
   add this snippet:
 
 ```vim
@@ -40,7 +40,7 @@ The `python_host_init` variable contains the shell command which bootstraps the 
 For now, clipboard also depends on python(This will change once we have GUIs working). These are the setup instructions:
 
 - Install the 'xerox' module: `pip install xerox`
-- Create a ~/.vim/pythonx/nvim_clipboard.py file with the following contents:
+- Create a ~/.nvim/pythonx/nvim_clipboard.py file with the following contents:
 
 ```
 import xerox
@@ -64,7 +64,7 @@ if has('neovim')
 endif
 ```
 
-The python script above implements the "clipboard provider", and it's automatically loaded when the python host is started. If you load python plugins in your vimrc, that will happen transparently, but it's also possible to configure Neovim to bootstrap the python host when the clipboard register is accessed. Here's a vimrc snippet that automatically activates clipboard or python plugins:
+The python script above implements the "clipboard provider", and it's automatically loaded when the python host is started. If you load python plugins in your nvimrc, that will happen transparently, but it's also possible to configure Neovim to bootstrap the python host when the clipboard register is accessed. Here's an nvimrc snippet that automatically activates clipboard or python plugins:
 
 ```vim
 if has('neovim')
@@ -90,7 +90,7 @@ Here are common causes for errors:
   `let s:python_host_init = 'python2 -c "import neovim; neovim.start_host()"'` as the bootstrap command
 
 
-If none of the above work, the logs will likely contain useful information about the problem. ~/.nvimlog contains Neovim-specific messages(such as problems before the python host is initialized). Here's the typical ~/.nvimlog output when python/clipboard are correctly initialized(they will be if python plugins are loaded in your vimrc)
+If none of the above work, the logs will likely contain useful information about the problem. ~/.nvimlog contains Neovim-specific messages(such as problems before the python host is initialized). Here's the typical ~/.nvimlog output when python/clipboard are correctly initialized(they will be if python plugins are loaded in your nvimrc)
 
 ```
 2014/07/17 11:19:15 [info @ provider_register:96] 18093 - Registered channel 1 as the provider for "python_execute"
