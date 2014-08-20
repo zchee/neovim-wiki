@@ -27,7 +27,7 @@ Please include `vim-patch:7.4.xxx` in the *pull request* title. In addition, the
 - Where Vim code uses `malloc()` and friends, merges to Neovim [should use `xmalloc` and related `memory.c` "x-functions"](https://github.com/neovim/neovim/pull/691#issuecomment-52400360).
 - Where Vim code uses `vim_free()`, Neovim uses `free()`.
 
-Table of Patches (this is now [tracked automatically](http://neovim.org/doc/build-reports/vimpatch/))
+Table of Patches (this is now [tracked automatically](http://neovim.org/doc/reports/vimpatch/))
 ----------------
 
 ✔ Done &nbsp; ✗ To do &nbsp; `N/A` Won't patch &nbsp; `RFC` Request for comments
