@@ -1,4 +1,4 @@
-## Packaged Install
+# Packaged Install
 
 If you're on one of these systems, you can get Neovim right away!
 
@@ -45,7 +45,7 @@ Third-party packages are available for openSUSE 13.1/Factory, you can install th
     zypper ar http://download.opensuse.org/repositories/home:/ruiabreuferreira/openSUSE_13.1/ home:ruiabreuferreira
     zypper in neovim
 
-## Manual Install
+# Manual Install
 
 ### Dependencies
 
