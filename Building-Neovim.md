@@ -40,13 +40,21 @@ To build and run all unit tests:
 
 ## "Release" build (optimized, NDEBUG)
 
-    rm -rf build/ ; make clean && make CMAKE_BUILD_TYPE=MinSizeRel
+    rm -rf build/ && make clean && make CMAKE_BUILD_TYPE=MinSizeRel
 
-`MinSizeRel` is CMake jargon for "minimum-sized release".  `Release` and `RelWithDebInfo` are also choices.
+- `MinSizeRel` is CMake jargon for "minimum-sized release".
+    - `Release` and `RelWithDebInfo` are also choices.
 
-Alternative:
+To verify that the build was optimized, you can set `VERBOSE=1` and look for the `-O` flag:
 
-    rm -rf build/ ; make cmake CFLAGS='-Wno-error -DNDEBUG -O3 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1' && make
+```
+rm -rf build/ && make VERBOSE=1 CMAKE_BUILD_TYPE=MinSizeRel | grep -e '\-O'
+/usr/bin/cc -DHAVE_CONFIG_H -DINCLUDE_GENERATED_DECLARATIONS -Os -DNDEBUG ... -Wall -Wextra -pedantic -Wno-unused-parameter -Wstrict-prototypes -std=gnu99 ...
+```
+
+Alternative to `CMAKE_BUILD_TYPE`:
+
+    rm -rf build/ && make cmake CFLAGS='-Wno-error -DNDEBUG -O3 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1' && make
 
 - `-U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1` is required because of [#223](https://github.com/neovim/neovim/issues/223).
 - To see the full build output (including flags send to the compiler by make/CMake), change the `make` step to `VERBOSE=1 make`
