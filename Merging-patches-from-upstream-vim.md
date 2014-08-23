@@ -191,7 +191,7 @@ Version  | Description | Merged
 [7.4.350](https://code.google.com/p/vim/source/detail?r=ad005d0114c1d2d83490787ef7ea2a3c6e5e7b9e) | Using C indenting for Javascript does not work well for a {} block inside parenthesis. | ✗
 [7.4.351](https://code.google.com/p/vim/source/detail?r=f9ec944e4474c649faad642797ffd798a7102549) | sort() is not stable. | ✗
 [7.4.352](https://code.google.com/p/vim/source/detail?r=b4962cf3a1c06a1f60f1d750df8fcf7035b00b99) | With 'linebreak' a tab causes a missing line break. | ✔
-[7.4.353](https://code.google.com/p/vim/source/detail?r=d42a1d3b74d40f580359dbd139d2d0dfa7235252) | 'breakindent' doesn't work with the 'list' option. | ✗
+[7.4.353](https://code.google.com/p/vim/source/detail?r=d42a1d3b74d40f580359dbd139d2d0dfa7235252) | 'breakindent' doesn't work with the 'list' option. | ✔
 [7.4.354](https://code.google.com/p/vim/source/detail?r=5deaa4e9812d4b4ae59d8a3e70bf19983e07e6da) | Compiler warning. | ✗
 [7.4.355](https://code.google.com/p/vim/source/detail?r=9a4efda75b5ef0f496d6a29c0a4dfcc7c03412f9) | Several problems with Javascript indenting. | ✗
 [7.4.356](https://code.google.com/p/vim/source/detail?r=34465a179ce21c827cab4c65a75e6b490600a96f) | Mercurial does not ignore memfile_test. (Daniel Hahler) | N/A
