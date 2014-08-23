@@ -155,7 +155,7 @@ Version  | Description | Merged
 [7.4.314](https://code.google.com/p/vim/source/detail?r=4d7af1962d6ce61df65fdc5c86544a61951f9517) | Completion messages can get in the way of a plugin. ([#971](https://github.com/neovim/neovim/pull/971)) | ✗
 [7.4.315](https://code.google.com/p/vim/source/detail?r=646616b6ff4defcc7bef0b198b540f6d965a8126) | Fixes for computation of topline not tested. ([#1021](https://github.com/neovim/neovim/pull/1021))| ✔
 [7.4.316](https://code.google.com/p/vim/source/detail?r=0fc665889e8f0af532cb4e3be2f0ff0421bf2fbc) | Warning from 64-bit compiler. | ✗
-[7.4.317](https://code.google.com/p/vim/source/detail?r=8ffcb546d782121dfc9d88c7edc6f62421efce89) | Crash when starting gvim.  Issue 230. | ✗
+[7.4.317](https://code.google.com/p/vim/source/detail?r=8ffcb546d782121dfc9d88c7edc6f62421efce89) | Crash when starting gvim.  Issue 230. | ✔
 [7.4.318](https://code.google.com/p/vim/source/detail?r=5c47dacf397c1c65d2dfc237b3ff395c66ec3d4d) | Check for whether a highlight group has settings ignores fg and bg color settings. ([#968](https://github.com/neovim/neovim/pull/968))| RFC
 [7.4.319](https://code.google.com/p/vim/source/detail?r=a076237d1c3849535681e82946a9041ed5525d7f) | Crash when putting zero bytes on the clipboard. | ✗
 [7.4.320](https://code.google.com/p/vim/source/detail?r=f7bc601823e5c81e2ca412506a42eff9fd790ace) | Possible crash when an BufLeave autocommand deletes the buffer. | ✗
@@ -176,7 +176,7 @@ Version  | Description | Merged
 [7.4.335](https://code.google.com/p/vim/source/detail?r=8ad2ecd116021ad5c945426e8bb80d741392b780) | No digraph for the new rouble sign. ([#1061](https://github.com/neovim/neovim/pull/1061))| RFC
 [7.4.336](https://code.google.com/p/vim/source/detail?r=a42ba1e5099290a86cac1a9ac490c49e82e4c2cf) | Setting 'history' to a big value causes out-of-memory errors. ([#994](https://github.com/neovim/neovim/pull/994)) | RFC
 [7.4.337](https://code.google.com/p/vim/source/detail?r=0206ac84ff5fdce6d893c470e0909d2aed547a24) | When there is an error preparing to edit the command line, the command won't be executed. (Hirohito Higashi) | ✗
-[7.4.338](https://code.google.com/p/vim/source/detail?r=ef83b423ebf7de11c1063c795dd2186a9b59b90f) | Cannot wrap lines taking indent into account. | RFC
+[7.4.338](https://code.google.com/p/vim/source/detail?r=ef83b423ebf7de11c1063c795dd2186a9b59b90f) | Cannot wrap lines taking indent into account. | ✔
 [7.4.339](https://code.google.com/p/vim/source/detail?r=fd7110d0c3bf4fea3cfa3d16da6c2a945d327c27) | Local function is available globally. | ✗
 [7.4.340](https://code.google.com/p/vim/source/detail?r=03f95f5e311b84653df70fb3c08a9d92cf21b8f0) | Error from sed about illegal bytes when installing Vim. | N/A
 [7.4.341](https://code.google.com/p/vim/source/detail?r=adc4a84f72eb44dae657af713922a6e2c1f64ae3) | sort() doesn't handle numbers well. | ✗
@@ -184,13 +184,13 @@ Version  | Description | Merged
 [7.4.343](https://code.google.com/p/vim/source/detail?r=539ce56d8f35fe2deb5c4f57335e1adf97ae4e74) | matchdelete() does not always update the right lines. | ✗
 [7.4.344](https://code.google.com/p/vim/source/detail?r=ce284c205558d103326a4c3f22f181774690b3eb) | Unessecary initializations and other things related to matchaddpos(). | ✗
 [7.4.345](https://code.google.com/p/vim/source/detail?r=ea2c5dfee1b04d216ebf992c5f46ecbdfee2854a) | Indent is not updated when deleting indent. | ✗
-[7.4.346](https://code.google.com/p/vim/source/detail?r=3248c6e40aee01a7254d111dd846c6ec7889a804) | Indent is not updated when changing 'breakindentopt'. (itchyny) | ✗
+[7.4.346](https://code.google.com/p/vim/source/detail?r=3248c6e40aee01a7254d111dd846c6ec7889a804) | Indent is not updated when changing 'breakindentopt'. (itchyny) | ✔
 [7.4.347](https://code.google.com/p/vim/source/detail?r=a162d41f10e1c3c8673d86d8b0c58fdaf1bddeaf) | test55 fails on some systems. | ✗
 [7.4.348](https://code.google.com/p/vim/source/detail?r=0b7586868f6da0372af7510650240e22dc1e6e64) | When using "J1" in 'cinoptions' a line below a continuation line gets too much indent. | ✗
 [7.4.349](https://code.google.com/p/vim/source/detail?r=79950dae1d7de8fc2cb0f8ddd087d403e2b9ce8e) | When there are matches to highlight the whole window is redrawn, which is slow. | ✗
 [7.4.350](https://code.google.com/p/vim/source/detail?r=ad005d0114c1d2d83490787ef7ea2a3c6e5e7b9e) | Using C indenting for Javascript does not work well for a {} block inside parenthesis. | ✗
 [7.4.351](https://code.google.com/p/vim/source/detail?r=f9ec944e4474c649faad642797ffd798a7102549) | sort() is not stable. | ✗
-[7.4.352](https://code.google.com/p/vim/source/detail?r=b4962cf3a1c06a1f60f1d750df8fcf7035b00b99) | With 'linebreak' a tab causes a missing line break. | ✗
+[7.4.352](https://code.google.com/p/vim/source/detail?r=b4962cf3a1c06a1f60f1d750df8fcf7035b00b99) | With 'linebreak' a tab causes a missing line break. | ✔
 [7.4.353](https://code.google.com/p/vim/source/detail?r=d42a1d3b74d40f580359dbd139d2d0dfa7235252) | 'breakindent' doesn't work with the 'list' option. | ✗
 [7.4.354](https://code.google.com/p/vim/source/detail?r=5deaa4e9812d4b4ae59d8a3e70bf19983e07e6da) | Compiler warning. | ✗
 [7.4.355](https://code.google.com/p/vim/source/detail?r=9a4efda75b5ef0f496d6a29c0a4dfcc7c03412f9) | Several problems with Javascript indenting. | ✗
@@ -208,8 +208,8 @@ Version  | Description | Merged
 [7.4.367](https://code.google.com/p/vim/source/detail?r=bdbe2037066df6a463346be1768a56d98001fb36) | Other solution for redrawing after completion. | ✗
 [7.4.368](https://code.google.com/p/vim/source/detail?r=021e16be3c026c9f883b2aba0b48469ecbae5d88) | Restoring the window sizes after closing the command line window doesn't work properly if there are nested splits. | ✗
 [7.4.369](https://code.google.com/p/vim/source/detail?r=72ee0db83788638c36bbcb076cabc2ba6c8cd4e7) | Using freed memory when exiting while compiled with EXITFREE. | ✗
-[7.4.370](https://code.google.com/p/vim/source/detail?r=50575818a97fa4777e52272f5ffc769179d76a8d) | Linebreak test fails when encoding is not utf-8. (Danek Duvall) | ✗
-[7.4.371](https://code.google.com/p/vim/source/detail?r=d44f298c43c74555f4ea21b710d377133f948d61) | When 'linebreak' is set control characters are not correctly displayed. (Kimmy Lindvall) | ✗
+[7.4.370](https://code.google.com/p/vim/source/detail?r=50575818a97fa4777e52272f5ffc769179d76a8d) | Linebreak test fails when encoding is not utf-8. (Danek Duvall) | ✔
+[7.4.371](https://code.google.com/p/vim/source/detail?r=d44f298c43c74555f4ea21b710d377133f948d61) | When 'linebreak' is set control characters are not correctly displayed. (Kimmy Lindvall) | ✔
 [7.4.372](https://code.google.com/p/vim/source/detail?r=a122efb555c4f08405051369310451a627ed524b) | When 'winminheight' is zero there might not be one line for the current window. | ✗
 [7.4.373](https://code.google.com/p/vim/source/detail?r=353330c512a9488cf5c1a3f8b8a57fa8cdd83a7a) | Compiler warning for unused argument and unused variable. | ✗
 [7.4.374](https://code.google.com/p/vim/source/detail?r=f59c4bf0ac3b525f703cafba9a9cb0aeb3cc7745) | Character after "fb" command not mapped if it might be a composing character. | ✗
@@ -226,5 +226,5 @@ Version  | Description | Merged
 [7.4.385](https://code.google.com/p/vim/source/detail?r=6e24b97dde6930a62ade6bee725babf4a39bb0a4) | When building with tiny or small features building the .mo files fails. | N/A
 [7.4.386](https://code.google.com/p/vim/source/detail?r=09af7cb358f0bafd4b7437ff580f4cd7e15b74a1) | When splitting a window the changelist position is wrong. | ✗
 [7.4.387](https://code.google.com/p/vim/source/detail?r=975d96776111914f69c8a0b98ef7db3bbb83cd10) | "4gro" replaces one character then executes "ooo". (Urtica Dioica) | ✗
-[7.4.388](https://code.google.com/p/vim/source/detail?r=76e7fb736c0e9d06b97ff95ee8baad1fb09d420b) | With 'linebreak' set and 'list' unset a Tab is not counted properly. (Kent Sibilev) | ✗
+[7.4.388](https://code.google.com/p/vim/source/detail?r=76e7fb736c0e9d06b97ff95ee8baad1fb09d420b) | With 'linebreak' set and 'list' unset a Tab is not counted properly. (Kent Sibilev) | ✔
 [7.4.389](https://code.google.com/p/vim/source/detail?r=3d206df5c8284f7d5f4a987ae9c7a508f289f008) | Still sometimes Vim enters Replace mode when starting up. | ✗
