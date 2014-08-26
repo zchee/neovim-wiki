@@ -27,7 +27,7 @@ Items in the [vNext milestone](https://github.com/neovim/neovim/milestones/vNext
 - Format entire source with [uncrustify](http://uncrustify.sourceforge.net/)
 - Replace autotools build system with [CMake](http://cmake.org/)
 - Implement [continuous integration](https://travis-ci.org/neovim/neovim) and [test coverage](https://coveralls.io/r/neovim/neovim)
-- 120+ new unit tests
+- 200+ new unit tests
 - Split large, monolithic files (`misc1.c`) into logical units
   (`path.c`, `indent.c`, `keymap.c`, ...)
 - [Implemented](https://github.com/neovim/neovim/pull/475) job control ("async")
