@@ -13,6 +13,7 @@ Items in the [vNext milestone](https://github.com/neovim/neovim/milestones/vNext
 
 ## Completed
 
+- Enhance build system with lua-based C preprocessor
 - Implement `system()` with pipes ([#978](https://github.com/neovim/neovim/pull/978)) instead of temp files to improve [performance](https://github.com/neovim/neovim/pull/978#issuecomment-50092527) and reliability ([1](https://groups.google.com/d/msg/vim_use/JSXaM9YjWKo/HtHn36WFb_kJ), [2](https://groups.google.com/d/msg/vim_use/adD_-9yBCEU/Y0ul-OwXGpYJ), [3](https://github.com/mattn/gist-vim/issues/48#issuecomment-12916349), [4](https://groups.google.com/d/msg/vim_use/oU7y-hmQoNc/2qQnkPl6aKkJ))
 - Use `hrtime()` (more precise and monotonic) for profiling instead of `gettimeofday()` [#831](https://github.com/neovim/neovim/issues/831)
 - Update translations (runtime messages--not user manual):
@@ -30,12 +31,10 @@ Items in the [vNext milestone](https://github.com/neovim/neovim/milestones/vNext
 - 200+ new unit tests
 - Split large, monolithic files (`misc1.c`) into logical units
   (`path.c`, `indent.c`, `keymap.c`, ...)
-- [Implemented](https://github.com/neovim/neovim/pull/475) job control ("async")
-- Rework out-of-memory handling resulting in greatly simplified control flow
-- Merge 50+ upstream patches
+- Implement [job control](https://github.com/neovim/neovim/pull/475) ("async")
+- Rework out-of-memory handling to simplify control flow
 - Remove 8.3 filename support [#635](https://github.com/neovim/neovim/pull/635)
-- Use portable string format tokens [#574](https://github.com/neovim/neovim/pull/574)
-    - First step towards building on Windows
+- Use portable string format tokens [#574](https://github.com/neovim/neovim/pull/574) (improves cross-platform viability)
 - [Reduce indiscriminate redraws](https://github.com/neovim/neovim/pull/485#issuecomment-39924973) to improve performance
 - Remove 'proto' directory [#155](https://github.com/neovim/neovim/issues/155)
     - Vim uses a single global header `vim.h` that is included in every module and includes all other headers. This is bad for documentation (module dependencies are obscured) and incremental building (changing any header file will cause every module to be rebuilt)
