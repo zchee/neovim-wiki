@@ -1,3 +1,5 @@
+*If you are working on a Neovim-related project, feel free to add a link to this page!*
+
 ### GUI projects
 
 | Platform | Project                                                   |
@@ -14,5 +16,9 @@
 | Node.js  | [ngroup/neovim.js](https://github.com/ngroup/neovim.js)         |
 | Python   | [neovim/python-client](https://github.com/neovim/python-client) |
 
-===
-*If you are working on a Neovim-related project, feel free to add a link to this page!*
+### Plugins
+
+Neovim is compatible with most Vim plugins, but here is a of list of some plugins that take special advantage of Neovim features:
+
+- [Vim-R-plugin](https://github.com/jcfaria/Vim-R-plugin)
+
