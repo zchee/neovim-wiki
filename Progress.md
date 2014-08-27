@@ -22,9 +22,10 @@ Items in the [vNext milestone](https://github.com/neovim/neovim/milestones/vNext
     - `sv`
 - Implement msgpack remote API [#509](https://github.com/neovim/neovim/pull/509) [#779](https://github.com/neovim/neovim/pull/779)
 - Remove support for legacy systems and move to C99
-    - Removed tons of `FEAT_*` macros with [unifdef](http://dotat.at/prog/unifdef/)
+    - Remove tons of `FEAT_*` macros with [unifdef](http://dotat.at/prog/unifdef/)
     - Reduce C code from 300k lines to 170k
-- Enable modern compiler features and [optimizations](https://github.com/neovim/neovim/pull/426)
+- Enable modern compiler features
+    - Use [function attributes](https://github.com/neovim/neovim/pull/426) to improve [performance and analysis](https://github.com/neovim/neovim/issues/1113#issuecomment-53512526)
 - Format entire source with [uncrustify](http://uncrustify.sourceforge.net/)
 - Replace autotools build system with [CMake](http://cmake.org/)
 - Implement [continuous integration](https://travis-ci.org/neovim/neovim) and [test coverage](https://coveralls.io/r/neovim/neovim)
