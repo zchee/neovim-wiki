@@ -10,6 +10,12 @@ See the [Building Neovim](Building-Neovim) page.
 If you are using Syntastic you can use https://gist.github.com/gilligan/9326904 to add clint.py as checker
 for C files. Note that clint.py needs to be in your path and that you will have to modify g:syntastic_c_checkers because it'll otherwise use gcc or make as default. See the syntastic documentation for details on that.
 
+## Experimenting with the API
+
+You can write a simple shell that grabs the API metadata and allows you to send commands to Neovim:
+
+https://github.com/splinterofchaos/neovim-cpp-client-experiment/blob/master/src/vim-shell.cpp
+
 ## Debugging
 
 ### Core dump
