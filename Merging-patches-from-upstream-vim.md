@@ -30,7 +30,7 @@ Please include `vim-patch:7.4.xxx` in the *pull request* title. In addition, the
 Table of Patches (this is now [tracked automatically](http://neovim.org/doc/reports/vimpatch/))
 ----------------
 
-✔ Done &nbsp; ✗ To do &nbsp; `N/A` Won't patch &nbsp; `RFC` Request for comments
+**The table below is for historical reference, and it will be deleted in a few weeks.** Please update `version.c` if you want to mark a patch as N/A or completed. http://neovim.org/doc/reports/vimpatch/ is generated from `version.c` and the GitHub API.
 
 Version  | Description | Merged
 ------------------- | --------------- | ----------
