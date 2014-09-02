@@ -114,7 +114,7 @@ Version  | Description | Merged
 [runtime](https://code.google.com/p/vim/source/detail?r=306caa30d83b42d79685c472a4829a9aa43e72c8) | Runtime file updates. ([#938](https://github.com/neovim/neovim/pull/938)) | ✔
 [7.4.274](https://code.google.com/p/vim/source/detail?r=1ee3fc5b40ae94c2a7fc5a62bca38d4f730f9bb2) | When doing ":update" just before running an external command that changes the file, the timestamp may be unchanged and the file is not reloaded. ([#670](https://github.com/neovim/neovim/pull/670)) | ✔
 [7.4.275](https://code.google.com/p/vim/source/detail?r=8a3117a4887c1e12a1165c9719491f96753787d6) | When changing the type of a sign that hasn't been placed ther is no error message. ([#738](https://github.com/neovim/neovim/pull/738))| ✔
-[7.4.276](https://code.google.com/p/vim/source/detail?r=a6b59ee633a355095e6473ec5e2a7d9088bfb853) | The fish shell is not supported. ([#977](https://github.com/neovim/neovim/pull/977))| ✗
+[7.4.276](https://code.google.com/p/vim/source/detail?r=a6b59ee633a355095e6473ec5e2a7d9088bfb853) | The fish shell is not supported. ([#977](https://github.com/neovim/neovim/pull/977))| ✔
 [7.4.277](https://code.google.com/p/vim/source/detail?r=373204662d82e894b27ee76bc3319bc62c91f6ae) | Using ":sign unplace *" may leave the cursor in the wrong position (Christian Brabandt) ([#744](https://github.com/neovim/neovim/pull/744))| ✔
 [7.4.278](https://code.google.com/p/vim/source/detail?r=b4ce0e1fb5a67d7d6b0bca8eaa3edc2e94a085d8) | list_remove() conflicts with function defined in Sun header file. | ✗
 [7.4.279](https://code.google.com/p/vim/source/detail?r=8e9db1f27a0063df023cc05a760fce73255dad24) | globpath() returns a string, making it difficult to get a list of matches. (Greg Novack) | ✗
@@ -135,7 +135,7 @@ Version  | Description | Merged
 [7.4.294](https://code.google.com/p/vim/source/detail?r=fdea5ea9afd139ea59dee6bdb3f1675b8b882bdf) | Test files missing from patch. ([#972](https://github.com/neovim/neovim/pull/972)) | ✗
 [7.4.295](https://code.google.com/p/vim/source/detail?r=662ae48e7e246a63d38c9f3165b15b62252edaee) | Various typos, bad white space and unclear comments. ([#833](https://github.com/neovim/neovim/pull/833))| ✔
 [7.4.296](https://code.google.com/p/vim/source/detail?r=53b87d790574b6d19034fb3390987c22fb928c58) | Can't run tests on Solaris. | N/A
-[7.4.297](https://code.google.com/p/vim/source/detail?r=81f5a056b2a582c8109da10cc538dc16a326a34d) | Memory leak from result of get_isolated_shell_name(). | ✗
+[7.4.297](https://code.google.com/p/vim/source/detail?r=81f5a056b2a582c8109da10cc538dc16a326a34d) | Memory leak from result of get_isolated_shell_name(). [(see)](https://github.com/neovim/neovim/commit/d067ad66ac2b6eb22eef3bfb7efa0007b7af9e5b#diff-d2b13f507f185cdf05782bb8265bc7c4R134) | N/A
 [7.4.298](https://code.google.com/p/vim/source/detail?r=156f891d520e93eab5d3ce02784660fb13a3b0d3) | Can't have a funcref start with "t:". ([#815](https://github.com/neovim/neovim/pull/815))| ✔
 [7.4.299](https://code.google.com/p/vim/source/detail?r=daebf8ce66089c0c179fb436ceba359ef8d593d5) | When running configure twice DYNAMIC_PYTHON_DLL may become empty. | N/A
 [7.4.300](https://code.google.com/p/vim/source/detail?r=1157079ca5f167bcf8746dfc52ea5a85e6c87a30) | The way config.cache is removed doesn't always work. | N/A
