@@ -36,7 +36,9 @@ To build and run all unit tests:
 
     make unittest
 
-* To run a *specific* test file: `TEST_FILE=test/unit/foo.moon make unittest`
+To run a *specific* test file:
+
+   TEST_FILE=test/unit/foo.lua make unittest
 
 ## "Release" build (optimized, NDEBUG)
 
