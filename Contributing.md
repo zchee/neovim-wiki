@@ -7,14 +7,18 @@ Thanks for considering contributing to Neovim.
 [![Stories in Ready](https://badge.waffle.io/neovim/neovim.png?label=ready)](https://waffle.io/neovim/neovim)
 
 - [Entry-level issues](https://github.com/neovim/neovim/labels/entry-level)
-- [Porting OS layer to libuv](Porting-OS-layer-to-libuv)
-- [Merging patches from upstream vim](Merging-patches-from-upstream-vim)
+- [Code reviews](https://github.com/neovim/neovim/pulls)
+- [Port OS layer to libuv](Porting-OS-layer-to-libuv)
+- [Merge patches from upstream Vim](Merging-patches-from-upstream-vim)
 
 Check this [refactoring catalog](https://github.com/neovim/neovim/wiki/C-Refactorings-and-Code-Smells-Catalog) if you want some inspiration on what to work on.
 
-## Travis
+## Pull Requests
 
-If you make changes to documentation or files that won't affect the current build status, add [ci skip] to the  commit message. See [this](http://docs.travis-ci.com/user/how-to-skip-a-build/) for more details.
+See [CONTRIBUTING.md](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md#pull-requests)
+for guidelines on sending contributions as pull requests.
+
+**Note:** If you make changes to documentation or files that won't affect the current build status, add `[ci skip]` to the  commit message. See [this](http://docs.travis-ci.com/user/how-to-skip-a-build/) for more details.
 
 ## Coverity
 
@@ -38,7 +42,7 @@ where `<id>` is the Coverity ID. The id is also called the CID. For an example, 
 
 ## Non-programming ways to contribute
 
-There are plenty of stuff you can contribute to without being a hardcore C programmer.
+There is plenty of stuff you can contribute without being a hardcore C programmer.
 
 ### Use Neovim
 Use Neovim, and report bugs on this GitHub page.
@@ -61,25 +65,3 @@ If you spot a duplicate issue, flag it up with a comment. If you see a report la
 ## Help with contributing
 
 See [Communicating](Communicating). Raise documentation issues.
-
-### Pull Requests
-
-When submitting pull requests, tag it to help others knowing the status of the pull.
-This avoids merging requests that are not yet ready or reviewed.
-By tagging, you'll also save reviewers and mergers some work.
-
-The following tags should be used in the subject as `[TAG] My contribution`.
-
-* `WIP` - Work In Progress. The pull request will change, and there is no need to review it yet.
-* `RFC` - Request For Comment. The request needs reviewing and/or comments.
-* `RDY` - The request is ready to be merged. The request must have been reviewed by at least one person and have no outstanding issues.
-
-
-If the pull request has a tag, only `RFC` and `RDY` might be merged.
-
-If a pull request doesn't have a tag, it's considered `WIP` as long as there are no comments indicating it's `RFC` or `RDY`.
-
-## Guidelines
-
-To make the process as smooth as possible we would ask you to follow the guidelines in 
- [CONTRIBUTING.md](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md)
