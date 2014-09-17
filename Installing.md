@@ -116,12 +116,12 @@ certificates or have not set them up correctly:
 <a name="lua-packages"></a>
 #### Lua packages
 
-A few lua packages are required for the build process. Normally these packages will be installed via [luarocks](http://luarocks.org/)(invoked by cmake automatically), but sometimes this will fail. There are two common causes for this:
+A few lua packages are required for the build process. Normally these packages will be installed via [luarocks](http://luarocks.org/) (invoked by cmake automatically), but sometimes this will fail. There are two common causes for this:
 
-- luarocks.org servers are down, in this case luarocks may hang forever with no feedback
+- luarocks servers are down
 - you need to install the 'unzip' command-line utility, if this is the case luarocks will report something like this: `Warning: Failed searching manifest: Failed loading manifest: Failed extracting manifest file`
 
-For fixing the first error, a luarocks mirror can be used:
+To fix the first error, a luarocks mirror can be used:
 
 ```sh
 cat >> .deps/usr/etc/luarocks/config-5.1.lua << "EOF"
@@ -135,7 +135,7 @@ make cmake
 Failing the above, you can always try installing the following packages manually:
 
 - [lpeg](http://www.inf.puc-rio.br/~roberto/lpeg/)
-- [lua-cmsgpack](https://github.com/antirez/lua-cmsgpack)
+- [lua-MessagePack](http://fperrad.github.io/lua-MessagePack/)
 
 For running tests, these are also required:
 
@@ -145,7 +145,7 @@ Keep in mind that some of those packages have their own dependencies which also 
 
 ### Building
 
-You can build the `nvim` executable immediately by just calling make (which will invoke `cmake` as required):
+You can build the `nvim` executable immediately by just calling `make` (which will invoke `cmake` as required):
 
 ```bash
 make
@@ -161,7 +161,7 @@ See [Building Neovim](Building-Neovim) for more options.
 
 ### Installing
 
-After building, the Neovim binary file will be in `./build/bin/nvim`. If you want to install the binary file in a specific location in your system (for example, ~/usr/bin/nvim):
+After building, the Neovim binary file will be in `./build/bin/nvim`. If you want to install the binary file in a specific location in your system (for example, `~/usr/bin/nvim`):
 
 ```
 cmake -DCMAKE_INSTALL_PREFIX:PATH=~/usr/
