@@ -117,7 +117,7 @@ rebuild:
 	rm -rf build && make
 ```
 
-## General notes on CMake
+## General notes on [CMake](http://www.cmake.org/examples/)
 
 Print all variable definitions:
 
