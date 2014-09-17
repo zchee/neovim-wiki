@@ -11,6 +11,8 @@ Everyone is welcome to send pull requests for relevant Vim patches (see [below](
 
 Anything else might be relevant; err on the side of caution, and post an issue if you aren't sure. 
 
+To mark a patch as "Not Applicable", append `NA` next to the commented-out patch number in `version.c`.
+
 Pull requests
 -------------
 
@@ -26,12 +28,3 @@ Please include `vim-patch:7.4.xxx` in the *pull request* title. In addition, the
 
 - Where Vim code uses `malloc()` and friends, merges to Neovim [should use `xmalloc` and related `memory.c` "x-functions"](https://github.com/neovim/neovim/pull/691#issuecomment-52400360).
 - Where Vim code uses `vim_free()`, Neovim uses `free()`.
-
-Table of Patches
-----------------
-
-http://neovim.org/doc/reports/vimpatch/ is automatically generated from `version.c` and the GitHub API.
-
-- To mark a patch as "Not Applicable", append `NA` next to the commented-out patch number in `version.c`
-
-
