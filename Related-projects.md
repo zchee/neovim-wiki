@@ -16,7 +16,7 @@
 | Lua         | [neovim/lua-client](https://github.com/neovim/lua-client)                            |
 | Node.js     | [ngroup/neovim.js](https://github.com/ngroup/neovim.js)                              |
 | Python      | [neovim/python-client](https://github.com/neovim/python-client)                      |
-
+| Ruby        | [alexgenco/neovim-ruby](https://github.com/alexgenco/neovim-ruby)                    |
 ### Plugins
 
 Neovim is compatible with most Vim plugins, but here is a of list of some plugins that take special advantage of Neovim features:
