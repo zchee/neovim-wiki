@@ -161,16 +161,18 @@ See [Building Neovim](Building-Neovim) for more options.
 
 ### Installing
 
-After building, the Neovim binary file will be in `./build/bin/nvim`. If you want to install the binary file in a specific location in your system (for example, `~/usr/bin/nvim`):
+After building, the Neovim binary file will be in `./build/bin/nvim`. 
+
+If you want to install the binary file in a specific location in your system (for example, `~/usr/bin/nvim`):
 
 ```
-cmake -DCMAKE_INSTALL_PREFIX:PATH=~/usr/
+cmake -DCMAKE_INSTALL_PREFIX:PATH=~/foo/
 make install
 ```
 
-If you added `~/usr/bin` to your `$PATH`, you should be able to see the following:
+If you added `~/foo/bin` to your `$PATH`, you should be able to see the following:
 
 ```
 $ which -a nvim
-{path to your $HOME}/usr/bin/nvim
+{path to your $HOME}/foo/bin/nvim
 ```
