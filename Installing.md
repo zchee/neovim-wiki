@@ -52,7 +52,7 @@ Third-party packages are available for openSUSE 13.1/Factory, you can install th
 <a name="for-debianubuntu"></a>
 #### Ubuntu/Debian
 
-    sudo apt-get install libtool autoconf automake cmake libncurses5-dev g++ pkg-config
+    sudo apt-get install libtool autoconf automake cmake libncurses5-dev g++ pkg-config unzip
 
 <a name="for-centos-rhel"></a>
 #### CentOS/RHEL/Fedora
