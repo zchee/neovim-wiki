@@ -12,23 +12,21 @@ Now that you have the dependencies, you can try other build targets and options,
 
 ## Legacy integration tests
 
-To build and run all integration tests:
+To build and run all legacy (Vim) integration tests:
 
+    make oldtest
+
+### Integration tests
+
+Until the Neovim lua client is ready, running integration tests requires some Python packages:
+
+    make distclean
+    make deps
+    PKG_CONFIG_PATH="$(pwd)/.deps/usr/lib/pkgconfig" pip install lupa
+    pip install neovim
     make test
 
-### Vroom tests
-
-Neovim will now use [vroom](https://github.com/google/vroom/blob/master/examples/basics.vroom) to write tests/specifications. To install vroom a python installation is required:
-
-```
-pip install neovim
-git clone git://github.com/google/vroom
-cd vroom
-python setup.py build
-python setup.py install
-```
-
-A simple way to install python and it's packages without requiring root is to use [pyenv](https://github.com/yyuu/pyenv)
+A simple way to install Python and Python packages without requiring root is to use [pyenv](https://github.com/yyuu/pyenv)
 
 ## Unit tests
 
