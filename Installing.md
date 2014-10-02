@@ -69,7 +69,7 @@ Please note that if you want to change the install location after you have alrea
 ```bash
 # Install to `/usr/local`
 make install
-# Install to other location
+# Install to other location: need to remove `build` directory!
 rm -rf ./build
 make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=~/other/location" install
 ```
