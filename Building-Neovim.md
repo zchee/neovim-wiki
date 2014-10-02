@@ -16,7 +16,7 @@ To build and run all legacy (Vim) integration tests:
 
     make oldtest
 
-### Integration tests
+## Integration tests
 
 Until the Neovim lua client is ready, running integration tests requires some Python packages:
 
