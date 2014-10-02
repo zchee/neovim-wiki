@@ -4,7 +4,7 @@ If you just pulled the Neovim source and want to get a working `nvim` binary,
 
     make
 
-pulls down third-party dependencies (such as libuv and luajit) into `.deps/`, and builds them. If you're missing a dependency such as `libtool`, the configure script will let you know. Install the missing dependencies, then try `make` again.
+pulls down third-party dependencies (such as libuv and luajit) into `.deps/`, and builds them. If you're missing a dependency such as `libtool`, the configure script will let you know. Install the missing dependencies, then try `make` again. If there are other problems, also have a look at the [build errors section](#build-errors) further down.
 
 * To generate the `Makefile`s without building: `make cmake`
 
@@ -122,3 +122,36 @@ rebuild:
 Print all variable definitions:
 
     cmake -LAH
+
+<a name="build-errors"></a>
+## Build errors
+
+<a name="lua-packages"></a>
+### Lua packages
+
+A few lua packages are required for the build process. Normally these packages will be installed via [luarocks](http://luarocks.org/) (invoked by cmake automatically), but sometimes this will fail. There are two common causes for this:
+
+- luarocks servers are down
+- you need to install the 'unzip' command-line utility, if this is the case luarocks will report something like this: `Warning: Failed searching manifest: Failed loading manifest: Failed extracting manifest file`
+
+To fix the first error, a luarocks mirror can be used:
+
+```sh
+cat >> .deps/usr/etc/luarocks/config-5.1.lua << "EOF"
+rocks_servers={ 
+  "http://luarocks.giga.puc-rio.br/" 
+}
+EOF
+make cmake
+```
+
+Failing the above, you can always try installing the following packages manually:
+
+- [lpeg](http://www.inf.puc-rio.br/~roberto/lpeg/)
+- [lua-MessagePack](http://fperrad.github.io/lua-MessagePack/)
+
+For running tests, these are also required:
+
+- [busted](http://olivinelabs.com/busted/)
+
+Keep in mind that some of those packages have their own dependencies which also have to be installed.
