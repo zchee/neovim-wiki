@@ -4,7 +4,7 @@ If you just pulled the Neovim source and want to get a working `nvim` binary,
 
     make
 
-pulls down third-party dependencies (such as libuv and luajit) into `.deps/`, and builds them. If you're missing a dependency such as `libtool`, the configure script will let you know. Install the missing dependencies, then try `make` again. If there are other problems, also have a look at the [build errors section](#build-errors) further down.
+pulls down third-party dependencies (such as libuv and luajit) into `.deps/`, and builds them. A number of [build prerequisites](#build-prerequisites) such as `libtool` are required for that, but the configure script will let you know if something is missing. Install the missing prerequisites, then try `make` again. If there are other problems, also have a look at the [build errors section](#build-errors) further down.
 
 * To generate the `Makefile`s without building: `make cmake`
 
@@ -121,8 +121,80 @@ Print all variable definitions:
 
     cmake -LAH
 
+
+<a name="build-prerequisites"></a>
+## Build Prerequisites
+
+The following build tools should be enough to compile Neovim. If this is not the case, feel free to add missing prerequisites to the list!
+
+<a name="for-debianubuntu"></a>
+### Ubuntu/Debian
+
+    sudo apt-get install libtool autoconf automake cmake libncurses5-dev g++ pkg-config unzip
+
+<a name="for-centos-rhel"></a>
+### CentOS/RHEL/Fedora
+
+If you're using CentOS/RHEL 6 you need at least autoconf version 2.69 for
+compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
+
+    sudo yum -y install autoconf automake cmake gcc gcc-c++ libtool ncurses-devel pkgconfig
+
+<a name="for-opensuse"></a>
+### openSUSE
+
+    sudo zypper install libtool autoconf automake cmake ncurses-devel gcc-c++
+
+<a name="for-freebsd-10"></a>
+### FreeBSD 10
+
+    sudo pkg install cmake libtool sha automake pkgconf unzip wget
+
+Note: if you have cmake installed already, you may need to re-install it.  The
+port had to be updated to support SSL for file downloads, so you may not have
+that feature. If you see the download complaining about an md5sum mismatch, and
+the actual md5sum is `d41d8cd98f00b204e9800998ecf8427e`, then this is your issue
+(that's the md5sum of an empty file). Also, make sure you have wget installed.
+Luarocks has bad interactions with curl, at least under FreeBSD, and will die with
+a PANIC in LuaJIT when trying to install a rock.
+
+<a name="for-arch-linux"></a>
+### Arch Linux
+
+    sudo pacman -S base-devel cmake ncurses pkg-config unzip
+
+<a name="for-os-x"></a>
+### OS X
+
+* Install [Xcode](https://developer.apple.com/) and [Homebrew](http://brew.sh)
+  or [MacPorts](http://www.macports.org)
+* Install libtool, automake and cmake:
+
+  Via MacPorts:
+
+      sudo port install libtool automake cmake pkgconfig
+      
+  Via Homebrew:
+
+      brew install libtool automake cmake pkg-config
+
+If you run into wget certificate errors, you may be missing the root SSL
+certificates or have not set them up correctly:
+
+  Via MacPorts:
+
+      sudo port install curl-ca-bundle
+      echo CA_CERTIFICATE=/opt/local/share/curl/curl-ca-bundle.crt >> ~/.wgetrc
+
+  Via Homebrew:
+
+      brew install curl-ca-bundle
+      echo CA_CERTIFICATE=$(brew --prefix curl-ca-bundle)/share/ca-bundle.crt >> ~/.wgetrc
+
 <a name="build-errors"></a>
 ## Build errors
+
+If you run into an error not explained here and manage to resolve it, feel free to add the solution to this section!
 
 <a name="lua-packages"></a>
 ### Lua packages
