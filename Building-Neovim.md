@@ -26,7 +26,7 @@ Until the Neovim lua client is ready, running integration tests requires some Py
     pip install neovim
     make test
 
-A simple way to install Python and Python packages without requiring root is to use [pyenv](https://github.com/yyuu/pyenv)
+A simple way to install Python and Python packages without requiring root is to use [pyenv](https://github.com/yyuu/pyenv). Using `pip --user` is another alternative.
 
 ## Unit tests
 
