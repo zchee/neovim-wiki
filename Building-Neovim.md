@@ -189,9 +189,13 @@ certificates or have not set them up correctly:
       brew install curl-ca-bundle
       echo CA_CERTIFICATE=$(brew --prefix curl-ca-bundle)/share/ca-bundle.crt >> ~/.wgetrc
 
-## Build errors
+## Troubleshooting/FAQ
 
-If you run into an error not explained here and manage to resolve it, feel free to add the solution to this section!
+If you run into an error not explained here and manage to resolve it, feel free to add it below!
+
+### CMake Error: `configure_file Problem configuring file`
+
+This is probably a permissions issue, which can happen if you run `sudo make` and then later try an unprivileged `make`. To fix this, simply remove your `build/` directory and try again.
 
 ### Lua packages
 
