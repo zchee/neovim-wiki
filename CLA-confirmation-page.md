@@ -43,3 +43,4 @@ The timestamp is sent by the CLA form. Please don't modify this page until you h
 - 1411524734271 Samuel Reed Koser
 - 1412699873620 Tayler Mulligan
 - 1413398100515 Victor Alessandro Trindade Fonseca
+- 1413758062669 Jeff Widman
