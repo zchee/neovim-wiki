@@ -18,8 +18,6 @@ Check this [refactoring catalog](https://github.com/neovim/neovim/wiki/C-Refacto
 See [CONTRIBUTING.md](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md#pull-requests)
 for guidelines on sending contributions as pull requests.
 
-**Note:** If you make changes to documentation or files that won't affect the current build status, add `[ci skip]` to the  commit message. See [this](http://docs.travis-ci.com/user/how-to-skip-a-build/) for more details.
-
 ## Coverity
 
 [Coverity Scan](https://scan.coverity.com/) is used to detect defects in the
