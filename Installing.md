@@ -20,6 +20,8 @@ Note: If you have the following error: `CMAKE_USE_SYSTEM_CURL is ON but a curl i
 
 ### Ubuntu
 
+ [*(broken since September 2014)*](https://launchpad.net/~rudenko/+archive/ubuntu/neovim/+builds?build_text=&build_state=all)
+
 Neovim has been added to a [Personal Package Archive](https://launchpad.net/~rudenko/+archive/ubuntu/neovim) which allows you to install it using `apt-get` for versions [12.04 and on](https://wiki.ubuntu.com/Releases).
 
 Just run the following commands:
