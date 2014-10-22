@@ -176,8 +176,7 @@ a PANIC in LuaJIT when trying to install a rock.
 
       brew install libtool automake cmake pkg-config
 
-If you run into wget certificate errors, you may be missing the root SSL
-certificates or have not set them up correctly:
+* **If you see wget certificate errors** (for OS X *before* version 10.10/Yosemite):
 
   Via MacPorts:
 
