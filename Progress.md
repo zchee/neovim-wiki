@@ -4,15 +4,20 @@
 * Remove superfluous `#include`s with [include-what-you-use](https://code.google.com/p/include-what-you-use/) [#549](https://github.com/neovim/neovim/issues/549) ([why?](http://zeuxcg.org/2010/11/15/include-rules/))
 * Avoid unnecessary `STRLEN`
 * Port all IO to libuv
+* Migrate legacy integration tests to lua + msgpack API [#1286](https://github.com/neovim/neovim/issues/1286)
 
 ## Planned
 
-Items in the [first release milestone](https://github.com/neovim/neovim/milestones/first%20release) provide a rough estimate of progress towards a production-quality, cross-platform packaged product.
+Items in the [first release milestone](https://github.com/neovim/neovim/milestones/first%20release) provide a rough estimate of progress towards a production-quality, cross-platform, packaged product.
 
 Items in the [vNext milestone](https://github.com/neovim/neovim/milestones/vNext) are being planned or considered; they have **no release target** and may be cancelled or deferred indefinitely.
 
 ## Completed
 
+- End-to-end [automation](https://github.com/neovim/bot-ci)
+    - Auto-generate [documentation](http://neovim.org/doc)
+    - Auto-generate [analysis](http://neovim.org/doc/reports/clang)
+    - Automate [nightly builds](https://github.com/neovim/neovim/releases/tag/nightly)
 - Enhance build system with lua-based C preprocessor
 - Implement `system()` with pipes ([#978](https://github.com/neovim/neovim/pull/978)) instead of temp files to improve [performance](https://github.com/neovim/neovim/pull/978#issuecomment-50092527) and reliability ([1](https://groups.google.com/d/msg/vim_use/JSXaM9YjWKo/HtHn36WFb_kJ), [2](https://groups.google.com/d/msg/vim_use/adD_-9yBCEU/Y0ul-OwXGpYJ), [3](https://github.com/mattn/gist-vim/issues/48#issuecomment-12916349), [4](https://groups.google.com/d/msg/vim_use/oU7y-hmQoNc/2qQnkPl6aKkJ))
 - Use `hrtime()` (more precise and monotonic) for profiling instead of `gettimeofday()` [#831](https://github.com/neovim/neovim/issues/831)
