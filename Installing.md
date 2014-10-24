@@ -76,4 +76,4 @@ rm -rf ./build
 make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=~/other/location" install
 ```
 
-See [Building Neovim](Building-Neovim) for more options and some pointers in case of [build errors](Building-Neovim#user-content-build-errors).
+See [Building Neovim](Building-Neovim) for more options and some pointers in case of [build errors](Building-Neovim#troubleshootingfaq).
