@@ -42,10 +42,12 @@ Package can be installed from [science overlay](http://gpo.zugaina.org/app-edito
 
 ### openSUSE
 
-Third-party packages are available for openSUSE 13.1/Factory, you can install them through the [1 Click Install](http://software.opensuse.org/package/neovim?search_term=Neovim) or manually using
+Third-party packages are available for openSUSE 13.1/13.2/Factory, you can install them through the [1 Click Install](http://software.opensuse.org/package/neovim?search_term=Neovim) or manually using
 
-    zypper ar http://download.opensuse.org/repositories/home:/ruiabreuferreira/openSUSE_13.1/ home:ruiabreuferreira
+    zypper ar http://download.opensuse.org/repositories/home:/ruiabreuferreira:/neovim/openSUSE_13.1/
     zypper in neovim
+
+Similarly adjust the URL for Factory or 13.2.
 
 # Manual Install
 
