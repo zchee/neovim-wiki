@@ -49,6 +49,10 @@ Third-party packages are available for openSUSE 13.1/13.2/Factory, you can insta
 
 Similarly adjust the URL for Factory or 13.2.
 
+### Slackware
+
+http://slackbuilds.org/apps/neovim/
+
 # Manual Install
 
 If no package is available for your operating system, you can perform a manual installation. This involves building Neovim and its dependencies, so you first need to make sure that all required build prerequisites are installed (see [build prerequisites](Building-Neovim#build-prerequisites)).
