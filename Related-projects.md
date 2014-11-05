@@ -17,9 +17,10 @@
 | Node.js     | [ngroup/neovim.js](https://github.com/ngroup/neovim.js)                              |
 | Python      | [neovim/python-client](https://github.com/neovim/python-client)                      |
 | Ruby        | [alexgenco/neovim-ruby](https://github.com/alexgenco/neovim-ruby)                    |
+
 ### Plugins
 
-Neovim is compatible with most Vim plugins, but here is a of list of some plugins that take special advantage of Neovim features:
+Neovim is compatible with most Vim plugins; following are some plugins that take special advantage of Neovim features:
 
 - [Vim-R-plugin](https://github.com/jcfaria/Vim-R-plugin)
 - [Floobits](https://github.com/Floobits/floobits-neovim)
