@@ -22,4 +22,5 @@
 Neovim is compatible with most Vim plugins, but here is a of list of some plugins that take special advantage of Neovim features:
 
 - [Vim-R-plugin](https://github.com/jcfaria/Vim-R-plugin)
+- [Floobits](https://github.com/Floobits/floobits-neovim)
 
