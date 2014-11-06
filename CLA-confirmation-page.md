@@ -51,3 +51,4 @@ The timestamp is sent by the CLA form. Please don't modify this page until you h
 - 1414969986046 Michael Reed
 - 1415027984330 Albert Safin
 - 1415030267575 Henadzi Tsaryk
+- 1415244288738 Artem Pavlichenko
