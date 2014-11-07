@@ -2,9 +2,10 @@
 
 ### GUI projects
 
-| Platform | Project                                                   |
-|----------|-----------------------------------------------------------|
-| Mac OS X | [stefan991/NeoVimX](https://github.com/stefan991/NeoVimX) |
+| Platform | Project                                                                 |
+|----------|-------------------------------------------------------------------------|
+| Mac OS X | [stefan991/NeoVimX](https://github.com/stefan991/NeoVimX)               |
+| Atom     | [carlosdcastillo/vim-mode](https://github.com/carlosdcastillo/vim-mode) |
 
 ### API clients
 
