@@ -117,9 +117,9 @@ rebuild:
 
 ## General notes on [CMake](http://www.cmake.org/examples/)
 
-Print all variable definitions:
-
-    cmake -LAH
+- `cmake -LAH` prints all variable definitions.
+- `build/CMakeCache.txt` contains the resolved values of all variables used by CMake.
+- `build/compile_commands.json` shows the full compiler invocations for each translation unit.
 
 ## Build Prerequisites
 
