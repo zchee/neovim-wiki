@@ -11,7 +11,8 @@ To **upgrade** from a previous version, use `reinstall` instead of `install`.
 
 ### Linux / [Linuxbrew](http://brew.sh/linuxbrew/)
 
-    brew install --HEAD https://raw.github.com/neovim/neovim/master/neovim.rb
+    brew tap neovim/homebrew-neovim
+    brew install --HEAD neovim
 
 To **upgrade** from a previous version, use `reinstall` instead of `install`.
 
