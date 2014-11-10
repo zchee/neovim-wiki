@@ -7,14 +7,20 @@ If you're on one of these systems, you can get Neovim right away! (If not, don't
     brew tap neovim/homebrew-neovim
     brew install --HEAD neovim
 
-To **upgrade** from a previous version, use `reinstall` instead of `install`.
+To **upgrade** from a previous version:
+
+    brew update
+    brew reinstall --HEAD neovim
 
 ### Linux / [Linuxbrew](http://brew.sh/linuxbrew/)
 
     brew tap neovim/homebrew-neovim
     brew install --HEAD neovim
 
-To **upgrade** from a previous version, use `reinstall` instead of `install`.
+To **upgrade** from a previous version:
+
+    brew update
+    brew reinstall --HEAD neovim
 
 Note: If you have the following error: `CMAKE_USE_SYSTEM_CURL is ON but a curl is not found`, you are missing the dependency for cURL that allows SSL downloads. Refer back to your distro's section in the [Linuxbrew Dependencies](https://github.com/Homebrew/linuxbrew#dependencies) to fix this.
 
