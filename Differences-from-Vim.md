@@ -28,6 +28,10 @@ A compatibility layer is provided to support legacy Vim plugins that depend on
 - `rpcrequest()` blocks until the client responds.
 - The call stack depth is limited to 20 (this should be more than enough).
 
+## Missing legacy features
+
+* `vim.bindeval()` (Vim 7.4 Python feature)
+
 ## Removed legacy features
 
 * Removed support for 8.3 filesystem/shortnames [#635](https://github.com/neovim/neovim/pull/635)
