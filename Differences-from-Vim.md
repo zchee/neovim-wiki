@@ -30,7 +30,7 @@ A compatibility layer is provided to support legacy Vim plugins that depend on
 
 ## Missing legacy features
 
-* `vim.bindeval()` (Vim 7.4 Python feature)
+* `vim.bindeval()` (new feature in Vim 7.4 python interface)
 
 ## Removed legacy features
 
