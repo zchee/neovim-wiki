@@ -27,3 +27,9 @@ Neovim is compatible with most Vim plugins; following are some plugins that take
 - [Floobits](https://github.com/Floobits/floobits-neovim)
 - [vim-plug](https://github.com/junegunn/vim-plug)
 - [neomake](https://github.com/benekastah/neomake)
+
+### Other projects
+
+These projects make use of Neovim features, but don't really fit into one of the other categories.
+
+ - [Vroom](https://github.com/google/vroom)
