@@ -5,6 +5,7 @@
 * Avoid unnecessary `STRLEN`
 * Port all IO to libuv
 * Migrate legacy integration tests to lua + msgpack API [#1286](https://github.com/neovim/neovim/issues/1286)
+* Lua plugin host (and `if_lua` compatibility layer)
 
 ## Planned
 
@@ -14,10 +15,9 @@ Items in the [vNext milestone](https://github.com/neovim/neovim/milestones/vNext
 
 ## Completed
 
-- End-to-end [automation](https://github.com/neovim/bot-ci)
-    - Auto-generate [documentation](http://neovim.org/doc)
-    - Auto-generate [analysis](http://neovim.org/doc/reports/clang)
-    - Automate [nightly builds](https://github.com/neovim/neovim/releases/tag/nightly)
+- Python plugin host
+    - Includes compatibility layer for legacy Vim python interface `if_pyth` (`:python`, `:pydo`, `:pyfile`)
+- End-to-end [automation](https://github.com/neovim/bot-ci) of [documentation](http://neovim.org/doc), [analysis](http://neovim.org/doc/reports/clang), [nightly builds](https://github.com/neovim/neovim/releases/tag/nightly), etc.
 - Enhance build system with lua-based C preprocessor
 - Implement `system()` with pipes ([#978](https://github.com/neovim/neovim/pull/978)) instead of temp files to improve [performance](https://github.com/neovim/neovim/pull/978#issuecomment-50092527) and reliability ([1](https://groups.google.com/d/msg/vim_use/JSXaM9YjWKo/HtHn36WFb_kJ), [2](https://groups.google.com/d/msg/vim_use/adD_-9yBCEU/Y0ul-OwXGpYJ), [3](https://github.com/mattn/gist-vim/issues/48#issuecomment-12916349), [4](https://groups.google.com/d/msg/vim_use/oU7y-hmQoNc/2qQnkPl6aKkJ))
 - Use `hrtime()` (more precise and monotonic) for profiling instead of `gettimeofday()` [#831](https://github.com/neovim/neovim/issues/831)
