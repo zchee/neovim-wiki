@@ -1,4 +1,4 @@
-This page describes notable differences in Neovim compared to Vim.
+Following are notable differences in Neovim compared to Vim.
 
 ## Configuration
 * Use `.nvimrc` instead of `.vimrc` for storing configuration.
@@ -12,7 +12,7 @@ This page describes notable differences in Neovim compared to Vim.
 
 ## Features
 
-* Neovim always ships with all features, in contrast to Vim which may have certain features removed depending on how it was built (this is called *compile-time feature selection*). This is like if Vim's "HUGE" build was the only Vim release type (except Neovim is smaller than Vim's "HUGE" build).
+* Neovim always ships with all features, in contrast to Vim which may have certain features removed depending on compile-time feature selection. This is like if Vim's "HUGE" build was the only Vim release type (except Neovim is smaller than Vim's "HUGE" build).
 * `:python` and `:python3` are always available (if your system has both Python 2 & 3) and may be used side-by-side in plugins. [#718](https://github.com/neovim/neovim/issues/718#issuecomment-47589739)
 
 ## Plugins
@@ -26,13 +26,20 @@ A compatibility layer is provided to support legacy Vim plugins that depend on
 
 - Code runs in another process.
 - `rpcrequest()` blocks until the client responds.
-- The call stack depth is limited to 20 (this should be more than enough).
 
 ## Missing legacy features
 
+*These legacy Vim features may be implemented in the future, but they are not planned for the current milestone.*
+
 * `vim.bindeval()` (new feature in Vim 7.4 python interface)
+* `if_ruby`
+* `if_perl`
+* `if_mzscheme`
+* `if_tcl`
 
 ## Removed legacy features
+
+*These legacy Vim features were intentionally removed in Neovim.*
 
 * Removed support for 8.3 filesystem/shortnames [#635](https://github.com/neovim/neovim/pull/635)
 * Encryption/blowfish/`cryptmethod` [#699](https://github.com/neovim/neovim/pull/699). (May be partially restored by [#701](https://github.com/neovim/neovim/issues/701))
