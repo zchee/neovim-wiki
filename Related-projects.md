@@ -28,8 +28,7 @@ Neovim is compatible with most Vim plugins; following are some plugins that take
 - [vim-plug](https://github.com/junegunn/vim-plug)
 - [neomake](https://github.com/benekastah/neomake)
 
-### Other projects
-
-These projects make use of Neovim features, but don't really fit into one of the other categories.
+### Projects supporting Neovim
 
  - [Vroom](https://github.com/google/vroom)
+ - [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
