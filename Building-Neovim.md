@@ -192,9 +192,10 @@ a PANIC in LuaJIT when trying to install a rock.
 
 If you run into an error not explained here and manage to resolve it, feel free to add it below!
 
-### CMake Error: `configure_file Problem configuring file`
+### CMake errors
 
-This is probably a permissions issue, which can happen if you run `sudo make` and then later try an unprivileged `make`. To fix this, simply remove your `build/` directory and try again.
+- `configure_file Problem configuring file`
+    - This is probably a permissions issue, which can happen if you run `sudo make` and then later try an unprivileged `make`. To fix this, simply remove your `build/` directory and try again.
 
 ### Lua packages
 
