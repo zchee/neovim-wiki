@@ -4,10 +4,8 @@ Thanks for considering contributing to Neovim.
 
 ## What needs to be done
 
-[![Stories in Ready](https://badge.waffle.io/neovim/neovim.png?label=ready)](https://waffle.io/neovim/neovim)
-
 - [Entry-level issues](https://github.com/neovim/neovim/labels/entry-level)
-- [Code reviews](https://github.com/neovim/neovim/pulls)
+- [Code reviews](https://github.com/neovim/neovim/pulls) [![PRs waiting for review](https://badge.waffle.io/neovim/neovim.png?label=RFC&title=RFC)](https://waffle.io/neovim/neovim)
 - [Port OS layer to libuv](Porting-OS-layer-to-libuv)
 - [Merge patches from upstream Vim](Merging-patches-from-upstream-vim)
 
