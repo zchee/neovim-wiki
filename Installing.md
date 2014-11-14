@@ -68,7 +68,7 @@ Afterwards, you can build and install Neovim into `/usr/local` by calling `make 
 To install Neovim to a directory of your choice, execute the following command instead:
 
 ```bash
-make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=~/neovim" install
+make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/neovim" install
 ```
 
 If you added `~/neovim/bin` to your `$PATH`, you should be able to see the following:
@@ -85,7 +85,7 @@ Please note that if you want to change the install location after you have alrea
 make install
 # Install to other location: need to remove `build` directory!
 rm -rf ./build
-make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=~/other/location" install
+make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/other/location" install
 ```
 
 See [Building Neovim](Building-Neovim) for more options and some pointers in case of [build errors](Building-Neovim#troubleshootingfaq).
