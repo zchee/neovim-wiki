@@ -123,7 +123,12 @@ rebuild:
 
 ## Build Prerequisites
 
-The following build tools should be enough to compile Neovim. If this is not the case, feel free to add missing prerequisites to the list!
+**General requirements:** 
+
+- A fairly recent gcc (4.3) or clang (see [#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
+- CMake built with SSL support (see [#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
+
+Other dependencies are listed below.
 
 <a name="for-debianubuntu"></a>
 ### Ubuntu/Debian
