@@ -24,6 +24,8 @@ Please include `vim-patch:7.4.xxx` in the *pull request* title. In addition, the
     - https://code.google.com/p/vim/source/detail?r=5d03c374712128077ac4c342aad02120ed98df70
 - The original Vim commit message, including the author
 
+Parts of the workflow have been automated (see [#1513](https://github.com/neovim/neovim/pull/1513)).
+
 **Code differences:**
 
 - Where Vim code uses `malloc()` and friends, merges to Neovim [should use `xmalloc` and related `memory.c` "x-functions"](https://github.com/neovim/neovim/pull/691#issuecomment-52400360).
