@@ -38,6 +38,11 @@ To run a *specific* test file:
 
     TEST_FILE=test/unit/foo.lua make unittest
 
+## Functional tests
+
+`$GDB` can be set to [run tests under gdbserver](https://github.com/neovim/neovim/pull/1527). If `$VALGRIND` is also set, it will add the `--vgdb=yes` option to valgrind instead of
+starting gdbserver. 
+
 ## "Release" build (optimized, NDEBUG)
 
     rm -rf build/ && make clean && make CMAKE_BUILD_TYPE=MinSizeRel
