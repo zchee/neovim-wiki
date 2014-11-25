@@ -9,6 +9,7 @@
 
 - [Installing](Installing)
 - [Differences from Vim](Differences-from-vim)
+- [Documentation](http://neovim.org/doc/)
 
 ### For developers
 
