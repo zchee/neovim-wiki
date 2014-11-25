@@ -12,6 +12,7 @@
 - [Documentation](http://neovim.org/doc/)
      - [User manual](http://neovim.org/doc/user/) (`:help`)
      - [Neovim feature reference](http://neovim.org/doc/user/nvim_intro.html) (`:help nvim-intro`)
+     - [Python plugins](http://neovim.org/doc/user/nvim_python.html) (`:help nvim-python`)
 
 ### For developers
 
