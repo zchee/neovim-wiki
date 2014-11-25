@@ -11,7 +11,7 @@ process via a msgpack-rpc API, which allows them to:
 On top of that, the remote API has been designed for easy extensibility, so there
 will always be new possibilities. 
 
-**A Neovim plugin is any program that talks to `nvim` through the remote API** (which can be reached via any arbitrary transport mechanism: TCP address, named pipe, stdin/stdout, ...).
+**A Neovim [*remote plugin*](https://github.com/neovim/neovim/blob/master/runtime/doc/remote_plugin.txt#L7) (`rplugin`) is any program that talks to `nvim` through the remote API** (which can be reached via any arbitrary transport mechanism: TCP address, named pipe, stdin/stdout, ...).
 
 It's possible to test the current API interactively using the python REPL and
 the [client library](https://github.com/neovim/python-client), but that isn't
