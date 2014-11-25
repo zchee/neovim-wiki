@@ -10,6 +10,8 @@
 - [Installing](Installing)
 - [Differences from Vim](Differences-from-vim)
 - [Documentation](http://neovim.org/doc/)
+     - [User manual](http://neovim.org/doc/user/) (`:help`)
+     - [Neovim feature reference](http://neovim.org/doc/user/nvim_intro.html) (`:help nvim-intro`)
 
 ### For developers
 
