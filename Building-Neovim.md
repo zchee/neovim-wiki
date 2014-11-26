@@ -180,7 +180,7 @@ a PANIC in LuaJIT when trying to install a rock.
 
   Via MacPorts:
 
-      sudo port install libtool automake cmake pkgconfig
+      sudo port install libtool autoconf automake cmake pkgconfig
       
   Via Homebrew:
 
