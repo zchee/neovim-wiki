@@ -63,7 +63,7 @@ http://slackbuilds.org/apps/neovim/
 
 Package can be installed from [unstable channel](http://nixos.org/nixos/manual/#sec-upgrading) by
 ```bash
-nix-env -i neovim
+nix-env -iA neovim
 ```
 
 # Manual Install
