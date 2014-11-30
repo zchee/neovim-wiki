@@ -16,6 +16,7 @@
 | Go          | [neovim/go](https://github.com/neovim/go)                                            |
 | Lua         | [neovim/lua-client](https://github.com/neovim/lua-client)                            |
 | Node.js     | [ngroup/neovim.js](https://github.com/ngroup/neovim.js)                              |
+| Node.js     | [fritzy/node-neovim](https://github.com/fritzy/node-neovim)                          |
 | Python      | [neovim/python-client](https://github.com/neovim/python-client)                      |
 | Ruby        | [alexgenco/neovim-ruby](https://github.com/alexgenco/neovim-ruby)                    |
 
