@@ -59,6 +59,13 @@ Similarly adjust the URL for Factory or 13.2.
 
 http://slackbuilds.org/apps/neovim/
 
+### NixOS
+
+Package can be installed from [unstable channel](http://nixos.org/nixos/manual/#sec-upgrading) by
+```bash
+nix-env -i neovim
+```
+
 # Manual Install
 
 If no package is available for your operating system, you can perform a manual installation. This involves building Neovim and its dependencies, so you first need to make sure that all required build prerequisites are installed (see [build prerequisites](Building-Neovim#build-prerequisites)).
