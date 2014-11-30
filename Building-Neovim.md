@@ -176,15 +176,15 @@ a PANIC in LuaJIT when trying to install a rock.
 
 * Install [Xcode](https://developer.apple.com/) and [Homebrew](http://brew.sh)
   or [MacPorts](http://www.macports.org)
-* Install libtool, automake and cmake:
+* Install other dependencies:
 
   Via MacPorts:
 
-      sudo port install libtool autoconf automake cmake pkgconfig
+      sudo port install libtool autoconf automake cmake pkgconfig gettext
       
   Via Homebrew:
 
-      brew install libtool automake cmake pkg-config
+      brew install libtool automake cmake pkg-config gettext
 
 * **If you see wget certificate errors** (for OS X *before* version 10.10/Yosemite):
 
