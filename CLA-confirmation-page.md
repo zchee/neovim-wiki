@@ -59,3 +59,4 @@ The timestamp is sent by the CLA form. Please don't modify this page until you h
 - 1416865765574 Bjorn Tipling
 - 1416941444203 Steven Oliver
 - 1417032524294 Stanley Chan
+- 1417362688342 Lachlan Easton
