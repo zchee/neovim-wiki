@@ -135,6 +135,8 @@ rebuild:
 
 Other dependencies are listed below.
 
+<!-- the debianubuntu link below is to avoid breaking links that we used in issues and handed out to users. -->
+<a name="for-debianubuntu"></a>
 <a name="for-ubuntu"></a>
 ### Ubuntu
 
