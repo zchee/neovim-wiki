@@ -135,11 +135,12 @@ rebuild:
 
 Other dependencies are listed below.
 
-<a name="for-debianubuntu"></a>
+<a name="for-ubuntu"></a>
 ### Ubuntu
 
     sudo apt-get install libtool autoconf automake cmake libncurses5-dev g++ pkg-config unzip
 
+<a name="for-debian"></a>
 ### Debian
 
     sudo apt-get install libtool libtool-bin autoconf automake cmake libncurses5-dev g++ pkg-config unzip
