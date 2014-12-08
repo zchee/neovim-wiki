@@ -61,3 +61,4 @@ The timestamp is sent by the CLA form. Please don't modify this page until you h
 - 1417032524294 Stanley Chan
 - 1417362688342 Lachlan Easton
 - 1417643220776 Moritz Petersen
+- 1418008180841 Connor Bradley
