@@ -62,3 +62,4 @@ The timestamp is sent by the CLA form. Please don't modify this page until you h
 - 1417362688342 Lachlan Easton
 - 1417643220776 Moritz Petersen
 - 1418008180841 Connor Bradley
+- 1418237063000 Victor Adam
