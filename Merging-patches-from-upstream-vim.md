@@ -26,8 +26,11 @@ Please include `vim-patch:7.4.xxx` in the *pull request* title. In addition, the
 
 Parts of the workflow have been automated (see [#1513](https://github.com/neovim/neovim/pull/1513)).
 
-**Code differences:**
+
+Code differences
+----------------
 
 - Where Vim code uses `malloc()` and friends, merges to Neovim [should use `xmalloc` and related `memory.c` "x-functions"](https://github.com/neovim/neovim/pull/691#issuecomment-52400360).
 - Where Vim code uses `vim_free()`, Neovim uses `free()`.
 - Vim tests (in `src/testdir/`) should be converted to lua tests (see [#1286](https://github.com/neovim/neovim/issues/1286) and [#1328](https://github.com/neovim/neovim/pull/1328))
+- `copy_chars()` and `copy_spaces()` were removed; use `memset()` instead [#1635](https://github.com/neovim/neovim/pull/1635)
