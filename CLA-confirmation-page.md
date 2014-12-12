@@ -3,6 +3,7 @@ To confirm your signature of the [Neovim Contributor License Agreement (CLA)](ht
 The timestamp is sent by the CLA form. Please don't modify this page until you have signed the CLA.
 
 ===
+- 1418406264717 Ross Smith
 - 1403806484871 John Schmidt
 - 1403743919344 Justin M. Keyes
 - 1403744255384 Eduardo Elias Ferreira
