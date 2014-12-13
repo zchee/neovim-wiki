@@ -6,7 +6,7 @@ Following are notable differences in Neovim compared to Vim.
 
 ## Defaults
 
-* `'nocompatible'` is always set (and `set compatible` is ignored)
+* `'nocompatible'` is always set (`set nocp` is ignored, and `set cp` is an **error**)
 * `'encoding'` defaults to `utf-8` / [#935](https://github.com/neovim/neovim/pull/935)
 * `'ttyfast'` defaults to "on" / [#1045](https://github.com/neovim/neovim/issues/1045)
 
@@ -51,3 +51,4 @@ A compatibility layer is provided to support legacy Vim plugins that depend on
 * `'textauto'`
 * `'textmode'`
 * EBCDIC
+* "Easy mode" (`eview`, `evim`, `vim -y`)
