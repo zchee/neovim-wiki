@@ -51,4 +51,4 @@ A compatibility layer is provided to support legacy Vim plugins that depend on
 * `'textauto'`
 * `'textmode'`
 * EBCDIC
-* "Easy mode" (`eview`, `evim`, `vim -y`)
+* "Easy mode" (`eview`, `evim`, `vim -y`) [#1656](https://github.com/neovim/neovim/pull/1656)
