@@ -114,10 +114,6 @@ See the [Plugin Architecture](Plugin-UI-architecture) page for a detailed overvi
 Development happens in the [Neovim GitHub organization][]; the code is
 split across several repositories, unlike the current Vim source tree.
 
-There are separate repositories for GUIs, plugins, runtime files (official
-vimscript) and distributions. This lets the editor receive improvements much
-faster, because the patches don't have to go through a single person for approval.
-
 Travis CI is used for continuous integration, so pull requests are
 automatically checked.
 
