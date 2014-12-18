@@ -120,7 +120,7 @@ rebuild:
 	rm -rf build && make
 ```
 
-## Controlling the build for third-party dependencies
+## Controlling the build for third-party dependencies (#1588)[(https://github.com/neovim/neovim/pull/1588)
 
 To build the bundled dependencies using CMake:
 
