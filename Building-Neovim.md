@@ -84,7 +84,7 @@ A normal build will create all the `.mo` files and they reside in `build/src/nvi
 To update the `src/nvim/po/$LANG.po` file with the latest strings from sources, run
 `make update-po-$LANG`.
 
-## "GNU-like" compiler (GCC, clang, ...) options
+## "GNU-like" (GCC, clang, ...) compiler options
 
 To see the chain of includes, use the `-H` switch (see [#918](https://github.com/neovim/neovim/issues/918)):
 
@@ -119,6 +119,39 @@ all:
 rebuild:
 	rm -rf build && make
 ```
+
+## Controlling the build for third-party dependencies
+
+To build the bundled dependencies using CMake:
+
+    mkdir .deps
+    cd .deps
+    cmake ../third-party/
+    make
+    cd ..
+
+By default the libraries and headers are placed in `.deps/usr`, afterwards you can build Neovim using:
+
+    mkdir build
+    cd build
+    cmake ..
+    make
+
+You can build the dependencies in a different location using:
+
+    mkdir deps2
+    cd deps2
+    cmake ../third-party/
+    make
+    cd ..
+
+And then build Neovim using:
+
+    mkdir build
+    cd build
+    cmake -DDEPS_PREFIX=../deps2/usr ..
+
+When changing `DEPS_PREFIX` you may need to clear the CMake cache in order for the changes to take effect.
 
 ## General notes on [CMake](http://www.cmake.org/examples/)
 
