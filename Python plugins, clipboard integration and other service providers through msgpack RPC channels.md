@@ -1,1 +1,0 @@
-See the [user documentation](http://neovim.org/doc/user/nvim_intro.html)
