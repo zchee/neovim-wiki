@@ -45,10 +45,9 @@ starting gdbserver.
 
 ## "Release" build (optimized, NDEBUG)
 
-    rm -rf build/ && make clean && make CMAKE_BUILD_TYPE=MinSizeRel
+    rm -rf build/ && make clean && make CMAKE_BUILD_TYPE=Release
 
-- `MinSizeRel` is CMake jargon for "minimum-sized release".
-    - `Release` and `RelWithDebInfo` are also choices.
+  - For "edge" users and developers, `RelWithDebInfo` is recommended instead of `Release`.
 
 To verify that the build was optimized, you can set `VERBOSE=1` and look for the `-O` flag:
 
