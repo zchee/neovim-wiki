@@ -16,7 +16,7 @@ To mark a patch as "Not Applicable", append `NA` next to the commented-out patch
 Quick start
 -----------
 
-Say you've pulled down the Neovim source, and now you want to merge Vim patch 7.4.123. Now just run [`vim-patch.sh`](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh):
+Say you've pulled down the Neovim source, and you want to merge Vim patch 7.4.123. Then just run [`vim-patch.sh`](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh):
 
     ./scripts/vim-patch.sh 7.4.123
 
