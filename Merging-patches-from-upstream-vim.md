@@ -16,7 +16,7 @@ To mark a patch as "Not Applicable", append `NA` next to the commented-out patch
 Quick start
 -----------
 
-Say you've pulled down the Neovim source, and you want to merge Vim patch 7.4.123. Then just run [`vim-patch.sh`](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh):
+Say you've pulled down the Neovim source, and you want to merge Vim patch 7.4.123. Now just run [**vim-patch.sh**](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh):
 
     ./scripts/vim-patch.sh 7.4.123
 
@@ -33,7 +33,7 @@ Please include `vim-patch:7.4.xxx` in the *pull request* title. In addition, the
     - https://code.google.com/p/vim/source/detail?r=5d03c374712128077ac4c342aad02120ed98df70
 - The original Vim commit message, including the author
 
-Parts of the workflow have been automated (see [#1513](https://github.com/neovim/neovim/pull/1513)).
+**The `vim-patch.sh` script automates most of this for you.** See the [Quick start](#quick-start) section above.
 
 
 Code differences
