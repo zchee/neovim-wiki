@@ -5,7 +5,7 @@ Visit the [**vim patch report**](http://neovim.org/doc/reports/vimpatch/) to see
 Everyone is welcome to send pull requests for relevant Vim patches (see [below](#pull-requests)). But some types of patches are **not relevant to Neovim:**
 
 - **Compiler warning fixes**: Neovim strives to have no warnings at all, and has a very different build system from Vim.
-- **#ifdef tweaking**: For example, Vim decided to enable `FEAT_VISUAL` for all platforms and watch the fallout. Neovim has already done that.
+- **#ifdef tweaking**: For example, Vim decided to enable `FEAT_VISUAL` for all platforms—but Neovim already does that. Adding new `FEAT_` guards also isn't relevant to Neovim.
 - **Legacy system support**: Fixes for legacy systems such as Solaris, Amiga, Xenix, Mac OS 9, Windows 95, MS-DOS, are not needed because they are not supported by Neovim.
 - Most **GUI-related** changes: Neovim GUIs are implemented external to the core C codebase.
 
