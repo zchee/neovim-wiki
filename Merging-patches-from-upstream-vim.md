@@ -35,7 +35,7 @@ Please include `vim-patch:7.4.xxx` in the *pull request* title. In addition, the
 
 **The `vim-patch.sh` script automates most of this for you.** See the [Quick start](#quick-start) section above.
 
-**Reviewing vim-patch pull requests:** [hint for reviewing `runtime/` patches](https://github.com/neovim/neovim/pull/1744#issuecomment-68202876)
+**Reviewers:** [hint for reviewing `runtime/` patches](https://github.com/neovim/neovim/pull/1744#issuecomment-68202876)
 
 
 Code differences
