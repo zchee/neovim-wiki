@@ -14,7 +14,7 @@ Following are notable differences in Neovim compared to Vim.
 
 * Neovim always ships with all features, in contrast to Vim which may have certain features removed depending on compile-time feature selection. This is like if Vim's "HUGE" build was the only Vim release type (except Neovim is smaller than Vim's "HUGE" build).
 * `:python` and `:python3` are always available (if your system has both Python 2 & 3) and may be used side-by-side in plugins. [#718](https://github.com/neovim/neovim/issues/718#issuecomment-47589739)
-    * If `python` is available on your `$PATH`, Neovim python plugins will "just work". You don't need to worry about compile-time linking or [painful configuration details](https://github.com/Valloric/YouCompleteMe/issues/8#issuecomment-34374807).
+    * If `python` is available on your `$PATH`, Neovim python plugins will "just work". You don't need to worry about [painful configuration details](https://github.com/Valloric/YouCompleteMe/issues/8#issuecomment-34374807).
 
 ## Plugins
 
