@@ -6,9 +6,9 @@ Following are notable differences in Neovim compared to Vim.
 
 ## Defaults
 
-* `'nocompatible'` is always set (`set nocp` is ignored, and `set cp` is an **error**)
-* `'encoding'` defaults to `utf-8` / [#935](https://github.com/neovim/neovim/pull/935)
-* `'ttyfast'` defaults to "on" / [#1045](https://github.com/neovim/neovim/issues/1045)
+* `'nocompatible'` is always set (`set nocp` is ignored; `set cp` is an **error**)
+* `'encoding'` defaults to `utf-8` [#935](https://github.com/neovim/neovim/pull/935)
+* `'ttyfast'` defaults to "on" [#1045](https://github.com/neovim/neovim/issues/1045)
 
 ## Features
 
@@ -20,7 +20,7 @@ Following are notable differences in Neovim compared to Vim.
 
 Neovim has a new [plugin architecture](Plugin-UI-architecture).
 
-## Plugin compatibility layer [#872](https://github.com/neovim/neovim/pull/872), [#895](https://github.com/neovim/neovim/pull/895) [#1130](https://github.com/neovim/neovim/pull/1130)
+## Plugin compatibility layer [#872](https://github.com/neovim/neovim/pull/872) [#895](https://github.com/neovim/neovim/pull/895) [#1130](https://github.com/neovim/neovim/pull/1130)
 
 A compatibility layer is provided to support legacy Vim plugins that depend on
 `if_python`, `if_lua`, `if_ruby` (commands `:python`/`:pyfile`/`:pydo`, etc.), but it has some differences:
