@@ -66,3 +66,4 @@ The timestamp is sent by the CLA form. Please don't modify this page until you h
 - 1418237008121 Victor Adam
 - 1418198987213 Daniel Fairhead
 - 1419305609370 Jonas R. Dourado
+- 1419914665932 Donato Borrello
