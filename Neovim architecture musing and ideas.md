@@ -18,7 +18,7 @@ Advantages:
 - Can `mmap()` the [file into memory](http://lists.suckless.org/dev/1409/23497.html). This is the best way to seamlessly support editing huge files, especially on OS'es that do demand paging (all Neovim supported platforms do that).
 
 Disadvantages:
-- As noted by the **vis** author, text encoding conversion undoes the `mmap()` advantage mentioned above. A workaround might be possible, but it would really complicate the implementation. One idea for making it work is to make an overlay, see #1767.
+- As noted by the **vis** author, text encoding conversion undoes the `mmap()` advantage mentioned above. A workaround might be possible, but it would really complicate the implementation. One idea for making it work is to make an overlay, see github.com/neovim/neovim/issues/1767.
 
 #### Rope
 
