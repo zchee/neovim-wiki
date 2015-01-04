@@ -14,6 +14,12 @@ Some alternative approaches:
 
 As described in "Data Structures for Text Sequences" [comments](https://news.ycombinator.com/item?id=8827887), [pdf](https://www.cs.unm.edu/~crowley/papers/sds.pdf). Notably implemented in the [vis](github.com/martanne/vis) text editor, which supports many Vim-like operators.
 
+Advantages:
+- Can `mmap()` the [file into memory](http://lists.suckless.org/dev/1409/23497.html). This is the best way to seamlessly support editing huge files, especially on OS'es that do demand paging (all Neovim supported platforms do that).
+
+Disadvantages:
+- As noted by the **vis** author, text encoding conversion undoes the `mmap()` advantage mentioned above. A workaround might be possible, but it would really complicate the implementation. One idea for making it work is to make an overlay, see #1767.
+
 #### Rope
 
 See [wikipedia](http://en.wikipedia.org/wiki/Rope_%28data_structure%29). TODO: more discussion on how it could be applied to Neovim.
