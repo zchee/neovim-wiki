@@ -34,4 +34,4 @@
 #### Ideas
 
 - [Refactor Vim into a library](Refactor-vim-into-a-library)
-- [Architectural musing and ideas (text buffer data structure, ...](Architectural-musing-and-ideas)
+- [Architectural musing and ideas (text buffer data structure, ...)](Architectural-musing-and-ideas)
