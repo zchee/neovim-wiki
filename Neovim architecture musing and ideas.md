@@ -12,7 +12,7 @@ Some alternative approaches:
 
 #### Piece Buffer
 
-As described in "Data Structures for Text Sequences" [comments](https://news.ycombinator.com/item?id=8827887), [pdf](https://www.cs.unm.edu/~crowley/papers/sds.pdf). Notably implemented in the [vis](github.com/martanne/vis) text editor, which supports many Vim-like operators.
+As described in "Data Structures for Text Sequences" [comments](https://news.ycombinator.com/item?id=8827887), [pdf](https://www.cs.unm.edu/~crowley/papers/sds.pdf). Notably implemented in the [vis](https://github.com/martanne/vis) text editor, which supports many Vim-like operators.
 
 Advantages:
 - Can `mmap()` the [file into memory](http://lists.suckless.org/dev/1409/23497.html). This is the best way to seamlessly support editing huge files, especially on OS'es that do demand paging (all Neovim supported platforms do that).
