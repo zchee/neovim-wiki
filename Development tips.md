@@ -34,13 +34,6 @@ to enable core dumping. If you then reproduce a segfault in `nvim`, it will "dum
 $ lldb .deps/usr/bin/luajit -- .deps/usr/bin/busted --lpath="./build/?.lua" test/unit/
 ```
 
-### Using the `vim-lldb` plugin
-
-  1. Install the plugin: https://github.com/gilligan/vim-lldb
-  2. Open a C source file
-  3. `:Ltarget attach nvim`
-  4. Go to some line you are interested in, then do `:Lbreakpoint`
-
 ### Using `gdb` in the terminal
 
 Open two terminals, one for the debugging session, and one for the Neovim instance that will be debugged.
