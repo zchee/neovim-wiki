@@ -53,6 +53,9 @@ Third-party packages are available for openSUSE 13.1/13.2/Factory, you can insta
 
 Similarly adjust the URL for Factory or 13.2.
 
+### Fedora / RHEL
+There is http://copr.fedoraproject.org/coprs/gaurdro/neovim/ . It is a COPR which means it is completely unsupported, and can go away any time without a word of warning.
+
 ### Slackware
 
 http://slackbuilds.org/apps/neovim/
