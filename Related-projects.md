@@ -32,7 +32,7 @@ Neovim is compatible with most Vim plugins; following are some plugins that take
 - [neomake](https://github.com/benekastah/neomake)
 - [nvim-ipy](https://github.com/bfredl/nvim-ipy)
 
-### Projects supporting Neovim
+### Projects with support for Neovim
 
  - [Vroom](https://github.com/google/vroom)
  - [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
