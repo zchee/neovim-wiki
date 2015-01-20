@@ -172,7 +172,7 @@ Other dependencies are listed below.
 <a name="for-ubuntu"></a>
 ### Ubuntu
 
-    sudo apt-get install libtool autoconf automake cmake libncurses5-dev g++ pkg-config unzip
+    sudo apt-get install libtool libtool-bin autoconf automake cmake libncurses5-dev g++ pkg-config unzip
 
 <a name="for-debian"></a>
 ### Debian
