@@ -163,7 +163,7 @@ When changing `DEPS_PREFIX` you may need to clear the CMake cache in order for t
 **General requirements:** 
 
 - A fairly recent gcc (4.3) or clang (see [#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
-- CMake built with SSL support (see [#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
+- CMake (>=2.8.7) built with SSL support (see [#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
 
 Other dependencies are listed below.
 
