@@ -21,6 +21,7 @@
 | Python      | [neovim/python-client](https://github.com/neovim/python-client)                      |
 | Ruby        | [alexgenco/neovim-ruby](https://github.com/alexgenco/neovim-ruby)                    |
 | Julia       | [bfredl/Neovim.jl](https://github.com/bfredl/Neovim.jl)                              |
+| Elixir      | [awetzel/neovim-elixir](https://github.com/awetzel/neovim-elixir)
 
 ### Plugins
 
