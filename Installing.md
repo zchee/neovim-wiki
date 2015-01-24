@@ -40,7 +40,7 @@ sudo apt-get install neovim
 
 ### Arch Linux
 
-Package can be installed from [AUR](https://aur.archlinux.org/packages/neovim-git/).
+Neovim can be installed from the AUR; see [`neovim-git`](https://aur.archlinux.org/packages/neovim-git). The Python module has been packaged as [`python2-neovim`](https://aur.archlinux.org/packages/python2-neovim).
 
 ### Gentoo Linux
 
