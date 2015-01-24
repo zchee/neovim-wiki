@@ -1,3 +1,5 @@
+**Note**: If you want support for Python plugins such as YouCompleteMe, you need to install a Python module in addition to Neovim itself. See [`:h nvim-python-quickstart`](http://neovim.org/doc/user/nvim_python.html#nvim-python-quickstart) for more information.
+
 # Packaged Install
 
 If you're on one of these systems, you can get Neovim right away! (If not, don't worry: you can still [install Neovim manually](#user-content-manual-install).)
