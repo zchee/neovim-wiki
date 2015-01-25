@@ -98,4 +98,6 @@ rm -rf ./build
 make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/other/location" install
 ```
 
+See [Differences from Vim](https://github.com/neovim/neovim/wiki/Differences-from-Vim) for some configuration tips
+
 See [Building Neovim](Building-Neovim) for more options and some pointers in case of [build errors](Building-Neovim#troubleshootingfaq).
