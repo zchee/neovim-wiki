@@ -141,7 +141,7 @@ See [the list of functions](http://pastebin.com/TmHJuyCC) from neovim's source c
 C refactoring automation is very tricky and hard, if not impossible, to do
 reliably thanks to the C preprocessor.
 
-### XCode
+### Xcode
 
 TODO
 
