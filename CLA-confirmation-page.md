@@ -75,3 +75,4 @@ The timestamp is sent by the CLA form. Please don't modify this page until you h
 - 1422028107292 Philip Elliot Blair Jr
 - 1422060253389 Gleb Tverdokhlebov
 - 1422122758058 Evan Rose
+- 1422223614007 Michal Mieczkowski
