@@ -30,7 +30,7 @@ Items in the [vNext milestone](https://github.com/neovim/neovim/milestones/vNext
     - Remove tons of `FEAT_*` macros with [unifdef](http://dotat.at/prog/unifdef/)
     - Reduce C code from 300k lines to 170k
 - Enable modern compiler features
-    - Use [function attributes](https://github.com/neovim/neovim/pull/426) to improve [performance and analysis](https://github.com/neovim/neovim/issues/1113#issuecomment-53512526)
+    - Use [function attributes](https://github.com/neovim/neovim/pull/426) to aid performance, static analysis [#1113](https://github.com/neovim/neovim/issues/1113#issuecomment-53512526) [#1867](https://github.com/neovim/neovim/pull/1867)
 - Format entire source with [uncrustify](http://uncrustify.sourceforge.net/)
 - Replace autotools build system with [CMake](http://cmake.org/)
 - Implement [continuous integration](https://travis-ci.org/neovim/neovim) and [test coverage](https://coveralls.io/r/neovim/neovim)
@@ -38,7 +38,7 @@ Items in the [vNext milestone](https://github.com/neovim/neovim/milestones/vNext
 - Split large, monolithic files (`misc1.c`) into logical units
   (`path.c`, `indent.c`, `keymap.c`, ...)
 - Implement [job control](https://github.com/neovim/neovim/pull/475) ("async")
-- Rework out-of-memory handling to simplify control flow
+- Rework OOM handling to simplify control flow
 - Remove 8.3 filename support [#635](https://github.com/neovim/neovim/pull/635)
 - Use portable string format tokens [#574](https://github.com/neovim/neovim/pull/574) (improves cross-platform viability)
 - [Reduce indiscriminate redraws](https://github.com/neovim/neovim/pull/485#issuecomment-39924973) to improve performance
