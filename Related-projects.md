@@ -14,14 +14,15 @@
 |-------------|--------------------------------------------------------------------------------------|
 | C++/Qt5     | [equalsraf/neovim-qt](https://github.com/equalsraf/neovim-qt)                        |
 | C++/ncurses | [SoC/neovim-client](https://github.com/splinterofchaos/neovim-cpp-client-experiment) |
+| Elixir      | [awetzel/neovim-elixir](https://github.com/awetzel/neovim-elixir)                    |
 | Go          | [neovim/go](https://github.com/neovim/go)                                            |
+| Haskell     | [osa1/neovim-hs](https://github.com/osa1/neovim-hs)                                  |
+| Julia       | [bfredl/Neovim.jl](https://github.com/bfredl/Neovim.jl)                              |
 | Lua         | [neovim/lua-client](https://github.com/neovim/lua-client)                            |
 | Node.js     | [ngroup/neovim.js](https://github.com/ngroup/neovim.js)                              |
 | Node.js     | [fritzy/node-neovim](https://github.com/fritzy/node-neovim)                          |
 | Python      | [neovim/python-client](https://github.com/neovim/python-client)                      |
 | Ruby        | [alexgenco/neovim-ruby](https://github.com/alexgenco/neovim-ruby)                    |
-| Julia       | [bfredl/Neovim.jl](https://github.com/bfredl/Neovim.jl)                              |
-| Elixir      | [awetzel/neovim-elixir](https://github.com/awetzel/neovim-elixir)
 
 ### Plugins
 
