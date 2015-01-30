@@ -48,8 +48,8 @@ A compatibility layer is provided to support legacy Vim plugins that depend on
 * `:shell` [#450](https://github.com/neovim/neovim/pull/450)
 * `'shelltype'` [#1240](https://github.com/neovim/neovim/pull/1240)
 * `:mode` does not accept an argument (this was for MS-DOS) [#588](https://github.com/neovim/neovim/pull/588)
-* `'bioskey'`
-* `'conskey'`
-* `'textauto'`
-* `'textmode'`
+* `'bioskey'` [#1353](https://github.com/neovim/neovim/pull/1353)
+* `'conskey'` [#1353](https://github.com/neovim/neovim/pull/1353)
+* `'textauto'` [#559](https://github.com/neovim/neovim/pull/559)
+* `'textmode'` [#540](https://github.com/neovim/neovim/pull/540)
 * "Easy mode" (`eview`, `evim`, `vim -y`) [#1656](https://github.com/neovim/neovim/pull/1656)
