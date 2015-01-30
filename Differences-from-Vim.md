@@ -43,6 +43,7 @@ A compatibility layer is provided to support legacy Vim plugins that depend on
 *These legacy Vim features were intentionally removed in Neovim.*
 
 * Removed support for 8.3 filesystem/shortnames [#635](https://github.com/neovim/neovim/pull/635)
+* [EBCDIC](https://en.wikipedia.org/wiki/EBCDIC) support
 * Encryption/blowfish/`cryptmethod`/`key` [#699](https://github.com/neovim/neovim/pull/699). (May be partially restored by [#701](https://github.com/neovim/neovim/issues/701))
 * `:shell` [#450](https://github.com/neovim/neovim/pull/450)
 * `'shelltype'` [#1240](https://github.com/neovim/neovim/pull/1240)
@@ -51,5 +52,4 @@ A compatibility layer is provided to support legacy Vim plugins that depend on
 * `'conskey'`
 * `'textauto'`
 * `'textmode'`
-* EBCDIC
 * "Easy mode" (`eview`, `evim`, `vim -y`) [#1656](https://github.com/neovim/neovim/pull/1656)
