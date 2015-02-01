@@ -17,6 +17,7 @@
 | Elixir      | [awetzel/neovim-elixir](https://github.com/awetzel/neovim-elixir)                    |
 | Go          | [neovim/go](https://github.com/neovim/go)                                            |
 | Haskell     | [osa1/neovim-hs](https://github.com/osa1/neovim-hs)                                  |
+| Haskell     | [osa1/neovim-hs](https://github.com/saep/nvim-hs)                                    |
 | Julia       | [bfredl/Neovim.jl](https://github.com/bfredl/Neovim.jl)                              |
 | Lua         | [neovim/lua-client](https://github.com/neovim/lua-client)                            |
 | Node.js     | [ngroup/neovim.js](https://github.com/ngroup/neovim.js)                              |
