@@ -1,6 +1,8 @@
 Neovim was forked from Vim 7.4.160; it is kept up-to-date with relevant Vim patches in order to avoid duplicate work. For details, see [issue #438](https://github.com/neovim/neovim/issues/438).
 
-Visit the [**vim patch report**](http://neovim.org/doc/reports/vimpatch/) to see which patches are needed. If you have already pulled Neovim's sources, you can use the [**vim-patch.sh**](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh) script instead: `./scripts/vim-patch.sh --list`.
+Visit the [**vim patch report**](http://neovim.org/doc/reports/vimpatch/) to see which patches are needed, or use the [**vim-patch.sh**](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh) script: 
+
+    ./scripts/vim-patch.sh --list
 
 Everyone is welcome to send pull requests for relevant Vim patches (see [below](#pull-requests)). But some types of patches are **not relevant to Neovim:**
 
@@ -20,7 +22,7 @@ Say you've pulled down the Neovim source, and you want to merge Vim patch 7.4.12
 
     ./scripts/vim-patch.sh 7.4.123
 
-The script guides you with further instructions. It's easy and it won't hose your workspace, so just try it!
+The script guides you with further instructions. It's easy and painless, just try it!
 
 Pull requests
 -------------
@@ -33,7 +35,7 @@ Please include `vim-patch:7.4.xxx` in the *pull request* title. In addition, the
     - https://code.google.com/p/vim/source/detail?r=5d03c374712128077ac4c342aad02120ed98df70
 - The original Vim commit message, including the author
 
-**The `vim-patch.sh` script automates most of this for you.** See the [Quick start](#quick-start) section above.
+> **The [**vim-patch.sh**](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh) script automates most of this for you.**
 
 **Reviewers:** [hint for reviewing `runtime/` patches](https://github.com/neovim/neovim/pull/1744#issuecomment-68202876)
 
