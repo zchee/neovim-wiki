@@ -53,3 +53,4 @@ A compatibility layer is provided to support legacy Vim plugins that depend on
 * `'textauto'` [#559](https://github.com/neovim/neovim/pull/559)
 * `'textmode'` [#540](https://github.com/neovim/neovim/pull/540)
 * "Easy mode" (`eview`, `evim`, `vim -y`) [#1656](https://github.com/neovim/neovim/pull/1656)
+* `(g)vimdiff` (solely an alias for `vim -d`) [#1849](https://github.com/neovim/neovim/pull/1849)
