@@ -2,7 +2,8 @@ Following are notable differences in Neovim compared to Vim.
 
 ## Configuration
 * Use `.nvimrc` instead of `.vimrc` for storing configuration.
-* Use `.nvim` instead of `.vim` to store configuration files.
+* Use `.nvim` instead of `.vim` for storing configuration files.
+* Use `.nviminfo` instead of `.viminfo` to persist session information.
 
 ## Defaults
 
