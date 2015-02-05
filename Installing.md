@@ -38,6 +38,16 @@ sudo apt-get update
 sudo apt-get install neovim
 ```
 
+If you want neovim for all or some of the editor alternatives use the following commands:
+
+```bash
+sudo update-alternatives --install /usr/bin/vi vi /usr/bin/nvim 60
+sudo update-alternatives --config vi
+sudo update-alternatives --install /usr/bin/vim vim /usr/bin/nvim 60
+sudo update-alternatives --config vim
+sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
+sudo update-alternatives --config editor
+```
 ### Arch Linux
 
 Neovim can be installed from the AUR; see [`neovim-git`](https://aur.archlinux.org/packages/neovim-git). The Python module has been packaged as [`python2-neovim`](https://aur.archlinux.org/packages/python2-neovim).
