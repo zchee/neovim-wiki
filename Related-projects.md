@@ -2,11 +2,12 @@
 
 ### GUI projects
 
-| Platform   | Project                                                                 |
-|------------|-------------------------------------------------------------------------|
-| Mac OS X   | [stefan991/NeoVimX](https://github.com/stefan991/NeoVimX) (out-of-date) |
-| Atom       | [carlosdcastillo/vim-mode](https://github.com/carlosdcastillo/vim-mode) |
-| GTK/Python | [neovim/python-client](https://github.com/neovim/python-client)         |
+| Platform         | Project                                                                 |
+|------------------|-------------------------------------------------------------------------|
+| Mac OS X         | [stefan991/NeoVimX](https://github.com/stefan991/NeoVimX) (out-of-date) |
+| Atom Integration | [carlosdcastillo/vim-mode](https://github.com/carlosdcastillo/vim-mode) |
+| GTK/Python UI    | [neovim/python-client](https://github.com/neovim/python-client)         |
+| Atom Shell UI    | [coolwanglu/neovim.as](https://github.com/coolwanglu/neovim.as)         |
 
 ### API clients
 
