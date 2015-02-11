@@ -55,7 +55,9 @@ The `gdb` interactive prompt will appear. At any time you can:
 
 ### Using `gdbserver`
 
-To connect to a remote debugging session from a local `gdb`, use `gdbserver`. Open a terminal and start  `gdbserver` attached to `nvim` like this:
+You may want to connect multiple `gdb` clients to the same running `nvim` process, or you may want to connect to a remote `nvim` process with a local `gdb`. Using `gdbserver`, you can attach to a single process and control it from multiple `gdb` clients. 
+
+Open a terminal and start `gdbserver` attached to `nvim` like this:
 
     gdbserver :6666 build/bin/nvim
 
