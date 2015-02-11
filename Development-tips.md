@@ -53,13 +53,11 @@ The `gdb` interactive prompt will appear. At any time you can:
 
 ### Using `gdbserver`
 
-If you want to connect to a remote debugging session from a local `gdb`, or you 
-Open two terminals, one for the debugging session, and one for the Neovim instance that will be debugged.
-In the terminal for `nvim`, start a `gdbserver` instance on a specific port like this:
+To connect to a remote debugging session from a local `gdb`, use `gdbserver`. Open a terminal and start  `gdbserver` attached to `nvim` like this:
 
     gdbserver :6666 build/bin/nvim
 
-You then need to attach to this debugging session in the other terminal:
+`gdbserver` is now listening on port 6666. You then need to attach to this debugging session in another terminal:
 
     gdb build/bin/nvim
 
