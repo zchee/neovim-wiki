@@ -47,6 +47,7 @@ The `gdb` interactive prompt will appear. At any time you can:
     - press `<enter>` to repeat the last command!
 - `c` to **continue**
 - `finish` to **step out** of the current function
+- `p zub` to print the value of `zub` 
 - `bt` to see a **backtrace** (callstack) from the current location
 - `CTRL-X CTRL-A` to **show a TUI view of the source file** in the current debugging context! This is extremely useful and avoids the need for a gdb "frontend".
     - use `<up>` and `<down>` to scroll the source file view
