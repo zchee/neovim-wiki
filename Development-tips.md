@@ -34,8 +34,24 @@ to enable core dumping. If you then reproduce a segfault in `nvim`, it will "dum
 $ lldb .deps/usr/bin/luajit -- .deps/usr/bin/busted --lpath="./build/?.lua" test/unit/
 ```
 
-### Using `gdb` in the terminal
+### Using `gdb` (quick start)
 
+To attach to a running `nvim` process with a pid of 1234:
+
+    gdb build/bin/nvim 1234
+
+The `gdb` interactive prompt will appear. At any time you can:
+
+- `break foo` to set a breakpoint on the `foo()` function
+- `n` to step over the **next** statement
+- `c` to **continue**
+- `finish` to **step out** of the current function
+- `CTRL-X CTRL-A` to **show a TUI view of the source file** in the current debugging context! This is extremely useful and avoids the need for a gdb "frontend".
+    - use `<up>` and `<down>` to scroll the source file view
+
+### Using `gdbserver`
+
+If you want to connect to a remote debugging session from a local `gdb`, or you 
 Open two terminals, one for the debugging session, and one for the Neovim instance that will be debugged.
 In the terminal for `nvim`, start a `gdbserver` instance on a specific port like this:
 
@@ -49,14 +65,7 @@ Once you've entered `gdb`, you need to attach to the remote session:
 
     target remote localhost:6666
 
-You are now attached to the remote debugging session. Try setting a breakpoint and start the application:
-
-- `br main` to set the breakpoint.
-- `c` to continue running the application
-
-You can now step through source, and you'll see the results in the other window.
-
-### Using `gdb` in tmux
+### Using `gdbserver` in tmux
 
 Consider using a [custom makefile](https://github.com/neovim/neovim/wiki/Building-Neovim#custom-makefile) to quickly start debugging sessions using the above `gdbserver` method. This example will create the debugging session when you type `make debug`. This assumes that you have `Makefile` in the top-level directory.
 
