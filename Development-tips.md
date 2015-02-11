@@ -43,8 +43,9 @@ To attach to a running `nvim` process with a pid of 1234:
 The `gdb` interactive prompt will appear. At any time you can:
 
 - `break foo` to set a breakpoint on the `foo()` function
-- `n` to step over the **next** statement
+- `n` to **step over** the next statement
     - press `<enter>` to repeat the last command!
+- `s` to **step into** the next statement
 - `c` to **continue**
 - `finish` to **step out** of the current function
 - `p zub` to print the value of `zub` 
