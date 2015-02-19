@@ -113,7 +113,7 @@ Another method for running NeoVim would be to run the `nvim` binary from `build`
 ```bash
 # Compile.
 make
-# You might want to define an alias on `.bashrc` or export `VIMRUNTIME` variable.
+# You might want to define an alias on .bashrc or export $VIMRUNTIME variable.
 env VIMRUNTIME=$(realpath runtime) build/bin/nvim
 # Generate help tags.
 :helptags $VIMRUNTIME/doc
