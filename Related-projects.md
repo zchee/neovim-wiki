@@ -17,7 +17,6 @@
 | C++/ncurses | [SoC/neovim-client](https://github.com/splinterofchaos/neovim-cpp-client-experiment) |
 | Elixir      | [awetzel/neovim-elixir](https://github.com/awetzel/neovim-elixir)                    |
 | Go          | [neovim/go](https://github.com/neovim/go)                                            |
-| Haskell     | [osa1/neovim-hs](https://github.com/osa1/neovim-hs)                                  |
 | Haskell     | [saep/nvim-hs](https://github.com/saep/nvim-hs)                                      |
 | Julia       | [bfredl/Neovim.jl](https://github.com/bfredl/Neovim.jl)                              |
 | Lua         | [neovim/lua-client](https://github.com/neovim/lua-client)                            |
