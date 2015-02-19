@@ -108,7 +108,7 @@ rm -rf ./build
 make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/other/location" install
 ```
 
-Another method for running NeoVim would be to run the `nvim` binary from `build` directory.
+You can also run `nvim` binary without installing on your system.
 
 ```bash
 # Compile.
