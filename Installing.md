@@ -108,6 +108,17 @@ rm -rf ./build
 make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/other/location" install
 ```
 
+Another method for running NeoVim would be to run the `nvim` binary from `build` directory.
+
+```bash
+# Compile.
+make
+# You might want to define an alias on `.bashrc` or export `VIMRUNTIME` variable.
+env VIMRUNTIME=$(realpath runtime) build/bin/nvim
+# Generate help tags.
+:helptags $VIMRUNTIME/doc
+```
+
 See [Differences from Vim](https://github.com/neovim/neovim/wiki/Differences-from-Vim) for some configuration tips
 
 See [Building Neovim](Building-Neovim) for more options and some pointers in case of [build errors](Building-Neovim#troubleshootingfaq).
