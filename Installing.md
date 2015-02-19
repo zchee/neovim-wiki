@@ -108,7 +108,7 @@ rm -rf ./build
 make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/other/location" install
 ```
 
-You can also run `nvim` binary without installing on your system.
+You can also run `nvim` binary without installing it on your system.
 
 ```bash
 # Compile.
