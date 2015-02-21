@@ -15,12 +15,15 @@ Following are notable differences in Neovim compared to Vim.
 * Neovim always ships with all features, in contrast to Vim which may have certain features removed depending on compile-time feature selection. This is like if Vim's "HUGE" build was the only Vim release type (except Neovim is smaller than Vim's "HUGE" build).
 * `:python` and `:python3` are always available (if your system has both Python 2 & 3) and may be used side-by-side in plugins. [#718](https://github.com/neovim/neovim/issues/718#issuecomment-47589739)
     * If `python` is available on your `$PATH`, and the [`neovim` python package](https://pypi.python.org/pypi/neovim/) is installed, Neovim python plugins will "just work". You don't need to worry about [link-time details](https://github.com/Valloric/YouCompleteMe/issues/8#issuecomment-34374807) or [ABI incompatibilities](https://groups.google.com/d/msg/vim_use/l8TY2EiXNwk/A9Ef-ozbjKoJ).
-* Meta (alt) keys are mappable in the terminal. This includes:
+* You can map meta (alt) key chords in the terminal. Examples:
     * numbers: `<m-1>`, `<m-2>`, ...
     * enter: `<m-enter>`
     * backspacce: `<m-bs>`
     * space: `<m-space>`
     * slashes `<m-/>`, `<m-\>`
+    * equals, minus: `<m-=>`, `<m-->`
+    * question, dollar: `<m-?>`, `<m-$>`
+    * Actually, if you find one that isn't mappable, please note it here.
 * Events:
     * `TabNew`
     * `TabNewEntered`
