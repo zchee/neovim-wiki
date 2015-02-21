@@ -153,7 +153,7 @@ TODO
 
 http://coccinelle.lip6.fr/
 
-See #690 for an example of what it can do.
+See [#690](https://github.com/neovim/neovim/pull/690) for an example of what it can do.
 
 TODO
 
