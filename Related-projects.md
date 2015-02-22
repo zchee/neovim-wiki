@@ -24,6 +24,8 @@
 | Node.js     | [fritzy/node-neovim](https://github.com/fritzy/node-neovim)                          |
 | Python      | [neovim/python-client](https://github.com/neovim/python-client)                      |
 | Ruby        | [alexgenco/neovim-ruby](https://github.com/alexgenco/neovim-ruby)                    |
+| Rust        | [oakes/neovim-rs](https://github.com/oakes/neovim-rs)                                |
+| Rust        | [dradtke/neovim-rs](https://github.com/dradtke/neovim-rs)                            |
 
 ### Plugins
 
