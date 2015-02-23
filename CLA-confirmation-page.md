@@ -86,3 +86,4 @@ The timestamp is sent by the CLA form. Please don't modify this page until you h
 - 1424305320230 Lawrence Siebert
 - 1424617874313 Matthew Wismer
 - 1424683367933 Gustaf Lindstedt
+- 1424710861894 Clinton McKay
