@@ -24,6 +24,9 @@ Following are notable differences in Neovim compared to Vim.
     * equals, minus: `<m-=>`, `<m-->`
     * question, dollar: `<m-?>`, `<m-$>`
     * Actually, if you find one that isn't mappable, please note it here.
+* You can map `CTRL-SHIFT-...` key chords and they are distinguished from `CTRL-...` variants. Examples:
+    * `<c-bs>`, `<c-s-bs>`
+    * `<c-enter>`, `<c-s-enter>`
 * Events:
     * `TabNew`
     * `TabNewEntered`
