@@ -18,7 +18,7 @@ Following are notable differences in Neovim compared to Vim.
 * You can map meta (alt) key chords in the terminal. Examples:
     * numbers: `<m-1>`, `<m-2>`, ...
     * enter: `<m-enter>`
-    * backspacce: `<m-bs>`
+    * non-printable: `<m-bs>`, `<m-del>`, `<m-ins>`
     * space: `<m-space>`
     * slashes `<m-/>`, `<m-\>`
     * equals, minus: `<m-=>`, `<m-->`
