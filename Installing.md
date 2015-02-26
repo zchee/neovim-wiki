@@ -54,7 +54,11 @@ Neovim can be installed from the AUR; see [`neovim-git`](https://aur.archlinux.o
 
 ### Gentoo Linux
 
-Package can be installed from [science overlay](http://gpo.zugaina.org/app-editors/neovim).
+A snapshot ebuild is now available in Gentoo's official portage repository: 
+
+    emerge -a app-editors/neovim
+
+A "live" ebuild can be found in [yngwin's developer overlay](http://cgit.gentooexperimental.org/dev/yngwin.git/tree/app-editors/neovim).
 
 ### openSUSE
 
