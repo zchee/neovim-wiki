@@ -5,7 +5,7 @@
 | Platform         | Project                                                                 |
 |------------------|-------------------------------------------------------------------------|
 | Mac OS X         | [stefan991/NeoVimX](https://github.com/stefan991/NeoVimX) (out-of-date) |
-| Mac OS X         | [nvox](https://github.com/qvacua/nvox)                                  |
+| Mac OS X         | [qvacua/nvox](https://github.com/qvacua/nvox)                           |
 | Atom Integration | [carlosdcastillo/vim-mode](https://github.com/carlosdcastillo/vim-mode) |
 | GTK/Python UI    | [neovim/python-client](https://github.com/neovim/python-client)         |
 | Atom Shell UI    | [coolwanglu/neovim.as](https://github.com/coolwanglu/neovim.as)         |
