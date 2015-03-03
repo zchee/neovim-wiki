@@ -15,19 +15,17 @@ Following are notable differences in Neovim compared to Vim.
 * Neovim always ships with all features, in contrast to Vim which may have certain features removed depending on compile-time feature selection. This is like if Vim's "HUGE" build was the only Vim release type (except Neovim is smaller than Vim's "HUGE" build).
 * `:python` and `:python3` are always available (if your system has both Python 2 & 3) and may be used side-by-side in plugins. [#718](https://github.com/neovim/neovim/issues/718#issuecomment-47589739)
     * If `python` is available on your `$PATH`, and the [`neovim` python package](https://pypi.python.org/pypi/neovim/) is installed, Neovim python plugins will "just work". You don't need to worry about [link-time details](https://github.com/Valloric/YouCompleteMe/issues/8#issuecomment-34374807) or [ABI incompatibilities](https://groups.google.com/d/msg/vim_use/l8TY2EiXNwk/A9Ef-ozbjKoJ).
-* You can map meta (alt) key chords in the terminal. Examples:
+* Meta (Alt) key chords are recognized (even in the terminal).
     * numbers: `<m-1>`, `<m-2>`, ...
-    * enter: `<m-enter>`
     * non-printable: `<m-bs>`, `<m-del>`, `<m-ins>`
-    * space: `<m-space>`
     * slashes `<m-/>`, `<m-\>`
-    * equals, minus: `<m-=>`, `<m-->`
-    * question, dollar: `<m-?>`, `<m-$>`
-    * Actually, if you find one that isn't mappable, please note it here.
-* You can map `CTRL-SHIFT-...` key chords and they are distinguished from `CTRL-...` variants. Examples:
+    * `<m-space>`, `<m-enter>`, `<m-=>`, `<m-->`, `<m-?>`, `<m-$>`
+    * etc...
+* `CTRL-SHIFT-...` key chords are distinguished from `CTRL-...` variants (even in the terminal).
     * `<c-tab>`, `<c-s-tab>`
     * `<c-bs>`, `<c-s-bs>`
     * `<c-enter>`, `<c-s-enter>`
+    * etc...
 * Events:
     * `TabNew`
     * `TabNewEntered`
