@@ -94,3 +94,4 @@ The timestamp is sent by the CLA form. Please don't modify this page until you h
 - 1425535673296 Chase Geigle
 - 1425769692775 Doss Buckalew
 - 1425799903981 Floris van Liere
+- 1425850445837 Volodymyr Medvid
