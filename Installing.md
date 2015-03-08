@@ -38,6 +38,13 @@ sudo apt-get update
 sudo apt-get install neovim
 ```
 
+To install the python module:
+
+```bash
+sudo apt-get install python-dev python-pip
+sudo pip install neovim
+```
+
 If you want neovim for all or some of the editor alternatives use the following commands:
 
 ```bash
