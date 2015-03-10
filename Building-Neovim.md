@@ -18,15 +18,9 @@ To build and run all legacy (Vim) integration tests:
 
 ## Integration tests
 
-Until the Neovim lua client is ready, running integration tests requires some Python packages:
+To build and run all integrations tests:
 
-    make distclean
-    make deps
-    PKG_CONFIG_PATH="$(pwd)/.deps/usr/lib/pkgconfig" pip install lupa
-    pip install neovim
     make test
-
-A simple way to install Python and Python packages without requiring root is to use [pyenv](https://github.com/yyuu/pyenv). Using `pip --user` is another alternative.
 
 ## Unit tests
 
