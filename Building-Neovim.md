@@ -202,7 +202,7 @@ a PANIC in LuaJIT when trying to install a rock.
 <a name="for-arch-linux"></a>
 ### Arch Linux
 
-    sudo pacman -S base-devel cmake ncurses pkg-config unzip
+    sudo pacman -S base-devel cmake unzip
 
 <a name="for-os-x"></a>
 ### OS X
@@ -238,7 +238,7 @@ If you run into an error not explained here and manage to resolve it, feel free 
 ### CMake errors
 
 - `configure_file Problem configuring file`
-    - This is probably a permissions issue, which can happen if you run `sudo make` and then later try an unprivileged `make`. To fix this, simply remove your `build/` directory and try again.
+    - This is probably a permissions issue, which can happen if you run `sudo make` and then later try an        unprivileged `make`. To fix this, simply remove your `build/` directory and try again.
 
 ### Lua packages
 
