@@ -12,7 +12,7 @@ Following are notable differences in Neovim compared to Vim.
 
 ## Features
 
-* Neovim always ships with all features, in contrast to Vim which may have certain features removed depending on compile-time feature selection. This is like if Vim's "HUGE" build was the only Vim release type (except Neovim is smaller than Vim's "HUGE" build).
+* Neovim always ships with all features, in contrast to Vim which may have certain features removed/added at compile-time. This is like if Vim's "HUGE" build was the only Vim release type (except Neovim is smaller than Vim's "HUGE" build).
 * `:python` and `:python3` are always available (if your system has both Python 2 & 3) and may be used side-by-side in plugins. [#718](https://github.com/neovim/neovim/issues/718#issuecomment-47589739)
     * If `python` is available on your `$PATH`, and the [`neovim` python package](https://pypi.python.org/pypi/neovim/) is installed, Neovim python plugins will "just work". You don't need to worry about [link-time details](https://github.com/Valloric/YouCompleteMe/issues/8#issuecomment-34374807) or [ABI incompatibilities](https://groups.google.com/d/msg/vim_use/l8TY2EiXNwk/A9Ef-ozbjKoJ).
 * Meta (Alt) key chords are recognized (even in the terminal).
@@ -74,8 +74,8 @@ A compatibility layer is provided to support legacy Vim plugins that depend on
 * "Easy mode" (`eview`, `evim`, `vim -y`) [#1656](https://github.com/neovim/neovim/pull/1656)
 * `(g)vimdiff` (solely an alias for `(g)vim -d`) [#1849](https://github.com/neovim/neovim/pull/1849)
 * "Vi mode" (-v) [#2008](https://github.com/neovim/neovim/pull/2008)
-* The ability to start nvim via the following aliases in favor of just using
-their command line arguments ([#2008](https://github.com/neovim/neovim/pull/2008)):
+* The ability to start nvim via the following aliases has been removed in favor
+of just using their command line arguments ([#2008](https://github.com/neovim/neovim/pull/2008)):
 ```
 ex        nvim -e
 exim      nvim -E
