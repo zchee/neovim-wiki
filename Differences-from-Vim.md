@@ -73,7 +73,7 @@ A compatibility layer is provided to support legacy Vim plugins that depend on
 * `'edcompatible'` [#1911](https://github.com/neovim/neovim/issues/1911)
 * "Easy mode" (`eview`, `evim`, `vim -y`) [#1656](https://github.com/neovim/neovim/pull/1656)
 * `(g)vimdiff` (solely an alias for `(g)vim -d`) [#1849](https://github.com/neovim/neovim/pull/1849)
-* "Vi mode" (-v) [#2008](https://github.com/neovim/neovim/pull/2008)
+* "Vi mode" (`nvim -v`) [#2008](https://github.com/neovim/neovim/pull/2008)
 * The ability to start nvim via the following aliases has been removed in favor
 of just using their command line arguments ([#2008](https://github.com/neovim/neovim/pull/2008)):
 ```
