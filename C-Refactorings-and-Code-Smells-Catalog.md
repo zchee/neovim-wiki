@@ -158,5 +158,5 @@ See [#690](https://github.com/neovim/neovim/pull/690) for an example of what it 
 TODO
 
 
-[Garrido 2000]: http://www.lifia.info.unlp.edu.ar/papers/2000/Garrido2000.pdf
+[Garrido 2000]: http://web.archive.org/web/20140703092352/http://www.lifia.info.unlp.edu.ar/papers/2000/Garrido2000.pdf
 [Jeff Atwood]: http://blog.codinghorror.com/code-smells/
