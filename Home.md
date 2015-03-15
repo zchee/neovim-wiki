@@ -24,7 +24,7 @@
 - [Style / Conventions](http://neovim.org/develop/style-guide.xml)
 - [Plugin Architecture](https://github.com/neovim/neovim/wiki/Plugin-UI-architecture)
 - [C programming techniques and Neovim-specific guidance](C-programming)
-    - [C refactorings and code-smells](C-Refactorings-and-Code-Smells-Catalog)
+    - [C refactorings and code-smells](C-refactorings-and-code-smells-catalog)
     - [Integer type semantics](Integer-types-refactoring-guidelines)
 - [Documentation](http://neovim.org/doc/)
     - [Code overview](Code-overview)
