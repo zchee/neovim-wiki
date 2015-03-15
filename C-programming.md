@@ -1,8 +1,3 @@
-Subpages:
-
-* [C refactorings and code-smells](C-refactorings-and-code-smells-catalog)
-* [Integer type semantics](Integer-types-refactoring-guidelines)
-
 ### C programming techniques and Neovim-specific guidance
 
 [`sizeof(<var>)` vs `sizeof(<type>)`](https://github.com/neovim/neovim/pull/558#discussion_r11767481)
