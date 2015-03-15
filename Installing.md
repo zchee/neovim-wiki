@@ -59,6 +59,10 @@ sudo update-alternatives --config editor
 
 Neovim can be installed from the AUR; see [`neovim-git`](https://aur.archlinux.org/packages/neovim-git). The Python module has been packaged as [`python2-neovim`](https://aur.archlinux.org/packages/python2-neovim).
 
+### CRUX
+
+Neovim was ported to CRUX under this repo, see [`6c37/neovim`](https://github.com/6c37/crux-ports)
+
 ### Gentoo Linux
 
 A snapshot ebuild is now available in Gentoo's official portage repository: 
