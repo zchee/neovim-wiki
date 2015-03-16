@@ -33,7 +33,7 @@
 
 Neovim is compatible with most Vim plugins; following are some plugins that take special advantage of Neovim features:
 
-- [Vim-R-plugin](https://github.com/jcfaria/Vim-R-plugin)
+- [Nvim-R](https://github.com/jalvesaq/Nvim-R)
 - [Floobits](https://github.com/Floobits/floobits-neovim)
 - [vim-plug](https://github.com/junegunn/vim-plug)
 - [neomake](https://github.com/benekastah/neomake)
