@@ -6,8 +6,6 @@
  * Mailing list: [Neovim Google group](https://groups.google.com/forum/#!forum/neovim)
  * Reddit: [`/r/neovim`](https://reddit.com/r/neovim)
 
-https://irc.gitter.im/
-
 ## Conduct
 
 Please follow the [Rust code of conduct](https://github.com/mozilla/rust/wiki/Note-development-policy#wiki-conduct).
