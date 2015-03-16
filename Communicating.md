@@ -8,4 +8,4 @@
 
 ## Conduct
 
-Please follow the [Rust code of conduct](https://github.com/mozilla/rust/wiki/Note-development-policy#wiki-conduct).
+Please follow the [Rust code of conduct](http://www.rust-lang.org/conduct.html).
