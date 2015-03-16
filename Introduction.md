@@ -111,7 +111,7 @@ See the [Plugin Architecture](Plugin-UI-architecture) page for a detailed overvi
 <a name="development"></a>
 ### Development on GitHub
 
-Development happens in the [Neovim GitHub organization][]; the code is
+Development happens under the [Neovim GitHub organization][]; the code is
 split across several repositories, unlike the current Vim source tree.
 
 Travis CI is used for continuous integration, so pull requests are
