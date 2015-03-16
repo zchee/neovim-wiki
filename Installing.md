@@ -1,6 +1,6 @@
 **Note**: If you want support for Python plugins such as YouCompleteMe, you must install a Python module in addition to Neovim itself. See [`:h nvim-python-quickstart`](http://neovim.org/doc/user/nvim_python.html#nvim-python-quickstart) for more information.
 
-## Packaged Install
+# Packaged Installation
 
 If you're on one of the following systems, you can get Neovim right away!
 If not, don't worry: you can still [install Neovim manually](#user-content-manual-install)).
@@ -105,7 +105,7 @@ Neovim can be installed from the [unstable channel](http://nixos.org/nixos/manua
 
     nix-env -iA neovim
 
-## Manual Installation
+# Manual Installation
 
 If no package is available for your operating system, you can perform a manual installation. This involves building Neovim and its dependencies, so you must first make sure that all build prerequisites are satisfied (see [build prerequisites](Building-Neovim#build-prerequisites)).
 
