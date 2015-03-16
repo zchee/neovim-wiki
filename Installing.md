@@ -1,53 +1,62 @@
-**Note**: If you want support for Python plugins such as YouCompleteMe, you need to install a Python module in addition to Neovim itself. See [`:h nvim-python-quickstart`](http://neovim.org/doc/user/nvim_python.html#nvim-python-quickstart) for more information.
+**Note**: If you want support for Python plugins such as YouCompleteMe, you must install a Python module in addition to Neovim itself. See [`:h nvim-python-quickstart`](http://neovim.org/doc/user/nvim_python.html#nvim-python-quickstart) for more information.
 
 # Packaged Install
 
-If you're on one of these systems, you can get Neovim right away! (If not, don't worry: you can still [install Neovim manually](#user-content-manual-install).)
+If you're on one of the following systems, you can get Neovim right away!
+If not, don't worry: you can still [install Neovim manually](#user-content-manual-install)).
 
-### OS X / [homebrew](http://brew.sh)
+### OS X / [Homebrew](http://brew.sh)
 
-    brew tap neovim/homebrew-neovim
-    brew install --HEAD neovim
+```sh
+brew tap neovim/homebrew-neovim
+brew install --HEAD neovim
+```
 
 To **upgrade** from a previous version:
 
-    brew update
-    brew reinstall --HEAD neovim
+```sh
+brew update
+brew reinstall --HEAD neovim
+```
 
 ### Linux / [Linuxbrew](http://brew.sh/linuxbrew/)
 
-    brew tap neovim/homebrew-neovim
-    brew install --HEAD neovim
+```sh
+brew tap neovim/homebrew-neovim
+brew install --HEAD neovim
+```
 
 To **upgrade** from a previous version:
 
-    brew update
-    brew reinstall --HEAD neovim
+```sh
+brew update
+brew reinstall --HEAD neovim
+```
 
-Note: If you have the following error: `CMAKE_USE_SYSTEM_CURL is ON but a curl is not found`, you are missing the dependency for cURL that allows SSL downloads. Refer back to your distro's section in the [Linuxbrew Dependencies](https://github.com/Homebrew/linuxbrew#dependencies) to fix this.
+**Note**: If you encounter the error `CMAKE_USE_SYSTEM_CURL is ON but a curl is not found`, you're missing the dependency for cURL that allows downloads over TLS. Refer back to your distro's section in [Linuxbrew Dependencies](https://github.com/Homebrew/linuxbrew#dependencies) to fix this.
 
 ### Ubuntu
 
-Neovim has been added to a [Personal Package Archive](https://launchpad.net/~neovim-ppa/+archive/ubuntu/unstable) which allows you to install it using `apt-get` for versions [12.04 and later](https://wiki.ubuntu.com/Releases).
+Neovim has been added to a [Personal Package Archive](https://launchpad.net/~neovim-ppa/+archive/ubuntu/unstable) which allows you to install it using `apt-get` on Ubuntu [12.04 and later](https://wiki.ubuntu.com/Releases).
 
-Just run the following commands:
+Run the following commands:
 
-```bash
+```sh
 sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt-get update
 sudo apt-get install neovim
 ```
 
-To install the python module:
+To install the Python module:
 
-```bash
+```sh
 sudo apt-get install python-dev python-pip
 pip install --user neovim
 ```
 
-If you want neovim for all or some of the editor alternatives use the following commands:
+If you want to use Neovim for some (or all) of the editor alternatives, use the following commands:
 
-```bash
+```sh
 sudo update-alternatives --install /usr/bin/vi vi /usr/bin/nvim 60
 sudo update-alternatives --config vi
 sudo update-alternatives --install /usr/bin/vim vim /usr/bin/nvim 60
@@ -57,11 +66,11 @@ sudo update-alternatives --config editor
 ```
 ### Arch Linux
 
-Neovim can be installed from the AUR; see [`neovim-git`](https://aur.archlinux.org/packages/neovim-git). The Python module has been packaged as [`python2-neovim`](https://aur.archlinux.org/packages/python2-neovim).
+Neovim can be installed using the PKGBUILD [`neovim-git`](https://aur.archlinux.org/packages/neovim-git), available on the [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository). The Python module has been packaged as [`python2-neovim`](https://aur.archlinux.org/packages/python2-neovim).
 
 ### CRUX
 
-Neovim was ported to CRUX under this repo, see [`6c37/neovim`](https://github.com/6c37/crux-ports)
+A CRUX port is available under [`6c37/neovim`](https://github.com/6c37/crux-ports), along with ports for other dependencies of Neovim.
 
 ### Gentoo Linux
 
@@ -75,13 +84,16 @@ A "live" ebuild can be found in [yngwin's developer overlay](http://cgit.gentooe
 
 Third-party packages are available for openSUSE 13.1/13.2/Factory, you can install them through the [1 Click Install](http://software.opensuse.org/package/neovim?search_term=Neovim) or manually using
 
-    zypper ar http://download.opensuse.org/repositories/home:/ruiabreuferreira:/neovim/openSUSE_13.1/
-    zypper in neovim
+```sh
+zypper ar http://download.opensuse.org/repositories/home:/ruiabreuferreira:/neovim/openSUSE_13.1/
+zypper in neovim
+```
 
-Similarly adjust the URL for Factory or 13.2.
+Adjust the URL if you're using openSUSE Factory or 13.2.
 
 ### Fedora / RHEL
-There is http://copr.fedoraproject.org/coprs/gaurdro/neovim/ . It is a COPR which means it is completely unsupported, and can go away any time without a word of warning.
+
+See http://copr.fedoraproject.org/coprs/gaurdro/neovim/. It's built using the [Copr](https://copr.fedoraproject.org/) automated build system, which is completely unsupported. Additionally, there's no guarantee of how long your package will be available after the build finishes.
 
 ### Slackware
 
@@ -89,51 +101,47 @@ http://slackbuilds.org/apps/neovim/
 
 ### NixOS
 
-Package can be installed from [unstable channel](http://nixos.org/nixos/manual/#sec-upgrading) by
-```bash
-nix-env -iA neovim
-```
+Neovim can be installed from the [unstable channel](http://nixos.org/nixos/manual/#sec-upgrading) using the following command:
 
-# Manual Install
+    nix-env -iA neovim
 
-If no package is available for your operating system, you can perform a manual installation. This involves building Neovim and its dependencies, so you first need to make sure that all required build prerequisites are installed (see [build prerequisites](Building-Neovim#build-prerequisites)).
+# Manual Installation
 
-Afterwards, you can build and install Neovim into `/usr/local` by calling `make install` (which will invoke `cmake` as required).
+If no package is available for your operating system, you can perform a manual installation. This involves building Neovim and its dependencies, so you must first make sure that all build prerequisites are satisfied (see [build prerequisites](Building-Neovim#build-prerequisites)).
 
-To install Neovim to a directory of your choice, execute the following command instead:
+Afterwards, you can install Neovim into `/usr/local` by running `make install` (which generally requires root privileges).
 
-```bash
-make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/neovim" install
-```
+To install Neovim to a directory of your choice, run the following command instead:
 
-If you added `~/neovim/bin` to your `$PATH`, you should be able to see the following:
+    make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/neovim" install
+
+If you appended `$HOME/neovim/bin` to your `$PATH`, you should be able to see the following:
 
 ```
-$ which -a nvim
+which -a nvim
 {path to your $HOME}/neovim/bin/nvim
 ```
 
-Please note that if you want to change the install location after you have already executed `make`, you need to remove the `build` directory to get rid of CMake's cache:
+**Note**: If you want to change the install location after you have already executed `make`, you need to remove the `build` directory to delete CMake's cache so it regenerates it on the next invocation of `make`:
 
-```bash
+```sh
 # Install to `/usr/local`
 make install
 # Install to other location: need to remove `build` directory!
-rm -rf ./build
+rm -r ./build
 make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/other/location" install
 ```
 
-You can also run `nvim` binary without installing it on your system.
+Alternatively, `nvim` can be run directly from the build directory:
 
-```bash
-# Compile.
+```sh
+# Compile
 make
-# You might want to define an alias on .bashrc or export $VIMRUNTIME variable.
-env VIMRUNTIME=$(realpath runtime) build/bin/nvim
-# Generate help tags.
+# You might want to define an alias for this in your shell's configuration file,
+# or just export the `$VIMRUNTIME` environment variable.
+env VIMRUNTIME="$(realpath runtime)" build/bin/nvim
+# Generate help tags (from inside nvim)
 :helptags $VIMRUNTIME/doc
 ```
-
-See [Differences from Vim](https://github.com/neovim/neovim/wiki/Differences-from-Vim) for some configuration tips
 
 See [Building Neovim](Building-Neovim) for more options and some pointers in case of [build errors](Building-Neovim#troubleshootingfaq).
