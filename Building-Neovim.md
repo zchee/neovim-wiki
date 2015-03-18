@@ -203,9 +203,11 @@ compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
     sudo pkg install cmake libtool sha automake pkgconf unzip wget
 
 Note: if you have CMake installed already, you may need to re-install it.  The
-port had to be updated to support TLS for file downloads, so you may not have
-that feature. If you see the download complaining about a sha256sum mismatch, where
-the actual sha256sum is `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`, then this is your issue (that's the SHA256 checksum of an empty file). Also, make sure you have wget installed.
+port had to be updated to support TLS for file downloads, so your installed version may not have
+that feature.
+
+If you see the download complaining about a sha256sum mismatch, where
+the actual sha256sum is `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`, then this is your issue (that's the sha256sum of an empty file). Also, make sure you have wget installed.
 LuaRocks has bad interactions with cURL, at least under FreeBSD, and will die with
 a PANIC in LuaJIT when trying to install a rock.
 
@@ -236,9 +238,14 @@ a PANIC in LuaJIT when trying to install a rock.
       brew install curl-ca-bundle
       echo CA_CERTIFICATE=$(brew --prefix curl-ca-bundle)/share/ca-bundle.crt >> ~/.wgetrc
 
+<a name="troubleshooting"</a>
 ## Troubleshooting/FAQ
 
 If you run into an error not explained here and manage to resolve it, feel free to add it below!
+
+### General build errors
+
+Run `make distclean && make` as to rule out a stale build environment causing the failure.
 
 ### CMake errors
 
@@ -250,7 +257,7 @@ If you run into an error not explained here and manage to resolve it, feel free 
 A few Lua packages are required for the build process. Normally these packages will be installed via [LuaRocks](http://luarocks.org/) (invoked by CMake automatically), but sometimes this will fail. Generally, this means either:
 
 - The LuaRocks servers are down.
-- The program 'unzip' isn't found. If this is the case, LuaRocks will report something like this: `Warning: Failed searching manifest: Failed loading manifest: Failed extracting manifest file`.
+- The program `unzip` isn't found. If this is the case, LuaRocks will report something like this: `Warning: Failed searching manifest: Failed loading manifest: Failed extracting manifest file`.
 
 To avoid the first error, a LuaRocks mirror can be used:
 
