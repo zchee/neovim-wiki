@@ -39,20 +39,20 @@ starting gdbserver directly.
 
 ## "Release" build (optimized)
 
-    rm -rf build && make clean && make CMAKE_BUILD_TYPE=Release
+    rm -r build && make clean && make CMAKE_BUILD_TYPE=Release
 
 For developers and "edge" users, `RelWithDebInfo` is recommended over `Release` as the latter doesn't generate debug info.
 
 To verify that the build was optimized, you can set `VERBOSE=1` and look for the `-O` flag:
 
 ```sh
-rm -rf build && make VERBOSE=1 CMAKE_BUILD_TYPE=MinSizeRel | grep -e '\-O'
+rm -r build && make VERBOSE=1 CMAKE_BUILD_TYPE=MinSizeRel | grep -e '\-O'
 cc -DHAVE_CONFIG_H -DINCLUDE_GENERATED_DECLARATIONS -Os ... -Wall -Wextra -pedantic -Wno-unused-parameter -Wstrict-prototypes -std=gnu99 ...
 ```
 
 An alternative to `CMAKE_BUILD_TYPE`:
 
-    rm -rf build && make cmake CFLAGS='-Wno-error -O2 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1' && make
+    rm -r build && make cmake CFLAGS='-Wno-error -O2 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1' && make
 
 - `-U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1` is required because of [#223](https://github.com/neovim/neovim/issues/223).
 - To see the full build output (including flags send to the compiler by make/CMake), change the `make` step to `VERBOSE=1 make`
