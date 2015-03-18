@@ -96,5 +96,6 @@ Here `gdb_start.sh` includes `gdb` commands to be called when the debugger start
 target remote localhost:6666
 br main
 ```
+
 [syntastic]: https://github.com/scrooloose/syntastic
 [syntastic-docs]: https://raw.githubusercontent.com/scrooloose/syntastic/master/doc/syntastic.txt
