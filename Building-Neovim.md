@@ -41,7 +41,7 @@ starting gdbserver directly.
 
     rm -rf build && make clean && make CMAKE_BUILD_TYPE=Release
 
-For developers and "edge" users, `RelWithDebInfo` is recommended instead of `Release` as the latter doesn't generate debug info.
+For developers and "edge" users, `RelWithDebInfo` is recommended over `Release` as the latter doesn't generate debug info.
 
 To verify that the build was optimized, you can set `VERBOSE=1` and look for the `-O` flag:
 
