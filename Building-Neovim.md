@@ -8,7 +8,7 @@ pulls down third-party dependencies (such as libuv and luajit) into `.deps/`, an
 
 To generate the `Makefile`s without building: `make cmake`
 
-Now that if you have the dependencies, you can try other build targets and options, explained below.
+Now that you have the dependencies, you can try other build targets and options, explained below.
 
 ## Legacy integration tests
 
@@ -41,13 +41,13 @@ starting gdbserver directly.
 
     rm -rf build && make clean && make CMAKE_BUILD_TYPE=Release
 
-For developers and "edge" users, `RelWithDebInfo` is recommended instead of `Release`, as the debug info it generates is helpful during debugging.
+For developers and "edge" users, `RelWithDebInfo` is recommended instead of `Release` as the latter doesn't generate debug info.
 
 To verify that the build was optimized, you can set `VERBOSE=1` and look for the `-O` flag:
 
 ```sh
 rm -rf build && make VERBOSE=1 CMAKE_BUILD_TYPE=MinSizeRel | grep -e '\-O'
-/usr/bin/cc -DHAVE_CONFIG_H -DINCLUDE_GENERATED_DECLARATIONS -Os ... -Wall -Wextra -pedantic -Wno-unused-parameter -Wstrict-prototypes -std=gnu99 ...
+cc -DHAVE_CONFIG_H -DINCLUDE_GENERATED_DECLARATIONS -Os ... -Wall -Wextra -pedantic -Wno-unused-parameter -Wstrict-prototypes -std=gnu99 ...
 ```
 
 An alternative to `CMAKE_BUILD_TYPE`:
@@ -77,7 +77,7 @@ A normal build will create all the `.mo` files in `build/src/nvim/po`.
 To update the `src/nvim/po/$LANG.po` file with the latest strings from sources, run
 `make update-po-$LANG`.
 
-## "GNU-like" (GCC, Clang, ...) compiler options
+## "GNU-like" (GCC, Clang, etc.) compiler options
 
 To see the chain of includes, use the `-H` option (see [#918](https://github.com/neovim/neovim/issues/918)):
 
@@ -168,14 +168,19 @@ When changing `DEPS_PREFIX`, you may need to clear the CMake cache in order for 
 
 Other dependencies are listed below.
 
+<!-- the debianubuntu link below is to avoid breaking links that we used in issues and handed out to users -->
+<a name="for-debianubuntu"></a>
+<a name="for-ubuntu"></a>
 ### Ubuntu
 
     sudo apt-get install libtool libtool-bin autoconf automake cmake libncurses5-dev g++ pkg-config unzip
 
+<a name="for-debian"></a>
 ### Debian
 
     sudo apt-get install libtool libtool-bin autoconf automake cmake libncurses5-dev g++ pkg-config unzip
 
+<a name="for-centos-rhel"></a>
 ### CentOS/RHEL/Fedora
 
 If you're using CentOS/RHEL 6 you need at least autoconf version 2.69 for
@@ -183,14 +188,17 @@ compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
 
     sudo yum -y install autoconf automake cmake gcc gcc-c++ libtool ncurses-devel pkgconfig
 
+<a name="for-opensuse"></a>
 ### openSUSE
 
     sudo zypper install libtool autoconf automake cmake ncurses-devel gcc-c++
 
+<a name="for-arch-linux"></a>
 ### Arch Linux
 
     sudo pacman -S base-devel cmake unzip
 
+<a name="for-freebsd-10"></a>
 ### FreeBSD 10
 
     sudo pkg install cmake libtool sha automake pkgconf unzip wget
@@ -202,6 +210,7 @@ the actual sha256sum is `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991
 LuaRocks has bad interactions with cURL, at least under FreeBSD, and will die with
 a PANIC in LuaJIT when trying to install a rock.
 
+<a name="for-os-x"></a>
 ### OS X
 
 * Install [Xcode](https://developer.apple.com/) and [Homebrew](http://brew.sh)
