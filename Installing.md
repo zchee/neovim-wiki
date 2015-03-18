@@ -3,9 +3,9 @@
 # Packaged Installation
 
 If you're on one of the following systems, you can get Neovim right away!
-If not, don't worry: you can still [install Neovim manually](#user-content-manual-install)).
+If not, you can still [install Neovim manually](#user-content-manual-install).
 
-After installation, use nvim command to start neovim.
+Note that the Neovim binary to run is called `nvim`, not `neovim`.
 
 ### OS X / [Homebrew](http://brew.sh)
 
@@ -35,7 +35,7 @@ brew update
 brew reinstall --HEAD neovim
 ```
 
-**Note**: If you encounter the error `CMAKE_USE_SYSTEM_CURL is ON but a curl is not found`, you're missing the dependency for cURL that allows downloads over TLS. Refer back to your distro's section in [Linuxbrew Dependencies](https://github.com/Homebrew/linuxbrew#dependencies) to fix this.
+**Note**: If you encounter the error `CMAKE_USE_SYSTEM_CURL is ON but a curl is not found`, then you're missing the dependency for cURL that allows downloads over TLS. Refer back to your distro's section in [Linuxbrew Dependencies](https://github.com/Homebrew/linuxbrew#dependencies) to fix this.
 
 ### Ubuntu
 
