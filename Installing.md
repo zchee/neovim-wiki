@@ -5,6 +5,8 @@
 If you're on one of the following systems, you can get Neovim right away!
 If not, don't worry: you can still [install Neovim manually](#user-content-manual-install)).
 
+After installation, use nvim command to start neovim.
+
 ### OS X / [Homebrew](http://brew.sh)
 
 ```sh
