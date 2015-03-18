@@ -164,7 +164,7 @@ When changing `DEPS_PREFIX`, you may need to clear the CMake cache in order for 
 **General requirements**:
 
 - A relatively recent version of GCC (at least `4.3`) or Clang (see [#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
-- CMake (>=2.8.7) built with SSL support (see [#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
+- CMake (>=2.8.7) built with TLS support (see [#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
 
 Other dependencies are listed below.
 
@@ -203,8 +203,8 @@ compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
 
     sudo pkg install cmake libtool sha automake pkgconf unzip wget
 
-Note: if you have cmake installed already, you may need to re-install it.  The
-port had to be updated to support SSL for file downloads, so you may not have
+Note: if you have CMake installed already, you may need to re-install it.  The
+port had to be updated to support TLS for file downloads, so you may not have
 that feature. If you see the download complaining about a sha256sum mismatch, where
 the actual sha256sum is `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`, then this is your issue (that's the SHA256 checksum of an empty file). Also, make sure you have wget installed.
 LuaRocks has bad interactions with cURL, at least under FreeBSD, and will die with
@@ -248,7 +248,7 @@ If you run into an error not explained here and manage to resolve it, feel free 
 
 ### Lua packages
 
-A few Lua packages are required for the build process. Normally these packages will be installed via [luarocks](http://luarocks.org/) (invoked by cmake automatically), but sometimes this will fail. There are two common causes for this:
+A few Lua packages are required for the build process. Normally these packages will be installed via [LuaRocks](http://luarocks.org/) (invoked by CMake automatically), but sometimes this will fail. There are two common causes for this:
 
 - LuaRocks servers are down
 - you need to install the 'unzip' command-line utility, if this is the case LuaRocks will report something like this: `Warning: Failed searching manifest: Failed loading manifest: Failed extracting manifest file`
