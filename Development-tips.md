@@ -6,9 +6,11 @@ See the [Building Neovim](Building-Neovim) page.
 
 - The `contrib/` folder contains a [YouCompleteMe configuration](https://github.com/neovim/neovim/tree/master/contrib/YouCompleteMe) tailored to Neovim.
 
-## Code Linting
-If you are using Syntastic you can use https://gist.github.com/gilligan/9326904 to add clint.py as checker
-for C files. Note that clint.py needs to be in your path and that you will have to modify g:syntastic_c_checkers because it'll otherwise use gcc or make as default. See the syntastic documentation for details on that.
+## Code linting
+
+If you are using [Syntastic][syntastic], you can use https://gist.github.com/gilligan/9326904 to add `clint.py` as a checker for C files. Note that `clint.py` needs to be in your `PATH` and that you will have to modify `g:syntastic_c_checkers`, otherwise it will default to GCC or make.
+
+See [Syntastic's documentation][syntastic-docs] for for information.
 
 ## Experimenting with the API
 
@@ -18,9 +20,9 @@ https://github.com/splinterofchaos/neovim-cpp-client-experiment/blob/master/src/
 
 ## Debugging
 
-### Core dump
+### Core dumps
 
-Core dumps by default are [disabled on Ubuntu](http://stackoverflow.com/a/18368068/152142) and OS X. Run
+Core dumps are [disabled  by default on Ubuntu](http://stackoverflow.com/a/18368068/152142) and OS X. Run
 
     ulimit -c unlimited
 
@@ -30,7 +32,7 @@ to enable core dumping. If you then reproduce a segfault in `nvim`, it will "dum
 
 ### Using `lldb` to step through unit tests
 
-```bash
+```sh
 $ lldb .deps/usr/bin/luajit -- .deps/usr/bin/busted --lpath="./build/?.lua" test/unit/
 ```
 
@@ -44,7 +46,7 @@ The `gdb` interactive prompt will appear. At any time you can:
 
 - `break foo` to set a breakpoint on the `foo()` function
 - `n` to **step over** the next statement
-    - press `<enter>` to repeat the last command!
+    - press `<enter>` to repeat the last command
 - `s` to **step into** the next statement
 - `c` to **continue**
 - `finish` to **step out** of the current function
@@ -69,11 +71,11 @@ Once you've entered `gdb`, you need to attach to the remote session:
 
     target remote localhost:6666
 
-### Using `gdbserver` in tmux
+### Using `gdbserver` in `tmux`
 
-Consider using a [custom makefile](https://github.com/neovim/neovim/wiki/Building-Neovim#custom-makefile) to quickly start debugging sessions using the above `gdbserver` method. This example will create the debugging session when you type `make debug`. This assumes that you have `Makefile` in the top-level directory.
+Consider using a [custom makefile](https://github.com/neovim/neovim/wiki/Building-Neovim#custom-makefile) to quickly start debugging sessions using the `gdbserver` method mentioned above. This example will create the debugging session when you type `make debug`.
 
-```
+```make
 .PHONY: dbg-start dbg-attach debug build
 
 build:
@@ -94,3 +96,5 @@ Here `gdb_start.sh` includes `gdb` commands to be called when the debugger start
 target remote localhost:6666
 br main
 ```
+[syntastic]: https://github.com/scrooloose/syntastic
+[syntastic-docs]: https://raw.githubusercontent.com/scrooloose/syntastic/master/doc/syntastic.txt
