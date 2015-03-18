@@ -173,12 +173,12 @@ Other dependencies are listed below.
 <a name="for-ubuntu"></a>
 ### Ubuntu
 
-    sudo apt-get install libtool libtool-bin autoconf automake cmake libncurses5-dev g++ pkg-config unzip
+    sudo apt-get install libtool libtool-bin autoconf automake cmake g++ pkg-config unzip
 
 <a name="for-debian"></a>
 ### Debian
 
-    sudo apt-get install libtool libtool-bin autoconf automake cmake libncurses5-dev g++ pkg-config unzip
+    sudo apt-get install libtool libtool-bin autoconf automake cmake g++ pkg-config unzip
 
 <a name="for-centos-rhel"></a>
 ### CentOS/RHEL/Fedora
@@ -186,12 +186,12 @@ Other dependencies are listed below.
 If you're using CentOS/RHEL 6 you need at least autoconf version 2.69 for
 compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
 
-    sudo yum -y install autoconf automake cmake gcc gcc-c++ libtool ncurses-devel pkgconfig
+    sudo yum -y install autoconf automake cmake gcc gcc-c++ libtool pkgconfig
 
 <a name="for-opensuse"></a>
 ### openSUSE
 
-    sudo zypper install libtool autoconf automake cmake ncurses-devel gcc-c++
+    sudo zypper install libtool autoconf automake cmake gcc-c++
 
 <a name="for-arch-linux"></a>
 ### Arch Linux
