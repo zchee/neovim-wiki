@@ -1,14 +1,14 @@
-## Quickstart
+## Quick start
 
-If you just pulled the Neovim source and want to get a working `nvim` binary,
+If you just cloned [`neovim/neovim`](https://github.com/neovim/neovim) and want to get a working `nvim` binary,
 
     make
 
 pulls down third-party dependencies (such as libuv and luajit) into `.deps/`, and builds them. A number of [build prerequisites](#user-content-build-prerequisites) such as `libtool` are required for that, but the configure script will let you know if something is missing. Install the missing prerequisites, then try `make` again. If there are other problems, also have a look at the [build errors section](#troubleshootingfaq) further down.
 
-* To generate the `Makefile`s without building: `make cmake`
+To generate the `Makefile`s without building: `make cmake`
 
-Now that you have the dependencies, you can try other build targets and options, explained below.
+Now that if you have the dependencies, you can try other build targets and options, explained below.
 
 ## Legacy integration tests
 
@@ -18,7 +18,7 @@ To build and run all legacy (Vim) integration tests:
 
 ## Integration tests
 
-To build and run all integrations tests:
+To build and run all integration tests:
 
     make test
 
@@ -35,31 +35,31 @@ To run a *specific* test file:
 ## Functional tests
 
 `$GDB` can be set to [run tests under gdbserver](https://github.com/neovim/neovim/pull/1527). If `$VALGRIND` is also set, it will add the `--vgdb=yes` option to valgrind instead of
-starting gdbserver. 
+starting gdbserver directly.
 
-## "Release" build (optimized, NDEBUG)
+## "Release" build (optimized)
 
-    rm -rf build/ && make clean && make CMAKE_BUILD_TYPE=Release
+    rm -rf build && make clean && make CMAKE_BUILD_TYPE=Release
 
-  - For "edge" users and developers, `RelWithDebInfo` is recommended instead of `Release`.
+For developers and "edge" users, `RelWithDebInfo` is recommended instead of `Release`, as the debug info it generates is helpful during debugging.
 
 To verify that the build was optimized, you can set `VERBOSE=1` and look for the `-O` flag:
 
-```
-rm -rf build/ && make VERBOSE=1 CMAKE_BUILD_TYPE=MinSizeRel | grep -e '\-O'
-/usr/bin/cc -DHAVE_CONFIG_H -DINCLUDE_GENERATED_DECLARATIONS -Os -DNDEBUG ... -Wall -Wextra -pedantic -Wno-unused-parameter -Wstrict-prototypes -std=gnu99 ...
+```sh
+rm -rf build && make VERBOSE=1 CMAKE_BUILD_TYPE=MinSizeRel | grep -e '\-O'
+/usr/bin/cc -DHAVE_CONFIG_H -DINCLUDE_GENERATED_DECLARATIONS -Os ... -Wall -Wextra -pedantic -Wno-unused-parameter -Wstrict-prototypes -std=gnu99 ...
 ```
 
-Alternative to `CMAKE_BUILD_TYPE`:
+An alternative to `CMAKE_BUILD_TYPE`:
 
-    rm -rf build/ && make cmake CFLAGS='-Wno-error -DNDEBUG -O3 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1' && make
+    rm -rf build && make cmake CFLAGS='-Wno-error -O2 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1' && make
 
 - `-U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1` is required because of [#223](https://github.com/neovim/neovim/issues/223).
 - To see the full build output (including flags send to the compiler by make/CMake), change the `make` step to `VERBOSE=1 make`
 
 ## Localization build
 
-A normal build will create all the `.mo` files and they reside in `build/src/nvim/po`.
+A normal build will create all the `.mo` files in `build/src/nvim/po`.
 
 * If you see `msgfmt: command not found`, you need to install [`gettext`](http://en.wikipedia.org/wiki/Gettext) (on Debian/Ubuntu: `sudo apt-get install gettext`).
 
@@ -77,11 +77,11 @@ A normal build will create all the `.mo` files and they reside in `build/src/nvi
 To update the `src/nvim/po/$LANG.po` file with the latest strings from sources, run
 `make update-po-$LANG`.
 
-## "GNU-like" (GCC, clang, ...) compiler options
+## "GNU-like" (GCC, Clang, ...) compiler options
 
-To see the chain of includes, use the `-H` switch (see [#918](https://github.com/neovim/neovim/issues/918)):
+To see the chain of includes, use the `-H` option (see [#918](https://github.com/neovim/neovim/issues/918)):
 
-```bash
+```sh
 $ echo '#include "./src/nvim/buffer.h"' |
 clang -I.deps/usr/include -Isrc -std=c99 -P -E -H - 2>&1 1>/dev/null |
 # ignore headers in /usr/*
@@ -96,16 +96,16 @@ CMake has a `-G` option for exporting to many [project file formats](http://www.
 
 For example, to use Xcode's static analysis GUI ([#167](https://github.com/neovim/neovim/issues/167#issuecomment-36136018)), you need to generate an Xcode project file from the Neovim makefile (where `neovim/` is the top-level Neovim source code directory containing the main `Makefile`):
 
-```bash
-cmake -G Xcode neovim/
-```
+    cmake -G Xcode neovim
 
 then open the resulting project file in Xcode.
 
-## Custom Makefile 
-You can customize the build process locally on your machine by creating `local.mk` which is referenced at the top of the main `Makefile` (and listed in `.gitignore`). **A new target in `local.mk` overrides the default make-target.**
+## Custom Makefile
+
+You can customize the build process locally by creating a `local.mk`, which is referenced at the top of the main `Makefile`. It's listed in `.gitignore` so it can be easily used across branches. **A new target in `local.mk` overrides the default make-target.**
 
 Here's a sample `local.mk` which adds a target to force a rebuild but *does not* override the default-target:
+
 ```make
 all:
 
@@ -117,34 +117,41 @@ rebuild:
 
 To build the bundled dependencies using CMake:
 
-    mkdir .deps
-    cd .deps
-    cmake ../third-party/
-    make
-    cd ..
+```
+mkdir .deps
+cd .deps
+cmake ../third-party
+make
+```
 
 By default the libraries and headers are placed in `.deps/usr`, afterwards you can build Neovim using:
 
-    mkdir build
-    cd build
-    cmake ..
-    make
+```sh
+mkdir build
+cd build
+cmake ..
+make
+```
 
 You can build the dependencies in a different location using:
 
-    mkdir deps2
-    cd deps2
-    cmake ../third-party/
-    make
-    cd ..
+```sh
+mkdir deps2
+cd deps2
+cmake ../third-party/
+make
+cd ..
+```
 
 And then build Neovim using:
 
-    mkdir build
-    cd build
-    cmake -DDEPS_PREFIX=../deps2/usr ..
+```sh
+mkdir build
+cd build
+cmake -DDEPS_PREFIX=../deps2/usr ..
+```
 
-When changing `DEPS_PREFIX` you may need to clear the CMake cache in order for the changes to take effect.
+When changing `DEPS_PREFIX`, you may need to clear the CMake cache in order for the changes to take effect.
 
 ## General notes on [CMake](http://www.cmake.org/examples/)
 
@@ -154,26 +161,21 @@ When changing `DEPS_PREFIX` you may need to clear the CMake cache in order for t
 
 ## Build Prerequisites
 
-**General requirements:** 
+**General requirements**:
 
-- A fairly recent gcc (4.3) or clang (see [#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
+- A relatively recent version of GCC (at least `4.3`) or Clang (see [#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
 - CMake (>=2.8.7) built with SSL support (see [#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
 
 Other dependencies are listed below.
 
-<!-- the debianubuntu link below is to avoid breaking links that we used in issues and handed out to users. -->
-<a name="for-debianubuntu"></a>
-<a name="for-ubuntu"></a>
 ### Ubuntu
 
     sudo apt-get install libtool libtool-bin autoconf automake cmake libncurses5-dev g++ pkg-config unzip
 
-<a name="for-debian"></a>
 ### Debian
 
     sudo apt-get install libtool libtool-bin autoconf automake cmake libncurses5-dev g++ pkg-config unzip
 
-<a name="for-centos-rhel"></a>
 ### CentOS/RHEL/Fedora
 
 If you're using CentOS/RHEL 6 you need at least autoconf version 2.69 for
@@ -181,30 +183,25 @@ compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
 
     sudo yum -y install autoconf automake cmake gcc gcc-c++ libtool ncurses-devel pkgconfig
 
-<a name="for-opensuse"></a>
 ### openSUSE
 
     sudo zypper install libtool autoconf automake cmake ncurses-devel gcc-c++
 
-<a name="for-freebsd-10"></a>
+### Arch Linux
+
+    sudo pacman -S base-devel cmake unzip
+
 ### FreeBSD 10
 
     sudo pkg install cmake libtool sha automake pkgconf unzip wget
 
 Note: if you have cmake installed already, you may need to re-install it.  The
 port had to be updated to support SSL for file downloads, so you may not have
-that feature. If you see the download complaining about an md5sum mismatch, and
-the actual md5sum is `d41d8cd98f00b204e9800998ecf8427e`, then this is your issue
-(that's the md5sum of an empty file). Also, make sure you have wget installed.
-Luarocks has bad interactions with curl, at least under FreeBSD, and will die with
+that feature. If you see the download complaining about a sha256sum mismatch, where
+the actual sha256sum is `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`, then this is your issue (that's the SHA256 checksum of an empty file). Also, make sure you have wget installed.
+LuaRocks has bad interactions with cURL, at least under FreeBSD, and will die with
 a PANIC in LuaJIT when trying to install a rock.
 
-<a name="for-arch-linux"></a>
-### Arch Linux
-
-    sudo pacman -S base-devel cmake unzip
-
-<a name="for-os-x"></a>
 ### OS X
 
 * Install [Xcode](https://developer.apple.com/) and [Homebrew](http://brew.sh)
@@ -242,12 +239,12 @@ If you run into an error not explained here and manage to resolve it, feel free 
 
 ### Lua packages
 
-A few lua packages are required for the build process. Normally these packages will be installed via [luarocks](http://luarocks.org/) (invoked by cmake automatically), but sometimes this will fail. There are two common causes for this:
+A few Lua packages are required for the build process. Normally these packages will be installed via [luarocks](http://luarocks.org/) (invoked by cmake automatically), but sometimes this will fail. There are two common causes for this:
 
-- luarocks servers are down
-- you need to install the 'unzip' command-line utility, if this is the case luarocks will report something like this: `Warning: Failed searching manifest: Failed loading manifest: Failed extracting manifest file`
+- LuaRocks servers are down
+- you need to install the 'unzip' command-line utility, if this is the case LuaRocks will report something like this: `Warning: Failed searching manifest: Failed loading manifest: Failed extracting manifest file`
 
-To fix the first error, a luarocks mirror can be used:
+To fix the first error, a LuaRocks mirror can be used:
 
 ```sh
 cat >> .deps/usr/etc/luarocks/config-5.1.lua << "EOF"
@@ -267,4 +264,4 @@ For running tests, these are also required:
 
 - [busted](http://olivinelabs.com/busted/)
 
-Keep in mind that some of those packages have their own dependencies which also have to be installed.
+Keep in mind that some of those packages have their own dependencies which also have to be installed, and the version you install hasn't necessarily been tested to work with Neovim.
