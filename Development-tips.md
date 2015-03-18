@@ -46,14 +46,14 @@ The `gdb` interactive prompt will appear. At any time you can:
 
 - `break foo` to set a breakpoint on the `foo()` function
 - `n` to **step over** the next statement
-    - press `<enter>` to repeat the last command
+    - `<Enter>` to repeat the last command
 - `s` to **step into** the next statement
 - `c` to **continue**
 - `finish` to **step out** of the current function
 - `p zub` to print the value of `zub` 
 - `bt` to see a **backtrace** (callstack) from the current location
-- `CTRL-X CTRL-A` to **show a TUI view of the source file** in the current debugging context! This is extremely useful and avoids the need for a gdb "frontend".
-    - use `<up>` and `<down>` to scroll the source file view
+- `CTRL-x CTRL-a` to **show a TUI view of the source file** in the current debugging context. This can be extremely useful as it avoids the need for a gdb "frontend".
+    - `<up>` and `<down>` to scroll the source file view
 
 ### Using `gdbserver`
 
