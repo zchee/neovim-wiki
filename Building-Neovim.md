@@ -4,7 +4,7 @@ If you just cloned [`neovim/neovim`](https://github.com/neovim/neovim) and want 
 
     make
 
-pulls down third-party dependencies (such as libuv and luajit) into `.deps/`, and builds them. A number of [build prerequisites](#user-content-build-prerequisites) such as `libtool` are required for that, but the configure script will let you know if something is missing. Install the missing prerequisites, then try `make` again. If there are other problems, also have a look at the [build errors section](#troubleshootingfaq) further down.
+pulls down third-party dependencies (such as libuv and LuaJIT) into `.deps/`, and builds them. A number of [build prerequisites](#user-content-build-prerequisites) such as `libtool` are required for that, but CMake will let you know if something is missing. Install the missing prerequisites, then try `make` again. If there are other problems, refer to the [troubleshooting section](#troubleshootingfaq) at the bottom.
 
 To generate the `Makefile`s without building: `make cmake`
 
