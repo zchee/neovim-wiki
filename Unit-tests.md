@@ -4,7 +4,7 @@ In Neovim, unit testing is achieved by compiling it as a shared library that can
 
 Each module must have a separate test script (written in lua) in the test/unit directory. It might be possible to get started real fast by looking at existing [examples](https://github.com/neovim/neovim/tree/master/test/unit), but to get a deeper understanding of how this works, the best place is the ffi module [documentation](http://luajit.org/ext_ffi.html).
 
-## guidelines for writing tests
+## Guidelines for writing tests
 
 - Consider [BDD](http://en.wikipedia.org/wiki/Behavior-driven_development) guidelines for organization and readability of tests. Describe what you're testing (and the environment if applicable) and create specs that assert its behavior.
 - For testing static functions or functions that have side effects visible only in module-global variables, create accessors for the modified variables. For example, say you are testing a function in misc1.c that modifies a static variable, create a file `test/c-helpers/misc1.c` and add a function that retrieves the value after the function call. Files under `test/c-helpers` will only be compiled when building the test shared library.
