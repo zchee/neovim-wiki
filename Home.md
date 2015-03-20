@@ -19,7 +19,7 @@
 - [Building Neovim](Building-Neovim)
 - **[Contributing](Contributing)**
     - [Unit testing](Unit-tests)
-    - [Merging patches from upstream Vim](Merging-patches-from-upstream-vim)
+    - [Merging patches from upstream Vim](Merging-patches-from-upstream-Vim)
 - [Development tips](Development-tips)
 - [Style / Conventions](http://neovim.org/develop/style-guide.xml)
 - [Plugin Architecture](https://github.com/neovim/neovim/wiki/Plugin-UI-architecture)
