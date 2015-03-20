@@ -3,6 +3,7 @@ To confirm your signature of the [Neovim Contributor License Agreement (CLA)](ht
 The timestamp is sent by the CLA form. Please don't modify this page until you have signed the CLA.
 
 ===
+- 1426861161714 Shougo Matsushita
 - 1424977723073 Sebastian Parborg
 - 1422808869020 Lucas Hermann Negri
 - 1418406264717 Ross Smith
