@@ -3,7 +3,7 @@
 # Packaged Installation
 
 If you're on one of the following systems, you can get Neovim right away!
-If not, you can still [install Neovim manually](#user-content-manual-install).
+If not, you can still [install Neovim manually](#manual-installation).
 
 Note that the Neovim binary to run is called `nvim`, not `neovim`.
 
