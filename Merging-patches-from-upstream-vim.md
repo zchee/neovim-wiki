@@ -28,7 +28,7 @@ Pull requests
 -------------
 
 - The pull request *title* should include `vim-patch:7.4.xxx`. 
-- If the patch includes a new test (`src/testdir/test*.in`), please convert it to lua tests (see [#1286](https://github.com/neovim/neovim/issues/1286) and [#1328](https://github.com/neovim/neovim/pull/1328)). This usually just means [running a script](https://github.com/neovim/neovim/pull/2178#issuecomment-83230194) and tweaking the result.
+- If the patch includes a new test (`src/testdir/test*.in`), please convert it to a lua test (see [#1286](https://github.com/neovim/neovim/issues/1286) and [#1328](https://github.com/neovim/neovim/pull/1328)). This usually just means [running a script](https://github.com/neovim/neovim/pull/2178#issuecomment-83230194) and tweaking the result.
 - The [*commit message*](https://github.com/neovim/neovim/commit/4ccf1125ff569eccfc34abc4ad794044c5ab7455) should include:
     - A token indicating the Vim patch number, formatted as follows (no space!): <br/>
      `vim-patch:7.4.123`
