@@ -27,15 +27,15 @@ The script guides you with further instructions. It's easy and painless, just tr
 Pull requests
 -------------
 
-Please include `vim-patch:7.4.xxx` in the *pull request* title. In addition, the [*commit message*](https://github.com/neovim/neovim/commit/4ccf1125ff569eccfc34abc4ad794044c5ab7455) should include:
-
-- A token indicating the Vim patch number, formatted as follows (no space!): <br/>
-  `vim-patch:7.4.123`
-- A URL pointing to the Vim commit:
-    - https://code.google.com/p/vim/source/detail?r=5d03c374712128077ac4c342aad02120ed98df70
-- The original Vim commit message, including the author
-
-> **The [**vim-patch.sh**](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh) script automates most of this for you.**
+- The pull request *title* should include `vim-patch:7.4.xxx`. 
+- If the patch includes a new test (`src/testdir/test*.in`), please convert it to lua tests (see [#1286](https://github.com/neovim/neovim/issues/1286) and [#1328](https://github.com/neovim/neovim/pull/1328)). This usually just means [running a script](https://github.com/neovim/neovim/pull/2178#issuecomment-83230194) and tweaking the result.
+- The [*commit message*](https://github.com/neovim/neovim/commit/4ccf1125ff569eccfc34abc4ad794044c5ab7455) should include:
+    - A token indicating the Vim patch number, formatted as follows (no space!): <br/>
+     `vim-patch:7.4.123`
+    - A URL pointing to the Vim commit: <br/>
+      https://code.google.com/p/vim/source/detail?r=5d03c374712128077ac4c342aad02120ed98df70
+    - The original Vim commit message, including the author
+    - **The [vim-patch.sh](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh) script automates most of this for you.**
 
 **Reviewers:** [hint for reviewing `runtime/` patches](https://github.com/neovim/neovim/pull/1744#issuecomment-68202876)
 
@@ -46,4 +46,5 @@ Code differences
 - Where Vim code uses `malloc()` and friends, merges to Neovim [should use `xmalloc` and related `memory.c` "x-functions"](https://github.com/neovim/neovim/pull/691#issuecomment-52400360).
 - Where Vim code uses `vim_free()`, Neovim uses `free()`.
 - Vim tests (in `src/testdir/`) should be converted to lua tests (see [#1286](https://github.com/neovim/neovim/issues/1286) and [#1328](https://github.com/neovim/neovim/pull/1328))
+    - [Checklist for migrating legacy tests](https://github.com/neovim/neovim/wiki/Unit-tests#checklist-for-migrating-legacy-tests)
 - `copy_chars()` and `copy_spaces()` were removed; use `memset()` instead [#1635](https://github.com/neovim/neovim/pull/1635)
