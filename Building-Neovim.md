@@ -245,7 +245,7 @@ If you run into an error not explained here and manage to resolve it, feel free 
 
 ### General build errors
 
-Run `make distclean && make` as to rule out a stale build environment causing the failure.
+Run `make distclean && make` to rule out a stale build environment causing the failure.
 
 ### CMake errors
 
