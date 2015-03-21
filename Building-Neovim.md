@@ -8,13 +8,9 @@ pulls down third-party dependencies (such as libuv and LuaJIT) into `.deps/`, an
 
 To generate the `Makefile`s without building: `make cmake`
 
+If you plan on building Neovim frequently, it's recommended you install the [Ninja build system](https://martine.github.io/ninja/), which is significantly faster than traditional `make`. It's not required, but will be used if available.
+
 Now that you have the dependencies, you can try other build targets and options, explained below.
-
-## Legacy integration tests
-
-To build and run all legacy (Vim) integration tests:
-
-    make oldtest
 
 ## Integration tests
 
@@ -28,9 +24,15 @@ To build and run all unit tests:
 
     make unittest
 
-To run a *specific* test file:
+To run a *specific* unit test:
 
     TEST_FILE=test/unit/foo.lua make unittest
+
+## Legacy integration tests
+
+To build and run all legacy (Vim) integration tests:
+
+    make oldtest
 
 ## Functional tests
 
