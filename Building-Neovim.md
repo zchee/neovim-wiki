@@ -8,7 +8,7 @@ pulls down third-party dependencies (such as libuv and LuaJIT) into `.deps/`, an
 
 To generate the `Makefile`s without building: `make cmake`
 
-If you plan on building Neovim frequently, it's recommended you install the [Ninja build system](https://martine.github.io/ninja/), which is significantly faster than traditional `make`. It's not required, but will be used if available.
+If you plan on building Neovim frequently, it's recommended you install the [Ninja build system](https://martine.github.io/ninja/), which is significantly faster than traditional `make`. It's not required, but will be used by `make` if available.
 
 Now that you have the dependencies, you can try other build targets and options, explained below.
 
