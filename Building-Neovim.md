@@ -48,7 +48,7 @@ For developers and "edge" users, `RelWithDebInfo` is recommended over `Release` 
 To verify that the build was optimized, you can set `VERBOSE=1` and look for the `-O` flag:
 
 ```sh
-rm -r build && make VERBOSE=1 CMAKE_BUILD_TYPE=MinSizeRel |  grep -E '\-O(2|s|g)'
+rm -r build && make VERBOSE=1 CMAKE_BUILD_TYPE=MinSizeRel | grep -E '\-O(2|s|g)'
 cc -DHAVE_CONFIG_H -DINCLUDE_GENERATED_DECLARATIONS -Os ... -Wall -Wextra -pedantic -Wno-unused-parameter -Wstrict-prototypes -std=gnu99 ...
 ```
 
