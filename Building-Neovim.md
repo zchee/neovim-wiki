@@ -48,7 +48,7 @@ For developers and "edge" users, `RelWithDebInfo` is recommended over `Release` 
 To verify that the build was optimized, you can set `VERBOSE=1` and look for the `-O` flag:
 
 ```sh
-rm -r build && make VERBOSE=1 CMAKE_BUILD_TYPE=MinSizeRel | grep -e '\-O'
+rm -r build && make VERBOSE=1 CMAKE_BUILD_TYPE=MinSizeRel |  grep -E '\-O(2|s|g)'
 cc -DHAVE_CONFIG_H -DINCLUDE_GENERATED_DECLARATIONS -Os ... -Wall -Wextra -pedantic -Wno-unused-parameter -Wstrict-prototypes -std=gnu99 ...
 ```
 
@@ -80,12 +80,12 @@ To update the `src/nvim/po/$LANG.po` file with the latest strings from sources, 
 
 ## "GNU-like" (GCC, Clang, etc.) compiler options
 
-To see the chain of includes, use the `-H` option (see [#918](https://github.com/neovim/neovim/issues/918)):
+To see the chain of includes, use the `-H` option ([#918](https://github.com/neovim/neovim/issues/918)):
 
-```sh
-$ echo '#include "./src/nvim/buffer.h"' |
+```
+echo '#include "./src/nvim/buffer.h"' |
 clang -I.deps/usr/include -Isrc -std=c99 -P -E -H - 2>&1 1>/dev/null |
-# ignore headers in /usr/*
+# ignore headers in /usr/
 grep -v '/usr/'
 ```
 
@@ -93,7 +93,7 @@ grep -v '/usr/'
 
 ## Xcode and MSVC project files
 
-CMake has a `-G` option for exporting to many [project file formats](http://www.cmake.org/cmake/help/v2.8.8/cmake.html#section_Generators) such as Xcode and Visual Studio. 
+CMake has a `-G` option for exporting to many [project file formats](http://www.cmake.org/cmake/help/v2.8.8/cmake.html#section_Generators), such as Xcode and Visual Studio. 
 
 For example, to use Xcode's static analysis GUI ([#167](https://github.com/neovim/neovim/issues/167#issuecomment-36136018)), you need to generate an Xcode project file from the Neovim makefile (where `neovim/` is the top-level Neovim source code directory containing the main `Makefile`):
 
@@ -114,7 +114,7 @@ rebuild:
 	rm -rf build && make
 ```
 
-## Controlling the build for third-party dependencies [#1588](https://github.com/neovim/neovim/pull/1588)
+## Controlling the build for third-party dependencies ([#1588](https://github.com/neovim/neovim/pull/1588))
 
 To build the bundled dependencies using CMake:
 
@@ -164,8 +164,8 @@ When changing `DEPS_PREFIX`, you may need to clear the CMake cache in order for 
 
 **General requirements**:
 
-- A relatively recent version of GCC (at least `4.3`) or Clang (see [#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
-- CMake (>=2.8.7) built with TLS support (see [#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
+- A relatively recent version of GCC (at least `4.3`) or Clang ([#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
+- CMake (>=2.8.7) built with TLS support ([#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
 
 Other dependencies are listed below.
 
