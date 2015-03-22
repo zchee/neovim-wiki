@@ -48,7 +48,7 @@ For developers and "edge" users, `RelWithDebInfo` is recommended over `Release` 
 
 To verify that the build was optimized, you can set `VERBOSE=1` and look for the `-O` flag:
 
-```sh
+```
 rm -r build && make VERBOSE=1 CMAKE_BUILD_TYPE=MinSizeRel | grep -E '\-O(2|s|g)'
 cc -DHAVE_CONFIG_H -DINCLUDE_GENERATED_DECLARATIONS -Os ... -Wall -Wextra -pedantic -Wno-unused-parameter -Wstrict-prototypes -std=gnu99 ...
 ```
@@ -128,7 +128,7 @@ make
 
 By default the libraries and headers are placed in `.deps/usr`, afterwards you can build Neovim using:
 
-```sh
+```
 mkdir build
 cd build
 cmake ..
@@ -137,7 +137,7 @@ make
 
 You can build the dependencies in a different location using:
 
-```sh
+```
 mkdir deps2
 cd deps2
 cmake ../third-party/
@@ -147,7 +147,7 @@ cd ..
 
 And then build Neovim using:
 
-```sh
+```
 mkdir build
 cd build
 cmake -DDEPS_PREFIX=../deps2/usr ..
@@ -264,7 +264,7 @@ A few Lua packages are required for the build process. Normally these packages w
 
 To avoid the first error, a LuaRocks mirror can be used:
 
-```sh
+```
 cat >> .deps/usr/etc/luarocks/config-5.1.lua << "EOF"
 rocks_servers={ 
   "http://luarocks.giga.puc-rio.br/" 
