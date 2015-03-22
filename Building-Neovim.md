@@ -4,11 +4,11 @@ If you just cloned [`neovim/neovim`](https://github.com/neovim/neovim) and want 
 
     make
 
-pulls down third-party dependencies (such as libuv and LuaJIT) into `.deps/`, and builds them. A number of [build prerequisites](#user-content-build-prerequisites) such as `libtool` are required for that, but CMake will let you know if something is missing. Install the missing prerequisites, then try `make` again. If there are other problems, refer to the [troubleshooting section](#troubleshootingfaq) at the bottom.
+pulls down third-party dependencies (such as libuv and LuaJIT) into `.deps/`, and builds them. [Build prerequisites](#user-content-build-prerequisites) such as `libtool` are required for that, but CMake will let you know if something is missing. Install the missing prerequisites, then try `make` again. If there are other problems, refer to the [troubleshooting section](#troubleshootingfaq) at the bottom.
 
 To generate the `Makefile`s without building: `make cmake`
 
-If you plan on building Neovim frequently, it's recommended you install the [Ninja build system](https://martine.github.io/ninja/), which is significantly faster than traditional `make`. It's not required, but will be used by `make` if available.
+If you plan on building Neovim frequently, it's recommended you install the [Ninja build system](https://martine.github.io/ninja/), which is much faster than traditional `make`. It's not required, but will be used by `make` if available.
 
 Now that you have the dependencies, you can try other build targets and options, explained below.
 
@@ -94,7 +94,7 @@ grep -v '/usr/'
 
 ## Xcode and MSVC project files
 
-CMake has a `-G` option for exporting to many [project file formats](http://www.cmake.org/cmake/help/v2.8.8/cmake.html#section_Generators), such as Xcode and Visual Studio. 
+CMake has a `-G` option for exporting to multiple [project file formats](http://www.cmake.org/cmake/help/v2.8.8/cmake.html#section_Generators), such as Xcode and Visual Studio. 
 
 For example, to use Xcode's static analysis GUI ([#167](https://github.com/neovim/neovim/issues/167#issuecomment-36136018)), you need to generate an Xcode project file from the Neovim makefile (where `neovim/` is the top-level Neovim source code directory containing the main `Makefile`):
 
@@ -104,7 +104,7 @@ then open the resulting project file in Xcode.
 
 ## Custom Makefile
 
-You can customize the build process locally by creating a `local.mk`, which is referenced at the top of the main `Makefile`. It's listed in `.gitignore` so it can be easily used across branches. **A new target in `local.mk` overrides the default make-target.**
+You can customize the build process locally by creating a `local.mk`, which is referenced at the top of the main `Makefile`. It's listed in `.gitignore` so it can be used across branches. **A new target in `local.mk` overrides the default make-target.**
 
 Here's a sample `local.mk` which adds a target to force a rebuild but *does not* override the default-target:
 
@@ -165,7 +165,7 @@ When changing `DEPS_PREFIX`, you may need to clear the CMake cache in order for 
 
 **General requirements**:
 
-- A relatively recent version of GCC (at least `4.3`) or Clang ([#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
+- A recent version of GCC (at least `4.3`) or Clang ([#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
 - CMake (>=2.8.7) built with TLS support ([#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
 
 Other dependencies are listed below.
@@ -253,11 +253,11 @@ Run `make distclean && make` to rule out a stale build environment causing the f
 ### CMake errors
 
 `configure_file Problem configuring file`
-- This is probably a permissions issue, which can happen if you run `sudo make` and then later try an unprivileged `make`. To fix this, simply remove your `build/` directory and try again.
+- This is probably a permissions issue, which can happen if you run `sudo make` and then later try an unprivileged `make`. To fix this, run `rm -rf build` and try again.
 
 ### Lua packages
 
-A few Lua packages are required for the build process. Normally these packages will be installed via [LuaRocks](http://luarocks.org/) (invoked by CMake automatically), but sometimes this will fail. Generally, this means either:
+The Lua packages required by the build process should be automatically installed by [LuaRocks](http://luarocks.org/) (invoked by CMake automatically), but sometimes this will fail. Generally, this means either:
 
 - The LuaRocks servers are down.
 - The program `unzip` isn't found. If this is the case, LuaRocks will report something like this: `Warning: Failed searching manifest: Failed loading manifest: Failed extracting manifest file`.
@@ -277,6 +277,6 @@ Failing the above, you can always try installing the following packages manually
 
 - [LPeg](http://www.inf.puc-rio.br/~roberto/lpeg/)
 - [lua-MessagePack](http://fperrad.github.io/lua-MessagePack/)
-- [busted](http://olivinelabs.com/busted/) (only required for runnings tests, e.g., `make test`)
+- [busted](http://olivinelabs.com/busted/) (required for runnings tests, e.g., `make test`)
 
 Keep in mind that some of those packages have their own dependencies which also have to be installed, and the version you install hasn't necessarily been tested to work with Neovim.
