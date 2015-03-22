@@ -3,17 +3,13 @@ To confirm your signature of the [Neovim Contributor License Agreement (CLA)](ht
 The timestamp is sent by the CLA form. Please don't modify this page until you have signed the CLA.
 
 ===
-- 1426861161714 Shougo Matsushita
-- 1424977723073 Sebastian Parborg
-- 1422808869020 Lucas Hermann Negri
-- 1418406264717 Ross Smith
-- 1403806484871 John Schmidt
 - 1403743919344 Justin M. Keyes
 - 1403744255384 Eduardo Elias Ferreira
 - 1403745019410 Felipe Oliveira Carvalho
 - 1403758378249 Pavel Platto
 - 1403765465141 Nicolas Hillegeer
 - 1403793097247 Rui Abreu Ferreira
+- 1403806484871 John Schmidt
 - 1403830208887 Simon Barth
 - 1403849275957 Simen Endsjø
 - 1403866328767 Stefan Hoffmann
@@ -28,9 +24,9 @@ The timestamp is sent by the CLA form. Please don't modify this page until you h
 - 1404580659186 Jared Lew Wong
 - 1404827737087 Thomas Wienecke
 - 1404828053926 Thiago de Arruda Padilha
+- 1404852155761 Scott Prager
 - 1404855341000 Fredrik Fornwall
 - 1404877338719 Douglas Schneider
-- 1404852155761 Scott Prager
 - 1406005705297 Wayne Rowcliffe
 - 1406220147384 Justin Johnson
 - 1406603190363 Austin Walker
@@ -40,9 +36,9 @@ The timestamp is sent by the CLA form. Please don't modify this page until you h
 - 1408402527085 Paul Burlumi
 - 1410775871567 Naveen Kumar Molleti
 - 1410890533554 Björn Linse
+- 1411317219526 Marco Hinz
 - 1411321189836 Joseph Anthony Pasquale Holsten
 - 1411376459451 Alexey Shmalko
-- 1411317219526 Marco Hinz
 - 1411495568006 Paul Jolly
 - 1411524734271 Samuel Reed Koser
 - 1412699873620 Tayler Mulligan
@@ -66,8 +62,9 @@ The timestamp is sent by the CLA form. Please don't modify this page until you h
 - 1417362688342 Lachlan Easton
 - 1417643220776 Moritz Petersen
 - 1418008180841 Connor Bradley
-- 1418237008121 Victor Adam
 - 1418198987213 Daniel Fairhead
+- 1418237008121 Victor Adam
+- 1418406264717 Ross Smith
 - 1419305609370 Jonas R. Dourado
 - 1419914665932 Donato Borrello
 - 1420397933163 Erik Paulson
@@ -79,6 +76,7 @@ The timestamp is sent by the CLA form. Please don't modify this page until you h
 - 1422060253389 Gleb Tverdokhlebov
 - 1422122758058 Evan Rose
 - 1422223614007 Michal Mieczkowski
+- 1422808869020 Lucas Hermann Negri
 - 1423070989413 Cameron Eagans
 - 1423820149115 Jake Kerr
 - 1423930773534 Fabian Brosda
@@ -90,6 +88,7 @@ The timestamp is sent by the CLA form. Please don't modify this page until you h
 - 1424683367933 Gustaf Lindstedt
 - 1424710861894 Clinton McKay
 - 1424816687665 Geoff Harcourt
+- 1424977723073 Sebastian Parborg
 - 1425318651848 Ragnis Armus
 - 1425445678509 Carlos D. Castillo
 - 1425535673296 Chase Geigle
@@ -99,4 +98,5 @@ The timestamp is sent by the CLA form. Please don't modify this page until you h
 - 1425857645508 Anton Ovchinnikov
 - 1426178578142 Lech Lorens
 - 1426433294839 Pantelis Koukousoulas
+- 1426861161714 Shougo Matsushita
 - 1426981440726 David Bürgin
