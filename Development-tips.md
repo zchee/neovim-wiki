@@ -10,7 +10,7 @@ See the [Building Neovim](Building-Neovim) page.
 
 If you are using [Syntastic][syntastic], you can use https://gist.github.com/gilligan/9326904 to add `clint.py` as a checker for C files. Note that `clint.py` needs to be in your `PATH` and that you will have to modify `g:syntastic_c_checkers`, otherwise it will default to GCC or make.
 
-See [Syntastic's documentation][syntastic-docs] for for information.
+See [Syntastic's documentation][syntastic-docs] for information.
 
 ## Experimenting with the API
 
