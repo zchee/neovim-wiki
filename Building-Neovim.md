@@ -12,6 +12,7 @@ If you plan on building Neovim frequently, it's recommended you install the [Nin
 
 Now that you have the dependencies, you can try other build targets and options, explained below.
 
+<a name="testing"></a>
 ## Integration tests
 
 To build and run all integration tests:
