@@ -1,4 +1,4 @@
-To confirm your signature of the [Neovim Contributor License Agreement (CLA)](https://docs.google.com/forms/d/1u54bpbwzneDIRltFx1TGi2evKxY3w0cOV3vlpj8DPbg/viewform), add your name and timestamp to the **end of the list** below, using the same GitHub account that you entered on the the CLA. 
+To confirm your signature of the [Neovim Contributor License Agreement (CLA)](https://docs.google.com/forms/d/1u54bpbwzneDIRltFx1TGi2evKxY3w0cOV3vlpj8DPbg/viewform), add your name and timestamp to the **end of the list** below, using the same GitHub account that you entered on the CLA. 
 
 The timestamp is sent by the CLA form. Please don't modify this page until you have signed the CLA.
 
