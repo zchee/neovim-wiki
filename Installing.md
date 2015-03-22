@@ -1,4 +1,4 @@
-**Note**: If you want support for Python plugins such as YouCompleteMe, you must install a Python module in addition to Neovim itself. See [`:h nvim-python-quickstart`](http://neovim.org/doc/user/nvim_python.html#nvim-python-quickstart) for more information.
+**Note**: If you use Python plugins such as [YouCompleteMe](https://github.com/Valloric/YouCompleteMe), see [`:h nvim-python-quickstart`](http://neovim.org/doc/user/nvim_python.html#nvim-python-quickstart).
 
 # Packaged Installation
 
@@ -35,7 +35,7 @@ brew update
 brew reinstall --HEAD neovim
 ```
 
-**Note**: If you encounter the error `CMAKE_USE_SYSTEM_CURL is ON but a curl is not found`, then you're missing the dependency for cURL that allows downloads over TLS. Refer back to your distro's section in [Linuxbrew Dependencies](https://github.com/Homebrew/linuxbrew#dependencies) to fix this.
+**Note**: If you encounter the error `CMAKE_USE_SYSTEM_CURL is ON but a curl is not found`, then you're missing the dependency for cURL that allows downloads over TLS. Refer to your operating system's section in [Linuxbrew Dependencies](https://github.com/Homebrew/linuxbrew#dependencies) to fix this.
 
 ### Ubuntu
 
@@ -95,7 +95,7 @@ Adjust the URL if you're using openSUSE Factory or 13.2.
 
 ### Fedora / RHEL
 
-See http://copr.fedoraproject.org/coprs/gaurdro/neovim/. It's built using the [Copr](https://copr.fedoraproject.org/) automated build system, which is completely unsupported. Additionally, there's no guarantee of how long your package will be available after the build finishes.
+See http://copr.fedoraproject.org/coprs/gaurdro/neovim/. It's built using the [Copr](https://copr.fedoraproject.org/) automated build system, which is unsupported. There's no guarantee of how long your package will be available after the build finishes.
 
 ### Slackware
 
