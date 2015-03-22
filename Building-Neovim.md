@@ -126,7 +126,7 @@ cmake ../third-party
 make
 ```
 
-By default the libraries and headers are placed in `.deps/usr`, afterwards you can build Neovim using:
+By default, the libraries and headers are placed in `.deps/usr`, afterwards you can build Neovim using:
 
 ```
 mkdir build
@@ -209,7 +209,7 @@ Note: if you have CMake installed already, you may need to re-install it.  The
 port had to be updated to support TLS for file downloads, so your installed version may not have
 that feature.
 
-If you see the download complaining about a sha256sum mismatch, where
+If you get an error regarding a sha256sum mismatch, where
 the actual sha256sum is `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`, then this is your issue (that's the sha256sum of an empty file). Also, make sure you have wget installed.
 LuaRocks has bad interactions with cURL, at least under FreeBSD, and will die with
 a PANIC in LuaJIT when trying to install a rock.
