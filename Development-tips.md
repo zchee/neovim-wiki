@@ -32,8 +32,8 @@ to enable core dumping. If you then reproduce a segfault in `nvim`, it will "dum
 
 ### Using `lldb` to step through unit tests
 
-```sh
-$ lldb .deps/usr/bin/luajit -- .deps/usr/bin/busted --lpath="./build/?.lua" test/unit/
+```
+lldb .deps/usr/bin/luajit -- .deps/usr/bin/busted --lpath="./build/?.lua" test/unit/
 ```
 
 ### Using `gdb` (quick start)
