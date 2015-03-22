@@ -9,28 +9,28 @@ Note that the Neovim binary to run is called `nvim`, not `neovim`.
 
 ### OS X / [Homebrew](http://brew.sh)
 
-```sh
+```
 brew tap neovim/homebrew-neovim
 brew install --HEAD neovim
 ```
 
 To **upgrade** from a previous version:
 
-```sh
+```
 brew update
 brew reinstall --HEAD neovim
 ```
 
 ### Linux / [Linuxbrew](http://brew.sh/linuxbrew/)
 
-```sh
+```
 brew tap neovim/homebrew-neovim
 brew install --HEAD neovim
 ```
 
 To **upgrade** from a previous version:
 
-```sh
+```
 brew update
 brew reinstall --HEAD neovim
 ```
@@ -43,7 +43,7 @@ Neovim has been added to a [Personal Package Archive](https://launchpad.net/~neo
 
 Run the following commands:
 
-```sh
+```
 sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt-get update
 sudo apt-get install neovim
@@ -51,14 +51,14 @@ sudo apt-get install neovim
 
 To install the Python module:
 
-```sh
+```
 sudo apt-get install python-dev python-pip
 pip install --user neovim
 ```
 
 If you want to use Neovim for some (or all) of the editor alternatives, use the following commands:
 
-```sh
+```
 sudo update-alternatives --install /usr/bin/vi vi /usr/bin/nvim 60
 sudo update-alternatives --config vi
 sudo update-alternatives --install /usr/bin/vim vim /usr/bin/nvim 60
@@ -86,7 +86,7 @@ A "live" ebuild can be found in [yngwin's developer overlay](http://cgit.gentooe
 
 Third-party packages are available for openSUSE 13.1/13.2/Factory, you can install them through the [1 Click Install](http://software.opensuse.org/package/neovim?search_term=Neovim) or manually using
 
-```sh
+```
 zypper ar http://download.opensuse.org/repositories/home:/ruiabreuferreira:/neovim/openSUSE_13.1/
 zypper in neovim
 ```
@@ -126,7 +126,7 @@ which -a nvim
 
 **Note**: If you want to change the install location after you have already executed `make`, you need to remove the `build` directory to delete CMake's cache so it regenerates it on the next invocation of `make`:
 
-```sh
+```
 # Install to `/usr/local`
 make install
 # Install to other location: need to remove `build` directory!
@@ -136,7 +136,7 @@ make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/other/location" instal
 
 Alternatively, `nvim` can be run directly from the build directory:
 
-```sh
+```
 # Compile
 make
 # You might want to define an alias for this in your shell's configuration file,
