@@ -14,8 +14,9 @@ Each module must have a separate test script (written in lua) in the test/unit d
 
 ## Checklist for migrating legacy tests:
 
-- remove the test from the Makefile (`src/nvim/testdir/Makefile`)
-- remove the associated `test.in`, `test.out`, and `test.ok` files from `src/nvim/testdir/`
-- make sure the lua test ends in `_spec.lua`
-- make sure the test count increases accordingly in the build log
-- make sure the new test contains the same control characters (`^]`...) as the old test
+- Remove the test from the Makefile (`src/nvim/testdir/Makefile`).
+- Remove the associated `test.in`, `test.out`, and `test.ok` files from `src/nvim/testdir/`.
+- Make sure the lua test ends in `_spec.lua`.
+- Make sure the test count increases accordingly in the build log.
+- Make sure the new test contains the same control characters (`^]`, ...) as the old test.
+  - Instead of the actual control characters, use an equivalent textual representation (e.g. `<esc>` instead of `^]`). The `legacy2luatest` script does some of these conversions automatically; you are encouraged to extend the script to support more control characters.
