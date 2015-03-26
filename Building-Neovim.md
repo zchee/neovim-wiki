@@ -253,7 +253,7 @@ Run `make distclean && make` to rule out a stale build environment causing the f
 
 ### Neovim is slow
 
-Make sure you're not running an optimized build of `nvim`. To check this, run this:
+Make sure you're running an optimized build of `nvim`. To check this, run this:
 
     nvim --version | grep 'Build type'
 
