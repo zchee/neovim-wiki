@@ -40,7 +40,8 @@ To build and run all legacy (Vim) integration tests:
 `$GDB` can be set to [run tests under gdbserver](https://github.com/neovim/neovim/pull/1527). If `$VALGRIND` is also set, it will add the `--vgdb=yes` option to valgrind instead of
 starting gdbserver directly.
 
-## "Release" build (optimized)
+<a name="optimized-builds"></a>
+## Optimized builds
 
     rm -r build && make clean && make CMAKE_BUILD_TYPE=Release
 
@@ -246,9 +247,21 @@ a PANIC in LuaJIT when trying to install a rock.
 
 If you run into an error not explained here and manage to resolve it, feel free to add it below!
 
-### General build errors
+### General build issues
 
 Run `make distclean && make` to rule out a stale build environment causing the failure.
+
+### Neovim is slow
+
+Make sure you're not running an optimized build of `nvim`. To check this, run `nvim --version| grep 'Build type'`, which should yield one of the following:
+
+```
+Build type: RelWithDebInfo
+Build type: MinSizeRel
+Build type: Release
+```
+
+If it yields `Build type: Debug`, then see [Optimized builds](#optimized-builds) above. If you're using a third-party package, please inform the maintainer.
 
 ### CMake errors
 
