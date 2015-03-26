@@ -45,9 +45,9 @@ A compatibility layer is provided ([#872](https://github.com/neovim/neovim/pull/
 - Plugins runs in another process.
 - `rpcrequest()` blocks until the client responds.
 
-## Removed plugin interfaces
-
-*These language-specific plugin interfaces have been removed from Nvim.*
+## Missing legacy features
+ 
+*These legacy Vim features may be implemented in the future, but they are not planned for the current milestone.*
 
 * `vim.bindeval()` (new feature in the Vim 7.4 Python interface)
 * `if_ruby`
