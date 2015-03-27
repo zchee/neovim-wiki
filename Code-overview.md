@@ -1,8 +1,6 @@
 Here are a few hints for finding your way around the source code.  This
 doesn't make it less complex than it is, but it gets you started.
 
-You might also want to read `:help development`.
-
 ## Jumping around
 
 First of all, use `:make tags` to generate a tags file, so that you can use
