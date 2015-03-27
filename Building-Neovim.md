@@ -167,7 +167,7 @@ When changing `DEPS_PREFIX`, you may need to clear the CMake cache in order for 
 **General requirements**:
 
 - A recent version of GCC (at least `4.3`) or Clang ([#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
-- CMake (>=2.8.7) built with TLS support ([#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
+- CMake (>=2.8.7) built with TLS/SSL support ([#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
 
 Other dependencies are listed below.
 
@@ -207,7 +207,7 @@ compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
     sudo pkg install cmake libtool sha automake pkgconf unzip wget
 
 Note: if you have CMake installed already, you may need to re-install it.  The
-port had to be updated to support TLS for file downloads, so your installed version may not have
+port had to be updated to support TLS/SSL for file downloads, so your installed version may not have
 that feature.
 
 If you get an error regarding a sha256sum mismatch, where
