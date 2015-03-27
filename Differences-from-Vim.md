@@ -1,6 +1,4 @@
-[**:help vim_diff**](http://neovim.org/doc/user/vim_diff.html) documents differences between Neovim and Vim. 
-
-This wiki page is a bit more up-to-date and also links to relevant PRs.
+[**:help vim_diff**](http://neovim.org/doc/user/vim_diff.html#vim-differences) documents differences between Neovim and Vim, but this wiki page may contain additional notes and links to relevant PRs.
 
 ## Defaults
 
