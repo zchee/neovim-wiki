@@ -87,7 +87,8 @@ A "live" ebuild can be found in [yngwin's developer overlay](http://cgit.gentooe
 Third-party packages are available for openSUSE 13.1/13.2/Factory, you can install them through the [1 Click Install](http://software.opensuse.org/package/neovim?search_term=Neovim) or manually using
 
 ```
-zypper ar http://download.opensuse.org/repositories/home:/ruiabreuferreira:/neovim/openSUSE_13.1/
+zypper ar http://download.opensuse.org/repositories/home:/ruiabreuferreira:/neovim/openSUSE_13.2/home:ruiabreuferreira:neovim.repo
+
 zypper in neovim
 ```
 
