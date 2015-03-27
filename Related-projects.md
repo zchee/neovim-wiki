@@ -7,7 +7,7 @@
 | Platform         | Project                                                                 |
 |------------------|-------------------------------------------------------------------------|
 | Rust IDE         | [oakes/SolidOak](https://github.com/oakes/SolidOak)                     |
-| Mac OS X         | [rogual/neovim-dot-app](https://github.com/rogual/neovim-dot-app)       |
+| Mac OS X         | [rogual/neovim.app](https://github.com/rogual/neovim.app)               |
 | Mac OS X         | [stefan991/NeoVimX](https://github.com/stefan991/NeoVimX)               |
 | Mac OS X         | [qvacua/nvox](https://github.com/qvacua/nvox)                           |
 | Atom Integration | [carlosdcastillo/vim-mode](https://github.com/carlosdcastillo/vim-mode) |
