@@ -7,7 +7,7 @@
 
 ### For users
 
-- [Installing](Installing)
+- [Installing Neovim](Installing-Neovim)
 - [Differences from Vim](Differences-from-vim)
 - [Documentation](http://neovim.org/doc/)
      - [User manual](http://neovim.org/doc/user/) (`:help`)
