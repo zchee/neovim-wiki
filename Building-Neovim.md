@@ -242,7 +242,7 @@ a PANIC in LuaJIT when trying to install a rock.
       brew install curl-ca-bundle
       echo CA_CERTIFICATE=$(brew --prefix curl-ca-bundle)/share/ca-bundle.crt >> ~/.wgetrc
 
-<a name="troubleshooting"</a>
+<a name="troubleshooting"></a>
 ## Troubleshooting
 
 If you run into an error not explained here and manage to resolve it, feel free to add it below!
