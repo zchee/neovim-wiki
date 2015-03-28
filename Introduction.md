@@ -90,7 +90,7 @@ libuv is a modern multi-platform library with functions to perform common system
 tasks, and supports most unixes and windows, so the vast majority of vim's
 community will be covered.
 
-[libuv]: https://github.com/joyent/libuv
+[libuv]: https://github.com/libuv/libuv
 
 
 ### New plugin architecture
