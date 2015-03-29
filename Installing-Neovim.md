@@ -14,6 +14,8 @@ brew tap neovim/homebrew-neovim
 brew install --HEAD neovim
 ```
 
+For troubleshooting hints, see the README of [neovim/homebrew-neovim](https://github.com/neovim/homebrew-neovim).
+
 To **upgrade** from a previous version:
 
 ```
@@ -27,6 +29,8 @@ brew reinstall --HEAD neovim
 brew tap neovim/homebrew-neovim
 brew install --HEAD neovim
 ```
+
+For troubleshooting hints, see the README of [neovim/homebrew-neovim](https://github.com/neovim/homebrew-neovim).
 
 To **upgrade** from a previous version:
 
