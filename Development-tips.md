@@ -22,7 +22,7 @@ https://github.com/splinterofchaos/neovim-cpp-client-experiment/blob/master/src/
 
 ### Core dumps
 
-Core dumps are [disabled  by default on Ubuntu](http://stackoverflow.com/a/18368068/152142) and OS X. Run
+Core dumps are [disabled  by default on Ubuntu](http://stackoverflow.com/a/18368068/152142), OS X, CentOS and others. Run
 
     ulimit -c unlimited
 
