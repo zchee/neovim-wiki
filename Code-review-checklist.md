@@ -3,7 +3,7 @@ Many items were [taken from here][code-review-checklist] [and here][code-review-
 #### Code
 
 - Is the Travis build passing?
-- Does the code conform to the [style guide][style-guide-general]?
+- Does the code conform to the [style guide][style-guide]?
 - Does the code work? Does it perform its intended function, the logic is
   correct, etc.
 - Is the code easily understood?
@@ -46,3 +46,4 @@ Many items were [taken from here][code-review-checklist] [and here][code-review-
 
 [code-review-checklist]: http://blog.fogcreek.com/increase-defect-detection-with-our-code-review-checklist-example/
 [code-review-secrets]: http://smartbear.com/SmartBear/media/pdfs/best-kept-secrets-of-peer-code-review.pdf
+[style-guide]: https://neovim.org/develop/style-guide.xml
