@@ -33,7 +33,7 @@ Pull requests
     - A token indicating the Vim patch number, formatted as follows (no space!): <br/>
      `vim-patch:7.4.123`
     - A URL pointing to the Vim commit: <br/>
-      https://code.google.com/p/vim/source/detail?r=5d03c374712128077ac4c342aad02120ed98df70
+      https://github.com/vim/vim/tree/v7-4-123
     - The original Vim commit message, including the author
     - **The [vim-patch.sh](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh) script automates most of this for you.**
 
