@@ -20,7 +20,7 @@ Build type: MinSizeRel
 Build type: Release
 ```
 
-If it yields `Build type: Debug`, then see (Building-Neovim#optimized-builds)[Building-Neovim#optimized-builds]. If you're using a third-party package, please inform the maintainer.
+If it yields `Build type: Debug`, then see [Building-Neovim#optimized-builds](Building-Neovim#optimized-builds). If you're using a third-party package, please inform the maintainer.
 
 ### CMake errors
 
