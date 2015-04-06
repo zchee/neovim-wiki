@@ -5,6 +5,7 @@
 - [Troubleshooting](Troubleshooting)
 - [FAQ](FAQ)
 - [Progress/Roadmap](Progress)
+- [Related projects](Related-projects)
 
 ### For users
 
@@ -30,7 +31,6 @@
 - [Documentation](http://neovim.org/doc/)
     - [Code overview](Code-overview)
     - [How to generate function callgraphs with doxygen](Generate-callgraphs-with-Doxygen)
-- [Related projects](Related-projects)
 
 #### Ideas
 
