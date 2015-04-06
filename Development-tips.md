@@ -73,7 +73,7 @@ Once you've entered `gdb`, you need to attach to the remote session:
 
 ### Using `gdbserver` in `tmux`
 
-Consider using a [custom makefile](https://github.com/neovim/neovim/wiki/Building-Neovim#custom-makefile) to quickly start debugging sessions using the `gdbserver` method mentioned above. This example will create the debugging session when you type `make debug`.
+Consider using a [custom makefile](Building-Neovim#custom-makefile) to quickly start debugging sessions using the `gdbserver` method mentioned above. This example will create the debugging session when you type `make debug`.
 
 ```make
 .PHONY: dbg-start dbg-attach debug build
