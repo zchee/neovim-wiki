@@ -141,22 +141,11 @@ See [the list of functions](http://pastebin.com/TmHJuyCC) from neovim's source c
 C refactoring automation is very tricky and hard, if not impossible, to do
 reliably thanks to the C preprocessor.
 
-### Xcode
-
-TODO
-
-### Visual Studio
-
-TODO
-
 ### Coccinelle
 
 http://coccinelle.lip6.fr/
 
 See [#690](https://github.com/neovim/neovim/pull/690) for an example of what it can do.
-
-TODO
-
 
 [Garrido 2000]: http://web.archive.org/web/20140703092352/http://www.lifia.info.unlp.edu.ar/papers/2000/Garrido2000.pdf
 [Jeff Atwood]: http://blog.codinghorror.com/code-smells/
