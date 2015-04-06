@@ -74,6 +74,6 @@ In loops, we have a *counter* variable and a *limit* expression (*condition* bei
 - If possible, try to avoid different-signedness types in variables within *limit* expression (many errors are because implicit conversion from signed type to unsigned one).
 - In principle, *limit* expression's type determines *counter*'s type. If *limit* expression is `size_t`, so is counter. If *limit* expression is `ssize`, so is counter. And so on.
 - If resulting type of *counter* and *limit* is unsigned:
-    * Check *limit* expression  for frontier values (e.g. when size is zero).
+    * Check *limit* expression  for frontier values (e.g., when size is zero).
     * Avoid *condition* using substractions (unless guarded so that it can be proved for result to always be positive). Prefer equivalent condition using additions on the other side.
 - As an optimization, you could use plain `int` instead of `ssize`, or `unsigned int` instead of `size_t`, but only if you are sure that those types will be enough always. Please try not to impose arbitrary/unneeded limits.
