@@ -1,10 +1,10 @@
 Neovim was forked from Vim 7.4.160; it is kept up-to-date with relevant Vim patches in order to avoid duplicate work. For details, see [issue #438](https://github.com/neovim/neovim/issues/438).
 
-Visit the [**vim patch report**](http://neovim.org/doc/reports/vimpatch/) to see which patches are needed, or use the [**vim-patch.sh**](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh) script: 
+Visit the [**vim patch report**](http://neovim.org/doc/reports/vimpatch/) to see which patches are needed, or use the [`vim-patch.sh`](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh) script: 
 
     ./scripts/vim-patch.sh --list
 
-Everyone is welcome to send pull requests for relevant Vim patches (see [below](#pull-requests)). But some types of patches are **not relevant to Neovim:**
+Everyone is welcome to send pull requests for relevant Vim patches (see [below](#pull-requests)), but some types of patches are **not relevant to Neovim:**
 
 - **Compiler warning fixes**: Neovim strives to have no warnings at all, and has a very different build system from Vim.
 - **#ifdef tweaking**: For example, Vim decided to enable `FEAT_VISUAL` for all platforms — but Neovim already does that. Adding new `FEAT_` guards also isn't relevant to Neovim.
