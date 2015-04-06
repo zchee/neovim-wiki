@@ -151,11 +151,4 @@ env VIMRUNTIME="$(realpath runtime)" build/bin/nvim
 :helptags $VIMRUNTIME/doc
 ```
 
-See [Building Neovim](Building-Neovim) for more options and some pointers in case of [build errors](https://github.com/neovim/neovim/wiki/Building-Neovim#troubleshooting).
-
-<a name="troubleshooting"</a>
-# Troubleshooting
-
-### Homebrew/Linuxbrew
-
-See [Homebrew#troubleshooting](https://github.com/neovim/homebrew-neovim#troubleshooting).
+See [Building Neovim](Building-Neovim) for more options and some pointers in case of [build errors](Troubleshooting#build-related-issues).
