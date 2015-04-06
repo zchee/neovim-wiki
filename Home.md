@@ -2,6 +2,7 @@
 
 - [Introduction](Introduction)
 - [Communicating](Communicating)
+- [Troubleshooting](Troubleshooting)
 - [FAQ](FAQ)
 - [Progress/Roadmap](Progress)
 
