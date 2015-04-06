@@ -23,7 +23,7 @@
     - [Unit testing](Unit-tests)
     - [Merging patches from upstream Vim](Merging-patches-from-upstream-Vim)
 - [Development tips](Development-tips)
-- [Style / Conventions](http://neovim.org/develop/style-guide.xml)
+- [Coding conventions](http://neovim.org/develop/style-guide.xml)
 - [C programming techniques and Neovim-specific guidance](C-programming)
     - [C refactorings and code-smells](C-refactorings-and-code-smells-catalog)
     - [Integer type semantics](Integer-types-refactoring-guidelines)
