@@ -11,7 +11,7 @@ Thanks for considering contributing to Neovim.
 - [Port OS layer to libuv](Porting-OS-layer-to-libuv)
 - [Merge patches from upstream Vim](Merging-patches-from-upstream-vim)
 
-Check this [refactoring catalog](https://github.com/neovim/neovim/wiki/C-Refactorings-and-Code-Smells-Catalog) if you want some inspiration on what to work on.
+Check this [refactoring catalog](C-Refactorings-and-Code-Smells-Catalog) if you want some inspiration on what to work on.
 
 ## Pull Requests
 
