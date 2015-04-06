@@ -24,11 +24,11 @@
     - [Merging patches from upstream Vim](Merging-patches-from-upstream-Vim)
 - [Development tips](Development-tips)
 - [Style / Conventions](http://neovim.org/develop/style-guide.xml)
-- [Plugin Architecture](Plugin-UI-architecture)
 - [C programming techniques and Neovim-specific guidance](C-programming)
     - [C refactorings and code-smells](C-refactorings-and-code-smells-catalog)
     - [Integer type semantics](Integer-types-refactoring-guidelines)
 - [Documentation](http://neovim.org/doc/)
+    - [Plugin Architecture](Plugin-UI-architecture)
     - [Code overview](Code-overview)
     - [How to generate function callgraphs with doxygen](Generate-callgraphs-with-Doxygen)
 
