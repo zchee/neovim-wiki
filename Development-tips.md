@@ -4,7 +4,7 @@ See the [Building Neovim](Building-Neovim) page.
 
 ## Navigating the code
 
-- The `contrib/` folder contains a [YouCompleteMe configuration](https://github.com/neovim/neovim/tree/master/contrib/YouCompleteMe) tailored to Neovim.
+- The `contrib` folder contains a [YouCompleteMe configuration](https://github.com/neovim/neovim/tree/master/contrib/YouCompleteMe) tailored to Neovim.
 
 ## Code linting
 
@@ -97,18 +97,18 @@ target remote localhost:6666
 br main
 ```
 
-## Debugging memory errors(segfaults, leaks...)
+## Debugging program errors (undefined behavior, leaks, ...)
 
-Building and installing neovim with clang's address sanitizer is a good way to debug memory errors as soon as they happen. It's much faster than running the program under valgrind, so it's possible to install the ASAN build and use it normally as your daily editor. Assuming clang 3.4 is installed in a unix-like environment, the following steps should get you started:
+Building and installing Neovim with Clang's address sanitizer (ASAN) is a good way to catch memory errors as soon as they happen. It's significantly faster than running a program under Valgrind, so it's *possible* to use Neovim built with ASAN as your daily editor (although it's not recommended given a [typical slowdown of 2x](http://clang.llvm.org/docs/AddressSanitizer.html)). Assuming you have access to Clang 3.4 or above and a Unix-like environment, the following steps should get you started:
 
-- Build neovim with address sanitizer enabled: `CC=clang-3.4 make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=${SOME_PREFIX} -DSANITIZE=ON"`
+- Build Neovim with ASAN enabled: `CC=clang-3.4 make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=${SOME_PREFIX} -DSANITIZE=ON"`
 - Optionally install it if you desire to use as your normal editor: `make install`
 - Create a directory to store the ASAN logs: `mkdir -p ${HOME}/.logs`
-- Add this to your shell initialization scripts:
+- Add this to your shell initialization scripts (e.g., `.profile`): 
   - `export ASAN_SYMBOLIZER_PATH=/usr/bin/llvm-symbolizer-3.4`
-  - `export ASAN_OPTIONS="log_path=${HOME}/.logs/asan"` or `export ASAN_OPTIONS="detect_leaks=1:log_path=${HOME}/.logs/asan"` if you want to detect memory leaks(gets a bit slower)
+  - `export ASAN_OPTIONS="log_path=${HOME}/.logs/asan"` or `export ASAN_OPTIONS="detect_leaks=1:log_path=${HOME}/.logs/asan"` if you want to detect memory leaks (gets a bit slower)
 
-Now Neovim will exit every time a memory error happens and detailed information will be written to `${HOME}/.logs/asan.PID`
+Now Neovim should exit every time a memory error happens, with crash logs written to `${HOME}/.logs/asan.PID`. Undefined behavior also triggers this.
 
 [syntastic]: https://github.com/scrooloose/syntastic
 [syntastic-docs]: https://raw.githubusercontent.com/scrooloose/syntastic/master/doc/syntastic.txt
