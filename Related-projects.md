@@ -43,6 +43,7 @@ Neovim is compatible with most Vim plugins; following are some plugins that take
 - [nvim-ipy](https://github.com/bfredl/nvim-ipy)
 - [vim-man](https://github.com/bruno-/vim-man)
 - [vim-accio](https://github.com/pgdouyon/vim-accio)
+- [vim-test](https://github.com/janko-m/vim-test)
 
 ### Projects with support for Neovim
 
