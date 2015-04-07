@@ -97,5 +97,18 @@ target remote localhost:6666
 br main
 ```
 
+## Debugging memory errors(segfaults, leaks...)
+
+Building and installing neovim with clang's address sanitizer is a good way to debug memory errors as soon as they happen. It's much faster than running the program under valgrind, so its possible to install the ASAN build and use it normally as your daily editor. Assuming clang 3.4 is installed in a unix-like environment, the following steps should get you started:
+
+- Build neovim with address sanitizer enabled: `CC=clang-3.4 make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=${SOME_PREFIX} -DSANITIZE=ON"`
+- Optionally install it if you desire to use as your normal editor: `make install`
+- Create a directory to store the ASAN logs: `mkdir -p ${HOME}/.logs`
+- Add this to your shell initialization scripts:
+  - `export ASAN_SYMBOLIZER_PATH=/usr/bin/llvm-symbolizer-3.4`
+  - `export ASAN_OPTIONS="log_path=${HOME}/.logs/asan"` or `export ASAN_OPTIONS="detect_leaks=1:log_path=${HOME}/.logs/asan"` if you want to detect memory leaks(gets a bit slower)
+
+Now Neovim will exit every time a memory error happens and detailed information will be written to `${HOME}/.logs/asan.PID`
+
 [syntastic]: https://github.com/scrooloose/syntastic
 [syntastic-docs]: https://raw.githubusercontent.com/scrooloose/syntastic/master/doc/syntastic.txt
