@@ -99,7 +99,7 @@ br main
 
 ## Debugging memory errors(segfaults, leaks...)
 
-Building and installing neovim with clang's address sanitizer is a good way to debug memory errors as soon as they happen. It's much faster than running the program under valgrind, so its possible to install the ASAN build and use it normally as your daily editor. Assuming clang 3.4 is installed in a unix-like environment, the following steps should get you started:
+Building and installing neovim with clang's address sanitizer is a good way to debug memory errors as soon as they happen. It's much faster than running the program under valgrind, so it's possible to install the ASAN build and use it normally as your daily editor. Assuming clang 3.4 is installed in a unix-like environment, the following steps should get you started:
 
 - Build neovim with address sanitizer enabled: `CC=clang-3.4 make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=${SOME_PREFIX} -DSANITIZE=ON"`
 - Optionally install it if you desire to use as your normal editor: `make install`
