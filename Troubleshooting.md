@@ -1,6 +1,6 @@
-## Build related issues
-
 If you run into an error not explained here and manage to resolve it, feel free to add it below.
+
+## Build related issues
 
 ### General build issues
 
@@ -20,7 +20,7 @@ Build type: MinSizeRel
 Build type: Release
 ```
 
-If it yields `Build type: Debug`, then see [Building-Neovim#optimized-builds](Building-Neovim#optimized-builds). If you're using a third-party package, please inform the maintainer.
+If it yields `Build type: Debug`, then see [Building Neovim#optimized-builds](Building-Neovim#optimized-builds). If you're using a third-party package, please inform the maintainer.
 
 ### CMake errors
 
