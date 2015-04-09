@@ -1,6 +1,6 @@
 ## Build related issues
 
-If you run into an error not explained here and manage to resolve it, feel free to add it below!
+If you run into an error not explained here and manage to resolve it, feel free to add it below.
 
 ### General build issues
 
