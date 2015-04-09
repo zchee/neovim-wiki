@@ -4,7 +4,7 @@ In order to do that you will have to run the doxygen command with a an appropria
 
 ```doxygen configfile```
 
-You can create a default configuration file with doxygen using the ```-g``` flag
+You can create a default configuration file with doxygen using the `-g` flag
 
 ```doxygen -g configfilename```
 
