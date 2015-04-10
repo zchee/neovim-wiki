@@ -12,7 +12,6 @@ If you plan on building Neovim frequently, it's recommended you install the [Nin
 
 Now that you have the dependencies, you can try other build targets and options, explained below.
 
-<a name="testing"></a>
 ## Integration tests
 
 To build and run all integration tests:
@@ -40,7 +39,6 @@ To build and run all legacy (Vim) integration tests:
 `$GDB` can be set to [run tests under gdbserver](https://github.com/neovim/neovim/pull/1527). If `$VALGRIND` is also set, it will add the `--vgdb=yes` option to valgrind instead of
 starting gdbserver directly.
 
-<a name="optimized-builds"></a>
 ## Optimized builds
 
     rm -r build && make clean && make CMAKE_BUILD_TYPE=Release
@@ -171,19 +169,14 @@ When changing `DEPS_PREFIX`, you may need to clear the CMake cache in order for 
 
 Other dependencies are listed below.
 
-<!-- the debianubuntu link below is to avoid breaking links that we used in issues and handed out to users -->
-<a name="for-debianubuntu"></a>
-<a name="for-ubuntu"></a>
 ### Ubuntu
 
     sudo apt-get install libtool libtool-bin autoconf automake cmake g++ pkg-config unzip
 
-<a name="for-debian"></a>
 ### Debian
 
     sudo apt-get install libtool libtool-bin autoconf automake cmake g++ pkg-config unzip
 
-<a name="for-centos-rhel"></a>
 ### CentOS/RHEL/Fedora
 
 If you're using CentOS/RHEL 6 you need at least autoconf version 2.69 for
@@ -191,17 +184,14 @@ compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
 
     sudo yum -y install autoconf automake cmake gcc gcc-c++ libtool pkgconfig
 
-<a name="for-opensuse"></a>
 ### openSUSE
 
     sudo zypper install libtool autoconf automake cmake gcc-c++
 
-<a name="for-arch-linux"></a>
 ### Arch Linux
 
     sudo pacman -S base-devel cmake unzip
 
-<a name="for-freebsd-10"></a>
 ### FreeBSD 10
 
     sudo pkg install cmake libtool sha automake pkgconf unzip wget
@@ -215,7 +205,6 @@ the actual sha256sum is `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991
 LuaRocks has bad interactions with cURL, at least under FreeBSD, and will die with
 a PANIC in LuaJIT when trying to install a rock.
 
-<a name="for-os-x"></a>
 ### OS X
 
 * Install [Xcode](https://developer.apple.com/) and [Homebrew](http://brew.sh)
