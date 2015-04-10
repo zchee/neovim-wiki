@@ -48,7 +48,6 @@ motivations) that will be performed in the first iteration:
 * [Development on GitHub](#development)
 * [New plugin architecture](#new-plugin-architecture)
 
-<a name="build"></a>
 ### Migrate to a CMake-based build
 
 The source tree has dozens (if not hundreds) of files dedicated to building vim on various platforms with different configurations, and many of these files
@@ -62,7 +61,6 @@ build system that generates build scripts for the most relevant platforms.
 
 [CMake]: http://cmake.org/
 
-<a name="legacy"></a>
 ### Legacy support and compile-time features
 
 Vim has a significant amount of code dedicated to supporting legacy systems and
@@ -80,7 +78,6 @@ have two options:
 - Upgrade their software
 - Continue using vim
 
-<a name="platform"></a>
 ### Platform-specific code
 
 Most of the platform-specific code will be removed and [libuv][] will be used to
@@ -108,7 +105,6 @@ See the [Plugin Architecture](Plugin-UI-architecture) page for a detailed overvi
 [job control patch]: https://groups.google.com/forum/#!topic/vim_dev/QF7Bzh1YABU
 [json-rpc]: http://www.jsonrpc.org/specification
 
-<a name="development"></a>
 ### Development on GitHub
 
 Development happens under the [Neovim GitHub organization][]; the code is
