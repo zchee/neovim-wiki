@@ -48,7 +48,7 @@ See the [`memory.c` Doxygen page](http://neovim.org/doc/dev/memory_8c.html) for 
 
 | Deprecated or removed                   | Replacement        |
 |:----------------------------------------|:------------------:|
-| `vim_free`                              | `free`             |
+| `vim_free`                              | `xfree`             |
 | `malloc` `alloc` `lalloc`               | `xmalloc`          |
 | `calloc`                                | `xcalloc`          |
 | `realloc` `vim_realloc`                 | `xrealloc`         |
