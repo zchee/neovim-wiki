@@ -1,4 +1,8 @@
-### Text/buffer representation
+## Memory Allocator
+
+Neovim uses [jemalloc](https://www.facebook.com/notes/facebook-engineering/scalable-memory-allocation-using-jemalloc/480222803919) since [PR #2415](https://github.com/neovim/neovim/pull/2415).
+
+## Text/buffer representation
 
 Arguably, wrangling and displaying text are the most important things a text editor does. Vim represents text as a sequence of lines (see `mem{line,file}.{c,h}`, needs extra verification). 
 
