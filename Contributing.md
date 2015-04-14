@@ -5,7 +5,7 @@ Thanks for considering contributing to Neovim.
 ## What needs to be done
 
 - [Code reviews](https://github.com/neovim/neovim/pulls) [![PRs waiting for review](https://badge.waffle.io/neovim/neovim.png?label=RFC&title=RFC)](https://waffle.io/neovim/neovim)
-    - See [`CONTRIBUTING.md`](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md#pull-requests) for additional advice.
+    - See [`CONTRIBUTING.md#reviewing-pull-requests`](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md#reviewing-pull-requests) for additional advice.
 - [Entry-level issues](https://github.com/neovim/neovim/labels/entry-level)
 - [Port OS layer to libuv](Porting-OS-layer-to-libuv)
 - [Merge patches from upstream Vim](Merging-patches-from-upstream-vim)
@@ -14,7 +14,7 @@ Check this [refactoring catalog](C-Refactorings-and-Code-Smells-Catalog) if you 
 
 ## Pull Requests
 
-See [`CONTRIBUTING.md`](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md#pull-requests)
+See [`CONTRIBUTING.md#submitting-contributions`](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md#submitting-contributions)
 for guidelines on sending contributions as pull requests.
 
 ## Coverity
@@ -35,7 +35,7 @@ If you decide to fix a Coverity defect, follow this convention for your commit m
 coverity/<id>: <description of what fixed the defect>
 ```
 
-where `<id>` is the Coverity ID. The id is also called the CID. For an example, take a look at [Issue #804](https://github.com/neovim/neovim/pull/804).
+where `<id>` is the Coverity ID. The id is also called the CID. For an example, see [#804](https://github.com/neovim/neovim/pull/804).
 
 ## Non-programming ways to contribute
 
