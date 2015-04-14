@@ -91,16 +91,16 @@ Work done so far has started to tackle some of these:
 
  * Big files are being split into smaller ones (**Large Class**)
  * Unnecessary `#ifdef` tests around legacy code are being removed (**Dead Code**)
- * Much more as there are many big changes in progress (e.g. the new VimL
+ * Much more as there are many big changes in progress (e.g. the new Vimscript
    implementation)
 
 Much more can be done. It's not hard to find many of these smells in neovim's
 code right now. Long methods, long parameter lists, conditional complexity,
 uncommunicative names, primitive obsession, and solution sprawl to name a few.
 
-See [the list of functions](http://pastebin.com/TmHJuyCC) from neovim's source code sorted by size, number of parameters... compiled by @cepko33 (#338).
+See [the list of functions](http://pastebin.com/TmHJuyCC) from Neovim's source code sorted by size, number of parameters... compiled by @cepko33 (#338).
 
-### Code Smells Within Classes (within .c files)
+#### Code Smells Within Classes (.c files)
 
  * **Comments**
  * **Long Method (long functions)**
@@ -117,7 +117,7 @@ See [the list of functions](http://pastebin.com/TmHJuyCC) from neovim's source c
  * **Oddball Solution**
  * **Temporary Field (temporary global variable)**
 
-### Code Smells Between Classes (between .c files)
+#### Code Smells Between Classes (between .c files)
 
  * ~~**Alternative Classes with Different Interfaces**~~
  * **Primitive Obsession** [#775][pr-775]
