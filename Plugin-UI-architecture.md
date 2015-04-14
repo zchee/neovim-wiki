@@ -1,10 +1,10 @@
 A contributing factor to legacy Vim's huge codebase is its explicit support for
 dozens of widget toolkits for GUI interfaces. Neovim avoids that by delegating
 GUI implementation to external clients. The client(s) control the Neovim `nvim`
-process via a msgpack-rpc API, which allows them to:
+process via a msgpack-rpc API, allowing them to:
 
-- Execute any vim command
-- Evaluate vimscript expressions
+- Execute Vim commands
+- Evaluate Vimscript expressions
 - Manipulate buffers, windows and tabs
 - Receive/handle editor events
 
