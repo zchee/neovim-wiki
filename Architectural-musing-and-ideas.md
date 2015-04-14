@@ -1,8 +1,8 @@
 ## Memory Allocator
 
-Neovim uses [jemalloc](https://www.facebook.com/notes/facebook-engineering/scalable-memory-allocation-using-jemalloc/480222803919) by default since [PR #2415](https://github.com/neovim/neovim/pull/2415). jemalloc is an efficient replacement to glibc `malloc` with features that include reduced lock contention (per thread pools are used for small allocations) and low fragmentation.
+Neovim uses [`jemalloc`](https://www.facebook.com/notes/facebook-engineering/scalable-memory-allocation-using-jemalloc/480222803919) by default since [PR #2415](https://github.com/neovim/neovim/pull/2415). `jemalloc` is an efficient replacement for `malloc` with features including reduced lock contention (per thread pools are used for small allocations) and low fragmentation.
 
-Users can disable jemalloc at compile time by passing the `USE_JEMALLOC=off` option to cmake.
+Users can disable `jemalloc` at compile time by passing the `USE_JEMALLOC=off` option to CMake.
 
 ## Text/buffer representation
 
