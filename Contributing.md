@@ -5,8 +5,7 @@ Thanks for considering contributing to Neovim.
 ## What needs to be done
 
 - [Code reviews](https://github.com/neovim/neovim/pulls) [![PRs waiting for review](https://badge.waffle.io/neovim/neovim.png?label=RFC&title=RFC)](https://waffle.io/neovim/neovim)
-    - Using a checklist during code reviews, [such as this one](Code-review-checklist), is recommended.
-    - See [CONTRIBUTING.md](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md#pull-requests) for additional advice.
+    - See [`CONTRIBUTING.md`](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md#pull-requests) for additional advice.
 - [Entry-level issues](https://github.com/neovim/neovim/labels/entry-level)
 - [Port OS layer to libuv](Porting-OS-layer-to-libuv)
 - [Merge patches from upstream Vim](Merging-patches-from-upstream-vim)
@@ -15,7 +14,7 @@ Check this [refactoring catalog](C-Refactorings-and-Code-Smells-Catalog) if you 
 
 ## Pull Requests
 
-See [CONTRIBUTING.md](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md#pull-requests)
+See [`CONTRIBUTING.md`](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md#pull-requests)
 for guidelines on sending contributions as pull requests.
 
 ## Coverity
@@ -43,21 +42,27 @@ where `<id>` is the Coverity ID. The id is also called the CID. For an example, 
 There is plenty of stuff you can contribute without being a hardcore C programmer.
 
 ### Use Neovim
+
 Use Neovim, and report bugs on this GitHub page.
 
 ### Give support
+
 Hang around the irc channel #neovim at FreeNode and answer questions.
 
 ### Documentation
+
 Help document Neovim by editing this wiki or making pull requests for [`runtime/doc/`](https://github.com/neovim/neovim/tree/master/runtime/doc).
 
 ### Raise awareness
+
 Write about Neovim and show it to your friends
 
 ### Money contributions
+
 Consider spending your hard-earned cash wisely: https://www.bountysource.com/fundraisers/539-neovim-first-iteration
 
 ### Help manage the issue tracker
+
 If you spot a duplicate issue, flag it up with a comment. If you see a report lacking in detail, ask for more.
 
 ## Help with contributing
