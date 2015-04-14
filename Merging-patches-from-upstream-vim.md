@@ -1,4 +1,4 @@
-Neovim was forked from Vim 7.4.160; it is kept up-to-date with relevant Vim patches in order to avoid duplicate work. For details, see [issue #438](https://github.com/neovim/neovim/issues/438).
+Neovim was forked from Vim 7.4.160; it is kept up-to-date with relevant Vim patches in order to avoid duplicate work. For details, see [#438](https://github.com/neovim/neovim/issues/438).
 
 Visit the [**vim patch report**](http://neovim.org/doc/reports/vimpatch/) to see which patches are needed, or use the [`vim-patch.sh`](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh) script: 
 
