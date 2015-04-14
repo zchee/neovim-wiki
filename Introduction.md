@@ -1,11 +1,11 @@
 Vim is a powerful text editor with a big community that is constantly
 growing.  Even though the editor is about two decades old, people still extend
-and want to improve it, mostly using vimscript or one of the supported scripting
+and want to improve it, mostly using Vimscript or one of the supported scripting
 languages.
 
 ## Motivation
 
-Over its more than 20 years of life, vim has accumulated about 300k lines of
+Over its more than 20 years of life, Vim has accumulated about 300k lines of
 scary C89 code that very few people understand or have the guts to mess with.
 
 Another issue is that as the only person responsible for maintaining vim's big
@@ -36,8 +36,8 @@ consequently improving the editor for all users.
 It is important to emphasize that **this is not a project to rewrite Vim from
 scratch** or transform it into an IDE (though the new features provided will
 enable IDE-like distributions of the editor). The changes implemented here
-should have little impact on vim's editing model or vimscript in general. Most
-vimscript plugins should continue to work normally.
+should have little impact on vim's editing model or Vimscript in general. Most
+Vimscript plugins should continue to work normally.
 
 The following topics contain brief explanations of the major changes (and
 motivations) that will be performed in the first iteration:
