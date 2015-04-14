@@ -1,4 +1,4 @@
-### How do I tell if I'm running `nvim` or `vim`?
+### How can I tell if I'm running `nvim` or `vim`?
 
 ```vim
 if has('nvim')
@@ -6,7 +6,7 @@ if has('nvim')
 endif
 ```
 
-### How do I use true colors in the terminal?
+### How can I use true colors in the terminal?
 
 ```vim
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
@@ -18,7 +18,7 @@ See [this gist](https://gist.github.com/XVilka/8346728) for more information abo
 
 See [#810](https://github.com/neovim/neovim/pull/810) and [#1749](https://github.com/neovim/neovim/issues/1749).
 
-### Why was Lua chosen for writing tests and implementing Vimscript instead of [language]?
+### Why was Lua chosen for writing tests and implementing Vimscript?
 
 Lua is a very small language, but it provides everything we need to implement a language like Vimscript, which was created to configure and script the editor. The biggest advantage that languages like Python or Ruby have over Lua are their huge library collection, but that isn't a factor for our main use case which is to remove thousands of lines of C by using Lua as a Vimscript runtime. If you are still not convinced about Lua, you might want to read [this post](http://blog.datamules.com/blog/2012/01/30/why-lua/).
 
@@ -32,6 +32,6 @@ We'll be using [Luajit](http://luajit.org/), which is the fastest scripting runt
 
 ### Are plugin authors encouraged to port their plugins from Vimscript to Lua? Do you plan on supporting Vimscript indefinitely? ([#1152](https://github.com/neovim/neovim/issues/1152))
 
-We don't anticipate any reason to deprecate VimL, which is a valuable DSL for text-editing tasks. Also, maintaining a Vimscript front-end is less costly than a mass migration of the many existing Vimscript plugins.
+We don't anticipate any reason to deprecate Vimscript, which is a valuable DSL for text-editing tasks. Also, maintaining a Vimscript front-end is less costly than a mass migration of the many existing Vimscript plugins.
 
-Porting from Vimscript to Lua just for the heck of it gains nothing. Neovim is emphatically a *fork of Vim* in order to leverage the work already spent on thousands of existing Vim plugins, while enabling *new* types of plugins and integrations.
+Porting from Vimscript to Lua just for the heck of it gains nothing. Neovim is emphatically a *fork of Vim* in order to leverage the existing Vim plugin ecosystem, while enabling new types of plugins.
