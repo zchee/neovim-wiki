@@ -14,6 +14,10 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 See [this gist](https://gist.github.com/XVilka/8346728) for more information about true colors, such as what terminals support it.
 
+### When will Windows be supported?
+
+See [#810](https://github.com/neovim/neovim/pull/810) and [#1749](https://github.com/neovim/neovim/issues/1749).
+
 ### Why was Lua chosen for writing tests and implementing Vimscript instead of [language]?
 
 Lua is a very small language, but it provides everything we need to implement a language like Vimscript, which was created to configure and script the editor. The biggest advantage that languages like Python or Ruby have over Lua are their huge library collection, but that isn't a factor for our main use case which is to remove thousands of lines of C by using Lua as a Vimscript runtime. If you are still not convinced about Lua, you might want to read [this post](http://blog.datamules.com/blog/2012/01/30/why-lua/).
