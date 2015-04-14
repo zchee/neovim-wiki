@@ -45,11 +45,15 @@ Help document Neovim by improving this wiki, or making contributions regarding [
 
 ### Use Neovim
 
-Report bugs you experience under the [issues page](https://github.com/neovim/neovim/issues).
+Report bugs you experience under the [issue tracker](https://github.com/neovim/neovim/issues).
 
 ### Give support
 
 Hang around [neovim's Gitter channel](https://gitter.im/neovim/neovim) and answer questions.
+
+### Help manage the issue tracker
+
+If you spot a duplicate issue, flag it up with a comment. If you see a report lacking in detail, ask for more.
 
 ### Raise awareness
 
@@ -58,10 +62,6 @@ Write about Neovim and show it to your friends
 ### Money contributions
 
 Consider spending your hard-earned cash: https://www.bountysource.com/fundraisers/539-neovim-vim-s-rebirth-for-the-21st-century
-
-### Help manage the issue tracker
-
-If you spot a duplicate issue, flag it up with a comment. If you see a report lacking in detail, ask for more.
 
 ## Help with contributing
 
