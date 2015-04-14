@@ -39,19 +39,17 @@ where `<id>` is the Coverity ID. The id is also called the CID. For an example, 
 
 ## Non-programming ways to contribute
 
-There is plenty of stuff you can contribute without being a hardcore C programmer.
+### Documentation
+
+Help document Neovim by improving this wiki, or making contributions regarding [`runtime/doc/`](https://github.com/neovim/neovim/tree/master/runtime/doc).
 
 ### Use Neovim
 
-Use Neovim, and report bugs on this GitHub page.
+Report bugs you experience under the [issues page](https://github.com/neovim/neovim/issues).
 
 ### Give support
 
-Hang around the irc channel #neovim at FreeNode and answer questions.
-
-### Documentation
-
-Help document Neovim by editing this wiki or making pull requests for [`runtime/doc/`](https://github.com/neovim/neovim/tree/master/runtime/doc).
+Hang around [neovim's Gitter channel](https://gitter.im/neovim/neovim) and answer questions.
 
 ### Raise awareness
 
@@ -59,7 +57,7 @@ Write about Neovim and show it to your friends
 
 ### Money contributions
 
-Consider spending your hard-earned cash wisely: https://www.bountysource.com/fundraisers/539-neovim-first-iteration
+Consider spending your hard-earned cash: https://www.bountysource.com/fundraisers/539-neovim-vim-s-rebirth-for-the-21st-century
 
 ### Help manage the issue tracker
 
