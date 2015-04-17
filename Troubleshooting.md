@@ -2,6 +2,22 @@ If you run into an error not mentioned here and manage to resolve it, feel free 
 
 ## Runtime issues
 
+### Neovim is slow
+
+Make sure you're running an optimized build of `nvim`. To check this, run this:
+
+    nvim --version | grep 'Build type'
+
+This should yield one of the following:
+
+```
+Build type: RelWithDebInfo
+Build type: MinSizeRel
+Build type: Release
+```
+
+If it yields `Build type: Debug`, then see [Building Neovim#optimized-builds](Building-Neovim#optimized-builds). If you're using a third-party package, please inform the maintainer.
+
 ### Neovim can't read UTF-8 characters
 
 Run the following from the command line:
@@ -19,22 +35,6 @@ Run `make distclean && make` to rule out a stale build environment causing the f
 ### Settings in `local.mk` don't take effect
 
 CMake caches build settings, so you might need to run `rm -r build && make` after modifying `local.mk`.
-
-### Neovim is slow
-
-Make sure you're running an optimized build of `nvim`. To check this, run this:
-
-    nvim --version | grep 'Build type'
-
-This should yield one of the following:
-
-```
-Build type: RelWithDebInfo
-Build type: MinSizeRel
-Build type: Release
-```
-
-If it yields `Build type: Debug`, then see [Building Neovim#optimized-builds](Building-Neovim#optimized-builds). If you're using a third-party package, please inform the maintainer.
 
 ### CMake errors
 
