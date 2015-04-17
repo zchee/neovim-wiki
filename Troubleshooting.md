@@ -16,6 +16,10 @@ If there's no results, then you might not be using a UTF-8 locale. See the follo
 
 Run `make distclean && make` to rule out a stale build environment causing the failure.
 
+### Settings in `local.mk` don't take effect
+
+CMake caches build settings, so you might need to run `rm -r build && make` after modifying `local.mk`.
+
 ### Neovim is slow
 
 Make sure you're running an optimized build of `nvim`. To check this, run this:
@@ -35,7 +39,8 @@ If it yields `Build type: Debug`, then see [Building Neovim#optimized-builds](Bu
 ### CMake errors
 
 `configure_file Problem configuring file`
-- This is probably a permissions issue, which can happen if you run `sudo make` and then later try an unprivileged `make`. To fix this, run `rm -rf build` and try again.
+
+This is probably a permissions issue, which can happen if you run `sudo make` or `make` as the root user, then later run an unprivileged `make`. To fix this, run `rm -rf build` and try again.
 
 ### Lua packages
 
