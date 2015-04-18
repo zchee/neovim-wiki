@@ -14,6 +14,16 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 See [this gist](https://gist.github.com/XVilka/8346728) for more information about true colors, such as what terminals support it.
 
+### How can I change the cursor shape in the terminal?
+
+```vim
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+```
+
+This enables a narrow cursor in insert-mode, and a wide cursor in normal-mode. The environment variable is a temporary measure, and finer-grained control may be supported in the future.
+
+`t_SI` and `t_EI` (which are [non-standard](https://groups.google.com/d/msg/vim_dev/biVcXiYcLRw/zumrjo6gP4oJ)) are ignored, as are most terminal codes. 
+
 ### When will Windows be supported?
 
 See [#810](https://github.com/neovim/neovim/pull/810) and [#1749](https://github.com/neovim/neovim/issues/1749).
