@@ -1,4 +1,4 @@
-**Note**: If you use Python plugins such as [YouCompleteMe](https://github.com/Valloric/YouCompleteMe), see [`:help nvim-python-quickstart`](http://neovim.org/doc/user/nvim_python.html#nvim-python-quickstart).
+**Note**: If you use Python plugins such as [YouCompleteMe](https://github.com/Valloric/YouCompleteMe), see [`:help nvim-python-quickstart`](http://neovim.io/doc/user/nvim_python.html#nvim-python-quickstart).
 
 # Packaged Installation
 

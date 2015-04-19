@@ -11,10 +11,10 @@
 
 - [Installing Neovim](Installing-Neovim)
 - [Differences from Vim](Differences-from-vim)
-- [Documentation](http://neovim.org/doc/)
-     - [User manual](http://neovim.org/doc/user/) (`:help`)
-     - [Neovim feature reference](http://neovim.org/doc/user/nvim_intro.html) (`:help nvim-intro`)
-     - [Python plugins](http://neovim.org/doc/user/nvim_python.html) (`:help nvim-python`)
+- [Documentation](http://neovim.io/doc/)
+     - [User manual](http://neovim.io/doc/user/) (`:help`)
+     - [Neovim feature reference](http://neovim.io/doc/user/nvim_intro.html) (`:help nvim-intro`)
+     - [Python plugins](http://neovim.io/doc/user/nvim_python.html) (`:help nvim-python`)
 
 ### For developers
 
@@ -23,11 +23,11 @@
     - [Unit testing](Unit-tests)
     - [Merging patches from upstream Vim](Merging-patches-from-upstream-Vim)
 - [Development tips](Development-tips)
-- [Coding conventions](http://neovim.org/develop/style-guide.xml)
+- [Coding conventions](http://neovim.io/develop/style-guide.xml)
 - [C programming techniques and Neovim-specific guidance](C-programming)
     - [C refactorings and code-smells](C-refactorings-and-code-smells-catalog)
     - [Integer type semantics](Integer-types-refactoring-guidelines)
-- [Documentation](http://neovim.org/doc/)
+- [Documentation](http://neovim.io/doc/)
     - [Plugin Architecture](Plugin-UI-architecture)
     - [Code overview](Code-overview)
     - [How to generate function callgraphs with doxygen](Generate-callgraphs-with-Doxygen)

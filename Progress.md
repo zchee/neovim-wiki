@@ -18,7 +18,7 @@ Items in the [vNext milestone](https://github.com/neovim/neovim/milestones/vNext
 
 - Python plugin host
     - Includes compatibility layer for legacy Vim python interface `if_pyth` (`:python`, `:pydo`, `:pyfile`)
-- End-to-end [automation](https://github.com/neovim/bot-ci) of [documentation](http://neovim.org/doc), [analysis](http://neovim.org/doc/reports/clang), [nightly builds](https://github.com/neovim/neovim/releases/tag/nightly), etc.
+- End-to-end [automation](https://github.com/neovim/bot-ci) of [documentation](http://neovim.io/doc), [analysis](http://neovim.io/doc/reports/clang), [nightly builds](https://github.com/neovim/neovim/releases/tag/nightly), etc.
 - Enhance build system with lua-based C preprocessor
 - Implement `system()` with pipes ([#978](https://github.com/neovim/neovim/pull/978)) instead of temp files to improve [performance](https://github.com/neovim/neovim/pull/978#issuecomment-50092527) and reliability ([1](https://groups.google.com/d/msg/vim_use/JSXaM9YjWKo/HtHn36WFb_kJ), [2](https://groups.google.com/d/msg/vim_use/adD_-9yBCEU/Y0ul-OwXGpYJ), [3](https://github.com/mattn/gist-vim/issues/48#issuecomment-12916349), [4](https://groups.google.com/d/msg/vim_use/oU7y-hmQoNc/2qQnkPl6aKkJ))
 - Use `hrtime()` (more precise and monotonic) for profiling instead of `gettimeofday()` [#831](https://github.com/neovim/neovim/issues/831)

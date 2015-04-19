@@ -1,6 +1,6 @@
 Neovim was forked from Vim 7.4.160; it is kept up-to-date with relevant Vim patches in order to avoid duplicate work. For details, see [#438](https://github.com/neovim/neovim/issues/438).
 
-Visit the [**vim patch report**](http://neovim.org/doc/reports/vimpatch/) to see which patches are needed, or use the [`vim-patch.sh`](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh) script: 
+Visit the [**vim patch report**](http://neovim.io/doc/reports/vimpatch/) to see which patches are needed, or use the [`vim-patch.sh`](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh) script: 
 
     ./scripts/vim-patch.sh --list
 
@@ -44,7 +44,7 @@ Code differences
 ----------------
 
 The following functions have been removed or deprecated in favor of newer alternatives.
-See the [`memory.c` Doxygen page](http://neovim.org/doc/dev/memory_8c.html) for more information.
+See the [`memory.c` Doxygen page](http://neovim.io/doc/dev/memory_8c.html) for more information.
 
 | Deprecated or removed                   | Replacement        |
 |:----------------------------------------|:------------------:|
