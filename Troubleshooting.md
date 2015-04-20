@@ -18,6 +18,20 @@ Build type: Release
 
 If it yields `Build type: Debug`, then see [Building Neovim#optimized-builds](Building-Neovim#optimized-builds). If you're using a third-party package, please inform the maintainer.
 
+### Colors aren't displayed correctly
+
+From a shell, run `TERM=xterm-256color nvim`. If colors are displayed correctly, then export that value of `TERM` in your user profile (usually `~/.profile`):
+
+```sh
+export TERM=xterm-256color
+```
+
+If you're using `tmux`, instead add this to your `tmux.conf`:
+
+```tmux
+set -g default-terminal "screen-256color"
+```
+
 ### Neovim can't read UTF-8 characters
 
 Run the following from the command line:
