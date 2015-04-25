@@ -51,7 +51,7 @@ A compatibility layer is provided ([#872](https://github.com/neovim/neovim/pull/
 * `'ttyfast'` [#1945](https://github.com/neovim/neovim/issues/1945)
 * `'edcompatible'` [#1911](https://github.com/neovim/neovim/issues/1911)
 * "Easy mode" (`eview`, `evim`, `vim -y`) [#1656](https://github.com/neovim/neovim/pull/1656)
-* `(g)vimdiff` (solely an alias for `(g)vim -d`) [#1849](https://github.com/neovim/neovim/pull/1849)
 * "Vi mode" (`nvim -v`) [#2008](https://github.com/neovim/neovim/pull/2008)
-* The ability to start nvim via aliases has been removed in favor
-of just using their command line arguments ([#2008](https://github.com/neovim/neovim/pull/2008))
+* `(g)vimdiff` (solely an alias for `(g)vim -d`) 
+* The ability to start `nvim` via aliases has been removed in favor
+of using the existing command line arguments ([#2008](https://github.com/neovim/neovim/pull/2008) [#1849](https://github.com/neovim/neovim/pull/1849))
