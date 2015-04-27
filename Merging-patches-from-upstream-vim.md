@@ -56,6 +56,13 @@ See the [`memory.c` Doxygen page](http://neovim.io/doc/dev/memory_8c.html) for m
 | `vim_memset` `copy_chars` `copy_spaces` | [`memset`][memset] |
 | `vim_strncpy` `strncpy` `strcpy`        | `xstrlcpy`         |
 
+| Data type | Format (Vim source) | Portable format (Nvim source) |
+|:----------|:--------------------|:------------------------------|
+| `long`    | `"%ld"`             | `"%" PRId64`                  |
+| `size_t`  | `"%ld"`             | `"%zu"`                       |
+
+- See also: https://github.com/neovim/neovim/pull/1729#discussion_r22423779
+
 Vim tests (in `src/testdir/`) should be converted to Lua tests (see [#1286](https://github.com/neovim/neovim/issues/1286) and [#1328](https://github.com/neovim/neovim/pull/1328)). See [Checklist for migrating legacy tests][checklist]
 
 [memset]: https://github.com/neovim/neovim/pull/1635
