@@ -2,7 +2,7 @@ Automated testing is essential for a project that aims to receive contributions 
 
 In Neovim, unit testing is achieved by compiling it as a shared library that can be loaded and called by luajit's [FFI module](http://luajit.org/ext_ffi.html).
 
-Tests are broadly divided into *unit tests* ([test/unit](https://github.com/neovim/neovim/tree/master/test/unit) directory) and *functional tests* ([test/functional](https://github.com/neovim/neovim/tree/master/test/unit) directory). To get started quickly, look at existing [examples](https://github.com/neovim/neovim/tree/master/test/unit).
+Tests are broadly divided into *unit tests* ([test/unit](https://github.com/neovim/neovim/tree/master/test/unit) directory) and *functional tests* ([test/functional](https://github.com/neovim/neovim/tree/master/test/functional) directory). To get started quickly, look at existing [examples](https://github.com/neovim/neovim/tree/master/test/unit).
 
 ## Guidelines for writing tests
 
