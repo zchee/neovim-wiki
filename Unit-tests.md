@@ -1,6 +1,6 @@
 Automated testing is essential for a project that aims to receive contributions from the community, it assists the project in growing faster without worrying about broken features. Pull requests that commit unit tests for existing functions will be given priority.
 
-In Neovim, unit testing is achieved by compiling it as a shared library that can be loaded and called by luajit's [ffi module](http://luajit.org/ext_ffi.html). The ffi module is capable of parsing very basic C headers (no conditional directives or macro expansions), and we'll make use of this to avoid writing any glue C code. 
+In Neovim, unit testing is achieved by compiling it as a shared library that can be loaded and called by luajit's [FFI module](http://luajit.org/ext_ffi.html).
 
 Each module must have a separate test script (written in lua) in the test/unit directory. It might be possible to get started real fast by looking at existing [examples](https://github.com/neovim/neovim/tree/master/test/unit), but to get a deeper understanding of how this works, the best place is the ffi module [documentation](http://luajit.org/ext_ffi.html).
 
@@ -10,7 +10,8 @@ Each module must have a separate test script (written in lua) in the test/unit d
 - For testing static functions or functions that have side effects visible only in module-global variables, create accessors for the modified variables. For example, say you are testing a function in misc1.c that modifies a static variable, create a file `test/c-helpers/misc1.c` and add a function that retrieves the value after the function call. Files under `test/c-helpers` will only be compiled when building the test shared library.
 - Luajit needs to know about type and constant declarations used in function prototypes. The [helpers.lua](https://github.com/neovim/neovim/blob/master/test/unit/helpers.lua) file automatically parses `types.h`, so types used in the tested functions must be moved to it to avoid having to rewrite the declarations in the test files (even though this is how it's currently done currently in the misc1/fs modules, but contributors are encouraged to refactor the declarations).
     - Macro constants must be rewritten as enums so they can be "visible" to the tests automatically.
-- Busted supports various test "output providers". The [utfTerminalDetailed](https://github.com/neovim/neovim/pull/2156) output provider shows [verbose details](https://travis-ci.org/neovim/neovim/jobs/54478323#L1661) that can be useful to diagnose hung tests.
+- Busted supports various "output providers". The **[gtest](https://github.com/Olivine-Labs/busted/pull/394) output provider** shows verbose details that can be useful to diagnose hung tests.
+- **Use busted's `pending()` feature** to skip tests ([example](https://github.com/neovim/neovim/commit/2d65ccf06cbd1b1a383bd01a24872224b6fd0e83#diff-bf80b24c724b0004e8418102f68b0679R18)). Do not silently skip the test with `if-else`. If a functional test depends on some external factor (e.g. the existence of `md5sum` on `$PATH`), *and* you can't mock or fake the dependency, then you may need to skip the test if the dependency doesn't exist--but the *total test count* (success + fail + error + pending) should be the same in all environments.
 
 ## Checklist for migrating legacy tests:
 
