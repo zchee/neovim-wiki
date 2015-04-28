@@ -1,3 +1,7 @@
+### How do I use [feature]?
+
+There's a good chance `[feature]` is already mentioned in the documentation: [`:help nvim_intro.txt`](http://neovim.io/doc/user/nvim_intro.html)
+
 ### How can I tell if I'm running `nvim` or `vim`?
 
 ```vim
