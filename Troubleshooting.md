@@ -36,6 +36,8 @@ For GNU `screen`, [configure your `.screenrc`](https://wiki.archlinux.org/index.
 
     term screen-256color
 
+**Note:** Neovim ignores `t_Co` and other terminal codes.
+
 ### Neovim can't read UTF-8 characters
 
 Run the following from the command line:
