@@ -12,7 +12,7 @@
 | Mac OS X         | [qvacua/nvox](https://github.com/qvacua/nvox)                           |
 | Atom Integration | [carlosdcastillo/vim-mode](https://github.com/carlosdcastillo/vim-mode) |
 | GTK/Python UI    | [neovim/python-client](https://github.com/neovim/python-client)         |
-| Electron UI    | [coolwanglu/neovim-e](https://github.com/coolwanglu/neovim-e)         |
+| Electron UI    | [coolwanglu/neovim<sup>e</sup>](https://github.com/coolwanglu/neovim-e)         |
 
 ### API clients
 
