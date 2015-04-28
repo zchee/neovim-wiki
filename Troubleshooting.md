@@ -32,6 +32,10 @@ If you're using `tmux`, instead add this to your `tmux.conf`:
 set -g default-terminal "screen-256color"
 ```
 
+For GNU `screen`, [configure your `.screenrc`](https://wiki.archlinux.org/index.php/GNU_Screen#Use_256_colors):
+
+    term screen-256color
+
 ### Neovim can't read UTF-8 characters
 
 Run the following from the command line:
