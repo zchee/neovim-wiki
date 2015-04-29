@@ -65,5 +65,11 @@ See the [`memory.c` Doxygen page](http://neovim.io/doc/dev/memory_8c.html) for m
 
 Vim tests (in `src/testdir/`) should be converted to Lua tests (see [#1286](https://github.com/neovim/neovim/issues/1286) and [#1328](https://github.com/neovim/neovim/pull/1328)). See [Checklist for migrating legacy tests][checklist]
 
+Documentation differences
+-------------------------
+
+`{not in Vi}` should be removed; we don't care about compatibility with Vi.
+
+
 [memset]: https://github.com/neovim/neovim/pull/1635
 [checklist]: Unit-tests#checklist-for-migrating-legacy-tests
