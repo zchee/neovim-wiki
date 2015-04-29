@@ -8,7 +8,7 @@ Thanks for considering contributing to Neovim.
     - See [`CONTRIBUTING.md#reviewing-pull-requests`](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md#reviewing-pull-requests) for additional advice.
 - [Entry-level issues](https://github.com/neovim/neovim/labels/entry-level)
 - [Port OS layer to libuv](Porting-OS-layer-to-libuv)
-- [Merge patches from upstream Vim](Merging-patches-from-upstream-vim)
+- [Merge patches from upstream Vim](Merging-patches-from-upstream-Vim)
 
 Check this [refactoring catalog](C-Refactorings-and-Code-Smells-Catalog) if you want some inspiration on what to work on.
 
