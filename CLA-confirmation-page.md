@@ -111,3 +111,4 @@ The timestamp is sent by the CLA form. Please don't modify this page until you h
 - 1429418924887 Christopher O'Donnell
 - 1430059341451 Erik S. V. Jansson
 - 1430276205171 William Reed
+- 1430333084672 Bastian Winkler
