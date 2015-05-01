@@ -113,3 +113,4 @@ The timestamp is sent by the CLA form. Please don't modify this page until you h
 - 1430276205171 William Reed
 - 1430333084672 Bastian Winkler
 - 1430474251102 Răzvan C. Rădulescu
+- 1430511566940 Mikaël Fourrier
