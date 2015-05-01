@@ -20,6 +20,7 @@
 |-------------|--------------------------------------------------------------------------------------|
 | C++/Qt5     | [equalsraf/neovim-qt](https://github.com/equalsraf/neovim-qt)                        |
 | C++/ncurses | [SoC/neovim-client](https://github.com/splinterofchaos/neovim-cpp-client-experiment) |
+| Clojure     | [jebberjeb/neovim-client](https://github.com/jebberjeb/neovim-client)                |
 | Elixir      | [awetzel/neovim-elixir](https://github.com/awetzel/neovim-elixir)                    |
 | Go          | [myitcv/neovim](https://github.com/myitcv/neovim)                                    |
 | Haskell     | [saep/nvim-hs](https://github.com/saep/nvim-hs)                                      |
