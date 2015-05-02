@@ -61,7 +61,9 @@ Write about Neovim and show it to your friends
 
 ### Money contributions
 
-Consider spending your hard-earned cash: https://www.bountysource.com/fundraisers/539-neovim-vim-s-rebirth-for-the-21st-century
+Consider spending your hard-earned cash on a bounty: https://www.bountysource.com/fundraisers/539-neovim-vim-s-rebirth-for-the-21st-century
+
+Or become an official sponsor by pledging regular contributions (whatever the amount, every dollar helps!): https://salt.bountysource.com/teams/neovim
 
 ## Help with contributing
 
