@@ -1,5 +1,3 @@
-**Note**: If you use Python plugins such as [YouCompleteMe](https://github.com/Valloric/YouCompleteMe), see [`:help nvim-python-quickstart`](http://neovim.io/doc/user/nvim_python.html#nvim-python-quickstart).
-
 # Packaged Installation
 
 If you're on one of the following systems, you can get Neovim right away!
@@ -23,6 +21,8 @@ brew update
 brew reinstall --HEAD neovim
 ```
 
+For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
+
 ### Linux / [Linuxbrew](http://brew.sh/linuxbrew/)
 
 ```
@@ -41,6 +41,8 @@ brew reinstall --HEAD neovim
 
 **Note**: If you encounter the error `CMAKE_USE_SYSTEM_CURL is ON but a curl is not found`, then you're missing the dependency for cURL that allows downloads over TLS. Refer to your operating system's section in [Linuxbrew Dependencies](https://github.com/Homebrew/linuxbrew#dependencies) to fix this.
 
+For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
+
 ### Ubuntu
 
 Neovim has been added to a [Personal Package Archive](https://launchpad.net/~neovim-ppa/+archive/ubuntu/unstable) which allows you to install it using `apt-get` on Ubuntu [12.04 and later](https://wiki.ubuntu.com/Releases).
@@ -53,12 +55,13 @@ sudo apt-get update
 sudo apt-get install neovim
 ```
 
-To install the Python module:
+Prerequisites for the Python modules:
 
 ```
-sudo apt-get install python-dev python-pip
-pip install --user neovim
+sudo apt-get install python-dev python-pip python3-dev python3-pip
 ```
+
+For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
 
 If you want to use Neovim for some (or all) of the editor alternatives, use the following commands:
 
@@ -75,26 +78,32 @@ sudo update-alternatives --config editor
 
 Neovim can be installed using the PKGBUILD [`neovim-git`](https://aur.archlinux.org/packages/neovim-git), available on the [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository).
 
-To install the Python module:
+For installing the Python modules, you have two alternatives:
+
+ * Use the [`python2-neovim`](https://aur.archlinux.org/packages/python2-neovim) and [`python-neovim`](https://aur.archlinux.org/packages/python-neovim) PKGBUILDs.
+ * Install `pip` and follow the instructions at [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html):
 
 ```
-sudo pacman -S python-pip
-pip install --user neovim
+sudo pacman -S python-pip python2-pip
 ```
-
-The Python module can alternatively been installed from the [`python2-neovim`](https://aur.archlinux.org/packages/python2-neovim) PKGBUILD.
 
 ### CRUX
 
 A CRUX port is available under [`6c37/neovim`](https://github.com/6c37/crux-ports), along with ports for other dependencies of Neovim.
 
+For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
+
 ### Gentoo Linux
 
 A snapshot ebuild is now available in Gentoo's official portage repository: 
 
-    emerge -a app-editors/neovim
+```
+emerge -a app-editors/neovim
+```
 
 A "live" ebuild can be found in [yngwin's developer overlay](http://cgit.gentooexperimental.org/dev/yngwin.git/tree/app-editors/neovim).
+
+For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
 
 ### openSUSE
 
@@ -108,19 +117,29 @@ zypper in neovim
 
 Adjust the URL if you're using openSUSE Factory or 13.2.
 
+For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
+
 ### Fedora / RHEL
 
 See http://copr.fedoraproject.org/coprs/gaurdro/neovim/. It's built using the [Copr](https://copr.fedoraproject.org/) automated build system, which is unsupported. There's no guarantee of how long your package will be available after the build finishes.
 
+For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
+
 ### Slackware
 
-http://slackbuilds.org/apps/neovim/
+See [neovim on SlackBuilds](http://slackbuilds.org/apps/neovim/).
+
+For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
 
 ### NixOS
 
 Neovim can be installed from the [unstable channel](http://nixos.org/nixos/manual/#sec-upgrading) using the following command:
 
-    nix-env -iA neovim
+```
+nix-env -iA neovim
+```
+
+For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
 
 # Manual Installation
 
@@ -130,7 +149,9 @@ Afterwards, you can install Neovim into `/usr/local` by running `make install` (
 
 To install Neovim to a directory of your choice, run the following command instead:
 
-    make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/neovim" install
+```
+make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/neovim" install
+```
 
 If you appended `$HOME/neovim/bin` to your `$PATH`, you should be able to see the following:
 
