@@ -70,9 +70,19 @@ sudo update-alternatives --config vim
 sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
 sudo update-alternatives --config editor
 ```
+
 ### Arch Linux
 
-Neovim can be installed using the PKGBUILD [`neovim-git`](https://aur.archlinux.org/packages/neovim-git), available on the [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository). The Python module has been packaged as [`python2-neovim`](https://aur.archlinux.org/packages/python2-neovim).
+Neovim can be installed using the PKGBUILD [`neovim-git`](https://aur.archlinux.org/packages/neovim-git), available on the [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository).
+
+To install the Python module:
+
+```
+sudo pacman -S python-pip
+pip install --user neovim
+```
+
+The Python module can alternatively been installed from the [`python2-neovim`](https://aur.archlinux.org/packages/python2-neovim) PKGBUILD.
 
 ### CRUX
 
