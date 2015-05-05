@@ -24,7 +24,7 @@ Say you've pulled down the Neovim source, and you want to merge Vim patch 7.4.12
 
 The script guides you with further instructions. It's easy and painless, just try it!
 
-If you're unsure with which patch to start or just don't care, pick one from the bottom of the queue. Merging the patches in roughly chronological order works best.
+If you're unsure with which patch to start or just don't care, pick one from the bottom of the queue. Merging the patches in roughly chronological order works best as some patches might depend on others. You're most likely going to encounter merge conflicts regardless, but this way such conflicts are kept to a minimum.
 
 Pull requests
 -------------
