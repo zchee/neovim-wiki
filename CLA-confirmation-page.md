@@ -117,3 +117,4 @@ The timestamp is sent by the CLA form. Please don't modify this page until you h
 - 1430820399642 Christopher Hall
 - 1430994352872 Ewan Hemingway
 - 1431020561135 Jakob Schnitzer
+- 1431040212244 Timothée Gauthier
