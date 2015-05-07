@@ -115,3 +115,4 @@ The timestamp is sent by the CLA form. Please don't modify this page until you h
 - 1430474251102 Răzvan C. Rădulescu
 - 1430511566940 Mikaël Fourrier
 - 1430820399642 Christopher Hall
+- 1430994352872 Ewan Hemingway
