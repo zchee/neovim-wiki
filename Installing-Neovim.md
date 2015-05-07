@@ -105,20 +105,6 @@ A "live" ebuild can be found in [yngwin's developer overlay](http://cgit.gentooe
 
 For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
 
-### openSUSE
-
-Third-party packages are available for openSUSE 13.1/13.2/Factory, you can install them through the [1 Click Install](http://software.opensuse.org/package/neovim?search_term=Neovim) or manually using
-
-```
-zypper ar http://download.opensuse.org/repositories/home:/ruiabreuferreira:/neovim/openSUSE_13.2/home:ruiabreuferreira:neovim.repo
-
-zypper in neovim
-```
-
-Adjust the URL if you're using openSUSE Factory or 13.2.
-
-For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
-
 ### Fedora / RHEL
 
 See http://copr.fedoraproject.org/coprs/gaurdro/neovim/. It's built using the [Copr](https://copr.fedoraproject.org/) automated build system, which is unsupported. There's no guarantee of how long your package will be available after the build finishes.
