@@ -42,7 +42,7 @@ For GNU `screen`, [configure your `.screenrc`](https://wiki.archlinux.org/index.
 
 Run the following from the command line:
 ```
-locale | grep -E 'LANG=(.*?).UTF-8'
+locale | grep -E 'LANG=.*?.UTF-8'
 ```
 If there's no results, then you might not be using a UTF-8 locale. See the following issues: [#1601](https://github.com/neovim/neovim/issues/1601) [#1858](https://github.com/neovim/neovim/issues/1858) [#2386](https://github.com/neovim/neovim/issues/2386)
 
