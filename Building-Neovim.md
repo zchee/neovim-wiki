@@ -209,6 +209,7 @@ a PANIC in LuaJIT when trying to install a rock.
 
 * Install [Xcode](https://developer.apple.com/) and [Homebrew](http://brew.sh)
   or [MacPorts](http://www.macports.org)
+* Install Xcode commandline tools `xcode-select --install`
 * Install other dependencies:
 
   Via MacPorts:
