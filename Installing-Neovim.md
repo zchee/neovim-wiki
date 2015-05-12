@@ -8,7 +8,7 @@ Note that the Neovim binary to run is called `nvim`, not `neovim`.
 ### OS X / [Homebrew](http://brew.sh)
 
 ```
-brew tap neovim/homebrew-neovim
+brew tap neovim/neovim
 brew install --HEAD neovim
 ```
 
@@ -26,7 +26,7 @@ For instructions on how to install the Python modules, see [`:help nvim_python`]
 ### Linux / [Linuxbrew](http://brew.sh/linuxbrew/)
 
 ```
-brew tap neovim/homebrew-neovim
+brew tap neovim/neovim
 brew install --HEAD neovim
 ```
 
