@@ -12,6 +12,7 @@
 | Mac OS X         | [qvacua/nvox](https://github.com/qvacua/nvox)                           |
 | Mac OS X         | [rogual/neovim-dot-app](https://github.com/rogual/neovim-dot-app)       |
 | Mac OS X         | [stefan991/NeoVimX](https://github.com/stefan991/NeoVimX)               |
+| Qt 5             | [equalsraf/neovim-qt](https://github.com/equalsraf/neovim-qt)           |
 | Rust IDE         | [oakes/SolidOak](https://github.com/oakes/SolidOak)                     |
 
 ### API clients
