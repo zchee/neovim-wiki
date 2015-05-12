@@ -219,6 +219,8 @@ EOF
 gmake
 ```
 
+jemalloc 3.6.0 doesn't build on OpenBSD, which is why it's being disabled.
+
 ### OS X
 
 * Install [Xcode](https://developer.apple.com/) and [Homebrew](http://brew.sh)
