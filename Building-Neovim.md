@@ -205,6 +205,20 @@ the actual sha256sum is `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991
 LuaRocks has bad interactions with cURL, at least under FreeBSD, and will die with
 a PANIC in LuaJIT when trying to install a rock.
 
+### OpenBSD -current
+
+```
+sudo pkg_add gmake cmake libtool unzip autoconf-2.69 automake-1.15
+export AUTOCONF_VERSION=2.69
+export AUTOMAKE_VERSION=1.15
+
+cat > local.mk << EOF
+DEPS_CMAKE_FLAGS := -DUSE_BUNDLED_JEMALLOC=OFF
+EOF
+
+gmake
+```
+
 ### OS X
 
 * Install [Xcode](https://developer.apple.com/) and [Homebrew](http://brew.sh)
