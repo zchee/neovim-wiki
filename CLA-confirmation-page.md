@@ -118,4 +118,3 @@ The timestamp is sent by the CLA form. Please don't modify this page until you h
 - 1430994352872 Ewan Hemingway
 - 1431020561135 Jakob Schnitzer
 - 1431040212244 Timothée Gauthier
-- 1431551691740 Jeremy Croft
