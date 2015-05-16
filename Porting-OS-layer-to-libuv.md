@@ -8,8 +8,6 @@ Since vim is completely dependent on blocking I/O, most of the functions will be
 
 User input reading (implemented mostly by mch_inchar) was ported to libuv in [#395](https://github.com/neovim/neovim/pull/395).
 
-Disregard libuv-* and other topic branches in the official repo, they were started before Neovim was announced and are no longer applicable (will be deleted eventually).
-
 Everyone is encouraged to start a similar topic branch and try to port a function or two from `os_unix.c`, but create an issue with a relevant name so others will know that you are working on it. For example, let's say you want to port the function `mch_can_exe`, create an issue named 'libuv - porting mch_can_exe'. Feel free to send PR if all tests pass.
 
 Try to split functions in `os_unix.h` into "categories" to avoid very big files. For example, functions that mess with filesystem should probably go into `os/fs.c`.
