@@ -236,6 +236,8 @@ jemalloc 3.6.0 doesn't build on OpenBSD, which is why it's being disabled.
 
       brew install libtool automake cmake pkg-config gettext
 
+* After this you may need to run `rm -r build ; make distclean ; make test` before the tests will run.
+
 * **If you see wget certificate errors** (for OS X *before* version 10.10/Yosemite):
 
   Via MacPorts:
