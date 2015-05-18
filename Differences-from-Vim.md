@@ -2,8 +2,12 @@
 
 ## Defaults
 
-* `'nocompatible'` is always set (`:set nocp` is ignored; `:set cp` is an **error**)
+* `'backspace'` defaults to `indent,eol,start` [#2639](https://github.com/neovim/neovim/pull/2639)
 * `'encoding'` defaults to `utf-8` [#935](https://github.com/neovim/neovim/pull/935)
+* `'nocompatible'` is always set (`:set nocp` is ignored; `:set cp` is an **error**) [#1622](https://github.com/neovim/neovim/pull/1622)
+* `'ttyfast'` is always set (`:set ttyfast` is ignored; `:set nottyfast` is an **error**) [#1945](https://github.com/neovim/neovim/pull/1945)
+* `'wildmenu'` is set by default [#2677](https://github.com/neovim/neovim/pull/2677)
+* `'wildmode'` defaults to `list:longest,full` [#2677](https://github.com/neovim/neovim/pull/2677)
 
 ## Features
 
