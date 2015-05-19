@@ -93,7 +93,7 @@ A CRUX port is available under [`6c37/neovim`](https://github.com/6c37/crux-port
 
 For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
 
-### Gentoo Linux
+## Gentoo Linux
 
 A snapshot ebuild is now available in Gentoo's official portage repository:
 
@@ -105,13 +105,13 @@ A "live" ebuild can be found in [yngwin's developer overlay](http://cgit.gentooe
 
 For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
 
-### Fedora / RHEL
+## Fedora / RHEL
 
 See http://copr.fedoraproject.org/coprs/gaurdro/neovim/. It's built using the [Copr](https://copr.fedoraproject.org/) automated build system, which is unsupported. There's no guarantee of how long your package will be available after the build finishes.
 
 For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
 
-### Slackware
+## Slackware
 
 See [neovim on SlackBuilds](http://slackbuilds.org/apps/neovim/).
 
