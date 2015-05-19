@@ -13,7 +13,7 @@ If you plan on building Neovim frequently, it's recommended you install [`ninja`
 
 Now that you have the dependencies, you can try other build targets and options, explained below.
 
-## Running the test suite
+## Running tests
 
 ### Integration tests
 
