@@ -169,11 +169,7 @@ General requirements:
 
 Platform-specific dependencies are listed below.
 
-### Ubuntu
-
-    sudo apt-get install libtool libtool-bin autoconf automake cmake g++ pkg-config unzip
-
-### Debian
+### Ubuntu / Debian
 
     sudo apt-get install libtool libtool-bin autoconf automake cmake g++ pkg-config unzip
 
