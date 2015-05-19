@@ -1,10 +1,11 @@
 ## Quick start
 
-If you just cloned [`neovim/neovim`](https://github.com/neovim/neovim) and want to get a working `nvim` binary,
+1. See [build-prerequisites](#build-prerequisites) and install the required software.
+2. Clone [`neovim/neovim`](https://github.com/neovim/neovim).
+3. Build Neovim by running `make`. Note that on BSD systems `gmake` ("GNU Make") should be run instead.
 
-    make
-
-pulls down third-party dependencies (such as libuv and LuaJIT) into `.deps/`, and builds them. [Build prerequisites](#build-prerequisites) such as `libtool` are required for that, but CMake will let you know if something is missing. Install the missing prerequisites, then try `make` again. If there are other problems, refer to the [Troubleshooting wiki page](Troubleshooting#build-issues).
+`make` pulls down third-party dependencies (such as libuv and LuaJIT) into `.deps/`, and builds them. <br/>
+If you encounter issues while attempting to build Neovim, see [Troubleshooting#build-issues](Troubleshooting#build-issues).
 
 To generate the `Makefile`s without building: `make cmake`
 
@@ -164,7 +165,7 @@ When changing `DEPS_PREFIX`, you may need to clear the CMake cache in order for 
 
 General requirements:
 - A recent version of GCC (at least `4.3`) or Clang ([#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
-- CMake (>=2.8.7) built with TLS/SSL support ([#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
+- CMake (at least `2.8.7`) built with TLS/SSL support ([#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
 
 Platform-specific dependencies are listed below.
 
