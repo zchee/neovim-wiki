@@ -4,7 +4,7 @@
 2. Clone [`neovim/neovim`](https://github.com/neovim/neovim).
 3. Build Neovim by running `make`. Note that on BSD systems `gmake` ("GNU Make") should be run instead.
 
-`make` pulls down third-party dependencies (such as libuv and LuaJIT) into `.deps/`, and builds them. <br/>
+`make` pulls down third-party dependencies (such as libuv and LuaJIT) into `.deps/`, and builds them.
 If you encounter issues while attempting to build Neovim, see [Troubleshooting#build-issues](Troubleshooting#build-issues).
 
 To generate the `Makefile`s without building: `make cmake`
