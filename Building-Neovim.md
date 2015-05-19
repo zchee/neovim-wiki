@@ -215,8 +215,6 @@ export AUTOMAKE_VERSION=1.15
 cat > local.mk << EOF
 DEPS_CMAKE_FLAGS := -DUSE_BUNDLED_JEMALLOC=OFF
 EOF
-
-gmake
 ```
 
 jemalloc 3.6.0 doesn't build on OpenBSD, which is why it's being disabled.
