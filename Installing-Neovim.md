@@ -5,7 +5,7 @@ If not, you can still [install Neovim manually](#manual-installation).
 
 Note that the Neovim binary to run is called `nvim`, not `neovim`.
 
-### OS X / [Homebrew](http://brew.sh)
+## OS X / [Homebrew](http://brew.sh)
 
 ```
 brew tap neovim/neovim
@@ -23,7 +23,7 @@ brew reinstall --HEAD neovim
 
 For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
 
-### Linux / [Linuxbrew](http://brew.sh/linuxbrew/)
+## Linux / [Linuxbrew](http://brew.sh/linuxbrew/)
 
 ```
 brew tap neovim/neovim
@@ -43,7 +43,7 @@ brew reinstall --HEAD neovim
 
 For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
 
-### Ubuntu
+## Ubuntu
 
 Neovim has been added to a [Personal Package Archive](https://launchpad.net/~neovim-ppa/+archive/ubuntu/unstable) which allows you to install it using `apt-get` on Ubuntu [12.04 and later](https://wiki.ubuntu.com/Releases).
 
@@ -74,7 +74,7 @@ sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
 sudo update-alternatives --config editor
 ```
 
-### Arch Linux
+## Arch Linux
 
 Neovim can be installed using the PKGBUILD [`neovim-git`](https://aur.archlinux.org/packages/neovim-git), available on the [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository).
 
@@ -87,7 +87,7 @@ For installing the Python modules, you have two alternatives:
 sudo pacman -S python-pip python2-pip
 ```
 
-### CRUX
+## CRUX
 
 A CRUX port is available under [`6c37/neovim`](https://github.com/6c37/crux-ports), along with ports for other dependencies of Neovim.
 
@@ -95,7 +95,7 @@ For instructions on how to install the Python modules, see [`:help nvim_python`]
 
 ### Gentoo Linux
 
-A snapshot ebuild is now available in Gentoo's official portage repository: 
+A snapshot ebuild is now available in Gentoo's official portage repository:
 
 ```
 emerge -a app-editors/neovim
