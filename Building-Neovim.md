@@ -13,13 +13,15 @@ If you plan on building Neovim frequently, it's recommended you install [`ninja`
 
 Now that you have the dependencies, you can try other build targets and options, explained below.
 
-## Integration tests
+## Running the test suite
+
+### Integration tests
 
 To build and run all integration tests:
 
     make test
 
-## Unit tests
+### Unit tests
 
 To build and run all unit tests:
 
@@ -29,13 +31,13 @@ To run a *specific* unit test:
 
     TEST_FILE=test/unit/foo.lua make unittest
 
-## Legacy integration tests
+### Legacy integration tests
 
 To build and run all legacy (Vim) integration tests:
 
     make oldtest
 
-## Functional tests
+### Functional tests
 
 `$GDB` can be set to [run tests under gdbserver](https://github.com/neovim/neovim/pull/1527). If `$VALGRIND` is also set, it will add the `--vgdb=yes` option to valgrind instead of
 starting gdbserver directly.
