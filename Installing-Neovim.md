@@ -117,16 +117,6 @@ See [neovim on SlackBuilds](http://slackbuilds.org/apps/neovim/).
 
 For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
 
-### NixOS
-
-Neovim can be installed from the [unstable channel](http://nixos.org/nixos/manual/#sec-upgrading) using the following command:
-
-```
-nix-env -iA neovim
-```
-
-For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
-
 # Manual Installation
 
 If no package is available for your operating system, you can perform a manual installation. This involves building Neovim and its dependencies, so you must first make sure that all build prerequisites are satisfied (see [build prerequisites](Building-Neovim#build-prerequisites)).
