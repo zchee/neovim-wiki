@@ -36,7 +36,7 @@ to enable core dumping. If you then reproduce a segfault in `nvim`, it will "dum
 lldb .deps/usr/bin/luajit -- .deps/usr/bin/busted --lpath="./build/?.lua" test/unit/
 ```
 
-### Using `gdb` (quick start)
+### Using `gdb`
 
 To attach to a running `nvim` process with a pid of 1234:
 
