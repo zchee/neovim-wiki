@@ -105,6 +105,14 @@ A "live" ebuild can be found in [yngwin's developer overlay](http://cgit.gentooe
 
 For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
 
+## Exherbo Linux
+
+A "scm" exheres is currently available in repository `::exony`:
+
+```
+cave resolve app-editors/neovim::exony
+```
+
 ## Fedora / RHEL
 
 See http://copr.fedoraproject.org/coprs/gaurdro/neovim/. It's built using the [Copr](https://copr.fedoraproject.org/) automated build system, which is unsupported. There's no guarantee of how long your package will be available after the build finishes.
