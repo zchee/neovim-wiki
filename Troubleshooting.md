@@ -1,6 +1,6 @@
 If you run into an error not mentioned here and manage to resolve it, feel free to add it below.
 
-## Runtime issues
+# Runtime issues
 
 ### `E518: Unknown option: [option]`
 
@@ -52,11 +52,20 @@ locale | grep -E 'LANG=.*?.UTF-8'
 ```
 If there's no results, then you might not be using a UTF-8 locale. See the following issues: [#1601](https://github.com/neovim/neovim/issues/1601) [#1858](https://github.com/neovim/neovim/issues/1858) [#2386](https://github.com/neovim/neovim/issues/2386)
 
-## Build issues
+# Build issues
 
 ### General build issues
 
 Run `make distclean && make` to rule out a stale build environment causing the failure.
+
+### Proxy issues [#2482](https://github.com/neovim/neovim/issues/2482)
+
+If your machine is behind a network proxy and you see this error:
+
+    Error: Failed installing dependency: https://rocks.moonscript.org/penlight-1.3.2-2.rockspec 
+    Error fetching file: Failed downloading http://stevedonovan.github.io/files/penlight-1.3.2-core.zip 
+
+this can be fixed by setting the [`https_proxy` environment variable (for cURL)](http://curl.haxx.se/docs/manpage.html).
 
 ### Settings in `local.mk` don't take effect
 
