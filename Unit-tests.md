@@ -36,3 +36,7 @@ make clean && TESTNUM=53 make
 - Make sure the test count increases accordingly in the build log.
 - Make sure the new test contains the same control characters (`^]`, ...) as the old test.
   - Instead of the actual control characters, use an equivalent textual representation (e.g. `<esc>` instead of `^]`). The `legacy2luatest` script does some of these conversions automatically; you are encouraged to extend the script to support more control characters.
+
+## Tips
+
+- Really long `source([=[...]=])` blocks may break syntax highlighting. You can fix this by calling `:syntax sync fromstart`.
