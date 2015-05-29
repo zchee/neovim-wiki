@@ -207,7 +207,7 @@ a PANIC in LuaJIT when trying to install a rock.
 
 ```
 sudo pkg_add gmake cmake libtool unzip autoconf-2.69 automake-1.15
-export AUTOCONF_VERSION=2.69
+export AUTOCONF_VERSION=2.69p
 export AUTOMAKE_VERSION=1.15
 
 cat > local.mk << EOF
