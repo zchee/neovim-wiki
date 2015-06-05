@@ -5,7 +5,7 @@ If you run into an error not mentioned here and manage to resolve it, feel free 
 ### `E518: Unknown option: [option]`
 
 Some options have been removed from Neovim, so you'll encounter this error if you try to use them.
-See [`:help nvim-features-removed`](http://neovim.io/doc/user/nvim-features-removed) for a list of all such options, and [FAQ#how-can-i-tell-if-im-running-nvim-or-vim](https://github.com/neovim/neovim/wiki/FAQ#how-can-i-tell-if-im-running-nvim-or-vim) to avoid such errors.
+See [`:help nvim-features-removed`](http://neovim.io/doc/user/vim_diff.html#nvim-features-removed) for a list of all such options, and [FAQ#how-can-i-tell-if-im-running-nvim-or-vim](https://github.com/neovim/neovim/wiki/FAQ#how-can-i-tell-if-im-running-nvim-or-vim) to avoid such errors.
 
 ### Neovim is slow
 
