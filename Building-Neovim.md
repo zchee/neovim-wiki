@@ -192,7 +192,7 @@ compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
 
 ### FreeBSD 10
 
-    sudo pkg install cmake libtool sha automake pkgconf unzip wget
+    sudo pkg install cmake gmake libtool sha automake pkgconf unzip wget
 
 Note: if you have CMake installed already, you may need to re-install it.  The
 port had to be updated to support TLS/SSL for file downloads, so your installed version may not have
