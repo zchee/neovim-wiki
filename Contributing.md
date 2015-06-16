@@ -10,7 +10,7 @@ Thanks for considering contributing to Neovim.
 - [Port OS layer to libuv](Porting-OS-layer-to-libuv)
 - [Merge patches from upstream Vim](Merging-patches-from-upstream-Vim)
 
-Check this [refactoring catalog](C-Refactorings-and-Code-Smells-Catalog) if you want some inspiration on what to work on.
+Check out this [refactoring catalog](C-Refactorings-and-Code-Smells-Catalog) if you want some inspiration on what to work on.
 
 ## Pull Requests
 
@@ -41,11 +41,11 @@ where `<id>` is the Coverity ID. The id is also called the CID. For an example, 
 
 ### Documentation
 
-Help document Neovim by improving this wiki, or making contributions regarding [`runtime/doc/`](https://github.com/neovim/neovim/tree/master/runtime/doc).
+Help document Neovim by improving this wiki, or work on [`runtime/doc/`](https://github.com/neovim/neovim/tree/master/runtime/doc).
 
 ### Use Neovim
 
-Report bugs you experience under the [issue tracker](https://github.com/neovim/neovim/issues).
+Report bugs you experience in the [issue tracker](https://github.com/neovim/neovim/issues).
 
 ### Give support
 
@@ -53,11 +53,11 @@ Hang around [neovim's Gitter channel](https://gitter.im/neovim/neovim) and answe
 
 ### Help manage the issue tracker
 
-If you spot a duplicate issue, flag it up with a comment. If you see a report lacking in detail, ask for more.
+If you spot a duplicate issue, flag it with a comment. If you see a report lacking in detail, ask for more.
 
 ### Raise awareness
 
-Write about Neovim and show it to your friends
+Write about Neovim and share it with your friends.
 
 ### Money contributions
 
