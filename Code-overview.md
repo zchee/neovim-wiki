@@ -33,7 +33,7 @@ Most code can be found in a file with an obvious name (incomplete list):
 *   [spell.c](../blob/master/src/nvim/spell.c)	   spell checking
 *   [syntax.c](../blob/master/src/nvim/syntax.c)	   syntax and other highlighting
 *   [tag.c](../blob/master/src/nvim/tag.c)	   tags
-*   [term.c](../blob/master/src/nvim/term.c)	   terminal handling, termcap codes
+*   [terminal.c](../blob/master/src/nvim/terminal.c)	   terminal handling, termcap codes
 *   [undo.c](../blob/master/src/nvim/undo.c)	   undo and redo
 *   [window.c](../blob/master/src/nvim/window.c)	   handling split windows
 	
