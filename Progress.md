@@ -39,6 +39,7 @@ Items in the [vNext milestone](https://github.com/neovim/neovim/milestones/vNext
 - Split large, monolithic files (`misc1.c`) into logical units
   (`path.c`, `indent.c`, `keymap.c`, ...)
 - Implement [job control](https://github.com/neovim/neovim/pull/475) ("async")
+- Implement terminal emulator [#2076](https://github.com/neovim/neovim/pull/2076)
 - Rework OOM handling to simplify control flow
 - Remove 8.3 filename support [#635](https://github.com/neovim/neovim/pull/635)
 - Use portable string format tokens [#574](https://github.com/neovim/neovim/pull/574) (improves cross-platform viability)
