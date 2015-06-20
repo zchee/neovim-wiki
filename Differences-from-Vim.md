@@ -2,7 +2,7 @@
 
 ## Defaults
 
-See [`:help nvim-option-defaults`](http://neovim.io/doc/user/vim_diff.html#nvim-option-defaults).
+See [`:help nvim-option-defaults`](http://neovim.io/doc/user/vim_diff.html#nvim-option-defaults) for a list of the new defaults.
 See [#2676](https://github.com/neovim/neovim/issues/2676) for discussion regarding the new defaults, as well as links to the various changes.
 
 ## Features
