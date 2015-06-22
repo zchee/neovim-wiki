@@ -114,15 +114,12 @@ cave resolve app-editors/neovim::exony
 ```
 
 ## Fedora 21/22
-
-~~http://copr.fedoraproject.org/coprs/gaurdro/neovim/~~
  
 http://copr.fedoraproject.org/coprs/dperson/neovim/
 
 ```
 dnf copr enable dperson/neovim
 dnf install neovim
-sudo pip install neovim
 ```
 
 It's built using the [Copr](https://copr.fedoraproject.org/) automated build system, which is unsupported. There's no guarantee of how long your package will be available after the build finishes.
