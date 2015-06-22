@@ -113,7 +113,7 @@ A "scm" exheres is currently available in repository `::exony`:
 cave resolve app-editors/neovim::exony
 ```
 
-## Fedora / RHEL
+## Fedora 21/22
 
 ~~http://copr.fedoraproject.org/coprs/gaurdro/neovim/~~
  
