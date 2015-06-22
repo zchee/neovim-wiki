@@ -115,7 +115,17 @@ cave resolve app-editors/neovim::exony
 
 ## Fedora / RHEL
 
-See http://copr.fedoraproject.org/coprs/gaurdro/neovim/. It's built using the [Copr](https://copr.fedoraproject.org/) automated build system, which is unsupported. There's no guarantee of how long your package will be available after the build finishes.
+~~http://copr.fedoraproject.org/coprs/gaurdro/neovim/~~
+ 
+http://copr.fedoraproject.org/coprs/dperson/neovim/
+
+```
+dnf copr enable dperson/neovim
+dnf install neovim
+sudo pip install neovim
+```
+
+It's built using the [Copr](https://copr.fedoraproject.org/) automated build system, which is unsupported. There's no guarantee of how long your package will be available after the build finishes.
 
 For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
 
