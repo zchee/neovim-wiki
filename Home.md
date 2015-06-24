@@ -29,6 +29,7 @@
     - [Integer type semantics](Integer-types-refactoring-guidelines)
 - [Documentation](http://neovim.io/doc/)
     - [Plugin Architecture](Plugin-UI-architecture)
+    - [API](API)
     - [Code overview](Code-overview)
     - [How to generate function callgraphs with doxygen](Generate-callgraphs-with-Doxygen)
 
