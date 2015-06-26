@@ -36,22 +36,4 @@ A compatibility layer is provided ([#872](https://github.com/neovim/neovim/pull/
 
 ## Removed legacy features
 
-*These legacy Vim features were intentionally removed from Neovim.*
-
-* Removed support for 8.3 filesystem/shortnames [#635](https://github.com/neovim/neovim/pull/635)
-* [EBCDIC](https://en.wikipedia.org/wiki/EBCDIC) support
-* Encryption/blowfish/`cryptmethod`/`key` [#699](https://github.com/neovim/neovim/pull/699). (May be partially restored by [#701](https://github.com/neovim/neovim/issues/701))
-* `:shell` [#450](https://github.com/neovim/neovim/pull/450)
-* `'shelltype'` [#1240](https://github.com/neovim/neovim/pull/1240)
-* `:mode` does not accept an argument (this was for MS-DOS) [#588](https://github.com/neovim/neovim/pull/588)
-* `'bioskey'` [#1353](https://github.com/neovim/neovim/pull/1353)
-* `'conskey'` [#1353](https://github.com/neovim/neovim/pull/1353)
-* `'textauto'` [#559](https://github.com/neovim/neovim/pull/559)
-* `'textmode'` [#540](https://github.com/neovim/neovim/pull/540)
-* `'ttyfast'` [#1945](https://github.com/neovim/neovim/issues/1945)
-* `'edcompatible'` [#1911](https://github.com/neovim/neovim/issues/1911)
-* "Easy mode" (`eview`, `evim`, `vim -y`) [#1656](https://github.com/neovim/neovim/pull/1656)
-* "Vi mode" (`nvim -v`) [#2008](https://github.com/neovim/neovim/pull/2008)
-* `(g)vimdiff` (solely an alias for `(g)vim -d`) 
-* The ability to start `nvim` via aliases has been removed in favor
-of using the existing command line arguments ([#2008](https://github.com/neovim/neovim/pull/2008) [#1849](https://github.com/neovim/neovim/pull/1849))
+See [`:help nvim-features-removed`](http://neovim.io/doc/user/vim_diff.html#nvim-features-removed) for a list of the features intentionally removed from Neovim.
