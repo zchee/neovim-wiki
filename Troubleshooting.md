@@ -2,6 +2,18 @@ If you run into an error not mentioned here and manage to resolve it, feel free 
 
 # Runtime issues
 
+### I can't get Python support to work!
+
+Try executing the following commands from within Neovim to see which Python interpreter is detected by Neovim:
+
+```vim
+:let [interp, errors] = provider#pythonx#Detect(2)  " Can also be used to check for Python 3.
+:echo interp  " If empty, Neovim didn't find a suitable Python interpreter.
+:echo errors  " Shows which Python interpreters Neovim checked.
+```
+
+Also see [`:h nvim-python`](http://neovim.io/doc/user/nvim_python.html).
+
 ### `E518: Unknown option: [option]`
 
 Some options have been removed from Neovim, so you'll encounter this error if you try to use them.
