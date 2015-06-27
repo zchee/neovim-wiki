@@ -2,7 +2,7 @@ If you run into an error not mentioned here and manage to resolve it, feel free 
 
 # Runtime issues
 
-### I can't get Python support to work!
+### Python support isn't working
 
 Try executing the following commands from within Neovim to see which Python interpreter is detected by Neovim:
 
@@ -12,7 +12,7 @@ Try executing the following commands from within Neovim to see which Python inte
 :echo errors  " Shows which Python interpreters Neovim checked.
 ```
 
-Also see [`:h nvim-python`](http://neovim.io/doc/user/nvim_python.html).
+Also see [`:help nvim-python`](http://neovim.io/doc/user/nvim_python.html).
 
 ### `E518: Unknown option: [option]`
 
