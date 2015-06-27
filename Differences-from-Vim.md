@@ -1,4 +1,6 @@
-***IMPORTANT***: This page is only an addendum to [`:help vim-differences`](http://neovim.io/doc/user/vim_diff.html#vim-differences), which should be the first place to check.
+## **IMPORTANT**
+
+This page is only an addendum to [`:help vim-differences`](http://neovim.io/doc/user/vim_diff.html#vim-differences), which should be the first place to check.
 
 ## Features
 
