@@ -2,6 +2,10 @@
 
 There's a good chance `[feature]` is already documented under [`:help nvim_intro.txt`](http://neovim.io/doc/user/nvim_intro.html).
 
+### Can I use Lua/Ruby-based Vim plugins?
+
+No. `if_lua` (e.g. neocomplete) and `if_ruby` (e.g. LustyExplorer) plugins are not (yet) supported in Neovim.
+
 ### How can I tell if I'm running `nvim` or `vim`?
 
 ```vim
