@@ -7,41 +7,11 @@ Note that the Neovim binary to run is called `nvim`, not `neovim`.
 
 ## OS X / [Homebrew](http://brew.sh)
 
-```
-brew tap neovim/neovim
-brew install --HEAD neovim
-```
-
-For troubleshooting hints, see the README of [neovim/homebrew-neovim](https://github.com/neovim/homebrew-neovim).
-
-To **upgrade** from a previous version:
-
-```
-brew update
-brew reinstall --HEAD neovim
-```
-
-For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
+See the [README of `neovim/homebrew-neovim`](https://github.com/neovim/homebrew-neovim/blob/master/README.md) for installation instructions.
 
 ## Linux / [Linuxbrew](http://brew.sh/linuxbrew/)
 
-```
-brew tap neovim/neovim
-brew install --HEAD neovim
-```
-
-For troubleshooting hints, see the README of [neovim/homebrew-neovim](https://github.com/neovim/homebrew-neovim).
-
-To **upgrade** from a previous version:
-
-```
-brew update
-brew reinstall --HEAD neovim
-```
-
-**Note**: If you encounter the error `CMAKE_USE_SYSTEM_CURL is ON but a curl is not found`, then you're missing the dependency for cURL that allows downloads over TLS. Refer to your operating system's section in [Linuxbrew Dependencies](https://github.com/Homebrew/linuxbrew#dependencies) to fix this.
-
-For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
+See the [README of `neovim/homebrew-neovim`](https://github.com/neovim/homebrew-neovim/blob/master/README.md) for installation instructions.
 
 ## Ubuntu
 
