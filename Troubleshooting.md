@@ -68,6 +68,14 @@ locale | grep -E 'LANG=.*?.UTF-8'
 ```
 If there's no results, then you might not be using a UTF-8 locale. See the following issues: [#1601](https://github.com/neovim/neovim/issues/1601) [#1858](https://github.com/neovim/neovim/issues/1858) [#2386](https://github.com/neovim/neovim/issues/2386)
 
+### Pressing `ESC` when running nvim in tmux inserts characters
+
+Try setting your escape time to a low value (or even zero) in your `.tmux.conf`:
+
+```tmux
+set -g escape-time 10
+```
+
 # Build issues
 
 ### General build issues
