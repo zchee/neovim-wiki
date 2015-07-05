@@ -26,9 +26,11 @@ Core dumps are [disabled  by default on Ubuntu](http://stackoverflow.com/a/18368
 
     ulimit -c unlimited
 
-to enable core dumping. If you then reproduce a segfault in `nvim`, it will "dump core". Typically this means a `core` file will appear in the current directory (or check `/var/log/apport.log` to see where it was written). You can then get a backtrace from the `core` with:
+to enable core dumping. If you then reproduce a segfault in `nvim`, it will "dump core". Typically this means a `core` file will appear in the current directory (or check `/var/log/apport.log` to see where it was written) unless you are on OSX, and then and it should appear in `/core/`
 
-    gdb -q -n -ex bt -batch ./build/bin/nvim core > backtrace.txt
+Following this, You can then get a backtrace from the `core` with:
+
+    gdb -q -n -ex bt -batch ./build/bin/nvim <path/to/core> > backtrace.txt
 
 ### Using `lldb` to step through unit tests
 
