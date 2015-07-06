@@ -10,11 +10,11 @@
 ### For users
 
 - [Installing Neovim](Installing-Neovim)
-- [Differences from Vim](Differences-from-vim)
 - [Documentation](http://neovim.io/doc/)
-     - [User manual](http://neovim.io/doc/user/) (`:help`)
-     - [Neovim feature reference](http://neovim.io/doc/user/nvim_intro.html) (`:help nvim-intro`)
-     - [Python plugins](http://neovim.io/doc/user/nvim_python.html) (`:help nvim-python`)
+    - [User manual](http://neovim.io/doc/user/) (`:help`)
+    - [Neovim feature reference](http://neovim.io/doc/user/nvim_intro.html) (`:help nvim-intro`)
+    - [Differences from Vim](http://neovim.io/doc/user/vim_diff.html) (`:help vim-differences`)
+    - [Python plugins](http://neovim.io/doc/user/nvim_python.html) (`:help nvim-python`)
 
 ### For developers
 
