@@ -122,10 +122,10 @@ To avoid the first error, a LuaRocks mirror can be used:
 
 ```
 $ cat >> .deps/usr/etc/luarocks/config-5.1.lua << "EOF"
-rocks_servers={ 
-  "http://luarocks.giga.puc-rio.br/" 
-}
-EOF
+> rocks_servers={ 
+>  "http://luarocks.giga.puc-rio.br/" 
+> }
+> EOF
 $ make cmake
 ```
 
