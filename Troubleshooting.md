@@ -76,6 +76,16 @@ Try setting your escape time to a low value (or even zero) in your `.tmux.conf`:
 set -g escape-time 10
 ```
 
+# Installation issues
+
+### Generating helptags failed
+
+If re-installation fails with `Generating helptags failed`, try removing the previously installed runtime directory (if `CMAKE_INSTALL_PREFIX` is not set during building, the default is `/usr/local/share/nvim`):
+
+```
+$ rm -r /usr/local/share/nvim
+```
+
 # Build issues
 
 ### General build issues
