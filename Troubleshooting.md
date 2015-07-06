@@ -109,7 +109,7 @@ CMake caches build settings, so you might need to run `rm -r build && make` afte
 
 `configure_file Problem configuring file`
 
-This is probably a permissions issue, which can happen if you run `sudo make` or `make` as the root user, then later run an unprivileged `make`. To fix this, run `rm -rf build` and try again.
+This is probably a permissions issue, which can happen if you run `make` as the root user, then later run an unprivileged `make`. To fix this, run `rm -rf build` and try again.
 
 ### Lua packages
 
