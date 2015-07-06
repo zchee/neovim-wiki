@@ -17,7 +17,7 @@ endif
 ### How can I use true colors in the terminal?
 
 ```vim
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+:let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 ```
 
 See [this gist](https://gist.github.com/XVilka/8346728) for more information about true colors, such as what terminals support it.
@@ -25,7 +25,7 @@ See [this gist](https://gist.github.com/XVilka/8346728) for more information abo
 ### How can I change the cursor shape in the terminal?
 
 ```vim
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+:let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 ```
 
 This enables a narrow cursor in insert-mode, and a wide cursor in normal-mode. The environment variable is a temporary measure, and finer-grained control may be supported in the future.
