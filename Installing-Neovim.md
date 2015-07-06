@@ -117,23 +117,24 @@ $ which -a nvim
 {path to your $HOME}/neovim/bin/nvim
 ```
 
-**Note**: If you want to change the install location after you have already executed `make`, you need to remove the `build` directory to delete CMake's cache, so it regenerates it on the next invocation of `make`:
+--------------
+
+If you want to change the install location after you have already executed `make`, you need to remove the `build` directory to delete CMake's cache, so it regenerates it on the next invocation of `make`:
 
 ```
-$ make install
 $ rm -r ./build
 $ make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/other/location" install
 ```
 
-Alternatively, `nvim` can be run directly from the build directory:
+Alternatively, `nvim` can be run directly from the build directory. You might want to define an alias for this in your shell's configuration file, or just export the `$VIMRUNTIME` environment variable:
 
 ```
-# Compile
-make
-# You might want to define an alias for this in your shell's configuration file,
-# or just export the `$VIMRUNTIME` environment variable.
-env VIMRUNTIME="$(realpath runtime)" build/bin/nvim
-# Generate help tags (from inside nvim)
+$ env VIMRUNTIME="$(realpath runtime)" build/bin/nvim
+```
+
+After that, run the following from inside `nvim`:
+
+```vim
 :helptags $VIMRUNTIME/doc
 ```
 
