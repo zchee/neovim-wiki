@@ -3,3 +3,8 @@ It's purpose is only to document breaking changes, so should NOT be used as a re
 
 If you haven't already, see either [Building-Neovim](https://github.com/neovim/neovim/wiki/Building-Neovim)
 or [Installing-Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim), depending on your preferred installation method.
+
+------------
+
+Since this page was just created, no breaking changes have happened so far.
+When one does occur, please remove this note and consider following a format similar to that found here: http://www.openbsd.org/faq/current.html
