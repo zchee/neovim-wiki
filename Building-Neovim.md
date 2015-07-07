@@ -1,6 +1,6 @@
 ## Quick start
 
-1. See [build-prerequisites](#build-prerequisites) and install the required software.
+1. Verify that you have installed the [build prerequisites](#build-prerequisites).
 2. Clone [`neovim/neovim`](https://github.com/neovim/neovim).
 3. Build Neovim by running `make`. Note that on BSD systems `gmake` ("GNU Make") should be run instead.
 
