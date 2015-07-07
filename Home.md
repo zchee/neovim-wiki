@@ -10,6 +10,7 @@
 ### For users
 
 - [Installing Neovim](Installing-Neovim)
+- [Following HEAD](Following-HEAD)
 - [Documentation](http://neovim.io/doc/)
     - [User manual](http://neovim.io/doc/user/) (`:help`)
     - [Neovim feature reference](http://neovim.io/doc/user/nvim_intro.html) (`:help nvim-intro`)
