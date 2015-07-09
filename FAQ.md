@@ -10,7 +10,15 @@ No; the legacy interfaces required by plugins such as [neocomplete](https://gith
 
 ```vim
 if has('nvim')
-   set option_not_in_vim=1
+...
+endif
+```
+
+For a more granular approach, use the [`exists()`](http://neovim.io/doc/user/eval.html#exists%28%29) function:
+
+```vim
+if exists(':tnoremap')
+...
 endif
 ```
 
