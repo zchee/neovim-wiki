@@ -36,9 +36,9 @@ See [this gist](https://gist.github.com/XVilka/8346728) for more information abo
 :let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 ```
 
-This enables a narrow cursor in insert-mode, and a wide cursor in normal-mode. The environment variable is a temporary measure, and finer-grained control may be supported in the future.
+This makes the cursor a pipe in insert-mode, and a block in normal-mode. The environment variable is a temporary measure; finer-grained control may be supported in the future.
 
-`t_SI` and `t_EI` (which are [non-standard](https://groups.google.com/d/msg/vim_dev/biVcXiYcLRw/zumrjo6gP4oJ)) are ignored, as are most terminal codes. 
+The escape sequences `t_SI` and `t_EI` (which are [non-standard](https://groups.google.com/d/msg/vim_dev/biVcXiYcLRw/zumrjo6gP4oJ)) are ignored, as are most terminal codes. 
 
 Note about gnome-terminal 3.6.2 (libvte-2.90-9): https://github.com/neovim/neovim/issues/2537
 
@@ -48,7 +48,7 @@ See [#810](https://github.com/neovim/neovim/pull/810) and [#1749](https://github
 
 ### Why was Lua chosen for writing tests and implementing Vimscript?
 
-Lua is a very small language, but it provides everything we need to implement a language like Vimscript, which was created to configure and script the editor. The biggest advantage that languages like Python or Ruby have over Lua are their huge library collection, but that isn't a factor for our main use case which is to remove thousands of lines of C by using Lua as a Vimscript runtime. If you are still not convinced about Lua, you might want to read [this post](http://blog.datamules.com/blog/2012/01/30/why-lua/).
+Lua is a very small language, but it provides everything we need to implement a language like Vimscript, which was created to configure and script the editor. The biggest advantage that languages like Python or Ruby have over Lua are their huge library collections, but that isn't a factor for our main use case which is to remove thousands of lines of C by using Lua as a Vimscript runtime. If you are still not convinced about Lua, you might want to read [this post](http://blog.datamules.com/blog/2012/01/30/why-lua/).
 
 ### Lua and Vimscript are distinct languages with different semantics, how can Lua be used as a runtime for Vimscript?
 
