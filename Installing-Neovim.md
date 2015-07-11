@@ -121,7 +121,7 @@ If you appended `$HOME/neovim/bin` to your `$PATH`, running `which -a nvim` shou
 If you want to change the install location after you have already executed `make`, you need to remove the `build` directory to delete CMake's cache, so it regenerates it on the next invocation of `make`:
 
 ```
-rm -r ./build
+rm -r build
 make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/other/location" install
 ```
 
