@@ -76,7 +76,7 @@ For instructions on how to install the Python modules, see [`:help nvim_python`]
 A "scm" exheres is currently available in repository `::exony`:
 
 ```
-$ cave resolve app-editors/neovim::exony
+cave resolve app-editors/neovim::exony
 ```
 
 ## Fedora 21/22
@@ -107,7 +107,7 @@ Afterwards, you can install Neovim into `/usr/local` by running `make install` (
 To install Neovim to a directory of your choice, run the following command instead:
 
 ```
-$ make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/neovim" install
+make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/neovim" install
 ```
 
 If you appended `$HOME/neovim/bin` to your `$PATH`, running `which -a nvim` should print the following:
