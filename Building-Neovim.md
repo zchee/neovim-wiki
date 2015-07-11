@@ -122,7 +122,8 @@ Here's a sample `local.mk` which adds a target to force a rebuild but *does not*
 all:
 
 rebuild:
-	rm -rf build && make
+	rm -rf build
+	make
 ```
 
 ## Controlling the build for third-party dependencies ([#1588](https://github.com/neovim/neovim/pull/1588))
