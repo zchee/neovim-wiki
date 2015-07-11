@@ -27,7 +27,7 @@ See [`:help nvim-features-removed`](http://neovim.io/doc/user/vim_diff.html#nvim
 
 Make sure you're running an optimized build of `nvim`. To check this, run this:
 
-    $ nvim --version | grep 'Build type'
+    nvim --version | grep 'Build type'
 
 This should yield one of the following:
 
@@ -45,7 +45,7 @@ If you're using a third-party package, please inform the maintainer.
 From a shell, run `TERM=xterm-256color nvim`. If colors are displayed correctly, then export that value of `TERM` in your user profile (usually `~/.profile`):
 
 ```
-$ export TERM=xterm-256color
+export TERM=xterm-256color
 ```
 
 If you're using `tmux`, instead add this to your `tmux.conf`:
@@ -64,7 +64,7 @@ For GNU `screen`, [configure your `.screenrc`](https://wiki.archlinux.org/index.
 
 Run the following from the command line:
 ```
-$ locale | grep -E '(LANG|LC_CTYPE)=(.*\.)?UTF-8'
+locale | grep -E '(LANG|LC_CTYPE)=(.*\.)?UTF-8'
 ```
 If there's no results, then you might not be using a UTF-8 locale. See the following issues: [#1601](https://github.com/neovim/neovim/issues/1601) [#1858](https://github.com/neovim/neovim/issues/1858) [#2386](https://github.com/neovim/neovim/issues/2386)
 
@@ -118,16 +118,15 @@ The Lua packages required by the build process should be automatically installed
 - The LuaRocks servers are down.
 - The program `unzip` isn't found. If this is the case, LuaRocks will report something like this: `Warning: Failed searching manifest: Failed loading manifest: Failed extracting manifest file`.
 
-To avoid the first error, a LuaRocks mirror can be used:
+To avoid the first error, a LuaRocks mirror can be used by creating the file `.deps/usr/etc/luarocks/config-5.1.lua` with the following contents:
 
 ```
-$ cat >> .deps/usr/etc/luarocks/config-5.1.lua << "EOF"
-> rocks_servers={ 
->  "http://luarocks.giga.puc-rio.br/" 
-> }
-> EOF
-$ make cmake
+rocks_servers={ 
+ "http://luarocks.giga.puc-rio.br/" 
+}
 ```
+
+After that, run `make cmake`.
 
 Failing the above, you can always try installing the following packages manually:
 
