@@ -19,23 +19,23 @@ Now that you have the dependencies, you can try other build targets and options,
 
 To build and run all integration tests:
 
-    $ make test
+    make test
 
 ### Unit tests
 
 To build and run all unit tests:
 
-    $ make unittest
+    make unittest
 
 To run a *specific* unit test:
 
-    $ TEST_FILE=test/unit/foo.lua make unittest
+    TEST_FILE=test/unit/foo.lua make unittest
 
 ### Legacy integration tests
 
 To build and run all legacy (Vim) integration tests:
 
-    $ make oldtest
+    make oldtest
 
 ### Functional tests
 
@@ -44,20 +44,28 @@ starting gdbserver directly.
 
 ## Optimized builds
 
-    $ rm -r build && make clean && make CMAKE_BUILD_TYPE=Release
+```
+rm -r build
+make clean
+make CMAKE_BUILD_TYPE=Release
+```
 
 For developers and "edge" users, `RelWithDebInfo` is recommended over `Release` as the latter doesn't generate debug info.
 
 To verify that the build was optimized, you can set `VERBOSE=1` and look for the `-O` flag:
 
 ```
-$ rm -r build && make VERBOSE=1 CMAKE_BUILD_TYPE=MinSizeRel | grep -E '\-O(2|s|g)'
-$ cc -DHAVE_CONFIG_H -DINCLUDE_GENERATED_DECLARATIONS -Os ... -Wall -Wextra -pedantic -Wno-unused-parameter -Wstrict-prototypes -std=gnu99 ...
+rm -r build && make VERBOSE=1 CMAKE_BUILD_TYPE=MinSizeRel | grep -E '\-O(2|s|g)'
+cc -DHAVE_CONFIG_H -DINCLUDE_GENERATED_DECLARATIONS -Os ... -Wall -Wextra -pedantic -Wno-unused-parameter -Wstrict-prototypes -std=gnu99 ...
 ```
 
 An alternative to `CMAKE_BUILD_TYPE`:
 
-    $ rm -r build && make cmake CFLAGS='-Wno-error -O2 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1' && make
+```
+rm -r build
+make cmake CFLAGS='-Wno-error -O2 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1'
+make
+```
 
 - `-U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1` is required because of [#223](https://github.com/neovim/neovim/issues/223).
 - To see the full build output (including flags send to the compiler by make/CMake), change the `make` step to `VERBOSE=1 make`
@@ -86,7 +94,7 @@ To update the `src/nvim/po/$LANG.po` file with the latest strings from sources, 
 To see the chain of includes, use the `-H` option ([#918](https://github.com/neovim/neovim/issues/918)):
 
 ```
-$ echo '#include "./src/nvim/buffer.h"' | \
+echo '#include "./src/nvim/buffer.h"' | \
 > clang -I.deps/usr/include -Isrc -std=c99 -P -E -H - 2>&1 1>/dev/null | \
 > grep -v '/usr/'
 ```
@@ -100,7 +108,7 @@ CMake has a `-G` option for exporting to multiple [project file formats](http://
 
 For example, to use Xcode's static analysis GUI ([#167](https://github.com/neovim/neovim/issues/167#issuecomment-36136018)), you need to generate an Xcode project file from the Neovim makefile (where `neovim/` is the top-level Neovim source code directory containing the main `Makefile`):
 
-    $ cmake -G Xcode neovim
+    cmake -G Xcode neovim
 
 then open the resulting project file in Xcode.
 
@@ -122,37 +130,37 @@ rebuild:
 To build the bundled dependencies using CMake:
 
 ```
-$ mkdir .deps
-$ cd .deps
-$ cmake ../third-party
-$ make
+mkdir .deps
+cd .deps
+cmake ../third-party
+make
 ```
 
 By default, the libraries and headers are placed in `.deps/usr`, afterwards you can build Neovim using:
 
 ```
-$ mkdir build
-$ cd build
-$ cmake ..
-$ make
+mkdir build
+cd build
+cmake ..
+make
 ```
 
-You can build the dependencies in a different location using:
+You can build the dependencies in a different location:
 
 ```
-$ mkdir deps2
-$ cd deps2
-$ cmake ../third-party/
-$ make
-$ cd ..
+mkdir deps2
+cd deps2
+cmake ../third-party/
+make
+cd ..
 ```
 
-And then build Neovim using:
+And then build Neovim:
 
 ```
-$ mkdir build
-$ cd build
-$ cmake -DDEPS_PREFIX=../deps2/usr ..
+mkdir build
+cd build
+cmake -DDEPS_PREFIX=../deps2/usr ..
 ```
 
 When changing `DEPS_PREFIX`, you may need to clear the CMake cache in order for the changes to take effect.
@@ -173,26 +181,26 @@ Platform-specific dependencies are listed below.
 
 ### Ubuntu / Debian
 
-    $ sudo apt-get install libtool libtool-bin autoconf automake cmake g++ pkg-config unzip
+    sudo apt-get install libtool libtool-bin autoconf automake cmake g++ pkg-config unzip
 
 ### CentOS/RHEL/Fedora
 
 If you're using CentOS/RHEL 6 you need at least autoconf version 2.69 for
 compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
 
-    $ sudo yum -y install autoconf automake cmake gcc gcc-c++ libtool make pkgconfig unzip
+    sudo yum -y install autoconf automake cmake gcc gcc-c++ libtool make pkgconfig unzip
 
 ### openSUSE
 
-    $ sudo zypper install libtool autoconf automake cmake gcc-c++
+    sudo zypper install libtool autoconf automake cmake gcc-c++
 
 ### Arch Linux
 
-    $ sudo pacman -S base-devel cmake unzip
+    sudo pacman -S base-devel cmake unzip
 
 ### FreeBSD 10
 
-    $ sudo pkg install cmake gmake libtool sha automake pkgconf unzip wget
+    sudo pkg install cmake gmake libtool sha automake pkgconf unzip wget
 
 If you get an error regarding a sha256sum mismatch, where
 the actual sha256sum is `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`, then this is your issue (that's the sha256sum of an empty file). Also, make sure you have wget installed.
@@ -202,15 +210,15 @@ a PANIC in LuaJIT when trying to install a rock.
 ### OpenBSD -current
 
 ```
-# pkg_add gmake cmake libtool unzip autoconf-2.69p1 automake-1.15
-$ export AUTOCONF_VERSION=2.69
-$ export AUTOMAKE_VERSION=1.15
+pkg_add gmake cmake libtool unzip autoconf-2.69p1 automake-1.15
+export AUTOCONF_VERSION=2.69
+export AUTOMAKE_VERSION=1.15
 ```
 
 Additionally, jemalloc 3.6.0 doesn't build on OpenBSD, so it must be disabled:
 
 ```
-$ cat > local.mk << EOF
+cat > local.mk << EOF
 > DEPS_CMAKE_FLAGS := -DUSE_BUNDLED_JEMALLOC=OFF
 > EOF
 ```
@@ -224,11 +232,11 @@ $ cat > local.mk << EOF
 
   Via MacPorts:
 
-      $ sudo port install libtool autoconf automake cmake pkgconfig gettext
+      sudo port install libtool autoconf automake cmake pkgconfig gettext
       
   Via Homebrew:
 
-      $ brew install libtool automake cmake pkg-config gettext
+      brew install libtool automake cmake pkg-config gettext
 
 * After this you may need to run `make distclean && make` before the tests will run.
 
@@ -236,10 +244,10 @@ $ cat > local.mk << EOF
 
   Via MacPorts:
 
-      $ sudo port install curl-ca-bundle
-      $ echo CA_CERTIFICATE=/opt/local/share/curl/curl-ca-bundle.crt >> ~/.wgetrc
+      sudo port install curl-ca-bundle
+      echo CA_CERTIFICATE=/opt/local/share/curl/curl-ca-bundle.crt >> ~/.wgetrc
 
   Via Homebrew:
 
-      $ brew install curl-ca-bundle
-      $ echo CA_CERTIFICATE=$(brew --prefix curl-ca-bundle)/share/ca-bundle.crt >> ~/.wgetrc
+      brew install curl-ca-bundle
+      echo CA_CERTIFICATE=$(brew --prefix curl-ca-bundle)/share/ca-bundle.crt >> ~/.wgetrc
