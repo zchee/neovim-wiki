@@ -16,15 +16,15 @@ Neovim has been added to a [Personal Package Archive](https://launchpad.net/~neo
 Run the following commands:
 
 ```
-$ sudo add-apt-repository ppa:neovim-ppa/unstable
-$ sudo apt-get update
-$ sudo apt-get install neovim
+sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo apt-get update
+sudo apt-get install neovim
 ```
 
 Prerequisites for the Python modules:
 
 ```
-$ sudo apt-get install python-dev python-pip python3-dev python3-pip
+sudo apt-get install python-dev python-pip python3-dev python3-pip
 ```
 
 For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
@@ -32,12 +32,12 @@ For instructions on how to install the Python modules, see [`:help nvim_python`]
 If you want to use Neovim for some (or all) of the editor alternatives, use the following commands:
 
 ```
-$ sudo update-alternatives --install /usr/bin/vi vi /usr/bin/nvim 60
-$ sudo update-alternatives --config vi
-$ sudo update-alternatives --install /usr/bin/vim vim /usr/bin/nvim 60
-$ sudo update-alternatives --config vim
-$ sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
-$ sudo update-alternatives --config editor
+sudo update-alternatives --install /usr/bin/vi vi /usr/bin/nvim 60
+sudo update-alternatives --config vi
+sudo update-alternatives --install /usr/bin/vim vim /usr/bin/nvim 60
+sudo update-alternatives --config vim
+sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
+sudo update-alternatives --config editor
 ```
 
 ## Arch Linux
@@ -50,7 +50,7 @@ For installing the Python modules, you have two alternatives:
  * Install `pip` and follow the instructions at [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html):
 
 ```
-$ sudo pacman -S python-pip python2-pip
+sudo pacman -S python-pip python2-pip
 ```
 
 ## CRUX
@@ -64,7 +64,7 @@ For instructions on how to install the Python modules, see [`:help nvim_python`]
 A snapshot ebuild is now available in Gentoo's official portage repository:
 
 ```
-$ emerge -a app-editors/neovim
+emerge -a app-editors/neovim
 ```
 
 A "live" ebuild can be found in [yngwin's developer overlay](http://cgit.gentooexperimental.org/dev/yngwin.git/tree/app-editors/neovim).
@@ -84,8 +84,8 @@ $ cave resolve app-editors/neovim::exony
 http://copr.fedoraproject.org/coprs/dperson/neovim/
 
 ```
-$ dnf copr enable dperson/neovim
-$ dnf install neovim
+dnf copr enable dperson/neovim
+dnf install neovim
 ```
 
 It's built using the [Copr](https://copr.fedoraproject.org/) automated build system, which is unsupported. There's no guarantee of how long your package will be available after the build finishes.
@@ -110,10 +110,9 @@ To install Neovim to a directory of your choice, run the following command inste
 $ make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/neovim" install
 ```
 
-If you appended `$HOME/neovim/bin` to your `$PATH`, you should be able to see the following:
+If you appended `$HOME/neovim/bin` to your `$PATH`, running `which -a nvim` should print the following:
 
 ```
-$ which -a nvim
 {path to your $HOME}/neovim/bin/nvim
 ```
 
@@ -122,14 +121,14 @@ $ which -a nvim
 If you want to change the install location after you have already executed `make`, you need to remove the `build` directory to delete CMake's cache, so it regenerates it on the next invocation of `make`:
 
 ```
-$ rm -r ./build
-$ make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/other/location" install
+rm -r ./build
+make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/other/location" install
 ```
 
 Alternatively, `nvim` can be run directly from the build directory. You might want to define an alias for this in your shell's configuration file, or just export the `$VIMRUNTIME` environment variable:
 
 ```
-$ env VIMRUNTIME="$(realpath runtime)" build/bin/nvim
+env VIMRUNTIME="$(realpath runtime)" build/bin/nvim
 ```
 
 After that, run the following from inside `nvim`:
