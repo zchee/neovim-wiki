@@ -128,7 +128,7 @@ make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/other/location" instal
 Alternatively, `nvim` can be run directly from the build directory. You might want to define an alias for this in your shell's configuration file, or just export the `$VIMRUNTIME` environment variable:
 
 ```
-env VIMRUNTIME="$(realpath runtime)" build/bin/nvim
+env VIMRUNTIME="$(readlink -f runtime)" build/bin/nvim
 ```
 
 After that, run the following from inside `nvim`:
