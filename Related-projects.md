@@ -21,6 +21,7 @@
 |-------------|--------------------------------------------------------------------------------------|
 | C++/Qt5     | [equalsraf/neovim-qt](https://github.com/equalsraf/neovim-qt)                        |
 | C++/ncurses | [SoC/neovim-client](https://github.com/splinterofchaos/neovim-cpp-client-experiment) |
+| C#          | [Pireax/neovim.cs](https://github.com/Pireax/neovim.cs)                              |
 | Clojure     | [jebberjeb/neovim-client](https://github.com/jebberjeb/neovim-client)                |
 | Elixir      | [awetzel/neovim-elixir](https://github.com/awetzel/neovim-elixir)                    |
 | Go          | [myitcv/neovim](https://github.com/myitcv/neovim)                                    |
