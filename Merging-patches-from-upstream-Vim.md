@@ -9,8 +9,8 @@ Everyone is welcome to send pull requests for relevant Vim patches (see [below](
 - **Compiler warning fixes**: Neovim strives to have no warnings at all, and has a very different build system from Vim.
 - **#ifdef tweaking**: For example, Vim decided to enable `FEAT_VISUAL` for all platforms — but Neovim already does that. Adding new `FEAT_` guards also isn't relevant to Neovim.
 - **Legacy system support**: Fixes for legacy systems such as Solaris, Amiga, OS/2 Xenix, Mac OS 9, Windows older than XP SP2, are not needed because they are not supported by Neovim.
-- **plugin related** changes: Neovim have a different plugin architecture from vim, and plugin related files (if_*.c|h except if_cscope.c|h) are removed from Neovim.
-- **term related** changes: Neovim implement a new terminal interface, and remove term.c|h in vim.
+- **`if_*.c`** changes: `if_python.c` et. al. were removed.
+- **term.c** changes: the Neovim TUI uses libvterm to read terminal sequences; Vim's `term.c` was removed.
 - Most **GUI-related** changes: Neovim GUIs are implemented external to the core C codebase.
 
 Anything else might be relevant; err on the side of caution, and post an issue if you aren't sure. 
