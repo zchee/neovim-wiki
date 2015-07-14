@@ -20,17 +20,27 @@ https://github.com/splinterofchaos/neovim-cpp-client-experiment/blob/master/src/
 
 ## Debugging
 
-### Core dumps
+### Backtrace (Linux)
 
-Core dumps are [disabled  by default on Ubuntu](http://stackoverflow.com/a/18368068/152142), OS X, CentOS and others. Run:
+Core dumps are [disabled  by default on Ubuntu](http://stackoverflow.com/a/18368068/152142), CentOS and others.
+
+To enable core dumping:
 
     ulimit -c unlimited
 
-to enable core dumping. If you then reproduce a segfault in `nvim`, it will "dump core". Typically this means a `core` file will appear in the current directory (or check `/var/log/apport.log` to see where it was written) unless you are on OSX, and then and it should appear in `/core/`
+If you then reproduce a segfault in `nvim`, it will "dump core". Typically this means a `core` file will appear in the current directory (or check `/var/log/apport.log` to see where it was written).
 
-Following this, You can then get a backtrace from the `core` with:
+To get a backtrace from the `core` file:
 
     gdb -q -n -ex bt -batch ./build/bin/nvim <path/to/core> > backtrace.txt
+
+### Backtrace (OSX)
+
+If `nvim` crashes on OSX, you can easily see the backtrace in Console.app.
+
+    open -a Console
+
+You may also want to [enable core dumps on OSX](https://developer.apple.com/library/mac/technotes/tn2124/_index.html#//apple_ref/doc/uid/DTS10003391-CH1-SECCOREDUMPS). The `/core/` directory must exist and be writable.
 
 ### Using `lldb` to step through unit tests
 
