@@ -1,1 +1,0 @@
-The installation instructions have moved to [Installing Neovim](Installing-Neovim).
