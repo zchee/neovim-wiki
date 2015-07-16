@@ -6,5 +6,18 @@ or [Installing Neovim](Installing-Neovim), depending on your preferred installat
 
 ------------
 
-Since this page was just created, no breaking changes have happened so far.
-When one does occur, please remove this note and consider following a format similar to that found here: http://www.openbsd.org/faq/current.html
+### 2015/07/15
+
+The [`:tearoff`][tearoff] command has been removed. It was never actually implemented, so the only functional difference should be that
+
+```vim
+exists(':tearoff')
+```
+now returns `0` instead of `2`. See [#3003][3003] and [#3007][3007] for more information.
+
+
+[tearoff]: http://vimdoc.sourceforge.net/htmldoc/gui_w32.html#:tearoff
+[E319]: http://neovim.io/doc/user/message.html#E319
+
+[3003]: https://github.com/neovim/neovim/issues/3003
+[3007]: https://github.com/neovim/neovim/pull/3007
