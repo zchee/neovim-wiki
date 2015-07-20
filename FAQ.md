@@ -89,6 +89,6 @@ Look in the [Technical FAQ](https://github.com/neovim/neovim/wiki/Technical-FAQ)
 
 Join [the gitter room](https://gitter.im/neovim/neovim), someone will help you out (at least, someone usually does ;)). There's also an IRC chatroom (`#neovim` at freenode). 
 
-#### Who is that `marvin` guy at gitter/IRC? He's *everywhere*!
+#### Who is that `marvim` guy at gitter/IRC? He's *everywhere*!
 
 That's a bot that links the gitter and IRC rooms, the name of the real person talking is prefixed to whatever marvin relays. (The bot tends to break, so don't assume you are being listened to in both channels).
