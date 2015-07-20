@@ -1,26 +1,56 @@
-### How do I use [feature]?
+### I am a Vim user, and I want to use try out Neovim... what is the quickest way to set it up?
 
-There's a good chance `[feature]` is already documented under [`:help nvim_intro.txt`](http://neovim.io/doc/user/nvim_intro.html).
+Link your previous configuration so Neovim can use it:
 
-### Can I use Lua/Ruby-based Vim plugins?
+~~~ sh
+ln -s ~/.vimrc ~/.nvimrc
+ln -s ~/.vim ~/.nvim
+~~~
 
-No; the legacy interfaces required by plugins such as [neocomplete](https://github.com/Shougo/neocomplete.vim) (`if_lua`) and [LustyExplorer](https://github.com/sjbach/lusty) (`if_ruby`) are not (yet) supported in Neovim.
+If you use python plugins, make sure to install [the python package](http://neovim.io/doc/user/nvim_python.html):
 
-### How can I tell if I'm running `nvim` or `vim`?
+~~~ sh
+pip2 install neovim
+pip3 install neovim
+~~~
 
-```vim
-if has('nvim')
-...
+#### OK, but now I get some errors... what is going on?
+
+Your configuration might not be entirely compatible. For a full list of differences between Vim and Neovim, please consult [this document](http://neovim.io/doc/user/vim_diff.html#vim-differences).
+
+Just to give an example: the `ttymouse` option was removed in Neovim (you shouldn't need it). If you use it in Vim, you might want to guard it in your configuration, like this:
+
+~~~ vim
+if !has('nvim')
+    set ttymouse=xterm2
 endif
-```
+~~~
+
+Likewise, if you wanted to have Neovim specific configuration, like this `:terminal`-specific mapping that makes the `Escape` key leave terminal mode, you could do it like this:
+~~~ vim
+if has('nvim')
+     tnoremap <Esc> <C-\><C-n>
+endif
+~~~
 
 For a more granular approach, use the [`exists()`](http://neovim.io/doc/user/eval.html#exists%28%29) function:
-
 ```vim
 if exists(':tnoremap')
 ...
 endif
 ```
+
+#### Can I use Lua/Ruby-based Vim plugins?
+
+No; the legacy interfaces required by plugins such as [neocomplete](https://github.com/Shougo/neocomplete.vim) (`if_lua`) and [LustyExplorer](https://github.com/sjbach/lusty) (`if_ruby`) are not (yet) supported in Neovim.
+
+#### How do you manage your plugins?
+
+Just like in Vim. The most common plugin managers (vim-plug, NeoBundle, Vundle, VAM) are all supported.
+
+### How do I use [feature]?
+
+There's a good chance `[feature]` is already documented under [`:help nvim_intro.txt`](http://neovim.io/doc/user/nvim_intro.html).
 
 ### How can I use true colors in the terminal?
 
@@ -63,3 +93,11 @@ We'll be using [LuaJIT](http://luajit.org/), which is the fastest scripting runt
 We don't anticipate any reason to deprecate Vimscript, which is a valuable [DSL](https://en.wikipedia.org/wiki/Domain-specific_language) for text-editing tasks. Also, maintaining a Vimscript front-end is less costly than a mass migration of the many existing Vimscript plugins.
 
 Porting from Vimscript to Lua just for the heck of it gains nothing. Neovim is emphatically a *fork of Vim* in order to leverage the work already spent on thousands of existing Vim plugins, while enabling *new* types of plugins and integrations.
+
+### I'm confused, I need more help...
+
+Join [the gitter room](https://gitter.im/neovim/neovim), someone will help you out (at least, someone usually does ;)). There's also an IRC chatroom (`#neovim` at freenode). 
+
+#### Who is that `marvin` guy at gitter/IRC? He's *everywhere*!
+
+That's a bot that links the gitter and IRC rooms, the name of the real person talking is prefixed to whatever marvin relays. (The bot tends to break, so don't assume you are being listened to in both channels).
