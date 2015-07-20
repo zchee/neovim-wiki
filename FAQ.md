@@ -2,14 +2,14 @@
 
 Link your previous configuration so Neovim can use it:
 
-~~~ sh
+~~~
 ln -s ~/.vimrc ~/.nvimrc
 ln -s ~/.vim ~/.nvim
 ~~~
 
 If you use python plugins, make sure to install [the python package](http://neovim.io/doc/user/nvim_python.html):
 
-~~~ sh
+~~~
 pip install neovim
 pip3 install neovim
 ~~~
@@ -27,11 +27,13 @@ endif
 ~~~
 
 Likewise, if you wanted to have Neovim specific configuration, you could do it like this:
+
 ~~~ vim
 if has('nvim')
      tnoremap <Esc> <C-\><C-n>
 endif
 ~~~
+
 Btw, this makes the `Escape` key leave [terminal mode](http://neovim.io/doc/user/nvim_terminal_emulator.html#nvim-terminal-emulator).
 
 For a more granular approach, use the [`exists()`](http://neovim.io/doc/user/eval.html#exists%28%29) function:
