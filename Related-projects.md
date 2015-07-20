@@ -24,6 +24,7 @@
 | C#          | [Pireax/neovim.cs](https://github.com/Pireax/neovim.cs)                              |
 | Clojure     | [jebberjeb/neovim-client](https://github.com/jebberjeb/neovim-client)                |
 | Elixir      | [awetzel/neovim-elixir](https://github.com/awetzel/neovim-elixir)                    |
+| Filesystem  | [fmoralesc/nvimfs](https://github.com/fmoralesc/nvimfs)                              |
 | Go          | [myitcv/neovim](https://github.com/myitcv/neovim)                                    |
 | Haskell     | [saep/nvim-hs](https://github.com/saep/nvim-hs)                                      |
 | Java        | [fdinoff/neovim-java-client](https://github.com/fdinoff/neovim-java-client)          |
