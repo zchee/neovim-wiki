@@ -1,4 +1,4 @@
-### I am a Vim user, and I want to use try out Neovim... what is the quickest way to set it up?
+### I am a Vim user, and I want to try out Neovim... what is the quickest way to set it up?
 
 Link your previous configuration so Neovim can use it:
 
