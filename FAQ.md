@@ -10,7 +10,7 @@ ln -s ~/.vim ~/.nvim
 If you use python plugins, make sure to install [the python package](http://neovim.io/doc/user/nvim_python.html):
 
 ~~~ sh
-pip2 install neovim
+pip install neovim
 pip3 install neovim
 ~~~
 
