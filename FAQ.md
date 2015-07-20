@@ -55,6 +55,8 @@ There's a good chance `[feature]` is already documented under [`:help nvim_intro
 
 ### How can I use true colors in the terminal?
 
+Add this to your `.nvimrc`:
+
 ```vim
 :let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 ```
@@ -62,6 +64,8 @@ There's a good chance `[feature]` is already documented under [`:help nvim_intro
 See [this gist](https://gist.github.com/XVilka/8346728) for more information about true colors, such as what terminals support it.
 
 ### How can I change the cursor shape in the terminal?
+
+Add this to your `.nvimrc`:
 
 ```vim
 :let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
