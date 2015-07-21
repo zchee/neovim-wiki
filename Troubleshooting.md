@@ -1,4 +1,4 @@
-If you run into an error not mentioned here and manage to resolve it, feel free to add it below.
+*If you run into an error not mentioned here and manage to resolve it, feel free to add it below.*
 
 # Runtime issues
 
