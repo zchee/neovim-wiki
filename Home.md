@@ -3,7 +3,7 @@
 - [Introduction](Introduction)
 - [Communicating](Communicating)
 - [Troubleshooting](Troubleshooting)
-- [FAQ](FAQ) & [Technical FAQ](Technical-FAQ)
+- [FAQ](FAQ) and [Technical FAQ](Technical-FAQ)
 - [Progress/Roadmap](Progress)
 - [Related projects](Related-projects)
 
