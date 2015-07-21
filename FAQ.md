@@ -83,7 +83,7 @@ Note about gnome-terminal 3.6.2 (libvte-2.90-9): https://github.com/neovim/neovi
 
 See [#810](https://github.com/neovim/neovim/pull/810) and [#1749](https://github.com/neovim/neovim/issues/1749).
 
-### I have a technical questions
+### I have a technical question
 
 See the [Technical FAQ](https://github.com/neovim/neovim/wiki/Technical-FAQ) page.
 
