@@ -32,3 +32,11 @@ Attempting to add any of the following flags to `'cpoptions'` will trigger an er
 See [#2943][2943] for more information.
 
 [2943]: https://github.com/neovim/neovim/pull/2943
+
+### 2015/07/20
+
+The `:Print` command has been removed. It works the same as `:print`, so use that instead.
+
+See [#3049][3049] for more information.
+
+[3049]: https://github.com/neovim/neovim/pull/3049
