@@ -13,7 +13,9 @@ The [`:tearoff`][tearoff] command has been removed. It was never actually implem
 ```vim
 exists(':tearoff')
 ```
-now returns `0` instead of `2`. See [#3003][3003] and [#3007][3007] for more information.
+now returns `0` instead of `2`.
+
+See [#3003][3003] and [#3007][3007] for more information.
 
 [tearoff]: http://vimdoc.sourceforge.net/htmldoc/gui_w32.html#:tearoff
 [E319]: http://neovim.io/doc/user/message.html#E319
