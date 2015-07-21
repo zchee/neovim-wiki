@@ -1,4 +1,4 @@
-### What should I know to switch from Vim to Neovim?
+### How do I switch from Vim to Neovim?
 
 See the [Transitioning from Vim to Neovim](Transitioning-from-Vim-to-Neovim) page.
 
