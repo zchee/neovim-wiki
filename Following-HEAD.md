@@ -35,6 +35,20 @@ See [#2943][2943] for more information.
 
 ### 2015/07/20
 
+The default value for the `'history'` option has changed from `50` to `10000`.
+To emulate the old behavior, add the following to your `nvimrc`:
+
+```vim
+set history=50
+```
+
+See [#2868][2868] and [#2676][2676] for more information.
+
+[2868]: https://github.com/neovim/neovim/pull/2868
+[2676]: https://github.com/neovim/neovim/issues/2676
+
+### 2015/07/20
+
 The `:Print` command has been removed. It works the same as `:print`, so use that instead.
 
 See [#3049][3049] for more information.
