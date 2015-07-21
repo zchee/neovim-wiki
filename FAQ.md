@@ -2,7 +2,7 @@
 
 See the [Transitioning from Vim to Neovim](Transitioning-from-Vim-to-Neovim) page.
 
-### I'm using the latest version of Neovim and something broke, what do I do?
+### I'm using a development version of Neovim and something broke, what do I do?
 
 See the [Following HEAD](Following-HEAD) page.
 
@@ -46,10 +46,10 @@ See [#810](https://github.com/neovim/neovim/pull/810) and [#1749](https://github
 
 See the [Technical FAQ](https://github.com/neovim/neovim/wiki/Technical-FAQ) page.
 
-### I'm confused, I need more help
+### I'm confused, where do I get more help?
 
 See the [Community](http://neovim.io/community/) page on the website. The Gitter and IRC channels are recommended for the fastest turnaround time.
 
-### Who is that `marvim` guy on Gitter/IRC? He's *everywhere*!
+### Who is that `marvim` guy on Gitter/IRC?
 
 That's a bot that links the Gitter and IRC rooms, the name of the real person talking is prefixed to whatever marvim relays. It tends to break, so don't assume you are being listened to in both channels.
