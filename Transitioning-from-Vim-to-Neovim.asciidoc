@@ -1,6 +1,6 @@
 Neovim is emphatically a fork of Vim, so compatibility between Vim should be pretty good.
 
-### Getting started
+## Getting started
 
 To start the transition, link your previous configuration so Neovim can use it:
 
