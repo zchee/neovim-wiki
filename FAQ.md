@@ -2,56 +2,13 @@
 
 There's a good chance `feature` is already documented under [`:help nvim_intro.txt`](http://neovim.io/doc/user/nvim_intro.html).
 
-### I am a Vim user, and I want to try out Neovim... what is the quickest way to set it up?
+### What should I know to switch from Vim to Neovim?
 
-Link your previous configuration so Neovim can use it:
+See the [Transitioning from Vim to Neovim][Transitioning-from-Vim-to-Neovim] page.
 
-~~~
-ln -s ~/.vimrc ~/.nvimrc
-ln -s ~/.vim ~/.nvim
-~~~
-
-If you use Python plugins, make sure to install [the Python package](http://neovim.io/doc/user/nvim_python.html):
-
-~~~
-pip install --user neovim
-pip3 install --user neovim
-~~~
-
-#### OK, but now I get some errors... what is going on?
-
-Your configuration might not be entirely compatible with Neovim. For a full list of differences between Vim and Neovim, see [this document](http://neovim.io/doc/user/vim_diff.html#vim-differences).
-
-The `ttymouse` option, for example, was removed from Neovim (mouse support should work without it). If you use the same `vimrc` for Vim and Neovim, consider guarding `ttymouse` in your configuration, like so:
-
-~~~ vim
-if !has('nvim')
-    set ttymouse=xterm2
-endif
-~~~
-
-Conversely, if you have Neovim specific configuration items, you could do this:
-
-~~~ vim
-if has('nvim')
-     tnoremap <Esc> <C-\><C-n>
-endif
-~~~
-
-For a more granular approach, use the [`exists()`](http://neovim.io/doc/user/eval.html#exists%28%29) function:
-```vim
-if exists(':tnoremap')
-     tnoremap <Esc> <C-\><C-n>
-endif
-```
-
-#### Can I use Lua/Ruby-based Vim plugins?
+### Can I use Lua/Ruby-based Vim plugins?
 
 No; the legacy interfaces required by plugins such as [neocomplete](https://github.com/Shougo/neocomplete.vim) (`if_lua`) and [LustyExplorer](https://github.com/sjbach/lusty) (`if_ruby`) are not (yet) supported in Neovim.
-
-#### How do I manage my plugins?
-
-Just like in Vim, the most common plugin managers (vim-plug, NeoBundle, Vundle, VAM) are all supported.
 
 ### How can I use true colors in the terminal?
 
@@ -89,6 +46,6 @@ See the [Technical FAQ](https://github.com/neovim/neovim/wiki/Technical-FAQ) pag
 
 See the [Community](http://neovim.io/community/) page on the website. The Gitter and IRC channels are recommended for the fastest turnaround time.
 
-#### Who is that `marvim` guy on Gitter/IRC? He's *everywhere*!
+### Who is that `marvim` guy on Gitter/IRC? He's *everywhere*!
 
 That's a bot that links the Gitter and IRC rooms, the name of the real person talking is prefixed to whatever marvim relays. It tends to break, so don't assume you are being listened to in both channels.
