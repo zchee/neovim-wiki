@@ -89,7 +89,7 @@ See the [Technical FAQ](https://github.com/neovim/neovim/wiki/Technical-FAQ) pag
 
 ### I'm confused, I need more help
 
-See the [Community](http://neovim.io/community/) page on the website. The Gitter and IRC channels are recommended for the fastest turnaround time
+See the [Community](http://neovim.io/community/) page on the website. The Gitter and IRC channels are recommended for the fastest turnaround time.
 
 #### Who is that `marvim` guy on Gitter/IRC? He's *everywhere*!
 
