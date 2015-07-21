@@ -38,8 +38,6 @@ if has('nvim')
 endif
 ~~~
 
-By the way, this makes the `Escape` key leave [terminal mode](http://neovim.io/doc/user/nvim_terminal_emulator.html#nvim-terminal-emulator).
-
 For a more granular approach, use the [`exists()`](http://neovim.io/doc/user/eval.html#exists%28%29) function:
 ```vim
 if exists(':tnoremap')
