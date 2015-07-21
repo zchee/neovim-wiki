@@ -14,7 +14,7 @@ pip install --user neovim
 pip3 install --user neovim
 ~~~
 
-#### OK, but now I get some errors... what is going on?
+### OK, but now I get some errors... what is going on?
 
 Your configuration might not be entirely compatible with Neovim. For a full list of differences between Vim and Neovim, see [this document](http://neovim.io/doc/user/vim_diff.html#vim-differences).
 
@@ -41,6 +41,6 @@ if exists(':tnoremap')
 endif
 ```
 
-#### How do I manage my plugins?
+### How do I manage my plugins?
 
 Just like in Vim, the most common plugin managers (vim-plug, NeoBundle, Vundle, VAM) are all supported.
