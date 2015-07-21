@@ -1,3 +1,7 @@
+### How do I use [feature]?
+
+There's a good chance `feature` is already documented under [`:help nvim_intro.txt`](http://neovim.io/doc/user/nvim_intro.html).
+
 ### I am a Vim user, and I want to try out Neovim... what is the quickest way to set it up?
 
 Link your previous configuration so Neovim can use it:
@@ -7,7 +11,7 @@ ln -s ~/.vimrc ~/.nvimrc
 ln -s ~/.vim ~/.nvim
 ~~~
 
-If you use python plugins, make sure to install [the Python package](http://neovim.io/doc/user/nvim_python.html):
+If you use Python plugins, make sure to install [the Python package](http://neovim.io/doc/user/nvim_python.html):
 
 ~~~
 pip install --user neovim
@@ -51,10 +55,6 @@ No; the legacy interfaces required by plugins such as [neocomplete](https://gith
 
 Just like in Vim, the most common plugin managers (vim-plug, NeoBundle, Vundle, VAM) are all supported.
 
-### How do I use [feature]?
-
-There's a good chance `[feature]` is already documented under [`:help nvim_intro.txt`](http://neovim.io/doc/user/nvim_intro.html).
-
 ### How can I use true colors in the terminal?
 
 Add this to your `.nvimrc`:
@@ -83,14 +83,14 @@ Note about gnome-terminal 3.6.2 (libvte-2.90-9): https://github.com/neovim/neovi
 
 See [#810](https://github.com/neovim/neovim/pull/810) and [#1749](https://github.com/neovim/neovim/issues/1749).
 
-### I have some technical questions...
+### I have a technical questions
 
-Look in the [Technical FAQ](https://github.com/neovim/neovim/wiki/Technical-FAQ), perhaps there's an answer.
+See the [Technical FAQ](https://github.com/neovim/neovim/wiki/Technical-FAQ) page.
 
-### I'm confused, I need more help...
+### I'm confused, I need more help
 
-Join [the gitter room](https://gitter.im/neovim/neovim), someone will help you out (at least, someone usually does ;)). There's also an IRC chatroom (`#neovim` at freenode). 
+See the [Community](http://neovim.io/community/) page on the website. The Gitter and IRC channels are recommended for the fastest turnaround time
 
-#### Who is that `marvim` guy at gitter/IRC? He's *everywhere*!
+#### Who is that `marvim` guy on Gitter/IRC? He's *everywhere*!
 
-That's a bot that links the gitter and IRC rooms, the name of the real person talking is prefixed to whatever marvin relays. (The bot tends to break, so don't assume you are being listened to in both channels).
+That's a bot that links the Gitter and IRC rooms, the name of the real person talking is prefixed to whatever marvim relays. It tends to break, so don't assume you are being listened to in both channels.
