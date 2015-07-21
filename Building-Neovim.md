@@ -1,3 +1,5 @@
+**Before upgrading to a new version, ALWAYS check the [Following HEAD](Following-HEAD) page.**
+
 ## Quick start
 
 1. Verify that you have installed the [build prerequisites](#build-prerequisites).
