@@ -4,7 +4,7 @@ There's a good chance `feature` is already documented under [`:help nvim_intro.t
 
 ### What should I know to switch from Vim to Neovim?
 
-See the [Transitioning from Vim to Neovim][Transitioning-from-Vim-to-Neovim] page.
+See the [Transitioning from Vim to Neovim](Transitioning-from-Vim-to-Neovim) page.
 
 ### Can I use Lua/Ruby-based Vim plugins?
 
