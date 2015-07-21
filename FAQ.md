@@ -7,7 +7,7 @@ ln -s ~/.vimrc ~/.nvimrc
 ln -s ~/.vim ~/.nvim
 ~~~
 
-If you use python plugins, make sure to install [the python package](http://neovim.io/doc/user/nvim_python.html):
+If you use python plugins, make sure to install [the Python package](http://neovim.io/doc/user/nvim_python.html):
 
 ~~~
 pip install --user neovim
@@ -16,9 +16,9 @@ pip3 install --user neovim
 
 #### OK, but now I get some errors... what is going on?
 
-Your configuration might not be entirely compatible. For a full list of differences between Vim and Neovim, please consult [this document](http://neovim.io/doc/user/vim_diff.html#vim-differences).
+Your configuration might not be entirely compatible with Neovim. For a full list of differences between Vim and Neovim, see [this document](http://neovim.io/doc/user/vim_diff.html#vim-differences).
 
-Just to give an example: the `ttymouse` option was removed in Neovim (you shouldn't need it). If you use it in Vim, you might want to guard it in your configuration, like this:
+The `ttymouse` option, for example, was removed from Neovim (mouse support should work without it). If you use the same `vimrc` for Vim and Neovim, consider guarding `ttymouse` in your configuration, like so:
 
 ~~~ vim
 if !has('nvim')
@@ -26,7 +26,7 @@ if !has('nvim')
 endif
 ~~~
 
-Likewise, if you wanted to have Neovim specific configuration, you could do it like this:
+Conversely, if you have Neovim specific configuration items, you could do this:
 
 ~~~ vim
 if has('nvim')
@@ -34,12 +34,12 @@ if has('nvim')
 endif
 ~~~
 
-Btw, this makes the `Escape` key leave [terminal mode](http://neovim.io/doc/user/nvim_terminal_emulator.html#nvim-terminal-emulator).
+By the way, this makes the `Escape` key leave [terminal mode](http://neovim.io/doc/user/nvim_terminal_emulator.html#nvim-terminal-emulator).
 
 For a more granular approach, use the [`exists()`](http://neovim.io/doc/user/eval.html#exists%28%29) function:
 ```vim
 if exists(':tnoremap')
-...
+     tnoremap <Esc> <C-\><C-n>
 endif
 ```
 
@@ -47,9 +47,9 @@ endif
 
 No; the legacy interfaces required by plugins such as [neocomplete](https://github.com/Shougo/neocomplete.vim) (`if_lua`) and [LustyExplorer](https://github.com/sjbach/lusty) (`if_ruby`) are not (yet) supported in Neovim.
 
-#### How do you manage your plugins?
+#### How do I manage my plugins?
 
-Just like in Vim. The most common plugin managers (vim-plug, NeoBundle, Vundle, VAM) are all supported.
+Just like in Vim, the most common plugin managers (vim-plug, NeoBundle, Vundle, VAM) are all supported.
 
 ### How do I use [feature]?
 
