@@ -1,3 +1,5 @@
+**Note**: Before upgrading, *always* check the [Following HEAD](Following-HEAD) page.
+
 # Packaged Installation
 
 If you're on one of the following systems, you can get Neovim right away!
