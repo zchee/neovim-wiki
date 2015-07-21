@@ -23,16 +23,6 @@ See [#3003][3003] and [#3007][3007] for more information.
 [3003]: https://github.com/neovim/neovim/issues/3003
 [3007]: https://github.com/neovim/neovim/pull/3007
 
-### 2015/07/17
-
-The event loop layer has been refactored ([#2980][2980]). This introduced a chance that Neovim will segfault in some cases, see [#3045][3045].
-
-See [#3057][3057] for a proposed fix.
-
-[2980]: https://github.com/neovim/neovim/pull/2980
-[3045]: https://github.com/neovim/neovim/issues/3045
-[3057]: https://github.com/neovim/neovim/issues/3057
-
 ### 2015/07/19
 
 The POSIX `'cpoptions'` flags have been removed. The `VIM_POSIX` environment variable now has no effect.
