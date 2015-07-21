@@ -9,7 +9,7 @@ ln -s ~/.vimrc ~/.nvimrc
 ln -s ~/.vim ~/.nvim
 ~~~
 
-If you use Python plugins, make sure to install [Python package](http://neovim.io/doc/user/nvim_python.html):
+If you use Python plugins, make sure to install [the Python package](http://neovim.io/doc/user/nvim_python.html):
 
 ~~~
 pip install --user neovim
