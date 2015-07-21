@@ -3,7 +3,9 @@
 - [Introduction](Introduction)
 - [Communicating](Communicating)
 - [Troubleshooting](Troubleshooting)
-- [FAQ](FAQ) and [Technical FAQ](Technical-FAQ)
+- [FAQ](FAQ)
+    - [Technical FAQ](Technical-FAQ)
+    - [Transitioning from Vim to Neovim](Transitioning-from-Vim-to-Neovim)
 - [Progress/Roadmap](Progress)
 - [Related projects](Related-projects)
 
