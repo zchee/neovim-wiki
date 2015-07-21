@@ -1,10 +1,14 @@
-### How do I use [feature]?
-
-There's a good chance `feature` is already documented under [`:help nvim_intro.txt`](http://neovim.io/doc/user/nvim_intro.html).
-
 ### What should I know to switch from Vim to Neovim?
 
 See the [Transitioning from Vim to Neovim](Transitioning-from-Vim-to-Neovim) page.
+
+### I'm using the latest version of Neovim and something broke, what do I do?
+
+See the [Following HEAD](Following-HEAD) page.
+
+### How do I use [feature]?
+
+There's a good chance `feature` is already documented under [`:help nvim_intro.txt`](http://neovim.io/doc/user/nvim_intro.html).
 
 ### Can I use Lua/Ruby-based Vim plugins?
 
