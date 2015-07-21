@@ -1,4 +1,4 @@
-**Note**: Before upgrading, *always* check the [Following HEAD](Following-HEAD) page.
+**Before upgrading, ALWAYS check the [Following HEAD](Following-HEAD) page.**
 
 # Packaged Installation
 
