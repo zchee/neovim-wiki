@@ -24,6 +24,7 @@ now returns `0` instead of `2`. See [#3003][3003] and [#3007][3007] for more inf
 ### 2015/07/19
 
 The POSIX `'cpoptions'` flags have been removed. The `VIM_POSIX` environment variable now has no effect.
+
 Attempting to add any of the following flags to `'cpoptions'` will trigger an error: `\` `.` `/` `&` `|` `{` `#`
 
 See [#2943][2943] for more information.
