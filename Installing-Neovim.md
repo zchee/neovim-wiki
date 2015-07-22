@@ -86,8 +86,9 @@ cave resolve app-editors/neovim::exony
 http://copr.fedoraproject.org/coprs/dperson/neovim/
 
 ```
-dnf copr enable dperson/neovim
-dnf install neovim
+dnf -y install dnf-plugins-core
+dnf -y copr enable dperson/neovim
+dnf -y install neovim
 ```
 
 It's built using the [Copr](https://copr.fedoraproject.org/) automated build system, which is unsupported. There's no guarantee of how long your package will be available after the build finishes.
