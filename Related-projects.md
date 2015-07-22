@@ -45,6 +45,7 @@ Neovim is compatible with most Vim plugins; following are some plugins that take
 - [Floobits](https://github.com/Floobits/floobits-neovim)
 - [Nvim-R](https://github.com/jalvesaq/Nvim-R)
 - [deoplete.nvim](https://github.com/Shougo/deoplete.nvim)
+- [fakeclip-neovim](https://github.com/cazador481/fakeclip.neovim)
 - [lldb.nvim](https://github.com/critiqjo/lldb.nvim)
 - [neomake](https://github.com/benekastah/neomake)
 - [neoterm](https://github.com/kassio/neoterm)
@@ -54,7 +55,6 @@ Neovim is compatible with most Vim plugins; following are some plugins that take
 - [vim-man](https://github.com/bruno-/vim-man)
 - [vim-plug](https://github.com/junegunn/vim-plug)
 - [vim-test](https://github.com/janko-m/vim-test)
-- [fakeclip-neovim](https://github.com/cazador481/fakeclip.neovim)
 
 ### Projects with support for Neovim
 
