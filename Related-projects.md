@@ -54,6 +54,7 @@ Neovim is compatible with most Vim plugins; following are some plugins that take
 - [vim-man](https://github.com/bruno-/vim-man)
 - [vim-plug](https://github.com/junegunn/vim-plug)
 - [vim-test](https://github.com/janko-m/vim-test)
+- [fakeclip-neovim](https://github.com/cazador481/fakeclip.neovim)
 
 ### Projects with support for Neovim
 
