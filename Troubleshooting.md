@@ -2,6 +2,10 @@
 
 # Runtime issues
 
+### CTRL-H doesn't work
+
+See [#2048](https://github.com/neovim/neovim/issues/2048). This will be fixed for the first public release of Neovim.
+
 ### `:!` and `system()` do weird things with interactive processes
 
 Interactive commands are supported by the `:terminal` command in Neovim. However, `:!` and `system()` do not support interactive commands, primarily because Neovim UIs use stdio for msgpack communication, but also for performance, reliability, and consistency across platforms (see [`:help gui-pty`](http://vimhelp.appspot.com/gui_x11.txt.html#gui-pty)). 
