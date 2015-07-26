@@ -6,6 +6,22 @@ or [Installing Neovim](Installing-Neovim), depending on your preferred installat
 
 ------------
 
+### 2015/07/26
+
+The behavior of the [`mkdir()`][mkdir] function has changed:
+
+1. Assuming /tmp/foo does not exist and /tmp can be written to,
+   `mkdir('/tmp/foo/bar', 'p', 0700)` will create both /tmp/foo and /tmp/foo/bar
+   with the octal permissions 0700.
+   Vim's mkdir() will create /tmp/foo with 0755.
+2. If you try to create an existing directory with `'p'`, such as with `mkdir('/', 'p'))`, mkdir() will silently fail. In Vim this was an error.
+3. Upon failure, mkdir() related error messages now include strerror() text.
+
+See [#3041][3041] for more information.
+
+[mkdir]: http://neovim.io/doc/user/eval.html#mkdir%28%29
+[3041]: https://github.com/neovim/neovim/pull/3041
+
 ### 2015/07/20
 
 The `:Print` command has been removed. It works the same as `:print`, so use that instead.
