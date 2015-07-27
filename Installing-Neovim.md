@@ -57,7 +57,7 @@ sudo pacman -S python-pip python2-pip
 
 ## CRUX
 
-A CRUX port is available under [`6c37/neovim`](https://github.com/6c37/crux-ports), along with ports for other dependencies of Neovim.
+A CRUX port is available under [`6c37/neovim`](https://github.com/6c37/crux-ports-git), along with ports for other dependencies of Neovim.
 
 For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
 
