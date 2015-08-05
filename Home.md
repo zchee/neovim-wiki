@@ -5,7 +5,7 @@
 - [Troubleshooting](Troubleshooting)
 - [FAQ](FAQ)
     - [Technical FAQ](Technical-FAQ)
-    - [Transitioning from Vim to Neovim](http://neovim.io/doc/user/nvim_from_vim.html)
+    - [Transitioning from Vim to Neovim](http://neovim.io/doc/user/nvim_from_vim.html) (`:help nvim-from-vim`)
 - [Progress/Roadmap](Progress)
 - [Related projects](Related-projects)
 
