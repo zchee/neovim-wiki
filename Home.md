@@ -5,7 +5,7 @@
 - [Troubleshooting](Troubleshooting)
 - [FAQ](FAQ)
     - [Technical FAQ](Technical-FAQ)
-    - [Transitioning from Vim to Neovim](Transitioning-from-Vim-to-Neovim)
+    - [Transitioning from Vim to Neovim](http://neovim.io/doc/user/nvim_from_vim.html)
 - [Progress/Roadmap](Progress)
 - [Related projects](Related-projects)
 
@@ -15,7 +15,7 @@
 - [Following HEAD](Following-HEAD)
 - [Documentation](http://neovim.io/doc/)
     - [User manual](http://neovim.io/doc/user/) (`:help`)
-    - [Neovim feature reference](http://neovim.io/doc/user/nvim_intro.html) (`:help nvim-intro`)
+    - [Neovim feature reference](http://neovim.io/doc/user/nvim.html) (`:help nvim`)
     - [Differences from Vim](http://neovim.io/doc/user/vim_diff.html) (`:help vim-differences`)
     - [Python plugins](http://neovim.io/doc/user/nvim_python.html) (`:help nvim-python`)
 
