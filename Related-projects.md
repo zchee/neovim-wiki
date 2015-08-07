@@ -46,7 +46,7 @@ Neovim is compatible with most Vim plugins. Here's a partial list of plugins tha
 - [Nvim-R](https://github.com/jalvesaq/Nvim-R)
 - [deoplete.nvim](https://github.com/Shougo/deoplete.nvim)
 - [fakeclip-neovim](https://github.com/cazador481/fakeclip.neovim)
-- [haskell-vim](https://github.com/raichoo/haskell-vim)
+- [haskell-vim](https://github.com/neovimhaskell/haskell-vim)
 - [lldb.nvim](https://github.com/critiqjo/lldb.nvim)
 - [neomake](https://github.com/benekastah/neomake)
 - [neoterm](https://github.com/kassio/neoterm)
