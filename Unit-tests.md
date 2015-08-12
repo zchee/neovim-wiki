@@ -12,7 +12,7 @@ Tests are broadly divided into *unit tests* ([test/unit](https://github.com/neov
     - Macro constants must be rewritten as enums so they can be "visible" to the tests automatically.
 - Busted supports various "output providers". The **[gtest](https://github.com/Olivine-Labs/busted/pull/394) output provider** shows verbose details that can be useful to diagnose hung tests.
 - **Use busted's `pending()` feature** to skip tests ([example](https://github.com/neovim/neovim/commit/2d65ccf06cbd1b1a383bd01a24872224b6fd0e83#diff-bf80b24c724b0004e8418102f68b0679R18)). Do not silently skip the test with `if-else`. If a functional test depends on some external factor (e.g. the existence of `md5sum` on `$PATH`), *and* you can't mock or fake the dependency, then you may need to skip the test if the dependency doesn't exist--but the *total test count* (success + fail + error + pending) should be the same in all environments.
-    - *Note:* `pending()` will silently fail if it is missing an argument, so make sure at least an empty function is given as the 2nd argument: `pending("...", function() end)`
+    - *Note:* `pending()` is ignored if it is missing an argument _unless_ it is contained in an `it()` block. Provide empty function argument if if the `pending()` call is outside of `it()` ([example](https://github.com/neovim/neovim/commit/5c1dc0fbe7388528875aff9d7b5055ad718014de#diff-bf80b24c724b0004e8418102f68b0679R18)).
 - Consider using [luacheck](https://github.com/mpeterv/luacheck) to lint your lua code. It is [supported by syntastic](https://github.com/scrooloose/syntastic/wiki/Lua:---luacheck).
 
 ## Legacy tests
