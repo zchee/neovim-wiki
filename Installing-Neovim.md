@@ -81,6 +81,8 @@ A "scm" exheres is currently available in repository `::exony`:
 cave resolve app-editors/neovim::exony
 ```
 
+For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
+
 ## Fedora 21/22
  
 http://copr.fedoraproject.org/coprs/dperson/neovim/
