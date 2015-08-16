@@ -1,8 +1,8 @@
 Automated testing is essential for a project that aims to receive contributions from the community, it assists the project in growing faster without worrying about broken features. Pull requests that commit unit tests for existing functions will be given priority.
 
-In Neovim, unit testing is achieved by compiling it as a shared library that can be loaded and called by luajit's [FFI module](http://luajit.org/ext_ffi.html).
+In Neovim, unit testing is achieved by compiling it as a shared library that can be loaded and called by luajit's [FFI module](http://luajit.org/ext_ffi.html). You can learn the [key concepts of Lua in 15 minutes](http://learnxinyminutes.com/docs/lua/).
 
-Tests are broadly divided into *unit tests* ([test/unit](https://github.com/neovim/neovim/tree/master/test/unit) directory) and *functional tests* ([test/functional](https://github.com/neovim/neovim/tree/master/test/functional) directory). To get started quickly, look at existing [examples](https://github.com/neovim/neovim/tree/master/test/unit).
+Tests are broadly divided into *unit tests* ([test/unit](https://github.com/neovim/neovim/tree/master/test/unit) directory) and *functional tests* ([test/functional](https://github.com/neovim/neovim/tree/master/test/functional) directory). Use any of the existing tests as a template to start writing new tests.
 
 ## Guidelines for writing tests
 
@@ -40,4 +40,4 @@ make clean && TESTNUM=53 make
 
 ## Tips
 
-- Really long `source([=[...]=])` blocks may break syntax highlighting. You can fix this by calling `:syntax sync fromstart`.
+- Really long `source([=[...]=])` blocks may break syntax highlighting. Try `:syntax sync fromstart` to fix it.
