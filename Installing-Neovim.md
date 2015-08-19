@@ -105,8 +105,9 @@ For instructions on how to install the Python modules, see [`:help nvim_python`]
 
 # Install from source
 
-Instead of using a pre-built package, you can build Neovim from source. This is usually easy, just make sure you have the [prerequisites](Building-Neovim#build-prerequisites). Then run this command:
+Instead of using a pre-built package, you can build Neovim from source. This is usually easy, just make sure you have the [prerequisites](Building-Neovim#build-prerequisites). Then run:
 
+    make
     sudo make install
 
 That's it. By default, that installs to the standard software location for your operation system (`/usr/local`, `C:/Program Files`, etc.). To choose a different location, see below.
@@ -117,10 +118,11 @@ To install Neovim to a custom directory, set `CMAKE_INSTALL_PREFIX` in the build
 
 ```sh
 rm -r build/
-make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/neovim" install
+make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/neovim"
+sudo make install
 ```
 
-_Note:_ The `rm -r build/` step above is necessary if you already built Neovim before, otherwise the install location will be the same as before.
+_Note:_ The `rm -r build/` step above is needed if you already built Neovim before, otherwise the install location will be the same as before.
 
 You could also just run `build/bin/nvim` directly, and skip the `make install` step. Just run `make` (without `install`) to build Neovim without installing.
 
@@ -129,5 +131,9 @@ After that, run `nvim` and execute this command:
 ```vim
 :helptags $VIMRUNTIME/doc
 ```
+
+## Uninstall a source build
+
+Just delete the `CMAKE_INSTALL_PREFIX` that you installed to above.
 
 See [Building Neovim](Building-Neovim) for more options. See [Troubleshooting](Troubleshooting) if you encounter [build](Troubleshooting#build-issues) or [installation errors](Troubleshooting#installation-issues).
