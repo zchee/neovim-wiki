@@ -58,6 +58,11 @@ If you're using `tmux`, instead add this to your `tmux.conf`:
 set -g default-terminal "screen-256color"
 ```
 
+Some `tmux` users may need to instead use:
+```tmux alternative
+set -g default-terminal "screen-256color-bce"
+```
+
 For GNU `screen`, [configure your `.screenrc`](https://wiki.archlinux.org/index.php/GNU_Screen#Use_256_colors):
 
     term screen-256color
