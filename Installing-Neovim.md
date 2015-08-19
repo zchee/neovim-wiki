@@ -1,6 +1,6 @@
 **Before upgrading to a new version, ALWAYS check the [Following HEAD](Following-HEAD) page.**
 
-# Packaged Installation
+# Install from package
 
 If you're on one of the following systems, you can get Neovim right away!
 If not, you can still [install Neovim manually](#manual-installation).
@@ -103,40 +103,28 @@ See [neovim on SlackBuilds](http://slackbuilds.org/apps/neovim/).
 
 For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
 
-# Manual Installation
+# Install from source
 
-If no package is available for your operating system, you can perform a manual installation. This involves building Neovim and its dependencies, so you must first make sure that all build prerequisites are satisfied (see [build prerequisites](Building-Neovim#build-prerequisites)).
+Instead of using a pre-built package, you can build Neovim from source. This is usually easy, just make sure you have the [prerequisites](Building-Neovim#build-prerequisites). Then run this command:
 
-Afterwards, you can install Neovim into `/usr/local` by running `make install` (which generally requires root privileges).
+    sudo make install
 
-To install Neovim to a directory of your choice, run the following command instead:
+That's it. By default, that installs to the standard software location for your operation system (`/usr/local`, `C:/Program Files`, etc.). To choose a different location, see below.
 
-```
+## Install to custom location
+
+To install Neovim to a custom directory, set `CMAKE_INSTALL_PREFIX` in the build command:
+
+```sh
+rm -r build/
 make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/neovim" install
 ```
 
-If you appended `$HOME/neovim/bin` to your `$PATH`, running `which -a nvim` should print the following:
+_Note:_ The `rm -r build/` step above is necessary if you already built Neovim before, otherwise the install location will be the same as before.
 
-```
-{path to your $HOME}/neovim/bin/nvim
-```
+You could also just run `build/bin/nvim` directly, and skip the `make install` step. Just run `make` (without `install`) to build Neovim without installing.
 
---------------
-
-If you want to change the install location after you have already executed `make`, you need to remove the `build` directory to delete CMake's cache, so it regenerates it on the next invocation of `make`:
-
-```
-rm -r build
-make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/other/location" install
-```
-
-Alternatively, `nvim` can be run directly from the build directory. You might want to define an alias for this in your shell's configuration file, or just export the `$VIMRUNTIME` environment variable:
-
-```
-env VIMRUNTIME="$(readlink -f runtime)" build/bin/nvim
-```
-
-After that, run the following from inside `nvim`:
+After that, run `nvim` and execute this command:
 
 ```vim
 :helptags $VIMRUNTIME/doc
