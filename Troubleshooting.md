@@ -60,7 +60,7 @@ set -g default-terminal "screen-256color"
 
 Some `tmux` users may need to instead use:
 
-```
+```tmux
 set -g default-terminal "screen-256color-bce"
 ```
 
