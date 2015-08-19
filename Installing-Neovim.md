@@ -105,7 +105,7 @@ For instructions on how to install the Python modules, see [`:help nvim_python`]
 
 # Install from source
 
-_Note:_ To easily **uninstall** after building from source, you need to install to a _custom location_ [as explained below](#install-to-custom-location).
+- _Note:_ To easily **uninstall** after building from source, you should install to a _custom location_ [as explained below](#install-to-custom-location).
 
 Instead of using a pre-built package, you can build Neovim from source. This is usually easy, just make sure you have the [prerequisites](Building-Neovim#build-prerequisites). Then run:
 
@@ -113,6 +113,8 @@ Instead of using a pre-built package, you can build Neovim from source. This is 
     sudo make install
 
 That's it. By default, that installs to the standard software location for your operation system (`/usr/local`, `C:/Program Files`, etc.). To choose a different location, see below.
+
+- Alternatively, you can just run `build/bin/nvim` directly. Just run `make` (instead of `make install`). Then run run this command in `nvim` itself: `:helptags $VIMRUNTIME/doc`
 
 ## Install to custom location
 
@@ -125,14 +127,6 @@ sudo make install
 ```
 
 _Note:_ The `rm -r build/` step above is needed if you already built Neovim before, otherwise the install location will be the same as before.
-
-You could also just run `build/bin/nvim` directly, and skip the `make install` step. Just run `make` (without `install`) to build Neovim without installing.
-
-After that, run `nvim` and execute this command:
-
-```vim
-:helptags $VIMRUNTIME/doc
-```
 
 ## Uninstall a source build
 
