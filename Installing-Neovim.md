@@ -105,6 +105,8 @@ For instructions on how to install the Python modules, see [`:help nvim_python`]
 
 # Install from source
 
+_Note:_ To easily **uninstall** after building from source, you need to install to a _custom location_ [as explained below](#install-to-custom-location).
+
 Instead of using a pre-built package, you can build Neovim from source. This is usually easy, just make sure you have the [prerequisites](Building-Neovim#build-prerequisites). Then run:
 
     make
@@ -134,6 +136,6 @@ After that, run `nvim` and execute this command:
 
 ## Uninstall a source build
 
-Just delete the `CMAKE_INSTALL_PREFIX` that you installed to above.
+To uninstall Neovim, just delete the `CMAKE_INSTALL_PREFIX` directory that you specified in the [_Install to custom location_](#install-to-custom-location) section above.
 
 See [Building Neovim](Building-Neovim) for more options. See [Troubleshooting](Troubleshooting) if you encounter [build](Troubleshooting#build-issues) or [installation errors](Troubleshooting#installation-issues).
