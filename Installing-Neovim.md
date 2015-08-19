@@ -114,7 +114,7 @@ Instead of using a pre-built package, you can build Neovim from source. This is 
 
 That's it. By default, that installs to the standard software location for your operation system (`/usr/local`, `C:/Program Files`, etc.). To choose a different location, see below.
 
-- Alternatively, you can just run `build/bin/nvim` directly. Just run `make` (instead of `make install`). Then run run this command in `nvim` itself: `:helptags $VIMRUNTIME/doc`
+- Alternatively, you can run `build/bin/nvim` directly. Just run `make` (instead of `make install`). Then run this command in `nvim` itself: `:helptags $VIMRUNTIME/doc`
 
 ## Install to custom location
 
