@@ -108,7 +108,7 @@ For instructions on how to install the Python modules, see [`:help nvim_python`]
 Windows support is (currently) experimental. To try it out, you need `nvim.exe` and a front-end such as Neovim-QT.
 
 1. Go to https://ci.appveyor.com/project/equalsraf/neovim
-    - Click the 64-bit build (Neovim-QT does not provide 32-bit builds).
+    - Click the 64-bit build (Neovim-QT won't work on 32-bit).
     - View the _Artifacts_ tab.
     - Download `Neovim.zip`.
     - Unzip.
