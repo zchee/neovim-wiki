@@ -110,9 +110,11 @@ Windows support is (currently) experimental. To try it out, you need `nvim.exe` 
 1. Go to https://ci.appveyor.com/project/equalsraf/neovim
     - Click the 64-bit build (Neovim-QT does not provide 32-bit builds).
     - View the _Artifacts_ tab.
-    - Click the `Neovim.zip` link to download `nvim.exe` and runtime files.
+    - Download `Neovim.zip`.
+    - Unzip.
 2. Download the latest [Neovim-QT build](https://github.com/equalsraf/neovim-qt/releases).
-3. Copy `bin/` and `share/` into the `neovim-qt` folder.
+    - Unzip.
+3. Copy `bin/` and `share/` from `Neovim/` into the `neovim-qt` folder.
 4. Double-click `nvim-qt.exe`
 
 # Install from source
