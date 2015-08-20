@@ -114,8 +114,9 @@ Windows support is (currently) experimental. To try it out, you need `nvim.exe` 
     - Unzip.
 2. Download the latest [Neovim-QT build](https://github.com/equalsraf/neovim-qt/releases).
     - Unzip.
-3. Copy `bin/` and `share/` from `Neovim/` into the `neovim-qt` folder.
-4. Double-click `nvim-qt.exe`
+3. Copy `nvim.exe` into `neovim-qt/` (next to `nvim-qt.exe`).
+4. Copy `share/nvim/runtime/*` into `neovim-qt/`. (The folders that were in `runtime/` should now be at the top level of `neovim-qt/`.)
+5. Double-click `nvim-qt.exe`
 
 # Install from source
 
