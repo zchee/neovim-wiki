@@ -2,7 +2,7 @@
 
 # Runtime issues
 
-### My CTRL-H mapping doesn't work. [#2048](https://github.com/neovim/neovim/issues/2048#issuecomment-78045837)
+### My CTRL-H mapping doesn't work
 
 Set `kbs=\177` in your terminal's terminfo/termcap:
 
