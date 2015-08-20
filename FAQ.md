@@ -38,15 +38,6 @@ The escape sequences `t_SI` and `t_EI` (which are [non-standard](https://groups.
 
 Note about gnome-terminal 3.6.2 (libvte-2.90-9): https://github.com/neovim/neovim/issues/2537
 
-### My CTRL-H mapping doesn't work. [#2048](https://github.com/neovim/neovim/issues/2048#issuecomment-78045837)
-
-Set `kbs=\177` in your terminal's terminfo/termcap.
-
-```sh
-infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti
-tic $TERM.ti
-```
-
 ### When will Windows be supported?
 
 See [#810](https://github.com/neovim/neovim/pull/810) and [#1749](https://github.com/neovim/neovim/issues/1749).
