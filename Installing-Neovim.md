@@ -103,6 +103,18 @@ See [neovim on SlackBuilds](http://slackbuilds.org/apps/neovim/).
 
 For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
 
+## Windows
+
+Windows support is (currently) experimental. To try it out, you need `nvim.exe` and a front-end such as Neovim-QT.
+
+1. Go to https://ci.appveyor.com/project/equalsraf/neovim
+    - Click the 64-bit build (Neovim-QT does not provide 32-bit builds).
+    - View the _Artifacts_ tab.
+    - Click the `Neovim.zip` link to download `nvim.exe` and runtime files.
+2. Download the latest [Neovim-QT build](https://github.com/equalsraf/neovim-qt/releases).
+3. Copy `bin/` and `share/` into the `neovim-qt` folder.
+4. Double-click `nvim-qt.exe`
+
 # Install from source
 
 - _Note:_ To easily **uninstall** after building from source, you should install to a _custom location_ [as explained below](#install-to-custom-location).
