@@ -135,7 +135,7 @@ That's it. By default, that installs to the standard software location for your 
 
 To install Neovim to a custom directory, set `CMAKE_INSTALL_PREFIX` in the build command:
 
-```sh
+```
 rm -r build/
 make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/neovim"
 sudo make install
