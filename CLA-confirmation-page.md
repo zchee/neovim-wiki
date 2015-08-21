@@ -138,3 +138,4 @@ The timestamp is sent by the CLA form. Please don't modify this page until you h
 - 1439042941576 Marcel Krüger
 - 1439336786370 Mathieu Xhonneux
 - 1440033696727 James McCoy
+- 1440187665078 Rebecca Ysteboe
