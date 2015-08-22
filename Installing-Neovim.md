@@ -103,6 +103,10 @@ See [neovim on SlackBuilds](http://slackbuilds.org/apps/neovim/).
 
 For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
 
+## Android
+
+[Termux on the Google Play store](https://play.google.com/store/apps/details?id=com.termux) offers a Neovim package.
+
 ## Windows
 
 Windows support is (currently) experimental. To try it out, you need `nvim.exe` and a front-end such as Neovim-QT.
