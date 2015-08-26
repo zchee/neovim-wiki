@@ -11,7 +11,7 @@ infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti
 tic $TERM.ti
 ```
 
-See [#2048](https://github.com/neovim/neovim/issues/2048) for more information; this should be fixed for the first public release of Neovim.
+See [#2048](https://github.com/neovim/neovim/issues/2048) for more information.
 
 ### `:!` and `system()` do weird things with interactive processes
 
