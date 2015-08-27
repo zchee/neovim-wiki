@@ -1,4 +1,4 @@
-*If you are working on a Neovim-related project, feel free to add a link to this page!*
+*If you are working on a Neovim-related project, feel free to include it below!*
 
 **Note:** The projects linked on this page might be experimental and not ready for end users.
 
