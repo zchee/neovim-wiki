@@ -36,7 +36,7 @@ To get a backtrace from the `core` file:
 
 ### Backtrace (OSX)
 
-If `nvim` crashes on OSX, you can easily see the backtrace in Console.app.
+If `nvim` crashes on OSX, you can easily see the backtrace in Console.app (under "User Diagnostic Reports").
 
     open -a Console
 
