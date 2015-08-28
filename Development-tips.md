@@ -40,7 +40,7 @@ If `nvim` crashes on OSX, you can easily see the backtrace in Console.app (under
 
     open -a Console
 
-You may also want to [enable core dumps on OSX](https://developer.apple.com/library/mac/technotes/tn2124/_index.html#//apple_ref/doc/uid/DTS10003391-CH1-SECCOREDUMPS). The `/core/` directory must exist and be writable.
+You may also want to [enable core dumps on OSX](https://developer.apple.com/library/mac/technotes/tn2124/_index.html#//apple_ref/doc/uid/DTS10003391-CH1-SECCOREDUMPS). The `/cores/` directory must exist and be writable.
 
 ### Using `lldb` to step through unit tests
 
