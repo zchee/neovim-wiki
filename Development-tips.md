@@ -34,6 +34,13 @@ To get a backtrace from the `core` file:
 
     gdb -q -n -ex bt -batch ./build/bin/nvim <path/to/core> > backtrace.txt
 
+If `-ex` does not work, use `tee` to save the output of `gdb` session:
+
+    gdb build/bin/nvim /cores/core.74533 2>&1 | tee backtrace.txt
+
+- `thread apply all bt` may be necessary because Neovim is multi-threaded.
+- `thread apply all bt full` shows richer (full) information.
+
 ### Backtrace (OSX)
 
 If `nvim` crashes on OSX, you can easily see the backtrace in Console.app (under "User Diagnostic Reports").
