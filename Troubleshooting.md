@@ -87,7 +87,7 @@ If there's no results, then you might not be using a UTF-8 locale. See the follo
 
 ### Pressing `ESC` when running nvim in tmux or GNU Screen inserts characters
 
-Try setting your escape time to a low value (or even zero) in your `.tmux.conf`:
+Try setting your escape time to a low value (10-20ms) in your `.tmux.conf`:
 
 ```tmux
 set -g escape-time 10
