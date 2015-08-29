@@ -2,7 +2,7 @@ Neovim was forked from Vim 7.4.160; it is kept up-to-date with relevant Vim patc
 
 Visit the [**vim patch report**](http://neovim.io/doc/reports/vimpatch/) to see which patches are needed, or use the [`vim-patch.sh`](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh) script: 
 
-    ./scripts/vim-patch.sh --list
+    ./scripts/vim-patch.sh -l
 
 Everyone is welcome to send pull requests for relevant Vim patches (see [below](#pull-requests)), but some types of patches are **not relevant to Neovim:**
 
