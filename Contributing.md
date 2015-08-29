@@ -20,8 +20,8 @@ for guidelines on sending contributions as pull requests.
 ## Coverity
 
 [Coverity Scan](https://scan.coverity.com/) is used to detect defects in the
-code. Check out the [Neovim Coverity](https://scan.coverity.com/projects/2227)
-project to see the info on the latest build.
+code. Check out the [Neovim Coverity project](https://scan.coverity.com/projects/neovim-neovim)
+to see the info on the latest build.
 
 If you want to see the defects and fix them, you need to request access at the
 **Contributor** level. An Admin will grant you permission as soon as they are
