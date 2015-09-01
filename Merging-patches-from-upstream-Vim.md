@@ -22,7 +22,7 @@ Quick start
 
 Say you've pulled down the Neovim source, and you want to merge Vim patch 7.4.123. Now just run [**vim-patch.sh**](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh):
 
-    ./scripts/vim-patch.sh 7.4.123
+    ./scripts/vim-patch.sh -p 7.4.123
 
 The script guides you with further instructions. It's easy and painless, just try it!
 
