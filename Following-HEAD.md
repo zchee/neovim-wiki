@@ -6,6 +6,15 @@ or [Installing Neovim](Installing-Neovim), depending on your preferred installat
 
 ------------
 
+### 2015/09/09
+
+The [`'encoding'`][encoding] option can no longer be changed after [initialization][].
+See issue [#2929][2929] for more information.
+
+[2929]: https://github.com/neovim/neovim/pull/2929
+[encoding]: http://neovim.io/doc/user/options.html#%27encoding%27
+[initialization]: http://neovim.io/doc/user/starting.html#initialization
+
 ### 2015/07/26
 
 The behavior of the [`mkdir()`][mkdir] function has changed:
@@ -24,7 +33,7 @@ See [#3041][3041] for more information.
 
 ### 2015/07/20
 
-The `:Print` command has been removed. It works the same as `:print`, so use that instead.
+The `Print` command has been removed. It works the same as `print`, so use that instead.
 
 See [#3049][3049] for more information.
 
@@ -56,7 +65,7 @@ See [#2943][2943] for more information.
 
 ### 2015/07/15
 
-The [`:tearoff`][tearoff] command has been removed. It was never actually implemented, so the only functional difference should be that
+The [`tearoff`][tearoff] command has been removed. It was never actually implemented, so the only functional difference should be that
 
 ```vim
 exists(':tearoff')
