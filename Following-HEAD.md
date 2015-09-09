@@ -9,7 +9,7 @@ or [Installing Neovim](Installing-Neovim), depending on your preferred installat
 ### 2015/09/09
 
 The [`'encoding'`][encoding] option can no longer be changed after [initialization][].
-See issue [#2929][2929] for more information.
+See [#2929][2929] for more information.
 
 [2929]: https://github.com/neovim/neovim/pull/2929
 [encoding]: http://neovim.io/doc/user/options.html#%27encoding%27
