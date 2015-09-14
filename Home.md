@@ -24,6 +24,7 @@
 - [Building Neovim](Building-Neovim)
 - **[Contributing](Contributing)**
     - [Unit testing](Unit-tests)
+    - [Refactoring guidelines](https://github.com/neovim/neovim/wiki/Refactoring)
     - [Merging patches from upstream Vim](Merging-patches-from-upstream-Vim)
 - [Development tips](Development-tips)
 - [Coding conventions](http://neovim.io/develop/style-guide.xml)
