@@ -1,4 +1,4 @@
-## Pull-request guidelines
+## Pull requests
 
 "Cleanup" PRs should include some unit tests that cover the function being changed, so that we can feel more confident about regressions, future changes, and Vim-patch merges.
 
