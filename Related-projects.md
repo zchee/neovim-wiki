@@ -34,6 +34,7 @@
 | Lua         | [neovim/lua-client](https://github.com/neovim/lua-client)                            |
 | Node.js     | [fritzy/node-neovim](https://github.com/fritzy/node-neovim)                          |
 | Node.js     | [ngroup/neovim.js](https://github.com/ngroup/neovim.js)                              |
+| Perl        | [yanick/Neovim-RPC](https://github.com/yanick/Neovim-RPC)                            |
 | Python      | [neovim/python-client](https://github.com/neovim/python-client)                      |
 | R           | [jalvesaq/nvimcom](https://github.com/jalvesaq/nvimcom)                              |
 | Ruby        | [alexgenco/neovim-ruby](https://github.com/alexgenco/neovim-ruby)                    |
