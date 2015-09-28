@@ -1,1 +1,1 @@
-The node client contains an auto-generated [API description](https://github.com/neovim/node-client/blob/master/api.d.ts).
+The node client contains an auto-generated [API description](https://github.com/neovim/node-client/blob/master/index.d.ts).
