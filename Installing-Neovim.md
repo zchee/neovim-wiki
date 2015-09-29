@@ -45,7 +45,9 @@ For installing the Python modules, you have two alternatives:
  * Use the [`python2-neovim`](https://aur.archlinux.org/packages/python2-neovim) and [`python-neovim`](https://aur.archlinux.org/packages/python-neovim) PKGBUILDs.
  * Install `pip` and follow the instructions at [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html):
 
-    $ sudo pacman -S python-pip python2-pip
+```
+$ sudo pacman -S python-pip python2-pip
+```
 
 ## CRUX
 
