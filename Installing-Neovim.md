@@ -17,30 +17,24 @@ Neovim has been added to a [Personal Package Archive](https://launchpad.net/~neo
 
 Run the following commands:
 
-```
-sudo add-apt-repository ppa:neovim-ppa/unstable
-sudo apt-get update
-sudo apt-get install neovim
-```
+    $ sudo add-apt-repository ppa:neovim-ppa/unstable
+    $ sudo apt-get update
+    $ sudo apt-get install neovim
 
 Prerequisites for the Python modules:
 
-```
-sudo apt-get install python-dev python-pip python3-dev python3-pip
-```
+    $ sudo apt-get install python-dev python-pip python3-dev python3-pip
 
 For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
 
 If you want to use Neovim for some (or all) of the editor alternatives, use the following commands:
 
-```
-sudo update-alternatives --install /usr/bin/vi vi /usr/bin/nvim 60
-sudo update-alternatives --config vi
-sudo update-alternatives --install /usr/bin/vim vim /usr/bin/nvim 60
-sudo update-alternatives --config vim
-sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
-sudo update-alternatives --config editor
-```
+    $ sudo update-alternatives --install /usr/bin/vi vi /usr/bin/nvim 60
+    $ sudo update-alternatives --config vi
+    $ sudo update-alternatives --install /usr/bin/vim vim /usr/bin/nvim 60
+    $ sudo update-alternatives --config vim
+    $ sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
+    $ sudo update-alternatives --config editor
 
 ## Arch Linux
 
@@ -51,9 +45,7 @@ For installing the Python modules, you have two alternatives:
  * Use the [`python2-neovim`](https://aur.archlinux.org/packages/python2-neovim) and [`python-neovim`](https://aur.archlinux.org/packages/python-neovim) PKGBUILDs.
  * Install `pip` and follow the instructions at [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html):
 
-```
-sudo pacman -S python-pip python2-pip
-```
+    $ sudo pacman -S python-pip python2-pip
 
 ## CRUX
 
@@ -65,9 +57,7 @@ For instructions on how to install the Python modules, see [`:help nvim_python`]
 
 A snapshot ebuild is now available in Gentoo's official portage repository:
 
-```
-emerge -a app-editors/neovim
-```
+    $ emerge -a app-editors/neovim
 
 A "live" ebuild can be found in [yngwin's developer overlay](http://cgit.gentooexperimental.org/dev/yngwin.git/tree/app-editors/neovim).
 
@@ -77,9 +67,7 @@ For instructions on how to install the Python modules, see [`:help nvim_python`]
 
 A "scm" exheres is currently available in repository `::exony`:
 
-```
-cave resolve app-editors/neovim::exony
-```
+    $ cave resolve app-editors/neovim::exony
 
 For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
 
@@ -87,11 +75,9 @@ For instructions on how to install the Python modules, see [`:help nvim_python`]
  
 http://copr.fedoraproject.org/coprs/dperson/neovim/
 
-```
-dnf -y install dnf-plugins-core
-dnf -y copr enable dperson/neovim
-dnf -y install neovim
-```
+    $ dnf -y install dnf-plugins-core
+    $ dnf -y copr enable dperson/neovim
+    $ dnf -y install neovim
 
 It's built using the [Copr](https://copr.fedoraproject.org/) automated build system, which is unsupported. There's no guarantee of how long your package will be available after the build finishes.
 
@@ -128,8 +114,8 @@ Windows support is (currently) experimental. To try it out, you need `nvim.exe` 
 
 Instead of using a pre-built package, you can build Neovim from source. This is usually easy, just make sure you have the [prerequisites](Building-Neovim#build-prerequisites). Then run:
 
-    make
-    sudo make install
+    $ make
+    $ sudo make install
 
 That's it. By default, that installs to the standard software location for your operation system (`/usr/local`, `C:/Program Files`, etc.). To choose a different location, see below.
 
@@ -139,11 +125,10 @@ That's it. By default, that installs to the standard software location for your 
 
 To install Neovim to a custom directory, set `CMAKE_INSTALL_PREFIX` in the build command:
 
-```
-rm -r build/
-make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/neovim"
-sudo make install
-```
+    $ rm -r build/
+    $ make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/neovim"
+    $ make install
+    $ export PATH="$HOME/neovim/bin:$PATH"
 
 _Note:_ The `rm -r build/` step above is needed if you already built Neovim before, otherwise the install location will be the same as before.
 
