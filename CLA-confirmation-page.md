@@ -144,3 +144,4 @@ The timestamp is sent by the CLA form. Please don't modify this page until you h
 - 1441935959862 Geoff Liu
 - 1442258961714 Jonathan Skeate
 - 1443747880960 Antonio Morales
+- 1444434929106 Johan Klokkhammer Helsing
