@@ -148,3 +148,4 @@ The timestamp is sent by the CLA form. Please don't modify this page until you h
 - 1444492113527 Ross Brandes
 - 1444493946457 Nicholas Smith
 - 1445368828889 Fabio Pozzi
+- 1445515044909 Bao Trinh
