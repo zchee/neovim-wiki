@@ -8,7 +8,8 @@ or [Installing Neovim](Installing-Neovim), depending on your preferred installat
 
 ### 2015/10/17
 
-The [`'viminfo'`][viminfo] is now an alias of [`'shada'`][shada]. [`'viminfo'`][viminfo] can no longer include `n` and it can no longer be shared with vim. See [#3469][3469] for more information.
+The [`'viminfo'`][viminfo] option is now an alias for [`'shada'`][shada]. [`'viminfo'`][viminfo] can no longer include `n` and it can no longer be shared with Vim.
+See [#3469][3469] for more information.
 
 [3469]: https://github.com/neovim/neovim/issues/3469
 [viminfo]: http://neovim.io/doc/user/options.html#%27viminfo%27
