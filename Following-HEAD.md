@@ -1,10 +1,19 @@
 This document is meant for people who wish to run a development build of Neovim, i.e., the most recent commit.
-It's purpose is only to document breaking changes, so should NOT be used as a reference for new features; that's what [`:help nvim`](http://neovim.io/doc/user/nvim.html) is for. 
+Its purpose is only to document breaking changes, so should NOT be used as a reference for new features--that's what [`:help nvim`](http://neovim.io/doc/user/nvim.html) is for. 
 
-If you haven't already, see either [Building Neovim](Building-Neovim)
+If you haven't already, see [Building Neovim](Building-Neovim)
 or [Installing Neovim](Installing-Neovim), depending on your preferred installation method.
 
 ------------
+
+### 2015/10/26
+
+Neovim now supports XDG configuration. The **default config paths changed**, so `~/.nvimrc` and `~/.nvim/` will _not_ be found by default. See [`:help nvim-from-vim`](https://github.com/ZyX-I/neovim/blob/42047acb4f07c689936b051864c6b4448b1b6aa1/runtime/doc/nvim_from_vim.txt#L12-L18) for quick migration steps.
+
+tl;dr:
+
+- Default user config directory is now `~/.config/nvim/` 
+- Default "vimrc" location is now `~/.config/nvim/init.vim` 
 
 ### 2015/10/17
 
