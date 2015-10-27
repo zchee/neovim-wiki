@@ -218,14 +218,6 @@ export AUTOCONF_VERSION=2.69
 export AUTOMAKE_VERSION=1.15
 ```
 
-Additionally, jemalloc 3.6.0 doesn't build on OpenBSD, so it must be disabled:
-
-```
-cat > local.mk << EOF
-> DEPS_CMAKE_FLAGS := -DUSE_BUNDLED_JEMALLOC=OFF
-> EOF
-```
-
 ### OS X
 
 * Install [Xcode](https://developer.apple.com/) and [Homebrew](http://brew.sh)
