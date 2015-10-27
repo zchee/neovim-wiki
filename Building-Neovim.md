@@ -213,7 +213,7 @@ a PANIC in LuaJIT when trying to install a rock.
 ### OpenBSD -current
 
 ```
-pkg_add gmake cmake libtool unzip autoconf-2.69p1 automake-1.15
+doas pkg_add gmake cmake libtool unzip autoconf-2.69p1 automake-1.15
 export AUTOCONF_VERSION=2.69
 export AUTOMAKE_VERSION=1.15
 ```
