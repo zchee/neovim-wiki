@@ -8,7 +8,7 @@ or [Installing Neovim](Installing-Neovim), depending on your preferred installat
 
 ### 2015/10/26
 
-Neovim now supports XDG configuration. The **default config paths changed**, so `~/.nvimrc` and `~/.nvim/` will _not_ be found by default. See [`:help nvim-from-vim`](https://github.com/ZyX-I/neovim/blob/42047acb4f07c689936b051864c6b4448b1b6aa1/runtime/doc/nvim_from_vim.txt#L12-L18) for quick migration steps.
+Neovim now supports XDG configuration. The **default config paths changed**, so `~/.nvimrc` and `~/.nvim/` will _not_ be found by default. See [`:help nvim-from-vim`](https://github.com/neovim/neovim/blob/42047acb4f07c689936b051864c6b4448b1b6aa1/runtime/doc/nvim_from_vim.txt#L12-L18) for quick migration steps.
 
 tl;dr:
 
