@@ -18,6 +18,7 @@ tl;dr:
 ### 2015/10/17
 
 The [`'viminfo'`][viminfo] option is now an alias for [`'shada'`][shada]. [`'viminfo'`][viminfo] can no longer include `n` and it can no longer be shared with Vim.
+
 See [#3469][3469] for more information.
 
 [3469]: https://github.com/neovim/neovim/issues/3469
@@ -27,6 +28,7 @@ See [#3469][3469] for more information.
 ### 2015/09/09
 
 The [`'encoding'`][encoding] option can no longer be changed after [initialization][].
+
 See [#2929][2929] for more information.
 
 [2929]: https://github.com/neovim/neovim/pull/2929
