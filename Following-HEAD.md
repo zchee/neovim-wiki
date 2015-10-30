@@ -1,5 +1,5 @@
 This document is meant for people who wish to run a development build of Neovim, i.e., the most recent commit.
-Its purpose is only to document breaking changes, so should NOT be used as a reference for new features--that's what [`:help nvim`](http://neovim.io/doc/user/nvim.html) is for. 
+Its purpose is only to document breaking changes, so should NOT be used as a reference for new features—that's what [`:help nvim`](http://neovim.io/doc/user/nvim.html) is for. 
 
 If you haven't already, see [Building Neovim](Building-Neovim)
 or [Installing Neovim](Installing-Neovim), depending on your preferred installation method.
