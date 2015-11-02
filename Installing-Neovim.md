@@ -104,7 +104,7 @@ Neovim can be installed from the [unstable channel](http://nixos.org/nixos/manua
 For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
 
 ## Freebsd
-Neovim now is available in port collection in Freebsd![link](https://www.freshports.org/editors/neovim/)
+Neovim now is available in port collection in Freebsd! [link](https://www.freshports.org/editors/neovim/)
 
     To install the port: cd /usr/ports/editors/neovim/ && make install clean
     To add the package: pkg install neovim
