@@ -40,7 +40,7 @@ This makes the cursor a pipe in insert-mode, and a block in normal-mode. The env
 
 The escape sequences `t_SI` and `t_EI` (which are [non-standard](https://groups.google.com/d/msg/vim_dev/biVcXiYcLRw/zumrjo6gP4oJ)) are ignored, as are most terminal codes. 
 
-Note about gnome-terminal 3.6.2 (libvte-2.90-9): https://github.com/neovim/neovim/issues/2537
+Note about gnome-terminal 3.6.2 (libvte-2.90-9): [#2537](https://github.com/neovim/neovim/issues/2537)
 
 ### When will Windows be supported?
 
