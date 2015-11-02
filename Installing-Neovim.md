@@ -105,10 +105,13 @@ For instructions on how to install the Python modules, see [`:help nvim_python`]
 
 ## Freebsd
 
-Neovim now is available in port collection in Freebsd! [link](https://www.freshports.org/editors/neovim/)
+Neovim can be installed [from the ports tree](https://www.freshports.org/editors/neovim/):
 
-    To install the port: cd /usr/ports/editors/neovim/ && make install clean
-    To add the package: pkg install neovim
+    cd /usr/ports/editors/neovim/ && make install clean
+
+Or installed using [`pkg(8)`](https://www.freebsd.org/cgi/man.cgi?query=pkg&sektion=8&apropos=0&manpath=FreeBSD+10.2-RELEASE):
+
+    pkg install neovim
 
 ## Android
 
