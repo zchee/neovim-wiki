@@ -73,7 +73,7 @@ Here's an outline of the `nvim` startup process:
 
 1. start listening on a socket or TCP address (random unless overridden)
     - UI may be specified as a command-line argument to `nvim` 
-2. read `.nvimrc`
+2. read `~/.config/nvim/init.vim`
     - discover plugins (which may include UI)
 3. start the UI program, passing the listen address.
 4. open two-way communication channels with all plugins
