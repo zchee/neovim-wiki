@@ -15,7 +15,7 @@ See the [README of `neovim/homebrew-neovim`](https://github.com/neovim/homebrew-
 
 Neovim has been added to a [Personal Package Archive](https://launchpad.net/~neovim-ppa/+archive/ubuntu/unstable) which allows you to install it using `apt-get` on Ubuntu [12.04 and later](https://wiki.ubuntu.com/Releases).
 
-To be able to use **add-apt-repository** you may will need to install **software-properties-common**:
+To be able to use **add-apt-repository** you may need to install software-properties-common:
 
     sudo apt-get install software-properties-common
 
