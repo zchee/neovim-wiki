@@ -20,7 +20,7 @@ No; the legacy interfaces required by plugins such as [neocomplete](https://gith
 
 ### How can I use true colors in the terminal?
 
-Add this to your `.nvimrc`:
+Add this to your `init.vim`:
 
 ```vim
 :let $NVIM_TUI_ENABLE_TRUE_COLOR=1
@@ -30,7 +30,7 @@ See [this gist](https://gist.github.com/XVilka/8346728) for more information abo
 
 ### How can I change the cursor shape in the terminal?
 
-Add this to your `.nvimrc`:
+Add this to your `init.vim`:
 
 ```vim
 :let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
