@@ -50,12 +50,13 @@ Neovim can be also installed using the PKGBUILD [`neovim-git`](https://aur.archl
 
 For installing the Python modules, you have two alternatives:
 
- * Use the [`python2-neovim`](https://aur.archlinux.org/packages/python2-neovim) and [`python-neovim`](https://aur.archlinux.org/packages/python-neovim) PKGBUILDs.
+ * Use the packages from the community repository:
+
+        sudo pacman -S python2-neovim python-neovim
+
  * Install `pip` and follow the instructions at [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html):
 
-```
-sudo pacman -S python-pip python2-pip
-```
+        sudo pacman -S python-pip python2-pip
 
 ## CRUX
 
