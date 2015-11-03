@@ -42,7 +42,11 @@ If you want to use Neovim for some (or all) of the editor alternatives, use the 
 
 ## Arch Linux
 
-Neovim can be installed using the PKGBUILD [`neovim-git`](https://aur.archlinux.org/packages/neovim-git), available on the [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository).
+Neovim can be installed from the community repository:
+
+    sudo pacman -Syu neovim
+
+Neovim can be also installed using the PKGBUILD [`neovim-git`](https://aur.archlinux.org/packages/neovim-git), available on the [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository).
 
 For installing the Python modules, you have two alternatives:
 
