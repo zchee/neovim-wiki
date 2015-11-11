@@ -6,6 +6,14 @@ or [Installing Neovim](Installing-Neovim), depending on your preferred installat
 
 ------------
 
+### 2015/11/11
+
+The `-X` command-line flag, which was a no-op, has been removed.
+
+See [#3641][3641] for more information.
+
+[3641]: https://github.com/neovim/neovim/pull/3641
+
 ### 2015/11/07
 
 The `open` command has been removed. It works the same as `visual`, so use that instead.
