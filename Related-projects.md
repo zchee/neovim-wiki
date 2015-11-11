@@ -39,7 +39,6 @@
 | Python      | [neovim/python-client](https://github.com/neovim/python-client)                      |
 | R           | [jalvesaq/nvimcom](https://github.com/jalvesaq/nvimcom)                              |
 | Ruby        | [alexgenco/neovim-ruby](https://github.com/alexgenco/neovim-ruby)                    |
-| Rust        | [dradtke/neovim-rs](https://github.com/dradtke/neovim-rs)                            |
 | Rust        | [oakes/neovim-rs](https://github.com/oakes/neovim-rs)                                |
 
 ### Plugins
