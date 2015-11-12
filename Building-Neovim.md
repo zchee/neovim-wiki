@@ -17,21 +17,25 @@ Now that you have the dependencies, you can try other build targets and options,
 
 ## Running tests
 
-### Integration tests
-
-To build and run all integration tests:
+To build and run all tests:
 
     make test
 
-### Unit tests
-
-To build and run all unit tests:
+To build and run all _unit_ tests:
 
     make unittest
+
+To build and run all _functional_ tests:
+
+    make functionaltest
 
 To run a *specific* unit test:
 
     TEST_FILE=test/unit/foo.lua make unittest
+
+To run a *specific* functional test:
+
+    TEST_FILE=test/functional/foo.lua make functionaltest
 
 ### Legacy integration tests
 
