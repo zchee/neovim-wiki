@@ -13,7 +13,7 @@ void normal_mode_process_byte(char c) {
 }
 ```
    
-What needs to be done is remove all those read loops and replace by a function(eg: `process_byte(char c)`) that will buffer input, delegate to mode-specific input-handling functions or transition editor state when necessary. Something like this:
+What needs to be done is remove all those read loops and replace by a function(e.g. `process_byte(char c)`) that will buffer input, delegate to mode-specific input-handling functions or transition editor state when necessary. Something like this:
 
 ```c
 void process_byte(char c) {
