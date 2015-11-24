@@ -143,6 +143,7 @@ The Lua packages required by the build process should be automatically installed
 
 - The LuaRocks servers are down.
 - The program `unzip` isn't found. If this is the case, LuaRocks will report something like this: `Warning: Failed searching manifest: Failed loading manifest: Failed extracting manifest file`.
+- Your `CDPATH` variable may be interfering with the build. Simply unset it for the make invocations.
 
 To avoid the first error, a LuaRocks mirror can be used by creating the file `.deps/usr/etc/luarocks/config-5.1.lua` with the following contents:
 
