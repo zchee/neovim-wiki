@@ -188,7 +188,7 @@ Platform-specific requirements are listed below.
 
 ### Ubuntu / Debian
 
-    sudo apt-get install libtool libtool-bin autoconf automake cmake g++ pkg-config unzip
+    sudo apt-get install libtool autoconf automake cmake g++ pkg-config unzip
 
 ### CentOS/RHEL/Fedora
 
