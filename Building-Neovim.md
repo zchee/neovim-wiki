@@ -180,9 +180,9 @@ When changing `DEPS_PREFIX`, you may need to clear the CMake cache in order for 
 
 ## Build Prerequisites
 
-General requirements:
-- A recent version of Clang or GCC (at least `4.3`, see [#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
-- CMake (at least `2.8.7`) built with TLS/SSL support ([#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312))
+General requirements (see [#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312)):
+- A recent version of Clang, or GCC version `4.3` and above
+- CMake version `2.8.7` and above, built with TLS/SSL support
 
 Platform-specific requirements are listed below.
 
