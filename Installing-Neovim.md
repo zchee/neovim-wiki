@@ -130,9 +130,7 @@ Windows support is (currently) experimental. To try it out, you need `nvim.exe` 
     - Click the `Win64` build (near the bottom, with this label: `Environment: GENERATOR=Visual Studio 14 Win64, DEPS_PATH=deps64`).
     - View the _Artifacts_ tab.
     - Download `Neovim.zip`.
-    - Unzip.
-2. Download the latest [Neovim-QT build](https://github.com/equalsraf/neovim-qt/releases).
-    - Unzip.
+2. Download and unzip the latest [Neovim-QT build](https://github.com/equalsraf/neovim-qt/releases).
 3. Copy `nvim.exe` into `neovim-qt/`. 
 4. Copy `share/nvim/runtime/*` (the _contents of_ `runtime/`) into `neovim-qt/`.
 5. Double-click `nvim-qt.exe`
