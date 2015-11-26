@@ -141,11 +141,11 @@ Windows support is (currently) experimental. To try it out, you need `nvim.exe` 
 
 This is an alternative way of installing if you prefer to keep the Neovim and Neovim-QT files separated for easier upgrading. This replaces step 3 and 4 in the above instruction.
 
-1. Run cmd.exe as an administrator.
-2. cd C:\Program Files\Neovim-QT
-3. mklink nvim.exe ..\Neovim\bin\nvim.exe
-4. for %f in (..\Neovim\share\nvim\runtime\*) do mklink "%~nxf" "..\Neovim\share\nvim\runtime\%~nxf"
-5. for /d %f in (..\Neovim\share\nvim\runtime\*) do mklink /d "%~nxf" "..\Neovim\share\nvim\runtime\%~nxf"
+1. Run `cmd.exe` as an administrator.
+2. `cd C:\Program Files\Neovim-QT`
+3. `mklink nvim.exe ..\Neovim\bin\nvim.exe`
+4. `for %f in (..\Neovim\share\nvim\runtime\*) do mklink "%~nxf" "..\Neovim\share\nvim\runtime\%~nxf"`
+5. `for /d %f in (..\Neovim\share\nvim\runtime\*) do mklink /d "%~nxf" "..\Neovim\share\nvim\runtime\%~nxf"`
 
 # Install from source
 
