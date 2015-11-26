@@ -190,7 +190,7 @@ Platform-specific requirements are listed below.
 
     sudo apt-get install libtool libtool-bin autoconf automake cmake g++ pkg-config unzip
 
-### CentOS/RHEL/Fedora
+### CentOS / RHEL / Fedora
 
 If you're using CentOS/RHEL 6 you need at least autoconf version 2.69 for
 compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
