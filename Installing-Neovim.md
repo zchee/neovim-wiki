@@ -173,7 +173,7 @@ To install Neovim to a custom directory, set `CMAKE_INSTALL_PREFIX` in the build
     make install
     export PATH="$HOME/neovim/bin:$PATH"
 
-_Note:_ The `rm -r build/` step above is needed if you already built Neovim before, otherwise the install location will be the same as before.
+Note that the `rm -r build/` step above is needed if you've built Neovim before, as the install location will be the same as before since CMake caches build information
 
 ## Uninstall a source build
 
