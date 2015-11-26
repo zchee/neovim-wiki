@@ -153,14 +153,14 @@ If you already have Vim installed you can copy or symlink `%userprofile%\_vimrc`
 
 # Install from source
 
-- _Note:_ To easily **uninstall** after building from source, you should install to a _custom location_ [as explained below](#install-to-custom-location).
+Instead of using a pre-built package, you can build and install Neovim from source.
 
-Instead of using a pre-built package, you can build Neovim from source. This is usually easy, just make sure you have the [prerequisites](Building-Neovim#build-prerequisites). Then run:
+See [Building-Neovim](https://github.com/neovim/neovim/wiki/Building-Neovim) first; once that's done 
 
     make
     sudo make install
 
-That's it. By default, that installs to the standard software location for your operation system (`/usr/local`, `C:/Program Files`, etc.). To choose a different location, see below.
+That installs to the standard software location for your operation system (`/usr/local`, `C:/Program Files`, etc.). To choose a different location, see below.
 
 - Alternatively, you can run `build/bin/nvim` directly. Just run `make` (instead of `make install`). Then run this command in `nvim` itself: `:helptags $VIMRUNTIME/doc`
 
