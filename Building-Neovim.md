@@ -23,7 +23,11 @@ To build and run all _unit_ tests:
 
 To build and run all _functional_ tests:
 
-    make test
+    make functionaltest
+
+Note that `functionaltest` is the same as `test`.
+
+---
 
 To run a *specific* unit test:
 
