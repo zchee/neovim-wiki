@@ -147,6 +147,9 @@ This is an alternative way of installing if you prefer to keep the Neovim and Ne
 4. `for %f in (..\Neovim\share\nvim\runtime\*) do mklink "%~nxf" "..\Neovim\share\nvim\runtime\%~nxf"`
 5. `for /d %f in (..\Neovim\share\nvim\runtime\*) do mklink /d "%~nxf" "..\Neovim\share\nvim\runtime\%~nxf"`
 
+### .vimrc file in Windows
+If you already have Vim installed you can copy or symlink `%userprofile%\_vimrc` to `%userprofile%\AppData\Local\nvim\init.vim` to get the same settings as you already use in Vim.
+
 # Install from source
 
 - _Note:_ To easily **uninstall** after building from source, you should install to a _custom location_ [as explained below](#install-to-custom-location).
