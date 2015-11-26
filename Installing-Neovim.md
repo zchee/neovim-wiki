@@ -153,30 +153,20 @@ If you already have Vim installed you can copy or symlink `%userprofile%\_vimrc`
 
 # Install from source
 
-Instead of using a pre-built package, you can build and install Neovim from source.
-
-See [Building-Neovim](https://github.com/neovim/neovim/wiki/Building-Neovim) first; once that's done 
+If a package is not provided for your platform, see [Building-Neovim](https://github.com/neovim/neovim/wiki/Building-Neovim).  Once you've built Neovim, install it with the following commands:
 
     make
     sudo make install
 
-That installs to the standard software location for your operation system (`/usr/local`, `C:/Program Files`, etc.). To choose a different location, see below.
-
-- Alternatively, you can run `build/bin/nvim` directly. Just run `make` (instead of `make install`). Then run this command in `nvim` itself: `:helptags $VIMRUNTIME/doc`
-
-## Install to custom location
-
-To install Neovim to a custom directory, set `CMAKE_INSTALL_PREFIX` in the build command:
+For Unix-like systems this installs Neovim to `/usr/local`, while for Windows to `C:/Program Files`. Note, however, that this can complicate uninstallation. The following example avoids this by isolating an installation under `$HOME/neovim`:
 
     rm -r build/
     make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX:PATH=$HOME/neovim"
     make install
     export PATH="$HOME/neovim/bin:$PATH"
 
-Note that the `rm -r build/` step above is needed if you've built Neovim before, as the install location will be the same as before since CMake caches build information
+Note that the `rm -r build/` step above is needed if you've built Neovim before, as the install location will be the same as before since CMake caches build information.
 
-## Uninstall a source build
-
-To uninstall Neovim, just delete the `CMAKE_INSTALL_PREFIX` directory that you specified in the [_Install to custom location_](#install-to-custom-location) section above.
+---
 
 See [Building Neovim](Building-Neovim) for more options. See [Troubleshooting](Troubleshooting) if you encounter [build](Troubleshooting#build-issues) or [installation errors](Troubleshooting#installation-issues).
