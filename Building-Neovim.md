@@ -17,17 +17,13 @@ Now that you have the dependencies, you can try other build targets and options,
 
 ## Running tests
 
-To build and run all tests:
-
-    make test
-
 To build and run all _unit_ tests:
 
     make unittest
 
 To build and run all _functional_ tests:
 
-    make functionaltest
+    make test
 
 To run a *specific* unit test:
 
