@@ -222,7 +222,7 @@ export AUTOCONF_VERSION=2.69
 export AUTOMAKE_VERSION=1.15
 ```
 
-Additionally, Nvim compiled with jemalloc is broken on OpenBSD (see [#3434](https://github.com/neovim/neovim/issues/3434)), so it must be disabled prior to compilation:
+Additionally, Neovim compiled with jemalloc is broken on OpenBSD (see [#3434](https://github.com/neovim/neovim/issues/3434)), so it must be disabled prior to compilation:
 
     echo 'CMAKE_EXTRA_FLAGS += -DENABLE_JEMALLOC=OFF' > local.mk
 
