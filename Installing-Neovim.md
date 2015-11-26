@@ -169,4 +169,4 @@ Note that the `rm -r build/` step above is needed if you've built Neovim before,
 
 ---
 
-See [Building Neovim](Building-Neovim) for more options. See [Troubleshooting](Troubleshooting) if you encounter [build](Troubleshooting#build-issues) or [installation errors](Troubleshooting#installation-issues).
+See [Building Neovim](Building-Neovim) for more options. See [Troubleshooting](Troubleshooting) if you encounter [build](Troubleshooting#build-issues) or [installation issues](Troubleshooting#installation-issues).
