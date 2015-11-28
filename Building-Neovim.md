@@ -60,17 +60,6 @@ For developers and "edge" users, `RelWithDebInfo` is recommended over `Release` 
 
 To verify the build type after compilation, run `./build/bin/nvim --version | grep ^Build`
 
-An alternative to `CMAKE_BUILD_TYPE`:
-
-```
-rm -r build
-make cmake CFLAGS='-Wno-error -O2 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1'
-make
-```
-
-- `-U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1` is required because of [#223](https://github.com/neovim/neovim/issues/223).
-- To see the full build output (including flags send to the compiler by make/CMake), change the `make` step to `VERBOSE=1 make`
-
 ## Localization build
 
 A normal build will create all the `.mo` files in `build/src/nvim/po`.
