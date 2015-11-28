@@ -58,12 +58,7 @@ make CMAKE_BUILD_TYPE=Release
 
 For developers and "edge" users, `RelWithDebInfo` is recommended over `Release` as the latter doesn't generate debug info.
 
-To verify that the build was optimized, you can set `VERBOSE=1` and look for the `-O` flag:
-
-```
-rm -r build && make VERBOSE=1 CMAKE_BUILD_TYPE=MinSizeRel | grep -E '\-O(2|s|g)'
-cc -DHAVE_CONFIG_H -DINCLUDE_GENERATED_DECLARATIONS -Os ... -Wall -Wextra -pedantic -Wno-unused-parameter -Wstrict-prototypes -std=gnu99 ...
-```
+To verify the build type after compilation, run `./build/bin/nvim --version | grep ^Build`
 
 An alternative to `CMAKE_BUILD_TYPE`:
 
