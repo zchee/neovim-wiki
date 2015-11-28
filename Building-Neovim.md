@@ -17,11 +17,11 @@ Now that you have the dependencies, you can try other build targets and options,
 
 ## Running tests
 
-To build and run all _unit_ tests:
+To run all _unit_ tests:
 
     make unittest
 
-To build and run all _functional_ tests:
+To run all _functional_ tests:
 
     make functionaltest
 
@@ -39,7 +39,7 @@ To run a *specific* functional test:
 
 ### Legacy integration tests
 
-To build and run all legacy (Vim) integration tests:
+To run all legacy (Vim) integration tests:
 
     make oldtest
 
