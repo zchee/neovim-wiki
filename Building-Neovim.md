@@ -17,6 +17,10 @@ Now that you have the dependencies, you can try other build targets and options,
 
 ## Running tests
 
+To run all _non-legacy_ tests:
+
+    make test
+
 To run all _unit_ tests:
 
     make unittest
@@ -24,8 +28,6 @@ To run all _unit_ tests:
 To run all _functional_ tests:
 
     make functionaltest
-
-Note that `functionaltest` is the same as `test`.
 
 ---
 
