@@ -127,7 +127,9 @@ If your machine is behind a network proxy and you see this error:
 
 this can be fixed by setting the [`https_proxy` environment variable (for cURL)](http://curl.haxx.se/docs/manpage.html).
 
-If your firewall is blocking the port 9418 used by the git protocol and you obtained this kind of error message when building luacheck : 
+---
+
+If your firewall is blocking the port 9418 used by the git protocol and you obtained this kind of error message when building luacheck: 
 
 ```
 [ 95%] Generating usr/bin/luacheck
@@ -139,10 +141,9 @@ github.com[0: 192.30.252.130]: errno=Connection timed out
 
 This can be fixed by using git to replace git protocol to https protocol in every url:
 
-```
-git config --global url."https://".insteadOf git://
-```
-see the issues [#3769](https://github.com/neovim/neovim/issues/3769)
+    git config --global url."https://".insteadOf git://
+
+See [#3769](https://github.com/neovim/neovim/issues/3769) for more information.
 
 ### Settings in `local.mk` don't take effect
 
