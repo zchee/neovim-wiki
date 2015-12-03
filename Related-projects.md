@@ -56,6 +56,7 @@ Neovim is compatible with most Vim plugins. Here's a partial list of plugins tha
 - [neovim-hackernews](https://github.com/dpzmick/neovim-hackernews)
 - [nvim-ipy](https://github.com/bfredl/nvim-ipy)
 - [vim-accio](https://github.com/pgdouyon/vim-accio)
+- [vim-go](https://github.com/fatih/vim-go) (see [PR 607](https://github.com/fatih/vim-go/pull/607) for feature list)
 - [vim-grepper](https://github.com/mhinz/vim-grepper)
 - [vim-man](https://github.com/bruno-/vim-man)
 - [vim-markdown-composer](https://github.com/euclio/vim-markdown-composer)
