@@ -11,6 +11,13 @@ Note that the Neovim binary to run is called `nvim`, not `neovim`.
 
 See the [README of `neovim/homebrew-neovim`](https://github.com/neovim/homebrew-neovim/blob/master/README.md) for installation instructions.
 
+## [Macports](https://www.macports.org/) (OS X)
+
+Run the following commands:
+
+    sudo port selfupdate
+    sudo port install neovim
+
 ## Ubuntu
 
 Neovim has been added to a [Personal Package Archive](https://launchpad.net/~neovim-ppa/+archive/ubuntu/unstable) which allows you to install it using `apt-get` on Ubuntu [12.04 and later](https://wiki.ubuntu.com/Releases).
