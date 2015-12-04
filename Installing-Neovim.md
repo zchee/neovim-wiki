@@ -110,6 +110,12 @@ Neovim can be installed from the [unstable channel](http://nixos.org/nixos/manua
 
 For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
 
+## CRUX
+
+A CRUX port is available under [`6c37/neovim`](https://github.com/6c37/crux-ports), along with ports for other dependencies of Neovim.
+
+For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
+
 ## FreeBSD
 
 Neovim can be installed using [`pkg(8)`](https://www.freebsd.org/cgi/man.cgi?query=pkg&sektion=8&apropos=0&manpath=FreeBSD+10.2-RELEASE):
@@ -123,12 +129,6 @@ or [from the ports tree](https://www.freshports.org/editors/neovim/):
 ## Android
 
 [Termux on the Google Play store](https://play.google.com/store/apps/details?id=com.termux) offers a Neovim package.
-
-## CRUX
-
-A CRUX port is available under [`6c37/neovim`](https://github.com/6c37/crux-ports), along with ports for other dependencies of Neovim.
-
-For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
 
 ## Windows
 
