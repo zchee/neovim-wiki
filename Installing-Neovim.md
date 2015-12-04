@@ -124,7 +124,7 @@ or [from the ports tree](https://www.freshports.org/editors/neovim/):
 
 [Termux on the Google Play store](https://play.google.com/store/apps/details?id=com.termux) offers a Neovim package.
 
--## CRUX
+## CRUX
 
 A CRUX port is available under [`6c37/neovim`](https://github.com/6c37/crux-ports), along with ports for other dependencies of Neovim.
 
