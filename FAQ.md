@@ -46,6 +46,14 @@ Note about gnome-terminal 3.6.2 (libvte-2.90-9): [#2537](https://github.com/neov
 
 See [#810](https://github.com/neovim/neovim/pull/810) and [#1749](https://github.com/neovim/neovim/issues/1749).
 
+### What happened to --remote and friends?
+
+The code for that family of command-line arguments was removed. Eventually it will be added back using the Neovim API.
+
+Read more about it here: https://github.com/neovim/neovim/issues/1750
+
+If you can't live without it, use this wrapper script: https://github.com/mhinz/nvim-remote
+
 ### I have a technical question.
 
 See the [Technical FAQ](https://github.com/neovim/neovim/wiki/Technical-FAQ) page.
@@ -57,11 +65,3 @@ See the [Community](http://neovim.io/community/) page on the website. The Gitter
 ### Who is that `marvim` guy on Gitter/IRC?
 
 That's a bot that links the Gitter and IRC rooms, the name of the real person talking is prefixed to whatever marvim relays. It tends to break, so don't assume you are being listened to in both channels.
-
-### What happened to --remote and friends?
-
-The code for that family of command-line arguments was removed. Eventually it will be added back using the Neovim API.
-
-Read more about it here: https://github.com/neovim/neovim/issues/1750
-
-If you can't live without it, use this wrapper script: https://github.com/mhinz/nvim-remote
