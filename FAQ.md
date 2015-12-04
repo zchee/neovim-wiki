@@ -48,11 +48,9 @@ See [#810](https://github.com/neovim/neovim/pull/810) and [#1749](https://github
 
 ### What happened to --remote and friends?
 
-The code for that family of command-line arguments was removed. Eventually it will be added back using the Neovim API.
+The code for that family of command-line arguments was removed. It may be reimplemented using the Neovim API, but for now the script [`nvim-remote`](https://github.com/mhinz/nvim-remote) can be used instead.
 
-Read more about it here: https://github.com/neovim/neovim/issues/1750
-
-If you can't live without it, use this wrapper script: https://github.com/mhinz/nvim-remote
+See [#1750](https://github.com/neovim/neovim/issues/1750) for more information.
 
 ### I have a technical question.
 
