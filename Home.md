@@ -6,7 +6,6 @@
 - [FAQ](FAQ)
     - [Technical FAQ](Technical-FAQ)
     - [Transitioning from Vim to Neovim](http://neovim.io/doc/user/nvim_from_vim.html) (`:help nvim-from-vim`)
-    - [What happened to --remote and friends?](Remote)
 - [Progress/Roadmap](Progress)
 - [Related projects](Related-projects)
 
