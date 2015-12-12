@@ -6,6 +6,16 @@ or [Installing Neovim](Installing-Neovim), depending on your preferred installat
 
 ------------
 
+### 2015/12/12
+
+The Getscript plugin has been removed, so the commands `GLVS`, `GetLatestVimScripts`, and `GetScripts` are no longer supported. Getscript users should consider migrating to a 3rd party plugin manager, such as [vim-plug][].
+
+See [#2231][2231] and [#3826][3826] for more information.
+
+[vim-plug]: https://github.com/junegunn/vim-plug
+[2231]: https://github.com/neovim/neovim/issues/2231
+[3826]: https://github.com/neovim/neovim/pull/3826
+
 ### 2015/11/11
 
 The `-X` command-line flag, which was a no-op, has been removed.
