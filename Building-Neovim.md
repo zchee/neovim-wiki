@@ -19,15 +19,15 @@ Now that you have the dependencies, you can try other build targets and options,
 
 To run all _non-legacy_ tests:
 
-    make test
+    LANG=C make test
 
 To run all _unit_ tests:
 
-    make unittest
+    LANG=C make unittest
 
 To run all _functional_ tests:
 
-    make functionaltest
+    LANG=C make functionaltest
 
 ---
 
