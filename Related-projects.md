@@ -20,21 +20,21 @@
 
 | Platform    | Project                                                                              |
 |-------------|--------------------------------------------------------------------------------------|
+| C#          | [Pireax/neovim.cs](https://github.com/Pireax/neovim.cs)                              |
 | C++/Qt5     | [equalsraf/neovim-qt](https://github.com/equalsraf/neovim-qt)                        |
 | C++/ncurses | [SoC/neovim-client](https://github.com/splinterofchaos/neovim-cpp-client-experiment) |
-| C#          | [Pireax/neovim.cs](https://github.com/Pireax/neovim.cs)                              |
 | Clojure     | [jebberjeb/neovim-client](https://github.com/jebberjeb/neovim-client)                |
 | Common Lisp | [adolenc/cl-neovim](https://github.com/adolenc/cl-neovim)                            |
 | Elixir      | [awetzel/neovim-elixir](https://github.com/awetzel/neovim-elixir)                    |
 | Filesystem  | [fmoralesc/nvimfs](https://github.com/fmoralesc/nvimfs)                              |
-| Go          | [myitcv/neovim](https://github.com/myitcv/neovim)                                    |
 | Go          | [garyburd/neovim-go](https://github.com/garyburd/neovim-go)                          |
+| Go          | [myitcv/neovim](https://github.com/myitcv/neovim)                                    |
 | Haskell     | [neovimhaskell/nvim-hs](https://github.com/neovimhaskell/nvim-hs)                    |
 | Java        | [fdinoff/neovim-java-client](https://github.com/fdinoff/neovim-java-client)          |
 | Julia       | [bfredl/Neovim.jl](https://github.com/bfredl/Neovim.jl)                              |
 | Lua         | [neovim/lua-client](https://github.com/neovim/lua-client)                            |
-| Node.js     | [neovim/node-client](https://github.com/neovim/node-client)                          |
 | Node.js     | [fritzy/node-neovim](https://github.com/fritzy/node-neovim)                          |
+| Node.js     | [neovim/node-client](https://github.com/neovim/node-client)                          |
 | Node.js     | [ngroup/neovim.js](https://github.com/ngroup/neovim.js)                              |
 | Perl        | [yanick/Neovim-RPC](https://github.com/yanick/Neovim-RPC)                            |
 | Python      | [neovim/python-client](https://github.com/neovim/python-client)                      |
