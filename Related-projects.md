@@ -55,6 +55,7 @@ Neovim is compatible with most Vim plugins. Here's a partial list of plugins tha
 - [neomake](https://github.com/benekastah/neomake)
 - [neoterm](https://github.com/kassio/neoterm)
 - [neovim-hackernews](https://github.com/dpzmick/neovim-hackernews)
+- [nvim-editcommand](https://github.com/brettanomyces/nvim-editcommand)
 - [nvim-ipy](https://github.com/bfredl/nvim-ipy)
 - [proteome](https://github.com/tek/proteome.nvim)
 - [vim-accio](https://github.com/pgdouyon/vim-accio)
