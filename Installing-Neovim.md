@@ -151,6 +151,8 @@ Run `cmd.exe` as an administrator, then execute the following commands in order:
 ```
 cd C:\Program Files\Neovim-Qt
 mklink nvim.exe ..\Neovim\bin\nvim.exe
+mklink libuv.dll ..\Neovim\bin\libuv.dll
+mklink msgpack.dll ..\Neovim\bin\msgpack.dll
 for %f in (..\Neovim\share\nvim\runtime\*) do mklink "%~nxf" "..\Neovim\share\nvim\runtime\%~nxf"
 for /d %f in (..\Neovim\share\nvim\runtime\*) do mklink /d "%~nxf" "..\Neovim\share\nvim\runtime\%~nxf"
 ```
