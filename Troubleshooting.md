@@ -137,6 +137,10 @@ CMake caches build settings, so you might need to run `rm -r build && make` afte
 
 This is probably a permissions issue, which can happen if you run `make` as the root user, then later run an unprivileged `make`. To fix this, run `rm -rf build` and try again.
 
+`A suitable Lua interpreter was not found.`
+
+This can be caused by a local LuaRocks installation. Try unsetting the `LUA_PATH` and `LUA_CPATH` environment variables (via `unset`) before building.
+
 ### Lua packages
 
 The Lua packages required by the build process should be automatically installed by [LuaRocks](http://luarocks.org/) (invoked by CMake automatically), but sometimes this will fail. Generally, this means either:
