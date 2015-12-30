@@ -8,6 +8,7 @@
 |------------------|-------------------------------------------------------------------------|
 | Atom Integration | [carlosdcastillo/vim-mode](https://github.com/carlosdcastillo/vim-mode) |
 | Electron UI      | [coolwanglu/neovim<sup>e</sup>](https://github.com/coolwanglu/neovim-e) |
+| Electron UI      | [rhysd/NyaoVim](https://github.com/rhysd/NyaoVim) |
 | GTK/Python UI    | [neovim/python-client](https://github.com/neovim/python-client)         |
 | Mac OS X         | [qvacua/nvox](https://github.com/qvacua/nvox)                           |
 | Mac OS X         | [rogual/neovim-dot-app](https://github.com/rogual/neovim-dot-app)       |
