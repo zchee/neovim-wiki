@@ -16,7 +16,6 @@
 | Qt 5             | [equalsraf/neovim-qt](https://github.com/equalsraf/neovim-qt)           |
 | Rust IDE         | [oakes/SolidOak](https://github.com/oakes/SolidOak)                     |
 | gnome-terminal   | [fmoralesc/neovim-gnome-terminal-wrapper](https://github.com/fmoralesc/neovim-gnome-terminal-wrapper) |
-| Konsole-wrapper  | [harish2704/neovim-konsole](https://github.com/harish2704/neovim-konsole) |
 
 ### API clients
 
