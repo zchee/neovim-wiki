@@ -135,7 +135,7 @@ or [from the ports tree](https://www.freshports.org/editors/neovim/):
 Windows support is (currently) experimental. To try it out, you need `nvim.exe` and a front-end such as Neovim-Qt.
 
 1. Go to https://ci.appveyor.com/project/equalsraf/neovim/branch/tb-mingw
-    - Click the `Win64` build (near the bottom, with this label: `Environment: GENERATOR=Visual Studio 14 Win64, DEPS_PATH=deps64`).
+    - Click the `Win64` build (near the bottom, with this label: `Environment: GENERATOR=Visual Studio 14 Win64, DEPS_PATH=deps64; Configuration: Release`).
     - View the _Artifacts_ tab.
     - Download `Neovim.zip`.
 2. Download and unzip the latest [Neovim-Qt build](https://github.com/equalsraf/neovim-qt/releases).
