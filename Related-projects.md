@@ -68,6 +68,7 @@ Neovim is compatible with most Vim plugins. Here's a partial list of plugins tha
 - [vim-pandoc](https://github.com/vim-pandoc/vim-pandoc)
 - [vim-plug](https://github.com/junegunn/vim-plug)
 - [vim-test](https://github.com/janko-m/vim-test)
+- [vimcmdline](https://github.com/jalvesaq/vimcmdline)
 
 ### Projects with support for Neovim
 
