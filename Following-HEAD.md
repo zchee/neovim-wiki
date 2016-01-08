@@ -6,6 +6,10 @@ or [Installing Neovim](Installing-Neovim), depending on your preferred installat
 
 ------------
 
+### 2016/01/08
+
+You might notice that `:version` reports `v0.1.2-...` instead of `v0.1.1-...`. This does not mean `v0.1.2` was released, but that the version now better conforms to http://semver.org/. See [#3839](https://github.com/neovim/neovim/issues/) for details.
+
 ### 2015/12/12
 
 The Getscript plugin has been removed, so the commands `GLVS`, `GetLatestVimScripts`, and `GetScripts` are no longer supported. Getscript users should consider migrating to a 3rd party plugin manager, such as [vim-plug][].
