@@ -8,7 +8,9 @@ or [Installing Neovim](Installing-Neovim), depending on your preferred installat
 
 ### 2016/01/08
 
-You might notice that `:version` reports `v0.1.2-...` instead of `v0.1.1-...`. This does not mean `v0.1.2` was released, but that the version now better conforms to http://semver.org/. See [#3839](https://github.com/neovim/neovim/pull/3839) for details.
+You might notice that `:version` reports `v0.1.2-...` instead of `v0.1.1-...`. This does not mean `v0.1.2` was released, but that the version now better conforms to http://semver.org/.
+
+See [#3839](https://github.com/neovim/neovim/pull/3839) for more information.
 
 ### 2015/12/12
 
