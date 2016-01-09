@@ -135,27 +135,13 @@ or [from the ports tree](https://www.freshports.org/editors/neovim/):
 Windows support is (currently) experimental. To try it out, you need `nvim.exe` and a front-end such as Neovim-Qt.
 
 1. Go to https://ci.appveyor.com/project/equalsraf/neovim/branch/tb-mingw
-    - Click the `Win64` build (near the bottom, with this label: `Environment: GENERATOR=Visual Studio 14 Win64, DEPS_PATH=deps64; Configuration: Release`).
-    - View the _Artifacts_ tab.
-    - Download `Neovim.zip`.
-2. Download and unzip the latest [Neovim-Qt build](https://github.com/equalsraf/neovim-qt/releases).
-3. Copy `nvim.exe` into `neovim-qt/`. 
-4. Copy `share/nvim/runtime/*` (the _contents of_ `runtime/`) into `neovim-qt/`.
-5. Double-click `nvim-qt.exe`
-
-### Symlinking instead of copying Neovim files into Neovim-Qt
-
-This is an alternative way of installing if you prefer to keep the Neovim and Neovim-Qt files separated for easier upgrading. This replaces step 3 and 4 in the above instruction.
-
-Run `cmd.exe` as an administrator, then execute the following commands in order:
-```
-cd C:\Program Files\Neovim-Qt
-mklink nvim.exe ..\Neovim\bin\nvim.exe
-mklink libuv.dll ..\Neovim\bin\libuv.dll
-mklink msgpack.dll ..\Neovim\bin\msgpack.dll
-for %f in (..\Neovim\share\nvim\runtime\*) do mklink "%~nxf" "..\Neovim\share\nvim\runtime\%~nxf"
-for /d %f in (..\Neovim\share\nvim\runtime\*) do mklink /d "%~nxf" "..\Neovim\share\nvim\runtime\%~nxf"
-```
+    - Click the `Win64` build (AVOID the ones tagged Debug).
+    - View the _Artifacts_ tab and download `Neovim.zip`.
+    - Unpack the zip contents into a new directory (e.g. c:\Neovim)
+    - Add the binary folder to your PATH i.e. c:\Neovim\bin
+    - You should be able to call the nvim command from the console, but it will block after a message
+2. Now download and unzip the latest [Neovim-Qt build](https://github.com/equalsraf/neovim-qt/releases).
+3. Double-click `nvim-qt.exe`
 
 ### .vimrc file in Windows
 
