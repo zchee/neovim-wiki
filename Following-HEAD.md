@@ -6,6 +6,12 @@ or [Installing Neovim](Installing-Neovim), depending on your preferred installat
 
 ------------
 
+### 2016/01/14
+
+The `'swapsync'` option has been removed. Like `'ttyfast'`, Neovim now behaves as if it's always on.
+
+See [#4009](https://github.com/neovim/neovim/pull/4009) for more information.
+
 ### 2016/01/08
 
 You might notice that `:version` reports `v0.1.2-...` instead of `v0.1.1-...`. This does not mean `v0.1.2` was released, but that the version now better conforms to http://semver.org/.
