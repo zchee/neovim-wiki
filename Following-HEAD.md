@@ -8,7 +8,7 @@ or [Installing Neovim](Installing-Neovim), depending on your preferred installat
 
 ### 2016/01/14
 
-The `'swapsync'` option has been removed. Like `'ttyfast'`, Neovim now behaves as if it's always on.
+The `'swapsync'` option has been removed. Swap files are now always `fsync(2)`'d after writing them.
 
 See [#4009](https://github.com/neovim/neovim/pull/4009) for more information.
 
