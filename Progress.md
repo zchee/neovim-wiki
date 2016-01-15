@@ -10,9 +10,9 @@
 
 ## Planned
 
-Items in the [*0.1-first-public-release* milestone](https://github.com/neovim/neovim/milestones/0.1-first-public-release) estimates progress towards a production-quality, cross-platform, packaged product.
+Items in the [*0.2* milestone](https://github.com/neovim/neovim/milestones/0.2) estimate progress towards the next release.
 
-The [todo milestone](https://github.com/neovim/neovim/milestones/todo) is a "backlog" of tasks which have **no release target** and may be cancelled or deferred indefinitely.
+The [todo milestone](https://github.com/neovim/neovim/milestones/todo) is a "backlog" of tasks which have _no release target_ and may be cancelled or deferred indefinitely.
 
 ## Completed
 
