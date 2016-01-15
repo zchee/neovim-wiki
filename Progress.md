@@ -10,7 +10,7 @@
 
 ## Planned
 
-Items in the [*0.2* milestone](https://github.com/neovim/neovim/milestones/0.2) estimate progress towards the next release.
+See the [**0.2** milestone](https://github.com/neovim/neovim/milestones/0.2) to estimate progress towards the next release.
 
 The [todo milestone](https://github.com/neovim/neovim/milestones/todo) is a "backlog" of tasks which have _no release target_ and may be cancelled or deferred indefinitely.
 
