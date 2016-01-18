@@ -181,7 +181,7 @@ Platform-specific requirements are listed below.
 If you're using CentOS/RHEL 6 you need at least autoconf version 2.69 for
 compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
 
-    sudo yum -y install autoconf automake cmake gcc gcc-c++ libtool make pkgconfig unzip
+    sudo yum -y install libtool autoconf automake cmake gcc gcc-c++ make pkgconfig unzip
 
 ### openSUSE
 
