@@ -2,8 +2,6 @@
 
 Lua is a very small language, but it provides everything we need to implement a language like Vimscript, which was created to configure and script the editor. The biggest advantage that languages like Python or Ruby have over Lua are their huge library collections, but that isn't a factor for our main use case which is to remove thousands of lines of C by using Lua as a Vimscript runtime.
 
-If you are still not convinced about Lua, you might want to read [this post](http://blog.datamules.com/blog/2012/01/30/why-lua/).
-
 ### Lua and Vimscript are distinct languages with different semantics, how can Lua be used as a runtime for Vimscript?
 
 The idea is to first make Neovim completely scriptable using Lua. Unlike the Lua interface to Vim, this new implementation needs to have the same power as Vimscript, with APIs for defining syntax rules, etc. Then a Vimscript -> Lua translator will be implemented, with the generated code targeting the new Lua API.
