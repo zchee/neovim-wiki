@@ -89,18 +89,17 @@ locale | grep -E '(LANG|LC_CTYPE|LC_ALL)=(.*\.)?(UTF|utf)-?8'
 ```
 If there's no results, then you might not be using a UTF-8 locale. See the following issues: [#1601](https://github.com/neovim/neovim/issues/1601) [#1858](https://github.com/neovim/neovim/issues/1858) [#2386](https://github.com/neovim/neovim/issues/2386)
 
-### Pressing `ESC` when running nvim in tmux or GNU Screen inserts characters
+### `ESC` in tmux or GNU Screen is delayed
 
-Try setting your escape time to a low value (10-20ms) in your `.tmux.conf`:
+This is [common problem](https://www.google.com/?q=tmux%20vim%20escape%20delay) 
+in tmux (or screen). Set the escape-time to a low value (10-20ms) in `.tmux.conf`:
 
-```tmux
-set -g escape-time 10
-```
+    set -g escape-time 10
 
-Or in your `.screenrc`:
-```screen
-maptimeout 10
-```
+or in `.screenrc`:
+
+    maptimeout 10
+
 
 # Installation issues
 
