@@ -78,11 +78,9 @@ For instructions on how to install the Python modules, see [`:help nvim_python`]
 
 ## Exherbo Linux
 
-A "scm" exheres is currently available in repository `::exony`:
+Exhereses for scm and released versions are currently available in repository `::medvid`. Python client (with GTK+ GUI included) and Qt5 GUI are also available as suggestions:
 
-    cave resolve app-editors/neovim::exony
-
-For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
+    cave resolve app-editors/neovim --take dev-python/neovim-python --take app-editors/neovim-qt
 
 ## Fedora 21/22
  
