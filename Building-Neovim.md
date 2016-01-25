@@ -81,7 +81,7 @@ A normal build will create all the `.mo` files in `build/src/nvim/po`.
 To update the `src/nvim/po/$LANG.po` file with the latest strings from sources, run
 `make update-po-$LANG`.
 
-## "GNU-like" (GCC, Clang, etc.) compiler options
+## GNU-like (GCC, Clang) compiler options
 
 To see the chain of includes, use the `-H` option ([#918](https://github.com/neovim/neovim/issues/918)):
 
