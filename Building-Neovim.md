@@ -39,7 +39,7 @@ To run a *specific* functional test:
 
     TEST_FILE=test/functional/foo.lua make functionaltest
 
-### Legacy integration tests
+---
 
 To run all legacy (Vim) integration tests:
 
