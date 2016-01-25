@@ -17,7 +17,7 @@ Now that you have the dependencies, you can try other build targets and options,
 
 ## Running tests
 
-To run all _non-legacy_ tests:
+To run all _non-legacy_ (unit + functional) tests:
 
     LC_ALL=C make test
 
