@@ -87,8 +87,8 @@ To see the chain of includes, use the `-H` option ([#918](https://github.com/neo
 
 ```
 echo '#include "./src/nvim/buffer.h"' | \
-> clang -I.deps/usr/include -Isrc -std=c99 -P -E -H - 2>&1 1>/dev/null | \
-> grep -v '/usr/'
+> clang -I.deps/usr/include -Isrc -std=c99 -P -E -H - 2>&1 >/dev/null | \
+> grep -v /usr/
 ```
 
 - `grep -v /usr/` is used to filter out system header files
