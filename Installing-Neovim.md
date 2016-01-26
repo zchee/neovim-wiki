@@ -25,6 +25,8 @@ Neovim has been added to a [Personal Package Archive](https://launchpad.net/~neo
 To be able to use **add-apt-repository** you may need to install software-properties-common:
 
     sudo apt-get install software-properties-common
+If you're using older versions Ubuntu you have to use:
+    sudo apt-get install python-software-properties
 
 Run the following commands:
 
