@@ -26,7 +26,7 @@ To be able to use **add-apt-repository** you may need to install software-proper
 
     sudo apt-get install software-properties-common
 
-If you're using older versions Ubuntu you have to use:
+If you're using an older version Ubuntu you have to use:
 
     sudo apt-get install python-software-properties
 
