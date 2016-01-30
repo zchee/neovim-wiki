@@ -40,6 +40,12 @@ Prerequisites for the Python modules:
 
     sudo apt-get install python-dev python-pip python3-dev python3-pip
 
+If you're using an older version Ubuntu you have to use:
+
+    sudo apt-get install python-dev python-pip python3-dev
+    sudo apt-get install python3-setuptools
+    sudo easy_install3 pip
+
 For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
 
 If you want to use Neovim for some (or all) of the editor alternatives, use the following commands:
