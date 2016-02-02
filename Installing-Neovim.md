@@ -150,6 +150,7 @@ Windows support is (currently) experimental. To try it out, you need `nvim.exe` 
     - You should be able to call the nvim command from the console, but it will block after a message
 2. Now download and unzip the latest [Neovim-Qt build](https://github.com/equalsraf/neovim-qt/releases).
 3. Double-click `nvim-qt.exe`
+4. (Optional) If you are missing VCRUNTIME140.dll, you need to install the Visual Studio 2015 c++ redistributables
 
 ### .vimrc file in Windows
 
