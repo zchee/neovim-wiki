@@ -5,6 +5,13 @@ If you haven't already, see [Building Neovim](Building-Neovim)
 or [Installing Neovim](Installing-Neovim), depending on your preferred installation method.
 
 ------------
+### 2016/02/04
+
+The `NVIM_TUI_ENABLE_TRUE_COLOR` environment variable no longer sets `has('gui_running')`. This means some (broken) colorschemes might look weird until they're fixed, but more importantly it _also_ means that various plugins that make decisions based on the result of `has('gui_running')` will not be mislead into thinking the user is running outside of a terminal.
+
+**Note:** [jellybeans](https://github.com/nanotech/jellybeans.vim) and [this molokai fork](https://github.com/justinmk/molokai) are known to work with true color even after the change . Colorschemes that _don't_ work after this change should be fixed (they should set `ctermfg`/`ctermbg` _and_ `guifg`/`guibg`, _without_ checking `has('gui_running')`)
+
+See [#4155](https://github.com/neovim/neovim/pull/4155) for more information.
 
 ### 2016/01/14
 
