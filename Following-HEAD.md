@@ -5,6 +5,7 @@ If you haven't already, see [Building Neovim](Building-Neovim)
 or [Installing Neovim](Installing-Neovim), depending on your preferred installation method.
 
 ------------
+
 ### 2016/02/04
 
 The `NVIM_TUI_ENABLE_TRUE_COLOR` environment variable no longer sets `has('gui_running')`. This means some (broken) colorschemes might look weird until they're fixed, but more importantly it _also_ means that various plugins that make decisions based on the result of `has('gui_running')` will not be mislead into thinking the user is running outside of a terminal.
