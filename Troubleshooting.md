@@ -31,7 +31,17 @@ Try executing the following commands from within Neovim to see which Python inte
 :echo errors  " Shows which Python interpreters Neovim checked.
 ```
 
+Also try this with `nvim -u NONE` to make sure your `init.vim` doesn't cause the problem. If you get `E117: Unknown function`, [Neovim can't find its runtime](#neovim-cant-find-its-runtime).
+
 Also see [`:help nvim-python`](http://neovim.io/doc/user/nvim_python.html).
+
+### Neovim can't find its runtime
+
+This is for example the case if `:help nvim` shows `E149: Sorry, no help for nvim`.
+
+Make sure that `$VIM` and `$VIMRUNTIME` point to Neovim's (as opposed to Vim's) runtime by checking `:echo $VIM` and `:echo $VIMRUNTIME`. This should give something like `/usr/share/nvim` resp. `/usr/share/nvim/runtime`.
+
+Also make sure that you don't accidentally overwrite your runtimepath (`:set runtimepath?`), which includes the above `$VIMRUNTIME` by default (see `:help 'runtimepath').
 
 ### `E518: Unknown option: [option]`
 
