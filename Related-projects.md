@@ -71,6 +71,7 @@ Neovim is compatible with most Vim plugins. Here's a partial list of plugins tha
 - [vimcmdline](https://github.com/jalvesaq/vimcmdline)
 - [vim-javacomplete2](https://github.com/artur-shaik/vim-javacomplete2)
 - [vim-airline](https://github.com/vim-airline/vim-airline) (see [this commit](https://github.com/vim-airline/vim-airline/commit/ef3746d02266c4630e2658ad2302b266f53a0434) )
+- [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 
 ### Projects with support for Neovim
 
