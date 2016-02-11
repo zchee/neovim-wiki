@@ -6,6 +6,14 @@ or [Installing Neovim](Installing-Neovim), depending on your preferred installat
 
 ------------
 
+### 2016/02/10
+
+The [`DECSCUSR`](http://vt100.net/docs/vt510-rm/DECSCUSR) sequence is now sent "unwrapped" to the terminal; this affects tmux users in that cursor style changes are now localized to a tmux pane instead of being global to the parent terminal.
+
+Depending on your terminal this may make break cursor style changes; if that happens then see `NVIM_TUI_ENABLE_CURSOR_SHAPE` in the nvim manual (`man 1 nvim`).
+
+See [#3165](https://github.com/neovim/neovim/pull/3165) for more information.
+
 ### 2016/02/04
 
 The `NVIM_TUI_ENABLE_TRUE_COLOR` environment variable no longer sets `has('gui_running')`. This means some (broken) colorschemes might look weird until they're fixed, but more importantly it _also_ means that various plugins that make decisions based on the result of `has('gui_running')` will not be misled into thinking the user is running outside of a terminal.
