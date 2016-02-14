@@ -6,6 +6,16 @@ or [Installing Neovim](Installing-Neovim), depending on your preferred installat
 
 ------------
 
+### 2016/02/14
+
+`:filetype plugin indent on` and `:syntax on` are now executed by default [after your vimrc](https://github.com/neovim/neovim/blob/master/runtime/doc/starting.txt#L429-L442). 
+
+* If your vimrc calls `:filetype`, Neovim will _not_ change your preference. 
+* If your vimrc calls `:filetype off` or `:syntax off`, that will be respected.
+* If `filetype plugin indent on` and/or `syntax on` is in your vimrc, you can delete those lines.
+
+See `:help startup` for complete details.
+
 ### 2016/02/10
 
 The [`DECSCUSR`](http://vt100.net/docs/vt510-rm/DECSCUSR) sequence is now sent "unwrapped" to the terminal; this affects tmux users in that cursor style changes are now localized to a tmux pane instead of being global to the parent terminal.
