@@ -7,7 +7,7 @@ If not, you can still [install Neovim manually](#install-from-source).
 
 Note that the Neovim binary to run is called `nvim`, not `neovim`.
 
-## [Homebrew](http://brew.sh) (OS X) / [Linuxbrew](http://brew.sh/linuxbrew/) (Linux)
+## [Homebrew](http://brew.sh) (OS X) / [Linuxbrew](http://linuxbrew.sh/) (Linux)
 
 See the [README of `neovim/homebrew-neovim`](https://github.com/neovim/homebrew-neovim/blob/master/README.md) for installation instructions.
 
