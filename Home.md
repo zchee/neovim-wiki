@@ -1,5 +1,3 @@
-### For everyone
-
 - [Introduction](Introduction)
 - [Communicating](Communicating)
 - [Troubleshooting](Troubleshooting)
@@ -9,7 +7,7 @@
 - [Progress/Roadmap](Progress)
 - [Related projects](Related-projects)
 
-### For users
+### Users
 
 - [Installing Neovim](Installing-Neovim)
 - [Following HEAD](Following-HEAD)
@@ -19,7 +17,7 @@
     - [Differences from Vim](http://neovim.io/doc/user/vim_diff.html) (`:help vim-differences`)
     - [Python plugins](http://neovim.io/doc/user/nvim_python.html) (`:help nvim-python`)
 
-### For developers
+### Developers
 
 - [Building Neovim](Building-Neovim)
 - **[Contributing](Contributing)**
