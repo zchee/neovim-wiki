@@ -138,7 +138,7 @@ or [from the ports tree](https://www.freshports.org/editors/neovim/):
 
 Neovim can be installed using the xbps package manager
 
-    xbps-install -S neovim
+    sudo xbps-install -S neovim
 
 ## Android
 
