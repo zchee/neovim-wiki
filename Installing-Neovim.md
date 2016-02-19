@@ -134,6 +134,12 @@ or [from the ports tree](https://www.freshports.org/editors/neovim/):
 
     cd /usr/ports/editors/neovim/ && make install clean
 
+## Void-Linux
+
+Neovim can be installed using the xbps package manager
+
+    xbps-install -S neovim
+
 ## Android
 
 [Termux on the Google Play store](https://play.google.com/store/apps/details?id=com.termux) offers a Neovim package.
