@@ -7,6 +7,11 @@ See the [Building Neovim](Building-Neovim) page.
 - The `contrib` folder contains a [YouCompleteMe configuration](https://github.com/neovim/neovim/tree/master/contrib/YouCompleteMe) tailored to Neovim.
 
 ## Code linting
+You can run the C linter locally using `make lint`. If you work in a single or a few files at a time, you can lint a single file at a time using
+
+    make lint LINT_FILE="src/nvim/ops.c"
+
+which takes less time than linting all C files at once.
 
 If you are using [Syntastic][syntastic], you can use https://gist.github.com/gilligan/9326904 to add `clint.py` as a checker for C files. Note that `clint.py` needs to be in your `PATH` and that you will have to modify `g:syntastic_c_checkers`, otherwise it will default to GCC or make.
 
