@@ -104,7 +104,7 @@ It's built using the [Copr](https://copr.fedoraproject.org/) automated build sys
 
 For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
 
-When installing python packages, ensure that you have python2-greenlet-devel package installed
+When installing Python packages, ensure that you have the python2-greenlet-devel package installed.
 
 ## Slackware
 
