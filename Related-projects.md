@@ -60,6 +60,7 @@ Neovim is compatible with most Vim plugins. Here's a partial list of plugins tha
 - [nvim-editcommand](https://github.com/brettanomyces/nvim-editcommand)
 - [nvim-terminus](https://github.com/brettanomyces/nvim-terminus)
 - [nvim-ipy](https://github.com/bfredl/nvim-ipy)
+- [nvim-miniyank](https://github.com/bfredl/nvim-miniyank)
 - [proteome](https://github.com/tek/proteome.nvim)
 - [vim-accio](https://github.com/pgdouyon/vim-accio)
 - [vim-go](https://github.com/fatih/vim-go) (see [PR 607](https://github.com/fatih/vim-go/pull/607) for feature list)
