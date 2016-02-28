@@ -57,6 +57,8 @@ If you want to use Neovim for some (or all) of the editor alternatives, use the 
     sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
     sudo update-alternatives --config editor
 
+Note, however, that special interfaces, like `view` for `nvim -R`, are not supported.  (See [#1646](https://github.com/neovim/neovim/issues/1646) and [#2008](https://github.com/neovim/neovim/pull/2008).)
+
 ## Arch Linux
 
 Neovim can be installed from the community repository:
