@@ -2,7 +2,7 @@
 
 "Cleanup" PRs should include some unit tests that cover the function being changed, so that we can feel more confident about regressions, future changes, and Vim-patch merges.
 
-For example, [coveralls](https://coveralls.io/builds/3555525/source?filename=src%2Fnvim%2Fbuffer.c) shows that `build_stl_str_hl` is not covered by our tests yet, so any "cleanup" PR should include unit-test coverage for `build_stl_str_hl`.
+For example if [coveralls](https://coveralls.io/builds/3555525/source?filename=src%2Fnvim%2Fbuffer.c) shows that `build_stl_str_hl` is not covered by our tests, any "cleanup" PR for `build_stl_str_hl` should include unit-test coverage.
 
 ## Frozen legacy modules
 
