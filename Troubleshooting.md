@@ -17,9 +17,16 @@ tic $TERM.ti
 
 See [#2048](https://github.com/neovim/neovim/issues/2048) for more information.
 
+### `<Home>` or some other "special" key doesn't work
+
+Make sure `$TERM` is set to something reasonable.
+
+- If you're using screen or tmux, `TERM` should be `screen-256color`
+- In other cases if "256" does not appear in the string it's probably wrong. Try `TERM=xterm-256color`.
+
 ### `:!` and `system()` do weird things with interactive processes
 
-Interactive commands are supported by the `:terminal` command in Neovim. However, `:!` and `system()` do not support interactive commands, primarily because Neovim UIs use stdio for msgpack communication, but also for performance, reliability, and consistency across platforms (see [`:help gui-pty`](http://vimhelp.appspot.com/gui_x11.txt.html#gui-pty)). 
+Interactive commands are supported by `:terminal` in Neovim. But `:!` and `system()` do not support interactive commands, primarily because Neovim UIs use stdio for msgpack communication, but also for performance, reliability, and consistency across platforms (see [`:help gui-pty`](http://vimhelp.appspot.com/gui_x11.txt.html#gui-pty)). 
 
 ### Python support isn't working
 
