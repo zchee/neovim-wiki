@@ -43,6 +43,7 @@
 | R           | [jalvesaq/nvimcom](https://github.com/jalvesaq/nvimcom)                              |
 | Ruby        | [alexgenco/neovim-ruby](https://github.com/alexgenco/neovim-ruby)                    |
 | Rust        | [oakes/neovim-rs](https://github.com/oakes/neovim-rs)                                |
+| Rust        | [daa84/neovim-lib](https://github.com/daa84/neovim-lib)                              |
 
 ### Plugins
 
