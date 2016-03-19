@@ -117,6 +117,7 @@ or in `.screenrc`:
 
     maptimeout 10
 
+See also: https://github.com/tmux/tmux/issues/131#issuecomment-145853211
 
 # Installation issues
 
