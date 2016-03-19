@@ -4,6 +4,13 @@ Its purpose is only to document breaking changes, so should NOT be used as a ref
 If you haven't already, see [Building Neovim](Building-Neovim)
 or [Installing Neovim](Installing-Neovim), depending on your preferred installation method.
 
+If you use python plugins make sure to upgrade the python client. To upgrade for both python2 and python3:
+```
+pip2 install --upgrade neovim
+pip3 install --upgrade neovim
+```
+Append `--user` if you installed as an ordinary user.
+
 ------------
 
 ### 2016/02/14
