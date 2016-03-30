@@ -6,6 +6,10 @@
 
 See the [Following-HEAD](https://github.com/neovim/neovim/wiki/Following-HEAD) page, which documents breaking changes as they happen.
 
+### `clipboard: provider is not available`
+
+Make sure that [Neovim can find its runtime](#neovim-cant-find-its-runtime).
+
 ### My CTRL-H mapping doesn't work
 
 Set `kbs=\177` in your terminal's terminfo/termcap:
