@@ -153,14 +153,13 @@ Neovim can be installed using the xbps package manager
 Windows support is (currently) experimental. To try it out, you need `nvim.exe` and a front-end such as Neovim-Qt.
 
 1. Go to https://ci.appveyor.com/project/equalsraf/neovim/branch/tb-mingw
-    - Click the `Win64` build (AVOID the ones tagged Debug).
     - View the _Artifacts_ tab and download `Neovim.zip`.
     - Unpack the zip contents into a new directory (e.g. c:\Neovim)
     - Add the binary folder to your PATH i.e. c:\Neovim\bin
     - You should be able to call the nvim command from the console, but it will block after a message
 2. Now download and unzip the latest [Neovim-Qt build](https://github.com/equalsraf/neovim-qt/releases).
 3. Double-click `nvim-qt.exe`
-4. (Optional) If you are missing VCRUNTIME140.dll, you need to install the Visual Studio 2015 c++ redistributables
+4. (Optional) If you are missing VCRUNTIME140.dll, you need to install the Visual Studio 2015 c++ redistributables (be sure to get x86_64 or x86 depending on the build).
 
 ### .vimrc file in Windows
 
