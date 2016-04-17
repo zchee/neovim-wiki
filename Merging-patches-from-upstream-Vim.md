@@ -33,7 +33,6 @@ Pull requests
 -------------
 
 - The pull request *title* should include `vim-patch:7.4.xxx`. 
-- If the patch includes a new test (`src/testdir/test*.in`), please convert it to a Lua test (see [#1286](https://github.com/neovim/neovim/issues/1286) and [#1328](https://github.com/neovim/neovim/pull/1328)). This usually just means [running a script](https://github.com/neovim/neovim/pull/2178#issuecomment-83230194) and tweaking the result.
 - The [*commit message*](https://github.com/neovim/neovim/commit/4ccf1125ff569eccfc34abc4ad794044c5ab7455) should include:
     - A token indicating the Vim patch number, formatted as follows (no space!): <br/>
      `vim-patch:7.4.123`
@@ -68,7 +67,7 @@ See the [`memory.c` Doxygen page](http://neovim.io/doc/dev/memory_8c.html) for m
 
 - See also: https://github.com/neovim/neovim/pull/1729#discussion_r22423779
 
-Vim tests (in `src/testdir/`) should be converted to Lua tests (see [#1286](https://github.com/neovim/neovim/issues/1286) and [#1328](https://github.com/neovim/neovim/pull/1328)). See [Checklist for migrating legacy tests][checklist]
+"Old style" Vim tests (`src/testdir/*.in`) should be converted to Lua tests (see [#1286](https://github.com/neovim/neovim/issues/1286) and [#1328](https://github.com/neovim/neovim/pull/1328)). See [Checklist for migrating legacy tests][checklist]. However, please _do not_ convert "new style" Vim tests (`src/testdir/*.vim`). The "new style" Vim tests are faster than the old ones, and converting them takes time and effort better spent elsewhere.
 
 Documentation differences
 -------------------------
