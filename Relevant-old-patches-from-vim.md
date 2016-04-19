@@ -10,7 +10,6 @@ List of patches before 7.4.1000 that are neither merged nor declared NA.
 |---|   | Kernel components link download points into the void|
 |---| Related | https://github.com/neovim/neovim/issues/1253|
 |---| Related | https://github.com/smack-team/smack|
-
 |[7.4.613](https://github.com/vim/vim/commit/70781ee)|https://github.com/neovim/neovim/pull/4070| Implement redrawtime for nfa engine|
 || Related| https://github.com/vim/vim/commit/5ad075c|
 || Related|https://github.com/vim/vim/commit/7c29f38|
