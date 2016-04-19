@@ -15,7 +15,8 @@ List of patches before 7.4.1000 that are neither merged nor declared NA.
 |[7.4.797](https://github.com/vim/vim/commit/5f95f288a2d303be1571e818655fd90e399ee58e)|---| Crash @ command line|
 |[7.4.819](https://github.com/vim/vim/commit/901e58c243ef4363bb2c13b2c96c7b0acd45e6d1)|https://github.com/neovim/neovim/pull/4610| Beeps in tests|
 |[7.4.822](https://github.com/vim/vim/commit/cde885473099296c4837de261833f48b24caf87c)|---| Silence coverity warnings|
-|[7.4.882](https://github.com/vim/vim/commit/7b256fe7445b46929f660ea74e9090418f857696)|---| Fix memory leak|
+[7.4.871](https://github.com/vim/vim/commit/7b256fe7445b46929f660ea74e9090418f857696)|---| Fix memory leak|
+|[7.4.882](https://github.com/vim/vim/commit/5f1fea28f5bc573e2430773c49e95ae1f9cc2a25)|---| Screen update @CTRL-C with compl-menu|
 |[7.4.889](https://github.com/vim/vim/commit/74b738d414b2895b3365e26ae3b7792eb82ccf47)|---| Test triggering OptionSet from setwinvar|
 |[7.4.896](https://github.com/vim/vim/commit/b4f6a46b01ed00b642a2271e9d1559e51ab0f2c4)|---| Editing URL & netrw|
 |[7.4.941](https://github.com/vim/vim/commit/bc96c29ffc753daef302d20322d1e3d560094f44)|https://github.com/neovim/neovim/pull/4273|add tagcase option|
