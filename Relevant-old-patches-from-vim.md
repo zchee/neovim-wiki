@@ -29,9 +29,6 @@ List of patches before 7.4.1000 that are neither merged nor declared NA.
 
 All are for runtime files, in merge order:
 
-* https://github.com/vim/vim/commit/12969c04fe7bd27dc0cbf37709eb40a86d4a27f9
-* https://github.com/vim/vim/commit/ca63501fbcd1cf9c8aa9ff12c093c95b62a89ed7
-* https://github.com/vim/vim/commit/60cce2fb736c8ff6fdb9603f502d3c15f1f7a25d
 * https://github.com/vim/vim/commit/a0f849ee40cbea3c889345256786b640b0becca2
 * https://github.com/vim/vim/commit/d7464be9747fcaa8e6210e1f00a3882932df76e2
 * https://github.com/vim/vim/commit/b4ff518d95aa57c2f8c0568c915035bef849581b
