@@ -8,6 +8,7 @@ List of patches before 7.4.1000 that are neither merged nor declared NA.
 |---|-------------|--------|
 |[7.4.238](https://github.com/vim/vim/commit/5bd32f47ec5121a5485d180add1dacb73472e4b2)|---| Support for [smack library](https://en.wikipedia.org/wiki/Smack_%28Linux_security_module%29)|
 |---| Related | https://github.com/neovim/neovim/issues/1253|
+|---| Related | https://github.com/smack-team/smack|
 |[7.4.613](https://github.com/vim/vim/commit/70781ee)|https://github.com/neovim/neovim/pull/4070| Implement redrawtime for nfa engine|
 || Related| https://github.com/vim/vim/commit/5ad075c|
 || Related|https://github.com/vim/vim/commit/7c29f38|
