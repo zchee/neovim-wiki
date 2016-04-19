@@ -29,6 +29,7 @@ The script guides you with further instructions. It's easy and painless, just tr
 
 If you're unsure with which patch to start or just don't care, pick one from the bottom of the queue. Merging the patches in roughly chronological order works best as some patches might depend on others. You're most likely going to encounter merge conflicts regardless, but this way such conflicts are kept to a minimum.
 
+If you're intending to port an old patch (prior to 7.4.1000), you might want to check [relevant old patches from vim](https://github.com/neovim/neovim/wiki/Relevant-old-patches-from-vim)
 Pull requests
 -------------
 
