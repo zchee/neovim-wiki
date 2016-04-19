@@ -23,6 +23,7 @@ List of patches before 7.4.1000 that are neither merged nor declared NA.
 |[7.4.951](https://github.com/vim/vim/commit/b00da1d6d1655cb6e415f84ecc3be5ff3b790811)|https://github.com/neovim/neovim/pull/4303| Add N argument to sort|
 |[7.4.957](https://github.com/vim/vim/commit/bc96c29ffc753daef302d20322d1e3d560094f44)|https://github.com/neovim/neovim/pull/4273| test_tagcase fix|
 |[7.4.983](https://github.com/vim/vim/commit/a60824308cd9bc192c5d38fc16cccfcf652b40f6)|---| Make testclean fix|
+|[7.4.984](https://github.com/vim/vim/commit/ad4d8a192abf44b89371af87d70b971cd654b799)|https://github.com/neovim/neovim/pull/4325| Add z flag  for searchpos|
 |[7.4.998](https://github.com/vim/vim/commit/f9c8bd2137b045f9a64d63eefcf022b4726b1419)|---| Test in shadow dir fix|
 
 ### Untagged patches
