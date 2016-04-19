@@ -11,7 +11,7 @@ List of patches before 7.4.1000 that are neither merged nor declared NA.
 || Related|https://github.com/vim/vim/commit/7c29f38|
 || Related|https://github.com/vim/vim/commit/2a6fa56|
 |[7.4.672](https://github.com/vim/vim/commit/b5971141dff0c69355fd64196fcc0d0d071d4c82)|---| Always look in current dir for shell completion|
-|[7.4.733](https://github.com/vim/vim/commit/d68f2219b57acb86ddedebdcc1476fee15c9c0c7)|---| Spaces in list mode|
+|[7.4.733](https://github.com/vim/vim/commit/d68f2219b57acb86ddedebdcc1476fee15c9c0c7)|---| test_listchars on windows|
 |[7.4.797](https://github.com/vim/vim/commit/5f95f288a2d303be1571e818655fd90e399ee58e)|---| Crash @ command line|
 |[7.4.819](https://github.com/vim/vim/commit/901e58c243ef4363bb2c13b2c96c7b0acd45e6d1)|https://github.com/neovim/neovim/pull/4610| Beeps in tests|
 |[7.4.822](https://github.com/vim/vim/commit/cde885473099296c4837de261833f48b24caf87c)|---| Silence coverity warnings|
