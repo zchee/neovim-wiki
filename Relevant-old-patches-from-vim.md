@@ -9,9 +9,8 @@ https://github.com/neovim/neovim/tree/ba9bdb3e70722942049fc17c52ef3d9eea866256.
 |Tag|  Ongoing work| Comment|
 |---|-------------|--------|
 |[7.4.238](https://github.com/vim/vim/commit/5bd32f47ec5121a5485d180add1dacb73472e4b2)|---| Support for [smack library](https://en.wikipedia.org/wiki/Smack_%28Linux_security_module%29)|
-|---|   | Kernel components link download points into the void|
-|---| Related | https://github.com/neovim/neovim/issues/1253|
-|---| Related | https://github.com/smack-team/smack|
+|[7.4.244](https://github.com/vim/vim/commit/57a728d1df7451f5b2b6b1f933182b5af9513d83)|---| Smack support fixes|
+|---| https://github.com/neovim/neovim/pull/4301  | Marks smack support as NA |
 |[7.4.613](https://github.com/vim/vim/commit/70781ee)|https://github.com/neovim/neovim/pull/4070| Implement redrawtime for nfa engine|
 || Related| https://github.com/vim/vim/commit/5ad075c|
 || Related|https://github.com/vim/vim/commit/7c29f38|
@@ -19,7 +18,6 @@ https://github.com/neovim/neovim/tree/ba9bdb3e70722942049fc17c52ef3d9eea866256.
 |[7.4.672](https://github.com/vim/vim/commit/b5971141dff0c69355fd64196fcc0d0d071d4c82)|---| Always look in current dir for shell completion|
 |[7.4.733](https://github.com/vim/vim/commit/d68f2219b57acb86ddedebdcc1476fee15c9c0c7)|---| test_listchars on windows|
 |[7.4.797](https://github.com/vim/vim/commit/5f95f288a2d303be1571e818655fd90e399ee58e)|---| Crash @ command line|
-|[7.4.819](https://github.com/vim/vim/commit/901e58c243ef4363bb2c13b2c96c7b0acd45e6d1)|https://github.com/neovim/neovim/pull/4610| Beeps in tests|
 |[7.4.822](https://github.com/vim/vim/commit/cde885473099296c4837de261833f48b24caf87c)|---| Silence coverity warnings|
 [7.4.871](https://github.com/vim/vim/commit/7b256fe7445b46929f660ea74e9090418f857696)|---| Fix memory leak|
 |[7.4.882](https://github.com/vim/vim/commit/5f1fea28f5bc573e2430773c49e95ae1f9cc2a25)|---| Screen update @CTRL-C with compl-menu|
