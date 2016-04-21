@@ -17,7 +17,7 @@ https://github.com/neovim/neovim/tree/ba9bdb3e70722942049fc17c52ef3d9eea866256.
 || Related|https://github.com/vim/vim/commit/2a6fa56|
 |[7.4.672](https://github.com/vim/vim/commit/b5971141dff0c69355fd64196fcc0d0d071d4c82)|---| Always look in current dir for shell completion|
 |[7.4.733](https://github.com/vim/vim/commit/d68f2219b57acb86ddedebdcc1476fee15c9c0c7)|---| test_listchars on windows|
-|[7.4.797](https://github.com/vim/vim/commit/5f95f288a2d303be1571e818655fd90e399ee58e)|---| Crash @ command line|
+|[7.4.797](https://github.com/vim/vim/commit/5f95f288a2d303be1571e818655fd90e399ee58e)|See [below](### Comments/Research on specific patches)| Crash @ command line|
 |[7.4.822](https://github.com/vim/vim/commit/cde885473099296c4837de261833f48b24caf87c)|---| Silence coverity warnings|
 [7.4.871](https://github.com/vim/vim/commit/7b256fe7445b46929f660ea74e9090418f857696)|---| Fix memory leak|
 |[7.4.882](https://github.com/vim/vim/commit/5f1fea28f5bc573e2430773c49e95ae1f9cc2a25)|---| Screen update @CTRL-C with compl-menu|
@@ -44,4 +44,11 @@ All are for runtime files, in merge order:
 * https://github.com/vim/vim/commit/256972a9849b5d575b62a6a71be5b6934b5b0e8b
 * https://github.com/vim/vim/commit/cc7ff3fcd8c8fd7da6faac98a138b830ec5c00d8
 
+### Comments/Research on specific patches
 
+* 7.4.797:
+ * Modified function [`redraw_asap`](https://github.com/neovim/neovim/blob/6383ea6e8e14350432f1fc7da519b54d0ed67f8c/src/nvim/screen.c#L239) was removed in https://github.com/vim/vim/commit/e0e41b30c61922e099a067ac5c137e745699a1aa, together with its only caller [`check_termcode`](https://github.com/neovim/neovim/blob/6383ea6e8e14350432f1fc7da519b54d0ed67f8c/src/nvim/term.c#L2803).
+ * Grepping for the following regexps did not yield any result in nvim/src and its subdirectories: `rows.*\*.*Columns` (lines modified often),  `ScreenLinesC\[r\]` (one of the sources of the bug), `msg_scrolled` followed by grepping for `NORMAL` (another line that was changed for the bug)
+ * The out-of-bound access was on  the array `*screenlineC[MAX_MCO]` (see the [diff](https://github.com/vim/vim/commit/5f95f288a2d303be1571e818655fd90e399ee58e#diff-ceb2e2231c5d45523135ca0cfc492792R349)). I grepped for `MAX_MCO` an checked every array of that length for out-of-bounds access in its scope (I did not check for called functions, e.g. `utfc_ptr2char(p, u8cc)` where `u8cc` was of length `MAX_MCO`). I did not find any.
+ * The code for drawing on the screen was moved to the TUI, which was newly written.
+ * Therefore, I believe the code that was patched does not exist in nvim anymore and the patch should be marked NA. Should ask [@tarruda](https://github.com/tarruda) for confirmation, though.
