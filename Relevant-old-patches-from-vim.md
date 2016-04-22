@@ -12,6 +12,7 @@ https://github.com/neovim/neovim/tree/ba9bdb3e70722942049fc17c52ef3d9eea866256.
 |[7.4.244](https://github.com/vim/vim/commit/57a728d1df7451f5b2b6b1f933182b5af9513d83)|---| Smack support fixes|
 |---| https://github.com/neovim/neovim/pull/4301  | Marks smack support as NA |
 |[7.4.613](https://github.com/vim/vim/commit/70781ee)|https://github.com/neovim/neovim/pull/4070| Implement redrawtime for nfa engine|
+| | https://github.com/neovim/neovim/pull/4630||
 || Related| https://github.com/vim/vim/commit/5ad075c|
 || Related|https://github.com/vim/vim/commit/7c29f38|
 || Related|https://github.com/vim/vim/commit/2a6fa56|
