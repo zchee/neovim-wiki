@@ -8,12 +8,8 @@ https://github.com/neovim/neovim/tree/ba9bdb3e70722942049fc17c52ef3d9eea866256.
 
 |Tag|  Ongoing work| Comment|
 |---|-------------|--------|
-|[7.4.238](https://github.com/vim/vim/commit/5bd32f47ec5121a5485d180add1dacb73472e4b2)|---| Support for [smack library](https://en.wikipedia.org/wiki/Smack_%28Linux_security_module%29)|
-|[7.4.244](https://github.com/vim/vim/commit/57a728d1df7451f5b2b6b1f933182b5af9513d83)|---| Smack support fixes|
-|---| https://github.com/neovim/neovim/pull/4301  | Marks smack support as NA |
-|[7.4.613](https://github.com/vim/vim/commit/70781ee)|https://github.com/neovim/neovim/pull/4070| Implement redrawtime for nfa engine|
-| | https://github.com/neovim/neovim/pull/4630||
-|| Related| https://github.com/vim/vim/commit/5ad075c|
+
+|[7.4.613](https://github.com/vim/vim/commit/70781ee)|https://github.com/neovim/neovim/pull/4630| Implement redrawtime for nfa engine|
 || Related|https://github.com/vim/vim/commit/7c29f38|
 || Related|https://github.com/vim/vim/commit/2a6fa56|
 |[7.4.672](https://github.com/vim/vim/commit/b5971141dff0c69355fd64196fcc0d0d071d4c82)|---| Always look in current dir for shell completion|
