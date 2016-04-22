@@ -2,7 +2,7 @@
 
 List of patches before 7.4.1000 that are neither merged nor declared NA. Currently, the content of this page refers to 
 
-https://github.com/neovim/neovim/tree/ba9bdb3e70722942049fc17c52ef3d9eea866256.
+https://github.com/neovim/neovim/commit/3d7a6e4d54cbb6cb3cd7e35b604b956de9f0c950.
 
 ### Tagged patches
 
