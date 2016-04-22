@@ -8,7 +8,6 @@ https://github.com/neovim/neovim/tree/ba9bdb3e70722942049fc17c52ef3d9eea866256.
 
 |Tag|  Ongoing work| Comment|
 |---|-------------|--------|
-
 |[7.4.613](https://github.com/vim/vim/commit/70781ee)|https://github.com/neovim/neovim/pull/4630| Implement redrawtime for nfa engine|
 || Related|https://github.com/vim/vim/commit/7c29f38|
 || Related|https://github.com/vim/vim/commit/2a6fa56|
