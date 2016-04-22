@@ -12,7 +12,7 @@ https://github.com/neovim/neovim/commit/3d7a6e4d54cbb6cb3cd7e35b604b956de9f0c950
 || Related|https://github.com/vim/vim/commit/7c29f38|
 || Related|https://github.com/vim/vim/commit/2a6fa56|
 |[7.4.672](https://github.com/vim/vim/commit/b5971141dff0c69355fd64196fcc0d0d071d4c82)|---| Always look in current dir for shell completion|
-|[7.4.733](https://github.com/vim/vim/commit/d68f2219b57acb86ddedebdcc1476fee15c9c0c7)|---| test_listchars on windows|
+|[7.4.733](https://github.com/vim/vim/commit/d68f2219b57acb86ddedebdcc1476fee15c9c0c7)|See [below](### Comments/Research on specific patches)| test_listchars on windows|
 |[7.4.797](https://github.com/vim/vim/commit/5f95f288a2d303be1571e818655fd90e399ee58e)|See [below](### Comments/Research on specific patches)| Crash @ command line|
 |[7.4.822](https://github.com/vim/vim/commit/cde885473099296c4837de261833f48b24caf87c)|---| Silence coverity warnings|
 [7.4.871](https://github.com/vim/vim/commit/7b256fe7445b46929f660ea74e9090418f857696)|https://github.com/neovim/neovim/pull/4631| Fix memory leak|
@@ -48,3 +48,9 @@ All are for runtime files, in merge order:
  * The out-of-bound access was on  the array `*screenlineC[MAX_MCO]` (see the [diff](https://github.com/vim/vim/commit/5f95f288a2d303be1571e818655fd90e399ee58e#diff-ceb2e2231c5d45523135ca0cfc492792R349)). I grepped for `MAX_MCO` an checked every array of that length for out-of-bounds access in its scope (I did not check for called functions, e.g. `utfc_ptr2char(p, u8cc)` where `u8cc` was of length `MAX_MCO`). I did not find any.
  * The code for drawing on the screen was moved to the TUI, which was newly written.
  * Therefore, I believe the code that was patched does not exist in nvim anymore and the patch should be marked NA. Should ask [@tarruda](https://github.com/tarruda) for confirmation, though.
+
+* 7.4.733:
+ * test_listchars was converted to a lua test in https://github.com/neovim/neovim/pull/2492
+ * Since no file is sourced anymore, the behavior of the lua test should not depend on the setting of `ff`
+ * Cannot seek confirmation on Windows, but a failing test would surely stand out
+ * Therefore I suggest marking this patch as NA.
