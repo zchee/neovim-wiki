@@ -57,10 +57,15 @@ You may also want to [enable core dumps on OSX](https://developer.apple.com/libr
 ### Using `gdb` to step through functional tests
 
 ```
-GDB=1 make functionaltest
-gdb build/bin/nvim
-target remote localhost:7777 inside gdb
+GDB=1 TEST_TAG=testtag make functionaltest
 ```
+In another terminal:
+```
+gdb build/bin/nvim
+target remote localhost:7777
+```
+
+add `#testtag` to the title (`describe()` or `it()` block) of the test you want to debug.
 
 See also [test/functional/helpers.lua](https://github.com/neovim/neovim/blob/3098b18a2b63a841351f6d5e3697cb69db3035ef/test/functional/helpers.lua#L38-L44).
 
