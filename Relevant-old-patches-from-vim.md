@@ -2,7 +2,7 @@
 
 List of patches before 7.4.1000 that are neither merged nor declared NA. Currently, the content of this page refers to 
 
-https://github.com/neovim/neovim/commit/6f980346864251d2ed86d85c63fd6ec375e21edc.
+https://github.com/neovim/neovim/commit/ef205c3851fda637af49b5517bee60e6a62275ed.
 
 ### Tagged patches
 
@@ -22,7 +22,6 @@ https://github.com/neovim/neovim/commit/6f980346864251d2ed86d85c63fd6ec375e21edc
 |[7.4.942](https://github.com/vim/vim/commit/60422e68a3a555144f8c76c666f050e8d104c16b)|https://github.com/neovim/neovim/pull/4273|test_tagcase fix|
 |[7.4.957](https://github.com/vim/vim/commit/bc96c29ffc753daef302d20322d1e3d560094f44)|https://github.com/neovim/neovim/pull/4273| test_tagcase fix|
 |[7.4.983](https://github.com/vim/vim/commit/a60824308cd9bc192c5d38fc16cccfcf652b40f6)|---| Make testclean fix|
-|[7.4.984](https://github.com/vim/vim/commit/ad4d8a192abf44b89371af87d70b971cd654b799)|https://github.com/neovim/neovim/pull/4325| Add z flag  for searchpos|
 |[7.4.998](https://github.com/vim/vim/commit/f9c8bd2137b045f9a64d63eefcf022b4726b1419)|---| Test in shadow dir fix|
 
 ### Untagged patches
