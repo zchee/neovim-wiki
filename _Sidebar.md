@@ -5,11 +5,11 @@
 [FAQ](FAQ)  
 [Related projects](Related-projects)
 
-### Users
+**Users**  
 [Install](Installing-Neovim)  
 [Documentation](http://neovim.io/doc/)
 
-### Developers
+**Developers**  
 [Building](Building-Neovim)  
 [Contributing](Contributing)  
 [Development tips](Development-tips)  
