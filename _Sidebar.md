@@ -12,8 +12,5 @@
 ### Developers
 [Building](Building-Neovim)  
 [Contributing](Contributing)  
-[Code overview](Code-overview)  
-[Plugin architecture](Plugin-UI-architecture)  
 [Development tips](Development-tips)  
-[Coding conventions](Coding-conventions)  
-[C programming](C-programming)
+[Code style](https://neovim.io/develop/style-guide.xml)  
