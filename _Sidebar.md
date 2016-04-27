@@ -1,14 +1,12 @@
 [[[https://raw.githubusercontent.com/neovim/neovim.github.io/master/logos/neovim-logo.png|alt=Neovim home]]](Home)
 --
 [Introduction](Introduction)  
-[Community](http://neovim.io/community/)  
-[FAQ](FAQ)  
-[Progress](Progress)  
+[Community](http://neovim.io/community/)
+[FAQ](FAQ)
 [Related projects](Related-projects)
 
 ### Users
-[Installation](Installing-Neovim)  
-[Following HEAD](Following-HEAD)  
+[Install](Installing-Neovim)
 [Documentation](http://neovim.io/doc/)
 
 ### Developers
