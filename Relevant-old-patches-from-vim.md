@@ -1,15 +1,12 @@
 ## Relevant vim patches before 7.4.1000
 
 List of patches before 7.4.1000 that are neither merged nor declared NA. Currently, the content of this page refers to 
-https://github.com/neovim/neovim/commit/e861af85f89e119193a9e219a4cb766757e28e5a.
+https://github.com/neovim/neovim/commit/6bb4b9f57f5011db0c895370e00f2351422a2c25.
 
 ### Tagged patches
 
 |Tag|  Ongoing work| Comment|
 |---|-------------|--------|
-|[7.4.613](https://github.com/vim/vim/commit/70781ee)|https://github.com/neovim/neovim/pull/4630| Implement redrawtime for nfa engine|
-|| Related|https://github.com/vim/vim/commit/7c29f38|
-|| Related|https://github.com/vim/vim/commit/2a6fa56|
 |[7.4.672](https://github.com/vim/vim/commit/b5971141dff0c69355fd64196fcc0d0d071d4c82)|---| Always look in current dir for shell completion|
 |[7.4.882](https://github.com/vim/vim/commit/5f1fea28f5bc573e2430773c49e95ae1f9cc2a25)|https://github.com/neovim/neovim/pull/4644| Screen update @CTRL-C with compl-menu|
 |[7.4.889](https://github.com/vim/vim/commit/74b738d414b2895b3365e26ae3b7792eb82ccf47)|---| Test triggering OptionSet from setwinvar|
