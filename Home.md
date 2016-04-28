@@ -9,8 +9,6 @@
 - [Installing Neovim](Installing-Neovim)
 - [Following HEAD](Following-HEAD)
 - [Documentation](http://neovim.io/doc/)
-    - [Neovim feature reference](http://neovim.io/doc/user/nvim.html) (`:help nvim`)
-    - [Differences from Vim](http://neovim.io/doc/user/vim_diff.html) (`:help vim-differences`)
 
 ### Developers
 
