@@ -37,8 +37,9 @@ Pull requests
 - The [*commit message*](https://github.com/neovim/neovim/commit/4ccf1125ff569eccfc34abc4ad794044c5ab7455) should include:
     - A token indicating the Vim patch number, formatted as follows (no space!): <br/>
      `vim-patch:7.4.123`
-    - A URL pointing to the Vim commit: <br/>
-      https://github.com/vim/vim/commit/v7-4-123
+    - A URL pointing to the Vim commit:
+     *  https://github.com/vim/vim/releases/tag/v7.4.123
+     * https://github.com/vim/vim/commit/c8020ee825b9d9196b1329c0e097424576fc9b3a
     - The original Vim commit message, including the author
     - **The [vim-patch.sh](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh) script automates most of this for you.**
 
