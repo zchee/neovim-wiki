@@ -15,7 +15,7 @@ Append `--user` if you installed as an ordinary user.
 
 ### 2016/02/14
 
-`:filetype plugin indent on` and `:syntax on` are now executed by default [after your vimrc](https://github.com/neovim/neovim/blob/master/runtime/doc/starting.txt#L429-L442). 
+`:filetype plugin indent on` and `:syntax on` are now executed by default [after your vimrc](https://github.com/neovim/neovim/blob/4bfac00aa389487c4f11d34e7a3e96e4a1116800/runtime/doc/starting.txt#L431-L444). 
 
 * If your vimrc calls `:filetype`, Neovim will _not_ change your preference. 
 * If your vimrc calls `:filetype off` or `:syntax off`, that will be respected.
