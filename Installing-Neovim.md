@@ -59,6 +59,10 @@ If you want to use Neovim for some (or all) of the editor alternatives, use the 
 
 Note, however, that special interfaces, like `view` for `nvim -R`, are not supported.  (See [#1646](https://github.com/neovim/neovim/issues/1646) and [#2008](https://github.com/neovim/neovim/pull/2008).)
 
+## Debian
+
+Neovim and the Python client are available as [Debian packages](https://packages.debian.org/search?keywords=neovim).
+
 ## Arch Linux
 
 Neovim can be installed from the community repository:
