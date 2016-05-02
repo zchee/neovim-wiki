@@ -30,3 +30,4 @@ All are for runtime files, in merge order:
 * https://github.com/vim/vim/commit/2c5e8e80eacf491d4f266983f534a77776c7ae83
 * https://github.com/vim/vim/commit/256972a9849b5d575b62a6a71be5b6934b5b0e8b
 * https://github.com/vim/vim/commit/cc7ff3fcd8c8fd7da6faac98a138b830ec5c00d8
+ * N/A, only changes to spell files
