@@ -21,6 +21,7 @@ https://github.com/neovim/neovim/commit/6bb4b9f57f5011db0c895370e00f2351422a2c25
 All are for runtime files, in merge order:
 
 * https://github.com/vim/vim/commit/a0f849ee40cbea3c889345256786b640b0becca2
+ * https://github.com/neovim/neovim/pull/4693
 * https://github.com/vim/vim/commit/d7464be9747fcaa8e6210e1f00a3882932df76e2
 * https://github.com/vim/vim/commit/b4ff518d95aa57c2f8c0568c915035bef849581b
 * https://github.com/vim/vim/commit/e392eb41f8dfc01bd13634e534ac6b4d505326f4
