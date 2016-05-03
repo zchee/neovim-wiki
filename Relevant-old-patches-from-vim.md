@@ -13,7 +13,7 @@ https://github.com/neovim/neovim/commit/6bb4b9f57f5011db0c895370e00f2351422a2c25
 |[7.4.882](https://github.com/vim/vim/commit/5f1fea28f5bc573e2430773c49e95ae1f9cc2a25)|https://github.com/neovim/neovim/pull/4644| Screen update @CTRL-C with compl-menu|
 |[7.4.889](https://github.com/vim/vim/commit/74b738d414b2895b3365e26ae3b7792eb82ccf47)|Merged: https://github.com/neovim/neovim/pull/4677| Test triggering OptionSet from setwinvar|
 |[7.4.896](https://github.com/vim/vim/commit/b4f6a46b01ed00b642a2271e9d1559e51ab0f2c4)|https://github.com/neovim/neovim/pull/4695| Editing URL & netrw|
-| | Strongly related (netrw changes): | https://github.com/vim/vim/commit/a0f849ee40cbea3c889345256786b640b0becca2#diff-3abb9629535900f0c07a312231e18483|
+| | Strongly related (netrw changes), PR exists (see below): | https://github.com/vim/vim/commit/a0f849ee40cbea3c889345256786b640b0becca2#diff-3abb9629535900f0c07a312231e18483|
 | | Discussion at: | https://groups.google.com/forum/#!topic/vim_dev/1JbJZfZ69Mw|
 
 ### Untagged patches
