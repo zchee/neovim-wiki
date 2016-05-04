@@ -1,7 +1,7 @@
 ## Relevant vim patches before 7.4.1000
 
 List of patches before 7.4.1000 that are neither merged nor declared NA. Currently, the content of this page refers to 
-https://github.com/neovim/neovim/commit/6bb4b9f57f5011db0c895370e00f2351422a2c25.
+https://github.com/neovim/neovim/commit/e2cc3f98fb3ca771d9bd108ae9c37c19bea8025bA.
 
 ### Tagged patches
 
