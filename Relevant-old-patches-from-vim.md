@@ -16,15 +16,6 @@ https://github.com/neovim/neovim/commit/6bb4b9f57f5011db0c895370e00f2351422a2c25
 | | Strongly related (netrw changes), PR exists (see below): | https://github.com/vim/vim/commit/a0f849ee40cbea3c889345256786b640b0becca2#diff-3abb9629535900f0c07a312231e18483|
 | | Discussion at: | https://groups.google.com/forum/#!topic/vim_dev/1JbJZfZ69Mw|
 
-### Untagged patches
+### Untagged patches before 7.4.1000
 
-https://github.com/neovim/neovim/pull/4704:
-
-* https://github.com/vim/vim/commit/a0f849ee40cbea3c889345256786b640b0becca2
-* https://github.com/vim/vim/commit/d7464be9747fcaa8e6210e1f00a3882932df76e2
-* https://github.com/vim/vim/commit/b4ff518d95aa57c2f8c0568c915035bef849581b
-* https://github.com/vim/vim/commit/e392eb41f8dfc01bd13634e534ac6b4d505326f4
-* https://github.com/vim/vim/commit/d042dc825c9b97dacd84d4728f88300da4d5b6b9
-* https://github.com/vim/vim/commit/2c5e8e80eacf491d4f266983f534a77776c7ae83
-* https://github.com/vim/vim/commit/256972a9849b5d575b62a6a71be5b6934b5b0e8b
-* https://github.com/vim/vim/commit/cc7ff3fcd8c8fd7da6faac98a138b830ec5c00d8
+Have been merged.
