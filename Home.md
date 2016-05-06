@@ -1,19 +1,19 @@
 - [Introduction](Introduction)
-- [FAQ](FAQ)
+- **[FAQ](FAQ)**
     - [Transitioning from Vim to Neovim](http://neovim.io/doc/user/nvim_from_vim.html) (`:help nvim-from-vim`)
 - [Progress/Roadmap](Progress)
 - [Related projects](Related-projects)
 
 ### Users
 
-- [Installing Neovim](Installing-Neovim)
+- **[Install](Installing-Neovim)**
 - [Following HEAD](Following-HEAD)
 - [Documentation](http://neovim.io/doc/)
 
 ### Developers
 
-- [Building Neovim](Building-Neovim)
-- **[Contributing](Contributing)**
+- **[Build](Building-Neovim)**
+- **[Contribute](Contributing)**
     - [Unit testing](Unit-tests)
     - [Refactoring guidelines](https://github.com/neovim/neovim/wiki/Refactoring)
     - [Merging patches from upstream Vim](Merging-patches-from-upstream-Vim)
