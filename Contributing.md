@@ -1,6 +1,4 @@
-## Thank you
-
-Thanks for considering contributing to Neovim.
+Thanks for considering contributing to Neovim!
 
 ## What needs to be done
 
@@ -36,36 +34,3 @@ coverity/<id>: <description of what fixed the defect>
 ```
 
 where `<id>` is the Coverity ID. The id is also called the CID. For an example, see [#804](https://github.com/neovim/neovim/pull/804).
-
-## Non-programming ways to contribute
-
-### Documentation
-
-Help document Neovim by improving this wiki, or work on [`runtime/doc/`](https://github.com/neovim/neovim/tree/master/runtime/doc).
-
-### Use Neovim
-
-Report bugs you experience in the [issue tracker](https://github.com/neovim/neovim/issues).
-
-### Give support
-
-Hang around [neovim's Gitter channel](https://gitter.im/neovim/neovim) and answer questions.
-
-### Help manage the issue tracker
-
-If you spot a duplicate issue, flag it with a comment. If you see a report lacking in detail, ask for more.
-
-### Raise awareness
-
-Write about Neovim and share it with your friends.
-
-### Money contributions
-
-Consider spending your hard-earned cash on a bounty: 
-
-https://www.bountysource.com/teams/neovim
-
-Or become an official sponsor by pledging regular contributions (whatever the amount, every dollar helps!): 
-
-https://salt.bountysource.com/teams/neovim
-
