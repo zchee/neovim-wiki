@@ -17,6 +17,10 @@ If you are using [Syntastic][syntastic], you can use https://gist.github.com/gil
 
 See [Syntastic's documentation][syntastic-docs] for information.
 
+## Continuous integration
+
+For information on the Quick Build and potential failures, have a look at [this explanation](https://github.com/neovim/neovim/pull/4718#issuecomment-217631350) by @jszakmeister.
+
 ## Experimenting with the API
 
 You can write a simple shell that grabs the API metadata and allows you to send commands to Neovim:
