@@ -17,7 +17,7 @@ for guidelines on sending contributions as pull requests.
 
 ## QuickBuild failures
 
-See [this comment] for steps to investigate QuickBuild failures.
+See [this comment](https://github.com/neovim/neovim/pull/4718#issuecomment-217631350) for steps to investigate QuickBuild failures.
 
 ## Coverity
 
