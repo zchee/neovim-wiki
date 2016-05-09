@@ -15,6 +15,10 @@ Check out this [refactoring catalog](C-Refactorings-and-Code-Smells-Catalog) if 
 See [`CONTRIBUTING.md#submitting-contributions`](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md#submitting-contributions)
 for guidelines on sending contributions as pull requests.
 
+## QuickBuild failures
+
+See [this comment] for steps to investigate QuickBuild failures.
+
 ## Coverity
 
 [Coverity Scan](https://scan.coverity.com/) is used to detect defects in the
