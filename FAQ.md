@@ -1,4 +1,4 @@
-### I'm using a development version of Neovim and something broke.
+### Something broke, help!
 
 See the [Following HEAD](Following-HEAD) page.
 
@@ -11,7 +11,7 @@ Not yet. The legacy interfaces required by plugins such as [neocomplete](https:/
 Add this to your `init.vim`:
 
 ```vim
-:let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+set termguicolors
 ```
 
 See [this gist](https://gist.github.com/XVilka/8346728) for more information about true colors, such as what terminals support it.
