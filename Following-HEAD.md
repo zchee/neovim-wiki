@@ -1,17 +1,20 @@
-This document is meant for people who wish to run a development build of Neovim, i.e., the most recent commit.
-Its purpose is only to document breaking changes, so should NOT be used as a reference for new features—that's what [`:help nvim`](http://neovim.io/doc/user/nvim.html) is for. 
+This document is for people who wish to run the "bleeding edge" of Neovim, i.e., the most recent commit.
+Only **breaking changes** are mentioned here, this is **not** a reference for new features (see [`:help nvim`](http://neovim.io/doc/user/nvim.html) instead). 
 
-If you haven't already, see [Building Neovim](Building-Neovim)
-or [Installing Neovim](Installing-Neovim), depending on your preferred installation method.
+If you don't have Neovim yet, see [Building Neovim](Building-Neovim) or [Installing Neovim](Installing-Neovim).
 
-If you use python plugins make sure to upgrade the python client. To upgrade for both python2 and python3:
+For python plugins, always upgrade the python client! (Append `--user` if you installed as an ordinary user.)
+
 ```
 pip2 install --upgrade neovim
 pip3 install --upgrade neovim
 ```
-Append `--user` if you installed as an ordinary user.
 
 ------------
+
+### 2016/05/11
+
+"True color" support now requires `set termguicolors` in your init.vim. `NVIM_TUI_ENABLE_TRUE_COLOR` is ignored. [#4690](https://github.com/neovim/neovim/pull/4690)
 
 ### 2016/02/14
 
