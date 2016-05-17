@@ -142,7 +142,8 @@ br main
 
 Building and installing Neovim with one of Clang's sanitizers (Address Sanitizer: ASan, Undefined Behavior Sanitizer: UBSan, Memory Sanitizer: MSan, Thread Sanitizer: TSan) is a good way to catch errors as soon as they happen. It's significantly faster than running a program under Valgrind, so it's *possible* to use Neovim built with a sanitizer as your daily editor (although it's not recommended given a [typical slowdown of 2x for ASan](http://clang.llvm.org/docs/AddressSanitizer.html)). Assuming you have access to Clang 3.4 or above and a Unix-like environment, the following steps should get you started:
 
-- Build Neovim with a sanitizer enabled (`ASAN_UBSAN`, `MSAN`, or `TSAN`): `CC=clang-3.4 make CMAKE_EXTRA_FLAGS="-DCLANG_ASAN_UBSAN=ON"`
+- Build Neovim with a sanitizer enabled (`ASAN_UBSAN`, `MSAN`, or `TSAN`):  
+  `CC=clang-3.4 make CMAKE_EXTRA_FLAGS="-DCLANG_ASAN_UBSAN=ON"`
 - Optionally install it if you desire to use as your normal editor: `make install`
 - Create a directory to store the ASAN logs: `mkdir -p ${HOME}/.logs`
 - Add this to your shell initialization scripts (e.g., `.profile`):
