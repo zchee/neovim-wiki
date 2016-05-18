@@ -1,26 +1,24 @@
-### C programming techniques and Neovim-specific guidance
+# C programming techniques and Neovim-specific guidance
+
+### sizeof
 
 [`sizeof(<var>)` vs `sizeof(<type>)`](https://github.com/neovim/neovim/pull/558#discussion_r11767481)
 > something you have to be really careful about: the difference between arrays and pointers [...]
 > be judicious: if the variable is simple (int, long, ...), use `sizeof(variable)`, if the variable is complex (struct, pointer-to-pointer, ...), use `sizeof(the_actual_type)`.
 
-[Conversion of signed variables to unsigned (in files not checked by `-Wconversion`)](https://github.com/neovim/neovim/pull/558#issuecomment-40863654)
-
-#### Scope
+### Scope
 
 It is **undefined behavior** to [access a pointer that was assigned in an inner scope](https://github.com/neovim/neovim/pull/619#discussion_r12261134).
 
-#### Types
-
-(to be filled in)
-
-#### Struct organization
+### Struct organization
 
 https://github.com/neovim/neovim/pull/656#issuecomment-41905534
 
 TODO: link to discussion of legacy Vim struct hack
 
-##### Unsigned or signed? Beware of integer over- and underflow
+### Unsigned or signed? Integer overflow/underflow
+
+* [Conversion of signed variables to unsigned](https://github.com/neovim/neovim/pull/558#issuecomment-40863654) (in files not checked by `-Wconversion`)
 
 There are a few very important things to keep in mind while choosing between signed and unsigned integral types:
 
@@ -32,7 +30,7 @@ What does this mean, defined vs. undefined? If an unsigned integer overflows, it
 
 Thus it would seem that unsigned arithmetic is superior, because it has defined over- and underflow. But that's not always true. There's a good reason why many languages (like Java) don't expose unsigned types: they can cause difficult to spot errors. The most common form of `*`flow is **underflow in unsigned arithmetic**. Subtracting 1 from `unsigned int num = 0;` will make it wrap around to `UINT_MAX`. [This is much more common than one would think](http://www.soundsoftware.ac.uk/c-pitfall-unsigned). For this reason alone, it is usually **much** safer to use a plain `int` as a loop counter instead of `uint32_t`/`size_t`/... or another unsigned type. Even seasoned programmers find it difficult to avoid writing unsigned code that doesn't underflow in some cases. That's why
 
-**Problem**: correct signed code is easier to write, but you have to use casts when comparing to `size_t` (which happens often, as it is the return type of `sizeof`, `strlen` and many others). Casts are ugly and should be avoided if at all possible. But we cannot avoid them everywhere. Sometimes, a trade-off has to be made. Hopefully this section can be amended with examples showing good ways to handle these issues.
+**Problem**: correct signed code is easier to write, but you have to use casts when comparing to `size_t` (which happens often, as it is the return type of `sizeof`, `strlen` and many others). Casts are ugly and should be avoided if at all possible. But we cannot avoid them everywhere. Sometimes, a trade-off has to be made. See [previous `-Wconversion` PRs](https://github.com/neovim/neovim/pulls?q=is%3Apr+is%3Aclosed+wconversion) for examples.
 
 **Conclusion**: 
 
@@ -40,9 +38,9 @@ Thus it would seem that unsigned arithmetic is superior, because it has defined 
 - if there is any chance of overflow, use unsigned arithmetic and possibly guards.
 - if there is a chance of both underflow and overflow, be extremely careful and paranoid (guards/asserts).
 
-###### Guarded casting
+### Guarded casting
 
-##### Fixed-size vs. generic types
+#### Fixed-size vs. generic types
 
 Should we use `(u)intX_t` and friends over `char`, `short`, `int`, `long` et al.? ...
 
