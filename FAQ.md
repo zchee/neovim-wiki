@@ -40,7 +40,6 @@ The code for that family of command-line arguments was removed. It may eventuall
 
 See [#1750](https://github.com/neovim/neovim/issues/1750) for more information.
 
-*If you run into an error not mentioned here and manage to resolve it, feel free to add it below.*
 
 # Runtime issues
 
