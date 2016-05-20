@@ -1,10 +1,7 @@
-## Building Neovim
-
-See the [Building Neovim](Building-Neovim) page.
-
 ## Navigating the code
 
-- The `contrib` folder contains a [YouCompleteMe configuration](https://github.com/neovim/neovim/tree/master/contrib/YouCompleteMe) tailored to Neovim.
+- Install **[universal-ctags](https://github.com/universal-ctags/ctags).** "Exuberant ctags" (the typical `ctags` binary provided by your distro) is unmaintained and won't recognize many function signatures in Neovim source.
+- The `contrib` folder contains a [YouCompleteMe configuration](https://github.com/neovim/neovim/tree/master/contrib/YouCompleteMe) for Neovim.
 
 ## Code linting
 You can run the C linter locally using `make lint`. If you work in a single or a few files at a time, you can lint a single file at a time using
