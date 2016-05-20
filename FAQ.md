@@ -67,7 +67,7 @@ See [#2048](https://github.com/neovim/neovim/issues/2048) for more information.
 
 Make sure `$TERM` is set to something reasonable.
 
-- If you're using screen or tmux, `TERM` should be `screen-256color`
+- If you're using screen or tmux, `TERM` should be `screen-256color`  (*Not* `xterm-256color`)
 - In other cases if "256" does not appear in the string it's probably wrong. Try `TERM=xterm-256color`.
 
 ### `:!` and `system()` do weird things with interactive processes
