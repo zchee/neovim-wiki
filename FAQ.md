@@ -83,7 +83,8 @@ First, read **[`:help nvim-python`](http://neovim.io/doc/user/nvim_python.html)*
 :echo errors  " Shows which Python interpreters Neovim checked.
 ```
 
-Also try this with `nvim -u NONE` to make sure your `init.vim` doesn't cause the problem. If you get `E117: Unknown function`, [Neovim can't find its runtime](#neovim-cant-find-its-runtime).
+- Try with `nvim -u NORC` to make sure your `init.vim` isn't causing a problem. If you get `E117: Unknown function`, [Neovim can't find its runtime](#neovim-cant-find-its-runtime).
+- Try [nvim-python-doctor](https://github.com/tweekmonster/nvim-python-doctor) for a detailed, robust diagnosis.
 
 ### Neovim can't find its runtime
 
