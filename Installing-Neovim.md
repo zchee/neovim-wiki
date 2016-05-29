@@ -163,7 +163,7 @@ Windows support is (currently) experimental. To try it out, you need `nvim.exe` 
     - You should be able to call the nvim command from the console, but it will block after a message
 2. Now download and unzip the latest [Neovim-Qt build](https://github.com/equalsraf/neovim-qt/releases).
 3. Double-click `nvim-qt.exe`
-4. (Optional) If you are missing VCRUNTIME140.dll, you need to install the Visual Studio 2015 c++ redistributables (be sure to get x86_64 or x86 depending on the build).
+4. If you are missing `VCRUNTIME140.dll`, install the [Visual Studio 2015 C++ redistributable](https://support.microsoft.com/en-us/kb/2977003) (be sure to get x86_64 or x86 depending on your system).
 
 ### .vimrc file in Windows
 
