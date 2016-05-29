@@ -156,14 +156,15 @@ Neovim can be installed using the xbps package manager
 
 Windows support is (currently) experimental. To try it out, you need `nvim.exe` and a front-end such as Neovim-Qt.
 
-1. Go to https://ci.appveyor.com/project/equalsraf/neovim/branch/tb-mingw
-    - View the _Artifacts_ tab and download `Neovim.zip`.
-    - Unpack the zip contents into a new directory (e.g. c:\Neovim)
-    - Add the binary folder to your PATH i.e. c:\Neovim\bin
-    - You should be able to call the nvim command from the console, but it will block after a message
-2. Now download and unzip the latest [Neovim-Qt build](https://github.com/equalsraf/neovim-qt/releases).
-3. Double-click `nvim-qt.exe`
-4. If you are missing `VCRUNTIME140.dll`, install the [Visual Studio 2015 C++ redistributable](https://support.microsoft.com/en-us/kb/2977003) (be sure to get x86_64 or x86 depending on your system).
+1. Click on _Artifacts_ at https://ci.appveyor.com/project/equalsraf/neovim/branch/tb-mingw
+    - Download and run `Neovim.exe` to install `nvim`.
+    - Alternative (**manual steps**):
+        - Download and unzip `Neovim.zip` to a new directory (e.g. `C:/Neovim`)
+        - Add the binary folder (`C:/Neovim/bin`) to your PATH.
+2. You should now be able to run `nvim` from the console (but it will block after a message).
+3. Now download and unzip the latest [Neovim-Qt build](https://github.com/equalsraf/neovim-qt/releases).
+4. Double-click `nvim-qt.exe`.
+5. If you are missing `VCRUNTIME140.dll`, install the [Visual Studio 2015 C++ redistributable](https://support.microsoft.com/en-us/kb/2977003) (be sure to get x86_64 or x86 depending on your system).
 
 ### .vimrc file in Windows
 
