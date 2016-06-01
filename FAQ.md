@@ -75,7 +75,16 @@ Interactive commands are supported by `:terminal` in Neovim. But `:!` and `syste
 
 ### Python support isn't working
 
-First, read **[`:help nvim-python`](http://neovim.io/doc/user/nvim_python.html)**. If you _still_ have problems, try the following commands (in Neovim) to see which Python interpreter is detected:
+- Read [`:help nvim-python`](http://neovim.io/doc/user/nvim_python.html). 
+- Be sure you have the **latest version** of the `neovim` Python module.
+
+```sh
+pip  install --upgrade neovim
+pip2 install --upgrade neovim
+pip3 install --upgrade neovim
+```
+
+- If you still have problems, try the following commands (in Neovim) to see which Python interpreter is detected:
 
 ```vim
 :let [interp, errors] = provider#pythonx#Detect(2)  " Can also be used to check for Python 3.
@@ -83,7 +92,7 @@ First, read **[`:help nvim-python`](http://neovim.io/doc/user/nvim_python.html)*
 :echo errors  " Shows which Python interpreters Neovim checked.
 ```
 
-- Try with `nvim -u NORC` to make sure your `init.vim` isn't causing a problem. If you get `E117: Unknown function`, [Neovim can't find its runtime](#neovim-cant-find-its-runtime).
+- Try with `nvim -u NORC` to make sure your `init.vim` isn't causing a problem. If you get `E117: Unknown function`, that means [Neovim can't find its runtime](#neovim-cant-find-its-runtime).
 - Try [nvim-python-doctor](https://github.com/tweekmonster/nvim-python-doctor) for a detailed, robust diagnosis.
 
 ### Neovim can't find its runtime
