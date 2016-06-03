@@ -3,8 +3,7 @@ doesn't make it less complex than it is, but it gets you started.
 
 ## Jumping around
 
-First of all, use `ctags -R` to generate a tags file, so that you can use
-the `:tag` command to jump around the source code. Exuberant ctags has some difficulty with neovim, so you may want to install [Universal Ctags](https://github.com/universal-ctags/ctags).
+Use `ctags -R` to generate a tags file for the `:tag` command. (We recommend [universal-ctags](https://github.com/universal-ctags/ctags) instead of the default `ctags` provided by most distros; see also [Development-tips](https://github.com/neovim/neovim/wiki/Development-tips#navigating-the-code).)
 
 To jump to a function or variable definition, move the cursor on the name and
 use the `CTRL-]` command.  Use `CTRL-T` or `CTRL-O` to jump back.
@@ -117,4 +116,3 @@ called `options[]`.
 # Code Overview (Visualization)
 
 ![Code visualization generated with facebook/pfff](http://i.imgur.com/GApvG0J.png)
-
