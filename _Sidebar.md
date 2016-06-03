@@ -11,6 +11,6 @@
 
 **Developers**  
 [Building](Building-Neovim)  
-[Contributing](Contributing)  
+[Contributing](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md)  
 [Development tips](Development-tips)  
 [Code style](https://neovim.io/develop/style-guide.xml)  
