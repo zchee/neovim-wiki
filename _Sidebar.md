@@ -7,10 +7,10 @@
 
 **Users**  
 [Install](Installing-Neovim)  
-[Documentation](http://neovim.io/doc/)
+[Docs](http://neovim.io/doc/)
 
 **Developers**  
-[Building](Building-Neovim)  
-[Contributing](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md)  
-[Development tips](Development-tips)  
+[Build](Building-Neovim)  
+[Contribute](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md)  
+[Develop](Development-tips)  
 [Code style](https://neovim.io/develop/style-guide.xml)  
