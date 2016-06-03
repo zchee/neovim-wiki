@@ -4,7 +4,7 @@ doesn't make it less complex than it is, but it gets you started.
 ## Jumping around
 
 First of all, use `ctags -R` to generate a tags file, so that you can use
-the `:tag` command to jump around the source code. Exhuberent ctags has some difficulty with neovim, so you may want to install [Universal Ctags](https://github.com/universal-ctags/ctags).
+the `:tag` command to jump around the source code. Exuberant ctags has some difficulty with neovim, so you may want to install [Universal Ctags](https://github.com/universal-ctags/ctags).
 
 To jump to a function or variable definition, move the cursor on the name and
 use the `CTRL-]` command.  Use `CTRL-T` or `CTRL-O` to jump back.
