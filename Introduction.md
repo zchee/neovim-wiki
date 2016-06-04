@@ -9,8 +9,8 @@ Over its more than 20 years of life, Vim has accumulated about 300k lines of
 scary C89 code that very few people understand or have the guts to mess with.
 
 Another issue is that as the only person responsible for maintaining vim's big
-codebase, Bram Moolenaar has to be extra careful before accepting patches,
-because once merged, the new code will be his responsibility.
+codebase, Bram Moolenaar, has to be extra careful before accepting patches,
+because, once merged, the new code will be his responsibility.
 
 These problems make it very difficult to have new features and bug fixes merged
 into the core. Vim just can't keep up with the development speed of its plugin
