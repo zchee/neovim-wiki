@@ -2,6 +2,14 @@
 
 See the [Following HEAD](Following-HEAD) page.
 
+### Where should I put my config (`vimrc`)?
+
+The default config file location is:
+
+    ~/.config/nvim/init.vim
+
+You can copy your existing vimrc there, or symlink to it. [`:help nvim-from-vim`](http://neovim.io/doc/user/nvim_from_vim.html)
+
 ### Can I use Lua/Ruby-based Vim plugins?
 
 Not yet. The legacy interfaces required by plugins such as [neocomplete](https://github.com/Shougo/neocomplete.vim) (`if_lua`) and [LustyExplorer](https://github.com/sjbach/lusty) (`if_ruby`) are not (yet) supported in Neovim.
