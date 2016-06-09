@@ -38,6 +38,14 @@ The escape sequences `t_SI` and `t_EI` (which are [non-standard](https://groups.
 
 Note about gnome-terminal 3.6.2 (libvte-2.90-9): [#2537](https://github.com/neovim/neovim/issues/2537)
 
+### Cursor shape doesn't change in tmux
+
+Add this to your `.tmux.config`:
+
+    set -g -a terminal-overrides ',*:Ss=\E[%p1%d q:Se=\E[2 q'
+
+See [#3165](https://github.com/neovim/neovim/pull/3165) for discussion.
+
 ### Is Windows supported?
 
 - An [experimental Windows build](https://github.com/neovim/neovim/wiki/Installing-Neovim#windows) is available to try out. 
