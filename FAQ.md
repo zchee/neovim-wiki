@@ -38,9 +38,11 @@ The escape sequences `t_SI` and `t_EI` (which are [non-standard](https://groups.
 
 Note about gnome-terminal 3.6.2 (libvte-2.90-9): [#2537](https://github.com/neovim/neovim/issues/2537)
 
-### When will Windows be supported?
+### Is Windows supported?
 
-See [#810](https://github.com/neovim/neovim/pull/810) and [#1749](https://github.com/neovim/neovim/issues/1749).
+- An [experimental Windows build](https://github.com/neovim/neovim/wiki/Installing-Neovim#windows) is available to try out. 
+- Full Windows support is a goal of the [`0.2` release](https://github.com/neovim/neovim/milestones/0.2).
+- See [PR #810](https://github.com/neovim/neovim/pull/810) and [PR #1749](https://github.com/neovim/neovim/issues/1749) for ongoing work.
 
 ### What happened to --remote and friends?
 
