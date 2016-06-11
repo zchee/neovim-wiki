@@ -160,7 +160,7 @@ Windows support is (currently) experimental. To try it out, you need `nvim.exe` 
 1. Click on _Artifacts_ at https://ci.appveyor.com/project/equalsraf/neovim/branch/tb-mingw
     - Download and run `Neovim.exe` to install `nvim`.
     - Alternative (**manual steps**):
-        - Download and unzip `Neovim.zip` to a new directory (e.g. `C:/Neovim`)
+        - Download and unzip `Neovim.zip` to a new directory (e.g. `C:/Neovim`) at https://ci.appveyor.com/api/buildjobs/m8yhary3w8hr1fe2/artifacts/Neovim.zip
         - Add the binary folder (`C:/Neovim/bin`) to your PATH.
 2. You should now be able to run `nvim` from the console (but it will block after a message).
 3. Now download and unzip the latest [Neovim-Qt build](https://github.com/equalsraf/neovim-qt/releases).
