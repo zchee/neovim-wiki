@@ -157,7 +157,8 @@ Neovim can be installed using the xbps package manager
 
 Windows support is (currently) experimental. To try it out, you need `nvim.exe` and a front-end such as Neovim-Qt.
 
-1. Click on _Artifacts_ at https://ci.appveyor.com/project/equalsraf/neovim/branch/tb-mingw
+1. Go to https://ci.appveyor.com/project/equalsraf/neovim/branch/tb-mingw
+    - Click the ***Artifacts*** tab.
     - Download and run `Neovim.exe` to install `nvim`.
     - Alternative (**manual steps**):
         - Download and unzip `Neovim.zip` to a new directory (e.g. `C:/Neovim`)
