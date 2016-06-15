@@ -12,13 +12,6 @@ pip3 install --upgrade neovim
 
 ------------
 
-### 2016/06/15
-
-The `=` marker for the statusline can be used for unlimited alignment now, see  https://github.com/neovim/neovim/pull/4489
-
-`:CheckHealth` can now be used to diagnose problem with the nvim setup. For now, it checks the [python setup](https://github.com/neovim/neovim/pull/4885), but there is a [discussion](https://github.com/neovim/neovim/issues/4478) for extension.
-
-
 
 ### 2016/05/11
 
