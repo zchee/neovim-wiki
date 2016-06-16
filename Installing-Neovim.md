@@ -99,7 +99,7 @@ Exhereses for scm and released versions are currently available in repository `:
 
     cave resolve app-editors/neovim --take dev-python/neovim-python --take app-editors/neovim-qt
 
-## Fedora 21/22
+## Fedora 22/23/24
  
 http://copr.fedoraproject.org/coprs/dperson/neovim/
 
@@ -112,6 +112,21 @@ It's built using the [Copr](https://copr.fedoraproject.org/) automated build sys
 For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
 
 When installing Python packages, ensure that you have the python2-greenlet-devel package installed.
+
+## CentOS 7
+ 
+http://copr.fedoraproject.org/coprs/dperson/neovim/
+
+    yum -y install epel-release
+    curl -o /etc/yum.repos.d/dperson-neovim-epel-7.repo https://copr.fedorainfracloud.org/coprs/dperson/neovim/repo/epel-7/dperson-neovim-epel-7.repo 
+    yum -y install neovim
+
+It's built using the [Copr](https://copr.fedoraproject.org/) automated build system, which is unsupported. There's no guarantee of how long your package will be available after the build finishes.
+
+For instructions on how to install the Python modules, see [`:help nvim_python`](http://neovim.io/doc/user/nvim_python.html).
+
+When installing Python packages, ensure that you have the python2-greenlet-devel package installed.
+
 
 ## Slackware
 
