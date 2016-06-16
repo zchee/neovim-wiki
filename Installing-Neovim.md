@@ -47,7 +47,7 @@ If you're using an older version Ubuntu you have to use:
     sudo apt-get install python3-setuptools
     sudo easy_install3 pip
 
-For instructions on how to install the Python modules, see [`:help provider-python`](https://neovim.io/doc/user/provider.html#provider-python).
+For instructions on how to install the Python modules, see [`:help provider-python`].
 
 If you want to use Neovim for some (or all) of the editor alternatives, use the following commands:
 
@@ -78,7 +78,7 @@ For installing the Python modules, you have two options:
 
         sudo pacman -S python2-neovim python-neovim
 
- * Install `pip` and follow the instructions at [`:help provider-python`](https://neovim.io/doc/user/provider.html#provider-python):
+ * Install `pip` and follow the instructions at [`:help provider-python`]:
 
         sudo pacman -S python-pip python2-pip
 
@@ -91,7 +91,7 @@ A snapshot ebuild is now available in Gentoo's official portage repository:
 
 A "live" ebuild can be found in [yngwin's developer overlay](http://cgit.gentooexperimental.org/dev/yngwin.git/tree/app-editors/neovim).
 
-For instructions on how to install the Python modules, see [`:help provider-python`](https://neovim.io/doc/user/provider.html#provider-python).
+For instructions on how to install the Python modules, see [`:help provider-python`].
 
 ## Exherbo Linux
 
@@ -109,7 +109,7 @@ http://copr.fedoraproject.org/coprs/dperson/neovim/
 
 It's built using the [Copr](https://copr.fedoraproject.org/) automated build system, which is unsupported. There's no guarantee of how long your package will be available after the build finishes.
 
-For instructions on how to install the Python modules, see [`:help provider-python`](https://neovim.io/doc/user/provider.html#provider-python).
+For instructions on how to install the Python modules, see [`:help provider-python`].
 
 When installing Python packages, ensure that you have the python2-greenlet-devel package installed.
 
@@ -123,7 +123,7 @@ http://copr.fedoraproject.org/coprs/dperson/neovim/
 
 It's built using the [Copr](https://copr.fedoraproject.org/) automated build system, which is unsupported. There's no guarantee of how long your package will be available after the build finishes.
 
-For instructions on how to install the Python modules, see [`:help provider-python`](https://neovim.io/doc/user/provider.html#provider-python).
+For instructions on how to install the Python modules, see [`:help provider-python`].
 
 When installing Python packages, ensure that you have the python2-greenlet-devel package installed.
 
@@ -132,7 +132,7 @@ When installing Python packages, ensure that you have the python2-greenlet-devel
 
 See [neovim on SlackBuilds](http://slackbuilds.org/apps/neovim/).
 
-For instructions on how to install the Python modules, see [`:help provider-python`](https://neovim.io/doc/user/provider.html#provider-python).
+For instructions on how to install the Python modules, see [`:help provider-python`].
 
 ## NixOS
 
@@ -140,13 +140,13 @@ Neovim can be installed from the [unstable channel](http://nixos.org/nixos/manua
 
     nix-env -iA neovim
 
-For instructions on how to install the Python modules, see [`:help provider-python`](https://neovim.io/doc/user/provider.html#provider-python).
+For instructions on how to install the Python modules, see [`:help provider-python`].
 
 ## CRUX
 
 A CRUX port is available under [`6c37/neovim`](https://github.com/6c37/crux-ports), along with ports for other dependencies of Neovim.
 
-For instructions on how to install the Python modules, see [`:help provider-python`](https://neovim.io/doc/user/provider.html#provider-python).
+For instructions on how to install the Python modules, see [`:help provider-python`].
 
 ## FreeBSD
 
@@ -218,3 +218,5 @@ Or if you specified `CMAKE_INSTALL_PREFIX` at install-time, just _delete that di
 
 - See [Building Neovim](Building-Neovim) for more options. 
 - See [FAQ](FAQ) for common problems.
+
+[`:help provider-python`]: https://neovim.io/doc/user/provider.html#provider-python
