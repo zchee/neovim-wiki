@@ -8,7 +8,7 @@ The default config file location is:
 
     ~/.config/nvim/init.vim
 
-You can copy your existing vimrc there, or symlink to it. [`:help nvim-from-vim`](http://neovim.io/doc/user/nvim_from_vim.html)
+You can copy your existing vimrc there, or symlink to it. [`:help nvim-from-vim`](http://neovim.io/doc/user/nvim.html#nvim-from-vim)
 
 ### Can I use Lua/Ruby-based Vim plugins?
 
@@ -97,7 +97,7 @@ Run `:CheckHealth` inside Neovim for a detailed diagnosis.
 
 Additional hints:
 
-- Read [`:help nvim-python`](http://neovim.io/doc/user/nvim_python.html). 
+- Read [`:help provider-python`](https://neovim.io/doc/user/provider.html#provider-python). 
 - Be sure you have the **latest version** of the `neovim` Python module.
 
 ```sh
