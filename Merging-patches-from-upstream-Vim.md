@@ -1,10 +1,10 @@
-Neovim was forked from Vim 7.4.160; it is kept up-to-date with relevant Vim patches in order to avoid duplicate work. For details, see [#438](https://github.com/neovim/neovim/issues/438).
+_See **[Quickstart](#quickstart)** to get started immediately._
 
-Visit the [**vim patch report**](http://neovim.io/doc/reports/vimpatch/) to see which patches are needed, or use the [`vim-patch.sh`](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh) script: 
+Neovim was forked from Vim 7.4.160; it is kept up-to-date with relevant Vim patches in order to avoid duplicate work. See [#438](https://github.com/neovim/neovim/issues/438) for full details. To see the status of Vim patches, go to the  [**vim patch report**](http://neovim.io/doc/reports/vimpatch/) or run [`vim-patch.sh`](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh): 
 
     ./scripts/vim-patch.sh -l
 
-Everyone is welcome to send pull requests for relevant Vim patches (see [below](#pull-requests)), but some types of patches are **not relevant to Neovim:**
+Everyone is welcome to [send pull requests](#pull-requests) for relevant Vim patches, but some types of patches are **not applicable:**
 
 - **Compiler warning fixes**: Neovim strives to have no warnings at all, and has a very different build system from Vim.
     - **Note:** Coverity fixes in Vim *are* relevant to Neovim.
@@ -13,35 +13,34 @@ Everyone is welcome to send pull requests for relevant Vim patches (see [below](
 - **`if_*.c`** changes: `if_python.c` et. al. were removed.
 - **term.c** changes: the Neovim TUI uses libtermkey to read terminal sequences; Vim's `term.c` was removed.
 - Most **GUI-related** changes: Neovim GUIs are implemented external to the core C codebase.
-
-Anything else might be relevant; err on the side of caution, and post an issue if you aren't sure. 
+- Anything else might be relevant; err on the side of caution, and post an issue if you aren't sure. 
 
 To mark a patch as "Not Applicable", append `NA` next to the commented-out patch number in `version.c`.
 
-Quick start
------------
+Quickstart
+----------
 
-Say you've pulled down the Neovim source, and you want to merge Vim patch 7.4.123. Now just run [**vim-patch.sh**](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh):
+1. Pull down the Neovim source (`git clone https://github.com/neovim/neovim.git`)
+2. Run `./scripts/vim-patch.sh -l` to see the list of missing Vim patches.
+3. Choose a patch from the list (usually the oldest one), e.g. `7.4.123`.
+4. Run `./scripts/vim-patch.sh -p 7.4.123`
+    - The script guides you with further instructions.
 
-    ./scripts/vim-patch.sh -p 7.4.123
-
-The script guides you with further instructions. It's easy and painless, just try it!
-
-If you're unsure with which patch to start or just don't care, pick one from the bottom of the queue. Merging the patches in roughly chronological order works best as some patches might depend on others. You're most likely going to encounter merge conflicts regardless, but this way such conflicts are kept to a minimum.
+It's strongly recommended to work on the _oldest_ patch from the list (just make sure someone didn't already start working on it), because some patches might depend on others. You're most likely going to encounter merge conflicts regardless, but this way such conflicts are kept to a minimum.
 
 
 Pull requests
 -------------
 
-- The pull request *title* should include `vim-patch:7.4.xxx`. 
+_Note:_ **[vim-patch.sh](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh)** automates these steps for you. Use it!
+
+- The pull request *title* should include `vim-patch:7.4.xxx` (no whitespace) 
 - The [*commit message*](https://github.com/neovim/neovim/commit/4ccf1125ff569eccfc34abc4ad794044c5ab7455) should include:
-    - A token indicating the Vim patch number, formatted as follows (no space!): <br/>
-     `vim-patch:7.4.123`
+    - A token indicating the Vim patch number, formatted as follows: <br/>
+     `vim-patch:7.4.123` (no whitespace)
     - A URL pointing to the Vim commit:
-     *  https://github.com/vim/vim/releases/tag/v7.4.123
-     * https://github.com/vim/vim/commit/c8020ee825b9d9196b1329c0e097424576fc9b3a
-    - The original Vim commit message, including the author
-    - **The [vim-patch.sh](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh) script automates most of this for you.**
+        - https://github.com/vim/vim/commit/c8020ee825b9d9196b1329c0e097424576fc9b3a
+    - The original Vim commit message, including author
 
 **Reviewers:** [hint for reviewing `runtime/` patches](https://github.com/neovim/neovim/pull/1744#issuecomment-68202876)
 
