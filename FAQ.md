@@ -99,7 +99,7 @@ Run `:CheckHealth` inside Neovim for automatic diagnosis.
 
 Additional hints:
 
-- If you are using virtualenv, you must set `g:python_host_prog` and/or `g:python3_host_prog`.
+- If you are using pyenv or virtualenv, you must set `g:python_host_prog` and/or `g:python3_host_prog`.
 - Read [`:help provider-python`](https://neovim.io/doc/user/provider.html#provider-python). 
 - Be sure you have the **latest version** of the `neovim` Python module.
 
