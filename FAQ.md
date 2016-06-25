@@ -95,7 +95,7 @@ See also [#1496](https://github.com/neovim/neovim/issues/1496)
 
 ### Python support isn't working
 
-Run `:CheckHealth` inside Neovim for automatic diagnosis.
+Run `:CheckHealth` (available in 0.1.5) inside Neovim for automatic diagnosis.
 
 Additional hints:
 
