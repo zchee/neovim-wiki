@@ -4,13 +4,13 @@
 - [Progress/Roadmap](Progress)
 - [Related projects](Related-projects)
 
-### Users
+# Users
 
 - **[Install](Installing-Neovim)**
 - [Following HEAD](Following-HEAD)
 - [Documentation](http://neovim.io/doc/)
 
-### Developers
+# Developers
 
 - **[Build](Building-Neovim)**
 - **[Contribute](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md)**
@@ -28,7 +28,7 @@
     - [Code overview](Code-overview)
     - [How to generate function callgraphs with doxygen](Generate-callgraphs-with-Doxygen)
 
-#### Ideas
+### Ideas
 
 - [Refactor Vim into a library](Refactor-vim-into-a-library)
 - [Architectural musing and ideas (text buffer data structure, ...)](Architectural-musing-and-ideas)
