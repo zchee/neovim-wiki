@@ -4,13 +4,13 @@
 - [Progress/Roadmap](Progress)
 - [Related projects](Related-projects)
 
-# Users
+## Users
 
 - **[Install](Installing-Neovim)**
 - [Following HEAD](Following-HEAD)
 - [Documentation](http://neovim.io/doc/)
 
-# Developers
+## Developers
 
 - **[Build](Building-Neovim)**
 - **[Contribute](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md)**
