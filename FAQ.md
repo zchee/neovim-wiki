@@ -177,12 +177,14 @@ If there's no results, then you might not be using a UTF-8 locale. See the follo
 
 ### `ESC` in tmux or GNU Screen is delayed
 
-This is [common problem](https://www.google.com/?q=tmux%20vim%20escape%20delay) 
-in tmux (or screen). Set the escape-time to a low value (10-20ms) in `.tmux.conf`:
+This is a [common problem](https://www.google.com/?q=tmux%20vim%20escape%20delay) 
+in `tmux` / `screen`. The corresponding timeout needs to be tweaked to a low value (10-20ms).
+
+`.tmux.conf`:
 
     set -g escape-time 10
 
-or in `.screenrc`:
+`.screenrc`:
 
     maptimeout 10
 
