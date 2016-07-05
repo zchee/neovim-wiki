@@ -10,9 +10,13 @@ The default config file location is:
 
 You can copy your existing vimrc there, or symlink to it. [`:help nvim-from-vim`](http://neovim.io/doc/user/nvim.html#nvim-from-vim)
 
-### Can I use Lua/Ruby-based Vim plugins?
+### Can I use Ruby-based Vim plugins (e.g. [LustyExplorer](https://github.com/sjbach/lusty))?
 
-Not yet. The legacy interfaces required by plugins such as [neocomplete](https://github.com/Shougo/neocomplete.vim) (`if_lua`) and [LustyExplorer](https://github.com/sjbach/lusty) (`if_ruby`) are not (yet) supported in Neovim.
+Yes, starting with Neovim 0.1.5 [PR #4980](https://github.com/neovim/neovim/pull/4980) the legacy Vim `if_ruby` interface is supported.
+
+### Can I use Lua-based Vim plugins (e.g. [neocomplete](https://github.com/Shougo/neocomplete.vim))?
+
+Not yet. The legacy Vim `if_lua` interface is not (yet) supported.
 
 ### How can I use true colors in the terminal?
 
