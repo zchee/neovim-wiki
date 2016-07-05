@@ -91,7 +91,7 @@ The `gdb` interactive prompt will appear. At any time you can:
 - `finish` to **step out** of the current function
 - `p zub` to print the value of `zub` 
 - `bt` to see a **backtrace** (callstack) from the current location
-- `CTRL-x CTRL-a` to **show a TUI view of the source file** in the current debugging context. This can be extremely useful as it avoids the need for a gdb "frontend".
+- `CTRL-x CTRL-a` or `tui enable` to **show a TUI view of the source file** in the current debugging context. This can be extremely useful as it avoids the need for a gdb "frontend".
     - `<up>` and `<down>` to scroll the source file view
 
 ### Using `gdbserver`
