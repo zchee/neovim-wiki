@@ -1,6 +1,6 @@
-### Something broke, help!
+### Something broke after upgrading Neovim?
 
-See the [Following HEAD](Following-HEAD) page.
+See [Following-HEAD](https://github.com/neovim/neovim/wiki/Following-HEAD), which documents breaking changes.
 
 ### Where should I put my config (`vimrc`)?
 
@@ -64,10 +64,6 @@ See [#1750](https://github.com/neovim/neovim/issues/1750) for more information.
 
 
 # Runtime issues
-
-### Something broke after updating to a newer version
-
-See the [Following-HEAD](https://github.com/neovim/neovim/wiki/Following-HEAD) page, which documents breaking changes as they happen.
 
 ### `clipboard: provider is not available`
 
