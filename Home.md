@@ -19,14 +19,14 @@
     - [Merging patches from upstream Vim](Merging-patches-from-upstream-Vim)
 - [Development tips](Development-tips)
 - [Code style](http://neovim.io/develop/style-guide.xml)
-- [C programming techniques and Neovim-specific guidance](C-programming)
-    - [C refactorings and code-smells](C-refactorings-and-code-smells-catalog)
-    - [Integer type semantics](Integer-types-refactoring-guidelines)
-- [Documentation](http://neovim.io/doc/)
+- **[Source Documentation](https://neovim.io/doc/dev/globals_func.html)**
     - [Plugin Architecture](Plugin-UI-architecture)
     - [API](API)
     - [Code overview](Code-overview)
-    - [How to generate function callgraphs with doxygen](Generate-callgraphs-with-Doxygen)
+    - [Function callgraphs](Generate-callgraphs-with-Doxygen)
+- [C programming techniques and Neovim-specific guidance](C-programming)
+    - [C refactorings and code-smells](C-refactorings-and-code-smells-catalog)
+    - [Integer type semantics](Integer-types-refactoring-guidelines)
 
 ### Ideas
 
