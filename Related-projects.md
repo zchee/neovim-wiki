@@ -37,6 +37,7 @@
 | Julia       | [bfredl/Neovim.jl](https://github.com/bfredl/Neovim.jl)                              |
 | Lua         | [neovim/lua-client](https://github.com/neovim/lua-client)                            |
 | Node.js     | [neovim/node-client](https://github.com/neovim/node-client)                          |
+| Node.js     | [promised-neovim-client](https://github.com/rhysd/promised-neovim-client) (fork of the official client) |
 | Perl        | [yanick/Neovim-RPC](https://github.com/yanick/Neovim-RPC)                            |
 | Python      | [neovim/python-client](https://github.com/neovim/python-client)                      |
 | R           | [jalvesaq/nvimcom](https://github.com/jalvesaq/nvimcom)                              |
