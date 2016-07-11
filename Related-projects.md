@@ -36,9 +36,7 @@
 | Java        | [fdinoff/neovim-java-client](https://github.com/fdinoff/neovim-java-client)          |
 | Julia       | [bfredl/Neovim.jl](https://github.com/bfredl/Neovim.jl)                              |
 | Lua         | [neovim/lua-client](https://github.com/neovim/lua-client)                            |
-| Node.js     | [fritzy/node-neovim](https://github.com/fritzy/node-neovim)                          |
 | Node.js     | [neovim/node-client](https://github.com/neovim/node-client)                          |
-| Node.js     | [ngroup/neovim.js](https://github.com/ngroup/neovim.js)                              |
 | Perl        | [yanick/Neovim-RPC](https://github.com/yanick/Neovim-RPC)                            |
 | Python      | [neovim/python-client](https://github.com/neovim/python-client)                      |
 | R           | [jalvesaq/nvimcom](https://github.com/jalvesaq/nvimcom)                              |
