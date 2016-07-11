@@ -1,6 +1,6 @@
-*If you are working on a Neovim-related project, feel free to include it below!*
+*If you are working on a Neovim-related project, include it below!*
 
-**Note:** The projects linked on this page might be experimental and not ready for end users.
+**Note:** The projects below might be experimental and not ready for end users.
 
 ### GUI projects
 
