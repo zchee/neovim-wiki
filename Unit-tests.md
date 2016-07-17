@@ -4,6 +4,10 @@ In Neovim, unit testing is achieved by compiling it as a shared library that can
 
 Tests are broadly divided into *unit tests* ([test/unit](https://github.com/neovim/neovim/tree/master/test/unit) directory) and *functional tests* ([test/functional](https://github.com/neovim/neovim/tree/master/test/functional) directory). Use any of the existing tests as a template to start writing new tests.
 
+## Running Tests
+
+See [build page](https://github.com/neovim/neovim/wiki/Building-Neovim#Running-Tests)
+
 ## Guidelines for writing tests
 
 - Consider [BDD](http://en.wikipedia.org/wiki/Behavior-driven_development) guidelines for organization and readability of tests. Describe what you're testing (and the environment if applicable) and create specs that assert its behavior.
