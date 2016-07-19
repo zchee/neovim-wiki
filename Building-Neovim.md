@@ -11,7 +11,7 @@ If you have issues while attempting to build Neovim, see [FAQ](FAQ#build-issues)
 
 To generate the `Makefile` without building: `make cmake`
 
-If you plan on building Neovim frequently, install [`ninja`](https://martine.github.io/ninja/) for faster builds, it will be used by the top-level Makefile automatically.
+If you plan on building Neovim frequently, install [`ninja`](https://ninja-build.org/) for faster builds, it will be used by the top-level Makefile automatically.
 
 Now that you have the dependencies, you can try other build targets and options, explained below.
 
