@@ -1,4 +1,4 @@
-_See **[Quickstart](#quickstart)** to get started immediately._
+_See **[Quickstart](#quickstart)** to get started immediately. Also note the section on [**Not Applicable** patches](#na-not-applicable-patches)_
 
 Neovim was forked from Vim 7.4.160; it is kept up-to-date with relevant Vim patches in order to avoid duplicate work. See [#438](https://github.com/neovim/neovim/issues/438) for full details. To see the status of Vim patches, go to the  [**vim patch report**](http://neovim.io/doc/reports/vimpatch/) or run [`vim-patch.sh`](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh): 
 
