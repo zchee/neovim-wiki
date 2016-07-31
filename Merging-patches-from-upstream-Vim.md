@@ -44,6 +44,14 @@ _Note:_ **[vim-patch.sh](https://github.com/neovim/neovim/blob/master/scripts/vi
 
 **Reviewers:** [hint for reviewing `runtime/` patches](https://github.com/neovim/neovim/pull/1744#issuecomment-68202876)
 
+N/A ("Not Applicable") patches
+------------------------------
+
+Many Vim patches are not applicable to Neovim. We regularly update version.c to reflect this, with a single pull request. If you find NA patches, find the existing pull request, or create a new one with the intention of maintaining that pull request for a few weeks. The title of the pull request should be:
+
+    version.c: mark NA patches
+
+so that it is easy to find. See [PR #4634](https://github.com/neovim/neovim/pull/4634) for example.
 
 Code differences
 ----------------
