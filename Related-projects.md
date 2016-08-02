@@ -10,9 +10,8 @@
 | Electron UI      | [coolwanglu/neovim<sup>e</sup>](https://github.com/coolwanglu/neovim-e) |
 | Electron UI      | [rhysd/NyaoVim](https://github.com/rhysd/NyaoVim)                       |
 | GTK/Python UI    | [neovim/python-gui](https://github.com/neovim/python-gui)               |
-| Mac OS X         | [qvacua/nvox](https://github.com/qvacua/nvox)                           |
+| Mac OS X         | [qvacua/vimr](https://github.com/qvacua/vimr)                           |
 | Mac OS X         | [rogual/neovim-dot-app](https://github.com/rogual/neovim-dot-app)       |
-| Mac OS X         | [stefan991/NeoVimX](https://github.com/stefan991/NeoVimX)               |
 | Qt 5             | [equalsraf/neovim-qt](https://github.com/equalsraf/neovim-qt)           |
 | Rust IDE         | [oakes/SolidOak](https://github.com/oakes/SolidOak)                     |
 | Tk/Python UI     | [timeyyy/pytknvim](https://github.com/timeyyy/pytknvim)                 |
