@@ -1,21 +1,10 @@
-## In-Progress
-
-* Enable `-Wconversion` on all source files [#567](https://github.com/neovim/neovim/issues/567)
-* Replace [`eval.c`](https://github.com/neovim/neovim/blob/57cd2d661454cd6686c7d98cafa783ea94495fd5/src/eval.c) (20k lines) by Vimscript => Lua translator [#243](https://github.com/neovim/neovim/pull/243)
-* Remove superfluous `#include`s with [include-what-you-use](https://github.com/include-what-you-use/include-what-you-use) [#549](https://github.com/neovim/neovim/issues/549) ([why?](http://zeuxcg.org/2010/11/15/include-rules/))
-* Avoid unnecessary `STRLEN`
-* Port all IO to [libuv](https://github.com/libuv/libuv)
-* Migrate legacy integration tests to lua + msgpack API [#1286](https://github.com/neovim/neovim/issues/1286)
-* Lua plugin host (and `if_lua` compatibility layer)
-
-## Planned
-
-See the [**0.2** milestone](https://github.com/neovim/neovim/milestones/0.2) to estimate progress towards the next release.
-
-The [todo milestone](https://github.com/neovim/neovim/milestones/todo) is a "backlog" of tasks which have _no release target_ and may be cancelled or deferred indefinitely.
+See the [Roadmap](https://neovim.io/roadmap/) and [:help nvim-features](https://neovim.io/doc/user/vim_diff.html#nvim-features).
 
 ## Completed
 
+- Port IO to [libuv](https://github.com/libuv/libuv)
+- Migrate legacy integration tests to lua + msgpack API [#1286](https://github.com/neovim/neovim/issues/1286)
+- Ruby plugin host
 - Python plugin host
     - Includes compatibility layer for legacy Vim python interface `if_pyth` (`:python`, `:pydo`, `:pyfile`)
 - End-to-end [automation](https://github.com/neovim/bot-ci) of [documentation](http://neovim.io/doc), [analysis](http://neovim.io/doc/reports/clang), [nightly builds](https://github.com/neovim/neovim/releases/tag/nightly), etc.
