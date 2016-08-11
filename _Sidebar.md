@@ -12,5 +12,5 @@
 **Developers**  
 [Build](Building-Neovim)  
 [Contribute](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md)  
-[Tips](Development-tips)  
+[Tips & Tools](Development-tips)  
 [Code style](https://neovim.io/develop/style-guide.xml)  
