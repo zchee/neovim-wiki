@@ -12,6 +12,9 @@ pip3 install --upgrade neovim
 
 ------------
 
+### 2016/08/11
+
+`:oldfiles!` was removed in favor of restoring Vim's `:browse oldfiles` behavior.  [#5214](https://github.com/neovim/neovim/pull/5214)
 
 ### 2016/05/11
 
