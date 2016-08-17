@@ -16,6 +16,14 @@ pip3 install --upgrade neovim
 
 `:oldfiles!` was removed in favor of restoring Vim's `:browse oldfiles` behavior.  [#5214](https://github.com/neovim/neovim/pull/5214)
 
+### 2016/08/05
+
+Rewrite of the `man` plugin [#4449](https://github.com/neovim/neovim/pull/5214) was merged, you no longer need
+```vim
+runtime! ftplugin/man.vim
+``` 
+in your `vimrc`, it will even cause bugs
+
 ### 2016/05/11
 
 "True color" support now requires `set termguicolors` in your init.vim. `NVIM_TUI_ENABLE_TRUE_COLOR` is ignored. [#4690](https://github.com/neovim/neovim/pull/4690)
