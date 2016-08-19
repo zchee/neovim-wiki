@@ -90,3 +90,4 @@ Neovim is compatible with most Vim plugins. Here's a partial list of plugins tha
 - [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
 - [Vroom](https://github.com/google/vroom)
 - [nfasd](https://github.com/haifengkao/nfasd)
+- [ribosome] (https://github.com/tek/ribosome)
