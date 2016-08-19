@@ -18,7 +18,7 @@ pip3 install --upgrade neovim
 
 ### 2016/08/05
 
-Rewrite of the `man` plugin [#4449](https://github.com/neovim/neovim/pull/5214) was merged, you no longer need
+Rewrite of the `man` plugin [#4449](https://github.com/neovim/neovim/pull/4449) was merged, you no longer need
 ```vim
 runtime! ftplugin/man.vim
 ``` 
