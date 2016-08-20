@@ -18,11 +18,13 @@ pip3 install --upgrade neovim
 
 ### 2016/08/05
 
-Rewrite of the `man` plugin [#4449](https://github.com/neovim/neovim/pull/4449) was merged, you no longer need
+The `:Man` command is enabled by default (PR [#4449](https://github.com/neovim/neovim/pull/4449)), you no longer need
+
 ```vim
 runtime! ftplugin/man.vim
 ``` 
-in your `vimrc`, it will even cause bugs
+
+in your `vimrc`.
 
 ### 2016/05/11
 
