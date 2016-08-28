@@ -174,17 +174,13 @@ Neovim can be installed using the default package manager in Solus (PiSi):
 
 Windows support is (currently) experimental. To try it out, you need `nvim.exe` and a front-end such as Neovim-Qt.
 
-1. Go to https://ci.appveyor.com/project/equalsraf/neovim/branch/tb-mingw
-    - Click on one of the builds (try `Environment: TARGET=MSVC_64`).
-    - Click the ***Artifacts*** tab.
-    - Download and run `Neovim.exe` to install `nvim`.
-    - Alternative (**manual steps**):
-        - Download and unzip `Neovim.zip` to a new directory (e.g. `C:/Neovim`)
-        - Add the binary folder (`C:/Neovim/bin`) to your PATH.
-2. You should now be able to run `nvim` from the console (but it will block after a message).
-3. Now download and unzip the latest [Neovim-Qt build](https://github.com/equalsraf/neovim-qt/releases).
-4. Double-click `nvim-qt.exe`.
-5. If you are missing `VCRUNTIME140.dll`, install the [Visual Studio 2015 C++ redistributable](https://support.microsoft.com/en-us/kb/2977003) (be sure to get x86_64 or x86 depending on your system).
+1. Download the latest [32bit build](https://ci.appveyor.com/api/projects/equalsraf/neovim/artifacts/build/Neovim.zip?branch=tb-mingw&job=Configuration%3A%20MINGW_32)) or [64bit build](https://ci.appveyor.com/api/projects/equalsraf/neovim/artifacts/build/Neovim.zip?branch=tb-mingw&job=Configuration%3A%20MINGW_32)
+2. Unzip `Neovim.zip` to a new directory (e.g. `C:/Neovim`)
+3. Add the binary folder (`C:/Neovim/bin`) to your PATH.
+4. You should now be able to run `nvim` from the console (but it will block after a message).
+5. Now download and unzip the latest [Neovim-Qt build](https://github.com/equalsraf/neovim-qt/releases).
+6. Double-click `nvim-qt.exe`.
+7. If you are missing `VCRUNTIME140.dll`, install the [Visual Studio 2015 C++ redistributable](https://support.microsoft.com/en-us/kb/2977003) (be sure to get x86_64 or x86 depending on your system).
 
 ### .vimrc file in Windows
 
