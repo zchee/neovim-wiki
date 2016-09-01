@@ -92,3 +92,9 @@ Neovim is compatible with most Vim plugins. Here's a partial list of plugins tha
 - [Vroom](https://github.com/google/vroom)
 - [nfasd](https://github.com/haifengkao/nfasd)
 - [ribosome] (https://github.com/tek/ribosome)
+
+### Themes
+
+- [onedark](https://github.com/joshdick/onedark.vim)
+- [gruvbox](https://github.com/morhetz/gruvbox)
+- [oceanic-next](https://github.com/mhartington/oceanic-next)
