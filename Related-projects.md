@@ -17,7 +17,7 @@
 | Tk/Python UI     | [timeyyy/pytknvim](https://github.com/timeyyy/pytknvim)                 |
 | gnome-terminal   | [fmoralesc/neovim-gnome-terminal-wrapper](https://github.com/fmoralesc/neovim-gnome-terminal-wrapper) |
 | Konsole-wrapper  | [harish2704/neovim-konsole](https://github.com/harish2704/neovim-konsole) |
-| NeoSFML          | [meatich/NeoSFML][https://github.com/meatich/NeoSFML]                   |
+| NeoSFML          | [meatich/NeoSFML](https://github.com/meatich/NeoSFML)                   |
 
 ### API clients
 
