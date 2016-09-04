@@ -86,6 +86,8 @@ Neovim is compatible with most Vim plugins. Here's a partial list of plugins tha
 - [chromatica.nvim](https://github.com/arakashic/chromatica.nvim)
 - [iron.nvim](https://github.com/hkupty/iron.nvim)
 - [vim-tmux-clipboard](https://github.com/roxma/vim-tmux-clipboard)
+- [neovim-vifm](https://github.com/vifm/neovim-vifm)
+- [neovim-ranger](https://github.com/airodactyl/neovim-ranger)
 
 ### Projects with support for Neovim
 
