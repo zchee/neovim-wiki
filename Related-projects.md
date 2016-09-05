@@ -102,3 +102,4 @@ Neovim is compatible with most Vim plugins. Here's a partial list of plugins tha
 - [onedark](https://github.com/joshdick/onedark.vim)
 - [gruvbox](https://github.com/morhetz/gruvbox)
 - [oceanic-next](https://github.com/mhartington/oceanic-next)
+- [flatcolor](https://github.com/MaxSt/FlatColor)
