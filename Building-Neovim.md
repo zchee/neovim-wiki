@@ -203,29 +203,23 @@ a PANIC in LuaJIT when trying to install a rock.
 ### OpenBSD -current
 
 ```
-doas pkg_add gmake cmake libtool unzip autoconf-2.69p1 automake-1.15 clang
+doas pkg_add gmake cmake libtool unzip autoconf-2.69p1 automake-1.15
 export AUTOCONF_VERSION=2.69
 export AUTOMAKE_VERSION=1.15
 ```
 
-The build sometimes fails when using the top level makefile, apparently due to some third-party component [#2445-comment](https://github.com/neovim/neovim/issues/2445#issuecomment-108124236). The following instructions use CMake
+The build sometimes fails when using the top level Makefile, apparently due to some third-party component [#2445-comment](https://github.com/neovim/neovim/issues/2445#issuecomment-108124236). The following instructions use CMake
 
 ```
 mkdir .deps
 cd .deps
-cmake -DUSE_BUNDLED_LUV=OFF -DUSE_BUNDLED_BUSTED=OFF ../third-party/
+cmake ../third-party/
 gmake
 cd ..
 mkdir build
-cmake -DCMAKE_C_COMPILER=clang -DENABLE_JEMALLOC=OFF ..
+cmake ..
 gmake
 ```
-
-The additional flags work around three issues:
-
-1. Neovim compiled with jemalloc is broken on OpenBSD (see [#3434](https://github.com/neovim/neovim/issues/3434))
-2. Neovim requires gcc >= 4.4 (https://github.com/neovim/neovim/issues/5300), in this example we used clang
-3. Issues with luv in OpenBSD prevent us from building the tests ([see comment](https://github.com/neovim/neovim/issues/4620#issuecomment-217267248))
 
 ### OS X
 
