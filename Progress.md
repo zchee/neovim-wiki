@@ -2,6 +2,7 @@ See the [Roadmap](https://neovim.io/roadmap/) and [:help nvim-features](https://
 
 ## Completed
 
+- eliminate `misc2.c`
 - Port IO to [libuv](https://github.com/libuv/libuv)
 - Migrate legacy integration tests to lua + msgpack API [#1286](https://github.com/neovim/neovim/issues/1286)
 - Ruby plugin host
