@@ -174,7 +174,7 @@ Neovim can be installed using the default package manager in Solus (PiSi):
 
 Windows support is (currently) experimental. To try it out, you need `nvim.exe` and a front-end such as Neovim-Qt.
 
-1. Download the latest [32bit build](https://ci.appveyor.com/api/projects/equalsraf/neovim/artifacts/build/Neovim.zip?branch=tb-mingw&job=Configuration%3A%20MINGW_32)) or [64bit build](https://ci.appveyor.com/api/projects/equalsraf/neovim/artifacts/build/Neovim.zip?branch=tb-mingw&job=Configuration%3A%20MINGW_64)
+1. Download the latest [32bit build](https://ci.appveyor.com/api/projects/equalsraf/neovim/artifacts/build/Neovim.zip?branch=tb-mingw&job=Configuration%3A%20MINGW_32) or [64bit build](https://ci.appveyor.com/api/projects/equalsraf/neovim/artifacts/build/Neovim.zip?branch=tb-mingw&job=Configuration%3A%20MINGW_64)
 2. Unzip `Neovim.zip` to a new directory (e.g. `C:/Neovim`)
 3. Add the binary folder (`C:/Neovim/bin`) to your PATH.
 4. You should now be able to run `nvim` from the console (but it will block after a message).
