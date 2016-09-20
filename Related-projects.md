@@ -59,6 +59,7 @@ Neovim is compatible with most Vim plugins. Here's a partial list of plugins tha
 - [lldb.nvim](https://github.com/critiqjo/lldb.nvim)
 - [mirror.vim](https://github.com/zenbro/mirror.vim)
 - [neomake](https://github.com/benekastah/neomake)
+- [neotags.nvim](https://github.com/c0r73x/neotags.nvim)
 - [neoterm](https://github.com/kassio/neoterm)
 - [neovim-hackernews](https://github.com/dpzmick/neovim-hackernews)
 - [nvim-editcommand](https://github.com/brettanomyces/nvim-editcommand)
