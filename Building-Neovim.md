@@ -249,3 +249,35 @@ gmake
 
       brew install curl-ca-bundle
       echo CA_CERTIFICATE=$(brew --prefix curl-ca-bundle)/share/ca-bundle.crt >> ~/.wgetrc
+
+### Windows/MSYS2
+
+From the MSYS2 shell install these packages
+
+```
+pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-libtool mingw-w64-x86_64-cmake \
+mingw-w64-x86_64-perl mingw-w64-x86_64-python2 gperf
+```
+
+Now from the windows console (cmd.exe) setup the PATH and build
+
+```cmd
+set PATH=%PATH%;c:\msys64\mingw64\bin
+set CC=gcc
+```
+
+Build using the `MinGW Makefiles` generator
+
+```cmd
+mkdir .deps
+cd .deps
+cmake  -G "MinGW Makefiles" ..\third-party\
+mingw32-make
+cd ..
+mkdir build
+cd build
+cmake -G "MinGW Makefiles" -DGPERF_PRG="C:\msys64\usr\bin\gperf.exe" ..
+mingw32-make
+```
+
+For 32bit builds adjust the package names and paths accordingly.
