@@ -136,6 +136,10 @@ target remote localhost:6666
 br main
 ```
 
+### Log file location
+
+In debugging builds the log file `~/.nvimlog` is created; you can specify the location by `NVIM_LOG_FILE` environment variable.
+
 ## Debugging program errors (undefined behavior, leaks, ...)
 
 Building and installing Neovim with one of Clang's sanitizers (Address Sanitizer: ASan, Undefined Behavior Sanitizer: UBSan, Memory Sanitizer: MSan, Thread Sanitizer: TSan) is a good way to catch errors as soon as they happen. It's significantly faster than running a program under Valgrind, so it's *possible* to use Neovim built with a sanitizer as your daily editor (although it's not recommended given a [typical slowdown of 2x for ASan](http://clang.llvm.org/docs/AddressSanitizer.html)). Assuming you have access to Clang 3.4 or above and a Unix-like environment, the following steps should get you started:
