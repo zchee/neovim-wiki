@@ -8,16 +8,26 @@ If not, you can still [install Neovim manually](#install-from-source).
 
 Note that the Neovim binary to run is called `nvim`, not `neovim`.
 
-## [Homebrew](http://brew.sh) (OS X) / [Linuxbrew](http://linuxbrew.sh/) (Linux)
+## macOS / OS X
 
-See the [README of `neovim/homebrew-neovim`](https://github.com/neovim/homebrew-neovim/blob/master/README.md) for installation instructions.
+### VimR packages
 
-## [Macports](https://www.macports.org/) (OS X)
+The VimR project provides [bz2 archives](https://github.com/qvacua/vimr/releases) for macOS which include a pre-built `nvim` binary.
 
-Run the following commands:
+### [Homebrew](http://brew.sh) (OS X) / [Linuxbrew](http://linuxbrew.sh/) (Linux)
+
+    brew install neovim/neovim/neovim
+
+See the [neovim/homebrew-neovim README](https://github.com/neovim/homebrew-neovim/blob/master/README.md) for a complete reference.
+
+### [Macports](https://www.macports.org/)
 
     sudo port selfupdate
     sudo port install neovim
+
+## Debian
+
+Neovim and the Python client are available as [Debian packages](https://packages.debian.org/search?keywords=neovim).
 
 ## Ubuntu
 
@@ -60,9 +70,6 @@ If you want to use Neovim for some (or all) of the editor alternatives, use the 
 
 Note, however, that special interfaces, like `view` for `nvim -R`, are not supported.  (See [#1646](https://github.com/neovim/neovim/issues/1646) and [#2008](https://github.com/neovim/neovim/pull/2008).)
 
-## Debian
-
-Neovim and the Python client are available as [Debian packages](https://packages.debian.org/search?keywords=neovim).
 
 ## Arch Linux
 
