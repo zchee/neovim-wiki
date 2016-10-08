@@ -187,7 +187,7 @@ compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
 
 ### openSUSE
 
-    sudo zypper install libtool autoconf automake cmake gcc-c++
+    sudo zypper install libtool autoconf automake cmake gcc-c++ gettext-tools
 
 ### Arch Linux
 
