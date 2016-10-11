@@ -45,6 +45,7 @@
 | Ruby        | [alexgenco/neovim-ruby](https://github.com/alexgenco/neovim-ruby)                    |
 | Rust        | [oakes/neovim-rs](https://github.com/oakes/neovim-rs)                                |
 | Rust        | [daa84/neovim-lib](https://github.com/daa84/neovim-lib)                              |
+| Swift/Cocoa | [SwiftNeoVim (part of qvacua/vimr)](https://github.com/qvacua/vimr/wiki/SwiftNeoVim-Framework) |
 
 ### Plugins
 
