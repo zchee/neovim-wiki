@@ -76,7 +76,7 @@ See the [`memory.c` Doxygen page](http://neovim.io/doc/dev/memory_8c.html) for m
 
 | Data type | Format (Vim source) | Portable format (Nvim source) |
 |:----------|:--------------------|:------------------------------|
-| `long`    | `"%ld"`             | `"%" PRId64`                  |
+| `long long`    | `"%lld"`             | `"%" PRId64`                  |
 | `size_t`  | `"%ld"`             | `"%zu"`                       |
 
 - See also: https://github.com/neovim/neovim/pull/1729#discussion_r22423779
