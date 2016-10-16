@@ -71,7 +71,7 @@ Make sure that [Neovim can find its runtime](#neovim-cant-find-its-runtime).
 
 ### My CTRL-H mapping doesn't work
 
-Set `kbs=\177` in your terminal's terminfo/termcap:
+Run `:CheckHealth`. It should suggest setting `kbs=\177` in your terminal's terminfo/termcap:
 
 ```
 infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti
