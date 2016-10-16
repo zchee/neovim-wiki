@@ -178,7 +178,7 @@ If there's no results, then you might not be using a UTF-8 locale. See the follo
 ### `ESC` in tmux or GNU Screen is delayed
 
 This is a [common problem](https://www.google.com/?q=tmux%20vim%20escape%20delay) 
-in `tmux` / `screen`. The corresponding timeout needs to be tweaked to a low value (10-20ms).
+in `tmux` / `screen` (see also [tmux/#131](https://github.com/tmux/tmux/issues/131#issuecomment-145853211)). The corresponding timeout needs to be tweaked to a low value (10-20ms).
 
 `.tmux.conf`:
 
@@ -188,7 +188,9 @@ in `tmux` / `screen`. The corresponding timeout needs to be tweaked to a low val
 
     maptimeout 10
 
-See also: https://github.com/tmux/tmux/issues/131#issuecomment-145853211
+#### "Why doesn't this happen in Vim?"
+
+It *does* happen (try `vim -N -u NONE`), but *if you hit a key quickly after ESC* then Vim interprets the ESC as its own key. This means you won't notice the delay unless you closely observe the cursor. The difference is that Vim won't understand ALT (META) key-chords, so for example `nnoremap <M-a>` won't work. ALT (META) key-chords always work in Nvim. 
 
 # Installation issues
 
