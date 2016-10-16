@@ -203,11 +203,9 @@ If a package is not provided for your platform, see [Building-Neovim](https://gi
 For Unix-like systems this installs Neovim to `/usr/local`, while for Windows to `C:/Program Files`. Note, however, that this can complicate uninstallation. The following example avoids this by isolating an installation under `$HOME/neovim`:
 
     rm -r build/
-    make PREFIX=$HOME/neovim
+    make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/neovim"
     make install
     export PATH="$HOME/neovim/bin:$PATH"
-
-(NOTE: If you try to build a commit before 27ced48, you'll have to use `make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=..."` instead of `make PREFIX=...`.)
 
 Note that the `rm -r build/` step above is needed if you've built Neovim before, as the install location will be the same as before since CMake caches build information.
 
