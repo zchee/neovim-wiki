@@ -31,7 +31,7 @@
 | Common Lisp | [adolenc/cl-neovim](https://github.com/adolenc/cl-neovim)                            |
 | Elixir      | [awetzel/neovim-elixir](https://github.com/awetzel/neovim-elixir)                    |
 | Filesystem  | [fmoralesc/nvimfs](https://github.com/fmoralesc/nvimfs)                              |
-| Go          | [neovim-go/vim](https://github.com/neovim-go/vim)                                    |
+| Go          | [neovim/go-client](https://github.com/neovim/go-client)                              |
 | Go          | [myitcv/neovim](https://github.com/myitcv/neovim)                                    |
 | Haskell     | [neovimhaskell/nvim-hs](https://github.com/neovimhaskell/nvim-hs)                    |
 | Java        | [fdinoff/neovim-java-client](https://github.com/fdinoff/neovim-java-client)          |
