@@ -1,3 +1,5 @@
+_**Note:** `:CheckHealth` detects and resolves many of the problems in this FAQ. Try it!_
+
 ### Something broke after upgrading Neovim?
 
 See [Following-HEAD](https://github.com/neovim/neovim/wiki/Following-HEAD), which documents breaking changes.
