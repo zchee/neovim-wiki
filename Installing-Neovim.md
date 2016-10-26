@@ -92,10 +92,6 @@ A snapshot ebuild is now available in Gentoo's official portage repository:
 
     emerge -a app-editors/neovim
 
-A "live" ebuild can be found in [yngwin's developer overlay](http://cgit.gentooexperimental.org/dev/yngwin.git/tree/app-editors/neovim).
-
-For instructions on how to install the Python modules, see [`:help provider-python`].
-
 ## Exherbo Linux
 
 Exhereses for scm and released versions are currently available in repository `::medvid`. Python client (with GTK+ GUI included) and Qt5 GUI are also available as suggestions:
