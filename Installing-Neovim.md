@@ -88,7 +88,7 @@ The Ruby module (currently only supported in `neovim-git`) is available from the
 
 ## Gentoo Linux
 
-A snapshot ebuild is now available in Gentoo's official portage repository:
+An ebuild is available in Gentoo's official portage repository:
 
     emerge -a app-editors/neovim
 
