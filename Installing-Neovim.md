@@ -1,12 +1,10 @@
 - Before upgrading to a new version, **always check [Following HEAD](Following-HEAD).**
 - If you're wondering where to put your config (`vimrc`) see [here](https://github.com/neovim/neovim/wiki/FAQ#where-should-i-put-my-config-vimrc).
+- To start Neovim, run `nvim` (not `neovim`).
 
 # Install from package
 
-If you're on one of the following systems, you can get Neovim right away!
-If not, you can still [install Neovim manually](#install-from-source).
-
-Note that the Neovim binary to run is called `nvim`, not `neovim`.
+Packages are listed below. (You can also [build Neovim from source](#install-from-source).)
 
 ## macOS / OS X
 
@@ -27,7 +25,14 @@ See the [neovim/homebrew-neovim README](https://github.com/neovim/homebrew-neovi
 
 ## Debian
 
-Neovim and the Python client are available as [Debian packages](https://packages.debian.org/search?keywords=neovim).
+Neovim is in [Debian](https://packages.debian.org/search?keywords=neovim).
+
+    sudo apt-get install neovim
+
+Python (`:python`) support is also installable via the Debian package manager.
+
+    sudo apt-get install python-neovim
+    sudo apt-get install python3-neovim
 
 ## Ubuntu
 
