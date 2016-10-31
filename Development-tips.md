@@ -44,13 +44,13 @@ If `-ex` does not work, use `tee` to save the output of `gdb` session:
 - `thread apply all bt` may be necessary because Neovim is multi-threaded.
 - `thread apply all bt full` shows richer (full) information.
 
-### Backtrace (OSX)
+### Backtrace (macOS / OSX)
 
-If `nvim` crashes on OSX, you can easily see the backtrace in Console.app (under "User Diagnostic Reports").
+If `nvim` crashes on macOS, you can see the backtrace in Console.app (under "User Diagnostic Reports").
 
     open -a Console
 
-You may also want to [enable core dumps on OSX](https://developer.apple.com/library/mac/technotes/tn2124/_index.html#//apple_ref/doc/uid/DTS10003391-CH1-SECCOREDUMPS). The `/cores/` directory must exist and be writable.
+You may also want to [enable core dumps on macOS](https://developer.apple.com/library/mac/technotes/tn2124/_index.html#//apple_ref/doc/uid/DTS10003391-CH1-SECCOREDUMPS). The `/cores/` directory must exist and be writable.
 
 ### Using `gdb` to step through functional tests
 
