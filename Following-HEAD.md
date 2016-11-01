@@ -1,16 +1,17 @@
-This document is for people who wish to run the "bleeding edge" of Neovim, i.e., the most recent commit.
+This page documents changes which may require users to update configuration, plugins, or expectations.
 Only **breaking changes** are mentioned here, this is **not** a reference for new features (see [`:help nvim`](http://neovim.io/doc/user/nvim.html) instead). 
 
-If you don't have Neovim yet, see [Building Neovim](Building-Neovim) or [Installing Neovim](Installing-Neovim).
+If you don't have Neovim, see [Building Neovim](Building-Neovim) or [Installing Neovim](Installing-Neovim).
 
-For python plugins, always upgrade the python client! (Append `--user` if you installed as an ordinary user.)
-
-```
-pip2 install --upgrade neovim
-pip3 install --upgrade neovim
-```
+**Note:** Use `:CheckHealth` to detect and fix common problems.
 
 ------------
+
+### 2016/11/01
+
+[`'encoding'`][encoding] cannot be changed, even during initialization.
+
+(Background: [#2929][2929] restricted `'encoding'` to be modifiable only during initialization. One year later, we've found no problems with UTF-8 as the internal encoding, and are now making this mandatory. This only affects the internals of Nvim, it doesn't affect file encodings or plugins.)
 
 ### 2016/08/11
 
