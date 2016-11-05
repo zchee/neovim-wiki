@@ -7,9 +7,9 @@ If you don't have Neovim, see [Building Neovim](Building-Neovim) or [Installing 
 
 ------------
 
-### 2016/11/01
+### 2016/11/05
 
-[`'encoding'`][encoding] cannot be changed, even during initialization.
+[`'encoding'`][encoding] cannot be changed, even during initialization. [#2905](https://github.com/neovim/neovim/pull/2905)
 
 (Background: [#2929][2929] restricted `'encoding'` to be modifiable only during initialization. One year later, we've found no problems with UTF-8 as the internal encoding, and are now making this mandatory. This only affects the internals of Nvim, it doesn't affect file encodings or plugins.)
 
