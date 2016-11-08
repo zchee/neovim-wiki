@@ -1,5 +1,6 @@
 ## Navigating the code
 
+- Browse **[Neovim on SourceGraph](https://sourcegraph.com/github.com/neovim/neovim)**
 - Install **[universal-ctags](https://github.com/universal-ctags/ctags).** "Exuberant ctags" (the typical `ctags` binary provided by your distro) is unmaintained and won't recognize many function signatures in Neovim source.
 - The `contrib` folder contains a [YouCompleteMe configuration](https://github.com/neovim/neovim/tree/master/contrib/YouCompleteMe) for Neovim.
 
