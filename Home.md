@@ -19,7 +19,8 @@
     - [Merging patches from upstream Vim](Merging-patches-from-upstream-Vim)
 - [Development tips](Development-tips)
 - [Code style](http://neovim.io/develop/style-guide.xml)
-- **[Source Documentation](https://neovim.io/doc/dev/globals_func.html)**
+- **[SourceGraph](https://sourcegraph.com/github.com/neovim/neovim)**
+- [Source Documentation](https://neovim.io/doc/dev/globals_func.html)
     - [Plugin Architecture](Plugin-UI-architecture)
     - [API](API)
     - [Code overview](Code-overview)
