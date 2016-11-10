@@ -170,9 +170,9 @@ Neovim can be installed using the xbps package manager
 
 ## Solus
 
-Neovim can be installed using the default package manager in Solus (PiSi):
+Neovim can be installed using the default package manager in Solus (eopkg):
 
-    sudo pisi install neovim
+    sudo eopkg install neovim
 
 ## Android
 
