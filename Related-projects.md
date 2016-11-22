@@ -30,6 +30,7 @@
 | Clojure     | [jebberjeb/neovim-client](https://github.com/jebberjeb/neovim-client)                |
 | Common Lisp | [adolenc/cl-neovim](https://github.com/adolenc/cl-neovim)                            |
 | Elixir      | [awetzel/neovim-elixir](https://github.com/awetzel/neovim-elixir)                    |
+| Elixir      | [dm1try/nvim](https://github.com/dm1try/nvim)                    |
 | Filesystem  | [fmoralesc/nvimfs](https://github.com/fmoralesc/nvimfs)                              |
 | Go          | [neovim/go-client](https://github.com/neovim/go-client)                              |
 | Go          | [myitcv/neovim](https://github.com/myitcv/neovim)                                    |
