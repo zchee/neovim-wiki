@@ -19,6 +19,7 @@
 | Konsole-wrapper  | [harish2704/neovim-konsole](https://github.com/harish2704/neovim-konsole) |
 | C++/Python       | [meatich/NeoSFML](https://github.com/meatich/NeoSFML)                   |
 | Windows/Linux    | [meatich/Viy](https://github.com/meatich/Viy)                           |
+| Electron UI      | [extr0py/oni](https://github.com/extr0py/oni)                           |
 
 ### API clients
 
