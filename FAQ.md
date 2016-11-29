@@ -123,8 +123,7 @@ Also make sure that you don't accidentally overwrite your runtimepath (`:set run
 
 ### `E518: Unknown option: [option]`
 
-Some options have been removed from Neovim, so you'll encounter this error if you try to use them.
-See [`:help nvim-features-removed`](http://neovim.io/doc/user/vim_diff.html#nvim-features-removed) for a list of all such options, and [FAQ#how-can-i-tell-if-im-running-nvim-or-vim](https://github.com/neovim/neovim/wiki/FAQ#how-can-i-tell-if-im-running-nvim-or-vim) to avoid such errors.
+Some very old/unnecessary options have been removed from Neovim. See [`:help nvim-features-removed`](http://neovim.io/doc/user/vim_diff.html#nvim-features-removed) for the complete list.
 
 ### Neovim is slow
 
@@ -261,17 +260,20 @@ Keep in mind that some of those packages have their own dependencies which also 
 
 # Design
 
-### Why was Lua chosen for writing tests and implementing Vimscript?
+### Why was Lua chosen for writing tests and implementing VimL?
 
-Lua is a very small language, but it provides everything we need to implement a language like Vimscript, which was created to configure and script the editor. The biggest advantage that languages like Python or Ruby have over Lua are their huge library collections, but that isn't a factor for our main use case which is to remove thousands of lines of C by using Lua as a Vimscript runtime.
+Lua is a very small language, but it provides everything we need to implement a language like VimL, which was created to configure and script the editor. The biggest advantage that languages like Python or Ruby have over Lua are their huge library collections, but that isn't a factor for our main use case which is to remove thousands of lines of C by using Lua as a VimL runtime.
 
-If you are still not convinced about Lua, you might want to read [this post](https://web.archive.org/web/20150219224654/http://blog.datamules.com/blog/2012/01/30/why-lua/).
+See also these articles about Lua:
 
-### Lua and Vimscript are distinct languages with different semantics, how can Lua be used as a runtime for Vimscript?
+- [Why Lua](https://web.archive.org/web/20150219224654/http://blog.datamules.com/blog/2012/01/30/why-lua/)
+- [Redis and scripting](http://oldblog.antirez.com/post/redis-and-scripting.html)
 
-The idea is to first make Neovim completely scriptable using Lua. Unlike the Lua interface to Vim, this new implementation needs to have the same power as Vimscript, with APIs for defining syntax rules, etc. Then a Vimscript -> Lua translator will be implemented, with the generated code targeting the new Lua API.
+### Lua and VimL are distinct languages with different semantics, how can Lua be used as a runtime for VimL?
 
-### Right now only Vimscript is parsed, but in the future there will be an additional pass for parsing Lua. Won't a that make the editor slower?
+The idea is to make Neovim completely scriptable using Lua. Unlike the Lua interface to Vim, this new implementation needs to have the same power as VimL, with APIs for defining syntax rules, etc. Then a VimL-to-Lua translator will be implemented, with the generated code targeting the new Lua API.
+
+### Won't it be slower to translate VimL to Lua, instead of executing VimL directly?
 
 We'll use [LuaJIT](http://luajit.org/), the fastest scripting runtime out there. Parsing an additional language will create some overhead, but that will be insignificant compared to the runtime performance improvements, because Vimscript is so slow. Plugins may even run faster.
 
