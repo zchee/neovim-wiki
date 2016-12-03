@@ -7,19 +7,19 @@
 | Platform         | Project                                                                 |
 |------------------|-------------------------------------------------------------------------|
 | Atom Integration | [carlosdcastillo/vim-mode](https://github.com/carlosdcastillo/vim-mode) |
+| C++/Python       | [meatich/NeoSFML](https://github.com/meatich/NeoSFML)                   |
 | Electron UI      | [coolwanglu/neovim<sup>e</sup>](https://github.com/coolwanglu/neovim-e) |
 | Electron UI      | [rhysd/NyaoVim](https://github.com/rhysd/NyaoVim)                       |
+| Electron UI      | [extr0py/oni](https://github.com/extr0py/oni)                           |
+| gnome-terminal   | [fmoralesc/neovim-gnome-terminal-wrapper](https://github.com/fmoralesc/neovim-gnome-terminal-wrapper) |
 | GTK/Python UI    | [neovim/python-gui](https://github.com/neovim/python-gui)               |
+| Konsole          | [harish2704/neovim-konsole](https://github.com/harish2704/neovim-konsole) |
 | Mac OS X         | [qvacua/vimr](https://github.com/qvacua/vimr)                           |
 | Mac OS X         | [rogual/neovim-dot-app](https://github.com/rogual/neovim-dot-app)       |
 | Qt 5             | [equalsraf/neovim-qt](https://github.com/equalsraf/neovim-qt)           |
 | Rust IDE         | [oakes/SolidOak](https://github.com/oakes/SolidOak)                     |
 | Tk/Python UI     | [timeyyy/pytknvim](https://github.com/timeyyy/pytknvim)                 |
-| gnome-terminal   | [fmoralesc/neovim-gnome-terminal-wrapper](https://github.com/fmoralesc/neovim-gnome-terminal-wrapper) |
-| Konsole-wrapper  | [harish2704/neovim-konsole](https://github.com/harish2704/neovim-konsole) |
-| C++/Python       | [meatich/NeoSFML](https://github.com/meatich/NeoSFML)                   |
 | Windows/Linux    | [meatich/Viy](https://github.com/meatich/Viy)                           |
-| Electron UI      | [extr0py/oni](https://github.com/extr0py/oni)                           |
 
 ### API clients
 
