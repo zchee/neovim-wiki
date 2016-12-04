@@ -96,7 +96,7 @@ Neovim is compatible with most Vim plugins. Here's a partial list of plugins tha
 - [dein.vim](https://github.com/Shougo/dein.vim)
 - [denite.nvim](https://github.com/Shougo/denite.nvim)
 - [fzf-gitignore.nvim](https://github.com/fszymanski/fzf-gitignore.nvim)
-- [far.vim] https://github.com/brooth/far.vim
+- [far.vim](https://github.com/brooth/far.vim)
 
 ### Projects with support for Neovim
 
