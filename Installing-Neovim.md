@@ -117,7 +117,7 @@ For the Python modules:
 
     dnf -y install python3-neovim python3-neovim-gui
 
-## CentOS 7
+## CentOS 7 / RHEL 7
  
 http://copr.fedoraproject.org/coprs/dperson/neovim/
 
