@@ -127,10 +127,9 @@ http://copr.fedoraproject.org/coprs/dperson/neovim/
 
 It's built using the [Copr](https://copr.fedoraproject.org/) automated build system, which is unsupported. There's no guarantee of how long your package will be available after the build finishes.
 
-For instructions on how to install the Python modules, see [`:help provider-python`].
+For the Python modules:
 
-When installing Python packages, ensure that you have the python2-greenlet-devel package installed.
-
+    dnf -y install python3-neovim python3-neovim-gui
 
 ## Slackware
 
