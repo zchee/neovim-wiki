@@ -103,7 +103,7 @@ Exhereses for scm and released versions are currently available in repository `:
 
     cave resolve app-editors/neovim --take dev-python/neovim-python --take app-editors/neovim-qt
 
-## Fedora 22/23/24
+## Fedora 23/24/25/Rawhide
  
 http://copr.fedoraproject.org/coprs/dperson/neovim/
 
