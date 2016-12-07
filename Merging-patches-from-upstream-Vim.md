@@ -83,6 +83,7 @@ See the [`memory.c` Doxygen page](http://neovim.io/doc/dev/memory_8c.html) for m
 - Vim's `ga_init2` was renamed to `ga_init` and the original `ga_init` is gone.
 - "Old style" Vim tests (`src/testdir/*.in`) should be converted to Lua tests (see [#1286](https://github.com/neovim/neovim/issues/1286) and [#1328](https://github.com/neovim/neovim/pull/1328)). See [Checklist for migrating legacy tests][checklist]. 
     - However, please _do not_ convert "new style" Vim tests (`src/testdir/*.vim`) to Lua. The "new style" Vim tests are faster than the old ones, and converting them takes time and effort better spent elsewhere. Just copy them to `src/nvim/testdir/*.vim` and update `src/nvim/testdir/Makefile`.
+- Conditions that check `enc_utf8` are obsolete (only the "true" case is applicable).
 
 Documentation differences
 -------------------------
