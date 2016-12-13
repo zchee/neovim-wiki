@@ -9,18 +9,21 @@ If you don't have Neovim, see [Building Neovim](Building-Neovim) or [Installing 
 
 ### 2016/12/12
 
-[#5529][5529] merged Vim's support for partial functions which made nvim more strict about when the implicit `self` variable is available.  Functions which need to use the `self` variable (which is common with job callbacks) must either be declared as dict functions
+[#5529][5529] merged Vim's support for "partial functions" which made Nvim more strict about when the implicit `self` variable is available.  Functions that reference `self` (which is common with job callbacks) must either be declared as dict functions:
 
 ```vim
 function! s:on_stdout(id, data, event) dict abort
 ```
 
-or as part of the job options dictionary
+or as part of the job options dictionary:
 
 ```vim
 let s:opts = { ... }
 function! s:opts.on_stdout(id, data, event) abort
 ```
+
+Job callbacks also must have at least 3 parameters now. See https://github.com/neovim/neovim/issues/5763#issuecomment-266722407
+
 
 ### 2016/11/05
 
