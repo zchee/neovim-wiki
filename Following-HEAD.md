@@ -7,6 +7,21 @@ If you don't have Neovim, see [Building Neovim](Building-Neovim) or [Installing 
 
 ------------
 
+### 2016/12/12
+
+[#5529][5529] merged Vim's support for partial functions which made nvim more strict about when the implicit `self` variable is available.  Functions which need to use the `self` variable (which is common with job callbacks) must either be declared as dict functions
+
+```vim
+function! s:on_stdout(id, data, event) dict abort
+```
+
+or as part of the job options dictionary
+
+```vim
+let s:opts = { ... }
+function! s:opts.on_stdout(id, data, event) abort
+```
+
 ### 2016/11/05
 
 [`'encoding'`][encoding] cannot be changed to a value other than "utf-8", even during initialization. [#2905](https://github.com/neovim/neovim/pull/2905)
@@ -188,3 +203,4 @@ See [#3003][3003] and [#3007][3007] for more information.
 
 [3003]: https://github.com/neovim/neovim/issues/3003
 [3007]: https://github.com/neovim/neovim/pull/3007
+[5529]: https://github.com/neovim/neovim/pull/5529
