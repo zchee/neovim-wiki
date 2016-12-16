@@ -103,19 +103,12 @@ Exhereses for scm and released versions are currently available in repository `:
 
     cave resolve app-editors/neovim --take dev-python/neovim-python --take app-editors/neovim-qt
 
-## Fedora 23/24/25/Rawhide
- 
-http://copr.fedoraproject.org/coprs/dperson/neovim/
+## Fedora
 
-    dnf -y install dnf-plugins-core
-    dnf -y copr enable dperson/neovim
+Neovim and the Python modules are available in the official Fedora repository:
+
     dnf -y install neovim
-
-It's built using the [Copr](https://copr.fedoraproject.org/) automated build system, which is unsupported. There's no guarantee of how long your package will be available after the build finishes.
-
-For the Python modules:
-
-    dnf -y install python3-neovim python3-neovim-gui
+    dnf -y install python2-neovim python3-neovim
 
 ## CentOS 7 / RHEL 7
  
