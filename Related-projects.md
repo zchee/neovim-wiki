@@ -26,6 +26,7 @@
 | Platform    | Project                                                                              |
 |-------------|--------------------------------------------------------------------------------------|
 | C#          | [Pireax/neovim.cs](https://github.com/Pireax/neovim.cs)                              |
+| C++         | [DaikiMaekawa/neovim.cpp](https://github.com/DaikiMaekawa/neovim.cpp)                |
 | C++/Qt5     | [equalsraf/neovim-qt](https://github.com/equalsraf/neovim-qt)                        |
 | C++/ncurses | [SoC/neovim-client](https://github.com/splinterofchaos/neovim-cpp-client-experiment) |
 | Clojure     | [jebberjeb/neovim-client](https://github.com/jebberjeb/neovim-client)                |
