@@ -5,7 +5,9 @@
 - The `contrib` folder contains a [YouCompleteMe configuration](https://github.com/neovim/neovim/tree/master/contrib/YouCompleteMe) for Neovim.
 
 ## Code linting
-You can run the linter locally using `make lint`. If you work in a single or a few files at a time, you can lint a single C file at a time using
+You can run the linter locally using `make lint`. The linting process downloads master linting errors from "https://raw.githubusercontent.com/neovim/doc/gh-pages/reports/clint/errors.json" and substract them from your branch so that it shows your errors only.
+
+If you work in a single or a few files at a time, you can lint a single C file at a time using
 
     make clint LINT_FILE="src/nvim/ops.c"
 
