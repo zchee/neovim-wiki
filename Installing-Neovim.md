@@ -132,9 +132,13 @@ For instructions on how to install the Python modules, see [`:help provider-pyth
 
 ## Nix
 
-Neovim can be installed using the following command:
+Neovim can be installed using the following command on nixOS:
 
-    nix-env -i neovim
+    nix-env -iA nixos.neovim
+
+For standalone nix:
+
+    nix-env -iA nixpkgs.neovim
 
 For instructions on how to install the Python modules, see [`:help provider-python`].
 
