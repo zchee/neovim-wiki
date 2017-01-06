@@ -136,16 +136,16 @@ Neovim can be installed on nixOS using:
 
     nix-env -iA nixos.neovim
 
-For standalone nix:
+Or for standalone nix:
 
     nix-env -iA nixpkgs.neovim
 
 
-For the Python modules use:
+To install the Python modules on nixOS:
 
     nix-env -iA nixos.python35Packages.neovim
 
-For standalone nix:
+Or for standalone nix:
 
     nix-env -iA nixpkgs.python35Packages.neovim
 
