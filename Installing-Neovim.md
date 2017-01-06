@@ -140,11 +140,12 @@ For standalone nix:
 
     nix-env -iA nixpkgs.neovim
 
+
 For the Python modules use:
 
     nix-env -iA nixos.python35Packages.neovim
 
-For standalone nix 
+For standalone nix:
 
     nix-env -iA nixpkgs.python35Packages.neovim
 
