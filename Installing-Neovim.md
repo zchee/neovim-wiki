@@ -145,6 +145,7 @@ For the Python modules use:
     nix-env -iA nixos.python35Packages.neovim
 
 For standalone nix 
+
     nix-env -iA nixpkgs.python35Packages.neovim
 
 Replace python35 with python27 for the python 2 packages.
