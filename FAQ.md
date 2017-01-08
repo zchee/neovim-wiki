@@ -260,6 +260,11 @@ Keep in mind that some of those packages have their own dependencies which also 
 
 # Design
 
+### Why not use JSON for RPC?
+
+- JSON cannot easily/efficiently handle binary data
+- JSON specification is ambiguous: http://seriot.ch/parsing_json.php
+
 ### Why was Lua chosen for writing tests and implementing VimL?
 
 Lua is a very small language, but it provides everything we need to implement a language like VimL, which was created to configure and script the editor. The biggest advantage that languages like Python or Ruby have over Lua are their huge library collections, but that isn't a factor for our main use case which is to remove thousands of lines of C by using Lua as a VimL runtime.
