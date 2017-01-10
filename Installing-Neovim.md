@@ -126,11 +126,7 @@ http://copr.fedoraproject.org/coprs/dperson/neovim/
     curl -o /etc/yum.repos.d/dperson-neovim-epel-7.repo https://copr.fedorainfracloud.org/coprs/dperson/neovim/repo/epel-7/dperson-neovim-epel-7.repo 
     yum -y install neovim
 
-It's built using the [Copr](https://copr.fedoraproject.org/) automated build system, which is unsupported. There's no guarantee of how long your package will be available after the build finishes.
-
-For the Python modules:
-
-    dnf -y install python3-neovim python3-neovim-gui
+It's built using the [Copr](https://copr.fedoraproject.org/) automated build system, which is unsupported. There's no guarantee of how long the package will be available.
 
 ## Slackware
 
