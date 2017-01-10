@@ -105,14 +105,12 @@ Exhereses for scm and released versions are currently available in repository `:
 
 ## Fedora
 
-### >= 25
-
-Neovim and the Python modules are available in the official Fedora repositories starting with Fedora 25:
+Neovim is in [Fedora](https://admin.fedoraproject.org/pkgdb/package/rpms/neovim/) starting with Fedora 25:
 
     dnf -y install neovim
     dnf -y install python2-neovim python3-neovim
 
-### <= 24
+### Fedora 24 and older
 
     dnf -y copr enable dperson/neovim
     dnf -y install neovim
