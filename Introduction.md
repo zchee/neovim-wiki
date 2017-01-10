@@ -8,7 +8,7 @@ languages.
 Over its more than 20 years of life, Vim has accumulated about 300k lines of
 scary C89 code that very few people understand or have the guts to mess with.
 
-Another issue is that as the only person responsible for maintaining vim's big
+Another issue is that as the only person responsible for maintaining Vim's big
 codebase, Bram Moolenaar, has to be extra careful before accepting patches,
 because, once merged, the new code will be his responsibility.
 
@@ -18,7 +18,7 @@ ecosystem.
 
 ## Solution
 
-Neovim is a project that seeks to aggressively refactor vim source code in order
+Neovim is a project that seeks to aggressively refactor Vim source code in order
 to achieve the following goals:
 
 - Simplify maintenance to improve the speed that bug fixes and features get
@@ -36,7 +36,7 @@ consequently improving the editor for all users.
 It is important to emphasize that **this is not a project to rewrite Vim from
 scratch** or transform it into an IDE (though the new features provided will
 enable IDE-like distributions of the editor). The changes implemented here
-should have little impact on vim's editing model or Vimscript in general. Most
+should have little impact on Vim's editing model or Vimscript in general. Most
 Vimscript plugins should continue to work normally.
 
 The following topics contain brief explanations of the major changes (and
@@ -44,13 +44,13 @@ motivations) that will be performed in the first iteration.
 
 ### Migrate to a CMake-based build
 
-The source tree has dozens (if not hundreds) of files dedicated to building vim on various platforms with different configurations, and many of these files
+The source tree has dozens (if not hundreds) of files dedicated to building Vim on various platforms with different configurations, and many of these files
 look abandoned or outdated. Most users don't care about selecting individual
 features and just compile using `--with-features=huge`, which still generates an
 executable that is small enough even for lightweight systems by today's
 standards.
 
-All those files will be removed and vim will be built using [CMake][], a modern
+All those files will be removed and Vim will be built using [CMake][], a modern
 build system that generates build scripts for the most relevant platforms.
 
 [CMake]: http://cmake.org/
@@ -66,11 +66,11 @@ integration) which will be removed permanently. Vi emulation will also be
 removed (setting `nocompatible` will be a no-op).
 
 These changes won't affect most users. Those that only have a C89 compiler
-installed or use vim on legacy systems such as Amiga, BeOS or MS-DOS will
+installed or use Vim on legacy systems such as Amiga, BeOS or MS-DOS will
 have two options:
 
 - Upgrade their software
-- Continue using vim
+- Continue using Vim
 
 ### Platform-specific code
 
@@ -78,7 +78,7 @@ Most of the platform-specific code will be removed and [libuv][] will be used to
 handle system differences.
 
 libuv is a modern multi-platform library with functions to perform common system
-tasks, and supports most unixes and windows, so the vast majority of vim's
+tasks, and supports most unixes and windows, so the vast majority of Vim's
 community will be covered.
 
 [libuv]: https://github.com/libuv/libuv
@@ -108,4 +108,3 @@ Travis CI is used for continuous integration, so pull requests are
 automatically checked.
 
 [Neovim GitHub organization]: https://github.com/neovim
-
