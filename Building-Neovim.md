@@ -39,6 +39,10 @@ To run a *specific* functional test:
 
     TEST_FILE=test/functional/foo.lua make functionaltest
 
+To *repeat* a test many times:
+
+    .deps/usr/bin/busted --filter 'foo' --repeat 1000 test/functional/ui/foo_spec.lua
+
 ---
 
 To run all legacy (Vim) integration tests:
