@@ -32,15 +32,21 @@ See [this gist](https://gist.github.com/XVilka/8346728) for more information abo
 
 ### How can I change the cursor shape in the terminal?
 
-Add this to your `init.vim`:
+Since Nvim 0.2, mode-sensitive cursor-shape is enabled by default (if your terminal supports it).
+
+To _disable_ cursor-shape, put this in your `init.vim`:
 
 ```vim
-:let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+:let $NVIM_TUI_ENABLE_CURSOR_SHAPE=0
 ```
 
-This makes the cursor a pipe in insert-mode, and a block in normal-mode. The environment variable is a temporary measure; finer-grained control may be supported in the future.
+To enable _blinking_ cursor-shape, put this in your `init.vim`:
 
-The escape sequences `t_SI` and `t_EI` (which are [non-standard](https://groups.google.com/d/msg/vim_dev/biVcXiYcLRw/zumrjo6gP4oJ)) are ignored, as are most terminal codes. 
+```vim
+:let $NVIM_TUI_ENABLE_CURSOR_SHAPE=2
+```
+
+The Vim terminal settings `t_SI` and `t_EI` (which are [non-standard](https://groups.google.com/d/msg/vim_dev/biVcXiYcLRw/zumrjo6gP4oJ)) are ignored, like all other `t_XX` settings. 
 
 Note about gnome-terminal 3.6.2 (libvte-2.90-9): [#2537](https://github.com/neovim/neovim/issues/2537)
 
