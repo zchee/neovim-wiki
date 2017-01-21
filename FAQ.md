@@ -32,6 +32,8 @@ See [this gist](https://gist.github.com/XVilka/8346728) for more information abo
 
 ### How can I change the cursor shape in the terminal?
 
+In `man nvim` see the note about `NVIM_TUI_ENABLE_CURSOR_SHAPE`.
+
 Since Nvim 0.2, mode-sensitive cursor-shape is enabled by default (if your terminal supports it).
 
 To _disable_ cursor-shape, put this in your `init.vim`:
