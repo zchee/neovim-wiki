@@ -1,8 +1,10 @@
-*If you are working on a Neovim-related project, include it below!*
+### Read this
 
-**Note:** The projects below might be experimental and not ready for end users.
+1. If you are working on a Neovim-related project, include it below!
+1. Keep it sorted alphabetically, ingoring case. Unsorted entries will be removed from time to time!
+1. Disclaimer: The projects below might be experimental and not ready for end users.
 
-### GUI projects
+### GUI
 
 | Platform         | Project                                                                 |
 |------------------|-------------------------------------------------------------------------|
@@ -52,21 +54,29 @@
 
 ### Plugins
 
-Neovim is compatible with most Vim plugins. Here's a partial list of plugins that take special advantage of Neovim features:
+The following plugins take advantage of specific Neovim features, e.g. `jobstart()`, `:terminal` or its remote plugin mechanism.
 
-- [Floobits](https://github.com/Floobits/floobits-neovim)
-- [Nvim-R](https://github.com/jalvesaq/Nvim-R)
 - [acid.nvim](https://github.com/hkupty/acid.nvim)
 - [alchemist.vim](https://github.com/slashmili/alchemist.vim)
+- [chromatica.nvim](https://github.com/arakashic/chromatica.nvim)
+- [dein.vim](https://github.com/Shougo/dein.vim)
+- [denite.nvim](https://github.com/Shougo/denite.nvim)
 - [deoplete.nvim](https://github.com/Shougo/deoplete.nvim)
 - [fakeclip-neovim](https://github.com/cazador481/fakeclip.neovim)
+- [far.vim](https://github.com/brooth/far.vim)
+- [Floobits](https://github.com/Floobits/floobits-neovim)
+- [fzf-gitignore.nvim](https://github.com/fszymanski/fzf-gitignore.nvim)
 - [haskell-vim](https://github.com/neovimhaskell/haskell-vim)
+- [iron.nvim](https://github.com/hkupty/iron.nvim)
 - [lldb.nvim](https://github.com/critiqjo/lldb.nvim)
 - [mirror.vim](https://github.com/zenbro/mirror.vim)
+- [Nvim-R](https://github.com/jalvesaq/Nvim-R)
 - [neomake](https://github.com/benekastah/neomake)
 - [neotags.nvim](https://github.com/c0r73x/neotags.nvim)
 - [neoterm](https://github.com/kassio/neoterm)
 - [neovim-hackernews](https://github.com/dpzmick/neovim-hackernews)
+- [neovim-ranger](https://github.com/airodactyl/neovim-ranger)
+- [neovim-vifm](https://github.com/vifm/neovim-vifm)
 - [nvim-editcommand](https://github.com/brettanomyces/nvim-editcommand)
 - [nvim-terminus](https://github.com/brettanomyces/nvim-terminus)
 - [nvim-ipy](https://github.com/bfredl/nvim-ipy)
@@ -74,43 +84,39 @@ Neovim is compatible with most Vim plugins. Here's a partial list of plugins tha
 - [nvimux](https://github.com/hkupty/nvimux)
 - [orchestra.nvim](https://github.com/timeyyy/orchestra.nvim)
 - [proteome](https://github.com/tek/proteome.nvim)
+- [vimcmdline](https://github.com/jalvesaq/vimcmdline)
 - [vim-accio](https://github.com/pgdouyon/vim-accio)
+- [vim-airline](https://github.com/vim-airline/vim-airline) (see [this commit](https://github.com/vim-airline/vim-airline/commit/ef3746d02266c4630e2658ad2302b266f53a0434) )
 - [vim-composer](https://github.com/noahfrederick/vim-composer)
+- [vim-esearch](https://github.com/eugen0329/vim-esearch)
+- [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 - [vim-go](https://github.com/fatih/vim-go) (see [PR 607](https://github.com/fatih/vim-go/pull/607) for feature list)
 - [vim-grepper](https://github.com/mhinz/vim-grepper)
+- [vim-javacomplete2](https://github.com/artur-shaik/vim-javacomplete2)
 - [vim-man](https://github.com/bruno-/vim-man)
 - [vim-markdown-composer](https://github.com/euclio/vim-markdown-composer)
 - [vim-pandoc](https://github.com/vim-pandoc/vim-pandoc)
 - [vim-plug](https://github.com/junegunn/vim-plug)
-- [vim-test](https://github.com/janko-m/vim-test)
-- [vimcmdline](https://github.com/jalvesaq/vimcmdline)
-- [vim-javacomplete2](https://github.com/artur-shaik/vim-javacomplete2)
-- [vim-airline](https://github.com/vim-airline/vim-airline) (see [this commit](https://github.com/vim-airline/vim-airline/commit/ef3746d02266c4630e2658ad2302b266f53a0434) )
-- [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
-- [vim-esearch](https://github.com/eugen0329/vim-esearch)
 - [vim-rainbows](https://github.com/nfischer/vim-rainbows)
-- [chromatica.nvim](https://github.com/arakashic/chromatica.nvim)
-- [iron.nvim](https://github.com/hkupty/iron.nvim)
+- [vim-signify](https://github.com/mhinz/vim-signify)
+- [vim-test](https://github.com/janko-m/vim-test)
 - [vim-tmux-clipboard](https://github.com/roxma/vim-tmux-clipboard)
-- [neovim-vifm](https://github.com/vifm/neovim-vifm)
-- [neovim-ranger](https://github.com/airodactyl/neovim-ranger)
-- [dein.vim](https://github.com/Shougo/dein.vim)
-- [denite.nvim](https://github.com/Shougo/denite.nvim)
-- [fzf-gitignore.nvim](https://github.com/fszymanski/fzf-gitignore.nvim)
-- [far.vim](https://github.com/brooth/far.vim)
 
-### Projects with support for Neovim
+### Non-plugin software
+
+This is software either targeted at Neovim or with support for it.
 
 - [neovim-remote](https://github.com/mhinz/neovim-remote)
-- [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
-- [Vroom](https://github.com/google/vroom)
 - [nfasd](https://github.com/haifengkao/nfasd)
 - [ribosome] (https://github.com/tek/ribosome)
+- [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
+- [Vroom](https://github.com/google/vroom)
 
-### Themes
+### Colorschemes
 
-- [onedark](https://github.com/joshdick/onedark.vim)
 - [gruvbox](https://github.com/morhetz/gruvbox)
-- [oceanic-next](https://github.com/mhartington/oceanic-next)
 - [flatcolor](https://github.com/MaxSt/FlatColor)
+- [janah](https://github.com/mhinz/vim-janah)
 - [NeoSolarized](https://github.com/iCyMind/NeoSolarized)
+- [oceanic-next](https://github.com/mhartington/oceanic-next)
+- [onedark](https://github.com/joshdick/onedark.vim)
