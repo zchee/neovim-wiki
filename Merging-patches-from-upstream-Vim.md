@@ -73,6 +73,7 @@ See the [`memory.c` Doxygen page](http://neovim.io/doc/dev/memory_8c.html) for m
 | `mch_memmove`                           | `memmove`          |
 | `vim_memset` `copy_chars` `copy_spaces` | [`memset`][memset] |
 | `vim_strncpy` `strncpy` `strcpy`        | `xstrlcpy`         |
+| `vim_strcat`                            | `xstrlcat`         |
 
 | Data type | Format (Vim source) | Portable format (Nvim source) |
 |:----------|:--------------------|:------------------------------|
