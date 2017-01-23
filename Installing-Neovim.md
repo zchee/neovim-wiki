@@ -126,6 +126,14 @@ http://copr.fedoraproject.org/coprs/dperson/neovim/
 
 It's built using the [Copr](https://copr.fedoraproject.org/) automated build system, which is unsupported. There's no guarantee of how long the package will be available.
 
+## PLD Linux
+
+Neovim is in [PLD Linux](https://github.com/pld-linux/neovim):
+
+    poldek -u neovim
+    poldek -u python-neovim python3-neovim
+    poldek -u python-neovim-gui python3-neovim-gui
+
 ## Slackware
 
 See [neovim on SlackBuilds](http://slackbuilds.org/apps/neovim/).
