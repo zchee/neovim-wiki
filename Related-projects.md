@@ -114,9 +114,10 @@ This is software either targeted at Neovim or with support for it.
 
 ### Colorschemes
 
-- [gruvbox](https://github.com/morhetz/gruvbox)
-- [flatcolor](https://github.com/MaxSt/FlatColor)
-- [janah](https://github.com/mhinz/vim-janah)
 - [NeoSolarized](https://github.com/iCyMind/NeoSolarized)
+- [flatcolor](https://github.com/MaxSt/FlatColor)
+- [gruvbox](https://github.com/morhetz/gruvbox)
+- [janah](https://github.com/mhinz/vim-janah)
 - [oceanic-next](https://github.com/mhartington/oceanic-next)
 - [onedark](https://github.com/joshdick/onedark.vim)
+- [shadowmoth](https://github.com/rafcamlet/shadowmoth)
