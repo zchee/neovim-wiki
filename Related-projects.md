@@ -101,6 +101,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [vim-signify](https://github.com/mhinz/vim-signify)
 - [vim-test](https://github.com/janko-m/vim-test)
 - [vim-tmux-clipboard](https://github.com/roxma/vim-tmux-clipboard)
+- [vsh] (https://github.com/hardenedapple/vsh/)
 
 ### Non-plugin software
 
