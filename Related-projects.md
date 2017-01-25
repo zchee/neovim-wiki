@@ -1,8 +1,6 @@
-### Read this
+If you are working on a Neovim-related project, include (alphabetically) it below!
 
-1. If you are working on a Neovim-related project, include it below!
-1. Keep it sorted alphabetically, ignoring case. Unsorted entries will be removed from time to time!
-1. Disclaimer: The projects below might be experimental and not ready for end users.
+- Note: Some of these projects are _experimental_ (i.e., unstable).
 
 ### GUI
 
