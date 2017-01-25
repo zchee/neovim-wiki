@@ -223,6 +223,7 @@ cmake ../third-party/
 gmake
 cd ..
 mkdir build
+cd build
 cmake ..
 gmake
 ```
