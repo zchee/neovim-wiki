@@ -97,6 +97,11 @@ The `gdb` interactive prompt will appear. At any time you can:
 - `CTRL-x CTRL-a` or `tui enable` to **show a TUI view of the source file** in the current debugging context. This can be extremely useful as it avoids the need for a gdb "frontend".
     - `<up>` and `<down>` to scroll the source file view
 
+#### gdb "reverse debugging"
+
+- `record` after `main()` has executed
+- `set record btrace bts buffer-size unlimited` to enable recording more data
+
 ### Using `gdbserver`
 
 You may want to connect multiple `gdb` clients to the same running `nvim` process, or you may want to connect to a remote `nvim` process with a local `gdb`. Using `gdbserver`, you can attach to a single process and control it from multiple `gdb` clients. 
