@@ -99,8 +99,10 @@ The `gdb` interactive prompt will appear. At any time you can:
 
 #### gdb "reverse debugging"
 
-- `record` after `main()` has executed
-- `set record btrace bts buffer-size unlimited` to enable recording more data
+- `set record full insn-number-max unlimited`
+- `continue` for a bit (at least until `main()` is executed
+- `record`
+- provoke the bug, then use `revert-next`, `reverse-step`, etc. to rewind the debugger
 
 ### Using `gdbserver`
 
