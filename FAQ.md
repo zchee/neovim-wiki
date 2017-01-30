@@ -81,7 +81,7 @@ Make sure that [Neovim can find its runtime](#neovim-cant-find-its-runtime).
 
 ### My CTRL-H mapping doesn't work
 
-If you are running **Neovim 0.1.7 or older**, adjust your terminal's "kbs" terminfo entry:
+If you are running **Neovim 0.1.7 or older**, adjust your terminal's "kbs" (key_backspace) terminfo entry:
 
 ```
 infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti
