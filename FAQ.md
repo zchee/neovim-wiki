@@ -72,6 +72,13 @@ The code for that family of command-line arguments was removed. It may eventuall
 
 See [#1750](https://github.com/neovim/neovim/issues/1750) for more information.
 
+### Middle button cut and paste doesn't work in terminals at all!
+
+Neovim has mouse integration that overrides terminal highlight, clipboard, and paste behavior. It also disables window server standard cut and paste. To get default behavior of your terminal back:
+
+    set mouse=""
+
+You can include that line in your .config/nvim/init.vim file. Enjoy your middle button.
 
 # Runtime issues
 
