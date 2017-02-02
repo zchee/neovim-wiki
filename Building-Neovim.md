@@ -197,6 +197,10 @@ compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
 
     sudo pacman -S base-devel cmake unzip
 
+### NixOS
+
+    nix-env -i autoconf automake cmake gcc libtool pkgconfig unzip
+
 ### FreeBSD 10
 
     sudo pkg install cmake gmake libtool sha automake pkgconf unzip wget
