@@ -64,6 +64,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [far.vim](https://github.com/brooth/far.vim)
 - [Floobits](https://github.com/Floobits/floobits-neovim)
 - [fzf-gitignore.nvim](https://github.com/fszymanski/fzf-gitignore.nvim)
+- [gen_tags.vim](https://github.com/jsfaint/gen_tags.vim)
 - [haskell-vim](https://github.com/neovimhaskell/haskell-vim)
 - [iron.nvim](https://github.com/hkupty/iron.nvim)
 - [lldb.nvim](https://github.com/critiqjo/lldb.nvim)
