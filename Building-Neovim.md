@@ -4,6 +4,7 @@
 
 1. Verify that you have the [build prerequisites](#build-prerequisites) installed.
 2. Clone [`neovim/neovim`](https://github.com/neovim/neovim).
+    - If you want the **stable release**: `git checkout v0.1.7`
 3. Build Neovim by running `make`. (On BSD systems use `gmake` / GNU Make.)
 
 `make` pulls third-party dependencies (libuv, LuaJIT, etc.) into `.deps/`, and builds them.
