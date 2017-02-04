@@ -198,9 +198,8 @@ compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
 
     sudo pacman -S base-devel cmake unzip
 
-### NixOS
+### Nix or NixOS
 
-    nix-env -i autoconf automake cmake gcc libtool pkgconfig unzip
     cd path/to/neovim
     nix-shell '<nixpkgs>' -A neovim
     patchPhase
