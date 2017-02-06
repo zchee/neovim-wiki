@@ -76,6 +76,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [neovim-hackernews](https://github.com/dpzmick/neovim-hackernews)
 - [neovim-ranger](https://github.com/airodactyl/neovim-ranger)
 - [neovim-vifm](https://github.com/vifm/neovim-vifm)
+- [nvim-completion-manager](https://github.com/roxma/nvim-completion-manager)
 - [nvim-editcommand](https://github.com/brettanomyces/nvim-editcommand)
 - [nvim-terminus](https://github.com/brettanomyces/nvim-terminus)
 - [nvim-ipy](https://github.com/bfredl/nvim-ipy)
