@@ -1,9 +1,9 @@
-##### contributing to this list:
+##### Contributing to this list:
 * [ideas page manual](http://write.flossmanuals.net/gsoc-mentoring/making-your-ideas-page/)
 * [example](https://github.com/nim-lang/nim/wiki/gsoc-2016-ideas)
 
 # introduction
-below is a list of project ideas for [gsoc 2017](https://developers.google.com/open-source/gsoc/). these projects may require familiarity with c, makefiles, python, lua or vimscript.
+Below is a list of project ideas for [gsoc 2017](https://developers.google.com/open-source/gsoc/). these projects may require familiarity with c, makefiles, python, lua or vimscript.
 
 [neovim](https://neovim.io/) is an extension of vim. the [vision](https://neovim.io/charter/) of neovim goes into the projects goals and non-goals. one of the goals is to build a project the encourages "hacking" and collaboration. effort is put into removing barriers for contributors and improving documentation. the wiki has sections on developing and contributing to help you get started working with neovim.
 
