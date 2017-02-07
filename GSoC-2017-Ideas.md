@@ -70,6 +70,7 @@ ___
 **Description:**
 [initial discussion](https://github.com/neovim/neovim/issues/4982)
 continued [here](https://github.com/neovim/neovim/issues/5522)
+
 **Expected Result:**
 
 **Difficulty:** ...
