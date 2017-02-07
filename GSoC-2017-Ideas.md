@@ -28,12 +28,12 @@ helpful, not rigid.
 
 ## Table of Contents
   * [Refactoring](#refactoring)
-      * 
       * [External UI API](#improve-external-ui-api) 
 
   * [New Features](#new-features)
       * [LSP support](#lsp-support)
-      * 
+      * ["multiprocessing" feature](#"multiprocessing"-feature)
+      * [Vim perl plugin compatibility](#if_perl-compatibility-layer)
 
   * [Tools &amp; Infrastructure](#tools--infrastructure)
       * [Continuous Integration](#improve-continuous-integration)
@@ -68,24 +68,43 @@ ___
 **Desirable Skills:**
 
 **Description:**
-https://github.com/neovim/neovim/issues/4982
+[initial discussion](https://github.com/neovim/neovim/issues/4982)
+continued [here](https://github.com/neovim/neovim/issues/5522)
 **Expected Result:**
 
 **Difficulty:** ...
 
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
-
+___
 #### "multiprocessing" feature
+
+**Desirable Skills:**
+Experience with concurrency type problems and networking
 
 **Description:**
 
 p2p architecture for data sharing between multiple nvim instances. Similar to the "multiprocessing" module of python, the idea is to to offload Nvim computations (VimL and/or Lua) to child Nvim processes.
 
+**Difficulty:** Medium to Hard
+
+**Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
+___
 #### if_perl compatibility layer
+
+**Desirable Skills:**
+any(lua, perl, python)
 
 **Description:**
 
-Implement Vim's legacy perl API. See the [ruby layer](https://github.com/alexgenco/neovim-ruby) for example.
+Implement Vim's legacy perl API. See the [ruby layer](https://github.com/alexgenco/neovim-ruby) for example. Vim can be compiled to support python/lua/ruby/perl plugins. Neovim has a rpc plugin architecture that allows plugins
+to be written in any language. A perl api client already exists, the only part missing is a neovim plugin that works in the same way as vim perl support.
+
+**Difficulty:** Medium to Hard
+
+**Expected Result:** Vim perl plugins can be run in neovim.
+
+**Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
+
 
 ## Tools & Infrastructure
 
@@ -96,15 +115,12 @@ ___
 Familiarity with command line
 
 **Description:**
-https://github.com/neovim/bot-ci/issues/12
-
-**Expected Result:**
+Automating builds and other tasks lowers the obstacles for contributors. Tasks include automatically pushing build artifacts to github releases, html document generation, rewriting some awk scripts to python, clang tidy builds. See [Neovim/bot-ci repo](https://github.com/neovim/bot-ci)
 
 **Difficulty:** ...
 Easy
 
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
-
 
 
 Please add your project ideas in the following format.
