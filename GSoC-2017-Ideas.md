@@ -1,85 +1,110 @@
-##### Contributing to this list:
-* [Ideas page Manual](http://write.flossmanuals.net/gsoc-mentoring/making-your-ideas-page/)
-* [Example](https://github.com/nim-lang/Nim/wiki/GSoC-2016-Ideas)
+##### contributing to this list:
+* [ideas page manual](http://write.flossmanuals.net/gsoc-mentoring/making-your-ideas-page/)
+* [example](https://github.com/nim-lang/nim/wiki/gsoc-2016-ideas)
 
-# Introduction
-Below is a list of project ideas for [GSoC 2017](https://developers.google.com/open-source/gsoc/). These projects may require familiarity with c, makefiles, python, lua or vimscript.
+# introduction
+below is a list of project ideas for [gsoc 2017](https://developers.google.com/open-source/gsoc/). these projects may require familiarity with c, makefiles, python, lua or vimscript.
 
-[Neovim](https://neovim.io/) is an extension of Vim. The [vision](https://neovim.io/charter/) of Neovim goes into the Projects goals and non-goals. One of the goals is to build a project the encourages "hacking" and collaboration. Effort is put into removing barriers for contributors and improving documentation. The wiki has sections on developing and contributing to help you get started working with Neovim.
+[neovim](https://neovim.io/) is an extension of vim. the [vision](https://neovim.io/charter/) of neovim goes into the projects goals and non-goals. one of the goals is to build a project the encourages "hacking" and collaboration. effort is put into removing barriers for contributors and improving documentation. the wiki has sections on developing and contributing to help you get started working with neovim.
 
-The Neovim source has roots in 1987 which means many libraries such as [libuv](https://github.com/libuv/libuv) were not around at that time. The code base can be made easier to maintain and understand by using these libraries. Project ideas that involve working heavily with internals will in the general case be more difficult than project ideas that "simply" add new features. However working with older/complex parts of the code base can also provide valuable learning feedback for writing simpler and more maintainable code. There is a large range of skills that can be learned and working with the team to find a project that will help you the most is in your benefit.
+the neovim source has roots in 1987 which means many libraries such as [libuv](https://github.com/libuv/libuv) were not around at that time. the code base can be made easier to maintain and understand by using these libraries. project ideas that involve working heavily with internals will in the general case be more difficult than project ideas that "simply" add new features. however working with older/complex parts of the code base can also provide valuable learning feedback for writing simpler and more maintainable code. there is a large range of skills that can be learned and working with the team to find a project that will help you the most is in your benefit.
 
-We encourage you to join the #neovim IRC or [gitter channel](https://gitter.im/neovim/neovim) to discuss these projects with the community and our mentors. Because communication is a big part of open source development you are expected to get in touch with us before making your application
+we encourage you to join the #neovim irc or [gitter channel](https://gitter.im/neovim/neovim) to discuss these projects with the community and our mentors. because communication is a big part of open source development you are expected to get in touch with us before making your application
 
-The following list of projects are just some ideas. We are happy to hear any suggestions that you may have.
+the following list of projects are just some ideas. we are happy to hear any suggestions that you may have.
 
-## Tips 
+## tips 
 
-- Anywhere a Vim concept (such as "textlock") is mentioned, you can find what it means by using the ":help" command (`:help textlock`).
-- Ask questions and post your partial work frequently (say, once every day or 2, if possible). It's OK if work is messy; just put "[WIP]" in the pull request (PR) title.
-- Take advantage of the continuous integration (CI) systems which automatically run against your pull
-requests. When you send work to a PR,  the full test-suite runs on the PR while you continue to work locally.
+- anywhere a vim concept (such as "textlock") is mentioned, you can find what it means by using the ":help" command (`:help textlock`).
+- ask questions and post your partial work frequently (say, once every day or 2, if possible). it's ok if work is messy; just put "[wip]" in the pull request (pr) title.
+- take advantage of the continuous integration (ci) systems which automatically run against your pull
+requests. when you send work to a pr,  the full test-suite runs on the pr while you continue to work locally.
 
-# Projects
+# projects
 
-## Table of Contents
-  * [Refactoring](#refactoring)
+## table of contents
+  * [refactoring](#refactoring)
       * 
+      * [external ui api](#improve-external-ui-api) 
+
+  * [new features](#new-features)
+      * [lsp support](#lsp-support)
       * 
-    
-  * [New Features](#new-features)
-      * [LSP support](#lsp-support)
-      * 
 
-  * [Tools &amp; Infrastructure](#tools--infrastructure)
+  * [tools &amp; infrastructure](#tools--infrastructure)
+      * [continuous integration](#improve-continuous-integration)
 
-## Refactoring
-
-## New Features
+## refactoring
 ___
-#### LSP support
+#### improve external ui api
 
-**Desirable Skills:**
+**desirable skills:**
+c language, performance testing
 
-**Description:**
+**description:**
+neovim can be embedded via it's [msgpack rpc api](https://neovim.io/doc/user/msgpack_rpc.html). there are [projects](https://github.com/neovim/neovim/wiki/related-projects) doing this for many languages already. the client holds an internal representation of the user interface which it updates following the api. clients in higher level languages can/are currently apply optimizations to improve the performance. the main performance bottle neck for such languages is scrolling which requires many value lookups per second which is hampered by [boxed values](http://stackoverflow.com/questions/13055/what-is-boxing-and-unboxing-and-what-are-the-trade-offs).
+
+there are various ways the api could be improved:
+  * optimize screen drawing instructions in `screen.c`
+  * sdk for developing frontend gui's
+  * api taking future [improvements](https://github.com/neovim/neovim/pull/5686) into account
+
+**expected result:**
+interfaces implemented with the external api are faster and easier to implement
+
+**difficulty:** ...
+medium to hard
+
+**mentor:** justin m keys ([@justinmk](http://github.com/justinmk))
+
+## new features
+___
+#### lsp support
+
+**desirable skills:**
+
+**description:**
 https://github.com/neovim/neovim/issues/4982
-**Expected Result:**
+**expected result:**
 
-**Difficulty:** ...
+**difficulty:** ...
 
-**Mentor:** Mentor name ([@MentorName](http://github.com/MentorName))
+**mentor:** justin m keys ([@justinmk](http://github.com/justinmk))
 
-## Tools & Infrastructure
+## tools & infrastructure
 
 ___
-#### Improve Continous Integration
+#### improve continuous integration
 
-**Desirable Skills:**
+**desirable skills:**
+familiarity with command line
 
-**Description:**
+**description:**
 https://github.com/neovim/bot-ci/issues/12
-**Expected Result:**
 
-**Difficulty:** ...
+**expected result:**
 
-**Mentor:** Mentor name ([@MentorName](http://github.com/MentorName))
+**difficulty:** ...
+easy
+
+**mentor:** justin m keys ([@justinmk](http://github.com/justinmk))
 
 
 
-Please add your project ideas in the following format.
+please add your project ideas in the following format.
 
-# Project spec
+# project spec
 
-## Sub-project
+## sub-project
 ___
-#### Title
+#### title
 
-**Desirable Skills:**
+**desirable skills:**
 
-**Description:**
+**description:**
 
-**Expected Result:**
+**expected result:**
 
-**Difficulty:** ...
+**difficulty:** ...
 
-**Mentor:** Mentor name ([@MentorName](http://github.com/MentorName))
+**mentor:** mentor name ([@mentorname](http://github.com/mentorname))
