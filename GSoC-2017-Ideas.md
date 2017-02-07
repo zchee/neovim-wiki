@@ -34,6 +34,7 @@ helpful, not rigid.
       * [LSP support](#lsp-support)
       * ["multiprocessing" feature](#"multiprocessing"-feature)
       * [Vim perl plugin compatibility](#if_perl-compatibility-layer)
+      * [Haxe client](#haxe-client)
 
   * [Tools &amp; Infrastructure](#tools--infrastructure)
       * [Continuous Integration](#improve-continuous-integration)
@@ -103,6 +104,23 @@ to be written in any language. A perl api client already exists, the only part m
 **Difficulty:** Medium to Hard
 
 **Expected Result:** Vim perl plugins can be run in neovim.
+
+**Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
+
+___
+#### Haxe client
+
+**Desirable Skills:**
+Haxe or something object oriented Java/C#/Python/JS
+
+**Description:**
+An [api client](#https://neovim.io/doc/user/msgpack_rpc.html#rpc-api-client) written in haxe would enable more languages to have a maintained client.
+
+**Expected Result:**
+Most tests from the current [python-client](https://github.com/neovim/python-client) are passable by the haxe python client.
+
+**Difficulty:** ...
+medium
 
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
 
