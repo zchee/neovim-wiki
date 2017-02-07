@@ -15,7 +15,7 @@ The following list of projects are just some ideas. We are happy to hear any sug
 
 ## Tips 
 
-- Anywhere a Vim concept (such as "textlock") is mentioned, you can find what it means by using the ":help" command (`:help textlock`).
+- Anywhere a Vim concept (such as "textlock") is mentioned, you can find what it means by using the ":help" command from within neovim (`:help textlock`).
 - Ask questions and post your partial work frequently (say, once every day or 2, if possible). It's OK if work is messy; just put "[WIP]" in the pull request (PR) title.
 - Take advantage of the continuous integration (CI) systems which automatically run against your pull
 requests. When you send work to a PR,  the full test-suite runs on the PR while you continue to work locally.
