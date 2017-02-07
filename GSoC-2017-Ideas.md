@@ -58,11 +58,10 @@ https://github.com/neovim/bot-ci/issues/12
 **Mentor:** Mentor name ([@MentorName](http://github.com/MentorName))
 
 
-# Project spec
-
-
 
 Please add your project ideas in the following format.
+
+# Project spec
 
 ## Sub-project
 ___
