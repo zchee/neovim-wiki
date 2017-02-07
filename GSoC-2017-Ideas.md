@@ -13,6 +13,13 @@ We encourage you to join the #neovim IRC or [gitter channel](https://gitter.im/n
 
 The following list of projects are just some ideas. We are happy to hear any suggestions that you may have.
 
+## Tips 
+
+- Anywhere a Vim concept (such as "textlock") is mentioned, you can find what it means by using the ":help" command (`:help textlock`).
+- Ask questions and post your partial work frequently (say, once every day or 2, if possible). It's OK if work is messy; just put "[WIP]" in the pull request (PR) title.
+- Take advantage of the continuous integration (CI) systems which automatically run against your pull
+requests. When you send work to a PR,  the full test-suite runs on the PR while you continue to work locally.
+
 # Projects
 
 ## Table of Contents
