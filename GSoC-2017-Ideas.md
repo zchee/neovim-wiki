@@ -19,6 +19,10 @@ The following list of projects are just some ideas. We are happy to hear any sug
 - Ask questions and post your partial work frequently (say, once every day or 2, if possible). It's OK if work is messy; just put "[WIP]" in the pull request (PR) title.
 - Take advantage of the continuous integration (CI) systems which automatically run against your pull
 requests. When you send work to a PR,  the full test-suite runs on the PR while you continue to work locally.
+- The [wiki](https://github.com/neovim/neovim/wiki) contains up-to-date documentation on building, debugging, and development tips.
+- Only a text editor, cmake, and a compiler are needed to develop Neovim. [ctags](https://github.com/universal-ctags/ctags) is very helpful also.
+- The [contributing guidelines](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md) are intended to be
+helpful, not rigid.
 
 # Projects
 
