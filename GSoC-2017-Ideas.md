@@ -55,7 +55,7 @@ Interfaces implemented with the external api are faster and easier to implement
 **Difficulty:** ...
 Medium to Hard
 
-**Mentor:** Justin M Keys ([@justinmk](http://github.com/justinmk))
+**Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
 
 ## New Features
 ___
@@ -69,7 +69,7 @@ https://github.com/neovim/neovim/issues/4982
 
 **Difficulty:** ...
 
-**Mentor:** Justin M Keys ([@justinmk](http://github.com/justinmk))
+**Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
 
 ## Tools & Infrastructure
 
@@ -87,7 +87,7 @@ https://github.com/neovim/bot-ci/issues/12
 **Difficulty:** ...
 Easy
 
-**Mentor:** Justin M Keys ([@justinmk](http://github.com/justinmk))
+**Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
 
 
 
