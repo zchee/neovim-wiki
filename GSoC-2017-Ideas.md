@@ -1,3 +1,7 @@
+##### Contributing to this list:
+* [Ideas page Manual](http://write.flossmanuals.net/gsoc-mentoring/making-your-ideas-page/)
+* [Example](https://github.com/nim-lang/Nim/wiki/GSoC-2016-Ideas)
+
 # Introduction
 Below is a list of project ideas for [GSoC 2017](https://developers.google.com/open-source/gsoc/). These projects may require familiarity with c, makefiles, python, lua or vimscript.
 
@@ -31,7 +35,7 @@ ___
 **Desirable Skills:**
 
 **Description:**
-
+https://github.com/neovim/neovim/issues/4982
 **Expected Result:**
 
 **Difficulty:** ...
@@ -39,6 +43,20 @@ ___
 **Mentor:** Mentor name ([@MentorName](http://github.com/MentorName))
 
 ## Tools & Infrastructure
+
+___
+#### Improve Continous Integration
+
+**Desirable Skills:**
+
+**Description:**
+https://github.com/neovim/bot-ci/issues/12
+**Expected Result:**
+
+**Difficulty:** ...
+
+**Mentor:** Mentor name ([@MentorName](http://github.com/MentorName))
+
 
 # Project spec
 
