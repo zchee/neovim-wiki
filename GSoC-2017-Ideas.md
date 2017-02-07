@@ -17,7 +17,7 @@ The following list of projects are just some ideas. We are happy to hear any sug
       * 
     
   * [New Features](#new-features)
-      * 
+      * [LSP support](#lsp-support)
       * 
 
   * [Tools &amp; Infrastructure](#tools--infrastructure)
@@ -25,6 +25,18 @@ The following list of projects are just some ideas. We are happy to hear any sug
 ## Refactoring
 
 ## New Features
+___
+#### LSP support
+
+**Desirable Skills:**
+
+**Description:**
+
+**Expected Result:**
+
+**Difficulty:** ...
+
+**Mentor:** Mentor name ([@MentorName](http://github.com/MentorName))
 
 ## Tools & Infrastructure
 
@@ -34,9 +46,8 @@ The following list of projects are just some ideas. We are happy to hear any sug
 
 Please add your project ideas in the following format.
 
-___
 ## Sub-project
-
+___
 #### Title
 
 **Desirable Skills:**
