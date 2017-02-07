@@ -1,5 +1,5 @@
 # Introduction
-Below is a list of project ideas for [GSoC 2017](https://developers.google.com/open-source/gsoc/). These projects may require familiarity with c, makefiles, python or lua.
+Below is a list of project ideas for [GSoC 2017](https://developers.google.com/open-source/gsoc/). These projects may require familiarity with c, makefiles, python, lua or vimscript.
 
 [Neovim](https://neovim.io/) is an extension of Vim. The [vision](https://neovim.io/charter/) of neovim goes into the Projects goals and non-goals. One of the goals is to build a project the encourages "hacking" and collaboration. Effort is put into removing barriers for contributors and improving documentation. The wiki has sections on developing and contributing to help you get started working with neovim.
 
