@@ -71,6 +71,18 @@ https://github.com/neovim/neovim/issues/4982
 
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
 
+#### "multiprocessing" feature
+
+**Description:**
+
+p2p architecture for data sharing between multiple nvim instances. Similar to the "multiprocessing" module of python, the idea is to to offload Nvim computations (VimL and/or Lua) to child Nvim processes.
+
+#### if_perl compatibility layer
+
+**Description:**
+
+Implement Vim's legacy perl API. See the [ruby layer](https://github.com/alexgenco/neovim-ruby) for example.
+
 ## Tools & Infrastructure
 
 ___
