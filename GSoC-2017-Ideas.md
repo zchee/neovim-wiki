@@ -35,11 +35,11 @@ helpful, not rigid.
       * ["multiprocessing" feature](#"multiprocessing"-feature)
       * [Vim perl plugin compatibility](#if_perl-compatibility-layer)
       * [Haxe client](#haxe-client)
-      * [Plugin Tools](#plugin-tools)
-      * [Benchmarking](#benchmarking)
 
   * [Tools &amp; Infrastructure](#tools--infrastructure)
       * [Continuous Integration](#improve-continuous-integration)
+      * [Plugin Tools](#plugin-tools)
+      * [Benchmarking](#benchmarking)
 
 ## Refactoring
 ___
