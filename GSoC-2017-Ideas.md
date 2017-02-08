@@ -115,16 +115,28 @@ ___
 #### LSP support
 
 **Desirable Skills:**
+Lua and some knowledge of Vim (or ability to grok documentation)
 
 **Description:**
 [initial discussion](https://github.com/neovim/neovim/issues/4982)
 continued [here](https://github.com/neovim/neovim/issues/5522)
 
+The idea is basically to provide support for the Microsoft LSP. This is a two fold project.
+
+- The first is creating the ability to effectively send the correct messages at the correct time in the correct format to a language server.
+  - For example, the user would like to request a completion, and the message is created and sent.
+- The second is responding to messages within the neovim editor correctly. 
+  - For example, a message with completion results should populate the completion menu and display that to the user.
+
 **Expected Result:**
+A function LSP client that could be shipped with neovim.
 
 **Difficulty:**
+Medium
 
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
+
+Questions can also be sent to TJ DeVries ([@tjdevries](http://github.com/tjdevries))
 
 ## Tools & Infrastructure
 
