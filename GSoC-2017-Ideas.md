@@ -31,10 +31,10 @@ helpful, not rigid.
       * [External UI API](#improve-external-ui-api) 
 
   * [New Features](#new-features)
-      * [LSP support](#lsp-support)
       * ["multiprocessing" feature](#"multiprocessing"-feature)
       * [Vim perl plugin compatibility](#if_perl-compatibility-layer)
       * [Haxe client](#haxe-client)
+      * [LSP support](#lsp-support)
 
   * [Tools &amp; Infrastructure](#tools--infrastructure)
       * [Continuous Integration](#improve-continuous-integration)
