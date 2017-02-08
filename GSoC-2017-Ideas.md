@@ -66,20 +66,6 @@ Medium to Hard
 
 ## New Features
 ___
-#### LSP support
-
-**Desirable Skills:**
-
-**Description:**
-[initial discussion](https://github.com/neovim/neovim/issues/4982)
-continued [here](https://github.com/neovim/neovim/issues/5522)
-
-**Expected Result:**
-
-**Difficulty:** ...
-
-**Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
-___
 #### "multiprocessing" feature
 
 **Desirable Skills:**
@@ -121,11 +107,24 @@ An [api client](#https://neovim.io/doc/user/msgpack_rpc.html#rpc-api-client) wri
 **Expected Result:**
 Most tests from the current [python-client](https://github.com/neovim/python-client) are passable by the haxe python client.
 
-**Difficulty:** ...
+**Difficulty:**
 medium
 
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
+___
+#### LSP support
 
+**Desirable Skills:**
+
+**Description:**
+[initial discussion](https://github.com/neovim/neovim/issues/4982)
+continued [here](https://github.com/neovim/neovim/issues/5522)
+
+**Expected Result:**
+
+**Difficulty:**
+
+**Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
 
 ## Tools & Infrastructure
 
