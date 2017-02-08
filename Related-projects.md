@@ -75,6 +75,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [neovim-hackernews](https://github.com/dpzmick/neovim-hackernews)
 - [neovim-ranger](https://github.com/airodactyl/neovim-ranger)
 - [neovim-vifm](https://github.com/vifm/neovim-vifm)
+- [nlanguagetool.nvim](https://github.com/fmoralesc/nlanguagetool.nvim)
 - [nvim-completion-manager](https://github.com/roxma/nvim-completion-manager)
 - [nvim-editcommand](https://github.com/brettanomyces/nvim-editcommand)
 - [nvim-terminus](https://github.com/brettanomyces/nvim-terminus)
@@ -101,6 +102,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [vim-test](https://github.com/janko-m/vim-test)
 - [vim-tmux-clipboard](https://github.com/roxma/vim-tmux-clipboard)
 - [vsh] (https://github.com/hardenedapple/vsh/)
+- [worldslice](https://github.com/fmoralesc/worldslice)
 
 ### Non-plugin software
 
