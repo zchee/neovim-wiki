@@ -116,7 +116,7 @@ ___
 Haxe or something object oriented Java/C#/Python/JS
 
 **Description:**
-An [api client](#https://neovim.io/doc/user/msgpack_rpc.html#rpc-api-client) written in haxe would enable more languages to have a maintained client.
+An [api client](#https://neovim.io/doc/user/msgpack_rpc.html#rpc-api-client) written in haxe would enable more languages to have a maintained client. 
 
 **Expected Result:**
 Most tests from the current [python-client](https://github.com/neovim/python-client) are passable by the haxe python client.
@@ -138,7 +138,7 @@ Familiarity with command line
 **Description:**
 Automating builds and other tasks lowers the obstacles for contributors. Tasks include automatically pushing build artifacts to github releases, html document generation, rewriting some awk scripts to python, clang tidy builds. See [Neovim/bot-ci repo](https://github.com/neovim/bot-ci)
 
-**Difficulty:** ...
+**Difficulty:**
 Easy
 
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
@@ -155,7 +155,7 @@ of plugins.
 Users looking to embed neovim into application could make use of an sdk to 
 build an Intellij like Plugin Manager.
 
-**Difficulty:** ...
+**Difficulty:**
 easy to Hard
 
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
@@ -172,7 +172,7 @@ in performance. A tool for easily creating benchmarks
 for time, memory usage, utilization of each CPU core or compilation times can be
 interesting metrics to have.
 
-**Difficulty:** ...
+**Difficulty:**
 easy to medium
 
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
@@ -192,6 +192,6 @@ ___
 
 **Expected Result:**
 
-**Difficulty:** ...
+**Difficulty:** 
 
 **Mentor:** Mentor name ([@MentorName](http://github.com/MentorName))
