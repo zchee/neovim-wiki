@@ -35,6 +35,8 @@ helpful, not rigid.
       * ["multiprocessing" feature](#"multiprocessing"-feature)
       * [Vim perl plugin compatibility](#if_perl-compatibility-layer)
       * [Haxe client](#haxe-client)
+      * [Plugin Tools](#plugin-tools)
+      * [Benchmarking](#benchmarking)
 
   * [Tools &amp; Infrastructure](#tools--infrastructure)
       * [Continuous Integration](#improve-continuous-integration)
@@ -138,6 +140,40 @@ Automating builds and other tasks lowers the obstacles for contributors. Tasks i
 
 **Difficulty:** ...
 Easy
+
+**Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
+___
+#### Plugin tools
+
+**Desirable Skills:**
+A good prototyping language.
+
+**Description:**
+Neovim plugin tools can be developed for multiple user types. For regular users the
+`:CheckHealth` command could be improved to detect clashes or missing requirments
+of plugins.
+Users looking to embed neovim into application could make use of an sdk to 
+build an Intellij like Plugin Manager.
+
+**Difficulty:** ...
+easy to Hard
+
+**Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
+
+___
+#### Benchmarking
+
+**Desirable Skills:**
+Experience with benchmarking, ability to create modern websites.
+
+**Description:**
+With an ever changin code base it can be easy to miss regressions
+in performance. A tool for easily creating benchmarks
+for time, memory usage, utilization of each CPU core or compilation times can be
+interesting metrics to have.
+
+**Difficulty:** ...
+easy to medium
 
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
 
