@@ -36,19 +36,22 @@ Python (`:python`) support is also installable via the Debian package manager.
 
 ## Ubuntu
 
-Neovim has been added to a [Personal Package Archive](https://launchpad.net/~neovim-ppa/+archive/ubuntu/unstable) which allows you to install it using `apt-get` on Ubuntu [12.04 and later](https://wiki.ubuntu.com/Releases).
+Neovim has been added to a "Personal Package Archive" (PPA). This allows you to install it with `apt-get` on Ubuntu [12.04 and later](https://wiki.ubuntu.com/Releases). Choose **stable** or **unstable**:
+
+- [https://launchpad.net/~neovim-ppa/+archive/ubuntu/**stable**](https://launchpad.net/~neovim-ppa/+archive/ubuntu/stable)
+- [https://launchpad.net/~neovim-ppa/+archive/ubuntu/**unstable**](https://launchpad.net/~neovim-ppa/+archive/ubuntu/unstable)
 
 To be able to use **add-apt-repository** you may need to install software-properties-common:
 
     sudo apt-get install software-properties-common
 
-If you're using an older version Ubuntu you have to use:
+If you're using an older version Ubuntu you must use:
 
     sudo apt-get install python-software-properties
 
 Run the following commands:
 
-    sudo add-apt-repository ppa:neovim-ppa/unstable
+    sudo add-apt-repository ppa:neovim-ppa/stable
     sudo apt-get update
     sudo apt-get install neovim
 
@@ -56,13 +59,13 @@ Prerequisites for the Python modules:
 
     sudo apt-get install python-dev python-pip python3-dev python3-pip
 
-If you're using an older version Ubuntu you have to use:
+If you're using an older version Ubuntu you must use:
 
     sudo apt-get install python-dev python-pip python3-dev
     sudo apt-get install python3-setuptools
     sudo easy_install3 pip
 
-For instructions on how to install the Python modules, see [`:help provider-python`].
+For instructions to install the Python modules, see [`:help provider-python`].
 
 If you want to use Neovim for some (or all) of the editor alternatives, use the following commands:
 
