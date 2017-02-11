@@ -1,8 +1,9 @@
-Automated testing is essential for a project that aims to receive contributions from the community, it assists the project in growing faster without worrying about broken features. Pull requests that commit unit tests for existing functions will be given priority.
-
-In Neovim, unit testing is achieved by compiling it as a shared library that can be loaded and called by luajit's [FFI module](http://luajit.org/ext_ffi.html). You can learn the [key concepts of Lua in 15 minutes](http://learnxinyminutes.com/docs/lua/).
-
 Tests are broadly divided into *unit tests* ([test/unit](https://github.com/neovim/neovim/tree/master/test/unit) directory) and *functional tests* ([test/functional](https://github.com/neovim/neovim/tree/master/test/functional) directory). Use any of the existing tests as a template to start writing new tests.
+
+- _Unit_ testing is achieved by compiling the tests as a shared library which is loaded and called by LuaJit [FFI](http://luajit.org/ext_ffi.html).
+- _Functional_ tests are driven by RPC, so they do not require LuaJit (as opposed to Lua).
+
+You can learn the [key concepts of Lua in 15 minutes](http://learnxinyminutes.com/docs/lua/).
 
 ## Running Tests
 
@@ -27,17 +28,9 @@ See [build page](https://github.com/neovim/neovim/wiki/Building-Neovim#Running-T
 
 ## Legacy tests
 
-To run a single legacy test, set `TESTNUM` to the name of the test (excluding the "test" prefix) and run `make`.
+To run a single legacy test,  run `make` with `TEST_FILE=test_name.res`. E.g. to run `test_syntax.vim` (note the `.res` extension instead of `.vim`):
 
-```sh
-cd src/nvim/testdir
-
-# run `test_command_count.in`
-make clean && TESTNUM=_command_count make
-
-# run `test53.in`
-make clean && TESTNUM=53 make
-```
+    TEST_FILE=test_syntax.res make oldtest
 
 ## Checklist for migrating legacy tests
 
@@ -48,7 +41,7 @@ make clean && TESTNUM=53 make
 - Make sure the lua test ends in `_spec.lua`.
 - Make sure the test count increases accordingly in the build log.
 - Make sure the new test contains the same control characters (`^]`, ...) as the old test.
-  - Instead of the actual control characters, use an equivalent textual representation (e.g. `<esc>` instead of `^]`). The `legacy2luatest` script does some of these conversions automatically; you are encouraged to extend the script to support more control characters.
+  - Instead of the actual control characters, use an equivalent textual representation (e.g. `<esc>` instead of `^]`). The `scripts/legacy2luatest.pl` script does some of these conversions automatically.
 
 ## Tips
 
