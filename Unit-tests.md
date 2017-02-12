@@ -26,12 +26,6 @@ See [Building Neovim](https://github.com/neovim/neovim/wiki/Building-Neovim#runn
 - _Functional tests_ ([test/functional](https://github.com/neovim/neovim/tree/master/test/functional)) are higher-level (plugins and user input) than unit tests; they are organized by concept. 
     - Try to find an existing `test/functional/*/*_spec.lua` group that makes sense, before creating a new one.
 
-## Legacy tests
-
-To run a single legacy test,  run `make` with `TEST_FILE=test_name.res`. E.g. to run `test_syntax.vim` (note the `.res` extension instead of `.vim`):
-
-    TEST_FILE=test_syntax.res make oldtest
-
 ## Checklist for migrating legacy tests
 
 **Note:** Only "old style" (`src/testdir/*.in`) legacy tests should be converted. Please _do not_ convert "new style" Vim tests (`src/testdir/*.vim`). The "new style" Vim tests are faster than the old ones, and converting them takes time and effort better spent elsewhere.
