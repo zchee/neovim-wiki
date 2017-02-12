@@ -72,6 +72,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [neomake](https://github.com/benekastah/neomake)
 - [neotags.nvim](https://github.com/c0r73x/neotags.nvim)
 - [neoterm](https://github.com/kassio/neoterm)
+- [neotex](https://github.com/donRaphaco/neotex)
 - [neovim-hackernews](https://github.com/dpzmick/neovim-hackernews)
 - [neovim-ranger](https://github.com/airodactyl/neovim-ranger)
 - [neovim-vifm](https://github.com/vifm/neovim-vifm)
