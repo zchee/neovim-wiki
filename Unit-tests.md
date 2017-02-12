@@ -7,7 +7,7 @@ You can learn the [key concepts of Lua in 15 minutes](http://learnxinyminutes.co
 
 ## Running Tests
 
-See [build page](https://github.com/neovim/neovim/wiki/Building-Neovim#Running-Tests)
+See [Building Neovim](https://github.com/neovim/neovim/wiki/Building-Neovim#running-tests).
 
 ## Guidelines for writing tests
 
