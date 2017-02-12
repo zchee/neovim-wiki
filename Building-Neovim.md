@@ -77,6 +77,13 @@ To run all legacy (Vim) integration tests:
 
     make oldtest
 
+To run a *single* legacy test,  run `make` with `TEST_FILE=test_name.res`. E.g. to run `test_syntax.vim`:
+
+    TEST_FILE=test_syntax.res make oldtest
+
+-  The `.res` extension (instead of `.vim`) is required.
+- Specify only the test file name, not the full path.
+
 ### Functional tests
 
 `$GDB` can be set to [run tests under gdbserver](https://github.com/neovim/neovim/pull/1527). If `$VALGRIND` is also set, it will add the `--vgdb=yes` option to valgrind instead of
