@@ -43,6 +43,8 @@ Neovim has been added to a "Personal Package Archive" (PPA). This allows you to 
 - [https://launchpad.net/~neovim-ppa/+archive/ubuntu/**stable**](https://launchpad.net/~neovim-ppa/+archive/ubuntu/stable)
 - [https://launchpad.net/~neovim-ppa/+archive/ubuntu/**unstable**](https://launchpad.net/~neovim-ppa/+archive/ubuntu/unstable)
 
+**Note:** currently only packages for Xenial (16.04) are available on **stable**. If you are using a different version of Ubuntu, use the **unstable** PPA. See [#5811](https://github.com/neovim/neovim/issues/5811#issuecomment-278999317) for more information.
+
 To be able to use **add-apt-repository** you may need to install software-properties-common:
 
     sudo apt-get install software-properties-common
