@@ -201,19 +201,19 @@ Neovim can be installed using the default package manager in Solus (eopkg):
 
 ## Windows
 
-Windows support is (currently) experimental. To try it out, you need `nvim.exe` and a front-end such as Neovim-Qt.
+Neovim on Windows requires `nvim.exe` and a front-end such as Neovim-Qt. Both are included in the pre-built package.
 
 1. Download the latest [32bit build](https://ci.appveyor.com/api/projects/neovim/neovim/artifacts/build/Neovim.zip?branch=master&job=Configuration%3A%20MINGW_32) or [64bit build](https://ci.appveyor.com/api/projects/neovim/neovim/artifacts/build/Neovim.zip?branch=master&job=Configuration%3A%20MINGW_64)
-2. Unzip `Neovim.zip` in `C:\Program Files (x86)\nvim\` or if 64bit version in `C:\Program Files\nvim\` (If you can't or don't want to install in `C:\Program Files (x86)\nvim\` set $VIMRUNTIME to the correct folder + /share/nvim/runtime)
-3. Add the binary folder (`C:\Program Files (x86)\nvim\bin` or if 64bit version `C:\Program Files\nvim\bin`) to your PATH.
-4. You should now be able to run `nvim` from the console (but it will block after a message).
-5. Now download and unzip the latest [Neovim-Qt build](https://github.com/equalsraf/neovim-qt/releases).
-6. Double-click `nvim-qt.exe`.
-7. If you are missing `VCRUNTIME140.dll`, install the [Visual Studio 2015 C++ redistributable](https://support.microsoft.com/en-us/kb/2977003) (be sure to get x86_64 or x86 depending on your system).
+2. Unzip `Neovim.zip`. Any location is fine, administrator privileges are _not_ required.
+    - `$VIMRUNTIME` will be set to that location automatically.
+3. _Optional:_ Add the `bin` folder (e.g. `C:\Program Files\nvim\bin`) to your PATH.
+    - This makes it easy to run `nvim` and `nvim-qt` from anywhere.
+4. Double-click `nvim-qt.exe`.
+5. _Optional:_ If you are missing `VCRUNTIME140.dll`, install the [Visual Studio 2015 C++ redistributable](https://support.microsoft.com/en-us/kb/2977003) (choose x86_64 or x86 depending on your system).
 
 ### .vimrc file in Windows
 
-If you already have Vim installed you can copy or symlink `%userprofile%\_vimrc` to `%userprofile%\AppData\Local\nvim\init.vim` to get the same settings as you already use in Vim.
+If you already have Vim installed you can copy `%userprofile%\_vimrc` to `%userprofile%\AppData\Local\nvim\init.vim` to get the same settings as you already use in Vim.
 
 # Install from source
 
