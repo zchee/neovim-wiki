@@ -1,4 +1,6 @@
-_**Note:** `:CheckHealth` detects and resolves many of the problems in this FAQ. Try it!_
+**Note:** `:CheckHealth` detects and resolves many of the problems in this FAQ. Try it!
+
+---
 
 ### Something broke after upgrading Neovim?
 
@@ -62,23 +64,14 @@ See [#3165](https://github.com/neovim/neovim/pull/3165) for discussion.
 
 ### Is Windows supported?
 
-- An [experimental Windows build](https://github.com/neovim/neovim/wiki/Installing-Neovim#windows) is available to try out. 
-- Full Windows support is a goal of the [`0.2` release](https://github.com/neovim/neovim/milestones/0.2).
-- See [PR #810](https://github.com/neovim/neovim/pull/810) and [PR #1749](https://github.com/neovim/neovim/issues/1749) for ongoing work.
+Yes, starting with the [`0.2` release](https://github.com/neovim/neovim/milestones/0.2).
+See the [Install](https://github.com/neovim/neovim/wiki/Installing-Neovim#windows) page. 
 
 ### What happened to --remote and friends?
 
 The code for that family of command-line arguments was removed. It may eventually be reimplemented using the Neovim API, but for now the script [`neovim-remote`](https://github.com/mhinz/neovim-remote) can be used instead.
 
 See [#1750](https://github.com/neovim/neovim/issues/1750) for more information.
-
-### Middle button cut and paste doesn't work in terminals at all!
-
-Neovim has mouse integration that overrides terminal highlight, clipboard, and paste behavior. It also disables window server standard cut and paste. To get default behavior of your terminal back:
-
-    set mouse=""
-
-You can include that line in your .config/nvim/init.vim file. Enjoy your middle button.
 
 # Runtime issues
 
@@ -88,20 +81,19 @@ Make sure that [Neovim can find its runtime](#neovim-cant-find-its-runtime).
 
 ### My CTRL-H mapping doesn't work
 
-If you are running **Neovim 0.1.7 or older**, adjust your terminal's "kbs" (key_backspace) terminfo entry:
+This was fixed in Neovim **0.2**.
+If you are running Neovim **0.1.7 or older**, adjust your terminal's "kbs" (key_backspace) terminfo entry:
 
 ```
 infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti
 tic $TERM.ti
 ```
 
-See [#2048](https://github.com/neovim/neovim/issues/2048) for more information.
-
 ### `<Home>` or some other "special" key doesn't work
 
-Make sure `$TERM` is set to something reasonable.
+Make sure `$TERM` is set correctly.
 
-- If you're using screen or tmux, `TERM` should be `screen-256color`  (*Not* `xterm-256color`)
+- For screen or tmux, `TERM` should be `screen-256color`  (_Not_ `xterm-256color`)
 - In other cases if "256" does not appear in the string it's probably wrong. Try `TERM=xterm-256color`.
 
 ### `:!` and `system()` do weird things with interactive processes
@@ -142,11 +134,8 @@ Some very old/unnecessary options have been removed from Neovim. See [`:help nvi
 
 ### Neovim is slow
 
-Make sure you're running an optimized build of `nvim`. To check this, run this:
-
-    nvim --version | grep 'Build type'
-
-This should yield one of the following:
+Make sure you're running an optimized build of `nvim`. `:CheckHealth nvim` should report
+one of these "build types":
 
 ```
 Build type: RelWithDebInfo
@@ -154,7 +143,7 @@ Build type: MinSizeRel
 Build type: Release
 ```
 
-If it yields `Build type: Debug` and you're building Neovim from source, then see [Building Neovim#optimized-builds](Building-Neovim#optimized-builds).<br/>
+If it reports `Build type: Debug` and you're building Neovim from source, see [Building Neovim#optimized-builds](Building-Neovim#optimized-builds).<br/>
 If you're using a third-party package, please inform the maintainer.
 
 ### Colors aren't displayed correctly
