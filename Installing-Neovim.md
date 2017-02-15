@@ -1,6 +1,8 @@
 - Before upgrading to a new version, **always check [Following HEAD](Following-HEAD).**
-- If you're wondering where to put your config (`vimrc`) see [here](https://github.com/neovim/neovim/wiki/FAQ#where-should-i-put-my-config-vimrc).
 - To start Neovim, run `nvim` (not `neovim`).
+- If you're wondering where to put your config (`vimrc`) see [here](https://github.com/neovim/neovim/wiki/FAQ#where-should-i-put-my-config-vimrc).
+
+---
 
 # Install from package
 
