@@ -193,6 +193,12 @@ Neovim can be installed using the xbps package manager
 
     sudo xbps-install -S neovim
 
+## Source Mage
+
+Neovim can be installed using the Sorcery package manager:
+
+    cast neovim
+
 ## Solus
 
 Neovim can be installed using the default package manager in Solus (eopkg):
