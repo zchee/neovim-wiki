@@ -221,7 +221,7 @@ Neovim on Windows requires `nvim.exe` and a front-end such as Neovim-Qt. Both ar
 4. Double-click `nvim-qt.exe`.
 5. _Optional:_ If you are missing `VCRUNTIME140.dll`, install the [Visual Studio 2015 C++ redistributable](https://support.microsoft.com/en-us/kb/2977003) (choose x86_64 or x86 depending on your system).
 
-### .vimrc file in Windows
+### init.vim ("vimrc") file in Windows
 
 If you already have Vim installed you can copy `%userprofile%\_vimrc` to `%userprofile%\AppData\Local\nvim\init.vim` to get the same settings as you already use in Vim.
 
