@@ -1,4 +1,4 @@
-- _**Before upgrading** to a new version, always check the **[Following HEAD](Following-HEAD)** page._
+- Before upgrading to a new version, **always check [Following HEAD](Following-HEAD).**
 
 ---
 
