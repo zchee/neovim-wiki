@@ -29,17 +29,17 @@
 
 1. Verify that you have the [build prerequisites](#build-prerequisites) installed.
 2. Clone [`neovim/neovim`](https://github.com/neovim/neovim).
-    - If you want the **stable release**: `git checkout v0.1.7`
+    - If you want the **stable release**: `git checkout v0.1.7` (or the most-recent tag)
 3. Build Neovim by running `make`. (On BSD systems use `gmake` / GNU Make.)
+    - Set `CMAKE_INSTALL_PREFIX` if you want to **install to a custom location**. See [Installing Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#install-from-source).
 
-`make` pulls third-party dependencies (libuv, LuaJIT, etc.) into `.deps/`, and builds them.
-If you have issues while attempting to build Neovim, see [FAQ](FAQ#build-issues).
+Other notes:
 
-To generate the `Makefile` without building: `make cmake`
+- Third-party dependencies (libuv, LuaJIT, etc.) are downloaded automatically to `.deps/`. See [FAQ](FAQ#build-issues) if you have issues.
+- To generate the `Makefile` without building: `make cmake`
+- If you plan to develop Neovim, install [ninja](https://ninja-build.org/) for faster builds. It will be used automatically.
 
-If you plan on building Neovim frequently, install [`ninja`](https://ninja-build.org/) for faster builds, it will be used by the top-level Makefile automatically.
-
-Now that you have the dependencies, you can try other build targets and options, explained below.
+Now that you have the dependencies, you can try other build targets, explained below.
 
 ## Running tests
 
