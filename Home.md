@@ -33,4 +33,4 @@
 
 - [Refactor Vim into a library](Refactor-vim-into-a-library)
 - [Architectural musing and ideas (text buffer data structure, ...)](Architectural-musing-and-ideas)
-- [GSoC 2017](GSoC-2017-Ideas)
+- [GSoC 2018](GSoC-2018-Ideas)
