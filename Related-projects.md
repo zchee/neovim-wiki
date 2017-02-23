@@ -18,6 +18,7 @@ If you are working on a Neovim-related project, include (alphabetically) it belo
 | Mac OS X         | [rogual/neovim-dot-app](https://github.com/rogual/neovim-dot-app)       |
 | Qt 5             | [equalsraf/neovim-qt](https://github.com/equalsraf/neovim-qt)           |
 | Rust IDE         | [oakes/SolidOak](https://github.com/oakes/SolidOak)                     |
+| Sublime Text     | [lunixbochs/actualvim](https://github.com/lunixbochs/actualvim)         |
 | Tk/Python UI     | [timeyyy/pytknvim](https://github.com/timeyyy/pytknvim)                 |
 | Windows/Linux    | [meatich/Viy](https://github.com/meatich/Viy)                           |
 
