@@ -5,6 +5,7 @@
 - [Quick start](#quick-start)
 - [Running tests](#running-tests)
 - [Optimized builds](#optimized-builds)
+- [Debug builds](#debug-builds)
 - [Localization](#localization)
   - [Localization build](#localization-build)
   - [Localization check](#localization-check)
@@ -98,6 +99,15 @@ make CMAKE_BUILD_TYPE=Release
 For developers and "edge" users, `RelWithDebInfo` is recommended over `Release` as the latter doesn't generate debug info.
 
 To verify the build type after compilation, run `./build/bin/nvim --version | grep ^Build`
+
+## Debug builds
+
+nvim links statically some libraries, in order to be able to step into some of these functions, you might want to compile them with debug informations as well.
+
+```
+make distclean
+VERBOSE=1 DEBUG=1 make deps
+```
 
 ## Localization
 
