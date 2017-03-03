@@ -66,14 +66,18 @@ From [Garrido 2000][] **2.1 Proposal for a List of C Refactorings** (page
 	refactoring defines structures by grouping existing variables. The second part
 	of converting global access to parameters by reference is handled by the
 	refactorings "Convert global variable into parameter".
- * **Extract function**: replace a complicated expression or statement list
+ * **Extract function**: ~~replace a complicated expression or statement list
 	with a function call. As pointed out in [Fowler 99], this is a very common
 	transformation. When a function gets too long or complicated, a good
 	practice is to divide it into smaller fragments, turn each fragment into a
 	function and replace the long function for a shorter one with function
 	calls. The code extracted is scanned and for each reference to local
 	variables in the source function, a parameter is added to the extracted
-	function.
+	function.~~ I (@philix) no longer recommend function extraction as a good
+        refactoring pattern. I think one should only extract functions when (1) the
+        new function can be pure (https://en.wikipedia.org/wiki/Pure_function) or
+        (2)there's already a concrete case of reuse. John Carmack discusses this topic on
+        [John Carmack on Inlined Code](http://number-none.com/blow/blog/programming/2014/09/26/carmack-on-inlined-code.html).
  * **Inline function**
  * **Consolidate conditional expression**: join adjacent cases in switch.
  * **For into while**
@@ -86,19 +90,6 @@ From [Garrido 2000][] **2.1 Proposal for a List of C Refactorings** (page
 List of code smells by [Jeff Atwood][] that may indicate solvable problems and
 inspire neovim contributors. This list was made for object oriented programming,
 but it's not hard to see how most of them apply to C.
-
-Work done so far has started to tackle some of these:
-
- * Big files are being split into smaller ones (**Large Class**)
- * Unnecessary `#ifdef` tests around legacy code are being removed (**Dead Code**)
- * Much more as there are many big changes in progress (e.g. the new Vimscript
-   implementation)
-
-Much more can be done. It's not hard to find many of these smells in neovim's
-code right now. Long methods, long parameter lists, conditional complexity,
-uncommunicative names, primitive obsession, and solution sprawl to name a few.
-
-See [the list of functions](http://pastebin.com/TmHJuyCC) from Neovim's source code sorted by size, number of parameters... compiled by @cepko33 (#338).
 
 #### Code Smells Within Classes (.c files)
 
