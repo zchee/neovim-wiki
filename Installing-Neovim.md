@@ -18,11 +18,11 @@ The [Releases](https://github.com/neovim/neovim/releases) page provides pre-buil
     tar xzf nvim-macos.tar.bz2
     ./nvim/nvim
 
-### [Homebrew](http://brew.sh) (OS X) / [Linuxbrew](http://linuxbrew.sh/) (Linux)
+### [Homebrew](http://brew.sh) (macOS) / [Linuxbrew](http://linuxbrew.sh/) (Linux)
 
     brew install neovim/neovim/neovim
 
-See the [neovim/homebrew-neovim README](https://github.com/neovim/homebrew-neovim/blob/master/README.md) for a complete reference.
+See the [homebrew-neovim README](https://github.com/neovim/homebrew-neovim#installation) for a complete reference.
 
 ### [Macports](https://www.macports.org/)
 
