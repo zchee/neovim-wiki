@@ -10,9 +10,13 @@ Packages are listed below. (You can also [build Neovim from source](#install-fro
 
 ## macOS / OS X
 
-### VimR packages
+### Pre-built archives
 
-The VimR project provides [bz2 archives](https://github.com/qvacua/vimr/releases) for macOS which include a pre-built `nvim` binary.
+The [Releases](https://github.com/neovim/neovim/releases) page provides pre-built archives for macOS 10.8 (Mountain Lion) or later.
+
+    curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim-macos.tar.bz2
+    tar xzf nvim-macos.tar.bz2
+    ./nvim/nvim
 
 ### [Homebrew](http://brew.sh) (OS X) / [Linuxbrew](http://linuxbrew.sh/) (Linux)
 
