@@ -110,7 +110,7 @@ You may want to connect multiple `gdb` clients to the same running `nvim` proces
 
 Open a terminal and start `gdbserver` attached to `nvim` like this:
 
-    gdbserver :6666 build/bin/nvim
+    gdbserver :6666 build/bin/nvim 2> gdbserver.log
 
 `gdbserver` is now listening on port 6666. You then need to attach to this debugging session in another terminal:
 
@@ -119,6 +119,15 @@ Open a terminal and start `gdbserver` attached to `nvim` like this:
 Once you've entered `gdb`, you need to attach to the remote session:
 
     target remote localhost:6666
+
+In case gdbserver puts the TUI as a background process, the TUI can become unable to read input from pty (and receives SIGTTIN signal) and/or output data (SIGTTOU signal). To force the TUI as the foreground process, you can add
+
+    signal (SIGTTOU, SIG_IGN);
+    if (!tcsetpgrp(data->input.in_fd, getpid())) {
+        perror("tcsetpgrp failed");
+    }
+
+to tui.c:terminfo_start.
 
 ### Using `gdbserver` in `tmux`
 
