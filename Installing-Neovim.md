@@ -12,11 +12,11 @@ Packages are listed below. (You can also [build Neovim from source](#install-fro
 
 ### Pre-built archives
 
-The [Releases](https://github.com/neovim/neovim/releases) page provides pre-built archives for macOS 10.8+.
+The [Releases](https://github.com/neovim/neovim/releases) page provides pre-built binaries for macOS 10.8+.
 
-    curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim-macos.tar.bz2
-    tar xzf nvim-macos.tar.bz2
-    ./nvim/nvim
+    curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim-macos.tar.gz
+    tar xzf nvim-macos.tar.gz
+    ./nvim-osx64/bin/nvim
 
 ### [Homebrew](http://brew.sh) (macOS) / [Linuxbrew](http://linuxbrew.sh/) (Linux)
 
