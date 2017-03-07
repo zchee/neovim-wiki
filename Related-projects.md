@@ -113,6 +113,7 @@ This is software either targeted at Neovim or with support for it.
 
 - [neovim-remote](https://github.com/mhinz/neovim-remote)
 - [nfasd](https://github.com/haifengkao/nfasd)
+- [nvimdev](https://github.com/tweekmonster/nvimdev.nvim)
 - [ribosome] (https://github.com/tek/ribosome)
 - [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
 - [Vroom](https://github.com/google/vroom)
