@@ -13,6 +13,7 @@ If you are working on a Neovim-related project, include (alphabetically) it belo
 | Electron UI      | [extr0py/oni](https://github.com/extr0py/oni)                           |
 | gnome-terminal   | [fmoralesc/neovim-gnome-terminal-wrapper](https://github.com/fmoralesc/neovim-gnome-terminal-wrapper) |
 | GTK/Python UI    | [neovim/python-gui](https://github.com/neovim/python-gui)               |
+| GTK/Rust UI      | [daa84/neovim-gtk](https://github.com/daa84/neovim-gtk)                 |
 | Konsole          | [harish2704/neovim-konsole](https://github.com/harish2704/neovim-konsole) |
 | Mac OS X         | [qvacua/vimr](https://github.com/qvacua/vimr)                           |
 | Mac OS X         | [rogual/neovim-dot-app](https://github.com/rogual/neovim-dot-app)       |
