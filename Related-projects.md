@@ -88,6 +88,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [nvimux](https://github.com/hkupty/nvimux)
 - [orchestra.nvim](https://github.com/timeyyy/orchestra.nvim)
 - [proteome](https://github.com/tek/proteome.nvim)
+- [termedit.nvim](https://github.com/rliang/termedit.nvim)
 - [vimcmdline](https://github.com/jalvesaq/vimcmdline)
 - [vim-accio](https://github.com/pgdouyon/vim-accio)
 - [vim-airline](https://github.com/vim-airline/vim-airline) (see [this commit](https://github.com/vim-airline/vim-airline/commit/ef3746d02266c4630e2658ad2302b266f53a0434) )
