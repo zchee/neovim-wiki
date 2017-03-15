@@ -61,10 +61,10 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [alchemist.vim](https://github.com/slashmili/alchemist.vim)
 - [chromatica.nvim](https://github.com/arakashic/chromatica.nvim)
 - [dein.vim](https://github.com/Shougo/dein.vim)
-- [denite.nvim](https://github.com/Shougo/denite.nvim)
+- [denite.nvim](https://github.com/Shougo/denite.nvim): Plugin manager
 - [deoplete.nvim](https://github.com/Shougo/deoplete.nvim)
 - [fakeclip-neovim](https://github.com/cazador481/fakeclip.neovim)
-- [far.vim](https://github.com/brooth/far.vim)
+- [far.vim](https://github.com/brooth/far.vim): Search & Replace
 - [Floobits](https://github.com/Floobits/floobits-neovim)
 - [gen_tags.vim](https://github.com/jsfaint/gen_tags.vim)
 - [haskell-vim](https://github.com/neovimhaskell/haskell-vim)
@@ -85,6 +85,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [nvim-terminus](https://github.com/brettanomyces/nvim-terminus)
 - [nvim-ipy](https://github.com/bfredl/nvim-ipy)
 - [nvim-miniyank](https://github.com/bfredl/nvim-miniyank)
+- [nvim-palette](https://github.com/teto/nvim-palette): Fuzzy search of settings
 - [nvimux](https://github.com/hkupty/nvimux)
 - [orchestra.nvim](https://github.com/timeyyy/orchestra.nvim)
 - [proteome](https://github.com/tek/proteome.nvim)
@@ -102,12 +103,12 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [vim-man](https://github.com/bruno-/vim-man)
 - [vim-markdown-composer](https://github.com/euclio/vim-markdown-composer)
 - [vim-pandoc](https://github.com/vim-pandoc/vim-pandoc)
-- [vim-plug](https://github.com/junegunn/vim-plug)
+- [vim-plug](https://github.com/junegunn/vim-plug): Plugin manager
 - [vim-rainbows](https://github.com/nfischer/vim-rainbows)
 - [vim-signify](https://github.com/mhinz/vim-signify)
 - [vim-test](https://github.com/janko-m/vim-test)
 - [vim-tmux-clipboard](https://github.com/roxma/vim-tmux-clipboard)
-- [vsh] (https://github.com/hardenedapple/vsh/)
+- [vsh](https://github.com/hardenedapple/vsh/)
 - [worldslice](https://github.com/fmoralesc/worldslice)
 
 ### Non-plugin software
@@ -116,8 +117,8 @@ This is software either targeted at Neovim or with support for it.
 
 - [neovim-remote](https://github.com/mhinz/neovim-remote)
 - [nfasd](https://github.com/haifengkao/nfasd)
-- [nvimdev](https://github.com/tweekmonster/nvimdev.nvim)
-- [ribosome] (https://github.com/tek/ribosome)
+- [nvimdev](https://github.com/tweekmonster/nvimdev.nvim): Help to neovim development
+- [ribosome](https://github.com/tek/ribosome)
 - [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
 - [Vroom](https://github.com/google/vroom)
 
