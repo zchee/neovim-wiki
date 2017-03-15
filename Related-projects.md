@@ -93,6 +93,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [vim-accio](https://github.com/pgdouyon/vim-accio)
 - [vim-airline](https://github.com/vim-airline/vim-airline) (see [this commit](https://github.com/vim-airline/vim-airline/commit/ef3746d02266c4630e2658ad2302b266f53a0434) )
 - [vim-composer](https://github.com/noahfrederick/vim-composer)
+- [vim-chat](https://github.com/vim-chat/vim-chat)
 - [vim-esearch](https://github.com/eugen0329/vim-esearch)
 - [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 - [vim-go](https://github.com/fatih/vim-go) (see [PR 607](https://github.com/fatih/vim-go/pull/607) for feature list)
