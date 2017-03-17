@@ -59,6 +59,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 
 - [acid.nvim](https://github.com/hkupty/acid.nvim)
 - [alchemist.vim](https://github.com/slashmili/alchemist.vim)
+- [buildit.nvim](https://github.com/wbthomason/buildit.nvim)
 - [chromatica.nvim](https://github.com/arakashic/chromatica.nvim)
 - [dein.vim](https://github.com/Shougo/dein.vim)
 - [denite.nvim](https://github.com/Shougo/denite.nvim): Plugin manager
