@@ -215,6 +215,8 @@ Neovim can be installed using the default package manager in Solus (eopkg):
 
 ## Windows
 
+Windows support is considered **experimental** until Nvim version 0.2 is released. There are bugs.
+
 Neovim on Windows requires `nvim.exe` and a front-end such as Neovim-Qt. Both are included in the pre-built package.
 
 1. Download the latest [32bit build](https://ci.appveyor.com/api/projects/neovim/neovim/artifacts/build/Neovim.zip?branch=master&job=Configuration%3A%20MINGW_32) or [64bit build](https://ci.appveyor.com/api/projects/neovim/neovim/artifacts/build/Neovim.zip?branch=master&job=Configuration%3A%20MINGW_64)
