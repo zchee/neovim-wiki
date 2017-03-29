@@ -167,38 +167,18 @@ See [#1588](https://github.com/neovim/neovim/pull/1588).
 
 To build the bundled dependencies using CMake:
 
-```
-mkdir .deps
-cd .deps
+```sh
+mkdir .deps ; cd .deps
 cmake ../third-party
 make
 ```
 
-By default, the libraries and headers are placed in `.deps/usr`, afterwards you can build Neovim using:
+By default the libraries and headers are placed in `.deps/usr`. Now you can build Neovim:
 
-```
-mkdir build
-cd build
+```sh
+mkdir build ; cd build
 cmake ..
 make
-```
-
-You can build the dependencies in a different location:
-
-```
-mkdir deps2
-cd deps2
-cmake ../third-party/
-make
-cd ..
-```
-
-And then build Neovim:
-
-```
-mkdir build
-cd build
-cmake -DDEPS_PREFIX=../deps2/usr ..
 ```
 
 ### How to build without "bundled" dependencies
@@ -209,7 +189,6 @@ cmake -DDEPS_PREFIX=../deps2/usr ..
     - `CC=clang CFLAGS=" -O0 -g -DEXITFREE " cmake .. -DMIN_LOG_LEVEL=0 -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=$PWD/root -DJEMALLOC_USE_BUNDLED=1 -DCLANG_ASAN_UBSAN=ON -DPREFER_LUAJIT=false`
 4. Run `make`.
 
-When changing `DEPS_PREFIX`, you may need to clear the CMake cache in order for the changes to take effect.
 
 ## About CMake
 
