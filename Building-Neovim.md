@@ -201,6 +201,14 @@ cd build
 cmake -DDEPS_PREFIX=../deps2/usr ..
 ```
 
+### How to build without "bundled" dependencies
+
+1. Install all dependencies manually.
+2. Create directory `build` in the root of the repository.
+3. Switch to it and run `cmake ..` with all necessary options and environment. E.g.:
+    - `CC=clang CFLAGS=" -O0 -g -DEXITFREE " cmake .. -DMIN_LOG_LEVEL=0 -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=$PWD/root -DJEMALLOC_USE_BUNDLED=1 -DCLANG_ASAN_UBSAN=ON -DPREFER_LUAJIT=false`
+4. Run `make`.
+
 When changing `DEPS_PREFIX`, you may need to clear the CMake cache in order for the changes to take effect.
 
 ## About CMake
