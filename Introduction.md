@@ -65,20 +65,13 @@ exception of some broken and useless features (e.g. NetBeans and Sun WorkShop
 integration) which will be removed permanently. Vi emulation will also be
 removed (setting `nocompatible` will be a no-op).
 
-These changes won't affect most users. Those that only have a C89 compiler
-installed or use Vim on legacy systems such as Amiga, BeOS or MS-DOS will
-have two options:
-
-- Upgrade their software
-- Continue using Vim
-
 ### Platform-specific code
 
 Most of the platform-specific code will be removed and [libuv][] will be used to
 handle system differences.
 
 libuv is a modern multi-platform library with functions to perform common system
-tasks, and supports most unixes and windows, so the vast majority of Vim's
+tasks, and supports most unixes and Windows, so the vast majority of Vim's
 community will be covered.
 
 [libuv]: https://github.com/libuv/libuv
@@ -98,13 +91,3 @@ See the [Plugin Architecture](Plugin-UI-architecture) page for a detailed overvi
 
 [job control patch]: https://groups.google.com/forum/#!topic/vim_dev/QF7Bzh1YABU
 [json-rpc]: http://www.jsonrpc.org/specification
-
-### Development on GitHub
-
-Development happens under the [Neovim GitHub organization][]; the code is
-split across several repositories, unlike the current Vim source tree.
-
-Travis CI is used for continuous integration, so pull requests are
-automatically checked.
-
-[Neovim GitHub organization]: https://github.com/neovim
