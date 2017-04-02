@@ -37,7 +37,7 @@ See [this gist](https://gist.github.com/XVilka/8346728) for more information abo
 - For Nvim 0.1.7 or older: see the note about `NVIM_TUI_ENABLE_CURSOR_SHAPE` in `man nvim`.
 - For Nvim 0.2 or newer: cursor styling is controlled by the `'guicursor'` option. To _disable_ cursor styling completely, put `set guicursor=` in your `init.vim`.
 - **Note:** The [non-standard](https://groups.google.com/d/msg/vim_dev/biVcXiYcLRw/zumrjo6gP4oJ) Vim terminal settings `t_SI` and `t_EI` are ignored, like all other `t_XX` settings. 
-- **Note:** Old versions of libvte (use by gnome-terminal, roxterm, terminator, ...) do not support cursor style control codes. [#2537](https://github.com/neovim/neovim/issues/2537)
+- **Note:** Old versions of libvte (gnome-terminal, roxterm, terminator, ...) do not support cursor style control codes. [#2537](https://github.com/neovim/neovim/issues/2537)
 
 ### Cursor shape doesn't change in tmux
 
