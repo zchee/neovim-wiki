@@ -34,25 +34,10 @@ See [this gist](https://gist.github.com/XVilka/8346728) for more information abo
 
 ### How can I change the cursor shape in the terminal?
 
-In `man nvim` see the note about `NVIM_TUI_ENABLE_CURSOR_SHAPE`.
-
-Since Nvim 0.2, mode-sensitive cursor-shape is enabled by default (if your terminal supports it).
-
-To _disable_ cursor-shape, put this in your `init.vim`:
-
-```vim
-:let $NVIM_TUI_ENABLE_CURSOR_SHAPE=0
-```
-
-To enable _blinking_ cursor-shape, put this in your `init.vim`:
-
-```vim
-:let $NVIM_TUI_ENABLE_CURSOR_SHAPE=2
-```
-
-The Vim terminal settings `t_SI` and `t_EI` (which are [non-standard](https://groups.google.com/d/msg/vim_dev/biVcXiYcLRw/zumrjo6gP4oJ)) are ignored, like all other `t_XX` settings. 
-
-Note about gnome-terminal 3.6.2 (libvte-2.90-9): [#2537](https://github.com/neovim/neovim/issues/2537)
+- For Nvim 0.1.7 or older: see the note about `NVIM_TUI_ENABLE_CURSOR_SHAPE` in `man nvim`.
+- For Nvim 0.2 or newer: cursor styling is controlled by the `'guicursor'` option. To _disable_ cursor styling completely, put `set guicursor=` in your `init.vim`.
+- **Note:** The [non-standard](https://groups.google.com/d/msg/vim_dev/biVcXiYcLRw/zumrjo6gP4oJ) Vim terminal settings `t_SI` and `t_EI` are ignored, like all other `t_XX` settings. 
+- **Note:** Old versions of libvte (use by gnome-terminal, roxterm, terminator, ...) do not support cursor style control codes. [#2537](https://github.com/neovim/neovim/issues/2537)
 
 ### Cursor shape doesn't change in tmux
 
