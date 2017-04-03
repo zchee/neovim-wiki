@@ -57,7 +57,7 @@ If you are working on a Neovim-related project, include (alphabetically) it belo
 
 The following plugins take advantage of specific Neovim features, e.g. `jobstart()`, `:terminal` or its remote plugin mechanism.
 
-- [acid.nvim](https://github.com/hkupty/acid.nvim): Async nrepl client for clojure development
+- [acid.nvim](https://github.com/clojure-vim/acid.nvim): Async nrepl client for clojure development
 - [alchemist.vim](https://github.com/slashmili/alchemist.vim)
 - [buildit.nvim](https://github.com/wbthomason/buildit.nvim)
 - [chromatica.nvim](https://github.com/arakashic/chromatica.nvim)
