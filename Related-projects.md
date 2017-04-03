@@ -57,7 +57,7 @@ If you are working on a Neovim-related project, include (alphabetically) it belo
 
 The following plugins take advantage of specific Neovim features, e.g. `jobstart()`, `:terminal` or its remote plugin mechanism.
 
-- [acid.nvim](https://github.com/hkupty/acid.nvim)
+- [acid.nvim](https://github.com/hkupty/acid.nvim): Async nrepl client for clojure development
 - [alchemist.vim](https://github.com/slashmili/alchemist.vim)
 - [buildit.nvim](https://github.com/wbthomason/buildit.nvim)
 - [chromatica.nvim](https://github.com/arakashic/chromatica.nvim)
@@ -69,7 +69,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [Floobits](https://github.com/Floobits/floobits-neovim)
 - [gen_tags.vim](https://github.com/jsfaint/gen_tags.vim)
 - [haskell-vim](https://github.com/neovimhaskell/haskell-vim)
-- [iron.nvim](https://github.com/hkupty/iron.nvim)
+- [iron.nvim](https://github.com/hkupty/iron.nvim): REPL management
 - [lldb.nvim](https://github.com/critiqjo/lldb.nvim)
 - [mirror.vim](https://github.com/zenbro/mirror.vim)
 - [Nvim-R](https://github.com/jalvesaq/Nvim-R)
@@ -87,7 +87,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [nvim-ipy](https://github.com/bfredl/nvim-ipy)
 - [nvim-miniyank](https://github.com/bfredl/nvim-miniyank)
 - [nvim-palette](https://github.com/teto/nvim-palette): Fuzzy search of settings
-- [nvimux](https://github.com/hkupty/nvimux)
+- [nvimux](https://github.com/hkupty/nvimux): TMUX bindings/neovim as multiplexer
 - [orchestra.nvim](https://github.com/timeyyy/orchestra.nvim)
 - [proteome](https://github.com/tek/proteome.nvim)
 - [termedit.nvim](https://github.com/rliang/termedit.nvim)
