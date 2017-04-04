@@ -9,7 +9,9 @@ If you don't have Neovim, see [Building Neovim](Building-Neovim) or [Installing 
 
 ### 2017/04/02
 
-Support for `$NVIM_TUI_ENABLE_CURSOR_SHAPE` was removed. Use the `'guicursor'` option to control cursor styling. See [FAQ](https://github.com/neovim/neovim/wiki/FAQ#how-can-i-change-the-cursor-shape-in-the-terminal).
+Support for `$NVIM_TUI_ENABLE_CURSOR_SHAPE` was removed. Use the `'guicursor'` option to control cursor styling. See [FAQ](https://github.com/neovim/neovim/wiki/FAQ#how-can-i-change-the-cursor-shape-in-the-terminal). To **disable** cursor style changes, set `'guicursor'` to empty:
+
+    :set guicursor=
 
 ### 2016/12/12
 
