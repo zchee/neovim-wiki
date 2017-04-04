@@ -54,7 +54,7 @@ See the [Install](https://github.com/neovim/neovim/wiki/Installing-Neovim#window
 
 ### What happened to --remote and friends?
 
-The code for that family of command-line arguments was removed. It may eventually be reimplemented using the Neovim API, but for now the script [`neovim-remote`](https://github.com/mhinz/neovim-remote) can be used instead.
+The code for that family of command-line arguments was removed. It may eventually be reimplemented using the Neovim API, but until then [`neovim-remote`](https://github.com/mhinz/neovim-remote) can be used instead.
 
 See [#1750](https://github.com/neovim/neovim/issues/1750) for more information.
 
