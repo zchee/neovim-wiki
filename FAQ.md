@@ -42,6 +42,7 @@ See [this gist](https://gist.github.com/XVilka/8346728) for more information abo
     ```
 - **Note:** The [non-standard](https://groups.google.com/d/msg/vim_dev/biVcXiYcLRw/zumrjo6gP4oJ) Vim terminal settings `t_SI` and `t_EI` are ignored, like all other `t_XX` settings. 
 - **Note:** Old versions of libvte (gnome-terminal, roxterm, terminator, ...) do not support cursor style control codes. [#2537](https://github.com/neovim/neovim/issues/2537)
+- **Note:** some plugins (like ctrlp) override your `guicursor` setting even when it is empty. To fully disable cursor updates, you can `export VTE_VERSION="100"` (`guicursor` setting is then ignored in the TUI).
 
 ### Cursor shape doesn't change in tmux
 
