@@ -61,8 +61,8 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [alchemist.vim](https://github.com/slashmili/alchemist.vim)
 - [buildit.nvim](https://github.com/wbthomason/buildit.nvim)
 - [chromatica.nvim](https://github.com/arakashic/chromatica.nvim)
-- [dein.vim](https://github.com/Shougo/dein.vim)
-- [denite.nvim](https://github.com/Shougo/denite.nvim): Plugin manager
+- [dein.vim](https://github.com/Shougo/dein.vim): Plugin manager
+- [denite.nvim](https://github.com/Shougo/denite.nvim)
 - [deoplete.nvim](https://github.com/Shougo/deoplete.nvim)
 - [fakeclip-neovim](https://github.com/cazador481/fakeclip.neovim)
 - [far.vim](https://github.com/brooth/far.vim): Search & Replace
