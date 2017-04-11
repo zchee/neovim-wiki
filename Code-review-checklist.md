@@ -4,19 +4,27 @@ Many items were [taken from here][code-review-checklist] [and here][code-review-
 
 - [ ] Are CI builds passing? If no, why?
 
+<br>
+
 - [ ] Is the code easily understood?
 - [ ] Does the code work? Does it perform its intended function, the logic is correct, etc?
 - [ ] Does the error handling work?
 - [ ] Is memory usage acceptable, even with large inputs?
 
+<br>
+
 - [ ] Is code covered by functional or unit tests?
 - [ ] Are error paths covered by functional or unit tests? All errors which are relatively easy to check must be checked: error conditions like “open() failed after stat() was successfull” or “array size greater then INT_MAX” may be ignored for being just as unlikely as uneasy to test, but otherwise having bugs in code which does error handling is way too common to be ignored.
 - [ ] For new code, are unit tests written where needed?
+
+<br>
 
 - [ ] Are invalid parameter values handled where needed?
 - [ ] Can any global/static variables be replaced?
 - [ ] Are variables/functions named intuitively?
 - [ ] Can any function attributes be used?
+
+<br>
 
 - [ ] Is there any redundant or duplicate code?
 - [ ] Is the code modular enough?
@@ -25,11 +33,15 @@ Many items were [taken from here][code-review-checklist] [and here][code-review-
 - [ ] Can any logging or debugging code be removed?
 - [ ] Are there any unneeded assert statements?
 
+<br>
+
 - [ ] Does the code conform to the [style guide][style-guide]?
 - [ ] Optimization that makes code harder to read should only be implemented if a
   profiler or other tool has indicated that the routine stands to gain from
   optimization. These kinds of optimizations should be well-documented and
   code that performs the same task simply should be preserved somewhere.
+
+<br>
 
 - [ ] Are return values being checked?
 - [ ] Are there any use after frees?
