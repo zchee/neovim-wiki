@@ -2,34 +2,41 @@ Many items were [taken from here][code-review-checklist] [and here][code-review-
 
 #### Code
 
-- [ ] Is the Travis build passing?
-- [ ] Does the code conform to the [style guide][style-guide]?
-- [ ] Does the code work? Does it perform its intended function, the logic is
-  correct, etc.
+- [ ] Are CI builds passing? If no, why?
+
 - [ ] Is the code easily understood?
-- [ ] Is there any redundant or duplicate code?
-- [ ] Are there any unused variables?
-- [ ] Is the code as modular as possible?
-- [ ] Can any global/static variables be replaced?
-- [ ] Can any function attributes be used?
-- [ ] Are variables/functions named intuitively?
-- [ ] Can any of the code be replaced with library functions?
-- [ ] Can any logging or debugging code be removed?
-- [ ] Do loops have a set length and correct termination conditions?
-- [ ] Are return values being checked?
+- [ ] Does the code work? Does it perform its intended function, the logic is correct, etc?
+- [ ] Does the error handling work?
+- [ ] Is memory usage acceptable, even with large inputs?
+
+- [ ] Is code covered by functional or unit tests?
+- [ ] Are error paths covered by functional or unit tests? All errors which are relatively easy to check must be checked: error conditions like “open() failed after stat() was successfull” or “array size greater then INT_MAX” may be ignored for being just as unlikely as uneasy to test, but otherwise having bugs in code which does error handling is way too common to be ignored.
+- [ ] For new code, are unit tests written where needed?
+
 - [ ] Are invalid parameter values handled where needed?
+- [ ] Can any global/static variables be replaced?
+- [ ] Are variables/functions named intuitively?
+- [ ] Can any function attributes be used?
+
+- [ ] Is there any redundant or duplicate code?
+- [ ] Is the code modular enough?
+- [ ] Can any of the code be replaced with library functions?
+- [ ] Do loops have a set length and correct termination conditions?
+- [ ] Can any logging or debugging code be removed?
+- [ ] Are there any unneeded assert statements?
+
+- [ ] Does the code conform to the [style guide][style-guide]?
+- [ ] Optimization that makes code harder to read should only be implemented if a
+  profiler or other tool has indicated that the routine stands to gain from
+  optimization. These kinds of optimizations should be well-documented and
+  code that performs the same task simply should be preserved somewhere.
+
+- [ ] Are return values being checked?
 - [ ] Are there any use after frees?
 - [ ] Are there any resource leaks? Memory leaks, unclosed sockets, etc.
 - [ ] Are there any null pointer dereferences?
 - [ ] Are any uninitialized variables used?
 - [ ] Are there any cases of possible arithmetic overflow?
-- [ ] Are there any unneeded assert statements?
-- [ ] Is memory usage acceptable, even with large inputs?
-- [ ] Optimization that makes code harder to read should only be implemented if a
-  profiler or other tool has indicated that the routine stands to gain from
-  optimization. These kinds of optimizations should be well-documented and
-  code that performs the same task simply should be preserved somewhere.
-- [ ] For new code, are unit tests written where needed?
 
 #### Documentation
 
