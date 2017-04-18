@@ -58,27 +58,27 @@ If you are working on a Neovim-related project, include (alphabetically) it belo
 The following plugins take advantage of specific Neovim features, e.g. `jobstart()`, `:terminal` or its remote plugin mechanism.
 
 - [acid.nvim](https://github.com/clojure-vim/acid.nvim): Async nrepl client for clojure development
-- [alchemist.vim](https://github.com/slashmili/alchemist.vim)
-- [buildit.nvim](https://github.com/wbthomason/buildit.nvim)
-- [chromatica.nvim](https://github.com/arakashic/chromatica.nvim)
+- [alchemist.vim](https://github.com/slashmili/alchemist.vim): Elixir Integration
+- [buildit.nvim](https://github.com/wbthomason/buildit.nvim): A better async project builder
+- [chromatica.nvim](https://github.com/arakashic/chromatica.nvim): Clang based syntax highlighting
 - [dein.vim](https://github.com/Shougo/dein.vim): Plugin manager
-- [denite.nvim](https://github.com/Shougo/denite.nvim)
-- [deoplete.nvim](https://github.com/Shougo/deoplete.nvim)
-- [fakeclip-neovim](https://github.com/cazador481/fakeclip.neovim)
+- [denite.nvim](https://github.com/Shougo/denite.nvim): A dark powered plugin for Neovim/Vim to unite all interfaces
+- [deoplete.nvim](https://github.com/Shougo/deoplete.nvim): Dark powered asynchronous completion framework
+- [fakeclip-neovim](https://github.com/cazador481/fakeclip.neovim): Clipboard providor with support for X and tmux
 - [far.vim](https://github.com/brooth/far.vim): Search & Replace
-- [Floobits](https://github.com/Floobits/floobits-neovim)
-- [gen_tags.vim](https://github.com/jsfaint/gen_tags.vim)
-- [haskell-vim](https://github.com/neovimhaskell/haskell-vim)
+- [Floobits](https://github.com/Floobits/floobits-neovim): Floobits plugin
+- [gen_tags.vim](https://github.com/jsfaint/gen_tags.vim): Async plugin for vim and neovim to ease the use of ctags/gtags
+- [haskell-vim](https://github.com/neovimhaskell/haskell-vim): Custom Haskell Vimscripts
 - [iron.nvim](https://github.com/hkupty/iron.nvim): REPL management
-- [lldb.nvim](https://github.com/critiqjo/lldb.nvim)
-- [mirror.vim](https://github.com/zenbro/mirror.vim)
-- [Nvim-R](https://github.com/jalvesaq/Nvim-R)
-- [neomake](https://github.com/benekastah/neomake)
-- [neotags.nvim](https://github.com/c0r73x/neotags.nvim)
-- [neoterm](https://github.com/kassio/neoterm)
-- [neotex](https://github.com/donRaphaco/neotex)
-- [neovim-hackernews](https://github.com/dpzmick/neovim-hackernews)
-- [neovim-ranger](https://github.com/airodactyl/neovim-ranger)
+- [lldb.nvim](https://github.com/critiqjo/lldb.nvim): Debugger integration with a focus on ease-of-use
+- [mirror.vim](https://github.com/zenbro/mirror.vim): Efficient way to edit remote files on multiple environments
+- [Nvim-R](https://github.com/jalvesaq/Nvim-R): plugin to work with R
+- [neomake](https://github.com/benekastah/neomake): Asynchronous linting and make framework
+- [neotags.nvim](https://github.com/c0r73x/neotags.nvim): Tag highlight
+- [neoterm](https://github.com/kassio/neoterm): Wrapper of some neovim's :terminal functions
+- [neotex](https://github.com/donRaphaco/neotex): latex live preview
+- [neovim-hackernews](https://github.com/dpzmick/neovim-hackernews): Display HN stories inside neovim
+- [neovim-ranger](https://github.com/airodactyl/neovim-ranger): A file manager
 - [neovim-vifm](https://github.com/vifm/neovim-vifm)
 - [nlanguagetool.nvim](https://github.com/fmoralesc/nlanguagetool.nvim)
 - [nvim-completion-manager](https://github.com/roxma/nvim-completion-manager)
