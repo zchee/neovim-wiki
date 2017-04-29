@@ -1,3 +1,8 @@
+## Level Up with tweekmonsters [nvimdev.nvim plugin](https://github.com/tweekmonster/nvimdev.nvim)
+- Get Neomake working with lua and c while working on the neovim codebase
+- tags and cscope.out
+- Thanks Tweekmonster!
+
 ## Navigating the code
 
 - Browse **[Neovim on SourceGraph](https://sourcegraph.com/github.com/neovim/neovim)**
