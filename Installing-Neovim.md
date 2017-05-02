@@ -10,7 +10,7 @@ Packages are listed below. (You can also [build Neovim from source](#install-fro
 
 ## Windows
 
-Neovim on Windows includes a GUI front-end in the pre-built package.
+The Neovim package for Windows includes the Neovim-Qt GUI.
 
 1. Choose a package:
     - **Release (v0.2):** [nvim-win32.zip](https://github.com/neovim/neovim/releases/download/v0.2.0/nvim-win32.zip) or [nvim-win64.zip](https://github.com/neovim/neovim/releases/download/v0.2.0/nvim-win64.zip)
@@ -29,10 +29,8 @@ Neovim on Windows includes a GUI front-end in the pre-built package.
     let g:python3_host_prog='C:/Users/foo/Envs/neovim3/Scripts/python.exe'
     let g:python2_host_prog='C:/Users/foo/Envs/neovim/Scripts/python.exe'
     ```
-
-### init.vim ("vimrc") file in Windows
-
-If you already have Vim installed you can copy `%userprofile%\_vimrc` to `%userprofile%\AppData\Local\nvim\init.vim` to get the same settings as you already use in Vim.
+    - Run `:CheckHealth` and read `:help provider-python`.
+- **init.vim ("vimrc"):** If you already have Vim installed you can copy `%userprofile%\_vimrc` to `%userprofile%\AppData\Local\nvim\init.vim` to use your Vim config with Neovim.
 
 
 ## macOS / OS X
