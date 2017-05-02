@@ -16,8 +16,8 @@ If you are working on a Neovim-related project, include (alphabetically) it belo
 | GTK/Python UI    | [rliang/nvim-pygtk3](https://github.com/rliang/nvim-pygtk3)             |
 | GTK/Rust UI      | [daa84/neovim-gtk](https://github.com/daa84/neovim-gtk)                 |
 | Konsole          | [harish2704/neovim-konsole](https://github.com/harish2704/neovim-konsole) |
-| Mac OS X         | [qvacua/vimr](https://github.com/qvacua/vimr)                           |
-| Mac OS X         | [rogual/neovim-dot-app](https://github.com/rogual/neovim-dot-app)       |
+| macOS            | [qvacua/vimr](https://github.com/qvacua/vimr)                           |
+| macOS            | [rogual/neovim-dot-app](https://github.com/rogual/neovim-dot-app)       |
 | Qt 5             | [equalsraf/neovim-qt](https://github.com/equalsraf/neovim-qt)           |
 | Rust IDE         | [oakes/SolidOak](https://github.com/oakes/SolidOak)                     |
 | Sublime Text     | [lunixbochs/actualvim](https://github.com/lunixbochs/actualvim)         |
