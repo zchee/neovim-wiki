@@ -8,6 +8,33 @@
 
 Packages are listed below. (You can also [build Neovim from source](#install-from-source).)
 
+## Windows
+
+Neovim on Windows includes a GUI front-end in the pre-built package.
+
+1. Choose a package:
+    - **Release (v0.2):** [nvim-win32.zip](https://github.com/neovim/neovim/releases/download/v0.2.0/nvim-win32.zip) or [nvim-win64.zip](https://github.com/neovim/neovim/releases/download/v0.2.0/nvim-win64.zip)
+    - **Development (pre-release):** [win32 build](https://ci.appveyor.com/api/projects/neovim/neovim/artifacts/build/Neovim.zip?branch=master&job=Configuration%3A%20MINGW_32) or [win64 build](https://ci.appveyor.com/api/projects/neovim/neovim/artifacts/build/Neovim.zip?branch=master&job=Configuration%3A%20MINGW_64)
+2. Unzip the package. Any location is fine, administrator privileges are _not_ required.
+    - `$VIMRUNTIME` will be set to that location automatically.
+3. Double-click `nvim-qt.exe`.
+
+**Optional** steps:
+
+- Add the `bin` folder (e.g. `C:\Program Files\nvim\bin`) to your PATH.
+    - This makes it easy to run `nvim` and `nvim-qt` from anywhere.
+- If you are missing `VCRUNTIME140.dll`, install the [Visual Studio 2015 C++ redistributable](https://support.microsoft.com/en-us/kb/2977003) (choose x86_64 or x86 depending on your system).
+- For Python 2/3 plugins, you need the `neovim` Python module. "Virtual envs" are recommended. After activating the virtual env, enter `pip install neovim` (in *both*). Edit your `init.vim` so that it contains the path to the env's Python executable:
+    ```vim
+    let g:python3_host_prog='C:/Users/foo/Envs/neovim3/Scripts/python.exe'
+    let g:python2_host_prog='C:/Users/foo/Envs/neovim/Scripts/python.exe'
+    ```
+
+### init.vim ("vimrc") file in Windows
+
+If you already have Vim installed you can copy `%userprofile%\_vimrc` to `%userprofile%\AppData\Local\nvim\init.vim` to get the same settings as you already use in Vim.
+
+
 ## macOS / OS X
 
 ### Pre-built archives
@@ -213,30 +240,6 @@ Neovim can be installed using the default package manager in Solus (eopkg):
 
 [Termux on the Google Play store](https://play.google.com/store/apps/details?id=com.termux) offers a Neovim package.
 
-## Windows
-
-Neovim on Windows requires `nvim.exe` and a front-end such as Neovim-Qt. Both are included in the pre-built package.
-
-1. Download the latest [32bit build](https://ci.appveyor.com/api/projects/neovim/neovim/artifacts/build/Neovim.zip?branch=master&job=Configuration%3A%20MINGW_32) or [64bit build](https://ci.appveyor.com/api/projects/neovim/neovim/artifacts/build/Neovim.zip?branch=master&job=Configuration%3A%20MINGW_64)
-2. Unzip `Neovim.zip`. Any location is fine, administrator privileges are _not_ required.
-    - `$VIMRUNTIME` will be set to that location automatically.
-3. _Optional:_ Add the `bin` folder (e.g. `C:\Program Files\nvim\bin`) to your PATH.
-    - This makes it easy to run `nvim` and `nvim-qt` from anywhere.
-4. Double-click `nvim-qt.exe`.
-5. _Optional:_ If you are missing `VCRUNTIME140.dll`, install the [Visual Studio 2015 C++ redistributable](https://support.microsoft.com/en-us/kb/2977003) (choose x86_64 or x86 depending on your system).
-6. _Optional:_ If you want Python 2/3 support, you need to install the `neovim` Python library. 
-   The preferred way is to do that in virtual environments. After activation type `pip install neovim`
-   (in *both*). Edit the `init.vim` so that it contains the path to the Python executable in the virtual env, 
-   such as
-    - `let g:python3_host_prog='C:/Users/user/Envs/neovim3/Scripts/python.exe'`
-    - `let g:python2_host_prog='C:/Users/user/Envs/neovim/Scripts/python.exe'`
-   Note that the two paths are different and point to the `python.exe` of the virtual environment of your choice.
-
-    
-
-### init.vim ("vimrc") file in Windows
-
-If you already have Vim installed you can copy `%userprofile%\_vimrc` to `%userprofile%\AppData\Local\nvim\init.vim` to get the same settings as you already use in Vim.
 
 # Install from source
 
