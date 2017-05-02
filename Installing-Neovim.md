@@ -224,6 +224,15 @@ Neovim on Windows requires `nvim.exe` and a front-end such as Neovim-Qt. Both ar
     - This makes it easy to run `nvim` and `nvim-qt` from anywhere.
 4. Double-click `nvim-qt.exe`.
 5. _Optional:_ If you are missing `VCRUNTIME140.dll`, install the [Visual Studio 2015 C++ redistributable](https://support.microsoft.com/en-us/kb/2977003) (choose x86_64 or x86 depending on your system).
+6. _Optional:_ If you want Python 2/3 support, you need to install the `neovim` Python library. 
+   The preferred way is to do that in virtual environments. After activation type `pip install neovim`
+   (in *both*). Edit the `init.vim` so that it contains the path to the Python executable in the virtual env, 
+   such as
+    - `let g:python3_host_prog='C:/Users/user/Envs/neovim3/Scripts/python.exe'`
+    - `let g:python2_host_prog='C:/Users/user/Envs/neovim/Scripts/python.exe'`
+   Note that the two paths are different and point to the `python.exe` of the virtual environment of your choice.
+
+    
 
 ### init.vim ("vimrc") file in Windows
 
