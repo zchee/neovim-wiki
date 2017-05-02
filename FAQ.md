@@ -40,6 +40,10 @@ See [this gist](https://gist.github.com/XVilka/8346728) for more information abo
     ```
     :set guicursor=n-v-c:block-Cursor/lCursor-blinkon0,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
     ```
+- **Note:** If you don't want the cursor to blink use `blinkon1` instead of `blinkon0` ex.
+  ```
+  :set guicursor=n-v-c-sm:block-blinkon1,i-ci-ve:ver25-blinkon1,r-cr-o:hor20-blinkon1
+  ```
 - **Note:** The [non-standard](https://groups.google.com/d/msg/vim_dev/biVcXiYcLRw/zumrjo6gP4oJ) Vim terminal settings `t_SI` and `t_EI` are ignored, like all other `t_XX` settings. 
 - **Note:** Old versions of libvte (gnome-terminal, roxterm, terminator, ...) do not support cursor style control codes. [#2537](https://github.com/neovim/neovim/issues/2537)
 - **Note:** some plugins (like ctrlp) override your `guicursor` setting even when it is empty. To fully disable cursor updates, you can `export VTE_VERSION="100"` (`guicursor` setting is then ignored in the TUI).
