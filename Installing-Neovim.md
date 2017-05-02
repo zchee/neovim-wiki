@@ -54,7 +54,40 @@ See the [homebrew-neovim README](https://github.com/neovim/homebrew-neovim#insta
     sudo port selfupdate
     sudo port install neovim
 
-## Debian
+## Linux
+
+### Arch Linux
+
+Neovim can be installed from the community repository:
+
+    sudo pacman -S neovim
+
+Alternatively, Neovim can be also installed using the PKGBUILD [`neovim-git`](https://aur.archlinux.org/packages/neovim-git), available on the [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository).
+
+The Python modules are available from the community repository:
+
+    sudo pacman -S python2-neovim python-neovim
+
+The Ruby module (currently only supported in `neovim-git`) is available from the AUR as [`ruby-neovim`](https://aur.archlinux.org/packages/ruby-neovim).
+
+### CentOS 7 / RHEL 7
+ 
+http://copr.fedoraproject.org/coprs/dperson/neovim/
+
+    yum -y install epel-release
+    curl -o /etc/yum.repos.d/dperson-neovim-epel-7.repo https://copr.fedorainfracloud.org/coprs/dperson/neovim/repo/epel-7/dperson-neovim-epel-7.repo 
+    yum -y install neovim
+
+It's built using the [Copr](https://copr.fedoraproject.org/) automated build system, which is unsupported. There's no guarantee of how long the package will be available.
+
+### CRUX
+
+A CRUX port is available under [`6c37/neovim`](https://github.com/6c37/crux-ports), along with ports for other dependencies of Neovim.
+
+For instructions on how to install the Python modules, see [`:help provider-python`].
+
+
+### Debian
 
 Neovim is in [Debian](https://packages.debian.org/search?keywords=neovim).
 
@@ -65,7 +98,82 @@ Python (`:python`) support is also installable via the Debian package manager.
     sudo apt-get install python-neovim
     sudo apt-get install python3-neovim
 
-## Ubuntu
+### Exherbo Linux
+
+Exhereses for scm and released versions are currently available in repository `::medvid`. Python client (with GTK+ GUI included) and Qt5 GUI are also available as suggestions:
+
+    cave resolve app-editors/neovim --take dev-python/neovim-python --take app-editors/neovim-qt
+
+### Fedora
+
+Neovim is in [Fedora](https://admin.fedoraproject.org/pkgdb/package/rpms/neovim/) starting with Fedora 25:
+
+    dnf -y install neovim
+    dnf -y install python2-neovim python3-neovim
+
+*Fedora 24 and older*
+
+    dnf -y copr enable dperson/neovim
+    dnf -y install neovim
+    dnf -y install python3-neovim python3-neovim-gui
+
+### Gentoo Linux
+
+An ebuild is available in Gentoo's official portage repository:
+
+    emerge -a app-editors/neovim
+
+### Nix / NixOS
+
+Neovim can be installed with:
+
+    nix-env -iA nixpkgs.neovim
+
+To install the Python modules:
+
+    nix-env -iA nixpkgs.python35Packages.neovim
+
+Replace python35 with python27 for the python 2 packages.
+
+### OpenSUSE
+
+Neovim can be installed with:
+
+    sudo zypper in Neovim
+
+To install the Python modules:
+    
+    sudo zypper in python3-neovim
+    sudo zypper in python-neovim
+
+### PLD Linux
+
+Neovim is in [PLD Linux](https://github.com/pld-linux/neovim):
+
+    poldek -u neovim
+    poldek -u python-neovim python3-neovim
+    poldek -u python-neovim-gui python3-neovim-gui
+
+### Slackware
+
+See [neovim on SlackBuilds](http://slackbuilds.org/apps/neovim/).
+
+For instructions on how to install the Python modules, see [`:help provider-python`].
+
+
+### Source Mage
+
+Neovim can be installed using the Sorcery package manager:
+
+    cast neovim
+
+### Solus
+
+Neovim can be installed using the default package manager in Solus (eopkg):
+
+    sudo eopkg install neovim
+
+### Ubuntu
 
 Neovim has been added to a "Personal Package Archive" (PPA). This allows you to install it with `apt-get` on Ubuntu [12.04 and later](https://wiki.ubuntu.com/Releases). Choose **stable** or **unstable**:
 
@@ -111,102 +219,15 @@ If you want to use Neovim for some (or all) of the editor alternatives, use the 
 
 Note, however, that special interfaces, like `view` for `nvim -R`, are not supported.  (See [#1646](https://github.com/neovim/neovim/issues/1646) and [#2008](https://github.com/neovim/neovim/pull/2008).)
 
+### Void-Linux
 
-## Arch Linux
+Neovim can be installed using the xbps package manager
 
-Neovim can be installed from the community repository:
+    sudo xbps-install -S neovim
 
-    sudo pacman -S neovim
+## BSD
 
-Alternatively, Neovim can be also installed using the PKGBUILD [`neovim-git`](https://aur.archlinux.org/packages/neovim-git), available on the [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository).
-
-The Python modules are available from the community repository:
-
-    sudo pacman -S python2-neovim python-neovim
-
-The Ruby module (currently only supported in `neovim-git`) is available from the AUR as [`ruby-neovim`](https://aur.archlinux.org/packages/ruby-neovim).
-
-
-## Gentoo Linux
-
-An ebuild is available in Gentoo's official portage repository:
-
-    emerge -a app-editors/neovim
-
-## Exherbo Linux
-
-Exhereses for scm and released versions are currently available in repository `::medvid`. Python client (with GTK+ GUI included) and Qt5 GUI are also available as suggestions:
-
-    cave resolve app-editors/neovim --take dev-python/neovim-python --take app-editors/neovim-qt
-
-## Fedora
-
-Neovim is in [Fedora](https://admin.fedoraproject.org/pkgdb/package/rpms/neovim/) starting with Fedora 25:
-
-    dnf -y install neovim
-    dnf -y install python2-neovim python3-neovim
-
-### Fedora 24 and older
-
-    dnf -y copr enable dperson/neovim
-    dnf -y install neovim
-    dnf -y install python3-neovim python3-neovim-gui
-
-## CentOS 7 / RHEL 7
- 
-http://copr.fedoraproject.org/coprs/dperson/neovim/
-
-    yum -y install epel-release
-    curl -o /etc/yum.repos.d/dperson-neovim-epel-7.repo https://copr.fedorainfracloud.org/coprs/dperson/neovim/repo/epel-7/dperson-neovim-epel-7.repo 
-    yum -y install neovim
-
-It's built using the [Copr](https://copr.fedoraproject.org/) automated build system, which is unsupported. There's no guarantee of how long the package will be available.
-
-## PLD Linux
-
-Neovim is in [PLD Linux](https://github.com/pld-linux/neovim):
-
-    poldek -u neovim
-    poldek -u python-neovim python3-neovim
-    poldek -u python-neovim-gui python3-neovim-gui
-
-## Slackware
-
-See [neovim on SlackBuilds](http://slackbuilds.org/apps/neovim/).
-
-For instructions on how to install the Python modules, see [`:help provider-python`].
-
-## Nix
-
-Neovim can be installed with:
-
-    nix-env -iA nixpkgs.neovim
-
-To install the Python modules:
-
-    nix-env -iA nixpkgs.python35Packages.neovim
-
-Replace python35 with python27 for the python 2 packages.
-
-## NixOS
-
-Neovim can be installed with:
-
-    nix-env -iA nixos.neovim
-
-To install the Python modules:
-
-    nix-env -iA nixos.python35Packages.neovim
-
-Replace python35 with python27 for the python 2 packages.
-
-## CRUX
-
-A CRUX port is available under [`6c37/neovim`](https://github.com/6c37/crux-ports), along with ports for other dependencies of Neovim.
-
-For instructions on how to install the Python modules, see [`:help provider-python`].
-
-## FreeBSD
+### FreeBSD
 
 Neovim can be installed using [`pkg(8)`](https://www.freebsd.org/cgi/man.cgi?query=pkg&sektion=8&apropos=0&manpath=FreeBSD+10.2-RELEASE):
 
@@ -216,30 +237,13 @@ or [from the ports tree](https://www.freshports.org/editors/neovim/):
 
     cd /usr/ports/editors/neovim/ && make install clean
 
-## Void-Linux
-
-Neovim can be installed using the xbps package manager
-
-    sudo xbps-install -S neovim
-
-## Source Mage
-
-Neovim can be installed using the Sorcery package manager:
-
-    cast neovim
-
-## Solus
-
-Neovim can be installed using the default package manager in Solus (eopkg):
-
-    sudo eopkg install neovim
 
 ## Android
 
 [Termux on the Google Play store](https://play.google.com/store/apps/details?id=com.termux) offers a Neovim package.
 
 
-# Install from source
+## Install from source
 
 If a package is not provided for your platform, see [Building-Neovim](https://github.com/neovim/neovim/wiki/Building-Neovim).  Once you've built Neovim, install it with the following commands:
 
@@ -255,7 +259,7 @@ For Unix-like systems this installs Neovim to `/usr/local`, while for Windows to
 
 Note that the `rm -r build/` step above is needed if you've built Neovim before, as the install location will be the same as before since CMake caches build information.
 
-## Uninstall
+### Uninstall
 
 To uninstall Neovim installed with `make install`:
 
