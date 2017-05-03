@@ -61,6 +61,12 @@ See [#3165](https://github.com/neovim/neovim/pull/3165) for discussion.
 Yes, starting with the [`0.2` release](https://github.com/neovim/neovim/milestones/0.2).
 See the [Install](https://github.com/neovim/neovim/wiki/Installing-Neovim#windows) page. 
 
+### How to use the Windows clipboard from WSL?
+
+    sudo ln -s /mnt/d/Neovim/bin/win32yank.exe /usr/bin/win32yank
+
+See [#6227](https://github.com/neovim/neovim/issues/6227).
+
 ### What happened to --remote and friends?
 
 The code for that family of command-line arguments was removed. It may eventually be reimplemented using the Neovim API, but until then [`neovim-remote`](https://github.com/mhinz/neovim-remote) can be used instead.
