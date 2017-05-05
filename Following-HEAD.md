@@ -9,7 +9,9 @@ If you don't have Neovim, see [Building Neovim](Building-Neovim) or [Installing 
 
 ### 2017/04/03
 
-Default 'mouse' setting changed from `mouse=a` to `mouse=` (empty). This will change again in the future after `mouse=a` is improved to make 80% of users happy.
+Default 'mouse' setting changed from `mouse=a` to `mouse=` (empty). This will change again in the future after `mouse=a` is improved to make 80% of users happy. To continue using mouse, add this to your init.vim:
+
+    set mouse=a
 
 ### 2017/04/02
 
