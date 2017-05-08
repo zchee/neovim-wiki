@@ -84,6 +84,13 @@ See [#1750](https://github.com/neovim/neovim/issues/1750) for more information.
 
 Make sure that [Neovim can find its runtime](#neovim-cant-find-its-runtime).
 
+### Copying to X11 primary selection with the mouse does't work
+
+`clipboard=autoselect` is not implemented yet. As a workaround, use the mapping
+
+    vnoremap <LeftRelease> "*ygv
+
+
 ### My CTRL-H mapping doesn't work
 
 This was fixed in Neovim **0.2**.
