@@ -31,7 +31,7 @@ The Neovim package for Windows includes the Neovim-Qt GUI.
 - For Python 2/3 plugins, you need the `neovim` Python module. "Virtual envs" are recommended. After activating the virtual env, enter `pip install neovim` (in *both*). Edit your `init.vim` so that it contains the path to the env's Python executable:
     ```vim
     let g:python3_host_prog='C:/Users/foo/Envs/neovim3/Scripts/python.exe'
-    let g:python2_host_prog='C:/Users/foo/Envs/neovim/Scripts/python.exe'
+    let g:python_host_prog='C:/Users/foo/Envs/neovim/Scripts/python.exe'
     ```
     - Run `:CheckHealth` and read `:help provider-python`.
 - **init.vim ("vimrc"):** If you already have Vim installed you can copy `%userprofile%\_vimrc` to `%userprofile%\AppData\Local\nvim\init.vim` to use your Vim config with Neovim.
