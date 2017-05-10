@@ -18,7 +18,7 @@
 
 1. Verify that you have the [build prerequisites](#build-prerequisites) installed.
 2. Clone [`neovim/neovim`](https://github.com/neovim/neovim).
-    - If you want the **stable release**: `git checkout v0.1.7` (or the most-recent tag)
+    - If you want the **stable release**: `git checkout v0.2.0` (or the most-recent tag)
 3. Build Neovim by running `make`. (On BSD systems use `gmake` / GNU Make.)
     - Set `CMAKE_INSTALL_PREFIX` if you want to **install to a custom location**. See [Installing Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#install-from-source).
 
