@@ -12,6 +12,7 @@ If you are working on a Neovim-related project, include (alphabetically) it belo
 | Electron UI      | [rhysd/NyaoVim](https://github.com/rhysd/NyaoVim)                       |
 | Electron UI      | [extr0py/oni](https://github.com/extr0py/oni)                           |
 | gnome-terminal   | [fmoralesc/neovim-gnome-terminal-wrapper](https://github.com/fmoralesc/neovim-gnome-terminal-wrapper) |
+| Go/Libui         | [dzhou121/gonvim](https://github.com/dzhou121/gonvim)                   |
 | GTK/Python UI    | [neovim/python-gui](https://github.com/neovim/python-gui)               |
 | GTK/Python UI    | [rliang/nvim-pygtk3](https://github.com/rliang/nvim-pygtk3)             |
 | GTK/Rust UI      | [daa84/neovim-gtk](https://github.com/daa84/neovim-gtk)                 |
