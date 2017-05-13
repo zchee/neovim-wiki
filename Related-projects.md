@@ -85,8 +85,8 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [nvim-completion-manager](https://github.com/roxma/nvim-completion-manager)
 - [nvim-editcommand](https://github.com/brettanomyces/nvim-editcommand)
 - [nvim-terminus](https://github.com/brettanomyces/nvim-terminus)
-- [nvim-ipy](https://github.com/bfredl/nvim-ipy)
-- [nvim-miniyank](https://github.com/bfredl/nvim-miniyank)
+- [nvim-ipy](https://github.com/bfredl/nvim-ipy): IPython/Jupyter integration
+- [nvim-miniyank](https://github.com/bfredl/nvim-miniyank): Simple yankring (shared across instances)
 - [nvim-palette](https://github.com/teto/nvim-palette): Fuzzy search of settings
 - [nvimux](https://github.com/hkupty/nvimux): TMUX bindings/neovim as multiplexer
 - [orchestra.nvim](https://github.com/timeyyy/orchestra.nvim)
