@@ -7,6 +7,10 @@ If you don't have Neovim, see [Building Neovim](Building-Neovim) or [Installing 
 
 ------------
 
+### 2017/05/08
+
+Lua support ([#4411][4411]) has been merged.  This means that Lua is always available for scripting, but also means that nvim now requires either Lua or LuaJIT at runtime.  LuaJIT is the default, but one can build against Lua instead by passing `-DPREFER_LUA=ON` to cmake.
+
 ### 2017/04/03
 
 Default 'mouse' setting changed from `mouse=a` to `mouse=` (empty). This will change again in the future after `mouse=a` is improved to make 80% of users happy. To continue using mouse, add this to your init.vim:
@@ -226,3 +230,4 @@ See [#3003][3003] and [#3007][3007] for more information.
 [3003]: https://github.com/neovim/neovim/issues/3003
 [3007]: https://github.com/neovim/neovim/pull/3007
 [5529]: https://github.com/neovim/neovim/pull/5529
+[4411]: https://github.com/neovim/neovim/pull/4411
