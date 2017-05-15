@@ -4,7 +4,13 @@
 
 ### Something broke after upgrading Neovim?
 
-See [Following-HEAD](https://github.com/neovim/neovim/wiki/Following-HEAD), which documents breaking changes.
+Check [Following-HEAD](https://github.com/neovim/neovim/wiki/Following-HEAD) for a list of breaking changes.
+
+### How stable is the development (pre-release) version?
+
+The [unstable (pre-release)](https://github.com/neovim/neovim/releases/tag/nightly) version of Neovim ("HEAD", i.e. the `master` branch) is used to aggressively stage new features and changes. It's usually stable, but will occasionally break your workflow. We depend on HEAD users to report "blind spots" that were not caught by automated tests.
+
+Use the [stable (release)](https://github.com/neovim/neovim/releases/latest) version for a more predictable experience.
 
 ### Where should I put my config (`vimrc`)?
 
