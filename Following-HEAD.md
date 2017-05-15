@@ -7,6 +7,10 @@ If you don't have Neovim, see [Building Neovim](Building-Neovim) or [Installing 
 
 ------------
 
+### 2017/05/15
+
+The `highlight` option is now read-only ([#6737](https://github.com/neovim/neovim/pull/6737)), so that the built-in highlight groups (and their behaviors) are predictable and can be used as keys for features like `winhighlight`. 
+
 ### 2017/05/08
 
 Lua support ([#4411][4411]) has been merged.  This means that Lua is always available for scripting, but also means that nvim now requires either Lua or LuaJIT at runtime.  LuaJIT is the default, but one can build against Lua instead by passing `-DPREFER_LUA=ON` to cmake.
