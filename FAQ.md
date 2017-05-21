@@ -26,7 +26,7 @@ Yes, starting with Neovim 0.1.5 [PR #4980](https://github.com/neovim/neovim/pull
 
 ### Can I use Lua-based Vim plugins (e.g. [neocomplete](https://github.com/Shougo/neocomplete.vim))?
 
-Yes, starting with Neovim 0.2 [PR #4411](https://github.com/neovim/neovim/pull/4411) Lua is **built-in**.
+No. Starting with Neovim 0.2 [PR #4411](https://github.com/neovim/neovim/pull/4411) Lua is built-in, but the legacy Vim `if_lua` interface is not supported.
 
 ### How can I use true colors in the terminal?
 
