@@ -268,8 +268,8 @@ Note that the `rm -r build/` step above is needed if you've built Neovim before,
 To uninstall Neovim installed with `make install`:
 
 ```sh
-rm /usr/local/bin/nvim
-rm -r /usr/local/share/nvim/
+sudo rm /usr/local/bin/nvim
+sudo rm -r /usr/local/share/nvim/
 ```
 
 Or if you specified `CMAKE_INSTALL_PREFIX` at install-time, just _delete that directory_.
