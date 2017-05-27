@@ -6,7 +6,8 @@
 [Related projects](Related-projects)
 
 **Users**  
-[Install](Installing-Neovim)  
+[Install](Installing-Neovim)
+[Following HEAD](Following-HEAD)
 [Docs](http://neovim.io/doc/)
 
 **Developers**  
