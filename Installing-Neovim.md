@@ -12,6 +12,12 @@ Packages are listed below. (You can also [build Neovim from source](#install-fro
 
 The Neovim package for Windows includes the Neovim-Qt GUI.
 
+If you have [chocolatey](https://chocolatey.org) installed you can just do:
+- `choco install neovim` for **Release (v0.2):**
+- `choco install neovim --pre` for **Development (pre-release):** 
+ 
+ **Or:**
+
 1. Choose a package:
     - **Release (v0.2):** [nvim-win32.zip](https://github.com/neovim/neovim/releases/download/v0.2.0/nvim-win32.zip) or [nvim-win64.zip](https://github.com/neovim/neovim/releases/download/v0.2.0/nvim-win64.zip)
     - **Development (pre-release):** [win32 build](https://ci.appveyor.com/api/projects/neovim/neovim/artifacts/build/Neovim.zip?branch=master&job=Configuration%3A%20MINGW_32) or [win64 build](https://ci.appveyor.com/api/projects/neovim/neovim/artifacts/build/Neovim.zip?branch=master&job=Configuration%3A%20MINGW_64)
