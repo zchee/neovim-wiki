@@ -122,6 +122,7 @@ This is software either targeted at Neovim or with support for it.
 - [nvimdev](https://github.com/tweekmonster/nvimdev.nvim): Help to neovim development
 - [ribosome](https://github.com/tek/ribosome)
 - [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
+- [vmux](https://github.com/jceb/vmux): vim/neovim session handler within tmux
 - [Vroom](https://github.com/google/vroom)
 
 ### Colorschemes
