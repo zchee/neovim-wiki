@@ -1,6 +1,6 @@
-If you are working on a Neovim-related project, include (alphabetically) it below!
+If you're working on a Neovim-related project, include (alphabetically) it below!
 
-- Note: Some of these projects are _experimental_ (i.e., unstable).
+_Note: Some of these projects are **experimental/unstable**._
 
 ### GUI
 
@@ -11,6 +11,7 @@ If you are working on a Neovim-related project, include (alphabetically) it belo
 | Electron UI      | [coolwanglu/neovim<sup>e</sup>](https://github.com/coolwanglu/neovim-e) |
 | Electron UI      | [rhysd/NyaoVim](https://github.com/rhysd/NyaoVim)                       |
 | Electron UI      | [extr0py/oni](https://github.com/extr0py/oni)                           |
+| Electron UI      | [VSCodeVim](https://github.com/VSCodeVim/Vim)                           |
 | gnome-terminal   | [fmoralesc/neovim-gnome-terminal-wrapper](https://github.com/fmoralesc/neovim-gnome-terminal-wrapper) |
 | Go/Libui         | [dzhou121/gonvim](https://github.com/dzhou121/gonvim)                   |
 | GTK/Python UI    | [neovim/python-gui](https://github.com/neovim/python-gui)               |
