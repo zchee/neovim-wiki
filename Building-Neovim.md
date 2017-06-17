@@ -273,28 +273,25 @@ gmake
   or [MacPorts](http://www.macports.org)
 * Install Xcode commandline tools `xcode-select --install`
 * Install other dependencies:
-
-  Via MacPorts:
-
-      sudo port install libtool autoconf automake cmake pkgconfig gettext
-      
-  Via Homebrew:
-
-      brew install libtool automake cmake pkg-config gettext
-
-* After this you may need to run `make distclean && make` before the tests will run.
-
-* **If you see wget certificate errors** (for OS X *before* version 10.10/Yosemite):
-
-  Via MacPorts:
-
-      sudo port install curl-ca-bundle
-      echo CA_CERTIFICATE=/opt/local/share/curl/curl-ca-bundle.crt >> ~/.wgetrc
-
-  Via Homebrew:
-
-      brew install curl-ca-bundle
-      echo CA_CERTIFICATE=$(brew --prefix curl-ca-bundle)/share/ca-bundle.crt >> ~/.wgetrc
+  * via MacPorts:
+    ```
+    sudo port install libtool autoconf automake cmake pkgconfig gettext
+    ```
+  * via Homebrew:
+    ```
+    brew install libtool automake cmake pkg-config gettext
+    ```
+* If you see **wget certificate errors** (for macOS *before* version 10.10/Yosemite):
+  * via MacPorts:
+    ```
+    sudo port install curl-ca-bundle
+    echo CA_CERTIFICATE=/opt/local/share/curl/curl-ca-bundle.crt >> ~/.wgetrc
+    ```
+  * via Homebrew:
+    ```
+    brew install curl-ca-bundle
+    echo CA_CERTIFICATE=$(brew --prefix curl-ca-bundle)/share/ca-bundle.crt >> ~/.wgetrc
+    ```
 
 #### Windows / MSYS2
 
