@@ -62,7 +62,7 @@ You may also want to [enable core dumps on macOS](https://developer.apple.com/li
 
 ### Using `gdb` to step through functional tests
 
-Use `TEST_TAG` to run tests matching a given substring (e.g. `it("foo", ...)`):
+Use `TEST_TAG` to run tests matching busted tags (of the form `#foo` e.g. `it("test #foo ...", ...)`):
 
 ```
 GDB=1 TEST_TAG=foo make functionaltest
