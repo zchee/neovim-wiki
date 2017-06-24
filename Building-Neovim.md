@@ -46,6 +46,16 @@ To run only _functional_ tests:
 
 ---
 
+Running tests from tags
+
+``` lua
+it('my function does seomthing #mytesttag', function()
+```
+
+the above function could be run with `make functionaltest TEST_TAG=mytesttag`
+
+---
+
 To run a *specific* unit test:
 
     TEST_FILE=test/unit/foo.lua make unittest
