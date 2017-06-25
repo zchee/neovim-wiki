@@ -22,9 +22,7 @@
 - **[SourceGraph](https://sourcegraph.com/github.com/neovim/neovim)**
 - [Source Documentation](https://neovim.io/doc/dev/globals_func.html)
     - [Plugin Architecture](Plugin-UI-architecture)
-    - [API](API)
     - [Code overview](Code-overview)
-    - [Function callgraphs](Generate-callgraphs-with-Doxygen)
 - [C programming techniques and Neovim-specific guidance](C-programming)
     - [C refactorings and code-smells](C-refactorings-and-code-smells-catalog)
     - [Integer type semantics](Integer-types-refactoring-guidelines)
