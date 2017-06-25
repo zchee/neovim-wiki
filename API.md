@@ -1,1 +1,1 @@
-The node client contains an auto-generated [API description](https://github.com/neovim/node-client/blob/master/index.d.ts).
+`:help api` documents the API. https://neovim.io/doc/user/api.html
