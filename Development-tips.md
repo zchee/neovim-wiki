@@ -163,7 +163,7 @@ br main
 ### Log file location
 
 Nvim's low-level logs are written to `~/.local/share/nvim/log` (usually; see `:help $NVIM_LOG_FILE`).
-Debug builds write INFO-level logs to this log file. you can specify the location by `NVIM_LOG_FILE` environment variable. Non-debug builds only write ERROR-level logs.
+Debug builds write INFO-level messages to this log file. You can specify the location with the `$NVIM_LOG_FILE` environment variable. Non-debug builds only log ERROR-level messages.
 
 ## Debugging program errors (undefined behavior, leaks, ...)
 
