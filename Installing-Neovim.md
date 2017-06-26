@@ -55,7 +55,7 @@ The [Releases](https://github.com/neovim/neovim/releases) page provides pre-buil
 
 ### [Homebrew](http://brew.sh) (macOS) / [Linuxbrew](http://linuxbrew.sh/) (Linux)
 
-    brew install neovim/neovim/neovim
+    brew install neovim
 
 See the [homebrew-neovim README](https://github.com/neovim/homebrew-neovim#installation) for a complete reference.
 
