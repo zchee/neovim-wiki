@@ -133,6 +133,7 @@ Additional hints:
 - Be sure you have the **latest version** of the `neovim` Python module.
 
 ```sh
+pip install setuptools
 pip  install --upgrade neovim
 pip2 install --upgrade neovim
 pip3 install --upgrade neovim
