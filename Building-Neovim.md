@@ -258,10 +258,12 @@ a PANIC in LuaJIT when trying to install a rock.
 #### OpenBSD
 
 ```
-doas pkg_add gmake cmake libtool unzip autoconf-2.69p1 automake-1.15
+doas pkg_add gmake cmake libtool unzip autoconf-2.69p2 automake-1.15p0
 export AUTOCONF_VERSION=2.69
 export AUTOMAKE_VERSION=1.15
 ```
+
+For older versions of OpenBSD than 6.1, the `autoconf-2.69` and `automake-1.15` ports may have different `p` suffixes.
 
 The build sometimes fails when using the top level Makefile, apparently due to some third-party component [#2445-comment](https://github.com/neovim/neovim/issues/2445#issuecomment-108124236). The following instructions use CMake
 
