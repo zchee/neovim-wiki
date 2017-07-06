@@ -118,13 +118,13 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 
 This is software either targeted at Neovim or with support for it.
 
-- [neovim-remote](https://github.com/mhinz/neovim-remote)
-- [nfasd](https://github.com/haifengkao/nfasd)
+- [neovim-remote](https://github.com/mhinz/neovim-remote): a tool that helps controlling nvim processes
+- [nfasd](https://github.com/haifengkao/nfasd) Autocomplete recent files in command line
 - [nvimdev](https://github.com/tweekmonster/nvimdev.nvim): Help to neovim development
-- [ribosome](https://github.com/tek/ribosome)
-- [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
+- [ribosome](https://github.com/tek/ribosome): A framework for building and testing neovim-python plugins
+- [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect): Restore tmux environment after system restart
 - [vmux](https://github.com/jceb/vmux): vim/neovim session handler within tmux
-- [Vroom](https://github.com/google/vroom)
+- [Vroom](https://github.com/google/vroom): way to specify vim commands — actual input keys that that the user hits — and then verify vim's output
 
 ### Colorschemes
 
