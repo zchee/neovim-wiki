@@ -81,38 +81,38 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [neotex](https://github.com/donRaphaco/neotex): latex live preview
 - [neovim-hackernews](https://github.com/dpzmick/neovim-hackernews): Display HN stories inside neovim
 - [neovim-ranger](https://github.com/airodactyl/neovim-ranger): A file manager
-- [neovim-vifm](https://github.com/vifm/neovim-vifm)
-- [nlanguagetool.nvim](https://github.com/fmoralesc/nlanguagetool.nvim)
-- [nvim-completion-manager](https://github.com/roxma/nvim-completion-manager)
-- [nvim-editcommand](https://github.com/brettanomyces/nvim-editcommand)
-- [nvim-terminus](https://github.com/brettanomyces/nvim-terminus)
+- [neovim-vifm](https://github.com/vifm/neovim-vifm): Integration between vifm (the vi file manager) and neovim.
+- [nlanguagetool.nvim](https://github.com/fmoralesc/nlanguagetool.nvim): Integration with languagetool, a style and grammar checker for natural languages
+- [nvim-completion-manager](https://github.com/roxma/nvim-completion-manager): A fast, extensible, async completion framework
+- [nvim-editcommand](https://github.com/brettanomyces/nvim-editcommand): Edit your current shell command inside a scratch buffer.
+- [nvim-terminus](https://github.com/brettanomyces/nvim-terminus): Edit your current command in a scratch buffer
 - [nvim-ipy](https://github.com/bfredl/nvim-ipy): IPython/Jupyter integration
 - [nvim-miniyank](https://github.com/bfredl/nvim-miniyank): Simple yankring (shared across instances)
 - [nvim-palette](https://github.com/teto/nvim-palette): Fuzzy search of settings
 - [nvimux](https://github.com/hkupty/nvimux): TMUX bindings/neovim as multiplexer
-- [orchestra.nvim](https://github.com/timeyyy/orchestra.nvim)
-- [proteome](https://github.com/tek/proteome.nvim)
-- [termedit.nvim](https://github.com/rliang/termedit.nvim)
-- [vimcmdline](https://github.com/jalvesaq/vimcmdline)
-- [vim-accio](https://github.com/pgdouyon/vim-accio)
+- [orchestra.nvim](https://github.com/timeyyy/orchestra.nvim): bind sound effects to different actions
+- [proteome](https://github.com/tek/proteome.nvim): assists in working on multiple projects in a single neovim instance
+- [termedit.nvim](https://github.com/rliang/termedit.nvim) Sets the Neovim host instance as $EDITOR
+- [vimcmdline](https://github.com/jalvesaq/vimcmdline): sends lines from either Vim or Neovim to a command line interpreter (REPL application)
+- [vim-accio](https://github.com/pgdouyon/vim-accio): asynchronously summons build/compiler/linter output to your screen by wrapping the :compiler and :make commands
 - [vim-airline](https://github.com/vim-airline/vim-airline) (see [this commit](https://github.com/vim-airline/vim-airline/commit/ef3746d02266c4630e2658ad2302b266f53a0434) )
-- [vim-composer](https://github.com/noahfrederick/vim-composer)
-- [vim-chat](https://github.com/vim-chat/vim-chat)
-- [vim-esearch](https://github.com/eugen0329/vim-esearch)
-- [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
+- [vim-composer](https://github.com/noahfrederick/vim-composer): support for Composer PHP projects
+- [vim-chat](https://github.com/vim-chat/vim-chat): Chat client for QQ and weixin
+- [vim-esearch](https://github.com/eugen0329/vim-esearch): Perform search in files easily
+- [vim-gitgutter](https://github.com/airblade/vim-gitgutter): shows a git diff in the gutter (sign column) and stages/undoes hunks
 - [vim-go](https://github.com/fatih/vim-go) (see [PR 607](https://github.com/fatih/vim-go/pull/607) for feature list)
-- [vim-grepper](https://github.com/mhinz/vim-grepper)
-- [vim-javacomplete2](https://github.com/artur-shaik/vim-javacomplete2)
-- [vim-man](https://github.com/bruno-/vim-man)
-- [vim-markdown-composer](https://github.com/euclio/vim-markdown-composer)
-- [vim-pandoc](https://github.com/vim-pandoc/vim-pandoc)
+- [vim-grepper](https://github.com/mhinz/vim-grepper): Use your favorite grep tool (ag, ack, git grep, ripgrep, pt, sift, findstr, grep) to start an asynchronous search
+- [vim-javacomplete2](https://github.com/artur-shaik/vim-javacomplete2): an omni-completion plugin for Java
+- [vim-man](https://github.com/bruno-/vim-man): View and grep man pages in vim
+- [vim-markdown-composer](https://github.com/euclio/vim-markdown-composer): asynchronous markdown preview
+- [vim-pandoc](https://github.com/vim-pandoc/vim-pandoc): integrate with the pandoc document converter and work with documents written in its markdown variant
 - [vim-plug](https://github.com/junegunn/vim-plug): Plugin manager
-- [vim-rainbows](https://github.com/nfischer/vim-rainbows)
-- [vim-signify](https://github.com/mhinz/vim-signify)
-- [vim-test](https://github.com/janko-m/vim-test)
-- [vim-tmux-clipboard](https://github.com/roxma/vim-tmux-clipboard)
-- [vsh](https://github.com/hardenedapple/vsh/)
-- [worldslice](https://github.com/fmoralesc/worldslice)
+- [vim-rainbows](https://github.com/nfischer/vim-rainbows) runtime files for the Rainbow programming language
+- [vim-signify](https://github.com/mhinz/vim-signify) uses the sign column to indicate added, modified and removed lines in a file that is managed by a version control system (VCS)
+- [vim-test](https://github.com/janko-m/vim-test) wrapper for running tests on different granularities
+- [vim-tmux-clipboard](https://github.com/roxma/vim-tmux-clipboard) seamless integration with tmux's clipboard
+- [vsh](https://github.com/hardenedapple/vsh/): Store and replay shell sessions -- also output search/modification/undo/redo
+- [worldslice](https://github.com/fmoralesc/worldslice): statusline and tabline configuration
 
 ### Non-plugin software
 
