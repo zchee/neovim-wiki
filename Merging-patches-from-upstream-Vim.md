@@ -22,8 +22,8 @@ Quickstart
 
 1. Pull down the Neovim source (`git clone https://github.com/neovim/neovim.git`)
 2. Run `./scripts/vim-patch.sh -l` to see the list of missing Vim patches.
-3. Choose a patch from the list (usually the oldest one), e.g. `7.4.123`.
-4. Run `./scripts/vim-patch.sh -p 7.4.123`
+3. Choose a patch from the list (usually the oldest one), e.g. `8.0.0123`.
+4. Run `./scripts/vim-patch.sh -p 8.0.0123`
     - The script guides you with further instructions.
 
 It's strongly recommended to work on the _oldest_ patch from the list (just make sure someone didn't already start working on it), because some patches might depend on others. You're most likely going to encounter merge conflicts regardless, but this way such conflicts are kept to a minimum.
