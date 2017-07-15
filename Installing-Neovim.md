@@ -65,6 +65,14 @@ See the [homebrew-neovim README](https://github.com/neovim/homebrew-neovim#insta
 
 ## Linux
 
+### AppImage ("universal" Linux package)
+
+The [Releases](https://github.com/neovim/neovim/releases) page provides an [AppImage](http://appimage.org) that runs on most Linux systems. No installation is needed, just download `nvim.appimage` and run it. (It might not work if your Linux distribution is more than 4 years old.)
+
+    curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
+    chmod u+x nvim.appimage
+    ./nvim.appimage
+
 ### Arch Linux
 
 Neovim can be installed from the community repository:
