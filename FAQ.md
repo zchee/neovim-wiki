@@ -92,10 +92,11 @@ Make sure that [Neovim can find its runtime](#neovim-cant-find-its-runtime).
 
 ### Copying to X11 primary selection with the mouse doesn't work
 
-`clipboard=autoselect` is not implemented yet. As a workaround, use the mapping
+`clipboard=autoselect` is [not implemented yet](https://github.com/neovim/neovim/issues/2325). You may find this _partial_ workaround to be useful:
 
     vnoremap <LeftRelease> "*ygv
 
+Note that this is only a partial workaround. It [doesn't work](https://github.com/neovim/neovim/issues/7013) for double-click (word selection) nor triple-click (line selection). But it's better than nothing.
 
 ### My CTRL-H mapping doesn't work
 
