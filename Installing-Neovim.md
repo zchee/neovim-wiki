@@ -19,7 +19,7 @@ Packages are listed below. (You can also [build Neovim from source](#install-fro
 
 1. Choose a package:
     - **Release (v0.2):** [nvim-win32.zip](https://github.com/neovim/neovim/releases/download/v0.2.0/nvim-win32.zip) or [nvim-win64.zip](https://github.com/neovim/neovim/releases/download/v0.2.0/nvim-win64.zip)
-    - **Development (pre-release):** [win32 build](https://ci.appveyor.com/api/projects/neovim/neovim/artifacts/build/Neovim.zip?branch=master&job=Configuration%3A%20MINGW_32) or [win64 build](https://ci.appveyor.com/api/projects/neovim/neovim/artifacts/build/Neovim.zip?branch=master&job=Configuration%3A%20MINGW_64)
+    - **Development (pre-release):** [nvim-win32.zip](https://github.com/neovim/neovim/releases/download/nightly/nvim-win32.zip) or [nvim-win64.zip](https://github.com/neovim/neovim/releases/download/nightly/nvim-win64.zip)
 2. Unzip the package. Any location is fine, administrator privileges are _not_ required.
     - `$VIMRUNTIME` will be set to that location automatically.
 3. Double-click `nvim-qt.exe`.
