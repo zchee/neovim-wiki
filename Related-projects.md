@@ -69,6 +69,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [fakeclip-neovim](https://github.com/cazador481/fakeclip.neovim): Clipboard provider with support for X and tmux
 - [far.vim](https://github.com/brooth/far.vim): Search & Replace
 - [Floobits](https://github.com/Floobits/floobits-neovim): Floobits plugin
+- [fzf-gitignore](https://github.com/fszymanski/fzf-gitignore): fzf interface for creating .gitignore files using the gitignore.io API
 - [gen_tags.vim](https://github.com/jsfaint/gen_tags.vim): Async plugin for vim and neovim to ease the use of ctags/gtags
 - [haskell-vim](https://github.com/neovimhaskell/haskell-vim): Custom Haskell Vimscripts
 - [iron.nvim](https://github.com/hkupty/iron.nvim): REPL management
