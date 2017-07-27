@@ -5,21 +5,21 @@
     - `tags` and `cscope.out`
     - :heart: @tweekmonster!
 - [vim-lua](https://github.com/tbastos/vim-lua)
-    — Enhanced Lua 5.3 syntax indentation.
+    - Enhanced Lua 5.3 syntax indentation.
 - [editorconfig-vim](https://editorconfig/editorconfig-vim)
-    — Helps developers define and maintain consistent coding styles.
+    - Helps developers define and maintain consistent coding styles.
     - Cross editor compatible: <http://editorconfig.org/>
 - [helpful.vim](https://github.com/tweekmonster/helpful.vim)
-    — A plugin for plugin developers to get the version of Vim and Neovim that introduced or removed features.
+    - A plugin for plugin developers to get the version of Vim and Neovim that introduced or removed features.
     - :heart: @tweekmonster!
 - [Neomake](https://github.com/neomake/neomake)
-    — Async linting
+    - Async linting
 - [vim-lint](https://github.com/dbakker/vim-lint)
-    — Lint VimL
+    - Lint VimL
 - [deoplete.nvim](https://github.com/Shougo/deoplete.nvim)
-    — Completion for Neovim
+    - Completion for Neovim
 - [deoplete-clang2](https://github.com/tweekmonster/deoplete-clang2)
-    — clang2 completion support for deoplete.nvim
+    - clang2 completion support for deoplete.nvim
 
 ## Navigating the code
 
