@@ -1,7 +1,6 @@
 - [Introduction](Introduction)
 - **[FAQ](FAQ)**
     - [Transitioning from Vim](https://neovim.io/doc/user/nvim.html#nvim-from-vim) (`:help nvim-from-vim`)
-- [Progress/Roadmap](Progress)
 - [Related projects](Related-projects)
 
 ## Users
