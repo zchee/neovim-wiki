@@ -52,7 +52,7 @@ The [Releases](https://github.com/neovim/neovim/releases) page provides pre-buil
     tar xzf nvim-macos.tar.gz
     ./nvim-osx64/bin/nvim
 
-### [Homebrew](http://brew.sh) (macOS)
+### [Homebrew](http://brew.sh) (macOS) / [Linuxbrew](http://linuxbrew.sh/) (Linux)
 
     brew install neovim
 
