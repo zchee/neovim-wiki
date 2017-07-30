@@ -38,7 +38,7 @@ set termguicolors
 
 See [this gist](https://gist.github.com/XVilka/8346728) for more information about true colors, such as what terminals support it.
 
-### How can I change the cursor shape in the terminal?
+### How to change cursor _shape_ in the terminal?
 
 - For Nvim 0.1.7 or older: see the note about `NVIM_TUI_ENABLE_CURSOR_SHAPE` in `man nvim`.
 - For Nvim 0.2 or newer: cursor styling is controlled by the `guicursor` option.
@@ -52,6 +52,10 @@ See [this gist](https://gist.github.com/XVilka/8346728) for more information abo
 - Old versions of libvte (gnome-terminal, roxterm, terminator, ...) do not support cursor style control codes. [#2537](https://github.com/neovim/neovim/issues/2537)
 - **Note:** some plugins like "ctrlp" override `guicursor` even when it is empty. To totally disable cursor updates, you can set `VTE_VERSION="100"`. 
     - But it would be better to fix the plugin: it should not modify `guicursor` if it is empty.
+
+### How to change cursor _color_ in the terminal?
+
+Currently, `guicursor`-driven cursor color **only works if `termguicolors` is set.** In the future, non-truecolor terminals may also be supported.
 
 ### Cursor style isn't restored after exiting Nvim
 
