@@ -54,7 +54,7 @@ The [Releases](https://github.com/neovim/neovim/releases) page provides pre-buil
 
 ### [Homebrew](http://brew.sh) (macOS)
 
-NeoVim is not available through Homebrew at this time.
+    brew install neovim
 
 See the [homebrew-neovim README](https://github.com/neovim/homebrew-neovim#installation) for a complete reference.
 
