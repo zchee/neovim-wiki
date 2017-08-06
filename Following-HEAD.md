@@ -17,7 +17,7 @@ Lua support ([#4411][4411]) has been merged.  This means that Lua is always avai
 
 ### 2017/04/03
 
-Default 'mouse' setting changed from `mouse=a` to `mouse=` (empty). This will change again in the future after `mouse=a` is improved to make 80% of users happy. To continue using mouse, add this to your init.vim:
+Default 'mouse' setting changed from `mouse=a` to `mouse=` (empty). This will change again in the future after `mouse=a` is improved. To continue using mouse, add this to your init.vim:
 
     set mouse=a
 
