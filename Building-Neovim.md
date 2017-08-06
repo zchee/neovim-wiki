@@ -318,7 +318,7 @@ mingw-w64-x86_64-pkg-config mingw-w64-x86_64-unibilium gperf
 Now from the windows console (cmd.exe) setup the PATH and build
 
 ```cmd
-set PATH=%PATH%;c:\msys64\mingw64\bin
+set PATH=c:\msys64\mingw64\bin;%PATH%
 set CC=gcc
 ```
 
