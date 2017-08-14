@@ -88,6 +88,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [nvim-completion-manager](https://github.com/roxma/nvim-completion-manager): A fast, extensible, async completion framework
 - [nvim-editcommand](https://github.com/brettanomyces/nvim-editcommand): Edit your current shell command inside a scratch buffer.
 - [nvim-terminus](https://github.com/brettanomyces/nvim-terminus): Edit your current command in a scratch buffer
+- [nvim-typescript](https://github.com/mhartington/nvim-typescript): Asynchronous typescript tooling and completion 
 - [nvim-ipy](https://github.com/bfredl/nvim-ipy): IPython/Jupyter integration
 - [nvim-miniyank](https://github.com/bfredl/nvim-miniyank): Simple yankring (shared across instances)
 - [nvim-palette](https://github.com/teto/nvim-palette): Fuzzy search of settings
