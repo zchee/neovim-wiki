@@ -4,7 +4,8 @@
 
 ---
 
-# Install from package
+Install from package
+====================
 
 Packages are listed below. (You can also [build Neovim from source](#install-from-source).)
 
@@ -258,7 +259,8 @@ or [from the ports tree](https://www.freshports.org/editors/neovim/):
 [Termux on the Google Play store](https://play.google.com/store/apps/details?id=com.termux) offers a Neovim package.
 
 
-## Install from source
+Install from source
+===================
 
 If a package is not provided for your platform, see [Building-Neovim](https://github.com/neovim/neovim/wiki/Building-Neovim).  Once you've built Neovim, install it with the following commands:
 
