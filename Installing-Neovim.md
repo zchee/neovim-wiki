@@ -13,7 +13,7 @@ Packages are listed below. (You can also [build Neovim from source](#install-fro
 
 ### [chocolatey](https://chocolatey.org)
 
-- **Release (v0.2):** `choco install neovim`
+- **Release (v0.2):** `choco install neovim` (use -y for automatically skipping confirmation messages)
 - **Development (pre-release):** `choco install neovim --pre`
 
 ### Pre-built archives
