@@ -7,6 +7,10 @@ If you don't have Neovim, see [Building Neovim](Building-Neovim) or [Installing 
 
 ------------
 
+### 2017/08/21
+
+`:terminal` now starts in normal mode ([#6808](https://github.com/neovim/neovim/pull/6808)), like any other buffer, instead of terminal mode.  This avoids the cursor getting "trapped" when a terminal is started.
+
 ### 2017/05/15
 
 The `highlight` option is now read-only ([#6737](https://github.com/neovim/neovim/pull/6737)), so that the built-in highlight groups (and their behaviors) are predictable and can be used as keys for features like `winhighlight`. 
