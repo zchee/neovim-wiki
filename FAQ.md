@@ -18,6 +18,10 @@ The default config file location is:
 
     ~/.config/nvim/init.vim
 
+If you're using Windows 10, config file is located in:
+
+    ~\AppData\Local\nvim\init.vim
+
 You can copy your existing vimrc there, or symlink to it. [`:help nvim-from-vim`](http://neovim.io/doc/user/nvim.html#nvim-from-vim)
 
 ### Can I use Ruby-based Vim plugins (e.g. [LustyExplorer](https://github.com/sjbach/lusty))?
