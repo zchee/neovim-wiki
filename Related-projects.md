@@ -73,6 +73,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [gen_tags.vim](https://github.com/jsfaint/gen_tags.vim): Async plugin for vim and neovim to ease the use of ctags/gtags
 - [haskell-vim](https://github.com/neovimhaskell/haskell-vim): Custom Haskell Vimscripts
 - [iron.nvim](https://github.com/hkupty/iron.nvim): REPL management
+- [InsertLeftBracket.nvim](https://github.com/haifengkao/InsertLeftBracket.nvim): auto-complete brackets for objective-c files
 - [LanguageClient-neovim](https://github.com/autozimu/LanguageClient-neovim): Language Server Protocol support for neovim
 - [lldb.nvim](https://github.com/critiqjo/lldb.nvim): Debugger integration with a focus on ease-of-use
 - [mirror.vim](https://github.com/zenbro/mirror.vim): Efficient way to edit remote files on multiple environments
