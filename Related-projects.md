@@ -66,6 +66,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [dein.vim](https://github.com/Shougo/dein.vim): Plugin manager
 - [denite.nvim](https://github.com/Shougo/denite.nvim): A dark powered plugin for Neovim/Vim to unite all interfaces
 - [deoplete.nvim](https://github.com/Shougo/deoplete.nvim): Dark powered asynchronous completion framework
+- [Extract](https://github.com/cyansprite/Extract): Extract puts and yanks to a list with normal, visual swapping, and insert list/register completion.
 - [fakeclip-neovim](https://github.com/cazador481/fakeclip.neovim): Clipboard provider with support for X and tmux
 - [far.vim](https://github.com/brooth/far.vim): Search & Replace
 - [Floobits](https://github.com/Floobits/floobits-neovim): Floobits plugin
