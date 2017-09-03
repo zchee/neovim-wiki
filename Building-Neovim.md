@@ -239,9 +239,10 @@ compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
 
 #### Nix or NixOS
 
-    cd path/to/neovim
-    nix-shell '<nixpkgs>' -A neovim
-    cmakeConfigurePhase
+    $ cd path/to/neovim
+    $ nix-shell '<nixpkgs>' -A neovim
+    $ cmakeConfigurePhase
+    build $ make
 
 #### FreeBSD
 
