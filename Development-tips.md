@@ -6,7 +6,7 @@
     - :heart: @tweekmonster!
 - [vim-lua](https://github.com/tbastos/vim-lua)
     - Enhanced Lua 5.3 syntax indentation.
-- [editorconfig-vim](https://editorconfig/editorconfig-vim)
+- [editorconfig-vim](https://github.com/editorconfig/editorconfig-vim)
     - Helps developers define and maintain consistent coding styles.
     - Cross editor compatible: <http://editorconfig.org/>
 - [helpful.vim](https://github.com/tweekmonster/helpful.vim)
