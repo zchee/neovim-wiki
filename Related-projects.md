@@ -50,6 +50,7 @@ _Note: Some of these projects are **experimental/unstable**._
 | Perl        | [yanick/Neovim-RPC](https://github.com/yanick/Neovim-RPC)                            |
 | Python      | [neovim/python-client](https://github.com/neovim/python-client)                      |
 | R           | [jalvesaq/nvimcom](https://github.com/jalvesaq/nvimcom)                              |
+| Racket      | [HiPhish/neovim.rkt(https://gitlab.com/HiPhish/neovim.rkt)                           |
 | Ruby        | [alexgenco/neovim-ruby](https://github.com/alexgenco/neovim-ruby)                    |
 | Rust        | [oakes/neovim-rs](https://github.com/oakes/neovim-rs)                                |
 | Rust        | [daa84/neovim-lib](https://github.com/daa84/neovim-lib)                              |
