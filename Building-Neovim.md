@@ -308,9 +308,9 @@ gmake
 From the MSYS2 shell install these packages
 
 ```
-pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-libtool mingw-w64-x86_64-cmake \
-mingw-w64-x86_64-make mingw-w64-x86_64-perl mingw-w64-x86_64-python2 \
-mingw-w64-x86_64-pkg-config mingw-w64-x86_64-unibilium gperf
+pacman -S \
+    mingw-w64-x86_64-{gcc,libtool,cmake,make,perl,python2,pkg-config,unibilium} \
+    gperf
 ```
 
 Now from the windows console (cmd.exe) setup the PATH and build
