@@ -40,7 +40,6 @@ _Note: Some of these projects are **experimental/unstable**._
 | Elixir      | [dm1try/nvim](https://github.com/dm1try/nvim)                    |
 | Filesystem  | [fmoralesc/nvimfs](https://github.com/fmoralesc/nvimfs)                              |
 | Go          | [neovim/go-client](https://github.com/neovim/go-client)                              |
-| Go          | [myitcv/neovim](https://github.com/myitcv/neovim)                                    |
 | Haskell     | [neovimhaskell/nvim-hs](https://github.com/neovimhaskell/nvim-hs)                    |
 | Java        | [fdinoff/neovim-java-client](https://github.com/fdinoff/neovim-java-client)          |
 | Julia       | [bfredl/Neovim.jl](https://github.com/bfredl/Neovim.jl)                              |
