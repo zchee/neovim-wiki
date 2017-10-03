@@ -8,6 +8,7 @@ _Note: Some of these projects are **experimental/unstable**._
 |------------------|-------------------------------------------------------------------------|
 | Atom Integration | [carlosdcastillo/vim-mode](https://github.com/carlosdcastillo/vim-mode) |
 | C++/Python       | [meatich/NeoSFML](https://github.com/meatich/NeoSFML)                   |
+| EFL              | [Eovim](https://github.com/jeanguyomarch/eovim/)                        |
 | Electron UI      | [coolwanglu/neovim<sup>e</sup>](https://github.com/coolwanglu/neovim-e) |
 | Electron UI      | [rhysd/NyaoVim](https://github.com/rhysd/NyaoVim)                       |
 | Electron UI      | [extr0py/oni](https://github.com/extr0py/oni)                           |
