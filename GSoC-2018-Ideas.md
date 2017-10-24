@@ -138,6 +138,7 @@ Medium
 
 Questions can also be sent to TJ DeVries ([@tjdevries](http://github.com/tjdevries))
 
+___
 #### Neovim based Vim Plugin
 
 **Desirable Skills:**
