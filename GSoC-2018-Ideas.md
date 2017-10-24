@@ -141,7 +141,7 @@ Questions can also be sent to TJ DeVries ([@tjdevries](http://github.com/tjdevri
 ___  
 #### Neovim based Vim Plugin
 
-**Desirable** Any  
+**Desirable:** Any  
 **Description:** Write a Neovim based Vim plugin for your editor of choice.
 
 **Expected Result:**
