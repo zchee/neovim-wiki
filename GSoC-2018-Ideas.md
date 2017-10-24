@@ -139,13 +139,20 @@ Medium
 Questions can also be sent to TJ DeVries ([@tjdevries](http://github.com/tjdevries))
 
 ___  
-#### Neovim based Vim Plugin
+#### Neovim-based "Vim mode"
 
 **Desirable:** Any  
-**Description:** Write a Neovim based Vim plugin for your editor of choice.
+
+**Description:** Implement "Vim mode" in an editor/IDE (such as IntelliJ) by embedding a `nvim` instance. 
 
 **Expected Result:**
-An usable vim plugin for your editor of choice that allows for full vim support, while integrating your editor and neovim's features together.
+
+Full Nvim editing should be available in the editor/IDE, while also allowing the user to use the native editor/IDE features.
+
+Examples:
+
+- [VSCode integration](https://github.com/VSCodeVim/Vim)
+- [Sublime Text integration](https://github.com/lunixbochs/actualvim)
 
 **Difficulty:** Medium (maybe Easy, depending on the extensiveness of the emulation)
 
