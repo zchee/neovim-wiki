@@ -138,6 +138,20 @@ Medium
 
 Questions can also be sent to TJ DeVries ([@tjdevries](http://github.com/tjdevries))
 
+#### Neovim based Vim Plugin
+
+**Desirable Skills:**
+Any
+**Description:**
+Write a Neovim based Vim plugin for your editor of choice.
+
+**Expected Result:**
+An usable vim plugin for your editor of choice that allows for full vim support, while integrating your editor and neovim's features together.
+
+**Difficulty:** Medium (maybe Easy, depending on the extensiveness of the emulation)
+
+**Mentor:** Horace He ([@chillee](http://github.com/chillee))
+
 ## Tools & Infrastructure
 
 ___
