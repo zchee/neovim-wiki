@@ -34,25 +34,32 @@ Now that you have the dependencies, you can try other build targets, explained b
 
 To run all _non-legacy_ (unit + functional) tests:
 
-    LC_ALL=C make test
+    make test
 
 To run only _unit_ tests:
 
-    LC_ALL=C make unittest
+    make unittest
 
 To run only _functional_ tests:
 
-    LC_ALL=C make functionaltest
+    make functionaltest
 
 ---
 
-Running tests from tags
+Tests can be "tagged" by adding `#` before a token in the test description.
 
 ``` lua
-it('my function does seomthing #mytesttag', function()
+it('#foo bar baz', function()
+  ...
+end)
+it('#foo another test', function()
+  ...
+end)
 ```
 
-the above function could be run with `make functionaltest TEST_TAG=mytesttag`
+To run only the tagged tests:
+
+    TEST_TAG=foo make functionaltest
 
 ---
 
