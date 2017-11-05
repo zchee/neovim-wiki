@@ -164,8 +164,14 @@ Some very old/unnecessary options have been removed from Neovim. See [`:help nvi
 
 ### Neovim is slow
 
-Make sure you're running an optimized build of `nvim`. `:CheckHealth nvim` should report
-one of these "build types":
+#### Use a fast terminal emulator
+
+- [kitty](https://github.com/kovidgoyal/kitty)
+- [alacritty](https://github.com/jwilm/alacritty)
+
+#### Use an optimized build
+
+`:CheckHealth nvim` should report one of these "build types":
 
 ```
 Build type: RelWithDebInfo
@@ -173,8 +179,7 @@ Build type: MinSizeRel
 Build type: Release
 ```
 
-If it reports `Build type: Debug` and you're building Neovim from source, see [Building Neovim#optimized-builds](Building-Neovim#optimized-builds).<br/>
-If you're using a third-party package, please inform the maintainer.
+If it reports `Build type: Debug` and you're building Neovim from source, see [Building Neovim#optimized-builds](Building-Neovim#optimized-builds).
 
 ### Colors aren't displayed correctly
 
