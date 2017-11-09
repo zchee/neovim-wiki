@@ -94,10 +94,6 @@ See [#1750](https://github.com/neovim/neovim/issues/1750) for more information.
 
 # Runtime issues
 
-### `clipboard: provider is not available`
-
-Make sure that [Neovim can find its runtime](#neovim-cant-find-its-runtime).
-
 ### Copying to X11 primary selection with the mouse doesn't work
 
 `clipboard=autoselect` is [not implemented yet](https://github.com/neovim/neovim/issues/2325). You may find this _partial_ workaround to be useful:
@@ -149,6 +145,20 @@ pip3 install --upgrade neovim
 ```
 
 - Try with `nvim -u NORC` to make sure your `init.vim` isn't causing a problem. If you get `E117: Unknown function`, that means [Neovim can't find its runtime](#neovim-cant-find-its-runtime).
+
+
+### `:checkhealth` reports `E5009: Invalid $VIMRUNTIME`
+
+This means `health#check()` couldn't load, which suggests that `$VIMRUNTIME` or `&runtimepath` is broken.
+
+- `$VIMRUNTIME` must point to Neovim's runtime files, not Vim's.
+- The `$VIMRUNTIME` directory contents should be readable by the current user.
+- Verify that `:echo &runtimepath` contains the $VIMRUNTIME path.
+- Check the output of:
+  ```
+  :call health#check()
+  :verbose func health#check
+  ```
 
 ### Neovim can't find its runtime
 
