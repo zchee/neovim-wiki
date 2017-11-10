@@ -11,7 +11,7 @@ _Note: Some of these projects are **experimental/unstable**._
 | EFL              | [Eovim](https://github.com/jeanguyomarch/eovim/)                        |
 | Electron UI      | [coolwanglu/neovim<sup>e</sup>](https://github.com/coolwanglu/neovim-e) |
 | Electron UI      | [rhysd/NyaoVim](https://github.com/rhysd/NyaoVim)                       |
-| Electron UI      | [bryphe/oni](https://github.com/bryphe/oni)                           |
+| Electron UI      | [onivim/oni](https://github.com/onivim/oni)                             |
 | VSCode           | [VSCodeVim](https://github.com/VSCodeVim/Vim)                           |
 | gnome-terminal   | [fmoralesc/neovim-gnome-terminal-wrapper](https://github.com/fmoralesc/neovim-gnome-terminal-wrapper) |
 | Go/Qt           | [dzhou121/gonvim](https://github.com/dzhou121/gonvim)                   |
