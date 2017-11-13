@@ -13,6 +13,7 @@
 
 - **[Build](Building-Neovim)**
 - **[Contribute](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md)**
+    - [Running tests](Running-tests)
     - [Unit testing](Unit-tests)
     - [Refactoring guidelines](https://github.com/neovim/neovim/wiki/Refactoring)
     - [Merging patches from upstream Vim](Merging-patches-from-upstream-Vim)
