@@ -69,8 +69,9 @@ To run a *specific* functional test:
 To *repeat* a test many times:
 
     .deps/usr/bin/busted --filter 'foo' --repeat 1000 test/functional/ui/foo_spec.lua
-
-**NOTE**: Both `TEST_TAG` and `TEST_FILTER` does filter tests by the strings from either `it()` or `describe()` functions.
+**NOTE**:
+* `TEST_FILE` is not a pattern string like `TEST_TAG` or `TEST_FILTER`. The given value to `TEST_FILE` must be a path to an existing file.
+* Both `TEST_TAG` and `TEST_FILTER` does filter tests by the strings from either `it()` or `describe()` functions.
 
 ---
 
