@@ -1,3 +1,7 @@
+Neovim uses third-party tooling to execute tests. So be sure, from the repository directory, to build the tools before testing:
+
+    make cmake
+
 ## Running tests
 
 To run all _non-legacy_ (unit + functional) tests:
