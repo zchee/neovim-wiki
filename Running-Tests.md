@@ -18,6 +18,8 @@ To run only _functional_ tests:
 
 ---
 
+## Filter Tests
+
 Tests can be "tagged" by adding `#` before a token in the test description.
 
 ``` lua
@@ -33,8 +35,28 @@ To run only the tagged tests:
 
     TEST_TAG=foo make functionaltest
 
----
+**NOTE**: tags are mainly used for testing issues (ex: `#1234`), so use the following method.
 
+<br>
+
+Another filter method is by setting a pattern of test name to `TEST_FILTER`.
+
+``` lua
+it('foo api',function()
+  ...
+end)
+it('bar api',function()
+  ...
+end)
+```
+
+To run only test with filter name:
+
+    TEST_TAG='foo.*api' make functionaltest
+
+**NOTE**: Both `TEST_TAG` and `TEST_FILTER` does filter tests by the strings from either `it()` or `describe()` functions.
+
+---
 To run a *specific* unit test:
 
     TEST_FILE=test/unit/foo.lua make unittest
