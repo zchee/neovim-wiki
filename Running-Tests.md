@@ -20,6 +20,8 @@ To run only _functional_ tests:
 
 ## Filter tests
 
+### Filter By Tag
+
 Tests can be "tagged" by adding `#` before a token in the test description.
 
 ``` lua
@@ -37,7 +39,7 @@ To run only the tagged tests:
 
 **NOTE**: tags are mainly used for testing issues (ex: `#1234`), so use the following method.
 
-<br>
+### Filter By Name
 
 Another filter method is by setting a pattern of test name to `TEST_FILTER`.
 
@@ -54,9 +56,8 @@ To run only test with filter name:
 
     TEST_TAG='foo.*api' make functionaltest
 
-**NOTE**: Both `TEST_TAG` and `TEST_FILTER` does filter tests by the strings from either `it()` or `describe()` functions.
+### Filter By File
 
----
 To run a *specific* unit test:
 
     TEST_FILE=test/unit/foo.lua make unittest
@@ -68,6 +69,8 @@ To run a *specific* functional test:
 To *repeat* a test many times:
 
     .deps/usr/bin/busted --filter 'foo' --repeat 1000 test/functional/ui/foo_spec.lua
+
+**NOTE**: Both `TEST_TAG` and `TEST_FILTER` does filter tests by the strings from either `it()` or `describe()` functions.
 
 ---
 
