@@ -2,7 +2,7 @@ Neovim uses third-party tooling to execute tests. So be sure, from the repositor
 
     make cmake
 
-## Running tests
+## Running Tests
 
 To run all _non-legacy_ (unit + functional) tests:
 
@@ -18,9 +18,9 @@ To run only _functional_ tests:
 
 ---
 
-## Filter tests
+## Filter Tests
 
-### Filter By Tag
+### Filter by tag
 
 Tests can be "tagged" by adding `#` before a token in the test description.
 
@@ -39,7 +39,7 @@ To run only the tagged tests:
 
 **NOTE**: tags are mainly used for testing issues (ex: `#1234`), so use the following method.
 
-### Filter By Name
+### Filter by name
 
 Another filter method is by setting a pattern of test name to `TEST_FILTER`.
 
@@ -56,7 +56,7 @@ To run only test with filter name:
 
     TEST_TAG='foo.*api' make functionaltest
 
-### Filter By File
+### Filter by file
 
 To run a *specific* unit test:
 
