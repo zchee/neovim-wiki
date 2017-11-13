@@ -18,7 +18,7 @@ To run only _functional_ tests:
 
 ---
 
-## Filter Tests
+## Filter tests
 
 Tests can be "tagged" by adding `#` before a token in the test description.
 
