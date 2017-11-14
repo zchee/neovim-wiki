@@ -193,7 +193,7 @@ Neovim can be installed using the default package manager in Solus (eopkg):
 
 ### Ubuntu
 
-Neovim has been added to a "Personal Package Archive" (PPA). This allows you to install it with `apt-get` on Ubuntu [14.04 and later](https://wiki.ubuntu.com/Releases). Choose **stable** or **unstable**:
+Neovim has been added to a "Personal Package Archive" (PPA). This allows you to install it with `apt-get`. Follow the links to the PPAs to see which versions of Ubuntu are currently available via the PPA. Choose **stable** or **unstable**:
 
 - [https://launchpad.net/~neovim-ppa/+archive/ubuntu/**stable**](https://launchpad.net/~neovim-ppa/+archive/ubuntu/stable)
 - [https://launchpad.net/~neovim-ppa/+archive/ubuntu/**unstable**](https://launchpad.net/~neovim-ppa/+archive/ubuntu/unstable)
