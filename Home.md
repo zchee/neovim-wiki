@@ -15,7 +15,7 @@
 - **[Contribute](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md)**
     - [Testing](https://github.com/neovim/neovim/blob/master/test/README.md)
         - [Running tests](https://github.com/neovim/neovim/blob/master/test/README.md#running-tests)
-        - [Unit testing](https://github.com/neovim/neovim/blob/master/test/README.md#unit-tests)
+        - [Unit Testing](https://github.com/neovim/neovim/blob/master/test/README.md#unit-tests)
     - [Refactoring guidelines](https://github.com/neovim/neovim/wiki/Refactoring)
     - [Merging patches from upstream Vim](Merging-patches-from-upstream-Vim)
 - [Development tips](Development-tips)
