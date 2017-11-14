@@ -99,4 +99,4 @@ The following should be removed from all imported documentation, and not be used
 [vi-annotations]: https://github.com/neovim/neovim/commit/818f7aefd2fe7eacd7135c5e3154934f24c85ca7
 
 [memset]: https://github.com/neovim/neovim/pull/1635
-[checklist]: Unit-tests#checklist-for-migrating-legacy-tests
+[checklist]: https://github.com/neovim/neovim/blob/master/test/README.md#checklist-for-migrating-legacy-tests
