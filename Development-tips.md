@@ -1,4 +1,4 @@
-## NeoVim plugins
+## Neovim plugins
 
 - [nvimdev.nvim](https://github.com/tweekmonster/nvimdev.nvim)
     - Get Neomake working with Lua and C while working on the neovim codebase
