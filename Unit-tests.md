@@ -1,1 +1,1 @@
-see https://github.com/neovim/neovim/blob/master/test/README.md
+Moved to: https://github.com/neovim/neovim/blob/master/test/README.md
