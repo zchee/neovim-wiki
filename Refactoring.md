@@ -16,4 +16,4 @@ Refactoring Vim structurally and aesthetically is an important goal of Neovim. B
 
 While there is a [code style guide](http://neovim.io/develop/style-guide.xml), you should not put work into PR's that only change "trivial" code style (e.g. comment style). They would put additional burden on people [porting vim patches](https://github.com/neovim/neovim/wiki/Merging-patches-from-upstream-Vim) for not a lot of gain.
 
-If, however, you find a portion of code that you think that could be clearer by following the style guide, it would certainly be worth looking at a PR and deciding case-by-case.
+If, however, you find a portion of code that you think could be clearer by following the style guide, it would certainly be worth looking at a PR and decide on a case-by-case basis.
