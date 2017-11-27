@@ -34,10 +34,18 @@ No. Starting with Neovim 0.2 [PR #4411](https://github.com/neovim/neovim/pull/44
 
 ### How can I use true colors in the terminal?
 
-Add this to your `init.vim`:
+True colors are available starting in 0.1.5. Add this to your `init.vim`:
 
 ```vim
 set termguicolors
+```
+
+or this for backwards compatibility
+
+```vim
+if has('nvim-0.1.5')        " True color in neovim wasn't added until 0.1.5
+    set termguicolors
+endif
 ```
 
 See [this gist](https://gist.github.com/XVilka/8346728) for more information about true colors, such as what terminals support it.
