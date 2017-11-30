@@ -111,6 +111,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [vim-javacomplete2](https://github.com/artur-shaik/vim-javacomplete2): an omni-completion plugin for Java
 - [vim-man](https://github.com/bruno-/vim-man): View and grep man pages in vim
 - [vim-markdown-composer](https://github.com/euclio/vim-markdown-composer): asynchronous markdown preview
+- [vim-netranger](https://github.com/ipod825/vim-netranger): A ranger-like system/cloud storage explorer
 - [vim-pandoc](https://github.com/vim-pandoc/vim-pandoc): integrate with the pandoc document converter and work with documents written in its markdown variant
 - [vim-plug](https://github.com/junegunn/vim-plug): Plugin manager
 - [vim-rainbows](https://github.com/nfischer/vim-rainbows) runtime files for the Rainbow programming language
