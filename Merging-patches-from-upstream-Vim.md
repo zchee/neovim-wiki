@@ -1,30 +1,22 @@
-_See **[Quickstart](#quickstart)** to get started immediately. Also note the section on [**Not Applicable** patches](#na-not-applicable-patches)._
+_See **[Quickstart](#quickstart)** to get started immediately. Also note the section on [**Not Applicable**](#na-not-applicable-patches) patches._
 
 Neovim was forked from Vim 7.4.160; it is kept up-to-date with relevant Vim patches in order to avoid duplicate work. To see the status of Vim patches, go to the  [**vim patch report**](http://neovim.io/doc/reports/vimpatch/) or run [`vim-patch.sh`](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh): 
 
     ./scripts/vim-patch.sh -l
 
-Everyone is welcome to [send pull requests](#pull-requests) for relevant Vim patches, but some types of patches are **not applicable:**
-
-- **Compiler warning fixes**: Neovim strives to have no warnings at all, and has a very different build system from Vim.
-    - **Note:** Coverity fixes in Vim *are* relevant to Neovim.
-- **#ifdef tweaking**: For example, Vim decided to enable `FEAT_VISUAL` for all platforms — but Neovim already does that. Adding new `FEAT_` guards also isn't relevant to Neovim.
-- **Legacy system support**: Fixes for legacy systems such as Amiga, OS/2 Xenix, Mac OS 9, Windows older than XP SP2, are not needed because they are not supported by Neovim.
-- **`if_*.c`** changes: `if_python.c` et. al. were removed.
-- **term.c** changes: the Neovim TUI uses libtermkey to read terminal sequences; Vim's `term.c` was removed.
-- Most **GUI-related** changes: Neovim GUIs are implemented external to the core C codebase.
-- Anything else might be relevant; err on the side of caution, and post an issue if you aren't sure. 
-
-To mark a patch as "Not Applicable", append `NA` next to the commented-out patch number in `version.c`.
+Everyone is welcome to [send pull requests](#pull-requests) for relevant Vim patches, but some types of patches are [not applicable](#na-not-applicable-patches).
 
 Quickstart
 ----------
 
-1. Pull down the Neovim source (`git clone https://github.com/neovim/neovim.git`)
+1. Pull down the Neovim source:
+   ```
+   git clone https://github.com/neovim/neovim.git
+   ```
 2. Run `./scripts/vim-patch.sh -l` to see the list of missing Vim patches.
-3. Choose a patch from the list (usually the oldest one), e.g. `8.0.0123`.
+3. Choose a patch from the list (usually the _oldest_ one), e.g. `8.0.0123`.
 4. Run `./scripts/vim-patch.sh -p 8.0.0123`
-    - The script guides you with further instructions.
+5. Follow the instructions given by the script.
 
 It's strongly recommended to work on the _oldest_ patch from the list (just make sure someone didn't already start working on it), because some patches might depend on others. You're most likely going to encounter merge conflicts regardless, but this way such conflicts are kept to a minimum.
 
@@ -47,16 +39,31 @@ _Note:_ **[vim-patch.sh](https://github.com/neovim/neovim/blob/master/scripts/vi
 N/A ("Not Applicable") patches
 ------------------------------
 
-Many Vim patches are not applicable to Neovim. We regularly update version.c to reflect this, with a single pull request. If you find NA patches, 
-
-* find the existing "NA patches" pull request, 
-* or create a new one with the intention of maintaining that pull request for a few weeks. 
+Many Vim patches are not applicable to Neovim. If you find NA patches, find the existing `vim-patch: NA patches` pull request, or create a new one with the intention of maintaining it for a few weeks. 
 
 The title of the pull request should be:
 
-    version.c: mark NA patches
+    vim-patch: NA patches
 
 so that it is easy to find. See [PR #4634](https://github.com/neovim/neovim/pull/4634) for example.
+
+**To mark a patch as "Not Applicable",** mention it in a commit message (anywhere; in any commit message) with this format _exactly_:
+
+    vim-patch:<version-or-commit>
+
+where `<version-or-commit>` is valid a Vim version tag like `8.0.0123` or a valid commit-id (hash) from the Vim git repo.
+
+### Types of "Not Applicable" Vim patches:
+
+- **Compiler warning fixes**: Neovim strives to have no warnings at all, and has a very different build system from Vim.
+    - **Note:** Coverity fixes in Vim *are* relevant to Neovim.
+- **#ifdef tweaking**: For example, Vim decided to enable `FEAT_VISUAL` for all platforms — but Neovim already does that. Adding new `FEAT_` guards also isn't relevant to Neovim.
+- **Legacy system support**: Fixes for legacy systems such as Amiga, OS/2 Xenix, Mac OS 9, Windows older than XP SP2, are not needed because they are not supported by Neovim.
+- **`if_*.c`** changes: `if_python.c` et. al. were removed.
+- **term.c** changes: the Neovim TUI uses libtermkey to read terminal sequences; Vim's `term.c` was removed.
+- Most **GUI-related** changes: Neovim GUIs are implemented external to the core C codebase.
+- Anything else might be relevant; err on the side of caution, and post an issue if you aren't sure. 
+
 
 Code differences
 ----------------
