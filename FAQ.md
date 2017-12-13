@@ -50,6 +50,21 @@ endif
 
 See [this gist](https://gist.github.com/XVilka/8346728) for more information about true colors, such as what terminals support it.
 
+### Terminal shows weird symbols (`�[2 q`) when changing modes
+
+This is a bug in your terminal emulator.  It happens because Nvim sends cursor-shape termcodes by default, if the terminal appears to be xterm-compatible (`TERM=xterm-256color`).
+
+To workaround the issue, you can:
+
+- Use a different terminal emulator
+- Disable `guicursor` in your Nvim config:
+  ```
+  set guicursor=
+  ```
+
+See also `:help $TERM` for recommended values of `$TERM`.
+
+
 ### How to change cursor _shape_ in the terminal?
 
 - For Nvim 0.1.7 or older: see the note about `NVIM_TUI_ENABLE_CURSOR_SHAPE` in `man nvim`.
