@@ -49,7 +49,7 @@ _Note: Some of these projects are **experimental/unstable**._
 | Node.js     | [promised-neovim-client](https://github.com/rhysd/promised-neovim-client) (fork of the official client) |
 | Perl        | [yanick/Neovim-RPC](https://github.com/yanick/Neovim-RPC)                            |
 | Python      | [neovim/python-client](https://github.com/neovim/python-client)                      |
-| R           | [jalvesaq/nvimcom](https://github.com/jalvesaq/nvimcom)                              |
+| R           | [jalvesaq/Nvim-R](https://github.com/jalvesaq/Nvim-R)                                |
 | Racket      | [HiPhish/neovim.rkt](https://gitlab.com/HiPhish/neovim.rkt)                          |
 | Ruby        | [alexgenco/neovim-ruby](https://github.com/alexgenco/neovim-ruby)                    |
 | Rust        | [oakes/neovim-rs](https://github.com/oakes/neovim-rs)                                |
