@@ -24,4 +24,4 @@ Declarations for the table
 
 
 
-For more details and some more advanced usage, see [`typval.h`](https://github.com/neovim/neovim/blob/master/src/nvim/eval/typval.h#L164) from line 164, [`typeval.c`](https://github.com/neovim/neovim/blob/master/src/nvim/eval/typval.c#L159) from line 159. The line numbers are of commit https://github.com/neovim/neovim/commit/dee78a4095a27369e428572f74f7b64bcc5f670e, so if the links seem strange, try browsing the tree at that point.
+For more details and some more advanced usage, the doxygen documentation on [`typval.h`](https://neovim.io/doc/dev/typval_8h.html) and [`typval.c`](https://neovim.io/doc/dev/typval_8c.html).
