@@ -1,11 +1,18 @@
-Management of lists (types `list_T` and `listitem_T` from vim) was changed in https://github.com/neovim/neovim/pull/7708/. There is a lint against the "old" usage, but here is a list (pun not intended) of the most important changes:
+Management of lists (types `list_T` and `listitem_T` from vim) was changed in https://github.com/neovim/neovim/pull/7708/. There is a lint against the "old" usage, but here is a list (pun not intended) of the most important changes. 
+
+Declarations for the table
+
+* `list_T li`: a list
+* `listitem_T item`: an item of `li`
+* `int val` a value for `lv_copyID`
 
 | Old                   | New        | Comment|
-|:----------------------------------------|:------------------:|:----------------:|
+|:-----------------------------------------------|:------------------|:----------------|
 |`li->lv_first`|`tv_list_first(li)`||
 |`li->lv_last`|`tv_list_last(li)`||
-|`(li)->li_next`| `TV_LIST_ITEM_NEXT({list}, li)`|To be avoided if possible, must use list which li belongs to.|
-|`(li)->li_prev`| `TV_LIST_ITEM_PREV({list}, li)`|To be avoided if possible, must use list which li belongs to.|
+|`(item)->li_next`| `TV_LIST_ITEM_NEXT(li, item)`|To be avoided if possible, must use list which li belongs to.|
+|`(item)->li_prev`| `TV_LIST_ITEM_PREV(li, item)`|To be avoided if possible, must use list which li belongs to.|
+|| Suggestion by @ZyX-l:| Use `TV_LIST_ITER` or indexing instead of the previous two calls.|
 |`li->lv_len` | `tv_list_len(li)`||
 |`li->lv_lock` |`tv_list_locked(li)`||
 |`&li->li_tv` | `TV_LIST_ITEM_TV(li)`||
