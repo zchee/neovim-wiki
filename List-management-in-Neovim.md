@@ -12,8 +12,9 @@ Management of lists (types `list_T` and `listitem_T` from vim) was changed in ht
 |`li->lv_refcount++`|`tv_list_ref(li)`||
 |`val = li->lv_copyID` | `val = tv_list_copyid(li)`||
 |`li->lv_copyID = val`| `tv_list_set_copyid(li, val)`||
-|`for (li = list->lv_first; li != NULL; li = li->li_next) { use(li);}`|`TV_LIST_ITER(list, li, {use(li);})`| Only if you need to modify `li`|
 |`for (li = list->lv_first; li != NULL; li = li->li_next) { use(li);}`|`TV_LIST_ITER_CONST(list, li, {use(li);})`| If you don't need to modify `li`|
+|`for (li = list->lv_first; li != NULL; li = li->li_next) { use(li);}`|`TV_LIST_ITER(list, li, {use(li);})`| Only if you need to modify `li`|
+
 
 
 
