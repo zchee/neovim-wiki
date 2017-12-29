@@ -67,12 +67,11 @@ where `<version-or-commit>` is valid a Vim version tag like `8.0.0123` or a vali
 version.c
 ---------
 
-The list of Vim patches in `src/nvim/version.c` is automatically updated based on the presence of `vim-patch:xxx` tokens in the Neovim git log. ([#7735](https://github.com/neovim/neovim/pull/7735)
+The list of Vim patches in `src/nvim/version.c` is [automatically updated](https://github.com/neovim/neovim/pull/7780) based on the presence of `vim-patch:xxx` tokens in the Neovim git log.
 
 - Don't update `src/nvim/version.c` yourself.
-  - `scripts/vim-patch.sh -p` intentionally omits changes to `version.c`, to avoid merge conflicts and save time when porting a patch.
-- `scripts/vimpatch.lua` is used to update `src/nvim/version.c`.
-  - Currently it only recognizes tokens like `vim-patch:8.0.1206`. It won't recognize `vim-patch:<hash>`.
+  - `scripts/vim-patch.sh -p` intentionally omits `version.c` to avoid merge conflicts and save time when porting a patch.
+- The automation script (`scripts/vimpatch.lua`) only recognizes tokens like `vim-patch:8.0.1206`, not `vim-patch:<hash>`.
 
 Code differences
 ----------------
