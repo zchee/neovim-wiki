@@ -145,7 +145,9 @@ make
 1. Install all dependencies manually.
 2. Create directory `build` in the root of the repository.
 3. Switch to it and run `cmake ..` with all necessary options and environment. E.g.:
-    - `CC=clang CFLAGS=" -O0 -g " cmake .. -DMIN_LOG_LEVEL=0 -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=$PWD/root -DCLANG_ASAN_UBSAN=ON`
+   ```
+   CC=clang CFLAGS=" -O0 -g " cmake .. -DMIN_LOG_LEVEL=3 -DCMAKE_INSTALL_PREFIX=foo
+   ```
 4. Run `make`.
 
 
