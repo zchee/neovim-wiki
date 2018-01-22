@@ -127,23 +127,6 @@ Automating builds and other tasks lowers the obstacles for contributors. Tasks i
 Easy
 
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
-___
-#### Plugin tools
-
-**Desirable Skills:**
-A good prototyping language.
-
-**Description:**
-Neovim plugin tools can be developed for multiple user types. For regular users the
-`:checkhealth` command could be improved to detect clashes or missing requirements
-of plugins.
-Users looking to embed neovim into application could make use of an sdk to 
-build an Intellij like Plugin Manager.
-
-**Difficulty:**
-easy to Hard
-
-**Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
 
 ___
 #### Benchmarking
