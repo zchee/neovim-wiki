@@ -27,8 +27,6 @@ helpful, not rigid.
 # Projects
 
 ## Table of Contents
-  * [Refactoring](#refactoring)
-      * [External UI API](#improve-external-ui-api) 
 
   * [New Features](#new-features)
       * ["multiprocessing" feature](#"multiprocessing"-feature)
@@ -41,28 +39,6 @@ helpful, not rigid.
       * [Plugin Tools](#plugin-tools)
       * [Benchmarking](#benchmarking)
 
-## Refactoring
-___
-#### Improve External UI API
-
-**Desirable Skills:**
-C language
-
-**Description:**
-Neovim can be embedded via it's [msgpack rpc api](https://neovim.io/doc/user/msgpack_rpc.html). There are [projects](https://github.com/neovim/neovim/wiki/Related-projects) doing this for many languages already. The client holds an internal representation of the user interface which it updates following the api. Clients in higher level languages can/are currently apply optimizations to improve the performance. The main performance bottle neck for such languages is scrolling which requires many value lookups per second which is hampered by [boxed values](http://stackoverflow.com/questions/13055/what-is-boxing-and-unboxing-and-what-are-the-trade-offs).
-
-There are various ways the api could be improved:
-  * Optimize screen drawing instructions in `screen.c`
-  * A SDK for developing frontend gui's
-  * Api taking future [improvements](https://github.com/neovim/neovim/pull/5686) into account
-
-**Expected Result:**
-Interfaces implemented with the external api are faster and easier to implement
-
-**Difficulty:** ...
-Medium to Hard
-
-**Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
 
 ## New Features
 ___
