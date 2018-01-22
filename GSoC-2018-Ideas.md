@@ -181,7 +181,7 @@ A good prototyping language.
 
 **Description:**
 Neovim plugin tools can be developed for multiple user types. For regular users the
-`:CheckHealth` command could be improved to detect clashes or missing requirements
+`:checkhealth` command could be improved to detect clashes or missing requirements
 of plugins.
 Users looking to embed neovim into application could make use of an sdk to 
 build an Intellij like Plugin Manager.
