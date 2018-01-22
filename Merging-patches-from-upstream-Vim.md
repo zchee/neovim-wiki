@@ -39,17 +39,13 @@ _Note:_ **[vim-patch.sh](https://github.com/neovim/neovim/blob/master/scripts/vi
 N/A ("Not Applicable") patches
 ------------------------------
 
-Many Vim patches are not applicable to Neovim. If you find NA patches, find the existing `vim-patch: NA patches` pull request, or create a new one with the intention of maintaining it for a few weeks. 
+Many Vim patches are not applicable to Neovim. If you find NA patches, find the existing `version.c: update` pull request by @marvim and mention the NA patches in a comment. Example: [PR #7886](https://github.com/neovim/neovim/pull/7886)
 
-The title of the pull request should be:
-
-    vim-patch: NA patches
-
-so that it is easy to find. See [PR #4634](https://github.com/neovim/neovim/pull/4634) for example.
-
-**To mark a patch as "Not Applicable",** mention it in a commit message (anywhere; in any commit message) with this format _exactly_:
+If you are working on a series of patches, you may notice some "Not Applicable" patches. In that case you may want to mark the NA patches a commit message. To do so, use this format _exactly_ (each patch on a separate line):
 
     vim-patch:<version-or-commit>
+    vim-patch:<version-or-commit>
+    ...
 
 where `<version-or-commit>` is valid a Vim version tag like `8.0.0123` or a valid commit-id (hash) from the Vim git repo.
 
