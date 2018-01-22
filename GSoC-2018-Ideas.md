@@ -31,8 +31,7 @@ helpful, not rigid.
   * [New Features](#new-features)
       * ["multiprocessing" feature](#"multiprocessing"-feature)
       * [Vim perl plugin compatibility](#if_perl-compatibility-layer)
-      * [Java/C# client](#java-c-client)
-      * [LSP support](#lsp-support)
+      * [Java/C# client](#javac-client)
 
   * [Tools &amp; Infrastructure](#tools--infrastructure)
       * [Continuous Integration](#improve-continuous-integration)
