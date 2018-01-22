@@ -31,7 +31,7 @@ helpful, not rigid.
   * [New Features](#new-features)
       * ["multiprocessing" feature](#"multiprocessing"-feature)
       * [Vim perl plugin compatibility](#if_perl-compatibility-layer)
-      * [Haxe client](#haxe-client)
+      * [Java/C# client](#java-c-client)
       * [LSP support](#lsp-support)
 
   * [Tools &amp; Infrastructure](#tools--infrastructure)
@@ -72,47 +72,26 @@ to be written in any language. A perl api client already exists, the only part m
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
 
 ___
-#### Haxe client
+#### Java/C# client
 
 **Desirable Skills:**
-Haxe or something object oriented Java/C#/Python/JS
+
+- Moderate/High experience in Java or C#
 
 **Description:**
-An [api client](#https://neovim.io/doc/user/msgpack_rpc.html#rpc-api-client) written in haxe would enable more languages to have a maintained client. 
+
+Implement a Nvim [API client](https://github.com/neovim/neovim/wiki/Related-projects#api-clients) using Java or C#. 
 
 **Expected Result:**
-Most tests from the current [python-client](https://github.com/neovim/python-client) are passable by the haxe python client.
+
+- C# or Java library that can be used to build Neovim extensions (UIs and other applications).
+- Passes the test suite used by the Nvim [python-client](https://github.com/neovim/python-client).
 
 **Difficulty:**
+
 medium
 
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
-___
-#### LSP support
-
-**Desirable Skills:**
-Lua and some knowledge of Vim (or ability to grok documentation)
-
-**Description:**
-[initial discussion](https://github.com/neovim/neovim/issues/4982)
-continued [here](https://github.com/neovim/neovim/issues/5522)
-
-The idea is to provide support for the [Microsoft LSP](https://github.com/Microsoft/language-server-protocol). This is a two fold project.
-
-- The first is creating the ability to effectively send the correct messages at the correct time in the correct format to a language server.
-  - For example, the user would like to request a completion, and the message is created and sent.
-- The second is responding to messages within the neovim editor correctly. 
-  - For example, a message with completion results should populate the completion menu and display that to the user.
-
-**Expected Result:**
-A functional LSP client that could be shipped with neovim.
-
-**Difficulty:**
-Medium
-
-**Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
-
-Questions can also be sent to TJ DeVries ([@tjdevries](http://github.com/tjdevries))
 
 ___  
 #### Neovim-based "Vim mode"
