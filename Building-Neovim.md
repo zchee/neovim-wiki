@@ -168,7 +168,7 @@ Platform-specific requirements are listed below.
 
 #### Ubuntu / Debian
 
-    sudo apt-get install libtool libtool-bin autoconf automake cmake g++ pkg-config unzip
+    sudo apt-get install ninja-build libtool libtool-bin autoconf automake cmake g++ pkg-config unzip
 
 Note: `libtool-bin` is only required for Ubuntu 16.04/Debian Jessie and newer.
 
@@ -177,15 +177,15 @@ Note: `libtool-bin` is only required for Ubuntu 16.04/Debian Jessie and newer.
 If you're using CentOS/RHEL 6 you need at least autoconf version 2.69 for
 compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
 
-    sudo yum -y install libtool autoconf automake cmake gcc gcc-c++ make pkgconfig unzip
+    sudo yum -y install ninja-build libtool autoconf automake cmake gcc gcc-c++ make pkgconfig unzip
 
 #### openSUSE
 
-    sudo zypper install libtool autoconf automake cmake gcc-c++ gettext-tools
+    sudo zypper install ninja libtool autoconf automake cmake gcc-c++ gettext-tools
 
 #### Arch Linux
 
-    sudo pacman -S base-devel cmake unzip
+    sudo pacman -S base-devel cmake unzip ninja
 
 #### Nix or NixOS
 
@@ -235,11 +235,11 @@ gmake
 * Install other dependencies:
   * via MacPorts:
     ```
-    sudo port install libtool autoconf automake cmake pkgconfig gettext
+    sudo port install ninja libtool autoconf automake cmake pkgconfig gettext
     ```
   * via Homebrew:
     ```
-    brew install libtool automake cmake pkg-config gettext
+    brew install ninja libtool automake cmake pkg-config gettext
     ```
 * If you see **wget certificate errors** (for macOS *before* version 10.10/Yosemite):
   * via MacPorts:
