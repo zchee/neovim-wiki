@@ -36,7 +36,6 @@ helpful, not rigid.
 
   * [Tools &amp; Infrastructure](#tools--infrastructure)
       * [Continuous Integration](#improve-continuous-integration)
-      * [Plugin Tools](#plugin-tools)
       * [Benchmarking](#benchmarking)
 
 
@@ -58,18 +57,48 @@ ___
 #### if_perl compatibility layer
 
 **Desirable Skills:**
-any(lua, perl, python)
+
+C + perl
 
 **Description:**
 
-Implement Vim's legacy perl API. See the [ruby layer](https://github.com/alexgenco/neovim-ruby) for example. Vim can be compiled to support python/lua/ruby/perl plugins. Neovim has a rpc plugin architecture that allows plugins
-to be written in any language. A perl api client already exists, the only part missing is a neovim plugin that works in the same way as vim perl support.
+Implement Vim's legacy perl API. See the [ruby layer](https://github.com/alexgenco/neovim-ruby) for example. Vim can be compiled to support python/lua/ruby/perl plugins. Neovim has a RPC plugin architecture that allows plugins to be written in any language. A perl API client already exists, the only part missing is a "host" that implements the legacy Vim `:perl`, `:perlfile`, etc. commands.
 
-**Difficulty:** Medium to Hard
+**Difficulty:** Medium
 
-**Expected Result:** Vim perl plugins can be run in neovim.
+**Expected Result:** Vim perl plugins (such as dbext) can run in Neovim.
 
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
+
+___
+
+#### TUI (Terminal UI) remote attachment
+
+**Desirable Skills:**
+
+C
+
+**Description:**
+
+The built-in UI is called the TUI. It looks like Vim, but internally it is decoupled from the UI and "screen" layout subsystem. It was designed to be able to connect to other (remote) instances of Nvim, but this hasn't been implemented yet.
+
+**Expected Result:**
+
+Modify the TUI subsystem so that it can display a remote Nvim instance.
+
+Example:
+
+    nvim --servername foo
+
+will connect to the Nvim server at address `foo`. The `nvim` client instance sends input to the remote Nvim server, and reflects the UI of the remote Nvim server. So the `nvim` client acts like any other external (G)UI.
+
+**Difficulty:** 
+
+Medium
+
+**Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
+
+
 
 ___
 #### Java/C# client
