@@ -32,6 +32,7 @@ helpful, not rigid.
       * ["multiprocessing" feature](#"multiprocessing"-feature)
       * [Vim perl plugin compatibility](#if_perl-compatibility-layer)
       * [Java/C# client](#javac-client)
+      * [Improve autoread](#improve-autoread)
 
   * [Tools &amp; Infrastructure](#tools--infrastructure)
       * [Continuous Integration](#improve-continuous-integration)
@@ -93,6 +94,21 @@ medium
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
 
 ___  
+#### Improve autoread
+
+**Desirable:** Any  
+
+**Description:** Reload file/notify user when a file being edited changes outside of `nvim`. 
+
+**Expected Result:**
+
+Neovim has the 'autoread' setting that regularly checks if a file edited in neovim has been externally modified. It thus notifies the user to prevent overwriting the changes. Sadly the current mechanism isn't foolproof. This project intends to make this feature work as well as in other editors like Sublime text and across the neovim supported platforms. The interface should also be improved so that notifications show how different the edited and modified files are. 
+The candidate can realize some of the difficulties involved with this [proposition for linux](https://github.com/neovim/neovim/issues/1380)
+
+**Difficulty:** Medium
+
+**Mentor:** Matthieu Coudron ([@teto](http://github.com/teto))
+___
 #### Neovim-based "Vim mode"
 
 **Desirable:** Any  
