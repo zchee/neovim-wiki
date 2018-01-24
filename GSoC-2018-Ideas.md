@@ -31,6 +31,7 @@ helpful, not rigid.
   * [New Features](#new-features)
       * ["multiprocessing" feature](#"multiprocessing"-feature)
       * [TUI client](#tui-terminal-ui-remote-attachment)
+      * [GUI improvements](#ui-protocol-improvements)
       * [Vim perl plugin compatibility](#if_perl-compatibility-layer)
       * [Java/C# client](#javac-client)
       * [Improve autoread](#improve-autoread)
