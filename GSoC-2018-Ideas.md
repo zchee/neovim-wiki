@@ -99,7 +99,29 @@ Medium
 
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
 
+___
 
+#### UI protocol improvements
+
+**Desirable Skills:**
+
+C
+
+**Description:**
+
+Neovim GUI:s are implemented as processes communicating with Neovim over a protocol. Currently this protocol exposes most functionality as a terminal-like screen grid. A long term goal is enabling richer UIs (including embeddings in GUI editors, like VSCode) by refactoring the protocol towards semantic updates and letting the GUI actually draw buffer contents and other screen elements. Currently this has been implemented for a few specific elements, like the completion popup menu and the command line.
+
+**Expected Result:**
+
+The UI protocol has gained new capabilities. This could involve substantial changes such as the GUI receiving redraw updates for each window separately, so that the GUI could be responsible for managing the overall layout of windows and statuslines.
+
+Alternatively, improvements could be done within the current global screen grid, such as the ability to display grid-aligned images in signs, buffers and statuslines. It could also involve adding semantic information to the grid, so that GUI:s can identify screen elements reliably rather than guessing it from highlights.
+
+**Difficulty:**
+
+Medium to Hard
+
+**Mentor:** Björn Linse ([@bfredl](http://github.com/bfredl))
 
 ___
 #### Java/C# client
