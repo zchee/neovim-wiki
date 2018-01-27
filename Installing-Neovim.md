@@ -111,7 +111,7 @@ Neovim is in [Debian](https://packages.debian.org/search?keywords=neovim).
 
     sudo apt-get install neovim
 
-Python (`:python`) support is also installable via the Debian package manager.
+Python (`:python`) support is installable via the package manager on Debian unstable.
 
     sudo apt-get install python-neovim
     sudo apt-get install python3-neovim
