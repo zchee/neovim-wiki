@@ -104,7 +104,7 @@ lldb .deps/usr/bin/luajit -- .deps/usr/bin/busted --lpath="./build/?.lua" test/u
 
 To attach to a running `nvim` process with a pid of 1234:
 
-    gdb -tui build/bin/nvim 1234
+    gdb -tui -p 1234 build/bin/nvim
 
 The `gdb` interactive prompt will appear. At any time you can:
 
