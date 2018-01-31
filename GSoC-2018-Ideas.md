@@ -32,6 +32,7 @@ helpful, not rigid.
       * ["multiprocessing" feature](#"multiprocessing"-feature)
       * [TUI client](#tui-terminal-ui-remote-attachment)
       * [GUI improvements](#ui-protocol-improvements)
+      * [Live preview of commands](#live-preview-of-commands)
       * [Vim perl plugin compatibility](#if_perl-compatibility-layer)
       * [Java/C# client](#javac-client)
       * [Improve autoread](#improve-autoread)
@@ -110,7 +111,7 @@ C
 
 **Description:**
 
-Neovim GUI:s are implemented as processes communicating with Neovim over a protocol. Currently this protocol exposes most functionality as a terminal-like screen grid. A long term goal is enabling richer UIs (including embeddings in GUI editors, like VSCode) by refactoring the protocol towards semantic updates and letting the GUI actually draw buffer contents and other screen elements. Currently this has been implemented for a few specific elements, like the completion popup menu and the command line.
+Nvim GUI:s are implemented as processes communicating with Nvim over a protocol. Currently this protocol exposes most functionality as a terminal-like screen grid. A long term goal is enabling richer UIs (including embeddings in GUI editors, like VSCode) by refactoring the protocol towards semantic updates and letting the GUI actually draw buffer contents and other screen elements. Currently this has been implemented for a few specific elements, like the completion popup menu and the command line.
 
 **Expected Result:**
 
@@ -121,6 +122,27 @@ Alternatively, improvements could be done within the current global screen grid,
 **Difficulty:**
 
 Medium to Hard
+
+**Mentor:** Björn Linse ([@bfredl](http://github.com/bfredl))
+
+___
+#### Live preview of commands
+
+**Desirable Skills:**
+
+C
+
+**Description:**
+
+Nvim has builtin live preview of `:%s` substitution, as a result of a [[successful collaboration with students|https://medium.com/@eric.burel/stop-using-open-source-5cb19baca44d]]. This support could be extended to more commands, such as `:global` and `:normal`.
+
+**Expected Result:**
+
+More commands support interactive preview. This could be done by extending the hard-coded support for substitution preview to more commands. Alternatively, a more scalable approach could be to add core functionality that makes it easier to implement live preview as plugins in vimL and/or lua. See [[#7370|https://github.com/neovim/neovim/issues/7370]] for some ideas.
+
+**Difficulty:**
+
+Medium
 
 **Mentor:** Björn Linse ([@bfredl](http://github.com/bfredl))
 
