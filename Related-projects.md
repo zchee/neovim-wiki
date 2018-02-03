@@ -62,6 +62,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 
 - [acid.nvim](https://github.com/clojure-vim/acid.nvim): Async nrepl client for clojure development
 - [alchemist.vim](https://github.com/slashmili/alchemist.vim): Elixir Integration
+- [bolt.nvim](https://github.com/philip-karlsson/bolt.nvim): Filter as you type file manager with fuzzy matching and ripgrep integration
 - [buildit.nvim](https://github.com/wbthomason/buildit.nvim): A better async project builder
 - [chromatica.nvim](https://github.com/arakashic/chromatica.nvim): Clang based syntax highlighting
 - [dein.vim](https://github.com/Shougo/dein.vim): Plugin manager
