@@ -153,16 +153,16 @@ to tui.c:terminfo_start.
 
 ### Using `gdbserver` in `tmux`
 
-Consider using a [custom makefile](Building-Neovim#custom-makefile) to quickly start debugging sessions using the `gdbserver` method mentioned above. This example will create the debugging session when you type `make debug`.
+Consider using a [custom makefile](Building-Neovim#custom-makefile) to quickly start debugging sessions using the `gdbserver` method mentioned above. This example `local.mk` will create the debugging session when you type `make debug`.
 
 ```make
 .PHONY: dbg-start dbg-attach debug build
 
 build:
-	@$(MAKE) -C neovim
+	@$(MAKE) nvim
 
 dbg-start: build
-	@tmux new-window -n 'dbg-neovim' 'sudo gdbserver :6666 ./build/bin/nvim -D'
+	@tmux new-window -n 'dbg-neovim' 'gdbserver :6666 ./build/bin/nvim -D'
 
 dbg-attach:
 	@tmux new-window -n 'dbg-cgdb' 'cgdb -x gdb_start.sh ./build/bin/nvim'
