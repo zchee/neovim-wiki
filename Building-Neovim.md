@@ -253,6 +253,15 @@ gmake
     echo CA_CERTIFICATE=$(brew --prefix curl-ca-bundle)/share/ca-bundle.crt >> ~/.wgetrc
     ```
 
+#### cygwin
+
+Install all dependencies the normal way, then build neovim the normal way for a random CMake application (i.e. do not use the `Makefile` that automatically downloads and builds "bundled" dependencies)
+
+The cygport repo contains cygport files (like APKBUILD, PKGBUILD, etc.) for all the dependencies not available in the cygwin distribution, and describes any special commands or arguments needed to build. the cygport definitions also try to describe the required dependencies for each one.
+unless custom commands are provided, cygport just calls autogen/cmake, make, make install, etc. in a clean, consistent way.
+
+https://github.com/cascent/neovim-cygwin was built on cygwin 2.9.0. Newer libuv should require slightly less patching and some ssp stuff changed in cygwin 2.10.0 so that might change things too when building neovim.
+
 #### Windows / MSYS2
 
 From the MSYS2 shell install these packages
