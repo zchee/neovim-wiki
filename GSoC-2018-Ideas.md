@@ -11,7 +11,7 @@ The Neovim source has roots going back to 1987 which means many libraries such a
 
 We encourage you to join the #neovim IRC or [gitter channel](https://gitter.im/neovim/neovim) to discuss these projects with the community and our mentors. Because communication is a big part of open source development you are expected to get in touch with us before making your application.
 
-It's also recommended to start with a smaller coding task, to get introduced to the Neovim project. Look on the issue tracker for simpler issues and submit a small PR attempting to solve the issue. See for instance the [good first issue](https://github.com/neovim/neovim/issues?utf8=✓&q=is%3Aopen+is%3Aissue+label%3A"good+first+issue") and [complexity: low](https://github.com/neovim/neovim/issues?q=is%3Aopen+is%3Aissue+label%3Acomplexity%3Alow) tags. The goal here is to get accustomed with the codebase and to our workflow for reviewing and testing PRs, rather than directly making a large code contribution.
+It's also recommended to start with a smaller coding task, to get introduced to the Neovim project. Look on the issue tracker for simpler issues and submit a small PR attempting to solve the issue. See for instance the [good first issue](https://github.com/neovim/neovim/issues?utf8=✓&q=is%3Aopen+is%3Aissue+label%3A"good+first+issue") and [complexity:low](https://github.com/neovim/neovim/issues?q=is%3Aopen+is%3Aissue+label%3Acomplexity%3Alow) tags. The goal here is to get accustomed with the codebase and to our workflow for reviewing and testing PRs, rather than directly making a large code contribution.
 
 The following list of projects are just some ideas. We are happy to hear any suggestions that you may have.
 
