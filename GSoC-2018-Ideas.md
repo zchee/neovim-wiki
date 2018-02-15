@@ -110,7 +110,8 @@ ___
 
 **Desirable Skills:**
 
-C
+- C and related tools
+- Familiar with event-loop programming model
 
 **Description:**
 
@@ -133,7 +134,8 @@ ___
 
 **Desirable Skills:**
 
-C
+- C and related tools
+- Familiar with event-loop programming model
 
 **Description:**
 
@@ -168,11 +170,14 @@ The Nvmi RPC API is documented at [:help api](https://neovim.io/doc/user/api.htm
 
 For reference, you can find clients in other languages at the [related projects](https://github.com/neovim/neovim/wiki/Related-projects#api-clients) wiki page.
 
+The ultimate goal is to have a library that can be used to create plugins for [IntelliJ](https://www.jetbrains.com/help/idea/plugin-development-guidelines.html) and [Eclipse](https://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Fguide%2Ffirstplugin.htm).  **Minimizing third-party dependencies** may help there.
+
 **Expected Result:**
 
 - Java library that can be used to build Neovim extensions (UIs and other applications).
 - Passes the test suite used by the Nvim [python-client](https://github.com/neovim/python-client).
   - Use the python-client tests to create equivalent tests using a Java testing framework.
+  - Test suite should be runnable from the command-line (should not require an IDE) via maven/gradle (or some other industry-standard build-tool).
 - End-user deliverable should be compatible Java 6 (this is negotiable)
 - Source-code can be latest version of Java (no backwards-compatibility requirement)
 
@@ -201,12 +206,16 @@ The Nvmi RPC API is documented at [:help api](https://neovim.io/doc/user/api.htm
 
 For reference, you can find clients in other languages at the [related projects](https://github.com/neovim/neovim/wiki/Related-projects#api-clients) wiki page.
 
+The ultimate goal is to have a library that can be used to create plugins for Visual Studio.  **Minimizing third-party dependencies** may help there.
+
 **Expected Result:**
 
 - C# library that can be used to create C#-based Neovim extensions (UIs and other applications).
 - Passes the test suite used by the Nvim [python-client](https://github.com/neovim/python-client).
   - Use the python-client tests to create equivalent tests using a C# testing framework.
-- End-user deliverable should be compatible ".NET Standard" version 1.1
+  - Test suite should be runnable from the command-line (should not require an IDE) via MSBuild or some other industry-standard build-tool.
+- Deliverable should be compatible ".NET Standard" version 1.1
+- Deliverable should be easy to install as a NuGet (or other) package.
 - Source-code can be latest version of C# (no backwards-compatibility requirement)
 
 **Difficulty:**
