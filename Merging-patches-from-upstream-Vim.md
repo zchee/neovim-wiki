@@ -47,7 +47,7 @@ If you are working on a series of patches, you may notice some "Not Applicable" 
     vim-patch:<version-or-commit>
     ...
 
-where `<version-or-commit>` is valid a Vim version tag like `8.0.0123` or a valid commit-id (hash) from the Vim git repo.
+where `<version-or-commit>` is a valid Vim version tag like `8.0.0123` or a valid commit-id (hash) from the Vim git repo.
 
 ### Types of "Not Applicable" Vim patches:
 
