@@ -36,7 +36,8 @@ helpful, not rigid.
       * [GUI improvements](#ui-protocol-improvements)
       * [Live preview of commands](#live-preview-of-commands)
       * [Vim perl plugin compatibility](#if_perl-compatibility-layer)
-      * [Java/C# client](#javac-client)
+      * [Java client](#java-client)
+      * [C# client](#c-client)
       * [Improve autoread](#improve-autoread)
 
   * [Tools &amp; Infrastructure](#tools--infrastructure)
@@ -149,17 +150,19 @@ Medium
 **Mentor:** Björn Linse ([@bfredl](http://github.com/bfredl))
 
 ___
-#### Java/C# client
+#### Java client
 
 **Desirable Skills:**
 
-- Moderate/High experience in Java or C#
+- Familiar with Vim/Nvim and Vim script (VimL)
+- Moderate/High experience in Java
+- Familiar with event-loop programming model
 
 **Description:**
 
-Implement a Nvim [API client](https://github.com/neovim/neovim/wiki/Related-projects#api-clients) using Java or C#. 
+Implement a Nvim [API client](https://github.com/neovim/neovim/wiki/Related-projects#api-clients) using Java. 
 
-Implement a client, written in Java (or C#), which allows Java (or C#) applications to control Nvim using the Nvim RPC API.  If you are familiar with AWS or any other SaaS, note that a Nvim API client is just like a SDK for a REST web service, except that Nvim uses msgpack, not HTTP/JSON.
+Implement a client, written in Java, which allows Java applications to control Nvim using the Nvim RPC API.  If you are familiar with AWS or any other SaaS, note that a Nvim API client is just like a SDK for a REST web service, except that Nvim uses msgpack, not HTTP/JSON.
 
 The Nvmi RPC API is documented at [:help api](https://neovim.io/doc/user/api.html) and [:help rpc](https://neovim.io/doc/user/msgpack_rpc.html).
 
@@ -167,12 +170,48 @@ For reference, you can find clients in other languages at the [related projects]
 
 **Expected Result:**
 
-- C# or Java library that can be used to build Neovim extensions (UIs and other applications).
+- Java library that can be used to build Neovim extensions (UIs and other applications).
 - Passes the test suite used by the Nvim [python-client](https://github.com/neovim/python-client).
+  - Use the python-client tests to create equivalent tests using a Java testing framework.
+- End-user deliverable should be compatible Java 6 (this is negotiable)
+- Source-code can be latest version of Java (no backwards-compatibility requirement)
 
 **Difficulty:**
 
-medium
+Medium
+
+**Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
+
+---
+#### C# client
+
+**Desirable Skills:**
+
+- Familiar with Vim/Nvim and Vim script (VimL)
+- Moderate/High experience in C#
+- Familiar with event-loop programming model
+
+**Description:**
+
+Implement a Nvim [API client](https://github.com/neovim/neovim/wiki/Related-projects#api-clients) using Java or C#. 
+
+Implement a client, written in C#, which allows C# applications to control Nvim using the Nvim RPC API.  If you are familiar with AWS or any other SaaS, note that a Nvim API client is just like a SDK for a REST web service, except that Nvim uses msgpack, not HTTP/JSON.
+
+The Nvmi RPC API is documented at [:help api](https://neovim.io/doc/user/api.html) and [:help rpc](https://neovim.io/doc/user/msgpack_rpc.html).
+
+For reference, you can find clients in other languages at the [related projects](https://github.com/neovim/neovim/wiki/Related-projects#api-clients) wiki page.
+
+**Expected Result:**
+
+- C# library that can be used to create C#-based Neovim extensions (UIs and other applications).
+- Passes the test suite used by the Nvim [python-client](https://github.com/neovim/python-client).
+  - Use the python-client tests to create equivalent tests using a C# testing framework.
+- End-user deliverable should be compatible ".NET Standard" version 1.1
+- Source-code can be latest version of C# (no backwards-compatibility requirement)
+
+**Difficulty:**
+
+Medium
 
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
 
