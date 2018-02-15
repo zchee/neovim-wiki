@@ -72,7 +72,10 @@ Implement Vim's legacy perl API. See the [ruby layer](https://github.com/alexgen
 
 **Difficulty:** Medium
 
-**Expected Result:** Vim perl plugins (such as dbext) can run in Neovim.
+**Expected Result:** 
+
+- Vim perl plugins (such as dbext) can run in Neovim.
+- Code license: Apache 2.0
 
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
 
@@ -97,6 +100,8 @@ Example:
     nvim --servername foo
 
 will connect to the Nvim server at address `foo`. The `nvim` client instance sends input to the remote Nvim server, and reflects the UI of the remote Nvim server. So the `nvim` client acts like any other external (G)UI.
+
+- Code license: Apache 2.0
 
 **Difficulty:** 
 
@@ -123,6 +128,8 @@ The UI protocol has gained new capabilities. This could involve substantial chan
 
 Alternatively, improvements could be done within the current global screen grid, such as the ability to display grid-aligned images in signs, buffers and statuslines. It could also involve adding semantic information to the grid, so that GUI:s can identify screen elements reliably rather than guessing it from highlights.
 
+- Code license: Apache 2.0
+
 **Difficulty:**
 
 Medium to Hard
@@ -144,6 +151,8 @@ Nvim has builtin live preview of `:%s` substitution, as a result of a [[successf
 **Expected Result:**
 
 More commands support interactive preview. This could be done by extending the hard-coded support for substitution preview to more commands. Alternatively, a more scalable approach could be to add core functionality that makes it easier to implement live preview as plugins in vimL and/or lua. See [[#7370|https://github.com/neovim/neovim/issues/7370]] for some ideas.
+
+- Code license: Apache 2.0
 
 **Difficulty:**
 
@@ -180,6 +189,7 @@ The ultimate goal is to have a library that can be used to create plugins for [I
   - Test suite should be runnable from the command-line (should not require an IDE) via maven/gradle (or some other industry-standard build-tool).
 - End-user deliverable should be compatible Java 6 (this is negotiable)
 - Source-code can be latest version of Java (no backwards-compatibility requirement)
+- Code license: Apache 2.0
 
 **Difficulty:**
 
@@ -217,6 +227,7 @@ The ultimate goal is to have a library that can be used to create plugins for Vi
 - Deliverable should be compatible ".NET Standard" version 1.1
 - Deliverable should be easy to install as a NuGet (or other) package.
 - Source-code can be latest version of C# (no backwards-compatibility requirement)
+- Code license: Apache 2.0
 
 **Difficulty:**
 
@@ -236,6 +247,8 @@ ___
 Neovim has the 'autoread' setting that regularly checks if a file edited in neovim has been externally modified. It thus notifies the user to prevent overwriting the changes. Sadly the current mechanism isn't foolproof. This project intends to make this feature work as well as in other editors like Sublime text and across the neovim supported platforms. The interface should also be improved so that notifications show how different the edited and modified files are. 
 The candidate can realize some of the difficulties involved with this [proposition for linux](https://github.com/neovim/neovim/issues/1380)
 
+- Code license: Apache 2.0
+
 **Difficulty:** Medium
 
 **Mentor:** Matthieu Coudron ([@teto](http://github.com/teto))
@@ -249,6 +262,8 @@ ___
 **Expected Result:**
 
 Full Nvim editing should be available in the editor/IDE, while also allowing the user to use the native editor/IDE features.
+
+- Code license: Apache 2.0
 
 Examples:
 
@@ -270,6 +285,8 @@ Familiarity with command line
 **Description:**
 Automating builds and other tasks lowers the obstacles for contributors. Tasks include automatically pushing build artifacts to github releases, html document generation, rewriting some awk scripts to python, clang tidy builds. See [Neovim/bot-ci repo](https://github.com/neovim/bot-ci)
 
+- Code license: Apache 2.0
+
 **Difficulty:**
 Easy
 
@@ -286,6 +303,8 @@ With an ever changing code base it can be easy to miss regressions
 in performance. A tool for easily creating benchmarks
 for time, memory usage, utilization of each CPU core or compilation times can be
 interesting metrics to have.
+
+- Code license: Apache 2.0
 
 **Difficulty:**
 easy to medium
@@ -306,6 +325,10 @@ ___
 **Description:**
 
 **Expected Result:**
+
+- Item1
+- Item2
+- Code license: Apache 2.0
 
 **Difficulty:** 
 
