@@ -306,13 +306,14 @@ This can be caused by a local LuaRocks installation. Try unsetting the `LUA_PATH
 
 ### Lua packages
 
-The Lua packages required by the build process should be automatically installed by [LuaRocks](http://luarocks.org/) (invoked by CMake automatically), but sometimes this will fail. Generally, this means either:
+The Lua packages required by the build process should be automatically installed by [LuaRocks](http://luarocks.org/) (invoked by CMake automatically). If that fails, it could mean:
 
 - The LuaRocks servers are down.
-- The program `unzip` isn't found. If this is the case, LuaRocks will report something like this: `Warning: Failed searching manifest: Failed loading manifest: Failed extracting manifest file`.
-- The `CDPATH` environment variable is interfering with the build, so it should be unset prior to running `make`.
+- Your network is down.
+- `unzip` isn't found. In that case LuaRocks will report something like this: `Warning: Failed searching manifest: Failed loading manifest: Failed extracting manifest file`.
+- The `$CDPATH` environment variable is interfering with the build, so it should be unset prior to running `make`.
 
-To avoid the first error, a LuaRocks mirror can be used by creating the file `.deps/usr/etc/luarocks/config-5.1.lua` with the following contents:
+To try a different LuaRocks mirror, create the file `.deps/usr/etc/luarocks/config-5.1.lua` with these contents:
 
 ```
 rocks_servers={ 
@@ -320,15 +321,7 @@ rocks_servers={
 }
 ```
 
-After that, run `make cmake`.
-
-Failing the above, you can always try installing the following packages manually:
-
-- [LPeg](http://www.inf.puc-rio.br/~roberto/lpeg/)
-- [lua-MessagePack](http://fperrad.github.io/lua-MessagePack/)
-- [busted](http://olivinelabs.com/busted/) (required for running tests, e.g., `make test`)
-
-Keep in mind that some of those packages have their own dependencies which also have to be installed, and the version you install hasn't necessarily been tested to work with Neovim.
+Then run `make cmake`.
 
 # Design
 
