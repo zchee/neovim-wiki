@@ -18,6 +18,7 @@ _Note: Some of these projects are **experimental/unstable**._
 | GTK/Python UI    | [neovim/python-gui](https://github.com/neovim/python-gui)               |
 | GTK/Python UI    | [rliang/nvim-pygtk3](https://github.com/rliang/nvim-pygtk3)             |
 | GTK/Rust UI      | [daa84/neovim-gtk](https://github.com/daa84/neovim-gtk)                 |
+| JavaFX           | https://github.com/jebberjeb/javafx-neovimpane |
 | Konsole          | [harish2704/neovim-konsole](https://github.com/harish2704/neovim-konsole) |
 | macOS            | [qvacua/vimr](https://github.com/qvacua/vimr)                           |
 | macOS            | [rogual/neovim-dot-app](https://github.com/rogual/neovim-dot-app)       |
