@@ -35,7 +35,7 @@ helpful, not rigid.
 ## Table of Contents
 
   * [New Features](#new-features)
-      * ["multiprocessing" feature](#"multiprocessing"-feature)
+      * ["multiprocessing" feature](#multiprocessing-feature)
       * [TUI client](#tui-terminal-ui-remote-attachment)
       * [GUI improvements](#ui-protocol-improvements)
       * [Live preview of commands](#live-preview-of-commands)
