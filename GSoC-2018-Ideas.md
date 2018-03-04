@@ -15,6 +15,10 @@ It's also recommended to start with a smaller coding task, to get introduced to 
 
 The following list of projects are just some ideas. We are happy to hear any suggestions that you may have.
 
+## Making a proposal
+
+The application period for GSOC is march 12-27. Send your proposal through the official [GSOC page](https://summerofcode.withgoogle.com/organizations/6156058456752128/). We encourage students to send a first draft early in this period, this allows us to give feedback and and ask for more information if need. See https://google.github.io/gsocguides/student/writing-a-proposal for some guidelines for writing a good proposal. 
+
 ## Tips 
 
 - Anywhere a Vim concept (such as "textlock") is mentioned, you can find what it means by using the ":help" command from within neovim (`:help textlock`).
