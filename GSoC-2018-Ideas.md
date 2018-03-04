@@ -283,23 +283,6 @@ Examples:
 
 **Mentor:** Horace He ([@chillee](http://github.com/chillee))
 
-## Tools & Infrastructure
-
-___
-#### Improve Continuous Integration
-
-**Desirable Skills:**
-Familiarity with command line
-
-**Description:**
-Automating builds and other tasks lowers the obstacles for contributors. Tasks include automatically pushing build artifacts to github releases, html document generation, rewriting some awk scripts to python, clang tidy builds. See [Neovim/bot-ci repo](https://github.com/neovim/bot-ci)
-
-- Code license: Apache 2.0
-
-**Difficulty:**
-Easy
-
-**Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
 
 ___
 
