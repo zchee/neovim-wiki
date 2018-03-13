@@ -60,7 +60,7 @@ ___
 
 **Description:**
 
-p2p architecture for data sharing between multiple nvim instances. Similar to the "multiprocessing" module of python, the idea is to to offload Nvim computations (VimL and/or Lua) to child Nvim processes.
+p2p architecture for data sharing between multiple nvim instances. Similar to Python's [multiprocessing](https://docs.python.org/3/library/multiprocessing.html) module, the idea is to to offload Nvim tasks (VimL and/or Lua) to child Nvim processes.
 
 **Difficulty:** Hard
 
