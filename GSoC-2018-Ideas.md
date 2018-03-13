@@ -59,7 +59,7 @@ Experience with concurrency type problems and networking
 
 p2p architecture for data sharing between multiple nvim instances. Similar to the "multiprocessing" module of python, the idea is to to offload Nvim computations (VimL and/or Lua) to child Nvim processes.
 
-**Difficulty:** Medium to Hard
+**Difficulty:** Hard
 
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
 ___
