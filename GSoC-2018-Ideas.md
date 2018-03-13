@@ -53,7 +53,10 @@ ___
 #### "multiprocessing" feature
 
 **Desirable Skills:**
-Experience with concurrency type problems and networking
+
+* Experience with concurrency and interprocess communication
+* Strong experience with C
+* Familiar with VimL (Vim script) and Vim concepts (quickfix list, buffers, etc.)
 
 **Description:**
 
