@@ -13,7 +13,7 @@ The source files most directly involved with UI events are:
 2. `src/nvim/api/ui.*`: forwards messages over msgpack-rpc to remote UIs.
 3. `src/nvim/api/ui_bridge.*`: similar to 2/ but forwards messages to UI threads (TUI for instance) as events
 
-UI events are defined in `src/nvim/api/api_events.in.h` , this file is not compiled directly, rather it parsed by `src/nvim/generators/gen_api_ui_events.lua` which autogenerates wrapper functions used by the source files above. It also generates metadata accesible as `api_info().ui_events`.
+UI events are defined in `src/nvim/api/ui_events.in.h` , this file is not compiled directly, rather it parsed by `src/nvim/generators/gen_api_ui_events.lua` which autogenerates wrapper functions used by the source files above. It also generates metadata accesible as `api_info().ui_events`.
 
 Please note that in both cases (local and remote), UI events may be deferred to UIs, which implies to do deepcopy of the UI events data. 
 The difference between 2 and 3 is best seen in https://github.com/neovim/neovim/pull/6044, `ui_bridge_cursor_styleset_event` and `remote_ui_cursor_style_set` are very similar, except `remote_ui_cursor_style_set` sends the event over msgpack, while `ui_bridge_cursor_style_set` pass it on to the local UI scheduler (src/nvim/tui.c:tui_scheduler for the TUI).
