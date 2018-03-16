@@ -219,7 +219,7 @@ Medium
 
 **Description:**
 
-Implement a Nvim [API client](https://github.com/neovim/neovim/wiki/Related-projects#api-clients) using Java or C#. 
+Implement a Nvim [API client](https://github.com/neovim/neovim/wiki/Related-projects#api-clients) using C#. 
 
 Implement a client, written in C#, which allows C# applications to control Nvim using the Nvim RPC API.  If you are familiar with AWS or any other SaaS, note that a Nvim API client is just like a SDK for a REST web service, except that Nvim uses msgpack, not HTTP/JSON.
 
