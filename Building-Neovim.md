@@ -262,7 +262,7 @@ unless custom commands are provided, cygport just calls autogen/cmake, make, mak
 
 https://github.com/cascent/neovim-cygwin was built on cygwin 2.9.0. Newer libuv should require slightly less patching and some ssp stuff changed in cygwin 2.10.0 so that might change things too when building neovim.
 
-#### Windows / MSVC (Visual Studio 2017)
+#### Windows / MSVC
 
 1. Install:
 	- Visual Studio 2017 with the **Desktop development with C++** workload
