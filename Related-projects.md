@@ -84,6 +84,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [mirror.vim](https://github.com/zenbro/mirror.vim): Efficient way to edit remote files on multiple environments
 - [Nvim-R](https://github.com/jalvesaq/Nvim-R): plugin to work with R
 - [neomake](https://github.com/benekastah/neomake): Asynchronous linting and make framework
+- [neopipe](https://github.com/coachshea/neo-pipe): send lines of text to an external command and display output in a scratch buffer
 - [neotags.nvim](https://github.com/c0r73x/neotags.nvim): Tag highlight
 - [neoterm](https://github.com/kassio/neoterm): Wrapper of some neovim's :terminal functions
 - [neotex](https://github.com/donRaphaco/neotex): latex live preview
