@@ -5,11 +5,11 @@
 # Introduction
 Below is a list of project ideas for [GSoC 2018](https://developers.google.com/open-source/gsoc/). These projects may require familiarity with C, Makefiles, Python, Lua or vimscript.
 
-[Neovim](https://neovim.io/) is an extension of Vim. The [vision](https://neovim.io/charter/) of Neovim goes into the Projects goals and non-goals. One of the goals is to build a project that encourages "hacking" and collaboration. Effort is put into removing barriers for contributors and improving documentation. The wiki has sections on developing and contributing to help you get started working with Neovim.
+[Neovim](https://neovim.io/) is an extension of Vim. One of the [project goals](https://neovim.io/charter/) is to build a project that encourages "hacking" and collaboration. Effort is put into removing barriers for contributors and improving documentation. The wiki has sections on developing and contributing to help you get started.
 
 The Neovim source has roots going back to 1987 which means many libraries such as [libuv](https://github.com/libuv/libuv) were not around at that time. The code base can be made easier to maintain and understand by using these libraries. Project ideas that involve working heavily with internals will in general be more difficult than project ideas that "simply" add new features. However working with older/complex parts of the code base can also provide valuable learning feedback for writing simpler and more maintainable code. There is a large range of skills that can be learned and working with the team to find a project that will help you the most is in your benefit.
 
-We encourage you to join the #neovim IRC or [gitter channel](https://gitter.im/neovim/neovim) to discuss these projects with the community and our mentors. Because communication is a big part of open source development you are expected to get in touch with us before making your application.
+We encourage you to join the `#neovim` IRC or [gitter channel](https://gitter.im/neovim/neovim) to discuss these projects with the community and our mentors. Because communication is a big part of open source development you are expected to get in touch with us before making your application.
 
 It's also recommended to start with a smaller coding task, to get introduced to the Neovim project. Look on the issue tracker for simpler issues and submit a small PR attempting to solve the issue. See for instance the [good first issue](https://github.com/neovim/neovim/issues?utf8=✓&q=is%3Aopen+is%3Aissue+label%3A"good+first+issue") and [complexity:low](https://github.com/neovim/neovim/issues?q=is%3Aopen+is%3Aissue+label%3Acomplexity%3Alow) tags. The goal here is to get accustomed with the codebase and to our workflow for reviewing and testing PRs, rather than directly making a large code contribution.
 
@@ -17,7 +17,7 @@ The following list of projects are just some ideas. We are happy to hear any sug
 
 ## Making a proposal
 
-The application period for GSOC is march 12-27. Send your proposal through the official [GSOC page](https://summerofcode.withgoogle.com/organizations/6156058456752128/). We encourage students to send a first draft early in this period, this allows us to give feedback and and ask for more information if need. See https://google.github.io/gsocguides/student/writing-a-proposal for some guidelines for writing a good proposal. 
+The application period for GSOC is March 12-27. Send your proposal through the official [GSOC page](https://summerofcode.withgoogle.com/organizations/6156058456752128/). We encourage students to send a first draft early in this period, this allows us to give feedback and and ask for more information if need. See https://google.github.io/gsocguides/student/writing-a-proposal for some guidelines for writing a good proposal. 
 
 ## Tips 
 
@@ -43,10 +43,6 @@ helpful, not rigid.
       * [Java client](#java-client)
       * [C# client](#c-client)
       * [Improve autoread](#improve-autoread)
-
-  * [Tools &amp; Infrastructure](#tools--infrastructure)
-      * [Continuous Integration](#improve-continuous-integration)
-
 
 ## New Features
 ___
