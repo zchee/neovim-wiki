@@ -286,8 +286,8 @@ https://github.com/cascent/neovim-cygwin was built on cygwin 2.9.0. Newer libuv 
 	"name": "x86-Release",
 	```
 1. Select **x86-Release** configuration from the project settings menu and wait for CMake configuration to complete.
+	- Note: It is also possible to build with the **x64-Release** configuration if `cmake -G "Visual Studio 15 2017 Win64"` is used to build the dependencies. However, the Debug configurations will not work because certain dependencies need to be linked with release version of the C runtime.
 1. Click _CMake → Build All_.
-Note: It is also possible to build with the **x64-Release** configuration if `cmake -G "Visual Studio 15 2017 Win64"` is used to build the dependencies. However, the Debug configurations will not work because certain dependencies need to be linked with release version of the C runtime.
 
 #### Windows / MSYS2
 
