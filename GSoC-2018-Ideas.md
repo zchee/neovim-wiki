@@ -192,8 +192,8 @@ The ultimate goal is to have a library that can be used to create plugins for [I
 **Expected Result:**
 
 - Java library that can be used to build Neovim extensions (UIs and other applications).
-  - Method signatures auto-generated from `nvim --api-info`.
-  - Since `nvim` is already required (for `--api-info`), the Java code-generation pre-build script could be written in Lua (which is built-in to `nvim`).
+  - Method signatures generated from `nvim --api-info`.
+  - Since `nvim` is already required (for `--api-info`), the Java code-generation script could be written in Lua (which is built-in to `nvim`).
 - Passes the test suite used by the Nvim [python-client](https://github.com/neovim/python-client).
   - Using the [python-client tests](https://github.com/neovim/python-client/tree/master/test) as a guide, create equivalent tests using a Java testing framework.
   - Test suite should be runnable from the command-line (should not require an IDE) via maven/gradle (or some other industry-standard build-tool).
@@ -234,8 +234,8 @@ The ultimate goal is to have a library that can be used to create plugins for Vi
 **Expected Result:**
 
 - C# library that can be used to create C#-based Neovim extensions (UIs and other applications).
-  - Method signatures auto-generated from `nvim --api-info`.
-  - Since `nvim` is already required (for `--api-info`), the C# code-generation pre-build script could be written in Lua (which is built-in to `nvim`).
+  - Method signatures generated from `nvim --api-info`.
+  - Since `nvim` is already required (for `--api-info`), the C# code-generation build script could be written in Lua (which is built-in to `nvim`).
 - Passes the test suite used by the Nvim [python-client](https://github.com/neovim/python-client).
   - Using the [python-client tests](https://github.com/neovim/python-client/tree/master/test) as a guide, create equivalent tests using a C# testing framework.
   - Test suite should be runnable from the command-line (should not require an IDE) via MSBuild or some other industry-standard build-tool.
