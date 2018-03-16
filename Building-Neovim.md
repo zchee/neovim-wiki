@@ -262,6 +262,33 @@ unless custom commands are provided, cygport just calls autogen/cmake, make, mak
 
 https://github.com/cascent/neovim-cygwin was built on cygwin 2.9.0. Newer libuv should require slightly less patching and some ssp stuff changed in cygwin 2.10.0 so that might change things too when building neovim.
 
+#### Windows / MSVC (Visual Studio 2017)
+
+1. Install:
+	- Visual Studio 2017 with the **Desktop development with C++** workload
+	- CMake (required until [#8128](https://github.com/neovim/neovim/pull/8128))
+	- Python 2 (required for libuv until [#8128](https://github.com/neovim/neovim/pull/8128))
+	- gperf
+1. Build the dependencies (works in Command Prompt or PowerShell):
+	```batch
+	mkdir .deps
+	cd .deps
+	cmake -G "Visual Studio 15 2017" -DCMAKE_BUILD_TYPE=RelWithDebInfo -DPYTHON_EXECUTABLE="C:\path\to\python.exe" ..\third-party\
+	cmake --build .
+	```
+1. Open the neovim project in Visual Studio: _File → Open → ..._
+1. [This step can be skipped if `gperf` is in the PATH.] In the Solution Explorer, right-click `CMakeSettings.txt` and select _Change CMake Settings_. This creates a new file `CMakeSettings.json`. Add this line:
+	```
+	"variables": [ {"name": "GPERF_PRG", "value": "C:\\path\\to\\gperf.exe"} ],
+	```
+	below this line:
+	```
+	"name": "x86-Release",
+	```
+1. Select **x86-Release** configuration from the project settings menu and wait for CMake configuration to complete.
+1. Click _CMake → Build All_.
+Note: It is also possible to build with the **x64-Release** configuration if `cmake -G "Visual Studio 15 2017 Win64"` is used to build the dependencies. However, the Debug configurations will not work because certain dependencies need to be linked with release version of the C runtime.
+
 #### Windows / MSYS2
 
 From the MSYS2 shell install these packages
