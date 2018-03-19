@@ -264,29 +264,27 @@ https://github.com/cascent/neovim-cygwin was built on cygwin 2.9.0. Newer libuv 
 
 #### Windows / MSVC
 
-1. Install:
-	- Visual Studio 2017 with the **Desktop development with C++** workload
-	- CMake (required until [#8128](https://github.com/neovim/neovim/pull/8128))
-	- Python 2 (required for libuv until [#8128](https://github.com/neovim/neovim/pull/8128))
-	- gperf
-1. Build the dependencies (works in Command Prompt or PowerShell):
-	```batch
-	mkdir .deps
-	cd .deps
-	cmake -G "Visual Studio 15 2017" -DCMAKE_BUILD_TYPE=RelWithDebInfo -DPYTHON_EXECUTABLE="C:\path\to\python.exe" ..\third-party\
-	cmake --build .
-	```
-1. Open the neovim project in Visual Studio: _File → Open → ..._
+1. Install Visual Studio 2017 with the **Desktop development with C++** workload.
+    - Includes CMake.
+    - If you're using 32-bit Windows, see https://developercommunity.visualstudio.com/content/problem/212989/ninja-binary-format.html
+1. Build the dependencies (if `cmake.exe` isn't in your `PATH`, use the absolute path like `"C:\Program Files\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe"`):
+    ```batch
+    mkdir .deps
+    cd .deps
+    cmake.exe -G "Visual Studio 15 2017" -DCMAKE_BUILD_TYPE=RelWithDebInfo ..\third-party\
+    cmake.exe --build .
+    ```
+1. Open the Neovim top-level `CMakeLists.txt` in Visual Studio: _File → Open → CMake..._
 1. [This step can be skipped if `gperf` is in the PATH.] In the Solution Explorer, right-click `CMakeSettings.txt` and select _Change CMake Settings_. This creates a new file `CMakeSettings.json`. Add this line:
-	```
-	"variables": [ {"name": "GPERF_PRG", "value": "C:\\path\\to\\gperf.exe"} ],
-	```
-	below this line:
-	```
-	"name": "x86-Release",
-	```
+    ```
+    "variables": [ {"name": "GPERF_PRG", "value": "C:\\path\\to\\gperf.exe"} ],
+    ```
+    below this line:
+    ```
+    "name": "x86-Release",
+    ```
 1. Select **x86-Release** configuration from the project settings menu and wait for CMake configuration to complete.
-	- Note: It is also possible to build with the **x64-Release** configuration if `cmake -G "Visual Studio 15 2017 Win64"` is used to build the dependencies. However, the Debug configurations will not work because certain dependencies need to be linked with release version of the C runtime.
+    - Note: It's also possible to build with the **x64-Release** configuration if `cmake -G "Visual Studio 15 2017 Win64"` is used to build the dependencies. However, the Debug configurations will not work because certain dependencies need to be linked with release version of the C runtime.
 1. Click _CMake → Build All_.
 
 #### Windows / MSYS2
