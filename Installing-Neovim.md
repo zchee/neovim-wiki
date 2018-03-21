@@ -161,8 +161,7 @@ Neovim can be installed with:
 
 To install the Python modules:
     
-    sudo zypper in python3-neovim
-    sudo zypper in python-neovim
+    sudo zypper in python-neovim python3-neovim
 
 ### PLD Linux
 
