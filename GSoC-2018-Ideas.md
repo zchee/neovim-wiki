@@ -21,6 +21,14 @@ The application period for GSOC is March 12-27. Send your proposal through the o
 
 Note: this year we will likely be able to accept two students at maximum. We expect to get more strong proposals than available slots, so we will need to turn some good proposals down.
 
+## Proposal evaluation
+
+Proposal evaluation criteria:
+
+http://intermine.org/gsoc/guidance/grading-criteria/
+
+
+
 ## Tips 
 
 - Anywhere a Vim concept (such as "textlock") is mentioned, you can find what it means by using the ":help" command from within neovim (`:help textlock`).
