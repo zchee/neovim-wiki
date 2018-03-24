@@ -168,7 +168,7 @@ Platform-specific requirements are listed below.
 
 #### Ubuntu / Debian
 
-    sudo apt-get install ninja-build libtool libtool-bin autoconf automake cmake g++ pkg-config unzip
+    sudo apt-get install ninja-build libtool libtool-bin autoconf automake cmake g++ pkg-config unzip texinfo
 
 Note: `libtool-bin` is only required for Ubuntu 16.04/Debian Jessie and newer.
 
