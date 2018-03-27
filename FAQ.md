@@ -32,23 +32,16 @@ Yes, starting with Neovim 0.1.5 [PR #4980](https://github.com/neovim/neovim/pull
 
 No. Starting with Neovim 0.2 [PR #4411](https://github.com/neovim/neovim/pull/4411) Lua is built-in, but the legacy Vim `if_lua` interface is not supported.
 
-### How can I use true colors in the terminal?
+### How can I use "true color" in the terminal?
 
-True colors are available starting in 0.1.5. Add this to your `init.vim`:
+Add this to your `init.vim`:
 
 ```vim
 set termguicolors
 ```
 
-or this for backwards compatibility
-
-```vim
-if has('nvim-0.1.5')        " True color in neovim wasn't added until 0.1.5
-    set termguicolors
-endif
-```
-
-See [this gist](https://gist.github.com/XVilka/8346728) for more information about true colors, such as what terminals support it.
+* See [this gist](https://gist.github.com/XVilka/8346728) for more information.
+* See [this thread](https://www.reddit.com/r/neovim/comments/825dj7/the_endless_litany_of_tmux_and_nvim_color_problems/dvc2boh/) for guidance on how to check your system capabilities.
 
 ### Nvim shows weird symbols (`�[2 q`) when changing modes
 
