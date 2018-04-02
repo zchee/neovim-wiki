@@ -10,7 +10,7 @@ Refactoring Vim structurally and aesthetically is an important goal of Neovim. B
 
 - `regexp.c`
 - `regexp_nfa.c`
-- `syntax.c`
+- `indent_c.c`
 
 ## Style-only changes
 
