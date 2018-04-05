@@ -258,6 +258,8 @@ in `tmux` / `screen` (see also [tmux/#131](https://github.com/tmux/tmux/issues/1
 
 It *does* happen (try `vim -N -u NONE`), but *if you hit a key quickly after ESC* then Vim interprets the ESC as ESC instead of ALT (META). You won't notice the delay unless you closely observe the cursor. The tradeoff is that Vim won't understand ALT (META) key-chords, so for example `nnoremap <M-a>` won't work. ALT (META) key-chords always work in Nvim. See also `:help xterm-cursor-keys` in Vim.
 
+Nvim 0.3 mimics the Vim behavior while still fully supporting ALT mappings. See `:help i_ALT`.
+
 # Installation issues
 
 ### Generating helptags failed
