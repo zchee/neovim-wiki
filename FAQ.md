@@ -325,11 +325,15 @@ Then run `make cmake`.
 - JSON cannot easily/efficiently handle binary data
 - JSON specification is ambiguous: http://seriot.ch/parsing_json.php
 
-### Why was Lua chosen for writing tests and implementing VimL?
+### Why embed Lua instead of X?
 
-Lua is a very small language, but it provides everything we need to implement a language like VimL, which was created to configure and script the editor. The biggest advantage that languages like Python or Ruby have over Lua are their huge library collections, but that isn't a factor for our main use case which is to remove thousands of lines of C by using Lua as a VimL runtime.
+- Lua is a very small language, ideal for embedding. The biggest advantage of Python/Ruby/etc is their huge collection of libraries, but that isn't relevant for Nvim, where Nvim _is_ the "batteries included" library: introducing another stdlib would be redundant.
+- Lua 5.1 is a _complete_ language: the syntax is frozen. This is great for backwards compatibility.
+- **Nvim also uses Lua _internally_ as an alternative to C.**  Extra performance is useful there, as opposed to a slow language like Python.
+- LuaJIT is one of the fastest runtimes on the planet. It is at least 10x faster than Python.
+- Python/Javascript cost more than Lua in terms of size and portability. There are already numerous editors/IDEs built on Python and Javascript, so it doesn't make sense to pay that cost, it's not a differentiating feature compared to other editors.
 
-See also these articles about Lua:
+See also:
 
 - [Why Lua](https://web.archive.org/web/20150219224654/http://blog.datamules.com/blog/2012/01/30/why-lua/)
 - [Redis and scripting](http://oldblog.antirez.com/post/redis-and-scripting.html)
