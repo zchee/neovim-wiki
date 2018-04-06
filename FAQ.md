@@ -331,7 +331,7 @@ Then run `make cmake`.
 - Lua 5.1 is a _complete_ language: the syntax is frozen. This is great for backwards compatibility.
 - **Nvim also uses Lua _internally_ as an alternative to C.**  Extra performance is useful there, as opposed to a slow language like Python.
 - LuaJIT is one of the fastest runtimes on the planet. It is at least 10x faster than Python.
-- Python/Javascript cost more than Lua in terms of size and portability. There are already numerous editors/IDEs built on Python and Javascript, so it doesn't make sense to pay that cost, it's not a differentiating feature compared to other editors.
+- Python/JS cost more than Lua in terms of size and portability, and there are already numerous Python/JS-based editors.  So Python/JS would make Nvim bigger and less portable, in exchange for a non-differentiating feature.
 
 See also:
 
