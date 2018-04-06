@@ -334,10 +334,6 @@ See also these articles about Lua:
 - [Why Lua](https://web.archive.org/web/20150219224654/http://blog.datamules.com/blog/2012/01/30/why-lua/)
 - [Redis and scripting](http://oldblog.antirez.com/post/redis-and-scripting.html)
 
-### Lua and VimL are distinct languages with different semantics, how can Lua be used as a runtime for VimL?
-
-The idea is to make Neovim completely scriptable using Lua. Unlike the Lua interface to Vim, this new implementation needs to have the same power as VimL, with APIs for defining syntax rules, etc. Then a VimL-to-Lua translator will be implemented, with the generated code targeting the new Lua API.
-
 ### Won't it be slower to translate VimL to Lua, instead of executing VimL directly?
 
 We'll use [LuaJIT](http://luajit.org/), the fastest scripting runtime out there. Parsing an additional language will create some overhead, but that will be insignificant compared to the runtime performance improvements, because Vimscript is so slow. Plugins may even run faster.
