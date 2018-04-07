@@ -75,7 +75,17 @@ See also `:help $TERM` for recommended values of `$TERM`.
 
 ### How to change cursor _color_ in the terminal?
 
-Currently, `guicursor`-driven cursor color **only works if `termguicolors` is set.** In the future, non-truecolor terminals may also be supported.
+Cursor styling (shape, color, behavior) is controlled by `guicursor`, even in the terminal. 
+Cursor _color_ (as opposed to shape) **_only_** works if `termguicolors` is set.
+
+`:help 'guicursor'` gives an example to start with, but here's a more complicated example which sets different colors in insert-mode vs normal-mode:
+
+```vim
+:set termguicolors 
+:hi Cursor guifg=green guibg=green
+:hi Cursor2 guifg=red guibg=red
+:set guicursor=n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor2/lCursor2,r-cr:hor20,o:hor50
+```
 
 ### Cursor style isn't restored after exiting Nvim
 
