@@ -11,10 +11,14 @@ Packages are listed below. (You can also [build Neovim from source](#install-fro
 
 ## Windows
 
-### [chocolatey](https://chocolatey.org)
+### [Chocolatey](https://chocolatey.org)
 
 - **Release (v0.2):** `choco install neovim` (use -y for automatically skipping confirmation messages)
 - **Development (pre-release):** `choco install neovim --pre`
+
+### [Scoop](http://scoop.sh/)
+
+- `scoop install neovim`
 
 ### Pre-built archives
 
