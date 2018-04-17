@@ -23,7 +23,7 @@ _Note: Some of these projects are **experimental/unstable**._
 | macOS            | [qvacua/vimr](https://github.com/qvacua/vimr)                           |
 | macOS            | [rogual/neovim-dot-app](https://github.com/rogual/neovim-dot-app)       |
 | Qt 5             | [equalsraf/neovim-qt](https://github.com/equalsraf/neovim-qt)           |
-| QtCreator        | [sassanh/qnvim](https://github.com/sassanh/qnvim)                       |
+| Qt Creator        | [sassanh/qnvim](https://github.com/sassanh/qnvim)                       |
 | Rust IDE         | [oakes/SolidOak](https://github.com/oakes/SolidOak)                     |
 | Sublime Text     | [lunixbochs/actualvim](https://github.com/lunixbochs/actualvim)         |
 | Tk/Python UI     | [timeyyy/pytknvim](https://github.com/timeyyy/pytknvim)                 |
