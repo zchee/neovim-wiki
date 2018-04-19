@@ -52,33 +52,34 @@ To workaround the issue, you can:
 - Use a different terminal emulator
 - Disable `guicursor` in your Nvim config:
   ```
-  set guicursor=
+  :set guicursor=
+  " Workaround some broken plugins which set guicursor indiscriminately.
+  :autocmd OptionSet guicursor noautocmd set guicursor=
   ```
 
 See also `:help $TERM` for recommended values of `$TERM`.
-
 
 ### How to change cursor _shape_ in the terminal?
 
 - For Nvim 0.1.7 or older: see the note about `NVIM_TUI_ENABLE_CURSOR_SHAPE` in `man nvim`.
 - For Nvim 0.2 or newer: cursor styling is controlled by the `guicursor` option.
-  - To _disable_ cursor styling, see `:help 'guicursor'`.
+  - To _disable_ cursor-styling, set `guicursor` to empty:
+    ```
+    :set guicursor=
+    " Workaround some broken plugins which set guicursor indiscriminately.
+    :autocmd OptionSet guicursor noautocmd set guicursor=
+    ```
   - If you want a non-blinking cursor, use `blinkon0`. See `:help 'guicursor'`.
-  - `guicursor` is enabled by _default_ only if Nvim is certain it won't cause problems. If you know that cursor shaping works on your terminal, set `guicursor` in your init.vim.
-    ```
-    :set guicursor=n-v-c:block-Cursor/lCursor-blinkon0,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
-    ```
+  - `guicursor` is enabled by default, unless Nvim thinks your terminal doesn't support it. If you're sure that your terminal supports cursor-shaping, set `guicursor` in your init.vim, as described in `:help 'guicursor'`.
 - The Vim terminal options `t_SI` and `t_EI` are ignored, like all other `t_XX` options. 
 - Old versions of libvte (gnome-terminal, roxterm, terminator, ...) do not support cursor style control codes. [#2537](https://github.com/neovim/neovim/issues/2537)
-- **Note:** some plugins like "ctrlp" override `guicursor` even when it is empty. To totally disable cursor updates, you can set `VTE_VERSION="100"`. 
-    - But it would be better to fix the plugin: it should not modify `guicursor` if it is empty.
 
 ### How to change cursor _color_ in the terminal?
 
 Cursor styling (shape, color, behavior) is controlled by `guicursor`, even in the terminal. 
 Cursor _color_ (as opposed to shape) **_only_** works if `termguicolors` is set.
 
-`:help 'guicursor'` gives an example to start with, but here's a more complicated example which sets different colors in insert-mode vs normal-mode:
+`:help 'guicursor'` gives an example, but here's a more complicated example which sets different colors in insert-mode and normal-mode:
 
 ```vim
 :set termguicolors 
