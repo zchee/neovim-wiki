@@ -103,6 +103,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [nvimux](https://github.com/hkupty/nvimux): TMUX bindings/neovim as multiplexer
 - [orchestra.nvim](https://github.com/timeyyy/orchestra.nvim): bind sound effects to different actions
 - [proteome](https://github.com/tek/proteome.nvim): assists in working on multiple projects in a single neovim instance
+- [semshi](https://github.com/numirias/semshi): Semantic Highlighting for Python
 - [termedit.nvim](https://github.com/rliang/termedit.nvim) Sets the Neovim host instance as $EDITOR
 - [vimcmdline](https://github.com/jalvesaq/vimcmdline): sends lines from either Vim or Neovim to a command line interpreter (REPL application)
 - [vim-accio](https://github.com/pgdouyon/vim-accio): asynchronously summons build/compiler/linter output to your screen by wrapping the :compiler and :make commands
@@ -111,6 +112,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [vim-chat](https://github.com/vim-chat/vim-chat): Chat client for QQ and weixin
 - [vim-esearch](https://github.com/eugen0329/vim-esearch): Perform search in files easily
 - [vim-gitgutter](https://github.com/airblade/vim-gitgutter): shows a git diff in the gutter (sign column) and stages/undoes hunks
+- [vim-ghost](https://github.com/raghur/vim-ghost): Neovim client for GhostText browser extension ([firefox](https://addons.mozilla.org/en-US/firefox/addon/ghosttext/) and [chrome](https://chrome.google.com/webstore/detail/ghosttext/godiecgffnchndlihlpaajjcplehddca))
 - [vim-go](https://github.com/fatih/vim-go) (see [PR 607](https://github.com/fatih/vim-go/pull/607) for feature list)
 - [vim-grepper](https://github.com/mhinz/vim-grepper): Use your favorite grep tool (ag, ack, git grep, ripgrep, pt, sift, findstr, grep) to start an asynchronous search
 - [vim-javacomplete2](https://github.com/artur-shaik/vim-javacomplete2): an omni-completion plugin for Java
