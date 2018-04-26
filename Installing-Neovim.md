@@ -256,6 +256,15 @@ or [from the ports tree](https://www.freshports.org/editors/neovim/):
 
     cd /usr/ports/editors/neovim/ && make install clean
 
+### OpenBSD
+
+Neovim can be installed using [`pkg_add(1)`](https://man.openbsd.org/pkg_add):
+
+    pkg_add neovim
+
+or [from the ports tree](https://cvsweb.openbsd.org/cgi-bin/cvsweb/ports/editors/neovim/):
+
+    cd /usr/ports/editors/neovim/ && make install
 
 ## Android
 
