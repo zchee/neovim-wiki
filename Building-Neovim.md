@@ -190,7 +190,7 @@ compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
 #### Nix or NixOS
 
     $ cd path/to/neovim/src
-    $ nix-shell '<nixpkgs>' -A neovim
+    $ nix-shell '<nixpkgs>' -A neovim-unwrapped
     $ cmakeConfigurePhase
     build $ buildPhase
 
