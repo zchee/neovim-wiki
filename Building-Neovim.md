@@ -189,10 +189,12 @@ compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
 
 #### Nix or NixOS
 
-    $ cd path/to/neovim
+    $ cd path/to/neovim/src
     $ nix-shell '<nixpkgs>' -A neovim
     $ cmakeConfigurePhase
-    build $ make
+    build $ buildPhase
+
+Running tests does not work out of the box yet. A PR submitted to improve lua support in nixpkgs includes a fix for running the functional tests at https://github.com/NixOS/nixpkgs/pull/33903
 
 #### FreeBSD
 
