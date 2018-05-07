@@ -189,6 +189,8 @@ compiling the libuv dependency. See https://github.com/joyent/libuv/issues/1158.
 
 #### Nix or NixOS
 
+Starting from nixos 18.03, the neovim binary resides in the `neovim-unwrapped` nix package (`the `neovim` package being just a wrapper to setup runtime options like ruby/python support):
+
     $ cd path/to/neovim/src
     $ nix-shell '<nixpkgs>' -A neovim-unwrapped
     $ cmakeConfigurePhase
