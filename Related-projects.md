@@ -146,6 +146,7 @@ This is software either targeted at Neovim or with support for it.
 
 Colorschemes that make use of Neovim-specific features, e.g. highlight groups or terminal emulator colors.
 
+- [falcon](https://github.com/fenetikm/falcon)
 - [flatcolor](https://github.com/MaxSt/FlatColor)
 - [janah](https://github.com/mhinz/vim-janah)
 - [NeoSolarized](https://github.com/iCyMind/NeoSolarized)
