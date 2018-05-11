@@ -260,6 +260,8 @@ in `tmux` / `screen` (see also [tmux/#131](https://github.com/tmux/tmux/issues/1
 `.tmux.conf`:
 
     set -g escape-time 10
+    # Or for tmux >= 2.6
+    set -sg escape-time 10
 
 `.screenrc`:
 
