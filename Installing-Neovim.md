@@ -211,7 +211,7 @@ If you're using an older version Ubuntu you must use:
 
 Run the following commands:
 
-    sudo add-apt-repository ppa:neovim-ppa/stable
+    sudo apt-add-repository ppa:neovim-ppa/stable
     sudo apt-get update
     sudo apt-get install neovim
 
