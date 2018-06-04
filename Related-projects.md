@@ -37,6 +37,7 @@ _Note: Some of these projects are **experimental/unstable**._
 | C++         | [DaikiMaekawa/neovim.cpp](https://github.com/DaikiMaekawa/neovim.cpp)                |
 | C++/Qt5     | [equalsraf/neovim-qt](https://github.com/equalsraf/neovim-qt)                        |
 | C++/ncurses | [SoC/neovim-client](https://github.com/splinterofchaos/neovim-cpp-client-experiment) |
+| C++/Magnum  | [Squareys/magnum-neovim-api](https://github.com/Squareys/magnum-neovim-api) |
 | Clojure     | [jebberjeb/neovim-client](https://github.com/jebberjeb/neovim-client)                |
 | Common Lisp | [adolenc/cl-neovim](https://github.com/adolenc/cl-neovim)                            |
 | Elixir      | [awetzel/neovim-elixir](https://github.com/awetzel/neovim-elixir)                    |
