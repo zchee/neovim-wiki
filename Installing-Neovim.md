@@ -1,8 +1,33 @@
-- Before upgrading to a new version, **always check [Following HEAD](Following-HEAD).**
-- To start Neovim, run `nvim` (not `neovim`).
-- If you're wondering where to put your config (`vimrc`) see [here](https://github.com/neovim/neovim/wiki/FAQ#where-should-i-put-my-config-vimrc).
+You can install Neovim from [download](#install-from-download), [package](#install-from-package), or [source](#install-from-source) in just a few seconds.
 
 ---
+
+- To start Neovim, run `nvim` (not `neovim`).
+- Before upgrading to a new version, **check [Following HEAD](Following-HEAD).**
+- For config (vimrc) see [the FAQ](https://github.com/neovim/neovim/wiki/FAQ#where-should-i-put-my-config-vimrc).
+
+---
+
+Install from download
+=====================
+
+Downloads are available on the [Releases](https://github.com/neovim/neovim/releases) page.
+
+## Windows
+
+1. Extract [nvim-win32.zip](https://github.com/neovim/neovim/releases/download/nightly/nvim-win32.zip) (or [nvim-win64.zip](https://github.com/neovim/neovim/releases/download/nightly/nvim-win64.zip))
+2. Double-click `nvim-qt.exe`
+
+## macOS
+
+1. Download [nvim-macos.tar.gz](https://github.com/neovim/neovim/releases/download/nightly/nvim-macos.tar.gz)
+2. Unzip: `tar xzvf nvim-macos.tar.gz`
+3. Run: `./nvim-osx64/bin/nvim`
+
+## Linux
+
+1. Download [nvim.appimage](https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage)
+2. Run: `chmod u+x nvim.appimage && ./nvim.appimage`
 
 Install from package
 ====================
