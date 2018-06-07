@@ -299,19 +299,17 @@ or [from the ports tree](https://cvsweb.openbsd.org/cgi-bin/cvsweb/ports/editors
 Install from source
 ===================
 
-If a package is not provided for your platform, see [Building-Neovim](https://github.com/neovim/neovim/wiki/Building-Neovim).  Once you've built Neovim, install it with the following commands:
+If a package is not provided for your platform, you can build Neovim from source. See [Building-Neovim](https://github.com/neovim/neovim/wiki/Building-Neovim) for details.  If you have the [prerequisites](https://github.com/neovim/neovim/wiki/Building-Neovim#build-prerequisites) then building is easy:
 
     make
     sudo make install
 
 For Unix-like systems this installs Neovim to `/usr/local`, while for Windows to `C:\Program Files`. Note, however, that this can complicate uninstallation. The following example avoids this by isolating an installation under `$HOME/neovim`:
 
-    rm -r build/
+    rm -r build/  # clear the CMake cache
     make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/neovim"
     make install
     export PATH="$HOME/neovim/bin:$PATH"
-
-Note that the `rm -r build/` step above is needed if you've built Neovim before, as the install location will be the same as before since CMake caches build information.
 
 ## Uninstall
 
@@ -322,9 +320,6 @@ sudo rm /usr/local/bin/nvim
 sudo rm -r /usr/local/share/nvim/
 ```
 
----
 
-- See [Building Neovim](Building-Neovim) for more options. 
-- See [FAQ](FAQ) for common problems.
 
 [`:help provider-python`]: https://neovim.io/doc/user/provider.html#provider-python
