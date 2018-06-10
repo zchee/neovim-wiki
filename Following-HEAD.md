@@ -1,14 +1,20 @@
-This page documents changes which may require users to update configuration, plugins, or expectations.
-Only **breaking changes** are mentioned here, this is **not** a reference for new features (see [`:help nvim`](http://neovim.io/doc/user/nvim.html) instead). 
+The following changes may require users to update configuration, plugins, or expectations. Only **breaking changes** are mentioned here, this is not a reference for new features (see [`:help nvim`](http://neovim.io/doc/user/nvim.html) instead). 
 
-If you don't have Neovim, see [Building Neovim](Building-Neovim) or [Installing Neovim](Installing-Neovim).
-
-**Note:** Use `:CheckHealth` to detect and fix common problems.
+- If you don't have Neovim, see [Building Neovim](Building-Neovim) or [Installing Neovim](Installing-Neovim).
+- Use `:checkhealth` to detect and fix common problems.
 
 ------------
 
 ### 2018/06/10
-Treats stdin as text, rather than commands. If you want to run stdin as normal mode commands, use `nvim -s -`.[#7679](https://github.com/neovim/neovim/pull/7679)
+
+Since [#7679](https://github.com/neovim/neovim/pull/7679) Nvim treats a stdin stream as text (instead of commands) by default:
+
+    echo foo | nvim
+
+You can get the old behavior by passing stdin to `-s`, like this:
+
+    echo foo | nvim -s -
+
 
 ### 2018/02/23
 Default fillchars for 'vert' and 'sep' changed from respectively `|` and `-` to `│` and `·` when the `ambiwidth` setting is different from `double`, else old defaults apply. [#8035](https://github.com/neovim/neovim/pull/8035)
