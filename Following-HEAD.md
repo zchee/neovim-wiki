@@ -6,6 +6,10 @@ If you don't have Neovim, see [Building Neovim](Building-Neovim) or [Installing 
 **Note:** Use `:CheckHealth` to detect and fix common problems.
 
 ------------
+
+### 2018/06/10
+Treats stdin as text, rather than commands. If you want to run stdin as normal mode commands, use `nvim -s -`.[#7679](https://github.com/neovim/neovim/pull/7679)
+
 ### 2018/02/23
 Default fillchars for 'vert' and 'sep' changed from respectively `|` and `-` to `│` and `·` when the `ambiwidth` setting is different from `double`, else old defaults apply. [#8035](https://github.com/neovim/neovim/pull/8035)
 
