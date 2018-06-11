@@ -21,7 +21,7 @@ Downloads are available on the [Releases](https://github.com/neovim/neovim/relea
 ## macOS
 
 1. Download [nvim-macos.tar.gz](https://github.com/neovim/neovim/releases/download/nightly/nvim-macos.tar.gz)
-2. Unzip: `tar xzvf nvim-macos.tar.gz`
+2. Extract: `tar xzvf nvim-macos.tar.gz`
 3. Run: `./nvim-osx64/bin/nvim`
 
 ## Linux
