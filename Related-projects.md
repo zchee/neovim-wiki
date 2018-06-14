@@ -130,6 +130,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [vim-tmux-clipboard](https://github.com/roxma/vim-tmux-clipboard) seamless integration with tmux's clipboard
 - [vsh](https://github.com/hardenedapple/vsh/): Store and replay shell sessions -- also output search/modification/undo/redo
 - [worldslice](https://github.com/fmoralesc/worldslice): statusline and tabline configuration
+- [nvimpam](https://github.com/KillTheMule/nvimpam): Provides async folding for pamcrash files
 
 ### Non-plugin software
 
