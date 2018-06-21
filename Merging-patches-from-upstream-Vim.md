@@ -18,8 +18,13 @@ Quickstart
 4. Run `./scripts/vim-patch.sh -p 8.0.0123`
 5. Follow the instructions given by the script.
 
-It's strongly recommended to work on the _oldest_ patch from the list (just make sure someone didn't already start working on it), because some patches might depend on others. You're most likely going to encounter merge conflicts regardless, but this way such conflicts are kept to a minimum.
+### Notes
 
+* It's strongly recommended to work on the _oldest_ missing patch (check [open pull requests](https://github.com/neovim/neovim/pulls) to avoid redundant work), because later patches might depend on the changes. You're likely to encounter merge conflicts regardless, but this way such conflicts are kept to a minimum.
+* Use `git log -G` to search the Nvim/Vim source history (even _deleted_ code). E.g. to find `reset_option_was_set`:
+  ```
+  git log -p -G reset_option_was_set
+  ```
 
 Pull requests
 -------------
