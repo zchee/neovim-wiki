@@ -270,12 +270,20 @@ https://github.com/cascent/neovim-cygwin was built on cygwin 2.9.0. Newer libuv 
 
 1. Install Visual Studio 2017 (includes CMake) with the _Desktop development with C++_ workload.
     - If you're using 32-bit Windows, see https://developercommunity.visualstudio.com/content/problem/212989/ninja-binary-format.html
-1. Run `makedeps.bat` to build the dependencies.
+1. ~~Run `makedeps.bat` to build the dependencies.~~ (No longer needed: deps are built automatically.)
 1. Start Visual Studio and open the Neovim project.
     - It should automatically detect and parse the project configuration. Otherwise right-click `CMakeLists.txt` and choose _CMake → Generate_.
 1. Select `x86-Release` configuration from the project settings menu and wait for CMake configuration to complete.
     - Note: It's also possible to build with the `x64-Release` configuration if `cmake -G "Visual Studio 15 2017 Win64"` is used to build the dependencies. However, the Debug configurations will not work because certain dependencies need to be linked with release version of the C runtime.
-1. Click _CMake → Build All_.
+1. Select _CMake → Build All_.
+
+#### Windows / CLion
+
+The steps for CLion are essentially the same as for Visual Studio, because the build logic is in CMake.
+
+1. Install [CLion](https://www.jetbrains.com/clion/).
+1. Open the Neovim project in CLion.
+1. Select _Build → nvim.exe_.
 
 #### Windows / MSYS2
 
