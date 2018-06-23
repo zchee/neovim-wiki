@@ -13,21 +13,9 @@ Install from download
 
 Downloads are available on the [Releases](https://github.com/neovim/neovim/releases) page.
 
-## Windows
+* Latest [stable release](https://github.com/neovim/neovim/releases/latest)
+* [Nightly build](https://github.com/neovim/neovim/releases/nightly)
 
-1. Extract [nvim-win32.zip](https://github.com/neovim/neovim/releases/download/nightly/nvim-win32.zip) (or [nvim-win64.zip](https://github.com/neovim/neovim/releases/download/nightly/nvim-win64.zip))
-2. Double-click `nvim-qt.exe`
-
-## macOS
-
-1. Download [nvim-macos.tar.gz](https://github.com/neovim/neovim/releases/download/nightly/nvim-macos.tar.gz)
-2. Extract: `tar xzvf nvim-macos.tar.gz`
-3. Run: `./nvim-osx64/bin/nvim`
-
-## Linux
-
-1. Download [nvim.appimage](https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage)
-2. Run: `chmod u+x nvim.appimage && ./nvim.appimage`
 
 Install from package
 ====================
