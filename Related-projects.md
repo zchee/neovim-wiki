@@ -140,6 +140,7 @@ This is software either targeted at Neovim or with support for it.
 - [nfasd](https://github.com/haifengkao/nfasd) Autocomplete recent files in command line
 - [nvimdev](https://github.com/tweekmonster/nvimdev.nvim): Help to neovim development
 - [nvimpager](https://github.com/lucc/nvimpager): Use neovim as `$PAGER` to view man pages, git logs, ... with neovim's syntax highlighting
+- [page](https://github.com/I60R/page): Advanced `$PAGER`, acts like neovim-remote, features fast CSI sequences processing
 - [ribosome](https://github.com/tek/ribosome): A framework for building and testing python plugins
 - [chromatin](https://github.com/tek/chromatin.nvim): A package manager for plugins built with ribosome
 - [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect): Restore tmux environment after system restart
