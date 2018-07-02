@@ -1,4 +1,4 @@
-**Note:** `:CheckHealth` detects and resolves many of the problems in this FAQ. Try it!
+**Note:** `:CheckHealth` (or `:checkhealth` for nvim >= 0.3) detects and resolves many of the problems in this FAQ. Try it!
 
 ---
 
