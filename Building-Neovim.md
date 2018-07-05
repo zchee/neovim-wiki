@@ -200,7 +200,7 @@ Running tests does not work out of the box yet. A PR submitted to improve lua su
 
 #### FreeBSD
 
-    sudo pkg install cmake gmake libtool sha automake pkgconf unzip wget
+    sudo pkg install cmake gmake libtool sha automake pkgconf unzip wget gettext
 
 If you get an error regarding a sha256sum mismatch, where
 the actual sha256sum is `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`, then this is your issue (that's the sha256sum of an empty file). Also, make sure you have wget installed.
