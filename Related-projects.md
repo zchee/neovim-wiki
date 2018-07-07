@@ -84,6 +84,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [LanguageClient-neovim](https://github.com/autozimu/LanguageClient-neovim): Language Server Protocol support for neovim
 - [lldb.nvim](https://github.com/critiqjo/lldb.nvim): Debugger integration with a focus on ease-of-use
 - [mirror.vim](https://github.com/zenbro/mirror.vim): Efficient way to edit remote files on multiple environments
+- [ncm2](https://github.com/ncm2/ncm2): Slim, Fast and Hackable Completion Framework for Neovim (fork of nvim-completion-manager)
 - [Nvim-R](https://github.com/jalvesaq/Nvim-R): plugin to work with R
 - [neomake](https://github.com/neomake/neomake): Asynchronous linting and make framework
 - [neomake-multiprocess](https://github.com/tracyone/neomake-multiprocess): A vim plugin for running multiple process asynchronously base on neomake
