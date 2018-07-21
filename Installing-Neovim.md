@@ -26,7 +26,7 @@ Packages are listed below. (You can also [build Neovim from source](#install-fro
 
 ### [Chocolatey](https://chocolatey.org)
 
-- **Release (v0.2):** `choco install neovim` (use -y for automatically skipping confirmation messages)
+- **Release (v0.3):** `choco install neovim` (use -y for automatically skipping confirmation messages)
 - **Development (pre-release):** `choco install neovim --pre`
 
 ### [Scoop](http://scoop.sh/)
@@ -36,7 +36,7 @@ Packages are listed below. (You can also [build Neovim from source](#install-fro
 ### Pre-built archives
 
 1. Choose a package:
-    - **Release (v0.2):** [nvim-win32.zip](https://github.com/neovim/neovim/releases/download/v0.2.2/nvim-win32.zip) or [nvim-win64.zip](https://github.com/neovim/neovim/releases/download/v0.2.2/nvim-win64.zip)
+    - **Release (v0.3):** [nvim-win32.zip](https://github.com/neovim/neovim/releases/download/v0.2.2/nvim-win32.zip) or [nvim-win64.zip](https://github.com/neovim/neovim/releases/download/v0.2.2/nvim-win64.zip)
     - **Development (pre-release):** [nvim-win32.zip](https://github.com/neovim/neovim/releases/download/nightly/nvim-win32.zip) or [nvim-win64.zip](https://github.com/neovim/neovim/releases/download/nightly/nvim-win64.zip)
 2. Unzip the package. Any location is fine, administrator privileges are _not_ required.
     - `$VIMRUNTIME` will be set to that location automatically.
