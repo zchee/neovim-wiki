@@ -3,6 +3,7 @@
 - [Transitioning from Vim](https://neovim.io/doc/user/nvim.html#nvim-from-vim) (`:help nvim-from-vim`)
 - [Related projects](Related-projects)
 
+
 ## Users
 
 - **[Install](Installing-Neovim)**
