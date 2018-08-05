@@ -146,7 +146,7 @@ Make sure `$TERM` is set correctly.
 
 Interactive commands are supported by `:terminal` in Neovim. But `:!` and `system()` do not support interactive commands, primarily because Neovim UIs use stdio for msgpack communication, but also for performance, reliability, and consistency across platforms (see [`:help gui-pty`](http://vimhelp.appspot.com/gui_x11.txt.html#gui-pty)). 
 
-See also [#1496](https://github.com/neovim/neovim/issues/1496)
+See also [#1496](https://github.com/neovim/neovim/issues/1496) and [#8217](https://github.com/neovim/neovim/issues/8217#issuecomment-402152307).
 
 ### Python support isn't working
 
