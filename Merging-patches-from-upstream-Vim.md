@@ -41,10 +41,10 @@ _Note:_ **[vim-patch.sh](https://github.com/neovim/neovim/blob/master/scripts/vi
 
 **Reviewers:** [hint for reviewing `runtime/` patches](https://github.com/neovim/neovim/pull/1744#issuecomment-68202876)
 
-N/A ("Not Applicable") patches
+NA ("Not Applicable") patches
 ------------------------------
 
-Many Vim patches are not applicable to Neovim. If you find NA patches, find the existing `version.c: update` pull request by [@marvim](https://github.com/neovim/neovim/pulls/marvim) and mention the NA patches in a comment (please edit/update *one* comment, rather than adding a new comment for each patch). Example: [PR #7886](https://github.com/neovim/neovim/pull/7886)
+Many Vim patches are not applicable to Neovim. If you find NA patches, visit the [current `version.c: update` pull request](https://github.com/neovim/neovim/pulls/marvim) and mention the NA patches in a comment (please edit/update *one* comment, rather than adding a new comment for each patch). Example: [PR #7886](https://github.com/neovim/neovim/pull/7886)
 
 If you are working on a series of patches, you may notice some "Not Applicable" patches. In that case you may want to mark the NA patches a commit message, using this format _exactly_ (each patch on a separate line):
 
@@ -56,7 +56,7 @@ where `<version-or-commit>` is a valid Vim version tag like `8.0.0123` or commit
 
 ### Types of "Not Applicable" Vim patches:
 
-- Updates to `testdir/Makefile` are usually N/A because the Makefile [implicitly finds](https://github.com/neovim/neovim/commit/8a677f8a4bff6005fa39f090c14e970c3dfdbe6e#diff-b3c6ad6680a25a1b42095879e3a87104R52) all `test_*.vim` files.
+- Updates to `testdir/Makefile` are usually NA because the Makefile [implicitly finds](https://github.com/neovim/neovim/commit/8a677f8a4bff6005fa39f090c14e970c3dfdbe6e#diff-b3c6ad6680a25a1b42095879e3a87104R52) all `test_*.vim` files.
 - **Compiler warning fixes**: Neovim strives to have no warnings at all, and has a very different build system from Vim.
     - **Note:** Coverity fixes in Vim *are* relevant to Neovim.
 - **#ifdef tweaking**: For example, Vim decided to enable `FEAT_VISUAL` for all platforms — but Neovim already does that. Adding new `FEAT_` guards also isn't relevant to Neovim.
