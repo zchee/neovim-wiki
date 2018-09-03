@@ -94,6 +94,18 @@ See the [`memory.c` Doxygen page](http://neovim.io/doc/dev/memory_8c.html) for m
 | `vim_strcat` `strncat`                  | `xstrlcat`         |
 | `vim_islower` `vim_isupper`             | `mb_islower` `mb_isupper` |
 | `vim_tolower` `vim_toupper`             | `mb_tolower` `mb_toupper` |
+| `mb_ptr2len`                            | `utfc_ptr2len`            |
+| `mb_ptr2len_len`                        | `utfc_ptr2len_len`        |
+| `mb_char2len`                           | `utf_char2len`            |
+| `mb_char2bytes`                         | `utf_char2bytes`          |
+| `mb_ptr2cells`                          | `utf_ptr2cells`           |
+| `mb_ptr2cells_len`                      | `utf_ptr2cells_len`       |
+| `mb_char2cells`                         | `utf_char2cells`          |
+| `mb_off2cells`                          | `utf_off2cells`           |
+| `mb_ptr2char`                           | `utf_ptr2char`            |
+| `mb_head_off`                           | `utf_head_off`            |
+
+Make sure to note the difference between `utf_` and `utfc_` when replacing `mb_` functions. Also indirect call syntax `(*mb_ptr2len)(...)` should be replaced with an ordinary function call `utfc_ptr2len(...)`.
 
 | Data type | Format (Vim source) | Portable format (Nvim source) |
 |:----------|:--------------------|:------------------------------|
