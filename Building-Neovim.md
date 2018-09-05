@@ -122,20 +122,22 @@ rebuild:
 
 ## Third-party dependencies
 
-See [#1588](https://github.com/neovim/neovim/pull/1588).
+Reference the [brew formula](https://github.com/Homebrew/homebrew-core/blob/master/Formula/neovim.rb#L16-L27) for an updated list of dependencies (and versions).
 
 To build the bundled dependencies using CMake:
 
 ```sh
-mkdir .deps ; cd .deps
+mkdir .deps
+cd .deps
 cmake ../third-party
 make
 ```
 
-By default the libraries and headers are placed in `.deps/usr`. Now you can build Neovim:
+By default the libraries and headers are placed in `.deps/usr`. Now you can build Nvim:
 
 ```sh
-mkdir build ; cd build
+mkdir build
+cd build
 cmake ..
 make
 ```
@@ -161,8 +163,9 @@ make
 ## Build prerequisites
 
 General requirements (see [#1469](https://github.com/neovim/neovim/issues/1469#issuecomment-63058312)):
-- A recent version of Clang, or GCC version `4.4` and above
-- CMake version `2.8.7` and above, built with TLS/SSL support
+
+- Clang or GCC version `4.4+`
+- CMake version `2.8.12+`, built with TLS/SSL support
 
 Platform-specific requirements are listed below.
 
