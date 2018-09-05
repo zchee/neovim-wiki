@@ -121,7 +121,7 @@ rebuild:
 
 ## Third-party dependencies
 
-Reference the [brew formula](https://github.com/Homebrew/homebrew-core/blob/master/Formula/neovim.rb#L16-L27) for an updated list of dependencies (and versions).
+Reference the **[Debian package](https://packages.debian.org/sid/source/neovim)** (or alternatively the [Homebrew formula](https://github.com/Homebrew/homebrew-core/blob/master/Formula/neovim.rb#L16-L27)) for the precise list of dependencies/versions.
 
 To build the bundled dependencies using CMake:
 
