@@ -11,7 +11,6 @@
 - [Xcode and MSVC project files](#xcode-and-msvc-project-files)
 - [Custom Makefile](#custom-makefile)
 - [Third-party dependencies](#third-party-dependencies)
-- [About CMake](#about-cmake)
 - [Build prerequisites](#build-prerequisites)
 
 ## Quick start
@@ -153,12 +152,6 @@ make
 4. Run `make`.
 
 
-## About CMake
-
-- [cmake.org](https://cmake.org)
-- `cmake -LAH` prints all variable definitions.
-- `build/CMakeCache.txt` contains the resolved values of all variables used by CMake.
-- `build/compile_commands.json` shows the full compiler invocations for each translation unit.
 
 ## Build prerequisites
 
