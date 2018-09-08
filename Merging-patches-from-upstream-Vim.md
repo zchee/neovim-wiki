@@ -15,12 +15,13 @@ Quickstart
    ```
 2. Run `./scripts/vim-patch.sh -l` to see the list of missing Vim patches.
 3. Choose a patch from the list (usually the _oldest_ one), e.g. `8.0.0123`.
+   -  Check for [open vim-patch PRs](https://github.com/neovim/neovim/pulls?q=is%3Apr+is%3Aopen+label%3Avim-patch).
 4. Run `./scripts/vim-patch.sh -p 8.0.0123`
 5. Follow the instructions given by the script.
 
 ### Notes
 
-* It's strongly recommended to work on the _oldest_ missing patch (check [open pull requests](https://github.com/neovim/neovim/pulls) to avoid redundant work), because later patches might depend on the changes. You're likely to encounter merge conflicts regardless, but this way such conflicts are kept to a minimum.
+* It's strongly recommended to work on the _oldest_ missing patch, because later patches might depend on the changes.
 * Use `git log -G` to search the Nvim/Vim source history (even _deleted_ code). E.g. to find `reset_option_was_set`:
   ```
   git log -p -G reset_option_was_set
