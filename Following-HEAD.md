@@ -4,6 +4,24 @@ The following changes may require users to update configuration, plugins, or exp
 - Use `:checkhealth` to detect and fix common problems.
 
 ------------
+### 2018/09/18
+
+The meaning of the `--embed` flag changed slightly:
+
+		Nvim will wait for a single request before sourcing startup
+		files and reading buffers. This is mainly so that UIs can call
+		`nvim_ui_attach` so that the UI can show startup messages
+		and possible swap file dialog for the first loaded file. In
+		addition, a `nvim_get_api_info` call before the `nvim_ui_attach`
+		call is also allowed, so that UI features can be safely
+		detected by the UI.
+
+For many UI embedders, this will improve startup behavior automatically, by supporting startup messages
+and swap files prompts. But it could be a potentially breaking change for other use cases of `--embed`.  The following alterative could be used to replicate the old behavior of embed, and works both on master, as well as on the two latest stable releases: 
+
+		nvim --headless --cmd "call stdioopen({'rpc': v:true})"
+
+
 
 ### 2018/06/10
 
