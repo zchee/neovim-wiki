@@ -1,6 +1,6 @@
 ## Neovim plugins
 
-- [nvimdev.nvim](https://github.com/tweekmonster/nvimdev.nvim)
+- [nvimdev.nvim](https://github.com/neovim/nvimdev.nvim)
     - Get Neomake working with Lua and C while working on the neovim codebase
     - `tags` and `cscope.out`
     - :heart: @tweekmonster!
@@ -56,7 +56,7 @@ To enable core dumping:
 
     ulimit -c unlimited
 
-If you then reproduce a segfault in `nvim`, it will "dump core". Typically this means a `core` file will appear in the current directory (or check `/var/log/apport.log` to see where it was written).
+If you then reproduce a segfault in `nvim`, it will "dump core". Typically this means a `core` file will appear in the current directory (or check `/var/log/apport.log` to see where it was written, or use `coredumpctl -1 debug` on newer systems with `systemd-coredump` installed).
 
 To get a backtrace from the `core` file:
 
