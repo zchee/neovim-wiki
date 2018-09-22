@@ -4,24 +4,20 @@ The following changes may require users to update configuration, plugins, or exp
 - Use `:checkhealth` to detect and fix common problems.
 
 ------------
-### 2018/09/18
+### 2018/09/22
 
-The meaning of the `--embed` flag changed slightly:
+The meaning of the `--embed` and `--headless` flags changed to facilitate better startup behaviour with
+external UIs. An UI embedder (any user of `nvim_ui_attach`) should start nvim using
+`nvim --embed` but without `--headless`. An embedder _not_ using the UI protocol
+should use `nvim --embed --headless`.
 
-		Nvim will wait for a single request before sourcing startup
-		files and reading buffers. This is mainly so that UIs can call
-		`nvim_ui_attach` so that the UI can show startup messages
-		and possible swap file dialog for the first loaded file. In
-		addition, a `nvim_get_api_info` call before the `nvim_ui_attach`
-		call is also allowed, so that UI features can be safely
-		detected by the UI.
+With `--embed` only, nvim will wait for the embedding process to call `nvim_ui_attach` before sourcing startup files and reading buffers.  This is so that UI can show startup messages and possible swap file dialog for the first loaded file.  The process can do requests before the `nvim_ui_attach`, for instance a `nvim_get_api_info` call so that UI features can be safely detected by the UI before attaching. However requests before attach (just like `--cmd` commands) cannot access `init.vim` configuration.
 
 For many UI embedders, this will improve startup behavior automatically, by supporting startup messages
-and swap files prompts. But it could be a potentially breaking change for other use cases of `--embed`.  The following alterative could be used to replicate the old behavior of embed, and works both on master, as well as on the two latest stable releases: 
+and swap files prompts. But it could be a potentially breaking change for other use cases of `--embed`. These can use `nvim --embed --headless` which will replicate the old behavior of embed on master and later releases, and still work with older versions of nvim.
 
-		nvim --headless --cmd "call stdioopen({'rpc': v:true})"
-
-
+For an UI that wants to do additional initialization after `init.vim` the following pattern can be used:
+Before `nvim_ui_attach` send a single`nvim_command` request with the command `"autocmd VimEnter * call rpcrequest(1, 'vimenter')"`. In the `vimenter` method handler the UI can then safely execute any requests, and nvim will only enter normal mode when this handler returns.
 
 ### 2018/06/10
 
