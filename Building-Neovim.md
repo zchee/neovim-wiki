@@ -232,6 +232,7 @@ gmake
 * Install [Xcode](https://developer.apple.com/) and [Homebrew](http://brew.sh)
   or [MacPorts](http://www.macports.org)
 * Install Xcode commandline tools `xcode-select --install`
+* (on macOS 10.14) Install the headers to the default location `open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg`
 * Install other dependencies:
   * via MacPorts:
     ```
