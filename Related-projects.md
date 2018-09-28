@@ -47,6 +47,7 @@ _Note: Some of these projects are **experimental/unstable**._
 | Go          | [neovim/go-client](https://github.com/neovim/go-client)                              |
 | Haskell     | [neovimhaskell/nvim-hs](https://github.com/neovimhaskell/nvim-hs)                    |
 | Java        | [fdinoff/neovim-java-client](https://github.com/fdinoff/neovim-java-client)          |
+| Java        | [esensar/neovim-java](https://github.com/esensar/neovim-java)          |
 | Julia       | [bfredl/Neovim.jl](https://github.com/bfredl/Neovim.jl)                              |
 | Lua         | [neovim/lua-client](https://github.com/neovim/lua-client)                            |
 | Node.js     | [neovim/node-client](https://github.com/neovim/node-client)                          |
