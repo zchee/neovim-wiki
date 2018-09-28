@@ -69,7 +69,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [bolt.nvim](https://github.com/philip-karlsson/bolt.nvim): Filter as you type file manager with fuzzy matching and ripgrep integration
 - [buildit.nvim](https://github.com/wbthomason/buildit.nvim): An async project builder. Tries to detect the right builder for your project.
 - [chromatica.nvim](https://github.com/arakashic/chromatica.nvim): Clang based syntax highlighting
-- [coc.nvim](https://github.com/neoclide/coc.nvim): Language Server support neovim, featured as VSCode 
+- [coc.nvim](https://github.com/neoclide/coc.nvim): Completion and other language server support for neovim, featured as VSCode 
 - [dein.vim](https://github.com/Shougo/dein.vim): Plugin manager
 - [denite.nvim](https://github.com/Shougo/denite.nvim): A dark powered plugin for Neovim/Vim to unite all interfaces
 - [deoplete.nvim](https://github.com/Shougo/deoplete.nvim): Dark powered asynchronous completion framework
