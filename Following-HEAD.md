@@ -33,7 +33,7 @@ Changes from [#7679](https://github.com/neovim/neovim/pull/7679):
     ```
 - **Windows only:** `nvim *.txt` (glob/wildcard expression) is [treated literally](https://github.com/neovim/neovim/pull/7679/commits/1f300e08b8c0c35b2f3d79506ae9817cd8591624). Use the `:next` (`:n`) command instead:
   ```
-  nvim.exe -- +"n *.txt"
+  nvim +"n *.txt"
   ```
 
 ### 2018/02/23
