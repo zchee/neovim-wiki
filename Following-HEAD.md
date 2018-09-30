@@ -21,14 +21,20 @@ Before `nvim_ui_attach` send a single`nvim_command` request with the command `"a
 
 ### 2018/06/10
 
-Since [#7679](https://github.com/neovim/neovim/pull/7679) Nvim treats a stdin stream as text (instead of commands) by default:
+Changes from [#7679](https://github.com/neovim/neovim/pull/7679):
 
-    echo foo | nvim
-
-You can get the old behavior by passing stdin to `-s`, like this:
-
+- Nvim treats a stdin stream as _text_ by default:
+  ```
+  echo foo | nvim
+  ```
+  - To get the old behavior, pass stdin to `-s`:
+    ```
     echo foo | nvim -s -
-
+    ```
+- **Windows only:** `nvim *.txt` (glob/wildcard expression) is [treated literally](https://github.com/neovim/neovim/pull/7679/commits/1f300e08b8c0c35b2f3d79506ae9817cd8591624). Use the `:next` (`:n`) command instead:
+  ```
+  nvim.exe -- +"n *.txt"
+  ```
 
 ### 2018/02/23
 Default fillchars for 'vert' and 'sep' changed from respectively `|` and `-` to `│` and `·` when the `ambiwidth` setting is different from `double`, else old defaults apply. [#8035](https://github.com/neovim/neovim/pull/8035)
