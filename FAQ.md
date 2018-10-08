@@ -345,6 +345,12 @@ See also:
 - [Why Lua](https://web.archive.org/web/20150219224654/http://blog.datamules.com/blog/2012/01/30/why-lua/)
 - [Redis and scripting](http://oldblog.antirez.com/post/redis-and-scripting.html)
 
+### Why Lua 5.1 instead of Lua 5.3+?
+
+Lua 5.1 is a different language than 5.3.  The Lua org makes breaking changes with every new version, so even if we switched (not upgraded, but _switched_) to 5.3 we gain nothing when they create the next new language in 5.4, 5.5, etc. And we would lose LuaJit, which is far more valuable than Lua 5.3+.
+
+Lua 5.1 is a complete language. To "upgrade" it, just add libraries, not syntax. Nvim itself already is a pretty good "stdlib" for Lua, and we will continue to grow and enhance it. Changing the syntax of Lua 5.1 gains nothing in this context.
+
 ### Won't it be slower to translate VimL to Lua, instead of executing VimL directly?
 
 We'll use [LuaJIT](http://luajit.org/), the fastest scripting runtime out there. Parsing an additional language will create some overhead, but that will be insignificant compared to the runtime performance improvements, because Vimscript is so slow. Plugins may even run faster.
