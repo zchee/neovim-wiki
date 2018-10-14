@@ -172,7 +172,7 @@ Replace python35 with python27 for the python 2 packages.
 
 Neovim can be installed with:
 
-    sudo zypper in Neovim
+    sudo zypper in neovim
 
 To install the Python modules:
     
