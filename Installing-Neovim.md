@@ -35,7 +35,7 @@ Packages are listed below. (You can also [build Neovim from source](#install-fro
 
 ### Pre-built archives
 
-1. Choose a package from [above](https://github.com/neovim/neovim/wiki/Installing-Neovim#install-from-download):
+1. Choose a package (**nvim-winXX.zip**) from the [releases page](https://github.com/neovim/neovim/releases).
 2. Unzip the package. Any location is fine, administrator privileges are _not_ required.
     - `$VIMRUNTIME` will be set to that location automatically.
 3. Double-click `nvim-qt.exe`.
