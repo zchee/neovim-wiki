@@ -134,6 +134,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [vsh](https://github.com/hardenedapple/vsh/): Store and replay shell sessions -- also output search/modification/undo/redo
 - [worldslice](https://github.com/fmoralesc/worldslice): statusline and tabline configuration
 - [nvimpam](https://github.com/KillTheMule/nvimpam): Provides async folding for pamcrash files
+- [nvim-moonscript-plugin-support](https://github.com/svermeulen/nvim-moonscript-plugin-support): Automatically compiles moonscript files when they change to make writing moonscript plugins easier
 
 ### Non-plugin software
 
