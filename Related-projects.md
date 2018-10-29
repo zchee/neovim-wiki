@@ -80,17 +80,16 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [fzf-gitignore](https://github.com/fszymanski/fzf-gitignore): fzf interface for creating .gitignore files using the gitignore.io API
 - [gen_tags.vim](https://github.com/jsfaint/gen_tags.vim): Async plugin for vim and neovim to ease the use of ctags/gtags
 - [haskell-vim](https://github.com/neovimhaskell/haskell-vim): Custom Haskell Vimscripts
-- [iron.nvim](https://github.com/hkupty/iron.nvim): REPL management
 - [InsertLeftBracket.nvim](https://github.com/haifengkao/InsertLeftBracket.nvim): auto-complete brackets for objective-c files
+- [iron.nvim](https://github.com/hkupty/iron.nvim): REPL management
 - [LanguageClient-neovim](https://github.com/autozimu/LanguageClient-neovim): Language Server Protocol support for neovim
 - [lldb.nvim](https://github.com/critiqjo/lldb.nvim): Debugger integration with a focus on ease-of-use
+- [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim): preview markdown on your modern browser with sync scroll and flexible configuration use the rpc api of neovim
 - [mirror.vim](https://github.com/zenbro/mirror.vim): Efficient way to edit remote files on multiple environments
 - [mkdx](https://github.com/SidOfc/mkdx): A vim plugin that adds some nice extra's for working with markdown documents
-- [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim): preview markdown on your modern browser with sync scroll and flexible configuration use the rpc api of neovim
 - [ncm2](https://github.com/ncm2/ncm2): Slim, Fast and Hackable Completion Framework for Neovim (fork of nvim-completion-manager)
-- [Nvim-R](https://github.com/jalvesaq/Nvim-R): plugin to work with R
-- [neomake](https://github.com/neomake/neomake): Asynchronous linting and make framework
 - [neomake-multiprocess](https://github.com/tracyone/neomake-multiprocess): A vim plugin for running multiple process asynchronously base on neomake
+- [neomake](https://github.com/neomake/neomake): Asynchronous linting and make framework
 - [neopipe](https://github.com/coachshea/neo-pipe): send lines of text to an external command and display output in a scratch buffer
 - [neotags.nvim](https://github.com/c0r73x/neotags.nvim): Tag highlight
 - [neoterm](https://github.com/kassio/neoterm): Wrapper of some neovim's :terminal functions
@@ -102,24 +101,27 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [nuake](https://gitlab.com/Lenovsky/nuake): A Quake-style terminal panel for Neovim
 - [nvim-completion-manager](https://github.com/roxma/nvim-completion-manager): A fast, extensible, async completion framework
 - [nvim-editcommand](https://github.com/brettanomyces/nvim-editcommand): Edit your current shell command inside a scratch buffer.
-- [nvim-terminus](https://github.com/brettanomyces/nvim-terminus): Edit your current command in a scratch buffer
-- [nvim-typescript](https://github.com/mhartington/nvim-typescript): Asynchronous typescript tooling and completion 
+- [nvim-go](https://github.com/zchee/nvim-go): Go development plugin for Neovim written in pure Go.
 - [nvim-ipy](https://github.com/bfredl/nvim-ipy): IPython/Jupyter integration
 - [nvim-miniyank](https://github.com/bfredl/nvim-miniyank): Simple yankring (shared across instances)
+- [nvim-moonmaker](https://github.com/svermeulen/nvim-moonmaker): Adds plugin support for moonscript files in the same way the built-in support for lua/python files works (by automatically compiling moonscript files to lua)
 - [nvim-palette](https://github.com/teto/nvim-palette): Fuzzy search of settings
+- [Nvim-R](https://github.com/jalvesaq/Nvim-R): plugin to work with R
+- [nvim-terminus](https://github.com/brettanomyces/nvim-terminus): Edit your current command in a scratch buffer
+- [nvim-typescript](https://github.com/mhartington/nvim-typescript): Asynchronous typescript tooling and completion 
+- [nvimpam](https://github.com/KillTheMule/nvimpam): Provides async folding for pamcrash files
 - [nvimux](https://github.com/hkupty/nvimux): TMUX bindings/neovim as multiplexer
 - [orchestra.nvim](https://github.com/timeyyy/orchestra.nvim): bind sound effects to different actions
 - [proteome](https://github.com/tek/proteome.nvim): assists in working on multiple projects in a single neovim instance
 - [semshi](https://github.com/numirias/semshi): Semantic Highlighting for Python
 - [termedit.nvim](https://github.com/rliang/termedit.nvim) Sets the Neovim host instance as $EDITOR
-- [vimcmdline](https://github.com/jalvesaq/vimcmdline): sends lines from either Vim or Neovim to a command line interpreter (REPL application)
 - [vim-accio](https://github.com/pgdouyon/vim-accio): asynchronously summons build/compiler/linter output to your screen by wrapping the :compiler and :make commands
 - [vim-airline](https://github.com/vim-airline/vim-airline) (see [this commit](https://github.com/vim-airline/vim-airline/commit/ef3746d02266c4630e2658ad2302b266f53a0434) )
-- [vim-composer](https://github.com/noahfrederick/vim-composer): support for Composer PHP projects
 - [vim-chat](https://github.com/vim-chat/vim-chat): Chat client for QQ and weixin
+- [vim-composer](https://github.com/noahfrederick/vim-composer): support for Composer PHP projects
 - [vim-esearch](https://github.com/eugen0329/vim-esearch): Perform search in files easily
-- [vim-gitgutter](https://github.com/airblade/vim-gitgutter): shows a git diff in the gutter (sign column) and stages/undoes hunks
 - [vim-ghost](https://github.com/raghur/vim-ghost): Neovim client for GhostText browser extension ([firefox](https://addons.mozilla.org/en-US/firefox/addon/ghosttext/) and [chrome](https://chrome.google.com/webstore/detail/ghosttext/godiecgffnchndlihlpaajjcplehddca))
+- [vim-gitgutter](https://github.com/airblade/vim-gitgutter): shows a git diff in the gutter (sign column) and stages/undoes hunks
 - [vim-go](https://github.com/fatih/vim-go) (see [PR 607](https://github.com/fatih/vim-go/pull/607) for feature list)
 - [vim-grepper](https://github.com/mhinz/vim-grepper): Use your favorite grep tool (ag, ack, git grep, ripgrep, pt, sift, findstr, grep) to start an asynchronous search
 - [vim-javacomplete2](https://github.com/artur-shaik/vim-javacomplete2): an omni-completion plugin for Java
@@ -132,10 +134,9 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [vim-signify](https://github.com/mhinz/vim-signify) uses the sign column to indicate added, modified and removed lines in a file that is managed by a version control system (VCS)
 - [vim-test](https://github.com/janko-m/vim-test) wrapper for running tests on different granularities
 - [vim-tmux-clipboard](https://github.com/roxma/vim-tmux-clipboard) seamless integration with tmux's clipboard
+- [vimcmdline](https://github.com/jalvesaq/vimcmdline): sends lines from either Vim or Neovim to a command line interpreter (REPL application)
 - [vsh](https://github.com/hardenedapple/vsh/): Store and replay shell sessions -- also output search/modification/undo/redo
 - [worldslice](https://github.com/fmoralesc/worldslice): statusline and tabline configuration
-- [nvimpam](https://github.com/KillTheMule/nvimpam): Provides async folding for pamcrash files
-- [nvim-moonmaker](https://github.com/svermeulen/nvim-moonmaker): Adds plugin support for moonscript files in the same way the built-in support for lua/python files works (by automatically compiling moonscript files to lua)
 
 
 ### Non-plugin software
