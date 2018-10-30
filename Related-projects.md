@@ -88,7 +88,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [mirror.vim](https://github.com/zenbro/mirror.vim): Efficient way to edit remote files on multiple environments
 - [mkdx](https://github.com/SidOfc/mkdx): Vim plugin that adds some nice extras for working with Markdown documents
 - [ncm2](https://github.com/ncm2/ncm2): Slim, fast, and hackable completion framework for Neovim (fork of nvim-completion-manager)
-- [neomake-multiprocess](https://github.com/tracyone/neomake-multiprocess): Vim plugin for running multiple process asynchronously base on Neomake
+- [neomake-multiprocess](https://github.com/tracyone/neomake-multiprocess): Vim plugin for running multiple process asynchronously based on Neomake
 - [neomake](https://github.com/neomake/neomake): Asynchronous linting and make framework
 - [neopipe](https://github.com/coachshea/neo-pipe): Send lines of text to an external command and display output in a scratch buffer
 - [neotags.nvim](https://github.com/c0r73x/neotags.nvim): Plugin that generates and highlights Ctags
