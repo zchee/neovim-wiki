@@ -4,31 +4,31 @@ _Note: Some of these projects are **experimental/unstable**._
 
 ### GUI
 
-| Platform         | Project                                                                 |
-|------------------|-------------------------------------------------------------------------|
-| Atom Integration | [carlosdcastillo/vim-mode](https://github.com/carlosdcastillo/vim-mode) |
-| C++/Python       | [meatich/NeoSFML](https://github.com/meatich/NeoSFML)                   |
-| EFL              | [Eovim](https://github.com/jeanguyomarch/eovim/)                        |
-| Electron UI      | [coolwanglu/neovim-e](https://github.com/coolwanglu/neovim-e)           |
-| Electron UI      | [rhysd/NyaoVim](https://github.com/rhysd/NyaoVim)                       |
-| Electron UI      | [onivim/oni](https://github.com/onivim/oni)                             |
-| Electron UI      | [VV](https://github.com/igorgladkoborodov/vv)                           |
-| VSCode           | [VSCodeVim](https://github.com/VSCodeVim/Vim)                           |
+| Platform         | Project                                                                       |
+|------------------|-------------------------------------------------------------------------------|
+| Atom Integration | [carlosdcastillo/vim-mode](https://github.com/carlosdcastillo/vim-mode)       |
+| C++/Python       | [meatich/NeoSFML](https://github.com/meatich/NeoSFML)                         |
+| EFL              | [Eovim](https://github.com/jeanguyomarch/eovim/)                              |
+| Electron UI      | [coolwanglu/neovim-e](https://github.com/coolwanglu/neovim-e)                 |
+| Electron UI      | [rhysd/NyaoVim](https://github.com/rhysd/NyaoVim)                             |
+| Electron UI      | [onivim/oni](https://github.com/onivim/oni)                                   |
+| Electron UI      | [VV](https://github.com/igorgladkoborodov/vv)                                 |
+| VSCode           | [VSCodeVim](https://github.com/VSCodeVim/Vim)                                 |
 | gnome-terminal   | [fmoralesc/neovim-gnome-terminal-wrapper](https://github.com/fmoralesc/neovim-gnome-terminal-wrapper) |
-| Go/Qt            | [dzhou121/gonvim](https://github.com/dzhou121/gonvim)                   |
-| GTK/Python UI    | [neovim/python-gui](https://github.com/neovim/python-gui)               |
-| GTK/Python UI    | [rliang/nvim-pygtk3](https://github.com/rliang/nvim-pygtk3)             |
-| GTK/Rust UI      | [daa84/neovim-gtk](https://github.com/daa84/neovim-gtk)                 |
+| Go/Qt            | [dzhou121/gonvim](https://github.com/dzhou121/gonvim)                         |
+| GTK/Python UI    | [neovim/python-gui](https://github.com/neovim/python-gui)                     |
+| GTK/Python UI    | [rliang/nvim-pygtk3](https://github.com/rliang/nvim-pygtk3)                   |
+| GTK/Rust UI      | [daa84/neovim-gtk](https://github.com/daa84/neovim-gtk)                       |
 | JavaFX           | [jebberjeb/javafx-neovimpane](https://github.com/jebberjeb/javafx-neovimpane) |
-| Konsole          | [harish2704/neovim-konsole](https://github.com/harish2704/neovim-konsole) |
-| macOS            | [qvacua/vimr](https://github.com/qvacua/vimr)                           |
-| macOS            | [rogual/neovim-dot-app](https://github.com/rogual/neovim-dot-app)       |
-| Qt 5             | [equalsraf/neovim-qt](https://github.com/equalsraf/neovim-qt)           |
-| Qt Creator       | [sassanh/qnvim](https://github.com/sassanh/qnvim)                       |
-| Rust IDE         | [oakes/SolidOak](https://github.com/oakes/SolidOak)                     |
-| Sublime Text     | [lunixbochs/actualvim](https://github.com/lunixbochs/actualvim)         |
-| Tk/Python UI     | [timeyyy/pytknvim](https://github.com/timeyyy/pytknvim)                 |
-| Windows/Linux    | [meatich/Viy](https://github.com/meatich/Viy)                           |
+| Konsole          | [harish2704/neovim-konsole](https://github.com/harish2704/neovim-konsole)     |
+| macOS            | [qvacua/vimr](https://github.com/qvacua/vimr)                                 |
+| macOS            | [rogual/neovim-dot-app](https://github.com/rogual/neovim-dot-app)             |
+| Qt 5             | [equalsraf/neovim-qt](https://github.com/equalsraf/neovim-qt)                 |
+| Qt Creator       | [sassanh/qnvim](https://github.com/sassanh/qnvim)                             |
+| Rust IDE         | [oakes/SolidOak](https://github.com/oakes/SolidOak)                           |
+| Sublime Text     | [lunixbochs/actualvim](https://github.com/lunixbochs/actualvim)               |
+| Tk/Python UI     | [timeyyy/pytknvim](https://github.com/timeyyy/pytknvim)                       |
+| Windows/Linux    | [meatich/Viy](https://github.com/meatich/Viy)                                 |
 
 ### API clients
 
@@ -66,10 +66,10 @@ _Note: Some of these projects are **experimental/unstable**._
 The following plugins take advantage of specific Neovim features, e.g. `jobstart()`, `:terminal` or its remote plugin mechanism.
 
 - [acid.nvim](https://github.com/clojure-vim/acid.nvim): Asynchronous nREPL client for Clojure development
-- [alchemist.vim](https://github.com/slashmili/alchemist.vim): Elixir Integration
+- [alchemist.vim](https://github.com/slashmili/alchemist.vim): Elixir integration
 - [bolt.nvim](https://github.com/philip-karlsson/bolt.nvim): Filter as you type file manager with fuzzy matching and ripgrep integration
 - [buildit.nvim](https://github.com/wbthomason/buildit.nvim): An async project builder, tries to detect the right builder for your project
-- [chromatica.nvim](https://github.com/arakashic/chromatica.nvim): Clang based syntax highlighting
+- [chromatica.nvim](https://github.com/arakashic/chromatica.nvim): Clang-based syntax highlighting
 - [coc.nvim](https://github.com/neoclide/coc.nvim): Completion and other language server support for Neovim, featured as VSCode 
 - [dein.vim](https://github.com/Shougo/dein.vim): Plugin manager
 - [denite.nvim](https://github.com/Shougo/denite.nvim): Dark powered plugin for Neovim/Vim to unite all interfaces
