@@ -154,9 +154,9 @@ This is software either targeted at Neovim or with support for it.
 - [vmux](https://github.com/jceb/vmux): Vim/Neovim session handler within tmux
 - [Vroom](https://github.com/google/vroom): Way to specify Vim commands (actual input keys that that the user hits) and then verify Vim's output
 
-### Colorschemes
+### Color schemes
 
-Colorschemes that make use of Neovim-specific features, e.g. highlight groups or terminal emulator colors.
+Color schemes make use of Neovim-specific features, e.g. highlight groups or terminal emulator colors.
 
 - [falcon](https://github.com/fenetikm/falcon)
 - [flatcolor](https://github.com/MaxSt/FlatColor)
