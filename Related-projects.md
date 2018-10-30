@@ -15,16 +15,16 @@ _Note: Some of these projects are **experimental/unstable**._
 | Electron UI      | [VV](https://github.com/igorgladkoborodov/vv)                           |
 | VSCode           | [VSCodeVim](https://github.com/VSCodeVim/Vim)                           |
 | gnome-terminal   | [fmoralesc/neovim-gnome-terminal-wrapper](https://github.com/fmoralesc/neovim-gnome-terminal-wrapper) |
-| Go/Qt           | [dzhou121/gonvim](https://github.com/dzhou121/gonvim)                   |
+| Go/Qt            | [dzhou121/gonvim](https://github.com/dzhou121/gonvim)                   |
 | GTK/Python UI    | [neovim/python-gui](https://github.com/neovim/python-gui)               |
 | GTK/Python UI    | [rliang/nvim-pygtk3](https://github.com/rliang/nvim-pygtk3)             |
 | GTK/Rust UI      | [daa84/neovim-gtk](https://github.com/daa84/neovim-gtk)                 |
-| JavaFX           | https://github.com/jebberjeb/javafx-neovimpane |
+| JavaFX           | https://github.com/jebberjeb/javafx-neovimpane                          |
 | Konsole          | [harish2704/neovim-konsole](https://github.com/harish2704/neovim-konsole) |
 | macOS            | [qvacua/vimr](https://github.com/qvacua/vimr)                           |
 | macOS            | [rogual/neovim-dot-app](https://github.com/rogual/neovim-dot-app)       |
 | Qt 5             | [equalsraf/neovim-qt](https://github.com/equalsraf/neovim-qt)           |
-| Qt Creator        | [sassanh/qnvim](https://github.com/sassanh/qnvim)                       |
+| Qt Creator       | [sassanh/qnvim](https://github.com/sassanh/qnvim)                       |
 | Rust IDE         | [oakes/SolidOak](https://github.com/oakes/SolidOak)                     |
 | Sublime Text     | [lunixbochs/actualvim](https://github.com/lunixbochs/actualvim)         |
 | Tk/Python UI     | [timeyyy/pytknvim](https://github.com/timeyyy/pytknvim)                 |
@@ -38,16 +38,16 @@ _Note: Some of these projects are **experimental/unstable**._
 | C++         | [DaikiMaekawa/neovim.cpp](https://github.com/DaikiMaekawa/neovim.cpp)                |
 | C++/Qt5     | [equalsraf/neovim-qt](https://github.com/equalsraf/neovim-qt)                        |
 | C++/ncurses | [SoC/neovim-client](https://github.com/splinterofchaos/neovim-cpp-client-experiment) |
-| C++/Magnum  | [Squareys/magnum-neovim-api](https://github.com/Squareys/magnum-neovim-api) |
+| C++/Magnum  | [Squareys/magnum-neovim-api](https://github.com/Squareys/magnum-neovim-api)          |
 | Clojure     | [jebberjeb/neovim-client](https://github.com/jebberjeb/neovim-client)                |
 | Common Lisp | [adolenc/cl-neovim](https://github.com/adolenc/cl-neovim)                            |
 | Elixir      | [awetzel/neovim-elixir](https://github.com/awetzel/neovim-elixir)                    |
-| Elixir      | [dm1try/nvim](https://github.com/dm1try/nvim)                    |
+| Elixir      | [dm1try/nvim](https://github.com/dm1try/nvim)                                        |
 | Filesystem  | [fmoralesc/nvimfs](https://github.com/fmoralesc/nvimfs)                              |
 | Go          | [neovim/go-client](https://github.com/neovim/go-client)                              |
 | Haskell     | [neovimhaskell/nvim-hs](https://github.com/neovimhaskell/nvim-hs)                    |
 | Java        | [fdinoff/neovim-java-client](https://github.com/fdinoff/neovim-java-client)          |
-| Java        | [esensar/neovim-java](https://github.com/esensar/neovim-java)          |
+| Java        | [esensar/neovim-java](https://github.com/esensar/neovim-java)                        |
 | Julia       | [bfredl/Neovim.jl](https://github.com/bfredl/Neovim.jl)                              |
 | Lua         | [neovim/lua-client](https://github.com/neovim/lua-client)                            |
 | Node.js     | [neovim/node-client](https://github.com/neovim/node-client)                          |
@@ -56,7 +56,7 @@ _Note: Some of these projects are **experimental/unstable**._
 | Python      | [neovim/python-client](https://github.com/neovim/python-client)                      |
 | R           | [jalvesaq/Nvim-R](https://github.com/jalvesaq/Nvim-R)                                |
 | Racket      | [HiPhish/neovim.rkt](https://gitlab.com/HiPhish/neovim.rkt)                          |
-| Ruby        | [neovim/neovim-ruby](https://github.com/neovim/neovim-ruby)                    |
+| Ruby        | [neovim/neovim-ruby](https://github.com/neovim/neovim-ruby)                          |
 | Rust        | [oakes/neovim-rs](https://github.com/oakes/neovim-rs)                                |
 | Rust        | [daa84/neovim-lib](https://github.com/daa84/neovim-lib)                              |
 | Swift/Cocoa | [SwiftNeoVim (part of qvacua/vimr)](https://github.com/qvacua/vimr/wiki/SwiftNeoVim-Framework) |
