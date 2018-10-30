@@ -74,7 +74,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [dein.vim](https://github.com/Shougo/dein.vim): Plugin manager
 - [denite.nvim](https://github.com/Shougo/denite.nvim): Dark powered plugin for Neovim/Vim to unite all interfaces
 - [deoplete.nvim](https://github.com/Shougo/deoplete.nvim): Dark powered asynchronous completion framework
-- [Extract](https://github.com/cyansprite/Extract): Extract puts and yanks to a list with normal, visual swapping, and insert list/register completion
+- [Extract](https://github.com/cyansprite/Extract): Puts and yanks to a list with normal, visual swapping, and insert list/register completion
 - [far.vim](https://github.com/brooth/far.vim): Search and replace
 - [Floobits](https://github.com/Floobits/floobits-neovim): Floobits plugin
 - [fzf-gitignore](https://github.com/fszymanski/fzf-gitignore): A fzf (command-line fuzzy finder) interface for creating .gitignore files using the gitignore.io API
