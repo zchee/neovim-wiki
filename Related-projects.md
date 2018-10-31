@@ -120,7 +120,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [vim-chat](https://github.com/vim-chat/vim-chat): Chat client for QQ and Weixin
 - [vim-composer](https://github.com/noahfrederick/vim-composer): Support for Composer PHP projects
 - [vim-esearch](https://github.com/eugen0329/vim-esearch): Perform search in files easily
-- [vim-ghost](https://github.com/raghur/vim-ghost): Neovim client for GhostText browser extension Firefox and Chrome
+- [vim-ghost](https://github.com/raghur/vim-ghost): Neovim client for GhostText browser extension on Firefox and Chrome
 - [vim-gitgutter](https://github.com/airblade/vim-gitgutter): Shows a git diff in the gutter (sign column) and stages/undos hunks
 - [vim-go](https://github.com/fatih/vim-go): See [PR 607](https://github.com/fatih/vim-go/pull/607) for feature list
 - [vim-grepper](https://github.com/mhinz/vim-grepper): Use your favorite grep tool (ag, ack, git grep, ripgrep, pt, sift, findstr, grep) to start an asynchronous search
