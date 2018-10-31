@@ -92,7 +92,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [neomake](https://github.com/neomake/neomake): Asynchronous linting and make framework
 - [neopipe](https://github.com/coachshea/neo-pipe): Send lines of text to an external command and display output in a scratch buffer
 - [neotags.nvim](https://github.com/c0r73x/neotags.nvim): Plugin that generates and highlights Ctags
-- [neoterm](https://github.com/kassio/neoterm): Wrapper of some Neovim's :terminal functions
+- [neoterm](https://github.com/kassio/neoterm): Wrapper of some Neovim's `:terminal` functions
 - [neotex](https://github.com/donRaphaco/neotex): Latex live preview
 - [neovim-hackernews](https://github.com/dpzmick/neovim-hackernews): Display Hacker News (HN) stories inside Neovim
 - [neovim-ranger](https://github.com/airodactyl/neovim-ranger): File manager with Vi key bindings
@@ -114,7 +114,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [orchestra.nvim](https://github.com/timeyyy/orchestra.nvim): Bind sound effects to different actions
 - [proteome](https://github.com/tek/proteome.nvim): Assists in working on multiple projects in a single Neovim instance
 - [semshi](https://github.com/numirias/semshi): Semantic highlighting for Python
-- [termedit.nvim](https://github.com/rliang/termedit.nvim) Sets the Neovim host instance as $EDITOR
+- [termedit.nvim](https://github.com/rliang/termedit.nvim) Sets the Neovim host instance as `$EDITOR`
 - [vim-accio](https://github.com/pgdouyon/vim-accio): Asynchronously summons build/compiler/linter output to your screen by wrapping the :compiler and :make commands
 - [vim-airline](https://github.com/vim-airline/vim-airline): See [this commit](https://github.com/vim-airline/vim-airline/commit/ef3746d02266c4630e2658ad2302b266f53a0434)
 - [vim-chat](https://github.com/vim-chat/vim-chat): Chat client for QQ and Weixin
