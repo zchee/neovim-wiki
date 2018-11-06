@@ -12,6 +12,7 @@ _Note: Some of these projects are **experimental/unstable**._
 | Electron UI      | [coolwanglu/neovim-e](https://github.com/coolwanglu/neovim-e)                 |
 | Electron UI      | [rhysd/NyaoVim](https://github.com/rhysd/NyaoVim)                             |
 | Electron UI      | [onivim/oni](https://github.com/onivim/oni)                                   |
+| Electron UI      | [veonim](https://github.com/veonim/veonim)                                    |
 | Electron UI      | [VV](https://github.com/igorgladkoborodov/vv)                                 |
 | VSCode           | [VSCodeVim](https://github.com/VSCodeVim/Vim)                                 |
 | gnome-terminal   | [fmoralesc/neovim-gnome-terminal-wrapper](https://github.com/fmoralesc/neovim-gnome-terminal-wrapper) |
