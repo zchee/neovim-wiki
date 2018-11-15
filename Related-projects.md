@@ -1,4 +1,4 @@
-If you're working on a Neovim-related project, include (alphabetically) it below!
+If you're working on a Neovim-related project, include it (alphabetically) below!
 
 _Note: Some of these projects are **experimental/unstable**._
 
