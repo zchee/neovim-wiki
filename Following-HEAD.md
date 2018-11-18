@@ -11,6 +11,12 @@ The Python package `neovim` was renamed to `pynvim`.
 
 "Neovim" can mean a lot of things. It can relate to the editor, or the project, or (prior to this change) the Python module, or the Ruby gem, etc. Especially confusing was the fact that the Python side would refer to it as `neovim` whereas the Neovim side referred to it as `python-client`. Now, both sides call it `pynvim` for the greater good.
 
+For the time being, `neovim` acts as a transitional package for the new `pynvim`. Installing or upgrading `neovim` will automatically install `pynvim` as well.
+
+This is a breaking change. Not only the package name itself, but all the references within the module changed to `pynvim`, so projects relying on these should upgrade ASAP.
+
+If `pynvim` is installed already, it's safe to uninstall the old `neovim` package.
+
 ### 2018/09/22
 
 The meaning of the `--embed` and `--headless` flags changed to facilitate better startup behaviour with
