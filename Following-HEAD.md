@@ -7,7 +7,7 @@ The following changes may require users to update configuration, plugins, or exp
 
 ### 2018/11/18
 
-The Python package `neovim` was renamed to `pynvim`.
+The Python package `neovim` was renamed to [`pynvim`](https://github.com/neovim/pynvim).
 
 "Neovim" can mean a lot of things. It can relate to the editor, or the project, or (prior to this change) the Python module, or the Ruby gem, etc. Especially confusing was the fact that the Python side would refer to it as `neovim` whereas the Neovim side referred to it as `python-client`. Now, both sides call it `pynvim` for the greater good.
 
