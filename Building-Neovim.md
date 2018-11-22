@@ -143,14 +143,18 @@ make
 
 ### How to build without "bundled" dependencies
 
-1. Install all dependencies manually.
-2. Create directory `build` in the root of the repository.
-3. Switch to it and run `cmake ..` with all necessary options and environment. E.g.:
+1. Install all dependencies manually. For example on Debian/Ubuntu:
    ```
-   CC=clang CFLAGS=" -O0 -g " cmake .. -DMIN_LOG_LEVEL=3 -DCMAKE_INSTALL_PREFIX=foo
+   sudo apt install gperf libluajit-5.1-dev libunibilium-dev libmsgpack-dev libtermkey-dev libvterm-dev libjemalloc-dev
    ```
-4. Run `make`.
-
+2. Do the "CMake dance": create a `build` directory, switch to it and run CMake:
+   ```
+   mkdir build
+   cd build
+   cmake ..
+   ```
+3. Run `make`, `ninja`, or whatever build tool you [told CMake to generate for](#xcode-and-msvc-project-files).
+   - Using `ninja` is strongly recommended.
 
 
 ## Build prerequisites
