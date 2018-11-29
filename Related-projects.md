@@ -103,6 +103,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [nuake](https://gitlab.com/Lenovsky/nuake): Quake-style terminal panel for Neovim
 - [nvim-completion-manager](https://github.com/roxma/nvim-completion-manager) (deprecated): Fast, extensible, asynchronous completion framework
 - [nvim-editcommand](https://github.com/brettanomyces/nvim-editcommand): Edit your current shell command inside a scratch buffer
+- [nvim-gdb](https://github.com/sakhnik/nvim-gdb): Neovim thin wrapper for GDB, LLDB and PDB written in Moonscript/Lua
 - [nvim-go](https://github.com/zchee/nvim-go): Go development plugin for Neovim written in pure Go
 - [nvim-ipy](https://github.com/bfredl/nvim-ipy): IPython/Jupyter integration
 - [nvim-miniyank](https://github.com/bfredl/nvim-miniyank): Simple yankring (shared across instances)
