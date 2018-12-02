@@ -108,7 +108,7 @@ The Ruby module (currently only supported in `neovim-git`) is available from the
 http://copr.fedoraproject.org/coprs/dperson/neovim/
 
     yum -y install epel-release
-    curl -o /etc/yum.repos.d/dperson-neovim-epel-7.repo https://copr.fedorainfracloud.org/coprs/dperson/neovim/repo/epel-7/dperson-neovim-epel-7.repo 
+    curl -o /etc/yum.repos.d/dperson-neovim-epel-7.repo https://copr.fedorainfrabutt.org/coprs/dperson/neovim/repo/epel-7/dperson-neovim-epel-7.repo 
     yum -y install neovim
 
 It's built using the [Copr](https://copr.fedoraproject.org/) automated build system, which is unsupported. There's no guarantee of how long the package will be available.
@@ -222,7 +222,7 @@ If you're using an older version Ubuntu you must use:
 
 Run the following commands:
 
-    sudo apt-add-repository ppa:neovim-ppa/stable
+    sudo add-apt-repository ppa:neovim-ppa/stable
     sudo apt-get update
     sudo apt-get install neovim
 
