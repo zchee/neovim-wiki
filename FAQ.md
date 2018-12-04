@@ -344,6 +344,7 @@ See also:
 
 - [Why Lua](https://web.archive.org/web/20150219224654/http://blog.datamules.com/blog/2012/01/30/why-lua/)
 - [Redis and scripting](http://oldblog.antirez.com/post/redis-and-scripting.html)
+- [The Design of Lua](https://cacm.acm.org/magazines/2018/11/232214-a-look-at-the-design-of-lua/fulltext)
 
 ### Why Lua 5.1 instead of Lua 5.3+?
 
@@ -351,11 +352,9 @@ Lua 5.1 is a different language than 5.3.  The Lua org makes breaking changes wi
 
 Lua 5.1 is a complete language. To "upgrade" it, add libraries, not syntax. Nvim itself already is a pretty good "stdlib" for Lua, and we will continue to grow and enhance it. Changing the rules of Lua gains nothing in this context.
 
-### Won't it be slower to translate VimL to Lua, instead of executing VimL directly?
+### Will Neovim translate VimL to Lua, instead of executing VimL directly?
 
-We'll use [LuaJIT](http://luajit.org/), the fastest scripting runtime out there. Parsing an additional language will create some overhead, but that will be insignificant compared to the runtime performance improvements, because Vimscript is so slow. Plugins may even run faster.
-
-**Update (2016):** [PR #243](https://github.com/neovim/neovim/pull/243) implements the VimL-to-Lua translator. But it is blocked indefinitely by [technical concerns](https://github.com/neovim/neovim/pull/243#issuecomment-153318119). Much of the work in that PR will be re-used/re-purposed (viz. [`typval_T`/`vim_to_object` refactor](https://github.com/neovim/neovim/pull/4607) and [`eval.c` refactor](https://github.com/neovim/neovim/pull/5119)).
+**Update (2016):** [PR #243](https://github.com/neovim/neovim/pull/243) implements the VimL-to-Lua translator. But it is blocked by [technical concerns](https://github.com/neovim/neovim/pull/243#issuecomment-153318119). Much of the work in that PR was re-used/re-purposed (viz. [`typval_T`/`vim_to_object` refactor](https://github.com/neovim/neovim/pull/4607), [`eval.c` refactor](https://github.com/neovim/neovim/pull/5119)).
 
 ### Are plugin authors encouraged to port their plugins from Vimscript to Lua? Do you plan on supporting Vimscript indefinitely? ([#1152](https://github.com/neovim/neovim/issues/1152))
 
