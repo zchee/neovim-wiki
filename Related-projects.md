@@ -148,6 +148,7 @@ This is software either targeted at Neovim or with support for it.
 
 - [chromatin](https://github.com/tek/chromatin.nvim): Package manager for plugins built with Ribosome
 - [neovim-remote](https://github.com/mhinz/neovim-remote): Tool that helps controlling Neovim processes
+- [nero.nvim](https://github.com/Vigemus/nero.nvim): A REPL for Neovim (as in managing Neovim through a REPL)
 - [nfasd](https://github.com/haifengkao/nfasd) Autocomplete recent files in command line
 - [nvimdev](https://github.com/tweekmonster/nvimdev.nvim): Help to Neovim development
 - [nvimpager](https://github.com/lucc/nvimpager): Use Neovim as `$PAGER` to view man pages, git logs, etc. with Neovim's syntax highlighting
