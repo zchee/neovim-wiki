@@ -1,22 +1,20 @@
-**Note:** `:CheckHealth` (or `:checkhealth` for nvim >= 0.3) detects and resolves many of the problems in this FAQ. Try it!
+- To start Neovim, run `nvim` (not `neovim`).
+- If something broke after upgrading, check [Following-HEAD](https://github.com/neovim/neovim/wiki/Following-HEAD).
+- `:checkhealth` detects and resolves many of the problems in this FAQ. Try it!
 
 ---
-
-### Something broke after upgrading Neovim?
-
-Check [Following-HEAD](https://github.com/neovim/neovim/wiki/Following-HEAD) for a list of breaking changes.
-
-### How stable is the development (pre-release) version?
-
-The [unstable (pre-release)](https://github.com/neovim/neovim/releases/tag/nightly) version of Neovim ("HEAD", i.e. the `master` branch) is used to aggressively stage new features and changes. It's usually stable, but will occasionally break your workflow. We depend on HEAD users to report "blind spots" that were not caught by automated tests.
-
-Use the [stable (release)](https://github.com/neovim/neovim/releases/latest) version for a more predictable experience.
 
 ### Where should I put my config (`vimrc`)?
 
 See [`:help vimrc`](https://neovim.io/doc/user/starting.html#vimrc).
 
 You can copy your existing vimrc, or symlink to it. [`:help nvim-from-vim`](https://neovim.io/doc/user/nvim.html#nvim-from-vim)
+
+### How stable is the development (pre-release) version?
+
+The [unstable (pre-release)](https://github.com/neovim/neovim/releases/tag/nightly) version of Neovim ("HEAD", i.e. the `master` branch) is used to aggressively stage new features and changes. It's usually stable, but will occasionally break your workflow. We depend on HEAD users to report "blind spots" that were not caught by automated tests.
+
+Use the [stable (release)](https://github.com/neovim/neovim/releases/latest) version for a more predictable experience.
 
 ### Can I use Ruby-based Vim plugins (e.g. [LustyExplorer](https://github.com/sjbach/lusty))?
 
