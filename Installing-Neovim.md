@@ -164,9 +164,9 @@ Neovim can be installed with:
 
 To install the Python modules:
 
-    nix-env -iA nixpkgs.python35Packages.neovim
+    nix-env -iA nixpkgs.python3Packages.neovim
 
-Replace python35 with python27 for the python 2 packages.
+Replace python3 with python2 for the python 2 packages.
 
 ### OpenSUSE
 
