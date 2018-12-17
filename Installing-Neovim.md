@@ -150,6 +150,15 @@ Neovim is in [Fedora](https://admin.fedoraproject.org/pkgdb/package/rpms/neovim/
     dnf -y install neovim
     dnf -y install python3-neovim python3-neovim-gui
 
+### Flatpak
+
+You can find Neovim on [Flathub](https://flathub.org/apps/details/io.neovim.nvim). Providing you have Flatpak [set up](https://flatpak.org/setup/):
+
+    flatpak install flathub io.neovim.nvim
+    flatpak run io.neovim.nvim
+
+You can add `/var/lib/flatpak/exports/bin` (or `~/.local/share/flatpak/exports/bin` if you used `--user`) to the `$PATH` and run it with a simplier `io.neovim.nvim`.
+
 ### Gentoo Linux
 
 An ebuild is available in Gentoo's official portage repository:
