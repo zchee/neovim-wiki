@@ -148,16 +148,16 @@ See also [#1496](https://github.com/neovim/neovim/issues/1496) and [#8217](https
 
 ### Python support isn't working
 
-Run `:checkhealth` from Nvim for automatic diagnosis.
+Run `:checkhealth` in Nvim for automatic diagnosis.
 
 Other hints:
 
-- If you're using pyenv or virtualenv for the [`pynvim` python module](https://pypi.python.org/pypi/pynvim/), you must set `g:python_host_prog` and/or `g:python3_host_prog` to the virtualenv's interpreter path.
+- If you're using pyenv or virtualenv for the [`pynvim` module](https://pypi.python.org/pypi/pynvim/), you must set `g:python_host_prog` and/or `g:python3_host_prog` to the virtualenv's interpreter path.
 - Read [`:help provider-python`](https://neovim.io/doc/user/provider.html#provider-python). 
 - Be sure you have the **latest version** of the `pynvim` Python module:
   ```sh
   pip install setuptools
-  pip  install --upgrade pynvim
+  pip install --upgrade pynvim
   pip2 install --upgrade pynvim
   pip3 install --upgrade pynvim
   ```
@@ -198,7 +198,7 @@ Some very old/unnecessary options have been removed from Neovim. See [`:help nvi
 
 #### Use an optimized build
 
-`:CheckHealth nvim` should report one of these "build types":
+`:checkhealth nvim` should report one of these "build types":
 
 ```
 Build type: RelWithDebInfo
