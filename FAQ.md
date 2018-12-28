@@ -148,22 +148,20 @@ See also [#1496](https://github.com/neovim/neovim/issues/1496) and [#8217](https
 
 ### Python support isn't working
 
-Run `:CheckHealth` (available in 0.1.5) inside Neovim for automatic diagnosis.
+Run `:checkhealth` from Nvim for automatic diagnosis.
 
-Additional hints:
+Other hints:
 
-- If you are using pyenv or virtualenv for the [`neovim` python module](https://pypi.python.org/pypi/neovim/), you must set `g:python_host_prog` and/or `g:python3_host_prog` to the virtualenv's interpreter path.
+- If you're using pyenv or virtualenv for the [`pynvim` python module](https://pypi.python.org/pypi/pynvim/), you must set `g:python_host_prog` and/or `g:python3_host_prog` to the virtualenv's interpreter path.
 - Read [`:help provider-python`](https://neovim.io/doc/user/provider.html#provider-python). 
-- Be sure you have the **latest version** of the `neovim` Python module.
-
-```sh
-pip install setuptools
-pip  install --upgrade neovim
-pip2 install --upgrade neovim
-pip3 install --upgrade neovim
-```
-
-- Try with `nvim -u NORC` to make sure your `init.vim` isn't causing a problem. If you get `E117: Unknown function`, that means [Neovim can't find its runtime](#neovim-cant-find-its-runtime).
+- Be sure you have the **latest version** of the `pynvim` Python module:
+  ```sh
+  pip install setuptools
+  pip  install --upgrade pynvim
+  pip2 install --upgrade pynvim
+  pip3 install --upgrade pynvim
+  ```
+- Try with `nvim -u NORC` to make sure your config (`init.vim`) isn't causing a problem. If you get `E117: Unknown function`, that means [Neovim can't find its runtime](#neovim-cant-find-its-runtime).
 
 
 ### `:checkhealth` reports `E5009: Invalid $VIMRUNTIME`
