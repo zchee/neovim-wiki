@@ -49,12 +49,12 @@ Packages are listed below. (You can also [build Neovim from source](#install-fro
   You can then copy your spell files over (for English, located 
   [here](https://github.com/vim/vim/blob/master/runtime/spell/en.utf-8.spl) and 
   [here](https://github.com/vim/vim/blob/master/runtime/spell/en.utf-8.sug));
-- For Python 2/3 plugins, you need the `neovim` Python module. "Virtual envs" are recommended. After activating the virtual env, enter `pip install neovim` (in *both*). Edit your `init.vim` so that it contains the path to the env's Python executable:
+- For Python plugins you need the `pynvim` module. "Virtual envs" are recommended. After activating the virtual env do `pip install pynvim` (in *both*). Edit your `init.vim` so that it contains the path to the env's Python executable:
     ```vim
     let g:python3_host_prog='C:/Users/foo/Envs/neovim3/Scripts/python.exe'
     let g:python_host_prog='C:/Users/foo/Envs/neovim/Scripts/python.exe'
     ```
-    - Run `:CheckHealth` and read `:help provider-python`.
+    - Run `:checkhealth` and read `:help provider-python`.
 - **init.vim ("vimrc"):** If you already have Vim installed you can copy `%userprofile%\_vimrc` to `%userprofile%\AppData\Local\nvim\init.vim` to use your Vim config with Neovim.
 
 
