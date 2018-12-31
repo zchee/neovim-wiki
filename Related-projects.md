@@ -43,6 +43,7 @@ _Note: Some of these projects are **experimental/unstable**._
 | C++/Magnum  | [Squareys/magnum-neovim-api](https://github.com/Squareys/magnum-neovim-api)          |
 | Clojure     | [jebberjeb/neovim-client](https://github.com/jebberjeb/neovim-client)                |
 | Common Lisp | [adolenc/cl-neovim](https://github.com/adolenc/cl-neovim)                            |
+| D           | [viniarck/nvimhost-d](https://github.com/viniarck/nvimhost-d)                        |
 | Elixir      | [awetzel/neovim-elixir](https://github.com/awetzel/neovim-elixir)                    |
 | Elixir      | [dm1try/nvim](https://github.com/dm1try/nvim)                                        |
 | Filesystem  | [fmoralesc/nvimfs](https://github.com/fmoralesc/nvimfs)                              |
