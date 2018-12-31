@@ -183,8 +183,7 @@ Replace python3 with python2 for the python 2 packages.
 
 To install the Python modules:
 
-    urpmi python2-pynvim
-    urpmi python3-pynvim
+    urpmi python2-pynvim python3-pynvim
 
 ### OpenSUSE
 
