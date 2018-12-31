@@ -177,6 +177,15 @@ To install the Python modules:
 
 Replace python3 with python2 for the python 2 packages.
 
+### Mageia 7
+
+    urpmi neovim
+
+To install the Python modules:
+
+    urpmi python2-pynvim
+    urpmi python3-pynvim
+
 ### OpenSUSE
 
 Neovim can be installed with:
