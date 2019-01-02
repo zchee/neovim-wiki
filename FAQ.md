@@ -88,7 +88,7 @@ Terminals do not provide a way to query the cursor style. Use a `VimLeave` autoc
 
 ### Cursor shape doesn't change in tmux
 
-Add this to your `.tmux.config`:
+Add this to your `.tmux.conf`:
 
     set -g -a terminal-overrides ',*:Ss=\E[%p1%d q:Se=\E[2 q'
 
