@@ -1,4 +1,7 @@
-##### Contributing to this list:
+# GSoC 2019 ideas
+
+#### Contributing to this list:
+
 * [Ideas page Manual](http://write.flossmanuals.net/gsoc-mentoring/making-your-ideas-page/)
 * [Example](https://github.com/nim-lang/Nim/wiki/GSoC-2016-Ideas)
 
