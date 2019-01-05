@@ -27,30 +27,6 @@ Medium to Hard
 **Mentor:** Björn Linse ([@bfredl](http://github.com/bfredl))
 
 ___
-#### Live preview of commands
-
-**Desirable Skills:**
-
-- C and related tools
-- Familiar with event-loop programming model
-
-**Description:**
-
-Nvim has builtin live preview of `:%s` substitution, as a result of a [[successful collaboration with students|https://medium.com/@eric.burel/stop-using-open-source-5cb19baca44d]]. This support could be extended to more commands, such as `:global` and `:normal`.
-
-**Expected Result:**
-
-More commands support interactive preview. This could be done by extending the hard-coded support for substitution preview to more commands. Alternatively, a more scalable approach could be to add core functionality that makes it easier to implement live preview as plugins in vimL and/or lua. See [[#7370|https://github.com/neovim/neovim/issues/7370]] for some ideas.
-
-- Code license: Apache 2.0
-
-**Difficulty:**
-
-Medium
-
-**Mentor:** Björn Linse ([@bfredl](http://github.com/bfredl))
-
-___
 #### Java client
 
 **Desirable Skills:**
