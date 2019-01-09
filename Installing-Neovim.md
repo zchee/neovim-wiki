@@ -104,9 +104,10 @@ The Python modules are available from the community repository:
 The Ruby module (currently only supported in `neovim-git`) is available from the AUR as [`ruby-neovim`](https://aur.archlinux.org/packages/ruby-neovim).
 
 ### CentOS 7 / RHEl 7 with epel
-   wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-   sudo rpm -ivh epel-release-latest-7.noarch.rpm
-   sudo yum --enablerepo=epel install neovim
+
+    wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+    sudo rpm -ivh epel-release-latest-7.noarch.rpm
+    sudo yum --enablerepo=epel install neovim
 
 ### CentOS 7 / RHEL 7
  
