@@ -101,9 +101,14 @@ See the [Install](https://github.com/neovim/neovim/wiki/Installing-Neovim#window
 
 ### How to use the Windows clipboard from WSL?
 
-    sudo ln -s /mnt/d/Neovim/bin/win32yank.exe /usr/bin/win32yank
+To use the Windows clipboard from within WSL, Neovim has to be installed on both Windows and WSL.
+The `win32yank.exe` provided by the Neovim Windows installation has to be symlinked to a directory included in your `$PATH` so it can be found by Neovim on WSL. Replace `$NEOVIM_WIN_DIR` with the path to your Neovim Windows installation, e.g. `/mnt/c/Program Files/Neovim`. The command can then be symlinked using:
 
-See [#6227](https://github.com/neovim/neovim/issues/6227).
+    sudo ln -s "$NEOVIM_WIN_DIR/bin/win32yank.exe" "/usr/local/bin/win32yank"
+
+Also, don't forget to set your clipboard to `unnamedplus` using `set clipboard=unnamedplus` to make Neovim use the system's clipboard (now Windows' clipboard) by default.
+
+See [#6227](https://github.com/neovim/neovim/issues/6227) for more information.
 
 ### What happened to --remote and friends?
 
