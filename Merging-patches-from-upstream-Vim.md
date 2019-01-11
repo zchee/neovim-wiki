@@ -105,7 +105,13 @@ See the [`memory.c` Doxygen page](http://neovim.io/doc/dev/memory_8c.html) for m
 | `mb_off2cells`                          | `utf_off2cells`           |
 | `mb_ptr2char`                           | `utf_ptr2char`            |
 | `mb_head_off`                           | `utf_head_off`            |
-| `update_prepare`, `update_finish` [#9484](https://github.com/neovim/neovim/pull/9484) | (removed; `update_screen` is the only redraw "entry point") |
+| `mb_lefthalve`                          | `grid_lefthalve`          |
+| `mb_fix_col`                            | `grid_fix_col`            |
+| `utf_off2cells`                         | `grid_off2cells`          |
+| `screen_char`                           | `ui_line`                 |
+| `screen_line`                           | `grid_put_linebuf`        |
+| `screen_*` (most functions)             | `grid_*`                  |
+| `update_prepare`, `update_finish` [#9484](https://github.com/neovim/neovim/pull/9484) | removed; use `update_screen` only |
 
 Make sure to note the difference between `utf_` and `utfc_` when replacing `mb_` functions. Also indirect call syntax `(*mb_ptr2len)(...)` should be replaced with an ordinary function call `utfc_ptr2len(...)`.
 
