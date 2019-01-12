@@ -11,13 +11,12 @@ The Python package `neovim` was renamed to [`pynvim`](https://github.com/neovim/
 
 "Neovim" can mean a lot of things. It can relate to the editor, or the project, or (prior to this change) the Python module, or the Ruby gem, etc. Especially confusing was the fact that the Python side would refer to it as `neovim` whereas the Neovim side referred to it as `python-client`. Now, both sides call it `pynvim` for the greater good.
 
-For the time being, `neovim` acts as a transitional package for the new `pynvim`. Unfortunately, due to limitations in pip, the `neovim` package cannot be safely upgraded with `pip install --upgrade neovim` on all systems. The safest path to upgrade is
+For the time being, `neovim` acts as a transitional package for the new `pynvim`. Unfortunately, due to limitations in pip, the `neovim` package cannot be safely upgraded with `pip install --upgrade neovim` on all systems. The safest upgrade steps are:
 
-    pip uninstall neovim
-    pip uninstall pynvim # only if you tried to upgrade already and it failed
+    pip uninstall neovim pynvim
     pip install pynvim
 
-At this point, it is safe to `pip install neovim` again, if any third-party package has it as a formal dependency. Otherwise it shouldn't be necessary.
+Now it would safe to `pip install neovim` again, if any third-party package has it as a formal dependency. Otherwise it shouldn't be necessary.
 
 `import neovim` is still supported, both in plugins and third-party software using it as a library. If `import neovim` fails, then the upgrade wasn't successful. Follow the instructions above. 
 
