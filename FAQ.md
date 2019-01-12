@@ -213,6 +213,8 @@ If it reports `Build type: Debug` and you're building Neovim from source, see [B
 
 ### Colors aren't displayed correctly
 
+Ensure that `$TERM` is set correctly. See [:help $TERM](https://neovim.io/doc/user/term.html#$TERM) for recommended values.
+
 From a shell, run `TERM=xterm-256color nvim`. If colors are displayed correctly, then export that value of `TERM` in your user profile (usually `~/.profile`):
 
 ```
@@ -221,15 +223,7 @@ export TERM=xterm-256color
 
 If you're using `tmux`, instead add this to your `tmux.conf`:
 
-```tmux
-set -g default-terminal "screen-256color"
-```
-
-Some `tmux` users may need to instead use:
-
-```tmux
-set -g default-terminal "screen-256color-bce"
-```
+    set -g default-terminal "tmux-256color"
 
 For GNU `screen`, [configure your `.screenrc`](https://wiki.archlinux.org/index.php/GNU_Screen#Use_256_colors):
 
