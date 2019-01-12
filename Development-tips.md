@@ -56,9 +56,12 @@ To enable core dumping:
 
     ulimit -c unlimited
 
-If you then reproduce a segfault in `nvim`, it will "dump core". Typically this means a `core` file will appear in the current directory (or check `/var/log/apport.log` to see where it was written, or use `coredumpctl -1 debug` on newer systems with `systemd-coredump` installed).
+If you then provoke a segfault it will "dump core". To get the backtrace:
 
-To get a backtrace from the `core` file:
+    coredumpctl -1 debug
+    thread apply all bt full
+
+**On older systems** a `core` file will appear in the current directory. To get a backtrace from the `core` file:
 
     gdb -q -n -ex bt -batch ./build/bin/nvim <path/to/core> > backtrace.txt
 
