@@ -70,9 +70,9 @@ The [Releases](https://github.com/neovim/neovim/releases) page provides pre-buil
 
 ### [Homebrew](http://brew.sh) (macOS) / [Linuxbrew](http://linuxbrew.sh/) (Linux)
 
-    brew reinstall neovim
+    brew install neovim
 
-Or specify `--HEAD` if you want to use the development version:
+Or `reinstall --HEAD` to use the development version of Nvim:
 
     brew reinstall --HEAD neovim
 
