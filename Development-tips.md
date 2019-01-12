@@ -63,14 +63,9 @@ If you then provoke a segfault it will "dump core". To get the backtrace:
 
 **On older systems** a `core` file will appear in the current directory. To get a backtrace from the `core` file:
 
-    gdb -q -n -ex bt -batch ./build/bin/nvim <path/to/core> > backtrace.txt
+    gdb build/bin/nvim core 2>&1 | tee backtrace.txt
+    thread apply all bt full
 
-If `-ex` does not work, use `tee` to save the output of `gdb` session:
-
-    gdb build/bin/nvim /cores/core.74533 2>&1 | tee backtrace.txt
-
-- `thread apply all bt` may be necessary because Neovim is multi-threaded.
-- `thread apply all bt full` shows richer (full) information.
 
 ### Backtrace (macOS / OSX)
 
