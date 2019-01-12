@@ -112,23 +112,6 @@ Job callbacks also must have at least 3 parameters now. See https://github.com/n
 
 (Background: [#2929][2929] restricted `'encoding'` to be modifiable only during initialization. One year later, we've found no problems with UTF-8 as the internal encoding, and are now making this mandatory. This only affects the internals of Nvim, it doesn't affect file encodings or plugins.)
 
-### 2016/08/11
-
-`:oldfiles!` was removed in favor of restoring Vim's `:browse oldfiles` behavior.  [#5214](https://github.com/neovim/neovim/pull/5214)
-
-### 2016/08/05
-
-The `:Man` command is enabled by default (PR [#4449](https://github.com/neovim/neovim/pull/4449)), you no longer need
-
-```vim
-runtime! ftplugin/man.vim
-``` 
-
-in your `vimrc`.
-
-### 2016/05/11
-
-"True color" support now requires `set termguicolors` in your init.vim. `NVIM_TUI_ENABLE_TRUE_COLOR` is ignored. [#4690](https://github.com/neovim/neovim/pull/4690)
 
 ### 2016/02/14
 
