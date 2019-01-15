@@ -14,7 +14,7 @@ Install from download
 Downloads are available on the [Releases](https://github.com/neovim/neovim/releases) page.
 
 * Latest [stable release](https://github.com/neovim/neovim/releases/latest)
-* [Nightly build](https://github.com/neovim/neovim/releases/nightly)
+* Latest [development prerelease](https://github.com/neovim/neovim/releases/nightly)
 
 
 Install from package
