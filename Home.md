@@ -26,7 +26,6 @@
 - [C programming techniques and Neovim-specific guidance](C-programming)
     - [C refactorings and code-smells](C-refactorings-and-code-smells-catalog)
     - [Integer type semantics](Integer-types-refactoring-guidelines)
-- [Translation report](https://neovim.io/doc/reports/translations/)
 
 ### Ideas
 
