@@ -5,6 +5,10 @@ The following changes may require users to update configuration, plugins, or exp
 
 ------------
 
+### 2019/01/20
+
+Neovim always uses the system allocator, instead of using jemalloc when it's available. [#9526](https://github.com/neovim/neovim/pull/9526)
+
 ### 2018/11/18
 
 The Python package `neovim` was renamed to [`pynvim`](https://github.com/neovim/pynvim).
