@@ -167,6 +167,8 @@ You can find Neovim on [Flathub](https://flathub.org/apps/details/io.neovim.nvim
 
 You can add `/var/lib/flatpak/exports/bin` (or `~/.local/share/flatpak/exports/bin` if you used `--user`) to the `$PATH` and run it with `io.neovim.nvim`.
 
+Note that Flatpak'ed Neovim will look for `init.vim` in `~/.var/app/io.neovim.nvim/config/nvim` instead of `~/.config/nvim`. 
+
 ### Gentoo Linux
 
 An ebuild is available in Gentoo's official portage repository:
