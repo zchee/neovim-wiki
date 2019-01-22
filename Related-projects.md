@@ -110,6 +110,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [nvim-gdb](https://github.com/sakhnik/nvim-gdb): Neovim thin wrapper for GDB, LLDB and PDB written in Moonscript/Lua
 - [nvim-go](https://github.com/zchee/nvim-go): Go development plugin for Neovim written in pure Go
 - [nvim-ipy](https://github.com/bfredl/nvim-ipy): IPython/Jupyter integration
+- [nvim-luadev](https://github.com/bfredl/nvim-luadev): REPL for developing lua plugins
 - [nvim-miniyank](https://github.com/bfredl/nvim-miniyank): Simple yankring (shared across instances)
 - [nvim-moonmaker](https://github.com/svermeulen/nvim-moonmaker): Adds plugin support for MoonScript files in the same way the built-in support for Lua/Python files works (by automatically compiling MoonScript files to Lua)
 - [nvim-palette](https://github.com/teto/nvim-palette): Fuzzy search of settings
