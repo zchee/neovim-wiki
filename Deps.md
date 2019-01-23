@@ -1,8 +1,8 @@
 Dependencies
 ============
 
-Forked dependencies
-===================
+Forks
+=====
 
 For some dependencies we maintain temporary "forks", which are simply private branches with a few extra patches, while we wait for the upstream project to merge the patches. This is done instead of maintaining the patches as CMake `PATCH_COMMAND` steps, which is more brittle/fragile.
 
