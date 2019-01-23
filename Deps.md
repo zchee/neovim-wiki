@@ -9,9 +9,7 @@ For some dependencies we maintain temporary "forks", which are simply private br
 * For Windows OS some of these patches are required. 
 * For all other cases, Nvim builds against and supports both the "vanilla" dependency (without Nvim's patches) and typically much older versions.
 
-In all cases the Nvim patches live on the `nvim` branch of each forked repo. 
-
-The complete list of these forked dependencies is as follows:
+In all cases the Nvim patches live on the `nvim` branch of each forked repo. The complete, current list of forked dependencies is as follows:
 
 * https://github.com/neovim/libuv
 	* Compare `nvim` branch to upstream: https://github.com/libuv/libuv/compare/v1.x...neovim:nvim
