@@ -12,10 +12,10 @@ For some dependencies we maintain temporary "forks", which are simply private br
 In all cases the Nvim patches live on the `nvim` branch of each forked repo. The complete, current list of forked dependencies is as follows:
 
 * https://github.com/neovim/libuv
-	* Compare `nvim` branch to upstream: https://github.com/libuv/libuv/compare/v1.x...neovim:nvim
+	* Compare `nvim` branch to upstream: https://github.com/neovim/libuv/compare/v1.x...nvim
 * https://github.com/neovim/unibilium
 	* Compare `nvim` branch to upstream: 
 * https://github.com/neovim/libvterm
-	* Compare `nvim` branch to upstream: https://github.com/neovim/libvterm/compare/3f62ac6b7bdffda39d68f723fb1806dfd6d6382d..nvim
+	* Compare `nvim` branch to upstream: https://github.com/neovim/libvterm/compare/3f62ac6b7bdffda39d68f723fb1806dfd6d6382d...nvim
 * https://github.com/neovim/libtermkey
 	* Compare `nvim` branch to upstream: 
