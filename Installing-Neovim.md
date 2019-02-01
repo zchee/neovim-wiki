@@ -314,8 +314,8 @@ Install from source
 
 If a package is not provided for your platform, you can build Neovim from source. See [Building-Neovim](https://github.com/neovim/neovim/wiki/Building-Neovim) for details.  If you have the [prerequisites](https://github.com/neovim/neovim/wiki/Building-Neovim#build-prerequisites) then building is easy:
 
-    make # use CMAKE_BUILD_TYPE=Release or CMAKE_BUILD_TYPE=RelWithDebInfo for optimized builds
-    sudo make install 
+    make CMAKE_BUILD_TYPE=Release
+    sudo make install
 
 For Unix-like systems this installs Neovim to `/usr/local`, while for Windows to `C:\Program Files`. Note, however, that this can complicate uninstallation. The following example avoids this by isolating an installation under `$HOME/neovim`:
 
