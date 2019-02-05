@@ -24,7 +24,7 @@ Alternatively, improvements could be done within the current global screen grid,
 
 Medium to Hard
 
-**Student:** Björn Linse ([@UtkarshMe](https://github.com/UtkarshMe))
+**Student:** ([@UtkarshMe](https://github.com/UtkarshMe))
 
 **Mentor:** Björn Linse ([@bfredl](http://github.com/bfredl))
 
