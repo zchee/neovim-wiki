@@ -24,6 +24,8 @@ Alternatively, improvements could be done within the current global screen grid,
 
 Medium to Hard
 
+**Student:** Björn Linse ([@UtkarshMe](https://github.com/UtkarshMe))
+
 **Mentor:** Björn Linse ([@bfredl](http://github.com/bfredl))
 
 ___
@@ -65,6 +67,8 @@ The ultimate goal is to have a library that can be used to create plugins for [I
 **Difficulty:**
 
 Medium
+
+**Student:** ([@b-r-o-c-k](https://github.com/b-r-o-c-k))
 
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
 
