@@ -100,7 +100,7 @@ Medium
 
 
 ___
-#### Support for Lua plugins and configuration.
+#### Support for Lua plugins and configuration
 
 **Desirable Skills:**
 
@@ -115,7 +115,7 @@ Nvim is always built with a builtin lua interpreter. A goal is to make lua a fir
 
 More functionality is directly exposed to lua. This project idea is a bit open ended, and improvements can be made in different directions. Regardless what priorities are decided, it is expected that the project will take form as multiple smaller deliverables that will be merged separately during the duration of the project.
 
-The project can involve calls the core editor makes to vimL, such as autocmds, mappings and function-based options like `'omnifunc'`, where native lua support could be added. Lua access to jobs and channels would also be worthwhile. Nvim is  working on building a lua standard library to make it convenient to write plugins and user config in lua. This goal is broad, and discussion with the plugin developing community is encouraged, to deterermine what functionality would be most useful in the standard library.
+The project can involve calls the core editor makes to vimL, such as autocmds, mappings and function-based options like `'omnifunc'`, where native lua support could be added. Lua access to jobs and channels would also be worthwhile. Nvim is  working on building a lua standard library to make it convenient to write plugins and user config in lua. This goal is broad, and discussion with the plugin developing community is encouraged, about what functionality would be most useful for the standard library.
 
 Another direction is to add new extension points, such as letting lua code control aspects of screen drawing. A  starting point could be to let lua code draw a richer completion popupmenu for the TUI, by processing popupmenu UI events internally.
 
