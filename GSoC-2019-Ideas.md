@@ -96,7 +96,7 @@ will connect to the Nvim server at address `foo`. The `nvim` client instance sen
 
 Medium
 
-**Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
+**Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk)), Björn Linse ([@bfredl](http://github.com/bfredl))
 
 ___
 #### Live preview of commands
