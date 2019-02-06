@@ -38,7 +38,7 @@ http://intermine.org/gsoc/guidance/grading-criteria-2019/
 - Take advantage of the continuous integration (CI) systems which automatically run against your pull
 requests. When you send work to a PR,  the full test-suite runs on the PR while you continue to work locally.
 - The [wiki](https://github.com/neovim/neovim/wiki) contains up-to-date documentation on building, debugging, and development tips.
-- Only a text editor, cmake, and a compiler are needed to develop Neovim. [ctags](https://github.com/universal-ctags/ctags) is very helpful also.
+- Only a text editor, CMake, and a compiler are needed to develop Neovim. [Ctags](https://github.com/universal-ctags/ctags) is very helpful also.
 - The [contributing guidelines](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md) are intended to be
 helpful, not rigid.
 
@@ -62,7 +62,7 @@ ___
 
 **Description:**
 
-p2p architecture for data sharing between multiple nvim instances. Similar to Python's [multiprocessing](https://docs.python.org/3/library/multiprocessing.html) module, the idea is to to offload Nvim tasks (VimL and/or Lua) to child Nvim processes.
+p2p architecture for data sharing between multiple Nvim instances. Similar to Python's [multiprocessing](https://docs.python.org/3/library/multiprocessing.html) module, the idea is to to offload Nvim tasks (VimL and/or Lua) to child Nvim processes.
 
 **Difficulty:** Hard
 
@@ -105,19 +105,19 @@ ___
 **Desirable Skills:**
 
 - C and related tools
-- Familarity with Lua C API is a plus.
+- Familiarity with Lua C API is a plus.
 
 **Description:**
 
-Nvim is always built with a builtin Lua interpreter. A goal is to make Lua a first class language for plugins and user config, which can access editor functionality directly, without "sheling out" to VimL commands and functions.
+Nvim is always built with a builtin Lua interpreter. A goal is to make Lua a first class language for plugins and user config, which can access editor functionality directly, without "shelling out" to VimL commands and functions.
 
 **Expected Result:**
 
 More functionality is directly exposed to Lua. This project idea is a bit open ended, and improvements can be made in different directions. Regardless what priorities are decided, it is expected that the project will take form as multiple smaller deliverables that will be merged separately during the duration of the project.
 
-The project can involve calls the core editor makes to VimL, such as autocmds, mappings and function-based options like `'omnifunc'`, where native Lua support could be added. Lua access to jobs and channels would also be worthwhile. Nvim is  working on building a Lua standard library to make it convenient to write plugins and user config in Lua. This goal is broad, and discussion with the plugin developing community is encouraged, about what functionality would be most useful for the standard library.
+The project can involve calls the core editor makes to VimL, such as autocommands, mappings and function-based options like `'omnifunc'`, where native Lua support could be added. Lua access to jobs and channels would also be worthwhile. Nvim is  working on building a Lua standard library to make it convenient to write plugins and user config in Lua. This goal is broad, and discussion with the plugin developing community is encouraged, about what functionality would be most useful for the standard library.
 
-Another direction is to add new extension points, such as letting Lua code control aspects of screen drawing. A  starting point could be to let Lua code draw a richer completion popupmenu for the TUI, by processing popupmenu UI events internally.
+Another direction is to add new extension points, such as letting Lua code control aspects of screen drawing. A  starting point could be to let Lua code draw a richer completion popup menu for the TUI, by processing popup menu UI events internally.
 
 - Code license: Apache 2.0
 
@@ -155,13 +155,13 @@ Medium to hard.
 
 #### Improve autoread
 
-**Desirable:** Any  
+**Desirable Skills:** Any  
 
 **Description:** Reload file/notify user when a file being edited changes outside of `nvim`. 
 
 **Expected Result:**
 
-Neovim has the 'autoread' setting that regularly checks if a file edited in neovim has been externally modified. It thus notifies the user to prevent overwriting the changes. Sadly the current mechanism isn't foolproof. This project intends to make this feature work as well as in other editors like Sublime text and across the neovim supported platforms. The interface should also be improved so that notifications show how different the edited and modified files are. 
+Neovim has the 'autoread' setting that regularly checks if a file edited in neovim has been externally modified. It thus notifies the user to prevent overwriting the changes. Sadly the current mechanism isn't foolproof. This project intends to make this feature work as well as in other editors like Sublime text and across the Neovim-supported platforms. The interface should also be improved so that notifications show how different the edited and modified files are. 
 The candidate can realize some of the difficulties involved with this [proposition for linux](https://github.com/neovim/neovim/issues/1380)
 
 - Code license: Apache 2.0
@@ -172,7 +172,7 @@ The candidate can realize some of the difficulties involved with this [propositi
 ___
 #### Neovim-based "Vim mode"
 
-**Desirable:** Any  
+**Desirable Skills:** Any  
 
 **Description:** Implement "Vim mode" in an editor/IDE (such as IntelliJ) by embedding a `nvim` instance. 
 
