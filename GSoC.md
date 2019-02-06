@@ -145,48 +145,6 @@ Medium
 
 **Mentor:** Björn Linse ([@bfredl](http://github.com/bfredl))
 
-___
-#### Java client
-
-**Desirable Skills:**
-
-- Familiar with Vim/Nvim and Vim script (VimL)
-- Moderate/High experience in Java
-- Familiar with event-loop programming model
-
-**Description:**
-
-Implement a Nvim [API client](https://github.com/neovim/neovim/wiki/Related-projects#api-clients) using Java. 
-
-Implement a client, written in Java, which allows Java applications to control Nvim using the Nvim RPC API.  If you are familiar with AWS or any other SaaS, note that a Nvim API client is just like a SDK for a REST web service, except that Nvim uses msgpack, not HTTP/JSON.
-
-The Nvmi RPC API is documented at [:help api](https://neovim.io/doc/user/api.html) and [:help rpc](https://neovim.io/doc/user/msgpack_rpc.html).
-
-To correctly implement the client one needs to understand the [msgpack-rpc](https://github.com/msgpack-rpc/msgpack-rpc/blob/master/spec.md) protocol. Some sort of event-loop mechanism will be needed to handle notifications.
-
-For reference, you can find clients in other languages at the [related projects](https://github.com/neovim/neovim/wiki/Related-projects#api-clients) wiki page.
-
-The ultimate goal is to have a library that can be used to create plugins for [IntelliJ](https://www.jetbrains.com/help/idea/plugin-development-guidelines.html) and [Eclipse](https://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Fguide%2Ffirstplugin.htm).  **Minimizing third-party dependencies** may help there.
-
-**Expected Result:**
-
-- Java library that can be used to build Neovim extensions (UIs and other applications).
-  - Method signatures generated from `nvim --api-info`.
-  - Since `nvim` is already required (for `--api-info`), the Java code-generation script could be written in Lua (which is built-in to `nvim`).
-- Passes the test suite used by the Nvim [python-client](https://github.com/neovim/python-client).
-  - Using the [python-client tests](https://github.com/neovim/python-client/tree/master/test) as a guide, create equivalent tests using a Java testing framework.
-  - Test suite should be runnable from the command-line (should not require an IDE) via maven/gradle (or some other industry-standard build-tool).
-- Builds (and passes tests) on Linux (Travis CI) and Windows (AppVeyor)
-- End-user deliverable should be compatible Java 6 (this is negotiable)
-- Source-code can be latest version of Java (no backwards-compatibility requirement)
-- Code license: Apache 2.0
-
-**Difficulty:**
-
-Medium
-
-**Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
-
 ---
 
 #### Improve autoread
