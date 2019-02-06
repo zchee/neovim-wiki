@@ -9,7 +9,7 @@
 
 Below is a list of project ideas for [Google Summer of Code](https://developers.google.com/open-source/gsoc/). These projects may require familiarity with C, Makefiles, Lua or VimL ("Vim script").
 
-[Neovim](https://neovim.io/) is text editor based on Vim. One of the [project goals](https://neovim.io/charter/) is to  encourage hacking and collaboration. Effort is put into removing barriers for contributors and improving documentation. The wiki has sections on developing and contributing to help you get started.
+[Neovim](https://neovim.io/) is a text editor based on Vim. One of the [project goals](https://neovim.io/charter/) is to  encourage hacking and collaboration. Effort is put into removing barriers for contributors and improving documentation. The wiki has sections on developing and contributing to help you get started.
 
 The Neovim source has roots going back to 1987 which means libraries such as [libuv](https://github.com/libuv/libuv) were not around at that time. The codebase can be made easier to maintain and understand by using these libraries. Project ideas that involve working heavily with internals will in general be more difficult than project ideas that "simply" add new features. However working with older/complex parts of the code base can also provide valuable learning feedback for writing simpler and more maintainable code. There is a large range of skills that can be learned and working with the team to find a project that will help you the most is in your benefit.
 
