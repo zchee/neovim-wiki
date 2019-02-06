@@ -68,8 +68,6 @@ The ultimate goal is to have a library that can be used to create plugins for [I
 
 Medium
 
-**Student:** ([@b-r-o-c-k](https://github.com/b-r-o-c-k))
-
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
 
 ---
@@ -112,6 +110,8 @@ The ultimate goal is to have a library that can be used to create plugins for Vi
 **Difficulty:**
 
 Medium
+
+**Student:** ([@b-r-o-c-k](https://github.com/b-r-o-c-k))
 
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
 
