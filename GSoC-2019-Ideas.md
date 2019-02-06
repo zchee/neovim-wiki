@@ -27,7 +27,7 @@ Note: this year we will likely be able to accept two students at maximum. We exp
 
 Proposal evaluation criteria:
 
-http://intermine.org/gsoc/guidance/grading-criteria/
+http://intermine.org/gsoc/guidance/grading-criteria-2019/
 
 
 
