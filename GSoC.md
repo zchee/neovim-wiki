@@ -51,7 +51,6 @@ helpful, not rigid.
       * ["multiprocessing" feature](#multiprocessing-feature)
       * [TUI client](#tui-terminal-ui-remote-attachment)
       * [Live preview of commands](#live-preview-of-commands)
-      * [Vim perl plugin compatibility](#if_perl-compatibility-layer)
       * [Improve autoread](#improve-autoread)
 
 ## New Features
@@ -69,25 +68,6 @@ ___
 p2p architecture for data sharing between multiple nvim instances. Similar to Python's [multiprocessing](https://docs.python.org/3/library/multiprocessing.html) module, the idea is to to offload Nvim tasks (VimL and/or Lua) to child Nvim processes.
 
 **Difficulty:** Hard
-
-**Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
-___
-#### if_perl compatibility layer
-
-**Desirable Skills:**
-
-C + perl
-
-**Description:**
-
-Implement Vim's legacy perl API. See the [ruby layer](https://github.com/alexgenco/neovim-ruby) for example. Vim can be compiled to support python/lua/ruby/perl plugins. Neovim has a RPC plugin architecture that allows plugins to be written in any language. A perl API client already exists, the only part missing is a "host" that implements the legacy Vim `:perl`, `:perlfile`, etc. commands.
-
-**Difficulty:** Medium
-
-**Expected Result:** 
-
-- Vim perl plugins (such as dbext) can run in Neovim.
-- Code license: Apache 2.0
 
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
 
