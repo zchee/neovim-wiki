@@ -47,8 +47,10 @@ helpful, not rigid.
   * [New Features](#new-features)
       * ["multiprocessing" feature](#multiprocessing-feature)
       * [TUI client](#tui-terminal-ui-remote-attachment)
+      * [Improve Lua configurability](#support-for-Lua-plugins-and-configuration)
       * [Live preview of commands](#live-preview-of-commands)
       * [Improve autoread](#improve-autoread)
+
 
 ## New Features
 ___
