@@ -9,6 +9,7 @@ _Note: Some of these projects are **experimental/unstable**._
 | Atom Integration | [carlosdcastillo/vim-mode](https://github.com/carlosdcastillo/vim-mode)       |
 | C++/Python       | [meatich/NeoSFML](https://github.com/meatich/NeoSFML)                         |
 | C++/SDL2         | [etorth/libnvc](https://github.com/etorth/libnvc)                             |
+| curses/Python    | [mvilim/neovim-pytc-example](https://github.com/mvilim/neovim-pytc-example)   |
 | EFL              | [Eovim](https://github.com/jeanguyomarch/eovim/)                              |
 | Electron UI      | [coolwanglu/neovim-e](https://github.com/coolwanglu/neovim-e)                 |
 | Electron UI      | [rhysd/NyaoVim](https://github.com/rhysd/NyaoVim)                             |
