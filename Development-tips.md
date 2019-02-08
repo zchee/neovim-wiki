@@ -50,15 +50,21 @@ https://github.com/splinterofchaos/neovim-cpp-client-experiment/blob/master/src/
 
 ### Backtrace (Linux)
 
-Core dumps are [disabled  by default on Ubuntu](http://stackoverflow.com/a/18368068/152142), CentOS and others.
-
-To enable core dumping:
+Core dumps are [disabled  by default on Ubuntu](http://stackoverflow.com/a/18368068/152142), CentOS and others. To enable core dumps:
 
     ulimit -c unlimited
 
-If you then provoke a segfault it will "dump core". To get the backtrace:
+On systemd-based systems getting a backtrace is as easy as:
 
-    coredumpctl -1 debug
+    coredumpctl -1 gdb
+
+It's an optional tool, so you may need to install it:
+
+    sudo apt install systemd-coredump
+
+The **full backtrace** is most useful, send us the `bt.txt` file:
+
+    2>&1 coredumpctl -1 gdb | tee -a bt.txt
     thread apply all bt full
 
 **On older systems** a `core` file will appear in the current directory. To get a backtrace from the `core` file:
