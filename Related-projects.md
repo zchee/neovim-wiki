@@ -174,3 +174,5 @@ Color schemes make use of Neovim-specific features, e.g. highlight groups or ter
 - [NeoSolarized](https://github.com/iCyMind/NeoSolarized)
 - [oceanic-next](https://github.com/mhartington/oceanic-next)
 - [onedark](https://github.com/joshdick/onedark.vim)
+- [gruvbox](https://github.com/morhetz/gruvbox)
+- [vim-monokai](https://github.com/sickill/vim-monokai)
