@@ -99,11 +99,11 @@ Neovim can be installed from the community repository:
 
 Alternatively, Neovim can be also installed using the PKGBUILD [`neovim-git`](https://aur.archlinux.org/packages/neovim-git), available on the [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository).
 
-The Python modules are available from the community repository:
+The Python module is available from the community repository:
 
-    sudo pacman -S python2-neovim python-neovim
+    sudo pacman -S python-neovim
 
-The Ruby module (currently only supported in `neovim-git`) is available from the AUR as [`ruby-neovim`](https://aur.archlinux.org/packages/ruby-neovim).
+Python 2 and Ruby modules (currently only supported in `neovim-git`) are available from the AUR as [`python2-neovim`](https://aur.archlinux.org/packages/python2-neovim-git) and [`ruby-neovim`](https://aur.archlinux.org/packages/ruby-neovim) respectively.
 
 ### CentOS 7 / RHEl 7 with epel
 
