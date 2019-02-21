@@ -130,6 +130,36 @@ Medium
 **Mentor:** Björn Linse ([@bfredl](http://github.com/bfredl))
 
 ___
+#### GUI improvements
+
+**Desirable Skills:**
+
+- C and related tools
+- Familiar with event-loop programming model
+
+**Description:**
+
+Nvim GUI:s are implemented as processes communicating with Nvim.. Originally the UI protocol exposed most functionality as a single, terminal-like screen grid. Work has been done to allow UIs (including embeddings in GUI editors, like VSCode) to render the screen layout themselves, based on semantic updates from Nvim. Some screen elements like the cmdline, popupmenu and message area has been externalized. As a result of a 2018 [GSOC project](https://github.com/neovim/neovim/issues/8320), windows can be drawn on separate grids.
+
+**Expected Result:**
+
+Further improvements to the GUI protocol.
+
+Some UIs want to render the buffer contents themselves. A solution would be a UI protocol mode, where the rendered grid is not used, rather all decorations, such as syntax highlighting, conceals, virtual text are transmitted for the current viewport. Such an UI would be able to render text without the restrictions of the builtin monospace grid. Then the UI should be able to inform nvim about usage of virtual columns and wrapping, so that vim commands such as `gj` are consistent with how text is presented to the user.
+
+Another path is to improve the core Nvim grid model. We could allow the width and height of cells be different for each row. This would allow for heading text with different font size, and pictures rendered inside windows.
+
+Putting forward your own ideas of UI improvements is encouraged. Read the [docs](https://github.com/neovim/neovim/blob/master/runtime/doc/ui.txt) for the implemented extensions as well as the [tracking issue](https://github.com/neovim/neovim/issues/9421]) for ongoing/planned work, as a starting point.
+
+- Code license: Apache 2.0
+
+**Difficulty:**
+
+Medium to Hard
+
+**Mentor:** Björn Linse ([@bfredl](http://github.com/bfredl))
+
+___
 #### Live preview of commands
 
 **Desirable Skills:**
