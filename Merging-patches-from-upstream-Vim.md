@@ -64,7 +64,8 @@ where `<version-or-commit>` is a valid Vim version (like `8.0.0123`) or commit-i
 - **Legacy system support**: Fixes for legacy systems such as Amiga, OS/2 Xenix, Mac OS 9, Windows older than XP SP2, are not needed because they are not supported by Neovim.
 - **`if_*.c`** changes: `if_python.c` et. al. were removed.
 - **term.c** changes: the Neovim TUI uses libtermkey to read terminal sequences; Vim's `term.c` was removed.
-- **farsi** module
+- `:terminal` patches
+- `defaults.vim` patches
 - Most **GUI-related** changes: Neovim GUIs are implemented external to the core C codebase.
 - Anything else might be relevant; err on the side of caution, and post an issue if you aren't sure. 
 
