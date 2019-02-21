@@ -48,6 +48,7 @@ helpful, not rigid.
       * ["multiprocessing" feature](#multiprocessing-feature)
       * [TUI client](#tui-terminal-ui-remote-attachment)
       * [Improve Lua configurability](#support-for-Lua-plugins-and-configuration)
+      * [GUI Features](#gui-features)
       * [Live preview of commands](#live-preview-of-commands)
       * [Improve autoread](#improve-autoread)
 
@@ -130,7 +131,7 @@ Medium
 **Mentor:** Björn Linse ([@bfredl](http://github.com/bfredl))
 
 ___
-#### GUI improvements
+#### GUI Features
 
 **Desirable Skills:**
 
