@@ -105,21 +105,21 @@ The Python module is available from the community repository:
 
 Python 2 and Ruby modules (currently only supported in `neovim-git`) are available from the AUR as [`python2-neovim`](https://aur.archlinux.org/packages/python2-neovim-git) and [`ruby-neovim`](https://aur.archlinux.org/packages/ruby-neovim) respectively.
 
-### CentOS 7 / RHEl 7 with epel
-
-    wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-    sudo rpm -ivh epel-release-latest-7.noarch.rpm
-    sudo yum --enablerepo=epel install neovim
-
 ### CentOS 7 / RHEL 7
- 
-http://copr.fedoraproject.org/coprs/dperson/neovim/
 
-    yum -y install epel-release
-    curl -o /etc/yum.repos.d/dperson-neovim-epel-7.repo https://copr.fedorainfracloud.org/coprs/dperson/neovim/repo/epel-7/dperson-neovim-epel-7.repo 
-    yum -y install neovim
+Neovim is available through [EPEL (Extra Packages for Enterprise Linux)](https://fedoraproject.org/wiki/EPEL)
 
-It's built using the [Copr](https://copr.fedoraproject.org/) automated build system, which is unsupported. There's no guarantee of how long the package will be available.
+    yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+    yum install -y neovim python{2,34}-neovim
+
+You can also get nightly builds of git master from the [Copr automated build system](https://copr.fedoraproject.org/coprs/agriffis/neovim-nightly/). These also depend on EPEL
+
+    yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+    (cd /etc/yum.repos.d && \
+     wget https://copr.fedorainfracloud.org/coprs/agriffis/neovim/repo/epel-7/agriffis-neovim-epel-7.repo)
+    yum install -y neovim python{2,3}-neovim
+
+See the [blog post](https://arongriffis.com/2019/03/02/neovim-nightly-builds) for information on how these are built.
 
 ### CRUX
 
@@ -149,14 +149,14 @@ Exhereses for scm and released versions are currently available in repository `:
 
 Neovim is in [Fedora](https://admin.fedoraproject.org/pkgdb/package/rpms/neovim/) starting with Fedora 25:
 
-    dnf -y install neovim
-    dnf -y install python2-neovim python3-neovim
+    dnf install -y neovim python{2,3}-neovim
 
-*Fedora 24 and older*
+You can also get nightly builds of git master from the [Copr automated build system](https://copr.fedoraproject.org/coprs/agriffis/neovim-nightly/):
 
-    dnf -y copr enable dperson/neovim
-    dnf -y install neovim
-    dnf -y install python3-neovim python3-neovim-gui
+    dnf copr enable agriffis/neovim-nightly
+    dnf install -y neovim python{2,3}-neovim
+
+See the [blog post](https://arongriffis.com/2019/03/02/neovim-nightly-builds) for information on how these are built.
 
 ### Flatpak
 
