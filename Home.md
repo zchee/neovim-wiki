@@ -1,6 +1,6 @@
 - [Introduction](Introduction)
 - **[FAQ](FAQ)**
-- [Transitioning from Vim](https://neovim.io/doc/user/nvim.html#nvim-from-vim) (`:help nvim-from-vim`)
+- [Transitioning from Vim](https://neovim.io/doc/user/nvim.html#nvim-from-vim) `:help nvim-from-vim`
 - [Related projects](Related-projects)
 - **[Google Summer of Code (GSoC) 2019](GSoC-2019-Ideas)**
 
