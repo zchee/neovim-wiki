@@ -2,7 +2,7 @@
 - **[FAQ](FAQ)**
 - [Transitioning from Vim](https://neovim.io/doc/user/nvim.html#nvim-from-vim) (`:help nvim-from-vim`)
 - [Related projects](Related-projects)
-
+- [GSoC 2019](GSoC-2019-Ideas)
 
 ## Users
 
@@ -31,4 +31,3 @@
 
 - [Refactor Vim into a library](Refactor-vim-into-a-library)
 - [Architectural musing and ideas (text buffer data structure, ...)](Architectural-musing-and-ideas)
-- [GSoC 2019](GSoC-2019-Ideas)
