@@ -83,6 +83,13 @@ C
 
 The built-in UI is called the TUI. It looks like Vim, but internally it is decoupled from the UI and "screen" layout subsystem. It was designed to be able to connect to other (remote) instances of Nvim, but this hasn't been implemented yet. [#7438](https://github.com/neovim/neovim/issues/7438)
 
+Nvim is both a server and a client. Nvim clients can connect to Nvim servers. And Nvim [GUIs](https://github.com/neovim/neovim/wiki/Related-projects#gui) can show the screen of a remote Nvim server.
+
+But the built-in Nvim TUI cannot show the screen of a remote Nvim server. That's the goal of this project.
+
+- It is not "live share". It's just showing the remote UI in a client TUI.
+- Networking question are out of scope. It is assumed the client has an SSH tunnel or named pipe to connect to.
+
 **Expected Result:**
 
 Modify the TUI subsystem so that it can display a remote Nvim instance.
