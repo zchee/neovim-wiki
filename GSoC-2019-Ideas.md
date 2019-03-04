@@ -45,7 +45,7 @@ helpful, not rigid.
 # Projects
 
   * [New Features](#new-features)
-      * ["multiprocessing" feature](#multiprocessing-feature)
+      * ["Multiprocessing" feature](#multiprocessing-feature)
       * [TUI client](#tui-terminal-ui-remote-attachment)
       * [Improve Lua configurability](#support-for-Lua-plugins-and-configuration)
       * [GUI Features](#gui-features)
@@ -53,9 +53,9 @@ helpful, not rigid.
       * [Improve autoread](#improve-autoread)
 
 
-## New Features
 ___
-#### "multiprocessing" feature
+
+## "Multiprocessing" feature
 
 **Desirable Skills:**
 
@@ -67,13 +67,16 @@ ___
 
 p2p architecture for data sharing between multiple Nvim instances. Similar to Python's [multiprocessing](https://docs.python.org/3/library/multiprocessing.html) module, the idea is to to offload Nvim tasks (VimL and/or Lua) to child Nvim processes.
 
+- Code license: Apache 2.0
+
+
 **Difficulty:** Hard
 
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
 
 ___
 
-#### TUI (Terminal UI) remote attachment
+## TUI (Terminal UI) remote attachment
 
 **Desirable Skills:**
 
@@ -83,7 +86,7 @@ C
 
 The built-in UI is called the TUI. It looks like Vim, but internally it is decoupled from the UI and "screen" layout subsystem. It was designed to be able to connect to other (remote) instances of Nvim, but this hasn't been implemented yet. [#7438](https://github.com/neovim/neovim/issues/7438)
 
-Nvim is both a server and a client. Nvim clients can connect to Nvim servers. And Nvim [GUIs](https://github.com/neovim/neovim/wiki/Related-projects#gui) can show the screen of a remote Nvim server.
+Nvim is both a server and a client. Nvim (client) can connect to any other Nvim (server). And Nvim [GUIs](https://github.com/neovim/neovim/wiki/Related-projects#gui) can show the screen of a remote Nvim server.
 
 But the built-in Nvim TUI cannot show the screen of a remote Nvim server. That's the goal of this project.
 
@@ -110,7 +113,7 @@ Medium
 
 
 ___
-#### Support for Lua plugins and configuration
+## Support for Lua plugins and configuration
 
 **Desirable Skills:**
 
@@ -138,7 +141,7 @@ Medium
 **Mentor:** Björn Linse ([@bfredl](http://github.com/bfredl))
 
 ___
-#### GUI Features
+## GUI Features
 
 **Desirable Skills:**
 
@@ -168,7 +171,7 @@ Medium to Hard
 **Mentor:** Björn Linse ([@bfredl](http://github.com/bfredl))
 
 ___
-#### Live preview of commands
+## Live preview of commands
 
 **Desirable Skills:**
 
@@ -193,7 +196,7 @@ Medium to hard.
 
 ---
 
-#### Improve autoread
+## Improve autoread
 
 **Desirable Skills:** Any  
 
@@ -209,8 +212,9 @@ The candidate can realize some of the difficulties involved with this [propositi
 **Difficulty:** Medium
 
 **Mentor:** Matthieu Coudron ([@teto](http://github.com/teto))
+
 ___
-#### Neovim-based "Vim mode"
+## Neovim-based "Vim mode"
 
 **Desirable Skills:** Any  
 
@@ -236,11 +240,8 @@ ___
 
 Please add your project ideas in the following format.
 
-# Project spec
-
-## Sub-project
 ___
-#### Title
+## Title
 
 **Desirable Skills:**
 
