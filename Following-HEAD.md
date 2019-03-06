@@ -35,9 +35,9 @@ Embedders _not_ using the UI protocol must use:
 
     nvim --embed --headless
 
-In the "`--embed` only" case Nvim waits for `nvim_ui_attach` **before continuing startup** (user config, reading buffers) so that UIs can deterministically handle (display) early messages, dialogs, etc.  The client can do other requests before `nvim_ui_attach` (e.g. `nvim_get_api_info` for feature-detection). During this pre-startup phase the user config is of course not available (cf. `--cmd`).
+In the "`--embed` only" case Nvim waits for `nvim_ui_attach` **before continuing startup** (user config, reading buffers) so that UIs can deterministically handle (display) early messages, dialogs, etc.  The client can do other requests before `nvim_ui_attach` (e.g. `nvim_get_api_info` for feature-detection). During this pre-startup phase the user config is of course not available (similar to `--cmd`).
 
-For most UI embedders this improved startup behavior automatically, by supporting startup messages
+For most UI embedders this improves startup behavior automatically, by supporting startup messages
 and swapfile dialogs. For others it is potentially a breaking change, which can be easily avoided by specifying `--headless` (which is _backwards-compatible_ for that use-case).
 
 UIs that need additional initialization after `init.vim` can use this pattern:
