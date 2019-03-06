@@ -112,15 +112,6 @@ Neovim is available through [EPEL (Extra Packages for Enterprise Linux)](https:/
     yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
     yum install -y neovim python{2,34}-neovim
 
-You can also get nightly builds of git master from the [Copr automated build system](https://copr.fedoraproject.org/coprs/agriffis/neovim-nightly/). These also depend on EPEL
-
-    yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-    (cd /etc/yum.repos.d && \
-     wget https://copr.fedorainfracloud.org/coprs/agriffis/neovim/repo/epel-7/agriffis-neovim-epel-7.repo)
-    yum install -y neovim python{2,3}-neovim
-
-See the [blog post](https://arongriffis.com/2019/03/02/neovim-nightly-builds) for information on how these are built.
-
 ### CRUX
 
 A CRUX port is available under [`6c37/neovim`](https://github.com/6c37/crux-ports), along with ports for other dependencies of Neovim.
