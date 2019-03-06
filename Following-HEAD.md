@@ -133,14 +133,6 @@ Job callbacks also must have at least 3 parameters now. See https://github.com/n
 
 See `:help startup` for complete details.
 
-### 2016/02/10
-
-The [`DECSCUSR`](http://vt100.net/docs/vt510-rm/DECSCUSR) sequence is now sent "unwrapped" to the terminal; this affects tmux users in that cursor style changes are now localized to a tmux pane instead of being global to the parent terminal.
-
-Depending on your terminal this may make break cursor style changes; if that happens then see `NVIM_TUI_ENABLE_CURSOR_SHAPE` in the nvim manual (`man 1 nvim`).
-
-See [#3165](https://github.com/neovim/neovim/pull/3165) for more information.
-
 ### 2015/10/17
 
 The [`'viminfo'`][viminfo] option is now an alias for [`'shada'`][shada]. [`'viminfo'`][viminfo] can no longer include `n` and it can no longer be shared with Vim.
