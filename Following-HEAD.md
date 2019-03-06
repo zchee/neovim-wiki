@@ -7,7 +7,7 @@ The following changes may require users to update configuration, plugins, or exp
 
 ### 2019/01/20
 
-Neovim always uses the system allocator, instead of using jemalloc when it's available. [#9526](https://github.com/neovim/neovim/pull/9526)
+[#9526](https://github.com/neovim/neovim/pull/9526): Neovim always uses the system allocator, instead of jemalloc. 
 
 ### 2018/11/18
 
@@ -27,10 +27,10 @@ For the time being, `neovim` acts as a transitional package for the new `pynvim`
 
 ### 2018/09/22
 
-The meaning of the `--embed` and `--headless` flags changed to facilitate better startup behaviour with
+[#9024](https://github.com/neovim/neovim/pull/9024): The meaning of the `--embed` and `--headless` flags changed to facilitate better startup behaviour with
 external UIs. UI embedders (any user of `nvim_ui_attach`) must start Nvim via
 `nvim --embed` but **without** `--headless`. Embedders _not_ using the UI protocol
-must use `nvim --embed --headless`. See also [#9024](https://github.com/neovim/neovim/pull/9024).
+must use `nvim --embed --headless`.
 
 With `--embed` only, Nvim waits for `nvim_ui_attach` **before continuing startup** (user config, reading buffers), so that UIs can deterministically handle (display) early messages, dialogs, etc.  The client can do other requests before `nvim_ui_attach` (e.g. `nvim_get_api_info`) so that Nvim features can be detected before attaching. During this pre-startup phase the user config is, of course, not available (cf. `--cmd`).
 
