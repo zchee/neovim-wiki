@@ -27,17 +27,20 @@ For the time being, `neovim` acts as a transitional package for the new `pynvim`
 
 ### 2018/09/22
 
-[#9024](https://github.com/neovim/neovim/pull/9024): The meaning of the `--embed` and `--headless` flags changed to facilitate better startup behaviour with
-external UIs. UI embedders (any user of `nvim_ui_attach`) must start Nvim via
-`nvim --embed` but **without** `--headless`. Embedders _not_ using the UI protocol
-must use `nvim --embed --headless`.
+[#9024](https://github.com/neovim/neovim/pull/9024): The meaning of the `--embed` and `--headless` flags changed to facilitate better startup behaviour with external UIs. UI embedders (any user of `nvim_ui_attach`) must start Nvim **without** `--headless`:
 
-With `--embed` only, Nvim waits for `nvim_ui_attach` **before continuing startup** (user config, reading buffers), so that UIs can deterministically handle (display) early messages, dialogs, etc.  The client can do other requests before `nvim_ui_attach` (e.g. `nvim_get_api_info`) so that Nvim features can be detected before attaching. During this pre-startup phase the user config is, of course, not available (cf. `--cmd`).
+    nvim --embed
 
-For most UI embedders this will improve startup behavior automatically, by supporting startup messages
-and swap files prompts. For others, it is potentially a breaking change, which can be easily avoided by specifying `--headless` (thus: `nvim --embed --headless`, which is _backwards-compatible_ for this use-case).
+Embedders _not_ using the UI protocol must use:
 
-For UIs doing additional initialization after `init.vim` the following pattern can be used:
+    nvim --embed --headless
+
+In the "`--embed` only" case Nvim waits for `nvim_ui_attach` **before continuing startup** (user config, reading buffers) so that UIs can deterministically handle (display) early messages, dialogs, etc.  The client can do other requests before `nvim_ui_attach` (e.g. `nvim_get_api_info` for feature-detection). During this pre-startup phase the user config is of course not available (cf. `--cmd`).
+
+For most UI embedders this improved startup behavior automatically, by supporting startup messages
+and swapfile dialogs. For others it is potentially a breaking change, which can be easily avoided by specifying `--headless` (which is _backwards-compatible_ for that use-case).
+
+UIs that need additional initialization after `init.vim` can use this pattern:
 
 - Before `nvim_ui_attach` send a single `nvim_command` request with the command `"autocmd VimEnter * call rpcrequest(1, 'vimenter')"`.
 - In the `vimenter` method handler the UI can then safely execute any requests.
