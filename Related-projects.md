@@ -49,7 +49,6 @@ _Note: Some of these projects are **experimental/unstable**._
 | Common Lisp | [adolenc/cl-neovim](https://github.com/adolenc/cl-neovim)                            |
 | D           | [viniarck/nvimhost-d](https://github.com/viniarck/nvimhost-d)                        |
 | Elixir      | [awetzel/neovim-elixir](https://github.com/awetzel/neovim-elixir)                    |
-| Elixir      | [dm1try/nvim](https://github.com/dm1try/nvim)                                        |
 | Filesystem  | [fmoralesc/nvimfs](https://github.com/fmoralesc/nvimfs)                              |
 | Go          | [neovim/go-client](https://github.com/neovim/go-client)                              |
 | Haskell     | [neovimhaskell/nvim-hs](https://github.com/neovimhaskell/nvim-hs)                    |
