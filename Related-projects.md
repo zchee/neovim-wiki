@@ -31,7 +31,7 @@ _Note: Some of these projects are **experimental/unstable**._
 | mac OS UI        | [DinVim Vim for Mac](http://dinvim.com)                                       |
 | Qt 5             | [equalsraf/neovim-qt](https://github.com/equalsraf/neovim-qt)                 |
 | Qt Creator       | [sassanh/qnvim](https://github.com/sassanh/qnvim)                             |
-| Rust IDE         | [oakes/SolidOak](https://github.com/oakes/SolidOak)                           |
+| Rust IDE         | [oakes/SolidOak](https://github.com/oakes/SolidOak) [archived]                |
 | Sublime Text     | [lunixbochs/actualvim](https://github.com/lunixbochs/actualvim)               |
 | Tk/Python UI     | [timeyyy/pytknvim](https://github.com/timeyyy/pytknvim)                       |
 | Windows/Linux    | [meatich/Viy](https://github.com/meatich/Viy)                                 |
