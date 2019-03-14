@@ -1,6 +1,6 @@
 _See **[Quickstart](#quickstart)** to get started immediately. Also note the section on [**Not Applicable**](#na-not-applicable-patches) patches._
 
-Neovim was forked from Vim 7.4.160; it is kept up-to-date with relevant Vim patches in order to avoid duplicate work. To see the status of Vim patches, go to the  [**vim patch report**](http://neovim.io/doc/reports/vimpatch/) or run [`vim-patch.sh`](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh): 
+Neovim was forked from Vim 7.4.160; it is kept up-to-date with relevant Vim patches in order to avoid duplicate work.  Run [`vim-patch.sh`](https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh) to see the status of Vim patches: 
 
     ./scripts/vim-patch.sh -l
 
