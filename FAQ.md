@@ -319,8 +319,10 @@ rocks_servers={
 Then run `make cmake`.
 
 ### Anaconda error
+
 Error message:
 `anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc: not found`
+
 Solution:
 `conda install gxx_linux-64`
 
