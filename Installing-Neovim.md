@@ -277,7 +277,7 @@ Neovim can be installed using the xbps package manager
 
 ### FreeBSD
 
-Neovim can be installed using [`pkg(8)`](https://www.freebsd.org/cgi/man.cgi?query=pkg&sektion=8&apropos=0&manpath=FreeBSD+10.2-RELEASE):
+Neovim can be installed using [`pkg(8)`](http://man.freebsd.org/pkg/8):
 
     pkg install neovim
 
