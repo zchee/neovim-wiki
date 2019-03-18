@@ -285,6 +285,10 @@ or [from the ports tree](https://www.freshports.org/editors/neovim/):
 
     cd /usr/ports/editors/neovim/ && make install clean
 
+To install the pynvim Python modules using [`pkg(8)`](http://man.freebsd.org/pkg/8) run:
+
+    pkg install py27-pynvim py36-pynvim
+
 ### OpenBSD
 
 Neovim can be installed using [`pkg_add(1)`](https://man.openbsd.org/pkg_add):
