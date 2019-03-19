@@ -93,9 +93,41 @@ But the built-in Nvim TUI cannot show the screen of a remote Nvim server. That's
 - It is not "live share". It's just showing the remote UI in a client TUI.
 - Networking question are out of scope. It is assumed the client has an SSH tunnel or named pipe to connect to.
 
+The Nvim API model is:
+
+- `:help api`: general API functions
+- `:help ui`: UI events
+- Any client can call any API function.
+- If a client calls `nvim_ui_attach`, then it is a "UI client". This simply means that Nvim will send UI events as msgpack-rpc notifications on the channel.
+
+That's how _every_ Nvim UI works. And that's how the TUI client (this project proposal) will work.
+
+Python "demo UI" may be helpful: https://github.com/neovim/pynvim
+
+The simplest UI is the "fake UI" implemented in `test/functional/ui/screen.lua` from the Nvim test suite. It creates a text UI from real Nvim UI events. This allows us to write Lua tests that check the state of the UI, by simply writing the text UI in the test. In the Neoivm repo, "git grep 'screen:expect'" shows all of the places where this is used.
+
+The `example_spec.lua` test shows a simple example. You can try it by running this shell command:
+
+    TEST_FILE=test/functional/example_spec.lua make functionaltest
+
+Overview of the `screen.lua` "fake UI" implementation:
+
+- `Screen._wait()` / `Screen:sleep()` runs the event loop to consume UI events
+- `Screen:_redraw()` dispatches UI events to the appropriate handlers
+- For example `Screen:_handle_grid_line()` consumes a line event, and updates some tables (self._grids and self._attr_table). 
+    - And those tables are literally the contents of the fake UI that `Screen:expect()` tests against.
+
 **Expected Result:**
 
-Modify the TUI subsystem so that it can display a remote Nvim instance.
+Implement a TUI "remote UI" client. Modify the TUI subsystem so that it can display a remote Nvim instance.
+The C codebase already has msgpack support, an event-loop, and the ability to connect to sockets/named pipes/etc.
+
+- Extend `tui/tui.c` to:
+  1. connect to a channel
+  2. get UI events from the channel
+  3. unpack the events and call the appropriate handlers
+- Extend `tui/input.c` to:
+  1. send user input to the channel (i.e. call the nvim_input() API function)
 
 Example:
 
