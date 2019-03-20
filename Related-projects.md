@@ -16,6 +16,7 @@ _Note: Some of these projects are **experimental/unstable**._
 | Electron UI      | [onivim/oni](https://github.com/onivim/oni)                                   |
 | Electron UI      | [veonim](https://github.com/veonim/veonim)                                    |
 | Electron UI      | [VV](https://github.com/igorgladkoborodov/vv)                                 |
+| Firefox          | [Firenvim](https://github.com/glacambre/firenvim)                             |
 | VSCode           | [VSCodeVim](https://github.com/VSCodeVim/Vim)                                 |
 | gnome-terminal   | [fmoralesc/neovim-gnome-terminal-wrapper](https://github.com/fmoralesc/neovim-gnome-terminal-wrapper) |
 | Go/Qt            | [akiyosi/gonvim](https://github.com/akiyosi/gonvim)                           |
