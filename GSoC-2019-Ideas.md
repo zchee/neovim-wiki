@@ -102,7 +102,7 @@ The Nvim API model is:
 
 That's how _every_ Nvim UI works. And that's how the TUI client (this project proposal) will work.
 
-Python "demo UI" may be helpful: https://github.com/neovim/pynvim
+Python "demo UI" may be helpful: https://github.com/neovim/python-gui
 
 The simplest UI is the "fake UI" implemented in `test/functional/ui/screen.lua` from the Nvim test suite. It creates a text UI from real Nvim UI events. This allows us to write Lua tests that check the state of the UI, by simply writing the text UI in the test. In the Neoivm repo, "git grep 'screen:expect'" shows all of the places where this is used.
 
