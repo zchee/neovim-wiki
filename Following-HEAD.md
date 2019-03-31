@@ -5,6 +5,10 @@ The following changes may require users to update configuration, plugins, or exp
 
 ------------
 
+### 2019/03/31
+
+[#9819](https://github.com/neovim/neovim/pull/9819) `MenuPopupChanged` renamed to `CompleteChanged`.
+
 ### 2019/01/20
 
 [#9526](https://github.com/neovim/neovim/pull/9526): Neovim always uses the system allocator, instead of jemalloc. 
