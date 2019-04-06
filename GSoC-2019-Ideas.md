@@ -67,6 +67,15 @@ ___
 
 p2p architecture for data sharing between multiple Nvim instances. Similar to Python's [multiprocessing](https://docs.python.org/3/library/multiprocessing.html) module, the idea is to to offload Nvim tasks (VimL and/or Lua) to child Nvim processes.
 
+Here's a picture of the potential workflow:
+
+1. parent calls `invoke_async(Foo)`
+2. parent spawns new child `nvim` process
+3. parent sends command name `Foo` + state to child
+4. parent does other, unrelated work
+5. child completes its `Foo` work
+6. child sends notification (method name + state) to parent
+
 - Code license: Apache 2.0
 
 
