@@ -76,11 +76,8 @@ Here's a picture of the potential workflow:
 5. child completes its `Foo` work
 6. child sends notification (method name + state) to parent
 
-- Code license: Apache 2.0
-
-
 **Difficulty:** Hard
-
+**Code license:** Apache 2.0
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
 
 ___
@@ -144,12 +141,9 @@ Example:
 
 will connect to the Nvim server at address `foo`. The `nvim` client instance sends input to the remote Nvim server, and reflects the UI of the remote Nvim server. So the `nvim` client acts like any other external (G)UI.
 
-- Code license: Apache 2.0
 
-**Difficulty:** 
-
-Medium
-
+**Difficulty:** Medium
+**Code license:** Apache 2.0
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk)), Björn Linse ([@bfredl](http://github.com/bfredl))
 
 
@@ -173,12 +167,9 @@ The project can involve calls the core editor makes to VimL, such as autocommand
 
 Another direction is to add new extension points, such as letting Lua code control aspects of screen drawing. A  starting point could be to let Lua code draw a richer completion popup menu for the TUI, by processing popup menu UI events internally.
 
-- Code license: Apache 2.0
 
-**Difficulty:**
-
-Medium
-
+**Difficulty:** Medium
+**Code license:** Apache 2.0
 **Mentor:** Björn Linse ([@bfredl](http://github.com/bfredl))
 
 ___
@@ -203,12 +194,9 @@ Another path is to improve the core Nvim grid model. We could allow the width an
 
 Putting forward your own ideas of UI improvements is encouraged. Read the [docs](https://github.com/neovim/neovim/blob/master/runtime/doc/ui.txt) for the implemented extensions as well as the [tracking issue](https://github.com/neovim/neovim/issues/9421) for ongoing/planned work, as a starting point.
 
-- Code license: Apache 2.0
 
-**Difficulty:**
-
-Medium to Hard
-
+**Difficulty:** Medium-Hard
+**Code license:** Apache 2.0
 **Mentor:** Björn Linse ([@bfredl](http://github.com/bfredl))
 
 ___
@@ -227,12 +215,9 @@ Nvim has builtin live preview of `:%s` substitution, as a result of a [[successf
 
 More commands support interactive preview. This could be done by extending the hard-coded support for substitution preview to more commands. Alternatively, a more scalable approach could be to add core functionality that makes it easier to implement live preview as plugins in VimL and/or Lua. See [[#7370|https://github.com/neovim/neovim/issues/7370]] for some ideas.
 
-- Code license: Apache 2.0
 
-**Difficulty:**
-
-Medium to hard.
-
+**Difficulty:** Medium-Hard.
+**Code license:** Apache 2.0
 **Mentor:** Björn Linse ([@bfredl](http://github.com/bfredl))
 
 ---
@@ -248,10 +233,9 @@ Medium to hard.
 Neovim has the 'autoread' setting that regularly checks if a file edited in neovim has been externally modified. It thus notifies the user to prevent overwriting the changes. Sadly the current mechanism isn't foolproof. This project intends to make this feature work as well as in other editors like Sublime text and across the Neovim-supported platforms. The interface should also be improved so that notifications show how different the edited and modified files are. 
 The candidate can realize some of the difficulties involved with this [proposition for linux](https://github.com/neovim/neovim/issues/1380)
 
-- Code license: Apache 2.0
 
 **Difficulty:** Medium
-
+**Code license:** Apache 2.0
 **Mentor:** Matthieu Coudron ([@teto](http://github.com/teto))
 
 ___
@@ -265,15 +249,13 @@ ___
 
 Full Nvim editing should be available in the editor/IDE, while also allowing the user to use the native editor/IDE features.
 
-- Code license: Apache 2.0
-
 Examples:
 
 - [VSCode integration](https://github.com/VSCodeVim/Vim)
 - [Sublime Text integration](https://github.com/lunixbochs/actualvim)
 
-**Difficulty:** Medium (maybe Easy, depending on the extensiveness of the emulation)
-
+**Difficulty:** Medium
+**Code license:** Apache 2.0
 **Mentor:** Horace He ([@chillee](http://github.com/chillee))
 
 
@@ -292,8 +274,7 @@ ___
 
 - Item1
 - Item2
-- Code license: Apache 2.0
 
-**Difficulty:** 
-
+**Difficulty:** Easy/Medium/Hard
+**Code license:** Apache 2.0
 **Mentor:** Mentor name ([@MentorName](http://github.com/MentorName))
