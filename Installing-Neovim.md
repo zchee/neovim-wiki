@@ -99,6 +99,8 @@ Neovim can be installed from the community repository:
 
 Alternatively, Neovim can be also installed using the PKGBUILD [`neovim-git`](https://aur.archlinux.org/packages/neovim-git), available on the [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository).
 
+Alternatively, Neovim Nightly builds can be also installed using the PKGBUILD [`neovim-nightly`](https://aur.archlinux.org/packages/neovim-nightly), available on the [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository).
+
 The Python module is available from the community repository:
 
     sudo pacman -S python-neovim
