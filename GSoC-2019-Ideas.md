@@ -77,7 +77,9 @@ Here's a picture of the potential workflow:
 6. child sends notification (method name + state) to parent
 
 **Difficulty:** Hard
+
 **Code license:** Apache 2.0
+
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk))
 
 ___
@@ -143,7 +145,9 @@ will connect to the Nvim server at address `foo`. The `nvim` client instance sen
 
 
 **Difficulty:** Medium
+
 **Code license:** Apache 2.0
+
 **Mentor:** Justin M Keyes ([@justinmk](http://github.com/justinmk)), Björn Linse ([@bfredl](http://github.com/bfredl))
 
 
@@ -169,7 +173,9 @@ Another direction is to add new extension points, such as letting Lua code contr
 
 
 **Difficulty:** Medium
+
 **Code license:** Apache 2.0
+
 **Mentor:** Björn Linse ([@bfredl](http://github.com/bfredl))
 
 ___
@@ -196,7 +202,9 @@ Putting forward your own ideas of UI improvements is encouraged. Read the [docs]
 
 
 **Difficulty:** Medium-Hard
+
 **Code license:** Apache 2.0
+
 **Mentor:** Björn Linse ([@bfredl](http://github.com/bfredl))
 
 ___
@@ -217,7 +225,9 @@ More commands support interactive preview. This could be done by extending the h
 
 
 **Difficulty:** Medium-Hard.
+
 **Code license:** Apache 2.0
+
 **Mentor:** Björn Linse ([@bfredl](http://github.com/bfredl))
 
 ---
@@ -235,7 +245,9 @@ The candidate can realize some of the difficulties involved with this [propositi
 
 
 **Difficulty:** Medium
+
 **Code license:** Apache 2.0
+
 **Mentor:** Matthieu Coudron ([@teto](http://github.com/teto))
 
 ___
@@ -255,7 +267,9 @@ Examples:
 - [Sublime Text integration](https://github.com/lunixbochs/actualvim)
 
 **Difficulty:** Medium
+
 **Code license:** Apache 2.0
+
 **Mentor:** Horace He ([@chillee](http://github.com/chillee))
 
 
@@ -276,5 +290,7 @@ ___
 - Item2
 
 **Difficulty:** Easy/Medium/Hard
+
 **Code license:** Apache 2.0
+
 **Mentor:** Mentor name ([@MentorName](http://github.com/MentorName))
