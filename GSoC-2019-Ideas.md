@@ -125,6 +125,11 @@ Overview of the `screen.lua` "fake UI" implementation:
 - For example `Screen:_handle_grid_line()` consumes a line event, and updates some tables (self._grids and self._attr_table). 
     - And those tables are literally the contents of the fake UI that `Screen:expect()` tests against.
 
+Use cases:
+
+- Connect to any Nvim. Unlike tmux, Nvim UI client can connect to any other running Nvim, including GUIs.
+- Potential for using `libnvim` as the RPC core of any Nvim API client, to eliminate the need for clients to implement their own msgpack-RPC handling.
+
 **Expected Result:**
 
 Implement a TUI "remote UI" client. Modify the TUI subsystem so that it can display a remote Nvim instance.
