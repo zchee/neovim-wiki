@@ -4,8 +4,7 @@
 
 - [Quick start](#quick-start)
 - [Running tests](#running-tests)
-- [Optimized builds](#optimized-builds)
-- [Debug builds](#debug-builds)
+- [Building](#building)
 - [Windows / MSVC](#windows--msvc)
 - [Localization](#localization)
 - [Compiler options](#compiler-options)
@@ -33,26 +32,40 @@ Now that you have the dependencies, you can try other build targets, explained b
 
 See [test/README.md](https://github.com/neovim/neovim/blob/master/test/README.md)
 
-## Optimized builds
+## Building
+
+_Just `make` in the root of the repo will download and build all the needed dependencies and put the `nvim` executable at `build/bin`._
+
+The build type determines the level of used compiler optimisations and debug information:
+
+- `Release`: Full compiler optimisations and no debug information. Expect the best performance from this build type. Often used by package maintainers.
+- `Debug`: Full debug information; little optimisations. Use this for development to get meaningful output from debuggers like gdb or lldb. This is the default, if `CMAKE_BUILD_TYPE` is not specified.
+- `RelWithDebInfo` ("Release With Debug Info"): Enables many optimisations and adds enough debug info so that when nvim ever crashes, you can still get a backtrace.
+
+So, for a release build, just use:
 
 ```
-rm -r build
-make clean
 make CMAKE_BUILD_TYPE=Release
 ```
 
-For developers and "edge" users, `RelWithDebInfo` is recommended over `Release` as the latter doesn't generate debug info.
+Afterwards, the `nvim` executable can be found at `build/bin`. To verify the build type after compilation, run `./build/bin/nvim --version | grep ^Build`.
 
-To verify the build type after compilation, run `./build/bin/nvim --version | grep ^Build`
+To install the executable to a certain location, use:
 
-## Debug builds
+```
+make CMAKE_INSTALL_PREFIX=$HOME/local/nvim install
+```
 
-nvim links statically some libraries, in order to be able to step into some of these functions, you might want to compile them with debug informations as well.
+Cmake, our main build sytem, caches a lot of things in `build/CMakeCache.txt`. If you ever want to change `CMAKE_BUILD_TYPE` or `CMAKE_INSTALL_PREFIX`, run `rm -rf build` first.
+
+By default (`USE_BUNDLED=0`), Nvim downloads and statically links its needed dependencies. In order to be able to use a debugger on these libraries, you might want to compile them with debug informations as well:
 
 ```
 make distclean
 VERBOSE=1 DEBUG=1 make deps
 ```
+
+(Here, `make distclean` is basically a shortcut for `rm -rf build .deps`.)
 
 ## Windows / MSVC
 
