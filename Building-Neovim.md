@@ -34,7 +34,7 @@ See [test/README.md](https://github.com/neovim/neovim/blob/master/test/README.md
 
 ## Building
 
-_Just `make` in the root of the repo will download and build all the needed dependencies and put the `nvim` executable at `build/bin`._
+_Just `make` in the root of the repo will download and build all the needed dependencies and put the `nvim` executable at `build/bin`. Without installing, you can run it like this: `VIMRUNTIME=runtime ./build/bin/nvim`._
 
 The build type determines the level of used compiler optimisations and debug information:
 
