@@ -107,7 +107,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [neovim-ranger](https://github.com/airodactyl/neovim-ranger): File manager with Vi key bindings
 - [neovim-vifm](https://github.com/vifm/neovim-vifm): Integration between Vifm (Vi file manager) and Neovim
 - [nlanguagetool.nvim](https://github.com/fmoralesc/nlanguagetool.nvim): Integration with LanguageTool, a style and grammar checker for natural languages
-- [nuake](https://gitlab.com/Lenovsky/nuake): Quake-style terminal panel for Neovim
+- [nuake](https://github.com/Lenovsky/nuake): Quake-style terminal panel for Neovim
 - [nvim-completion-manager](https://github.com/roxma/nvim-completion-manager) (deprecated): Fast, extensible, asynchronous completion framework
 - [nvim-editcommand](https://github.com/brettanomyces/nvim-editcommand): Edit your current shell command inside a scratch buffer
 - [nvim-gdb](https://github.com/sakhnik/nvim-gdb): Neovim thin wrapper for GDB, LLDB and PDB written in Moonscript/Lua
