@@ -62,7 +62,7 @@ Packages are listed below. (You can also [build Neovim from source](#install-fro
 
 ### Pre-built archives
 
-The [Releases](https://github.com/neovim/neovim/releases) page provides pre-built binaries for macOS 10.8+.
+The [Releases](https://github.com/neovim/neovim/releases) page provides pre-built binaries for macOS 10.11+.
 
     curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim-macos.tar.gz
     tar xzf nvim-macos.tar.gz
