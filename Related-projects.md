@@ -7,6 +7,7 @@ _Note: Some of these projects are **experimental/unstable**._
 | Platform         | Project                                                                       |
 |------------------|-------------------------------------------------------------------------------|
 | Atom Integration | [carlosdcastillo/vim-mode](https://github.com/carlosdcastillo/vim-mode)       |
+| Avalonia         | [yatli/fvim](https://github.com/yatli/fvim)                                   |
 | C++/Python       | [meatich/NeoSFML](https://github.com/meatich/NeoSFML)                         |
 | C++/SDL2         | [etorth/libnvc](https://github.com/etorth/libnvc)                             |
 | curses/Python    | [mvilim/neovim-pytc-example](https://github.com/mvilim/neovim-pytc-example)   |
