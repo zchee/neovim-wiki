@@ -168,6 +168,12 @@ An ebuild is available in Gentoo's official portage repository:
 
     emerge -a app-editors/neovim
 
+### GNU Guix
+
+Neovim can be installed with:
+
+    guix install neovim
+
 ### Nix / NixOS
 
 Neovim can be installed with:
