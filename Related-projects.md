@@ -65,7 +65,7 @@ _Note: Some of these projects are **experimental/unstable**._
 | R           | [jalvesaq/Nvim-R](https://github.com/jalvesaq/Nvim-R)                                |
 | Racket      | [HiPhish/neovim.rkt](https://gitlab.com/HiPhish/neovim.rkt)                          |
 | Ruby        | [neovim/neovim-ruby](https://github.com/neovim/neovim-ruby)                          |
-| Rust        | [oakes/neovim-rs](https://github.com/oakes/neovim-rs)                                |
+| Rust        | [oakes/neovim-rs](https://github.com/oakes/neovim-rs) [archived]                     |
 | Rust        | [daa84/neovim-lib](https://github.com/daa84/neovim-lib)                              |
 | Scala       | [viniarck/nvimhost-scala](https://github.com/viniarck/nvimhost-scala)                |
 | Swift/Cocoa | [SwiftNeoVim](https://github.com/qvacua/vimr/wiki/SwiftNeoVim-Framework) (part of qvacua/vimr) |
