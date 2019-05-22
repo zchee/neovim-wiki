@@ -61,7 +61,7 @@ _Note: Some of these projects are **experimental/unstable**._
 | Lua         | [neovim/lua-client](https://github.com/neovim/lua-client)                            |
 | Node.js     | [neovim/node-client](https://github.com/neovim/node-client)                          |
 | Perl        | [yanick/Neovim-RPC](https://github.com/yanick/Neovim-RPC)                            |
-| Python      | [neovim/python-client](https://github.com/neovim/python-client)                      |
+| Python      | [neovim/pynvim](https://github.com/neovim/pynvim)                                    |
 | R           | [jalvesaq/Nvim-R](https://github.com/jalvesaq/Nvim-R)                                |
 | Racket      | [HiPhish/neovim.rkt](https://gitlab.com/HiPhish/neovim.rkt)                          |
 | Ruby        | [neovim/neovim-ruby](https://github.com/neovim/neovim-ruby)                          |
