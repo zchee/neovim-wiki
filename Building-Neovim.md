@@ -235,7 +235,23 @@ cmakeConfigurePhase
 buildPhase
 ```
 
-Running tests does not work out of the box yet. A PR submitted to improve lua support in nixpkgs includes a fix for running the functional tests at https://github.com/NixOS/nixpkgs/pull/33903
+Tests are not available by default because of some unfixed failures. You can enable them via adding this package in your overlay:
+``` 
+  neovim-dev = (super.pkgs.neovim-unwrapped.override  {
+    doCheck=true;
+  }).overrideAttrs(oa:{
+    cmakeBuildType="debug";
+
+    nativeBuildInputs = oa.nativeBuildInputs ++ [ self.pkgs.valgrind ];
+    shellHook = ''
+      export NVIM_PYTHON_LOG_LEVEL=DEBUG
+      export NVIM_LOG_FILE=/tmp/log
+      export VALGRIND_LOG="$PWD/valgrind.log"
+    '';
+  });
+```
+and replacing neovim-unwrapped by neovim-dev: `$ nix-shell '<nixpkgs>' -A neovim-dev`
+
 
 #### FreeBSD
 
