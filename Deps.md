@@ -14,6 +14,6 @@ In all cases the Nvim patches live on the `nvim` branch of each forked repo. The
 * https://github.com/neovim/libuv
 	* Compare `nvim` branch to upstream: https://github.com/neovim/libuv/compare/v1.x...nvim
 * https://github.com/neovim/libvterm
-	* Compare `nvim` branch to upstream: https://github.com/neovim/libvterm/compare/3f62ac6b7bdffda39d68f723fb1806dfd6d6382d...nvim
+	* Compare `nvim` branch to upstream: https://github.com/neovim/libvterm/compare/master..nvim
 * https://github.com/neovim/libtermkey
 * https://github.com/neovim/unibilium
