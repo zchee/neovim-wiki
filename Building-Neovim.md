@@ -176,7 +176,7 @@ make
 
 1. Install the dependencies manually. For example on Debian/Ubuntu:
    ```
-   sudo apt install gperf libluajit-5.1-dev libunibilium-dev libmsgpack-dev libtermkey-dev libvterm-dev libjemalloc-dev
+   sudo apt install gperf libluajit-5.1-dev libunibilium-dev libmsgpack-dev libtermkey-dev libvterm-dev libjemalloc-dev lua5.1 lua-lpeg lua-mpack lua-bitop
    ```
 2. Do the "CMake dance": create a `build` directory, switch to it and run CMake:
    ```
