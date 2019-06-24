@@ -69,7 +69,7 @@ VERBOSE=1 DEBUG=1 make deps
 
 ## Windows / MSVC
 
-1. Install Visual Studio 2017 with the _Desktop development with C++_ workload.
+1. [Install Visual Studio](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community) (2017 or later) with the _Desktop development with C++_ workload.
     - On 32-bit Windows you need [this workaround](https://developercommunity.visualstudio.com/content/problem/212989/ninja-binary-format.html)
 1. ~~Run `makedeps.bat`.~~ (Update: dependencies are now built automatically.)
 1. Start Visual Studio and open the Neovim project.
