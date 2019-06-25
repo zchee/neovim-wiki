@@ -15,6 +15,7 @@ _Note: Some of these projects are **experimental/unstable**._
 | Electron UI      | [coolwanglu/neovim-e](https://github.com/coolwanglu/neovim-e)                 |
 | Electron UI      | [rhysd/NyaoVim](https://github.com/rhysd/NyaoVim)                             |
 | Electron UI      | [onivim/oni](https://github.com/onivim/oni)                                   |
+| Electron UI      | [onivim/oni2](https://github.com/onivim/oni2)                                   |
 | Electron UI      | [veonim](https://github.com/veonim/veonim)                                    |
 | Electron UI      | [VV](https://github.com/igorgladkoborodov/vv)                                 |
 | Firefox          | [Firenvim](https://github.com/glacambre/firenvim)                             |
