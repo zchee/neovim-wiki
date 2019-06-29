@@ -7,7 +7,7 @@ The following changes may require users to update configuration, plugins, or exp
 
 ### 2019/06/10
 
-[#10123](https://github.com/neovim/neovim/pull/10123) Nvim core requires [libluv](https://github.com/luvit/luv/). This may require building with `-DUSE_BUNDLED_LUV=ON` if you were previously using `-DUSE_BUNDLED_LUV=OFF`. Previously `luv` was only needed for running tests (instead of `nvim` itself).
+[#10123](https://github.com/neovim/neovim/pull/10123) Nvim core requires [libluv](https://github.com/luvit/luv/). This may require building with `-DUSE_BUNDLED_LUV=ON` if you were previously using `-DUSE_BUNDLED_LUV=OFF`. Previously `luv` was only needed for running tests; now `nvim` statically links `libluv` in order to provide `:help lua-loop`.
 
 
 ### 2019/03/31
