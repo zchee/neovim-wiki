@@ -6,7 +6,7 @@
 [Related projects](Related-projects)
 
 **Users**  
-[tall](Installing-Neovim)  
+[Install](Installing-Neovim)  
 [Following HEAD](Following-HEAD)  
 [Docs](http://neovim.io/doc/)
 
