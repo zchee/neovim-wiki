@@ -35,6 +35,7 @@ Packages are listed below. (You can also [build Neovim from source](#install-fro
 
 ### Pre-built archives
 
+0. If you are missing `VCRUNTIME140.dll`, install the [Visual Studio 2015 C++ redistributable](https://support.microsoft.com/en-us/kb/2977003) (choose x86_64 or x86 depending on your system).
 1. Choose a package (**nvim-winXX.zip**) from the [releases page](https://github.com/neovim/neovim/releases).
 2. Unzip the package. Any location is fine, administrator privileges are _not_ required.
     - `$VIMRUNTIME` will be set to that location automatically.
@@ -44,7 +45,6 @@ Packages are listed below. (You can also [build Neovim from source](#install-fro
 
 - Add the `bin` folder (e.g. `C:\Program Files\nvim\bin`) to your PATH.
     - This makes it easy to run `nvim` and `nvim-qt` from anywhere.
-- If you are missing `VCRUNTIME140.dll`, install the [Visual Studio 2015 C++ redistributable](https://support.microsoft.com/en-us/kb/2977003) (choose x86_64 or x86 depending on your system).
 - If `:set spell` does not work, create the `C:/Users/foo/AppData/Local/nvim/site/spell` folder. 
   You can then copy your spell files over (for English, located 
   [here](https://github.com/vim/vim/blob/master/runtime/spell/en.utf-8.spl) and 
