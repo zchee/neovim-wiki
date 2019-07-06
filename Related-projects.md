@@ -21,11 +21,11 @@ _Note: Some of these projects are **experimental/unstable**._
 | VSCode           | [VSCodeVim](https://github.com/VSCodeVim/Vim)                                 |
 | gnome-terminal   | [fmoralesc/neovim-gnome-terminal-wrapper](https://github.com/fmoralesc/neovim-gnome-terminal-wrapper) |
 | Go/Qt            | [akiyosi/gonvim](https://github.com/akiyosi/gonvim)                           |
-| Go/Qt            | [dzhou121/gonvim](https://github.com/dzhou121/gonvim)                         |
+| Go/Qt            | [dzhou121/gonvim](https://github.com/dzhou121/gonvim) (abandoned)             |
 | GTK/Python UI    | [neovim/python-gui](https://github.com/neovim/python-gui)                     |
 | GTK/Python UI    | [rliang/nvim-pygtk3](https://github.com/rliang/nvim-pygtk3)                   |
 | GTK/Rust UI      | [daa84/neovim-gtk](https://github.com/daa84/neovim-gtk)                       |
-| GTK/Rust UI      | [GNvim](https://github.com/vhakulinen/gnvim)                       |
+| GTK/Rust UI      | [GNvim](https://github.com/vhakulinen/gnvim)                                  |
 | JavaFX           | [jebberjeb/javafx-neovimpane](https://github.com/jebberjeb/javafx-neovimpane) |
 | Konsole          | [harish2704/neovim-konsole](https://github.com/harish2704/neovim-konsole)     |
 | macOS            | [qvacua/vimr](https://github.com/qvacua/vimr)                                 |
