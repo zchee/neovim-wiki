@@ -31,7 +31,13 @@ Packages are listed below. (You can also [build Neovim from source](#install-fro
 
 ### [Scoop](http://scoop.sh/)
 
-- `scoop install neovim`
+- **Release (v0.3.4):**`scoop install neovim`
+- **Development (pre-release):**
+
+```
+scoop bucket add neovim-dev https://github.com/wsdjeg/scoop-neovim-dev.git
+scoop install neovim-dev
+```
 
 ### Pre-built archives
 
