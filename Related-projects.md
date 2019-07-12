@@ -6,38 +6,39 @@ _Note: Some of these projects are **experimental/unstable**._
 
 | Platform         | Project                                                                       | Activation |
 |------------------|-------------------------------------------------------------------------------| :-: |
-| Atom Integration | [carlosdcastillo/vim-mode](https://github.com/carlosdcastillo/vim-mode)       | 2 years ago |
+| Atom Integration | [carlosdcastillo/vim-mode](https://github.com/carlosdcastillo/vim-mode)       | abandoned |
 | Avalonia         | [yatli/fvim](https://github.com/yatli/fvim)                                   | |
-| C++/Python       | [meatich/NeoSFML](https://github.com/meatich/NeoSFML)                         | 3 years ago |
+| C++/Python       | [meatich/NeoSFML](https://github.com/meatich/NeoSFML)                         | inactive |
 | C++/SDL2         | [etorth/libnvc](https://github.com/etorth/libnvc)                             | |
 | curses/Python    | [mvilim/neovim-pytc-example](https://github.com/mvilim/neovim-pytc-example)   | |
 | EFL              | [Eovim](https://github.com/jeanguyomarch/eovim/)                              | |
-| Electron UI      | [coolwanglu/neovim-e](https://github.com/coolwanglu/neovim-e)                 | 4 years ago |
+| Electron UI      | [coolwanglu/neovim-e](https://github.com/coolwanglu/neovim-e)                 | inactive |
 | Electron UI      | [rhysd/NyaoVim](https://github.com/rhysd/NyaoVim)                             | |
 | Electron UI      | [onivim/oni](https://github.com/onivim/oni)                                   | |
 | Electron UI      | [veonim](https://github.com/veonim/veonim)                                    | |
 | Electron UI      | [VV](https://github.com/igorgladkoborodov/vv)                                 | |
 | Firefox          | [Firenvim](https://github.com/glacambre/firenvim)                             | |
 | VSCode           | [VSCodeVim](https://github.com/VSCodeVim/Vim)                                 | |
-| gnome-terminal   | [fmoralesc/neovim-gnome-terminal-wrapper](https://github.com/fmoralesc/neovim-gnome-terminal-wrapper) |
+| gnome-terminal   | [neovim-gnome-terminal-wrapper](https://github.com/fmoralesc/neovim-gnome-terminal-wrapper) |
 | Go/Qt            | [akiyosi/gonvim](https://github.com/akiyosi/gonvim)                           | |
-| Go/Qt            | [dzhou121/gonvim](https://github.com/dzhou121/gonvim) (abandoned)             | |
+| Go/Qt            | [dzhou121/gonvim](https://github.com/dzhou121/gonvim)                         | abandoned |
 | GTK/Python UI    | [neovim/python-gui](https://github.com/neovim/python-gui)                     | |
 | GTK/Python UI    | [rliang/nvim-pygtk3](https://github.com/rliang/nvim-pygtk3)                   | |
 | GTK/Rust UI      | [daa84/neovim-gtk](https://github.com/daa84/neovim-gtk)                       | |
 | GTK/Rust UI      | [GNvim](https://github.com/vhakulinen/gnvim)                                  | |
 | JavaFX           | [jebberjeb/javafx-neovimpane](https://github.com/jebberjeb/javafx-neovimpane) | |
-| Konsole          | [harish2704/neovim-konsole](https://github.com/harish2704/neovim-konsole)     | 2 years ago |
+| Konsole          | [harish2704/neovim-konsole](https://github.com/harish2704/neovim-konsole)     | inactive |
 | macOS            | [qvacua/vimr](https://github.com/qvacua/vimr)                                 | |
 | macOS            | [rogual/neovim-dot-app](https://github.com/rogual/neovim-dot-app)             | |
 | mac OS UI        | [DinVim Vim for Mac](http://dinvim.com)                                       | |
 | OpenGL/Rust UI   | [glrnvim](https://github.com/beeender/glrnvim)                                | |
 | Qt 5             | [equalsraf/neovim-qt](https://github.com/equalsraf/neovim-qt)                 | |
 | Qt Creator       | [sassanh/qnvim](https://github.com/sassanh/qnvim)                             | |
-| Rust IDE         | [oakes/SolidOak](https://github.com/oakes/SolidOak) [archived]                | |
+| Rust IDE         | [oakes/SolidOak](https://github.com/oakes/SolidOak)                           | archived |
 | Sublime Text     | [lunixbochs/actualvim](https://github.com/lunixbochs/actualvim)               | |
-| Tk/Python UI     | [timeyyy/pytknvim](https://github.com/timeyyy/pytknvim)                       | 2 years ago |
-| Windows/Linux    | [meatich/Viy](https://github.com/meatich/Viy)                                 | 3 years ago |
+| Tk/Python UI     | [timeyyy/pytknvim](https://github.com/timeyyy/pytknvim)                       | inactive |
+| Windows/Linux    | [meatich/Viy](https://github.com/meatich/Viy)                                 | inactive |
+
 
 <sub>Note: Activation only takes into account the update of the codebase, excluding README, etc. </sub>
 
