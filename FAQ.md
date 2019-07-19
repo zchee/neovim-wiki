@@ -327,6 +327,17 @@ Error message:
 Solution:
 `conda install gxx_linux-64`
 
+# Develop
+
+### Useful plugins?
+
+- [nvimdev.nvim](https://github.com/neovim/nvimdev.nvim): Neomake integration with Lua/C + Neovim codebase
+- [helpful.vim](https://github.com/tweekmonster/helpful.vim): get the version of Vim/Neovim where a feature was introduced.
+- [Neomake](https://github.com/neomake/neomake): Async linting
+- [deoplete.nvim](https://github.com/Shougo/deoplete.nvim): auto-completion
+    - [deoplete-clang2](https://github.com/tweekmonster/deoplete-clang2): clang2 completion support for deoplete.nvim
+- [coc.nvim](https://github.com/neoclide/coc.nvim/): auto-completion, code navigation
+
 # Design
 
 ### Why not use JSON for RPC?
