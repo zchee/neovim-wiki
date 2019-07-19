@@ -27,19 +27,6 @@
 - Install **[universal-ctags](https://github.com/universal-ctags/ctags).** "Exuberant ctags" (the typical `ctags` binary provided by your distro) is unmaintained and won't recognize many function signatures in Neovim source.
 - The `contrib` folder contains a [YouCompleteMe configuration](https://github.com/neovim/neovim/tree/master/contrib/YouCompleteMe) for Neovim.
 
-## Code linting
-You can run the linter locally using `make lint`. The linting process downloads master linting errors from "https://raw.githubusercontent.com/neovim/doc/gh-pages/reports/clint/errors.json" and omits them from the locally detected errors, so that it only lint errors related to the local changes.
-
-If you work in a single or a few files at a time, you can lint a single C file at a time using
-
-    make clint LINT_FILE="src/nvim/ops.c"
-
-which takes less time than linting all files at once. Note that the [nvimdev](https://github.com/tweekmonster/nvimdev.nvim) plugin can do it for you. To just lint the tests, use `make testlint`. 
-
-If you are using [Syntastic][syntastic], you can use https://gist.github.com/gilligan/9326904 to add `clint.py` as a checker for C files. Note that `clint.py` needs to be in your `PATH` and that you will have to modify `g:syntastic_c_checkers`, otherwise it will default to GCC or make.
-
-See [Syntastic's documentation][syntastic-docs] for information.
-
 ## Other tools
 
 - [hererocks](https://github.com/mpeterv/hererocks) (very similar to Python's `virtualenv`) is useful for installing Luarocks, LuaJIT, and Lua:
