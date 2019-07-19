@@ -5,13 +5,15 @@
 [FAQ](FAQ)  
 [Related projects](Related-projects)
 
-**Users**  
+**Users**
+
 [Install](Installing-Neovim)  
 [Following HEAD](Following-HEAD)  
 [Docs](http://neovim.io/doc/)
 
-**Developers**  
+**Developers**
+
 [Build](Building-Neovim)  
 [Contribute](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md)  
-[Tips & Tools](Development-tips)  
+[Tips & Tools](FAQ#develop)  
 [Code style](https://neovim.io/develop/style-guide.xml)  
