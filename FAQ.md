@@ -329,7 +329,7 @@ Solution:
 
 # Develop
 
-### Useful plugins?
+### Plugins
 
 - [nvimdev.nvim](https://github.com/neovim/nvimdev.nvim): Neomake integration with Lua/C + Neovim codebase
 - [helpful.vim](https://github.com/tweekmonster/helpful.vim): get the version of Vim/Neovim where a feature was introduced.
@@ -337,6 +337,17 @@ Solution:
 - [deoplete.nvim](https://github.com/Shougo/deoplete.nvim): auto-completion
     - [deoplete-clang2](https://github.com/tweekmonster/deoplete-clang2): clang2 completion support for deoplete.nvim
 - [coc.nvim](https://github.com/neoclide/coc.nvim/): auto-completion, code navigation
+
+### Tools
+
+- [hererocks](https://github.com/mpeterv/hererocks) (very similar to Python's `virtualenv`) is useful for installing Luarocks, LuaJIT, and Lua:
+  ```
+  curl -LO https://raw.githubusercontent.com/mpeterv/hererocks/latest/hererocks.py
+  chmod u+x hererocks.py
+  # Install LuaJit and LuaRocks 3.0 to the "myenv" directory.
+  ./hererocks.py myenv --luajit latest -r3.0
+  ```
+- [croissant](https://github.com/giann/croissant) is a Lua REPL
 
 # Debug
 
