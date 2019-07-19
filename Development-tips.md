@@ -1,24 +1,3 @@
-## Neovim plugins
-
-- [nvimdev.nvim](https://github.com/neovim/nvimdev.nvim)
-    - Get Neomake working with Lua and C while working on the neovim codebase
-    - `tags` and `cscope.out`
-    - :heart: @tweekmonster!
-- [vim-lua](https://github.com/tbastos/vim-lua)
-    - Enhanced Lua 5.3 syntax indentation.
-- [editorconfig-vim](https://github.com/editorconfig/editorconfig-vim)
-    - Helps developers define and maintain consistent coding styles.
-    - Cross editor compatible: <http://editorconfig.org/>
-- [helpful.vim](https://github.com/tweekmonster/helpful.vim)
-    - A plugin for plugin developers to get the version of Vim and Neovim that introduced or removed features.
-    - :heart: @tweekmonster!
-- [Neomake](https://github.com/neomake/neomake)
-    - Async linting
-- [deoplete.nvim](https://github.com/Shougo/deoplete.nvim)
-    - Completion for Neovim
-- [deoplete-clang2](https://github.com/tweekmonster/deoplete-clang2)
-    - clang2 completion support for deoplete.nvim
-
 ## Navigating the code
 
 - Browse **[Neovim on SourceGraph](https://sourcegraph.com/github.com/neovim/neovim)**
