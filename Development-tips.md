@@ -14,8 +14,6 @@
     - :heart: @tweekmonster!
 - [Neomake](https://github.com/neomake/neomake)
     - Async linting
-- [vim-lint](https://github.com/dbakker/vim-lint)
-    - Lint VimL
 - [deoplete.nvim](https://github.com/Shougo/deoplete.nvim)
     - Completion for Neovim
 - [deoplete-clang2](https://github.com/tweekmonster/deoplete-clang2)
