@@ -311,6 +311,11 @@ gmake
     brew install curl-ca-bundle
     echo CA_CERTIFICATE=$(brew --prefix curl-ca-bundle)/share/ca-bundle.crt >> ~/.wgetrc
     ```
+* If you see `'stdio.h' file not found` 
+    ```
+    open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg
+    ```
+
 
 #### cygwin
 
