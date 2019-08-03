@@ -91,4 +91,3 @@ See the [Plugin Architecture](Plugin-UI-architecture) page for a detailed overvi
 
 [job control patch]: https://groups.google.com/forum/#!topic/vim_dev/QF7Bzh1YABU
 [json-rpc]: http://www.jsonrpc.org/specification
-[test]: http://test.com
