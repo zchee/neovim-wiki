@@ -91,7 +91,7 @@ See the [`memory.c` Doxygen page](http://neovim.io/doc/dev/memory_8c.html) for m
 | `vim_free`                              | `xfree`             |
 | `VIM_CLEAR(&foo)`                       | `XFREE_CLEAR(foo)` |
 | `malloc` `alloc` `lalloc` `lalloc_id`   | `xmalloc`          |
-| `calloc`                                | `xcalloc`          |
+| `calloc` `lalloc_clear`                 | `xcalloc`          |
 | `realloc` `vim_realloc`                 | `xrealloc`         |
 | `mch_memmove`                           | `memmove`          |
 | `vim_memset` `copy_chars` `copy_spaces` | [`memset`][memset] |
