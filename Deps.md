@@ -9,11 +9,12 @@ For some dependencies we maintain temporary "forks", which are simply private br
 * For Windows OS some of these patches are required. 
 * For all other cases, Nvim builds against and supports both the "vanilla" dependency (without Nvim's patches) and typically much older versions.
 
-In all cases the Nvim patches live on the `nvim` branch of each forked repo. The complete, current list of forked dependencies is as follows:
+The complete, current list of forked dependencies is as follows:
 
 * https://github.com/neovim/libuv
-	* Compare `nvim` branch to upstream: https://github.com/neovim/libuv/compare/v1.x...nvim
+  * Neovim fork lives on the `nvim` branch: https://github.com/neovim/libuv/compare/v1.x...nvim
 * https://github.com/neovim/libvterm
-	* Compare `nvim` branch to upstream: https://github.com/neovim/libvterm/compare/master..nvim
+  * Neovim fork lives on the `nvim` branch: https://github.com/neovim/libvterm/compare/master..nvim
 * https://github.com/neovim/libtermkey
 * https://github.com/neovim/unibilium
+  * The original project [was abandoned](https://github.com/neovim/neovim/issues/10302), so the [neovim/unibilium](https://github.com/neovim/unibilium) fork is considered "upstream" and is maintained on the `master` branch.
