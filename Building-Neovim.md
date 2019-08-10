@@ -316,6 +316,15 @@ gmake
     open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg
     ```
 
+##### Building for older macOS versions
+
+To build for older macOS versions, e.g. for 10.13, on a newer macOS, you have to set the macOS deployment target
+
+```
+make CMAKE_BUILD_TYPE=Release MACOSX_DEPLOYMENT_TARGET=10.13 DEPS_CMAKE_FLAGS="-DCMAKE_CXX_COMPILER=$(xcrun -find c++)"
+```
+
+Note that if we do not explicitly set the C++ compiler, the compiler will not be found when the deployment target is set.
 
 #### cygwin
 
