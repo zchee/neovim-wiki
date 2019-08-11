@@ -193,7 +193,7 @@ ___
 
 **Description:**
 
-Nvim GUI:s are implemented as processes communicating with Nvim.. Originally the UI protocol exposed most functionality as a single, terminal-like screen grid. Work has been done to allow UIs (including embeddings in GUI editors, like VSCode) to render the screen layout themselves, based on semantic updates from Nvim. Some screen elements like the cmdline, popupmenu and message area has been externalized. As a result of a 2018 [GSOC project](https://github.com/neovim/neovim/issues/8320), windows can be drawn on separate grids.
+Nvim GUIs are implemented as processes communicating with Nvim. Originally the UI protocol exposed most functionality as a single, terminal-like screen grid. Work has been done to allow UIs (including embeddings in GUI editors, like VSCode) to render the screen layout themselves, based on semantic updates from Nvim. Some screen elements like the cmdline, popupmenu and message area has been externalized. As a result of a 2018 [GSOC project](https://github.com/neovim/neovim/issues/8320), windows can be drawn on separate grids.
 
 **Expected Result:**
 
