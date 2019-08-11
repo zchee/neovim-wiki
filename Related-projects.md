@@ -32,7 +32,7 @@ _Note: Some of these projects are **experimental/unstable**._
 | macOS            | [qvacua/vimr](https://github.com/qvacua/vimr)                                 | |
 | macOS            | [rogual/neovim-dot-app](https://github.com/rogual/neovim-dot-app)             | |
 | mac OS UI        | [DinVim Vim for Mac](http://dinvim.com)                                       | |
-| OpenGL/Rust UI   | [glrnvim](https://github.com/beeender/glrnvim)                                | |
+| Terminal Wrapper | [glrnvim](https://github.com/beeender/glrnvim)                                | |
 | Qt 5             | [equalsraf/neovim-qt](https://github.com/equalsraf/neovim-qt)                 | |
 | Qt Creator       | [sassanh/qnvim](https://github.com/sassanh/qnvim)                             | |
 | Rust IDE         | [oakes/SolidOak](https://github.com/oakes/SolidOak)                           | archived |
