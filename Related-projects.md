@@ -15,7 +15,7 @@ _Note: Some of these projects are **experimental/unstable**._
 | EFL              | [Eovim](https://github.com/jeanguyomarch/eovim/)                              | |
 | Electron UI      | [coolwanglu/neovim-e](https://github.com/coolwanglu/neovim-e)                 | inactive |
 | Electron UI      | [rhysd/NyaoVim](https://github.com/rhysd/NyaoVim)                             | |
-| Electron UI      | [onivim/oni2](https://github.com/onivim/oni2)                                 | |
+| Revery UI        | [onivim/oni2](https://github.com/onivim/oni2)                                 | |
 | Electron UI      | [onivim/oni](https://github.com/onivim/oni)                                   | |
 | Electron UI      | [veonim](https://github.com/veonim/veonim)                                    | |
 | Electron UI      | [VV](https://github.com/igorgladkoborodov/vv)                                 | |
