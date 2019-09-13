@@ -79,10 +79,10 @@ _Note: Some of these projects are **experimental/unstable**._
 The following plugins take advantage of specific Neovim features, e.g. `jobstart()`, `:terminal` or its remote plugin mechanism.
 
 - [acid.nvim](https://github.com/clojure-vim/acid.nvim): Asynchronous nREPL client for Clojure development
-- [aerojump.nvim](https://github.com/philip-karlsson/aerojump.nvim): Filter as you type searcher/jumper with fuzzy matching. 
+- [aerojump.nvim](https://github.com/ripxorip/aerojump.nvim): Filter as you type searcher/jumper with fuzzy matching. 
 - [alchemist.vim](https://github.com/slashmili/alchemist.vim): Elixir integration
 - [axe](https://github.com/macthecadillac/axe): Asynchronous executor for predefined custom commands
-- [bolt.nvim](https://github.com/philip-karlsson/bolt.nvim): Filter as you type file manager with fuzzy matching and ripgrep integration
+- [bolt.nvim](https://github.com/ripxorip/bolt.nvim): Filter as you type file manager with fuzzy matching and ripgrep integration
 - [buildit.nvim](https://github.com/wbthomason/buildit.nvim): An async project builder, tries to detect the right builder for your project
 - [chromatica.nvim](https://github.com/arakashic/chromatica.nvim): Clang-based syntax highlighting
 - [coc.nvim](https://github.com/neoclide/coc.nvim): Completion and other language server support for Neovim, featured as VSCode
