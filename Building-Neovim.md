@@ -194,7 +194,7 @@ General requirements (see [#1469](https://github.com/neovim/neovim/issues/1469#i
 
 - Clang or GCC version `4.4+`
 - CMake version `2.8.12+`, built with TLS/SSL support
-  - Optional: there is a [Python package](https://pypi.org/project/cmake/) providing the latest CMake: `pip install cmake`
+  - Optional: to get the latest CMake there are [installers](https://github.com/Kitware/CMake/releases) or a [Python package](https://pypi.org/project/cmake/) (`pip install cmake`)
 
 Platform-specific requirements are listed below.
 
