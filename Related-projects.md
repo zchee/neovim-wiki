@@ -64,6 +64,7 @@ _Note: Some of these projects are **experimental/unstable**._
 | Julia       | [bfredl/Neovim.jl](https://github.com/bfredl/Neovim.jl)                              |
 | Lua         | [neovim/lua-client](https://github.com/neovim/lua-client)                            |
 | Node.js     | [neovim/node-client](https://github.com/neovim/node-client)                          |
+| Node.js     | [neoclide/neovim](https://github.com/neoclide/neovim)                                |
 | Perl        | [yanick/Neovim-RPC](https://github.com/yanick/Neovim-RPC)                            |
 | Python      | [neovim/pynvim](https://github.com/neovim/pynvim)                                    |
 | R           | [jalvesaq/Nvim-R](https://github.com/jalvesaq/Nvim-R)                                |
