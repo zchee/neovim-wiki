@@ -180,7 +180,8 @@ This is software either targeted at Neovim or with support for it.
 Color schemes make use of Neovim-specific features, e.g. highlight groups or terminal emulator colors.
 
 - [falcon](https://github.com/fenetikm/falcon)
-- [flatcolor](https://github.com/MaxSt/FlatColor)
+- [flatcolor](https://github.com/MaxSt/FlatColor) **Deprecated use challenger-deep instead**
+- [challenger-deep](https://github.com/challenger-deep-theme/vim)
 - [janah](https://github.com/mhinz/vim-janah)
 - [NeoSolarized](https://github.com/iCyMind/NeoSolarized)
 - [oceanic-next](https://github.com/mhartington/oceanic-next)
