@@ -115,6 +115,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [neovim-hackernews](https://github.com/dpzmick/neovim-hackernews): Display Hacker News (HN) stories inside Neovim
 - [neovim-ranger](https://github.com/airodactyl/neovim-ranger): File manager with Vi key bindings
 - [neovim-vifm](https://github.com/vifm/neovim-vifm): Integration between Vifm (Vi file manager) and Neovim
+- [nim.nvim](https://github.com/alaviss/nim.nvim): Nim language support
 - [nlanguagetool.nvim](https://github.com/fmoralesc/nlanguagetool.nvim): Integration with LanguageTool, a style and grammar checker for natural languages
 - [nuake](https://github.com/Lenovsky/nuake): Quake-style terminal panel for Neovim
 - [nvim-completion-manager](https://github.com/roxma/nvim-completion-manager) (deprecated): Fast, extensible, asynchronous completion framework
