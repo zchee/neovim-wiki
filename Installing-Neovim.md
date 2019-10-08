@@ -120,6 +120,16 @@ Neovim is available through [EPEL (Extra Packages for Enterprise Linux)](https:/
     yum install -y neovim python3-neovim
     # you might need python2-neovim as well on older Fedora releases
 
+### Clear Linux OS
+
+NeoVim is available through the [neovim bundle](https://github.com/clearlinux/clr-bundles/blob/master/bundles/neovim)
+
+    sudo swupd bundle-add neovim
+
+Python (`:python`) support is available if the [python-basic bundle](https://github.com/clearlinux/clr-bundles/blob/master/bundles/python-basic) is installed.
+
+    sudo swupd bundle-add python-basic
+
 ### CRUX
 
 A CRUX port is available under [`6c37/neovim`](https://github.com/6c37/crux-ports), along with ports for other dependencies of Neovim.
