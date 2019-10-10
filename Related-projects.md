@@ -94,6 +94,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [Extract](https://github.com/cyansprite/Extract): Puts and yanks to a list with normal, visual swapping, and insert list/register completion
 - [far.vim](https://github.com/brooth/far.vim): Search and replace
 - [Floobits](https://github.com/Floobits/floobits-neovim): Floobits plugin
+- [FlyGrep.vim](https://github.com/wsdjeg/FlyGrep.vim): Asynchronously fly grep in vim
 - [fzf-gitignore](https://github.com/fszymanski/fzf-gitignore): A fzf (command-line fuzzy finder) interface for creating .gitignore files using the gitignore.io API
 - [gen_tags.vim](https://github.com/jsfaint/gen_tags.vim): Async plugin for Vim and Neovim to ease the use of Ctags/gTags
 - [haskell-vim](https://github.com/neovimhaskell/haskell-vim): Custom syntax highlighting and indentation Vimscripts for Haskell and Cabal
@@ -146,6 +147,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [vim-gitgutter](https://github.com/airblade/vim-gitgutter): Shows a git diff in the gutter (sign column) and stages/undos hunks
 - [vim-go](https://github.com/fatih/vim-go): See [PR 607](https://github.com/fatih/vim-go/pull/607) for feature list
 - [vim-grepper](https://github.com/mhinz/vim-grepper): Use your favorite grep tool (ag, ack, git grep, ripgrep, pt, sift, findstr, grep) to start an asynchronous search
+- [vim-im-select](https://github.com/brglng/vim-im-select): Improve Vim/Neovim experience with input methods
 - [vim-javacomplete2](https://github.com/artur-shaik/vim-javacomplete2): An omni-completion plugin for Java
 - [vim-man](https://github.com/bruno-/vim-man): View and grep man pages in Vim
 - [vim-markdown-composer](https://github.com/euclio/vim-markdown-composer): Asynchronous Markdown preview
