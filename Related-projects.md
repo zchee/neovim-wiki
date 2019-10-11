@@ -84,6 +84,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [alchemist.vim](https://github.com/slashmili/alchemist.vim): Elixir integration
 - [axe](https://github.com/macthecadillac/axe): Asynchronous executor for predefined custom commands
 - [bolt.nvim](https://github.com/ripxorip/bolt.nvim): Filter as you type file manager with fuzzy matching and ripgrep integration
+- [LeaderF](https://github.com/Yggdroot/LeaderF): An asynchronous fuzzy finder which is used to quickly locate files, buffers, mrus, tags, gtags, etc. in large project.
 - [buildit.nvim](https://github.com/wbthomason/buildit.nvim): An async project builder, tries to detect the right builder for your project
 - [chromatica.nvim](https://github.com/arakashic/chromatica.nvim): Clang-based syntax highlighting
 - [coc.nvim](https://github.com/neoclide/coc.nvim): Completion and other language server support for Neovim, featured as VSCode
