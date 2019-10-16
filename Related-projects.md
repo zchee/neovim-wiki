@@ -41,7 +41,7 @@ _Note: Some of these projects are **experimental/unstable**._
 | Windows/Linux    | [meatich/Viy](https://github.com/meatich/Viy)                                 | inactive |
 
 
-<sub>Note: Activation only takes into account the update of the codebase, excluding README, etc. </sub>
+<sub>Note: Activity only takes into account the update of the codebase, excluding README, etc. </sub>
 
 ### API clients
 
