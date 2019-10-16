@@ -4,7 +4,7 @@ _Note: Some of these projects are **experimental/unstable**._
 
 ### GUI
 
-| Platform         | Project                                                                       | Activation |
+| Platform         | Project                                                                       | Activity |
 |------------------|-------------------------------------------------------------------------------| :-: |
 | Atom Integration | [carlosdcastillo/vim-mode](https://github.com/carlosdcastillo/vim-mode)       | abandoned |
 | Avalonia         | [yatli/fvim](https://github.com/yatli/fvim)                                   | |
