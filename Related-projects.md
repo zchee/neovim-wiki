@@ -55,6 +55,7 @@ _Note: Some of these projects are **experimental/unstable**._
 | Clojure     | [jebberjeb/neovim-client](https://github.com/jebberjeb/neovim-client)                |
 | Common Lisp | [adolenc/cl-neovim](https://github.com/adolenc/cl-neovim)                            |
 | D           | [viniarck/nvimhost-d](https://github.com/viniarck/nvimhost-d)                        |
+| Dart        | [smolck/dart-nvim-api](https://github.com/smolck/dart-nvim-api)
 | Elixir      | [awetzel/neovim-elixir](https://github.com/awetzel/neovim-elixir)                    |
 | Filesystem  | [fmoralesc/nvimfs](https://github.com/fmoralesc/nvimfs)                              |
 | Go          | [neovim/go-client](https://github.com/neovim/go-client)                              |
