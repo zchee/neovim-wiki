@@ -1,4 +1,4 @@
-You can use [doxygen](http://www.stack.nl/~dimitri/doxygen/) to create callgraphs of all the functions in neovim as well as annotated source code with cross references (currently neovim does not use any doxygen comments so that is all you can get out of it for now).
+You can use [doxygen](http://doxygen.nl) to create callgraphs of all the functions in neovim as well as annotated source code with cross references (currently neovim does not use any doxygen comments so that is all you can get out of it for now).
 
 In order to do that you will have to run the doxygen command with a an appropriate configuration file in the neovim root directory like so
 
