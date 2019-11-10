@@ -20,6 +20,7 @@ _Note: Some of these projects are **experimental/unstable**._
 | Electron UI      | [veonim](https://github.com/veonim/veonim)                                    | |
 | Electron UI      | [VV](https://github.com/igorgladkoborodov/vv)                                 | |
 | VSCode           | [VSCodeVim](https://github.com/VSCodeVim/Vim)                                 | |
+| VSCode           | [Neo Vim](https://github.com/asvetliakov/vscode-neovim)                       | |
 | gnome-terminal   | [neovim-gnome-terminal-wrapper](https://github.com/fmoralesc/neovim-gnome-terminal-wrapper) |
 | Go/Qt            | [akiyosi/gonvim](https://github.com/akiyosi/gonvim)                           | |
 | Go/Qt            | [dzhou121/gonvim](https://github.com/dzhou121/gonvim)                         | abandoned |
