@@ -510,6 +510,7 @@ See also:
 - [Why Lua](https://web.archive.org/web/20150219224654/http://blog.datamules.com/blog/2012/01/30/why-lua/)
 - [Redis and scripting](http://oldblog.antirez.com/post/redis-and-scripting.html)
 - [The Design of Lua](https://cacm.acm.org/magazines/2018/11/232214-a-look-at-the-design-of-lua/fulltext)
+- [Discussion of JavaScript vs Lua](https://github.com/vim/vim/pull/5198#issuecomment-554693754)
 
 ### Why Lua 5.1 instead of Lua 5.3+?
 
