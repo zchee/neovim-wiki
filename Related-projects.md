@@ -158,6 +158,7 @@ The following plugins take advantage of specific Neovim features, e.g. `jobstart
 - [vim-netranger](https://github.com/ipod825/vim-netranger): Ranger-like system/cloud storage explorer
 - [vim-pandoc](https://github.com/vim-pandoc/vim-pandoc): Integrate with the Pandoc document converter and work with documents written in its Markdown variant
 - [vim-plug](https://github.com/junegunn/vim-plug): Plugin manager
+- [vim-primary-terminal](https://github.com/bronzehedwick/vim-primary-terminal): Simple terminal management
 - [vim-rainbows](https://github.com/nfischer/vim-rainbows): Runtime files for the Rainbow programming language
 - [vim-signify](https://github.com/mhinz/vim-signify): Uses the sign column to indicate added, modified and removed lines in a file that is managed by a version control system (VCS)
 - [vim-test](https://github.com/janko-m/vim-test): Wrapper for running tests on different granularities
