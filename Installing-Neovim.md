@@ -98,29 +98,6 @@ The [Releases](https://github.com/neovim/neovim/releases) page provides an [AppI
     chmod u+x nvim.appimage
     ./nvim.appimage
 
-### Snap
-
-neovim is available within the snap store, both nightly and stable builds. Commit builds are available on `transfer.sh`.
-
-**Stable Builds**
-
-```sh
-sudo snap install --candidate nvim --classic
-```
-
-**Nightly Builds**
-
-```sh
-sudo snap install --edge nvim --classic
-```
-
-**Commit Builds**
-
-Peruse the master branch [build log](https://travis-ci.org/neovim/neovim/branches?utm_medium=notification&utm_source=github_status), near the bottom you will find a link to `transfer.sh`, download this link. Install the recent download.
-
-```sh
-sudo snap install --classic nvim_v0.5.0-177-gb7651b107_amd64.snap --dangerous
-```
  
 ### Arch Linux
 
@@ -272,6 +249,30 @@ Neovim can be installed using the Sorcery package manager:
 Neovim can be installed using the default package manager in Solus (eopkg):
 
     sudo eopkg install neovim
+
+### Snap
+
+Neovim nightly and stable are available on the snap store. Commit builds are available on [transfer.sh](https://transfer.sh/).
+
+**Stable Builds**
+
+```sh
+sudo snap install --candidate nvim --classic
+```
+
+**Nightly Builds**
+
+```sh
+sudo snap install --edge nvim --classic
+```
+
+**Commit Builds**
+
+Browse the master branch [build log](https://travis-ci.org/neovim/neovim/branches?utm_medium=notification&utm_source=github_status), near the bottom you will find a link to `transfer.sh`, download this link. Install the recent download. Example:
+
+```sh
+sudo snap install --classic nvim_v0.5.0-177-gb7651b107_amd64.snap --dangerous
+```
 
 ### Ubuntu
 **Since 18.04**
