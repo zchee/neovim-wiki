@@ -81,8 +81,6 @@ Or install the development version of Nvim:
 
     brew install --HEAD neovim
 
-(Catalina only: LuaJIT 2.0.5 is broken on macOS 10.15; install `brew install luajit --HEAD` and link `/usr/local/bin/luajit-2.1.0-beta` to `luajit` before installing neovim.)
-
 ### [Macports](https://www.macports.org/)
 
     sudo port selfupdate
