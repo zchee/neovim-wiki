@@ -75,7 +75,7 @@ _Note: Some of these projects are **experimental/unstable**._
 | Rust        | [oakes/neovim-rs](https://github.com/oakes/neovim-rs) [archived]                     |
 | Rust        | [daa84/neovim-lib](https://github.com/daa84/neovim-lib)                              |
 | Scala       | [viniarck/nvimhost-scala](https://github.com/viniarck/nvimhost-scala)                |
-| Swift/Cocoa | [SwiftNeoVim](https://github.com/qvacua/vimr/wiki/SwiftNeoVim-Framework) (part of qvacua/vimr) |
+| Swift/Cocoa | [NvimView](https://github.com/qvacua/vimr/tree/master/NvimView) (part of qvacua/vimr) |
 
 ### Plugins
 
