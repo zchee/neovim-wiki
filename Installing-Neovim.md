@@ -250,7 +250,7 @@ Neovim can be installed using the default package manager in Solus (eopkg):
 
 ### Snap
 
-Neovim nightly and stable are available on the snap store. Commit builds are available on [transfer.sh](https://transfer.sh/).
+Neovim nightly and stable are available on the [snap store](https://snapcraft.io/nvim).
 
 **Stable Builds**
 
@@ -262,14 +262,6 @@ sudo snap install --candidate nvim --classic
 
 ```sh
 sudo snap install --edge nvim --classic
-```
-
-**Commit Builds**
-
-Browse the master branch [build log](https://travis-ci.org/neovim/neovim/branches?utm_medium=notification&utm_source=github_status), near the bottom you will find a link to `transfer.sh`, download this link. Install the recent download. Example:
-
-```sh
-sudo snap install --classic nvim_v0.5.0-177-gb7651b107_amd64.snap --dangerous
 ```
 
 ### Ubuntu
