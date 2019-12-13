@@ -378,7 +378,7 @@ The **full backtrace** is most useful, send us the `bt.txt` file:
 
 ### Backtrace (macOS / OSX)
 
-If `nvim` crashes on macOS, you can see the backtrace in Console.app (under "User Diagnostic Reports").
+If `nvim` crashes, you can see the backtrace in Console.app (under "Crash Reports" or "User Diagnostic Reports" for older macOS versions).
 
     open -a Console
 
