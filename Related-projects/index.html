@@ -1,0 +1,1231 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Neovim Wiki">
+      
+      
+        <link rel="canonical" href="https://zchee.github.io/neovim-wiki/Related-projects/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>Related-projects - Neovim Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-89201129-1", "https://zchee.github.io/neovim-wiki/")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#gui" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://zchee.github.io/neovim-wiki/" title="Neovim Wiki" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Neovim Wiki
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Related-projects
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/zchee/neovim-wiki/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    zchee/neovim-wiki
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://zchee.github.io/neovim-wiki/" title="Neovim Wiki" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Neovim Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/zchee/neovim-wiki/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    zchee/neovim-wiki
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Home/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Architectural-musing-and-ideas/" title="Architectural-musing-and-ideas" class="md-nav__link">
+      Architectural-musing-and-ideas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Building-Neovim/" title="Building-Neovim" class="md-nav__link">
+      Building-Neovim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../C-programming/" title="C-programming" class="md-nav__link">
+      C-programming
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../C-Refactorings-and-Code-Smells-Catalog/" title="C-Refactorings-and-Code-Smells-Catalog" class="md-nav__link">
+      C-Refactorings-and-Code-Smells-Catalog
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Code-overview/" title="Code-overview" class="md-nav__link">
+      Code-overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Code-review-checklist/" title="Code-review-checklist" class="md-nav__link">
+      Code-review-checklist
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Contributing/" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Deps/" title="Deps" class="md-nav__link">
+      Deps
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Development-tips/" title="Development-tips" class="md-nav__link">
+      Development-tips
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../FAQ/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Following-HEAD/" title="Following-HEAD" class="md-nav__link">
+      Following-HEAD
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Generate-callgraphs-with-Doxygen/" title="Generate-callgraphs-with-Doxygen" class="md-nav__link">
+      Generate-callgraphs-with-Doxygen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../GSoC-2018-Ideas/" title="GSoC-2018-Ideas" class="md-nav__link">
+      GSoC-2018-Ideas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../GSoC-2019-Ideas/" title="GSoC-2019-Ideas" class="md-nav__link">
+      GSoC-2019-Ideas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../GSoC/" title="GSoC" class="md-nav__link">
+      GSoC
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Installing-Neovim/" title="Installing-Neovim" class="md-nav__link">
+      Installing-Neovim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Integer-types-refactoring-guidelines/" title="Integer-types-refactoring-guidelines" class="md-nav__link">
+      Integer-types-refactoring-guidelines
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../List-management-in-Neovim/" title="List-management-in-Neovim" class="md-nav__link">
+      List-management-in-Neovim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Merging-patches-from-upstream-Vim/" title="Merging-patches-from-upstream-Vim" class="md-nav__link">
+      Merging-patches-from-upstream-Vim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Plugin-UI-architecture/" title="Plugin-UI-architecture" class="md-nav__link">
+      Plugin-UI-architecture
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Progress/" title="Progress" class="md-nav__link">
+      Progress
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Refactor-Vim-into-a-library/" title="Refactor-Vim-into-a-library" class="md-nav__link">
+      Refactor-Vim-into-a-library
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Refactoring/" title="Refactoring" class="md-nav__link">
+      Refactoring
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Related-projects
+      </label>
+    
+    <a href="./" title="Related-projects" class="md-nav__link md-nav__link--active">
+      Related-projects
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gui" class="md-nav__link">
+    GUI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-clients" class="md-nav__link">
+    API clients
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plugins" class="md-nav__link">
+    Plugins
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#non-plugin-software" class="md-nav__link">
+    Non-plugin software
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#colorschemes" class="md-nav__link">
+    Colorschemes
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Troubleshooting/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../UI-architecture/" title="UI-architecture" class="md-nav__link">
+      UI-architecture
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Unit-tests/" title="Unit-tests" class="md-nav__link">
+      Unit-tests
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gui" class="md-nav__link">
+    GUI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-clients" class="md-nav__link">
+    API clients
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plugins" class="md-nav__link">
+    Plugins
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#non-plugin-software" class="md-nav__link">
+    Non-plugin software
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#colorschemes" class="md-nav__link">
+    Colorschemes
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/zchee/neovim-wiki/edit/master/docs/Related-projects.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Related-projects</h1>
+                
+                <p>If you're working on a Neovim-related project, include it (alphabetically) below!</p>
+<p><em>Note: Some of these projects are <strong>experimental/unstable</strong>.</em></p>
+<h3 id="gui">GUI</h3>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Project</th>
+<th align="center">Activity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Atom Integration</td>
+<td><a href="https://github.com/carlosdcastillo/vim-mode">carlosdcastillo/vim-mode</a></td>
+<td align="center">abandoned</td>
+</tr>
+<tr>
+<td>Avalonia</td>
+<td><a href="https://github.com/yatli/fvim">yatli/fvim</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Browsers</td>
+<td><a href="https://github.com/glacambre/firenvim">Firenvim</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>C++/Python</td>
+<td><a href="https://github.com/meatich/NeoSFML">meatich/NeoSFML</a></td>
+<td align="center">inactive</td>
+</tr>
+<tr>
+<td>C++/SDL2</td>
+<td><a href="https://github.com/etorth/libnvc">etorth/libnvc</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>curses/Python</td>
+<td><a href="https://github.com/mvilim/neovim-pytc-example">mvilim/neovim-pytc-example</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>EFL</td>
+<td><a href="https://github.com/jeanguyomarch/eovim/">Eovim</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Electron UI</td>
+<td><a href="https://github.com/coolwanglu/neovim-e">coolwanglu/neovim-e</a></td>
+<td align="center">inactive</td>
+</tr>
+<tr>
+<td>Electron UI</td>
+<td><a href="https://github.com/rhysd/NyaoVim">rhysd/NyaoVim</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Revery UI</td>
+<td><a href="https://github.com/onivim/oni2">onivim/oni2</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Electron UI</td>
+<td><a href="https://github.com/onivim/oni">onivim/oni</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Electron UI</td>
+<td><a href="https://github.com/veonim/veonim">veonim</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Electron UI</td>
+<td><a href="https://github.com/igorgladkoborodov/vv">VV</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>VSCode</td>
+<td><a href="https://github.com/VSCodeVim/Vim">VSCodeVim</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>VSCode</td>
+<td><a href="https://github.com/asvetliakov/vscode-neovim">Neo Vim</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>gnome-terminal</td>
+<td><a href="https://github.com/fmoralesc/neovim-gnome-terminal-wrapper">neovim-gnome-terminal-wrapper</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Go/Qt</td>
+<td><a href="https://github.com/akiyosi/gonvim">akiyosi/gonvim</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Go/Qt</td>
+<td><a href="https://github.com/dzhou121/gonvim">dzhou121/gonvim</a></td>
+<td align="center">abandoned</td>
+</tr>
+<tr>
+<td>GTK/Python UI</td>
+<td><a href="https://github.com/neovim/python-gui">neovim/python-gui</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>GTK/Python UI</td>
+<td><a href="https://github.com/rliang/nvim-pygtk3">rliang/nvim-pygtk3</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>GTK/Rust UI</td>
+<td><a href="https://github.com/daa84/neovim-gtk">daa84/neovim-gtk</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>GTK/Rust UI</td>
+<td><a href="https://github.com/vhakulinen/gnvim">GNvim</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>JavaFX</td>
+<td><a href="https://github.com/jebberjeb/javafx-neovimpane">jebberjeb/javafx-neovimpane</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Konsole</td>
+<td><a href="https://github.com/harish2704/neovim-konsole">harish2704/neovim-konsole</a></td>
+<td align="center">inactive</td>
+</tr>
+<tr>
+<td>macOS</td>
+<td><a href="https://github.com/qvacua/vimr">qvacua/vimr</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>macOS</td>
+<td><a href="https://github.com/rogual/neovim-dot-app">rogual/neovim-dot-app</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>mac OS UI</td>
+<td><a href="http://dinvim.com">DinVim Vim for Mac</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Terminal Wrapper</td>
+<td><a href="https://github.com/beeender/glrnvim">glrnvim</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Qt 5</td>
+<td><a href="https://github.com/equalsraf/neovim-qt">equalsraf/neovim-qt</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Qt Creator</td>
+<td><a href="https://github.com/sassanh/qnvim">sassanh/qnvim</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Rust IDE</td>
+<td><a href="https://github.com/oakes/SolidOak">oakes/SolidOak</a></td>
+<td align="center">archived</td>
+</tr>
+<tr>
+<td>Sublime Text</td>
+<td><a href="https://github.com/lunixbochs/actualvim">lunixbochs/actualvim</a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Tk/Python UI</td>
+<td><a href="https://github.com/timeyyy/pytknvim">timeyyy/pytknvim</a></td>
+<td align="center">inactive</td>
+</tr>
+<tr>
+<td>Windows/Linux</td>
+<td><a href="https://github.com/meatich/Viy">meatich/Viy</a></td>
+<td align="center">inactive</td>
+</tr>
+</tbody>
+</table>
+<p><sub>Note: Activity only takes into account the update of the codebase, excluding README, etc. </sub></p>
+<h3 id="api-clients">API clients</h3>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Project</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C#</td>
+<td><a href="https://github.com/neovim/nvim.net">neovim/nvim.net</a></td>
+</tr>
+<tr>
+<td>C++</td>
+<td><a href="https://github.com/DaikiMaekawa/neovim.cpp">DaikiMaekawa/neovim.cpp</a></td>
+</tr>
+<tr>
+<td>C++/Qt5</td>
+<td><a href="https://github.com/equalsraf/neovim-qt">equalsraf/neovim-qt</a></td>
+</tr>
+<tr>
+<td>C++/ncurses</td>
+<td><a href="https://github.com/splinterofchaos/neovim-cpp-client-experiment">SoC/neovim-client</a></td>
+</tr>
+<tr>
+<td>C++/Magnum</td>
+<td><a href="https://github.com/Squareys/magnum-neovim-api">Squareys/magnum-neovim-api</a></td>
+</tr>
+<tr>
+<td>Clojure</td>
+<td><a href="https://github.com/jebberjeb/neovim-client">jebberjeb/neovim-client</a></td>
+</tr>
+<tr>
+<td>Common Lisp</td>
+<td><a href="https://github.com/adolenc/cl-neovim">adolenc/cl-neovim</a></td>
+</tr>
+<tr>
+<td>D</td>
+<td><a href="https://github.com/viniarck/nvimhost-d">viniarck/nvimhost-d</a></td>
+</tr>
+<tr>
+<td>Dart</td>
+<td><a href="https://github.com/smolck/dart-nvim-api">smolck/dart-nvim-api</a></td>
+</tr>
+<tr>
+<td>Elixir</td>
+<td><a href="https://github.com/awetzel/neovim-elixir">awetzel/neovim-elixir</a></td>
+</tr>
+<tr>
+<td>Filesystem</td>
+<td><a href="https://github.com/fmoralesc/nvimfs">fmoralesc/nvimfs</a></td>
+</tr>
+<tr>
+<td>Go</td>
+<td><a href="https://github.com/neovim/go-client">neovim/go-client</a></td>
+</tr>
+<tr>
+<td>Haskell</td>
+<td><a href="https://github.com/neovimhaskell/nvim-hs">neovimhaskell/nvim-hs</a></td>
+</tr>
+<tr>
+<td>Java</td>
+<td><a href="https://github.com/fdinoff/neovim-java-client">fdinoff/neovim-java-client</a></td>
+</tr>
+<tr>
+<td>Java</td>
+<td><a href="https://github.com/esensar/neovim-java">esensar/neovim-java</a></td>
+</tr>
+<tr>
+<td>Julia</td>
+<td><a href="https://github.com/bfredl/Neovim.jl">bfredl/Neovim.jl</a></td>
+</tr>
+<tr>
+<td>Lua</td>
+<td><a href="https://github.com/neovim/lua-client">neovim/lua-client</a></td>
+</tr>
+<tr>
+<td>Node.js</td>
+<td><a href="https://github.com/neovim/node-client">neovim/node-client</a></td>
+</tr>
+<tr>
+<td>Node.js</td>
+<td><a href="https://github.com/neoclide/neovim">neoclide/neovim</a></td>
+</tr>
+<tr>
+<td>OCaml</td>
+<td><a href="https://github.com/janestreet/vcaml">janestreet/vcaml</a></td>
+</tr>
+<tr>
+<td>Perl</td>
+<td><a href="https://github.com/yanick/Neovim-RPC">yanick/Neovim-RPC</a></td>
+</tr>
+<tr>
+<td>Python</td>
+<td><a href="https://github.com/neovim/pynvim">neovim/pynvim</a></td>
+</tr>
+<tr>
+<td>R</td>
+<td><a href="https://github.com/jalvesaq/Nvim-R">jalvesaq/Nvim-R</a></td>
+</tr>
+<tr>
+<td>Racket</td>
+<td><a href="https://gitlab.com/HiPhish/neovim.rkt">HiPhish/neovim.rkt</a></td>
+</tr>
+<tr>
+<td>Ruby</td>
+<td><a href="https://github.com/neovim/neovim-ruby">neovim/neovim-ruby</a></td>
+</tr>
+<tr>
+<td>Rust</td>
+<td><a href="https://github.com/oakes/neovim-rs">oakes/neovim-rs</a> [archived]</td>
+</tr>
+<tr>
+<td>Rust</td>
+<td><a href="https://github.com/daa84/neovim-lib">daa84/neovim-lib</a></td>
+</tr>
+<tr>
+<td>Scala</td>
+<td><a href="https://github.com/viniarck/nvimhost-scala">viniarck/nvimhost-scala</a></td>
+</tr>
+<tr>
+<td>Swift/Cocoa</td>
+<td><a href="https://github.com/qvacua/vimr/tree/master/NvimView">NvimView</a> (part of qvacua/vimr)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="plugins">Plugins</h3>
+<p>The following plugins take advantage of specific Neovim features, e.g. <code>jobstart()</code>, <code>:terminal</code> or its remote plugin mechanism.</p>
+<ul>
+<li><a href="https://github.com/clojure-vim/acid.nvim">acid.nvim</a>: Asynchronous nREPL client for Clojure development</li>
+<li><a href="https://github.com/ripxorip/aerojump.nvim">aerojump.nvim</a>: Filter as you type searcher/jumper with fuzzy matching. </li>
+<li><a href="https://github.com/slashmili/alchemist.vim">alchemist.vim</a>: Elixir integration</li>
+<li><a href="https://github.com/macthecadillac/axe">axe</a>: Asynchronous executor for predefined custom commands</li>
+<li><a href="https://github.com/ripxorip/bolt.nvim">bolt.nvim</a>: Filter as you type file manager with fuzzy matching and ripgrep integration</li>
+<li><a href="https://github.com/Yggdroot/LeaderF">LeaderF</a>: An asynchronous fuzzy finder which is used to quickly locate files, buffers, mrus, tags, gtags, etc. in large project.</li>
+<li><a href="https://github.com/wbthomason/buildit.nvim">buildit.nvim</a>: An async project builder, tries to detect the right builder for your project</li>
+<li><a href="https://github.com/arakashic/chromatica.nvim">chromatica.nvim</a>: Clang-based syntax highlighting</li>
+<li><a href="https://github.com/neoclide/coc.nvim">coc.nvim</a>: Completion and other language server support for Neovim, featured as VSCode</li>
+<li><a href="https://github.com/Olical/conjure">Conjure</a>: Clojure and ClojureScript tooling for Neovim over a socket prepl connection</li>
+<li><a href="https://github.com/Shougo/dein.vim">dein.vim</a>: Plugin manager</li>
+<li><a href="https://github.com/Shougo/denite.nvim">denite.nvim</a>: Dark powered plugin for Neovim/Vim to unite all interfaces</li>
+<li><a href="https://github.com/Shougo/deoplete.nvim">deoplete.nvim</a>: Dark powered asynchronous completion framework</li>
+<li><a href="https://github.com/cyansprite/Extract">Extract</a>: Puts and yanks to a list with normal, visual swapping, and insert list/register completion</li>
+<li><a href="https://github.com/brooth/far.vim">far.vim</a>: Search and replace</li>
+<li><a href="https://github.com/Floobits/floobits-neovim">Floobits</a>: Floobits plugin</li>
+<li><a href="https://github.com/wsdjeg/FlyGrep.vim">FlyGrep.vim</a>: Asynchronously fly grep in vim</li>
+<li><a href="https://github.com/fszymanski/fzf-gitignore">fzf-gitignore</a>: A fzf (command-line fuzzy finder) interface for creating .gitignore files using the gitignore.io API</li>
+<li><a href="https://github.com/jsfaint/gen_tags.vim">gen_tags.vim</a>: Async plugin for Vim and Neovim to ease the use of Ctags/gTags</li>
+<li><a href="https://github.com/neovimhaskell/haskell-vim">haskell-vim</a>: Custom syntax highlighting and indentation Vimscripts for Haskell and Cabal</li>
+<li><a href="https://github.com/haifengkao/InsertLeftBracket.nvim">InsertLeftBracket.nvim</a>: Auto-complete brackets for Objective-C files</li>
+<li><a href="https://github.com/hkupty/iron.nvim">iron.nvim</a>: REPL management</li>
+<li><a href="https://github.com/autozimu/LanguageClient-neovim">LanguageClient-neovim</a>: Language Server Protocol (LSP) support for Neovim</li>
+<li><a href="https://github.com/critiqjo/lldb.nvim">lldb.nvim</a>: Debugger integration with a focus on ease-of-use</li>
+<li><a href="https://github.com/iamcco/markdown-preview.nvim">markdown-preview.nvim</a>: Preview Markdown files on your browser with synchronous scrolling; flexible configuration using Neovim's RPC API</li>
+<li><a href="https://github.com/zenbro/mirror.vim">mirror.vim</a>: Efficient way to edit remote files on multiple environments</li>
+<li><a href="https://github.com/SidOfc/mkdx">mkdx</a>: Vim plugin that adds some nice extras for working with Markdown documents</li>
+<li><a href="https://github.com/ncm2/ncm2">ncm2</a>: Slim, fast, and hackable completion framework for Neovim (fork of nvim-completion-manager)</li>
+<li><a href="https://github.com/huawenyu/neogdb.vim">neogdb.vim</a>: Vim GDB front-end for neovim written in python/vimscript</li>
+<li><a href="https://github.com/tracyone/neomake-multiprocess">neomake-multiprocess</a>: Vim plugin for running multiple process asynchronously based on Neomake</li>
+<li><a href="https://github.com/neomake/neomake">neomake</a>: Asynchronous linting and make framework</li>
+<li><a href="https://github.com/coachshea/neo-pipe">neopipe</a>: Send lines of text to an external command and display output in a scratch buffer</li>
+<li><a href="https://github.com/c0r73x/neotags.nvim">neotags.nvim</a>: Plugin that generates and highlights Ctags</li>
+<li><a href="https://github.com/kassio/neoterm">neoterm</a>: Wrapper of some Neovim's <code>:terminal</code> functions</li>
+<li><a href="https://github.com/donRaphaco/neotex">neotex</a>: Latex live preview</li>
+<li><a href="https://github.com/dpzmick/neovim-hackernews">neovim-hackernews</a>: Display Hacker News (HN) stories inside Neovim</li>
+<li><a href="https://github.com/airodactyl/neovim-ranger">neovim-ranger</a>: File manager with Vi key bindings</li>
+<li><a href="https://github.com/vifm/neovim-vifm">neovim-vifm</a>: Integration between Vifm (Vi file manager) and Neovim</li>
+<li><a href="https://github.com/alaviss/nim.nvim">nim.nvim</a>: Nim language support</li>
+<li><a href="https://github.com/fmoralesc/nlanguagetool.nvim">nlanguagetool.nvim</a>: Integration with LanguageTool, a style and grammar checker for natural languages</li>
+<li><a href="https://github.com/Lenovsky/nuake">nuake</a>: Quake-style terminal panel for Neovim</li>
+<li><a href="https://github.com/roxma/nvim-completion-manager">nvim-completion-manager</a> (deprecated): Fast, extensible, asynchronous completion framework</li>
+<li><a href="https://github.com/brettanomyces/nvim-editcommand">nvim-editcommand</a>: Edit your current shell command inside a scratch buffer</li>
+<li><a href="https://github.com/sakhnik/nvim-gdb">nvim-gdb</a>: Neovim thin wrapper for GDB, LLDB and PDB written in Moonscript/Lua</li>
+<li><a href="https://github.com/zchee/nvim-go">nvim-go</a>: Go development plugin for Neovim written in pure Go</li>
+<li><a href="https://github.com/bfredl/nvim-ipy">nvim-ipy</a>: IPython/Jupyter integration</li>
+<li><a href="https://github.com/bfredl/nvim-luadev">nvim-luadev</a>: REPL for developing lua plugins</li>
+<li><a href="https://github.com/bfredl/nvim-miniyank">nvim-miniyank</a>: Simple yankring (shared across instances)</li>
+<li><a href="https://github.com/svermeulen/nvim-marksman">nvim-marksman</a> - A file finder that minimizes the amount of keystrokes needed to go to a file</li>
+<li><a href="https://github.com/svermeulen/nvim-moonmaker">nvim-moonmaker</a>: Adds plugin support for MoonScript files in the same way the built-in support for Lua/Python files works (by automatically compiling MoonScript files to Lua)</li>
+<li><a href="https://github.com/teto/nvim-palette">nvim-palette</a>: Fuzzy search of settings</li>
+<li><a href="https://github.com/jalvesaq/Nvim-R">Nvim-R</a>: Plugin to work with R</li>
+<li><a href="https://github.com/brettanomyces/nvim-terminus">nvim-terminus</a>: Edit your current command in a scratch buffer</li>
+<li><a href="https://github.com/mhartington/nvim-typescript">nvim-typescript</a>: Asynchronous typescript tooling and completion </li>
+<li><a href="https://github.com/KillTheMule/nvimpam">nvimpam</a>: Provides async folding for Pam-Crash files</li>
+<li><a href="https://github.com/hkupty/nvimux">nvimux</a>: Neovim as multiplexer with tmux keybindings</li>
+<li><a href="https://github.com/timeyyy/orchestra.nvim">orchestra.nvim</a>: Bind sound effects to different actions</li>
+<li><a href="https://github.com/tek/proteome.nvim">proteome</a>: Assists in working on multiple projects in a single Neovim instance</li>
+<li><a href="https://github.com/numirias/semshi">semshi</a>: Semantic highlighting for Python</li>
+<li><a href="https://github.com/rliang/termedit.nvim">termedit.nvim</a> Sets the Neovim host instance as <code>$EDITOR</code></li>
+<li><a href="https://github.com/zgpio/tree.nvim">tree.nvim</a> Neovim file-explorer powered by C++</li>
+<li><a href="https://github.com/pgdouyon/vim-accio">vim-accio</a>: Asynchronously summons build/compiler/linter output to your screen by wrapping the :compiler and :make commands</li>
+<li><a href="https://github.com/vim-airline/vim-airline">vim-airline</a>: See <a href="https://github.com/vim-airline/vim-airline/commit/ef3746d02266c4630e2658ad2302b266f53a0434">this commit</a></li>
+<li><a href="https://github.com/vim-chat/vim-chat">vim-chat</a>: Chat client for QQ and Weixin</li>
+<li><a href="https://github.com/noahfrederick/vim-composer">vim-composer</a>: Support for Composer PHP projects</li>
+<li><a href="https://github.com/eugen0329/vim-esearch">vim-esearch</a>: Perform search in files easily</li>
+<li><a href="https://github.com/raghur/vim-ghost">vim-ghost</a>: Neovim client for GhostText browser extension on Firefox and Chrome</li>
+<li><a href="https://github.com/airblade/vim-gitgutter">vim-gitgutter</a>: Shows a git diff in the gutter (sign column) and stages/undos hunks</li>
+<li><a href="https://github.com/fatih/vim-go">vim-go</a>: See <a href="https://github.com/fatih/vim-go/pull/607">PR 607</a> for feature list</li>
+<li><a href="https://github.com/mhinz/vim-grepper">vim-grepper</a>: Use your favorite grep tool (ag, ack, git grep, ripgrep, pt, sift, findstr, grep) to start an asynchronous search</li>
+<li><a href="https://github.com/brglng/vim-im-select">vim-im-select</a>: Improve Vim/Neovim experience with input methods</li>
+<li><a href="https://github.com/artur-shaik/vim-javacomplete2">vim-javacomplete2</a>: An omni-completion plugin for Java</li>
+<li><a href="https://github.com/bruno-/vim-man">vim-man</a>: View and grep man pages in Vim</li>
+<li><a href="https://github.com/euclio/vim-markdown-composer">vim-markdown-composer</a>: Asynchronous Markdown preview</li>
+<li><a href="https://github.com/ipod825/vim-netranger">vim-netranger</a>: Ranger-like system/cloud storage explorer</li>
+<li><a href="https://github.com/vim-pandoc/vim-pandoc">vim-pandoc</a>: Integrate with the Pandoc document converter and work with documents written in its Markdown variant</li>
+<li><a href="https://github.com/junegunn/vim-plug">vim-plug</a>: Plugin manager</li>
+<li><a href="https://github.com/bronzehedwick/vim-primary-terminal">vim-primary-terminal</a>: Simple terminal management</li>
+<li><a href="https://github.com/nfischer/vim-rainbows">vim-rainbows</a>: Runtime files for the Rainbow programming language</li>
+<li><a href="https://github.com/mhinz/vim-signify">vim-signify</a>: Uses the sign column to indicate added, modified and removed lines in a file that is managed by a version control system (VCS)</li>
+<li><a href="https://github.com/janko-m/vim-test">vim-test</a>: Wrapper for running tests on different granularities</li>
+<li><a href="https://github.com/roxma/vim-tmux-clipboard">vim-tmux-clipboard</a>: Seamless integration with tmux's clipboard</li>
+<li><a href="https://github.com/jalvesaq/vimcmdline">vimcmdline</a>: Sends lines from either Vim or Neovim to a command line interpreter (REPL application)</li>
+<li><a href="https://github.com/hardenedapple/vsh/">vsh</a>: Store and replay shell sessions; also output search/modification/undo/redo</li>
+<li><a href="https://github.com/fmoralesc/worldslice">worldslice</a>: Minimalistic statusline and tabline configuration</li>
+</ul>
+<h3 id="non-plugin-software">Non-plugin software</h3>
+<p>This is software either targeted at Neovim or with support for it.</p>
+<ul>
+<li><a href="https://github.com/tek/chromatin.nvim">chromatin</a>: Package manager for plugins built with Ribosome</li>
+<li><a href="https://github.com/mhinz/neovim-remote">neovim-remote</a>: Tool that helps controlling Neovim processes</li>
+<li><a href="https://github.com/Vigemus/nero.nvim">nero.nvim</a>: A REPL for Neovim (as in managing Neovim through a REPL)</li>
+<li><a href="https://github.com/haifengkao/nfasd">nfasd</a> Autocomplete recent files in command line</li>
+<li><a href="https://github.com/tweekmonster/nvimdev.nvim">nvimdev</a>: Help to Neovim development</li>
+<li><a href="https://github.com/lucc/nvimpager">nvimpager</a>: Use Neovim as <code>$PAGER</code> to view man pages, git logs, etc. with Neovim's syntax highlighting</li>
+<li><a href="https://github.com/I60R/page">page</a>: Advanced <code>$PAGER</code>, acts like neovim-remote, features fast CSI sequences processing</li>
+<li><a href="https://github.com/tek/ribosome">ribosome</a>: Framework for building and testing Python plugins</li>
+<li><a href="https://github.com/tmux-plugins/tmux-resurrect">tmux-resurrect</a>: Restore tmux environment after system restart</li>
+<li><a href="https://github.com/jceb/vmux">vmux</a>: Vim/Neovim session handler within tmux</li>
+<li><a href="https://github.com/google/vroom">Vroom</a>: Way to specify Vim commands (actual input keys that that the user hits) and then verify Vim's output</li>
+</ul>
+<h3 id="colorschemes">Colorschemes</h3>
+<p>Color schemes make use of Neovim-specific features, e.g. highlight groups or terminal emulator colors.</p>
+<ul>
+<li><a href="https://github.com/fenetikm/falcon">falcon</a></li>
+<li><a href="https://github.com/MaxSt/FlatColor">flatcolor</a> <strong>Deprecated use challenger-deep instead</strong></li>
+<li><a href="https://github.com/challenger-deep-theme/vim">challenger-deep</a></li>
+<li><a href="https://github.com/mhinz/vim-janah">janah</a></li>
+<li><a href="https://github.com/iCyMind/NeoSolarized">NeoSolarized</a></li>
+<li><a href="https://github.com/mhartington/oceanic-next">oceanic-next</a></li>
+<li><a href="https://github.com/joshdick/onedark.vim">onedark</a></li>
+<li><a href="https://github.com/morhetz/gruvbox">gruvbox</a></li>
+<li><a href="https://github.com/sickill/vim-monokai">vim-monokai</a></li>
+</ul>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Refactoring/" title="Refactoring" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Refactoring
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Troubleshooting/" title="Troubleshooting" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Troubleshooting
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>

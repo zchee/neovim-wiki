@@ -1,0 +1,908 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Neovim Wiki">
+      
+      
+        <link rel="canonical" href="https://zchee.github.io/neovim-wiki/C-programming/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>C-programming - Neovim Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-89201129-1", "https://zchee.github.io/neovim-wiki/")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#c-programming-techniques-and-neovim-specific-guidance" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://zchee.github.io/neovim-wiki/" title="Neovim Wiki" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Neovim Wiki
+            </span>
+            <span class="md-header-nav__topic">
+              
+                C-programming
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/zchee/neovim-wiki/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    zchee/neovim-wiki
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://zchee.github.io/neovim-wiki/" title="Neovim Wiki" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Neovim Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/zchee/neovim-wiki/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    zchee/neovim-wiki
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Home/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Architectural-musing-and-ideas/" title="Architectural-musing-and-ideas" class="md-nav__link">
+      Architectural-musing-and-ideas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Building-Neovim/" title="Building-Neovim" class="md-nav__link">
+      Building-Neovim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        C-programming
+      </label>
+    
+    <a href="./" title="C-programming" class="md-nav__link md-nav__link--active">
+      C-programming
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sizeof" class="md-nav__link">
+    sizeof
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scope" class="md-nav__link">
+    Scope
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#struct-organization" class="md-nav__link">
+    Struct organization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unsigned-or-signed-integer-overflowunderflow" class="md-nav__link">
+    Unsigned or signed? Integer overflow/underflow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guarded-casting" class="md-nav__link">
+    Guarded casting
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed-size-vs-generic-types" class="md-nav__link">
+    Fixed-size vs. generic types
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools-and-articles" class="md-nav__link">
+    Tools and articles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#undefined-behavior" class="md-nav__link">
+    Undefined behavior
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../C-Refactorings-and-Code-Smells-Catalog/" title="C-Refactorings-and-Code-Smells-Catalog" class="md-nav__link">
+      C-Refactorings-and-Code-Smells-Catalog
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Code-overview/" title="Code-overview" class="md-nav__link">
+      Code-overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Code-review-checklist/" title="Code-review-checklist" class="md-nav__link">
+      Code-review-checklist
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Contributing/" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Deps/" title="Deps" class="md-nav__link">
+      Deps
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Development-tips/" title="Development-tips" class="md-nav__link">
+      Development-tips
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../FAQ/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Following-HEAD/" title="Following-HEAD" class="md-nav__link">
+      Following-HEAD
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Generate-callgraphs-with-Doxygen/" title="Generate-callgraphs-with-Doxygen" class="md-nav__link">
+      Generate-callgraphs-with-Doxygen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../GSoC-2018-Ideas/" title="GSoC-2018-Ideas" class="md-nav__link">
+      GSoC-2018-Ideas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../GSoC-2019-Ideas/" title="GSoC-2019-Ideas" class="md-nav__link">
+      GSoC-2019-Ideas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../GSoC/" title="GSoC" class="md-nav__link">
+      GSoC
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Installing-Neovim/" title="Installing-Neovim" class="md-nav__link">
+      Installing-Neovim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Integer-types-refactoring-guidelines/" title="Integer-types-refactoring-guidelines" class="md-nav__link">
+      Integer-types-refactoring-guidelines
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../List-management-in-Neovim/" title="List-management-in-Neovim" class="md-nav__link">
+      List-management-in-Neovim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Merging-patches-from-upstream-Vim/" title="Merging-patches-from-upstream-Vim" class="md-nav__link">
+      Merging-patches-from-upstream-Vim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Plugin-UI-architecture/" title="Plugin-UI-architecture" class="md-nav__link">
+      Plugin-UI-architecture
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Progress/" title="Progress" class="md-nav__link">
+      Progress
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Refactor-Vim-into-a-library/" title="Refactor-Vim-into-a-library" class="md-nav__link">
+      Refactor-Vim-into-a-library
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Refactoring/" title="Refactoring" class="md-nav__link">
+      Refactoring
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Related-projects/" title="Related-projects" class="md-nav__link">
+      Related-projects
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Troubleshooting/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../UI-architecture/" title="UI-architecture" class="md-nav__link">
+      UI-architecture
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Unit-tests/" title="Unit-tests" class="md-nav__link">
+      Unit-tests
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sizeof" class="md-nav__link">
+    sizeof
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scope" class="md-nav__link">
+    Scope
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#struct-organization" class="md-nav__link">
+    Struct organization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unsigned-or-signed-integer-overflowunderflow" class="md-nav__link">
+    Unsigned or signed? Integer overflow/underflow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guarded-casting" class="md-nav__link">
+    Guarded casting
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed-size-vs-generic-types" class="md-nav__link">
+    Fixed-size vs. generic types
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools-and-articles" class="md-nav__link">
+    Tools and articles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#undefined-behavior" class="md-nav__link">
+    Undefined behavior
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/zchee/neovim-wiki/edit/master/docs/C-programming.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="c-programming-techniques-and-neovim-specific-guidance">C programming techniques and Neovim-specific guidance</h1>
+<h2 id="sizeof">sizeof</h2>
+<p><a href="https://github.com/neovim/neovim/pull/558#discussion_r11767481"><code>sizeof(&lt;var&gt;)</code> vs <code>sizeof(&lt;type&gt;)</code></a></p>
+<blockquote>
+<p>something you have to be really careful about: the difference between arrays and pointers [...]
+be judicious: if the variable is simple (int, long, ...), use <code>sizeof(variable)</code>, if the variable is complex (struct, pointer-to-pointer, ...), use <code>sizeof(the_actual_type)</code>.</p>
+</blockquote>
+<h2 id="scope">Scope</h2>
+<p>It is <strong>undefined behavior</strong> to <a href="https://github.com/neovim/neovim/pull/619#discussion_r12261134">access a pointer that was assigned in an inner scope</a>.</p>
+<h2 id="struct-organization">Struct organization</h2>
+<p><a href="https://github.com/neovim/neovim/pull/656#issuecomment-41905534">https://github.com/neovim/neovim/pull/656#issuecomment-41905534</a></p>
+<p>TODO: link to discussion of legacy Vim struct hack</p>
+<h2 id="unsigned-or-signed-integer-overflowunderflow">Unsigned or signed? Integer overflow/underflow</h2>
+<ul>
+<li><a href="https://github.com/neovim/neovim/pull/558#issuecomment-40863654">Conversion of signed variables to unsigned</a> (in files not checked by <code>-Wconversion</code>)</li>
+</ul>
+<p>There are a few very important things to keep in mind while choosing between signed and unsigned integral types:</p>
+<p>Firstly, <strong>unsigned overflow is defined</strong>, while <strong>signed overflow is not</strong>. This is an unfortunate historical oversight stemming from a time where it wasn't sure what <a href="http://stackoverflow.com/questions/18195715/why-is-unsigned-integer-overflow-defined-behavior-but-signed-integer-overflow-is">representation a signed integer would have</a>. The C standard decided that it shouldn't/couldn't specify what would happen when a signed integer overflows, because each representation would have different behaviour. In modern times, signed integers are always represented in <a href="http://en.wikipedia.org/wiki/Two's_complement">two's complement</a> form, which has many advantages. </p>
+<blockquote>
+<p>An interesting thing to note is that it is possible to force gcc and clang to view signed overflow as defined (wraparound, like unsigned), by <a href="http://stackoverflow.com/a/4712784/558819">passing the -fwrapv flag</a>. This is, unfortunately, non-standard.</p>
+</blockquote>
+<p>What does this mean, defined vs. undefined? If an unsigned integer overflows, it wraps around back to zero (it's modulo addition). Yet, if a signed integer overflows, $deity only knows what will happen. More specifically: we <em>know</em> what would happen if a two's complement signed integer would overflow, but <a href="http://stackoverflow.com/a/18195756/558819">the compiler can do whatever it wants, because the standard says it is undefined</a>. As a consequence, an optimizing compiler will often assume that a signed integer <em>cannot</em> overflow and <a href="https://cryptoservices.github.io/fde/2018/11/30/undefined-behavior.html">optimize out some if-branches or comparisons</a>. This behavior can cause loops to run forever. Note that if the conditions are not written carefully, even the well-defined wraparound overflow of unsigned integers can cause non-terminating loops, <code>(U)INTX_MAX/MIN</code> are your friends.</p>
+<p>Thus it would seem that unsigned arithmetic is superior, because it has defined over- and underflow. But that's not always true. There's a good reason why many languages (like Java) don't expose unsigned types: they can cause difficult to spot errors. The most common form of under/overflow is <strong>underflow in unsigned arithmetic</strong>. Subtracting 1 from <code>unsigned int num = 0;</code> will make it wrap around to <code>UINT_MAX</code>. <a href="http://www.soundsoftware.ac.uk/c-pitfall-unsigned">This is much more common than one would think</a>. For this reason alone, it is usually <strong>much</strong> safer to use a plain <code>int</code> as a loop counter instead of <code>uint32_t</code>/<code>size_t</code>/... or another unsigned type. Even seasoned programmers find it difficult to avoid writing unsigned code that doesn't underflow in some cases.</p>
+<p><strong>Problem</strong>: correct signed code is easier to write, but you have to use casts when comparing to <code>size_t</code> (which happens often, as it is the return type of <code>sizeof</code>, <code>strlen</code> and many others). Casts are ugly and should be avoided if at all possible. But we cannot avoid them everywhere. Sometimes, a trade-off has to be made. See <a href="https://github.com/neovim/neovim/pulls?q=is%3Apr+is%3Aclosed+wconversion">previous <code>-Wconversion</code> PRs</a> for examples.</p>
+<p><strong>Conclusion</strong>: </p>
+<ul>
+<li>if there is any chance of underflow or the loop in question is small (definitely less than <code>2^31</code> items), use signed arithmetic and a guard before the loop.</li>
+<li>if there is any chance of overflow, use unsigned arithmetic and possibly guards.</li>
+<li>if there is a chance of both underflow and overflow, be extremely careful and paranoid (guards/asserts).</li>
+</ul>
+<h2 id="guarded-casting">Guarded casting</h2>
+<h3 id="fixed-size-vs-generic-types">Fixed-size vs. generic types</h3>
+<p>Should we use <code>(u)intX_t</code> and friends over <code>char</code>, <code>short</code>, <code>int</code>, <code>long</code> et al.? ...</p>
+<ul>
+<li><code>size_t</code>: ...</li>
+<li><code>rsize_t</code>: this type is new in the C11 standard, which is why we can't use it, but the <a href="http://www.drdobbs.com/cpp/the-safe-c-library/214502214">reasoning and usage behind it are interesting</a>. Instead of <code>RSIZE_MAX</code> being the actual maximum value that a variable of type <code>rsize_t</code> can have, it is <strong>less</strong> than that. This means that one can check if <code>val &lt;= RSIZE_MAX</code> before continuing operations and have it be useful. The first useful property is: values about <code>RSIZE_MAX</code> are usually too large to be useful anyway. Who wants to allocate such titanic amounts of memory anyway, if <code>rsize_t</code> is 64-bits? Arguably it would be better to refuse to perform the operation. The second useful property is nice to make unsigned arithmetic less susceptible to the dreaded underflow problem. <code>rsize_t val = -4</code> will be larger than <code>RSIZE_MAX</code> because it has wrapped around. Any functions that does a bounds-check on <code>RSIZE_MAX</code> will reject that value. This seems to be a good way to interact with unsigned code without needing to cast (<code>rsize_t</code> should be unsigned) and still have the safety advantages of signed arithmetic.</li>
+</ul>
+<h2 id="tools-and-articles">Tools and articles</h2>
+<ul>
+<li><a href="https://wiki.sei.cmu.edu/confluence/display/c/SEI+CERT+C+Coding+Standard">Secure C Coding</a></li>
+<li><a href="http://eli.thegreenplace.net/2014/05/01/modern-source-to-source-transformation-with-clang-and-libtooling/">Modern source-to-source transformation with Clang and libTooling</a></li>
+<li><a href="http://blog.regehr.org/archives/1139">How Should You Write a Fast Integer Overflow Check?</a></li>
+<li><a href="http://ewontfix.com/9/">Stubborn and ignorant use of int where size_t is needed</a></li>
+</ul>
+<h2 id="undefined-behavior">Undefined behavior</h2>
+<ul>
+<li><a href="https://cryptoservices.github.io/fde/2018/11/30/undefined-behavior.html">https://cryptoservices.github.io/fde/2018/11/30/undefined-behavior.html</a></li>
+</ul>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Building-Neovim/" title="Building-Neovim" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Building-Neovim
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../C-Refactorings-and-Code-Smells-Catalog/" title="C-Refactorings-and-Code-Smells-Catalog" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                C-Refactorings-and-Code-Smells-Catalog
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>

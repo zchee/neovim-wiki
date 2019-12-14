@@ -1,0 +1,75 @@
+site_name: Neovim Wiki
+site_description: Neovim Wiki
+
+theme:
+  name: "material"
+  include_search_page: true
+  search_index_only: true
+  include_homepage_in_sidebar: true
+  prev_next_buttons_location: "bottom"
+google_analytics:
+  - "UA-89201129-1"
+  - "https://zchee.github.io/neovim-wiki/"
+repo_name: zchee/neovim-wiki
+site_url: https://zchee.github.io/neovim-wiki/
+repo_url: https://github.com/zchee/neovim-wiki
+docs_dir: "../"
+site_dir: "../../docs"
+
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML'
+
+markdown_extensions:
+  - toc
+  - admonition
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+  - search
+
+## $ find ./ -type f -name '*.md' | awk -F/ '{print $2}' | awk -F'.md' '{print "  - "$1": "$0}' | sort --ignore-case | grep -v -e '  - _' -e 'Home:'
+nav:
+  - Home: Home.md
+  - Architectural-musing-and-ideas: Architectural-musing-and-ideas.md
+  - Building-Neovim: Building-Neovim.md
+  - C-programming: C-programming.md
+  - C-Refactorings-and-Code-Smells-Catalog: C-Refactorings-and-Code-Smells-Catalog.md
+  - Code-overview: Code-overview.md
+  - Code-review-checklist: Code-review-checklist.md
+  - Contributing: Contributing.md
+  - Deps: Deps.md
+  - Development-tips: Development-tips.md
+  - FAQ: FAQ.md
+  - Following-HEAD: Following-HEAD.md
+  - Generate-callgraphs-with-Doxygen: Generate-callgraphs-with-Doxygen.md
+  - GSoC-2018-Ideas: GSoC-2018-Ideas.md
+  - GSoC-2019-Ideas: GSoC-2019-Ideas.md
+  - GSoC: GSoC.md
+  - Installing-Neovim: Installing-Neovim.md
+  - Integer-types-refactoring-guidelines: Integer-types-refactoring-guidelines.md
+  - Introduction: Introduction.md
+  - List-management-in-Neovim: List-management-in-Neovim.md
+  - Merging-patches-from-upstream-Vim: Merging-patches-from-upstream-Vim.md
+  - Plugin-UI-architecture: Plugin-UI-architecture.md
+  - Progress: Progress.md
+  - Refactor-Vim-into-a-library: Refactor-Vim-into-a-library.md
+  - Refactoring: Refactoring.md
+  - Related-projects: Related-projects.md
+  - Troubleshooting: Troubleshooting.md
+  - UI-architecture: UI-architecture.md
+  - Unit-tests: Unit-tests.md

@@ -1,0 +1,910 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Neovim Wiki">
+      
+      
+        <link rel="canonical" href="https://zchee.github.io/neovim-wiki/GSoC-2019-Ideas/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>GSoC-2019-Ideas - Neovim Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-89201129-1", "https://zchee.github.io/neovim-wiki/")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#contributing-to-this-list" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://zchee.github.io/neovim-wiki/" title="Neovim Wiki" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Neovim Wiki
+            </span>
+            <span class="md-header-nav__topic">
+              
+                GSoC-2019-Ideas
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/zchee/neovim-wiki/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    zchee/neovim-wiki
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://zchee.github.io/neovim-wiki/" title="Neovim Wiki" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Neovim Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/zchee/neovim-wiki/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    zchee/neovim-wiki
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Home/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Architectural-musing-and-ideas/" title="Architectural-musing-and-ideas" class="md-nav__link">
+      Architectural-musing-and-ideas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Building-Neovim/" title="Building-Neovim" class="md-nav__link">
+      Building-Neovim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../C-programming/" title="C-programming" class="md-nav__link">
+      C-programming
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../C-Refactorings-and-Code-Smells-Catalog/" title="C-Refactorings-and-Code-Smells-Catalog" class="md-nav__link">
+      C-Refactorings-and-Code-Smells-Catalog
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Code-overview/" title="Code-overview" class="md-nav__link">
+      Code-overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Code-review-checklist/" title="Code-review-checklist" class="md-nav__link">
+      Code-review-checklist
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Contributing/" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Deps/" title="Deps" class="md-nav__link">
+      Deps
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Development-tips/" title="Development-tips" class="md-nav__link">
+      Development-tips
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../FAQ/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Following-HEAD/" title="Following-HEAD" class="md-nav__link">
+      Following-HEAD
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Generate-callgraphs-with-Doxygen/" title="Generate-callgraphs-with-Doxygen" class="md-nav__link">
+      Generate-callgraphs-with-Doxygen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../GSoC-2018-Ideas/" title="GSoC-2018-Ideas" class="md-nav__link">
+      GSoC-2018-Ideas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="GSoC-2019-Ideas" class="md-nav__link md-nav__link--active">
+      GSoC-2019-Ideas
+    </a>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../GSoC/" title="GSoC" class="md-nav__link">
+      GSoC
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Installing-Neovim/" title="Installing-Neovim" class="md-nav__link">
+      Installing-Neovim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Integer-types-refactoring-guidelines/" title="Integer-types-refactoring-guidelines" class="md-nav__link">
+      Integer-types-refactoring-guidelines
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../List-management-in-Neovim/" title="List-management-in-Neovim" class="md-nav__link">
+      List-management-in-Neovim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Merging-patches-from-upstream-Vim/" title="Merging-patches-from-upstream-Vim" class="md-nav__link">
+      Merging-patches-from-upstream-Vim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Plugin-UI-architecture/" title="Plugin-UI-architecture" class="md-nav__link">
+      Plugin-UI-architecture
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Progress/" title="Progress" class="md-nav__link">
+      Progress
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Refactor-Vim-into-a-library/" title="Refactor-Vim-into-a-library" class="md-nav__link">
+      Refactor-Vim-into-a-library
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Refactoring/" title="Refactoring" class="md-nav__link">
+      Refactoring
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Related-projects/" title="Related-projects" class="md-nav__link">
+      Related-projects
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Troubleshooting/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../UI-architecture/" title="UI-architecture" class="md-nav__link">
+      UI-architecture
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Unit-tests/" title="Unit-tests" class="md-nav__link">
+      Unit-tests
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/zchee/neovim-wiki/edit/master/docs/GSoC-2019-Ideas.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h4 id="contributing-to-this-list">Contributing to this list:</h4>
+<ul>
+<li><a href="http://write.flossmanuals.net/gsoc-mentoring/making-your-ideas-page/">Ideas page Manual</a></li>
+<li><a href="https://github.com/nim-lang/Nim/wiki/GSoC-2016-Ideas">Example</a></li>
+</ul>
+<h1 id="introduction">Introduction</h1>
+<p>Below is a list of project ideas for <a href="https://developers.google.com/open-source/gsoc/">Google Summer of Code</a>. These projects may require familiarity with C, Makefiles, Lua or VimL ("Vim script").</p>
+<p><a href="https://neovim.io/">Neovim</a> is a text editor based on Vim. One of the <a href="https://neovim.io/charter/">project goals</a> is to  encourage hacking and collaboration. Effort is put into removing barriers for contributors and improving documentation. The wiki has sections on developing and contributing to help you get started.</p>
+<p>The Neovim source has roots going back to 1987 which means libraries such as <a href="https://github.com/libuv/libuv">libuv</a> were not around at that time. The codebase can be made easier to maintain and understand by using these libraries. Project ideas that involve working heavily with internals will in general be more difficult than project ideas that "simply" add new features. However working with older/complex parts of the code base can also provide valuable learning feedback for writing simpler and more maintainable code. There is a large range of skills that can be learned and working with the team to find a project that will help you the most is in your benefit.</p>
+<p>Visit <a href="https://gitter.im/neovim/neovim">gitter.im/neovim</a> or <code>#neovim</code> on IRC to discuss these projects with the community and our mentors. Because communication is a big part of open source development you are expected to get in touch with us before making your application.</p>
+<p>It's also recommended to start with a smaller coding task, to get introduced to the Neovim project. Look on the issue tracker for simpler issues and submit a small PR attempting to solve the issue. See for instance the <a href="https://github.com/neovim/neovim/issues?utf8=✓&amp;q=is%3Aopen+is%3Aissue+label%3A" title="good+first+issue">good first issue</a> and <a href="https://github.com/neovim/neovim/issues?q=is%3Aopen+is%3Aissue+label%3Acomplexity%3Alow">complexity:low</a> tags. The goal here is to get accustomed with the codebase and to our workflow for reviewing and testing PRs, rather than directly making a large code contribution.</p>
+<p>The following list of projects are just some ideas. We are happy to hear any suggestions that you may have.</p>
+<h2 id="making-a-proposal">Making a proposal</h2>
+<p>The application period for GSOC is March 25-April 9. Send your proposal through the official <a href="https://summerofcode.withgoogle.com/organizations/6095582066638848/">GSOC page</a>. We encourage students to send a first draft early in this period, this allows us to give feedback and and ask for more information if need. See <a href="https://google.github.io/gsocguides/student/writing-a-proposal">https://google.github.io/gsocguides/student/writing-a-proposal</a> for some guidelines for writing a good proposal. </p>
+<p>Note: this year we will likely be able to accept 2-3 students. We expect to get more strong proposals than available slots, so we will need to turn some good proposals down.</p>
+<h2 id="proposal-evaluation">Proposal evaluation</h2>
+<p>Proposal evaluation criteria:</p>
+<p><a href="http://intermine.org/gsoc/guidance/grading-criteria-2019/">http://intermine.org/gsoc/guidance/grading-criteria-2019/</a></p>
+<h2 id="tips">Tips</h2>
+<ul>
+<li>Anywhere a Vim concept (such as "textlock") is mentioned, you can find what it means by using the ":help" command from within neovim (<code>:help textlock</code>).</li>
+<li>Ask questions and post your partial work frequently (say, once every day or 2, if possible). It's OK if work is messy; just put "[WIP]" in the pull request (PR) title.</li>
+<li>Take advantage of the continuous integration (CI) systems which automatically run against your pull
+requests. When you send work to a PR,  the full test-suite runs on the PR while you continue to work locally.</li>
+<li>The <a href="https://github.com/neovim/neovim/wiki">wiki</a> contains up-to-date documentation on building, debugging, and development tips.</li>
+<li>Only a text editor, CMake, and a compiler are needed to develop Neovim. <a href="https://github.com/universal-ctags/ctags">Ctags</a> is very helpful also.</li>
+<li>The <a href="https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md">contributing guidelines</a> are intended to be
+helpful, not rigid.</li>
+</ul>
+<h1 id="projects">Projects</h1>
+<ul>
+<li><a href="#new-features">New Features</a><ul>
+<li><a href="#multiprocessing-feature">"Multiprocessing" feature</a></li>
+<li><a href="#tui-terminal-ui-remote-attachment">TUI client</a></li>
+<li><a href="#support-for-Lua-plugins-and-configuration">Improve Lua configurability</a></li>
+<li><a href="#gui-features">GUI Features</a></li>
+<li><a href="#live-preview-of-commands">Live preview of commands</a></li>
+<li><a href="#improve-autoread">Improve autoread</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="multiprocessing-feature">"Multiprocessing" feature</h2>
+<p><strong>Desirable Skills:</strong></p>
+<ul>
+<li>Experience with concurrency and interprocess communication</li>
+<li>Strong experience with C</li>
+<li>Familiar with VimL (Vim script) and Vim concepts (quickfix list, buffers, etc.)</li>
+</ul>
+<p><strong>Description:</strong></p>
+<p>p2p architecture for data sharing between multiple Nvim instances. Similar to Python's <a href="https://docs.python.org/3/library/multiprocessing.html">multiprocessing</a> module, the idea is to to offload Nvim tasks (VimL and/or Lua) to child Nvim processes.</p>
+<p>Here's a picture of the potential workflow:</p>
+<ol>
+<li>parent calls <code>invoke_async(Foo)</code></li>
+<li>parent spawns new child <code>nvim</code> process</li>
+<li>parent sends command name <code>Foo</code> + state to child</li>
+<li>parent does other, unrelated work</li>
+<li>child completes its <code>Foo</code> work</li>
+<li>child sends notification (method name + state) to parent</li>
+</ol>
+<p><strong>Difficulty:</strong> Hard</p>
+<p><strong>Code license:</strong> Apache 2.0</p>
+<p><strong>Mentor:</strong> Justin M Keyes (<a href="http://github.com/justinmk">@justinmk</a>)</p>
+<hr />
+<h2 id="tui-terminal-ui-remote-attachment">TUI (Terminal UI) remote attachment</h2>
+<p><strong>Desirable Skills:</strong></p>
+<p>C</p>
+<p><strong>Description:</strong></p>
+<p>The built-in UI is called the TUI. It looks like Vim, but internally it is decoupled from the UI and "screen" layout subsystem. It was designed to be able to connect to other (remote) instances of Nvim, but this hasn't been implemented yet. <a href="https://github.com/neovim/neovim/issues/7438">#7438</a></p>
+<p>Nvim is both a server and a client. Nvim (client) can connect to any other Nvim (server). And Nvim <a href="https://github.com/neovim/neovim/wiki/Related-projects#gui">GUIs</a> can show the screen of a remote Nvim server.</p>
+<p>But the built-in Nvim TUI cannot show the screen of a remote Nvim server. That's the goal of this project.</p>
+<ul>
+<li>It is not "live share". It's just showing the remote UI in a client TUI.</li>
+<li>Networking question are out of scope. It is assumed the client has an SSH tunnel or named pipe to connect to.</li>
+</ul>
+<p>The Nvim API model is:</p>
+<ul>
+<li><code>:help api</code>: general API functions</li>
+<li><code>:help ui</code>: UI events</li>
+<li>Any client can call any API function.</li>
+<li>If a client calls <code>nvim_ui_attach</code>, then it is a "UI client". This simply means that Nvim will send UI events as msgpack-rpc notifications on the channel.</li>
+</ul>
+<p>That's how <em>every</em> Nvim UI works. And that's how the TUI client (this project proposal) will work.</p>
+<p>Python "demo UI" may be helpful: <a href="https://github.com/neovim/python-gui">https://github.com/neovim/python-gui</a></p>
+<p>The simplest UI is the "fake UI" implemented in <code>test/functional/ui/screen.lua</code> from the Nvim test suite. It creates a text UI from real Nvim UI events. This allows us to write Lua tests that check the state of the UI, by simply writing the text UI in the test. In the Neoivm repo, "git grep 'screen:expect'" shows all of the places where this is used.</p>
+<p>The <code>example_spec.lua</code> test shows a simple example. You can try it by running this shell command:</p>
+<pre><code>TEST_FILE=test/functional/example_spec.lua make functionaltest
+</code></pre>
+<p>Overview of the <code>screen.lua</code> "fake UI" implementation:</p>
+<ul>
+<li><code>Screen._wait()</code> / <code>Screen:sleep()</code> runs the event loop to consume UI events</li>
+<li><code>Screen:_redraw()</code> dispatches UI events to the appropriate handlers</li>
+<li>For example <code>Screen:_handle_grid_line()</code> consumes a line event, and updates some tables (self._grids and self._attr_table). <ul>
+<li>And those tables are literally the contents of the fake UI that <code>Screen:expect()</code> tests against.</li>
+</ul>
+</li>
+</ul>
+<p>Use cases:</p>
+<ul>
+<li>Connect to any Nvim. Unlike tmux, Nvim UI client can connect to any other running Nvim, including GUIs.</li>
+<li>Potential for using <code>libnvim</code> as the RPC core of any Nvim API client, to eliminate the need for clients to implement their own msgpack-RPC handling.</li>
+</ul>
+<p><strong>Expected Result:</strong></p>
+<p>Implement a TUI "remote UI" client. Modify the TUI subsystem so that it can display a remote Nvim instance.
+The C codebase already has msgpack support, an event-loop, and the ability to connect to sockets/named pipes/etc.</p>
+<ul>
+<li>Extend <code>tui/tui.c</code> to:</li>
+<li>connect to a channel</li>
+<li>get UI events from the channel</li>
+<li>unpack the events and call the appropriate handlers</li>
+<li>Extend <code>tui/input.c</code> to:</li>
+<li>send user input to the channel (i.e. call the nvim_input() API function)</li>
+</ul>
+<p>Example:</p>
+<pre><code>nvim --servername foo
+</code></pre>
+<p>will connect to the Nvim server at address <code>foo</code>. The <code>nvim</code> client instance sends input to the remote Nvim server, and reflects the UI of the remote Nvim server. So the <code>nvim</code> client acts like any other external (G)UI.</p>
+<p><strong>Difficulty:</strong> Medium</p>
+<p><strong>Code license:</strong> Apache 2.0</p>
+<p><strong>Mentor:</strong> Justin M Keyes (<a href="http://github.com/justinmk">@justinmk</a>), Björn Linse (<a href="http://github.com/bfredl">@bfredl</a>)</p>
+<hr />
+<h2 id="support-for-lua-plugins-and-configuration">Support for Lua plugins and configuration</h2>
+<p><strong>Desirable Skills:</strong></p>
+<ul>
+<li>C and related tools</li>
+<li>Familiarity with Lua C API is a plus.</li>
+</ul>
+<p><strong>Description:</strong></p>
+<p>Nvim is always built with a builtin Lua interpreter. A goal is to make Lua a first class language for plugins and user config, which can access editor functionality directly, without "shelling out" to VimL commands and functions.</p>
+<p><strong>Expected Result:</strong></p>
+<p>More functionality is directly exposed to Lua. This project idea is a bit open ended, and improvements can be made in different directions. Regardless what priorities are decided, it is expected that the project will take form as multiple smaller deliverables that will be merged separately during the duration of the project.</p>
+<p>The project can involve calls the core editor makes to VimL, such as autocommands, mappings and function-based options like <code>'omnifunc'</code>, where native Lua support could be added. Lua access to jobs and channels would also be worthwhile. Nvim is  working on building a Lua standard library to make it convenient to write plugins and user config in Lua. This goal is broad, and discussion with the plugin developing community is encouraged, about what functionality would be most useful for the standard library.</p>
+<p>Another direction is to add new extension points, such as letting Lua code control aspects of screen drawing. A  starting point could be to let Lua code draw a richer completion popup menu for the TUI, by processing popup menu UI events internally.</p>
+<p><strong>Difficulty:</strong> Medium</p>
+<p><strong>Code license:</strong> Apache 2.0</p>
+<p><strong>Mentor:</strong> Björn Linse (<a href="http://github.com/bfredl">@bfredl</a>)</p>
+<hr />
+<h2 id="gui-features">GUI Features</h2>
+<p><strong>Desirable Skills:</strong></p>
+<ul>
+<li>C and related tools</li>
+<li>Familiar with event-loop programming model</li>
+</ul>
+<p><strong>Description:</strong></p>
+<p>Nvim GUIs are implemented as processes communicating with Nvim. Originally the UI protocol exposed most functionality as a single, terminal-like screen grid. Work has been done to allow UIs (including embeddings in GUI editors, like VSCode) to render the screen layout themselves, based on semantic updates from Nvim. Some screen elements like the cmdline, popupmenu and message area has been externalized. As a result of a 2018 <a href="https://github.com/neovim/neovim/issues/8320">GSOC project</a>, windows can be drawn on separate grids.</p>
+<p><strong>Expected Result:</strong></p>
+<p>Further improvements to the GUI protocol.</p>
+<p>Some UIs want to render the buffer contents themselves. A solution would be a UI protocol mode, where the rendered grid is not used, rather all decorations, such as syntax highlighting, conceals, virtual text are transmitted for the current viewport. Such an UI would be able to render text without the restrictions of the builtin monospace grid. Then the UI should be able to inform nvim about usage of virtual columns and wrapping, so that vim commands such as <code>gj</code> are consistent with how text is presented to the user.</p>
+<p>Another path is to improve the core Nvim grid model. We could allow the width and height of cells be different for each row. This would allow for heading text with different font size, and pictures rendered inside windows.</p>
+<p>Putting forward your own ideas of UI improvements is encouraged. Read the <a href="https://github.com/neovim/neovim/blob/master/runtime/doc/ui.txt">docs</a> for the implemented extensions as well as the <a href="https://github.com/neovim/neovim/issues/9421">tracking issue</a> for ongoing/planned work, as a starting point.</p>
+<p><strong>Difficulty:</strong> Medium-Hard</p>
+<p><strong>Code license:</strong> Apache 2.0</p>
+<p><strong>Mentor:</strong> Björn Linse (<a href="http://github.com/bfredl">@bfredl</a>)</p>
+<hr />
+<h2 id="live-preview-of-commands">Live preview of commands</h2>
+<p><strong>Desirable Skills:</strong></p>
+<ul>
+<li>C and related tools</li>
+<li>Familiar with event-loop programming model</li>
+</ul>
+<p><strong>Description:</strong></p>
+<p>Nvim has builtin live preview of <code>:%s</code> substitution, as a result of a [[successful collaboration with students|<a href="https://medium.com/@eric.burel/stop-using-open-source-5cb19baca44d">https://medium.com/@eric.burel/stop-using-open-source-5cb19baca44d</a>]]. This support could be extended to more commands, such as <code>:global</code> and <code>:normal</code>.</p>
+<p><strong>Expected Result:</strong></p>
+<p>More commands support interactive preview. This could be done by extending the hard-coded support for substitution preview to more commands. Alternatively, a more scalable approach could be to add core functionality that makes it easier to implement live preview as plugins in VimL and/or Lua. See [[#7370|<a href="https://github.com/neovim/neovim/issues/7370">https://github.com/neovim/neovim/issues/7370</a>]] for some ideas.</p>
+<p><strong>Difficulty:</strong> Medium-Hard.</p>
+<p><strong>Code license:</strong> Apache 2.0</p>
+<p><strong>Mentor:</strong> Björn Linse (<a href="http://github.com/bfredl">@bfredl</a>)</p>
+<hr />
+<h2 id="improve-autoread">Improve autoread</h2>
+<p><strong>Desirable Skills:</strong> Any  </p>
+<p><strong>Description:</strong> Reload file/notify user when a file being edited changes outside of <code>nvim</code>. </p>
+<p><strong>Expected Result:</strong></p>
+<p>Neovim has the 'autoread' setting that regularly checks if a file edited in neovim has been externally modified. It thus notifies the user to prevent overwriting the changes. Sadly the current mechanism isn't foolproof. This project intends to make this feature work as well as in other editors like Sublime text and across the Neovim-supported platforms. The interface should also be improved so that notifications show how different the edited and modified files are. 
+The candidate can realize some of the difficulties involved with this <a href="https://github.com/neovim/neovim/issues/1380">proposition for linux</a></p>
+<p><strong>Difficulty:</strong> Medium</p>
+<p><strong>Code license:</strong> Apache 2.0</p>
+<p><strong>Mentor:</strong> Matthieu Coudron (<a href="http://github.com/teto">@teto</a>)</p>
+<hr />
+<h2 id="neovim-based-vim-mode">Neovim-based "Vim mode"</h2>
+<p><strong>Desirable Skills:</strong> Any  </p>
+<p><strong>Description:</strong> Implement "Vim mode" in an editor/IDE (such as IntelliJ) by embedding a <code>nvim</code> instance. </p>
+<p><strong>Expected Result:</strong></p>
+<p>Full Nvim editing should be available in the editor/IDE, while also allowing the user to use the native editor/IDE features.</p>
+<p>Examples:</p>
+<ul>
+<li><a href="https://github.com/VSCodeVim/Vim">VSCode integration</a></li>
+<li><a href="https://github.com/lunixbochs/actualvim">Sublime Text integration</a></li>
+</ul>
+<p><strong>Difficulty:</strong> Medium</p>
+<p><strong>Code license:</strong> Apache 2.0</p>
+<p><strong>Mentor:</strong> Horace He (<a href="http://github.com/chillee">@chillee</a>)</p>
+<hr />
+<p>Please add your project ideas in the following format.</p>
+<hr />
+<h2 id="title">Title</h2>
+<p><strong>Desirable Skills:</strong></p>
+<p><strong>Description:</strong></p>
+<p><strong>Expected Result:</strong></p>
+<ul>
+<li>Item1</li>
+<li>Item2</li>
+</ul>
+<p><strong>Difficulty:</strong> Easy/Medium/Hard</p>
+<p><strong>Code license:</strong> Apache 2.0</p>
+<p><strong>Mentor:</strong> Mentor name (<a href="http://github.com/MentorName">@MentorName</a>)</p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../GSoC-2018-Ideas/" title="GSoC-2018-Ideas" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                GSoC-2018-Ideas
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../GSoC/" title="GSoC" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                GSoC
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>

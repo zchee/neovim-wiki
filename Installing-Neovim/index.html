@@ -1,0 +1,982 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Neovim Wiki">
+      
+      
+        <link rel="canonical" href="https://zchee.github.io/neovim-wiki/Installing-Neovim/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>Installing-Neovim - Neovim Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-89201129-1", "https://zchee.github.io/neovim-wiki/")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#install-from-download" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://zchee.github.io/neovim-wiki/" title="Neovim Wiki" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Neovim Wiki
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Installing-Neovim
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/zchee/neovim-wiki/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    zchee/neovim-wiki
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://zchee.github.io/neovim-wiki/" title="Neovim Wiki" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Neovim Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/zchee/neovim-wiki/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    zchee/neovim-wiki
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Home/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Architectural-musing-and-ideas/" title="Architectural-musing-and-ideas" class="md-nav__link">
+      Architectural-musing-and-ideas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Building-Neovim/" title="Building-Neovim" class="md-nav__link">
+      Building-Neovim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../C-programming/" title="C-programming" class="md-nav__link">
+      C-programming
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../C-Refactorings-and-Code-Smells-Catalog/" title="C-Refactorings-and-Code-Smells-Catalog" class="md-nav__link">
+      C-Refactorings-and-Code-Smells-Catalog
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Code-overview/" title="Code-overview" class="md-nav__link">
+      Code-overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Code-review-checklist/" title="Code-review-checklist" class="md-nav__link">
+      Code-review-checklist
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Contributing/" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Deps/" title="Deps" class="md-nav__link">
+      Deps
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Development-tips/" title="Development-tips" class="md-nav__link">
+      Development-tips
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../FAQ/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Following-HEAD/" title="Following-HEAD" class="md-nav__link">
+      Following-HEAD
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Generate-callgraphs-with-Doxygen/" title="Generate-callgraphs-with-Doxygen" class="md-nav__link">
+      Generate-callgraphs-with-Doxygen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../GSoC-2018-Ideas/" title="GSoC-2018-Ideas" class="md-nav__link">
+      GSoC-2018-Ideas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../GSoC-2019-Ideas/" title="GSoC-2019-Ideas" class="md-nav__link">
+      GSoC-2019-Ideas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../GSoC/" title="GSoC" class="md-nav__link">
+      GSoC
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Installing-Neovim" class="md-nav__link md-nav__link--active">
+      Installing-Neovim
+    </a>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Integer-types-refactoring-guidelines/" title="Integer-types-refactoring-guidelines" class="md-nav__link">
+      Integer-types-refactoring-guidelines
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../List-management-in-Neovim/" title="List-management-in-Neovim" class="md-nav__link">
+      List-management-in-Neovim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Merging-patches-from-upstream-Vim/" title="Merging-patches-from-upstream-Vim" class="md-nav__link">
+      Merging-patches-from-upstream-Vim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Plugin-UI-architecture/" title="Plugin-UI-architecture" class="md-nav__link">
+      Plugin-UI-architecture
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Progress/" title="Progress" class="md-nav__link">
+      Progress
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Refactor-Vim-into-a-library/" title="Refactor-Vim-into-a-library" class="md-nav__link">
+      Refactor-Vim-into-a-library
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Refactoring/" title="Refactoring" class="md-nav__link">
+      Refactoring
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Related-projects/" title="Related-projects" class="md-nav__link">
+      Related-projects
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Troubleshooting/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../UI-architecture/" title="UI-architecture" class="md-nav__link">
+      UI-architecture
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Unit-tests/" title="Unit-tests" class="md-nav__link">
+      Unit-tests
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/zchee/neovim-wiki/edit/master/docs/Installing-Neovim.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <p>You can install Neovim from <a href="#install-from-download">download</a>, <a href="#install-from-package">package</a>, or <a href="#install-from-source">source</a> in just a few seconds.</p>
+<hr />
+<ul>
+<li>To start Neovim, run <code>nvim</code> (not <code>neovim</code>).</li>
+<li>Before upgrading to a new version, <strong>check <a href="Following-HEAD">Following HEAD</a>.</strong></li>
+<li>For config (vimrc) see <a href="https://github.com/neovim/neovim/wiki/FAQ#where-should-i-put-my-config-vimrc">the FAQ</a>.</li>
+</ul>
+<hr />
+<h1 id="install-from-download">Install from download</h1>
+<p>Downloads are available on the <a href="https://github.com/neovim/neovim/releases">Releases</a> page.</p>
+<ul>
+<li>Latest <a href="https://github.com/neovim/neovim/releases/latest">stable release</a></li>
+<li>Latest <a href="https://github.com/neovim/neovim/releases/nightly">development prerelease</a></li>
+</ul>
+<h1 id="install-from-package">Install from package</h1>
+<p>Packages are listed below. (You can also <a href="#install-from-source">build Neovim from source</a>.)</p>
+<h2 id="windows">Windows</h2>
+<h3 id="chocolatey"><a href="https://chocolatey.org">Chocolatey</a></h3>
+<ul>
+<li><strong>Release (v0.3):</strong> <code>choco install neovim</code> (use -y for automatically skipping confirmation messages)</li>
+<li><strong>Development (pre-release):</strong> <code>choco install neovim --pre</code></li>
+</ul>
+<h3 id="scoop"><a href="http://scoop.sh/">Scoop</a></h3>
+<ul>
+<li><strong>Release:</strong> <code>scoop install neovim</code></li>
+<li><strong>Development (pre-release):</strong>
+<div class="highlight"><pre><span></span>scoop bucket add versions
+scoop install neovim-nightly
+</pre></div></li>
+</ul>
+<h3 id="pre-built-archives">Pre-built archives</h3>
+<ol>
+<li>If you are missing <code>VCRUNTIME140.dll</code>, install the <a href="https://support.microsoft.com/en-us/kb/2977003">Visual Studio 2015 C++ redistributable</a> (choose x86_64 or x86 depending on your system).</li>
+<li>Choose a package (<strong>nvim-winXX.zip</strong>) from the <a href="https://github.com/neovim/neovim/releases">releases page</a>.</li>
+<li>Unzip the package. Any location is fine, administrator privileges are <em>not</em> required.<ul>
+<li><code>$VIMRUNTIME</code> will be set to that location automatically.</li>
+</ul>
+</li>
+<li>Double-click <code>nvim-qt.exe</code>.</li>
+</ol>
+<p><strong>Optional</strong> steps:</p>
+<ul>
+<li>Add the <code>bin</code> folder (e.g. <code>C:\Program Files\nvim\bin</code>) to your PATH.<ul>
+<li>This makes it easy to run <code>nvim</code> and <code>nvim-qt</code> from anywhere.</li>
+</ul>
+</li>
+<li>If <code>:set spell</code> does not work, create the <code>C:/Users/foo/AppData/Local/nvim/site/spell</code> folder. 
+  You can then copy your spell files over (for English, located 
+  <a href="https://github.com/vim/vim/blob/master/runtime/spell/en.utf-8.spl">here</a> and 
+  <a href="https://github.com/vim/vim/blob/master/runtime/spell/en.utf-8.sug">here</a>);</li>
+<li>For Python plugins you need the <code>pynvim</code> module. "Virtual envs" are recommended. After activating the virtual env do <code>pip install pynvim</code> (in <em>both</em>). Edit your <code>init.vim</code> so that it contains the path to the env's Python executable:
+    <div class="highlight"><pre><span></span><span class="k">let</span> <span class="k">g</span>:python3_host_prog<span class="p">=</span><span class="s1">&#39;C:/Users/foo/Envs/neovim3/Scripts/python.exe&#39;</span>
+<span class="k">let</span> <span class="k">g</span>:python_host_prog<span class="p">=</span><span class="s1">&#39;C:/Users/foo/Envs/neovim/Scripts/python.exe&#39;</span>
+</pre></div><ul>
+<li>Run <code>:checkhealth</code> and read <code>:help provider-python</code>.</li>
+</ul>
+</li>
+<li><strong>init.vim ("vimrc"):</strong> If you already have Vim installed you can copy <code>%userprofile%\_vimrc</code> to <code>%userprofile%\AppData\Local\nvim\init.vim</code> to use your Vim config with Neovim.</li>
+</ul>
+<h2 id="macos-os-x">macOS / OS X</h2>
+<h3 id="pre-built-archives_1">Pre-built archives</h3>
+<p>The <a href="https://github.com/neovim/neovim/releases">Releases</a> page provides pre-built binaries for macOS 10.11+.</p>
+<pre><code>curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim-macos.tar.gz
+tar xzf nvim-macos.tar.gz
+./nvim-osx64/bin/nvim
+</code></pre>
+<h3 id="homebrew-macos-linuxbrew-linux"><a href="http://brew.sh">Homebrew</a> (macOS) / <a href="http://linuxbrew.sh/">Linuxbrew</a> (Linux)</h3>
+<pre><code>brew install neovim
+</code></pre>
+<p>Or install the development version of Nvim:</p>
+<pre><code>brew install --HEAD neovim
+</code></pre>
+<h3 id="macports"><a href="https://www.macports.org/">Macports</a></h3>
+<pre><code>sudo port selfupdate
+sudo port install neovim
+</code></pre>
+<h2 id="linux">Linux</h2>
+<h3 id="appimage-universal-linux-package">AppImage ("universal" Linux package)</h3>
+<p>The <a href="https://github.com/neovim/neovim/releases">Releases</a> page provides an <a href="http://appimage.org">AppImage</a> that runs on most Linux systems. No installation is needed, just download <code>nvim.appimage</code> and run it. (It might not work if your Linux distribution is more than 4 years old.)</p>
+<pre><code>curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
+chmod u+x nvim.appimage
+./nvim.appimage
+</code></pre>
+<h3 id="arch-linux">Arch Linux</h3>
+<p>Neovim can be installed from the community repository:</p>
+<pre><code>sudo pacman -S neovim
+</code></pre>
+<p>Alternatively, Neovim can be also installed using the PKGBUILD <a href="https://aur.archlinux.org/packages/neovim-git"><code>neovim-git</code></a>, available on the <a href="https://wiki.archlinux.org/index.php/Arch_User_Repository">AUR</a>.</p>
+<p>Alternatively, Neovim Nightly builds can be also installed using the PKGBUILD <a href="https://aur.archlinux.org/packages/neovim-nightly"><code>neovim-nightly</code></a>, available on the <a href="https://wiki.archlinux.org/index.php/Arch_User_Repository">AUR</a>.</p>
+<p>The Python module is available from the community repository:</p>
+<pre><code>sudo pacman -S python-pynvim
+</code></pre>
+<p>Python 2 and Ruby modules (currently only supported in <code>neovim-git</code>) are available from the AUR as <a href="https://aur.archlinux.org/packages/python2-neovim-git"><code>python2-neovim</code></a> and <a href="https://aur.archlinux.org/packages/ruby-neovim"><code>ruby-neovim</code></a> respectively.</p>
+<h3 id="centos-7-rhel-7">CentOS 7 / RHEL 7</h3>
+<p>Neovim is available through <a href="https://fedoraproject.org/wiki/EPEL">EPEL (Extra Packages for Enterprise Linux)</a></p>
+<pre><code>yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+yum install -y neovim python3-neovim
+# you might need python2-neovim as well on older Fedora releases
+</code></pre>
+<h3 id="clear-linux-os">Clear Linux OS</h3>
+<p>NeoVim is available through the <a href="https://github.com/clearlinux/clr-bundles/blob/master/bundles/neovim">neovim bundle</a></p>
+<pre><code>sudo swupd bundle-add neovim
+</code></pre>
+<p>Python (<code>:python</code>) support is available if the <a href="https://github.com/clearlinux/clr-bundles/blob/master/bundles/python-basic">python-basic bundle</a> is installed.</p>
+<pre><code>sudo swupd bundle-add python-basic
+</code></pre>
+<h3 id="crux">CRUX</h3>
+<p>A CRUX port is available under <a href="https://github.com/6c37/crux-ports"><code>6c37/neovim</code></a>, along with ports for other dependencies of Neovim.</p>
+<p>For instructions on how to install the Python modules, see [<code>:help provider-python</code>].</p>
+<h3 id="debian">Debian</h3>
+<p>Neovim is in <a href="https://packages.debian.org/search?keywords=neovim">Debian</a>.</p>
+<pre><code>sudo apt-get install neovim
+</code></pre>
+<p>Python (<code>:python</code>) support is installable via the package manager on Debian unstable.</p>
+<pre><code>sudo apt-get install python-neovim
+sudo apt-get install python3-neovim
+</code></pre>
+<h3 id="exherbo-linux">Exherbo Linux</h3>
+<p>Exhereses for scm and released versions are currently available in repository <code>::medvid</code>. Python client (with GTK+ GUI included) and Qt5 GUI are also available as suggestions:</p>
+<pre><code>cave resolve app-editors/neovim --take dev-python/neovim-python --take app-editors/neovim-qt
+</code></pre>
+<h3 id="fedora">Fedora</h3>
+<p>Neovim is in <a href="https://admin.fedoraproject.org/pkgdb/package/rpms/neovim/">Fedora</a> starting with Fedora 25:</p>
+<pre><code>dnf install -y neovim python{2,3}-neovim
+</code></pre>
+<p>You can also get nightly builds of git master from the <a href="https://copr.fedoraproject.org/coprs/agriffis/neovim-nightly/">Copr automated build system</a>:</p>
+<pre><code>dnf copr enable agriffis/neovim-nightly
+dnf install -y neovim python{2,3}-neovim
+</code></pre>
+<p>See the <a href="https://arongriffis.com/2019/03/02/neovim-nightly-builds">blog post</a> for information on how these are built.</p>
+<h3 id="flatpak">Flatpak</h3>
+<p>You can find Neovim on <a href="https://flathub.org/apps/details/io.neovim.nvim">Flathub</a>. Providing you have Flatpak <a href="https://flatpak.org/setup/">set up</a>:</p>
+<pre><code>flatpak install flathub io.neovim.nvim
+flatpak run io.neovim.nvim
+</code></pre>
+<p>You can add <code>/var/lib/flatpak/exports/bin</code> (or <code>~/.local/share/flatpak/exports/bin</code> if you used <code>--user</code>) to the <code>$PATH</code> and run it with <code>io.neovim.nvim</code>.</p>
+<p>Note that Flatpak'ed Neovim will look for <code>init.vim</code> in <code>~/.var/app/io.neovim.nvim/config/nvim</code> instead of <code>~/.config/nvim</code>. </p>
+<h3 id="gentoo-linux">Gentoo Linux</h3>
+<p>An ebuild is available in Gentoo's official portage repository:</p>
+<pre><code>emerge -a app-editors/neovim
+</code></pre>
+<h3 id="gnu-guix">GNU Guix</h3>
+<p>Neovim can be installed with:</p>
+<pre><code>guix install neovim
+</code></pre>
+<h3 id="nix-nixos">Nix / NixOS</h3>
+<p>Neovim can be installed with:</p>
+<pre><code>nix-env -iA nixpkgs.neovim
+</code></pre>
+<p>To install the Python modules:</p>
+<pre><code>nix-env -iA nixpkgs.python3Packages.pynvim
+</code></pre>
+<p>Replace python3 with python2 for the python 2 packages.</p>
+<h3 id="mageia-7">Mageia 7</h3>
+<pre><code>urpmi neovim
+</code></pre>
+<p>To install the Python modules:</p>
+<pre><code>urpmi python2-pynvim python3-pynvim
+</code></pre>
+<h3 id="opensuse">OpenSUSE</h3>
+<p>Neovim can be installed with:</p>
+<pre><code>sudo zypper in neovim
+</code></pre>
+<p>To install the Python modules:</p>
+<pre><code>sudo zypper in python-neovim python3-neovim
+</code></pre>
+<h3 id="pld-linux">PLD Linux</h3>
+<p>Neovim is in <a href="https://github.com/pld-linux/neovim">PLD Linux</a>:</p>
+<pre><code>poldek -u neovim
+poldek -u python-neovim python3-neovim
+poldek -u python-neovim-gui python3-neovim-gui
+</code></pre>
+<h3 id="slackware">Slackware</h3>
+<p>See <a href="http://slackbuilds.org/apps/neovim/">neovim on SlackBuilds</a>.</p>
+<p>For instructions on how to install the Python modules, see [<code>:help provider-python</code>].</p>
+<h3 id="source-mage">Source Mage</h3>
+<p>Neovim can be installed using the Sorcery package manager:</p>
+<pre><code>cast neovim
+</code></pre>
+<h3 id="solus">Solus</h3>
+<p>Neovim can be installed using the default package manager in Solus (eopkg):</p>
+<pre><code>sudo eopkg install neovim
+</code></pre>
+<h3 id="snap">Snap</h3>
+<p>Neovim nightly and stable are available on the <a href="https://snapcraft.io/nvim">snap store</a>.</p>
+<p><strong>Stable Builds</strong></p>
+<div class="highlight"><pre><span></span>sudo snap install --candidate nvim --classic
+</pre></div>
+
+<p><strong>Nightly Builds</strong></p>
+<div class="highlight"><pre><span></span>sudo snap install --edge nvim --classic
+</pre></div>
+
+<h3 id="ubuntu">Ubuntu</h3>
+<p><strong>Since 18.04</strong>
+As in Debian, Neovim is in <a href="https://packages.ubuntu.com/search?keywords=neovim">Ubuntu</a>.</p>
+<pre><code>sudo apt install neovim
+</code></pre>
+<p>Python (<code>:python</code>) support seems to be automatically installed</p>
+<pre><code>sudo apt install python-neovim
+sudo apt install python3-neovim
+</code></pre>
+<p><strong>Before 18.04</strong>
+Neovim has been added to a "Personal Package Archive" (PPA). This allows you to install it with <code>apt-get</code>. Follow the links to the PPAs to see which versions of Ubuntu are currently available via the PPA. Choose <strong>stable</strong> or <strong>unstable</strong>:</p>
+<ul>
+<li><a href="https://launchpad.net/~neovim-ppa/+archive/ubuntu/stable">https://launchpad.net/~neovim-ppa/+archive/ubuntu/<strong>stable</strong></a> (Xenial 16.04 or newer only).</li>
+<li><a href="https://launchpad.net/~neovim-ppa/+archive/ubuntu/unstable">https://launchpad.net/~neovim-ppa/+archive/ubuntu/<strong>unstable</strong></a></li>
+</ul>
+<p>To be able to use <strong>add-apt-repository</strong> you may need to install software-properties-common:</p>
+<pre><code>sudo apt-get install software-properties-common
+</code></pre>
+<p>If you're using an older version Ubuntu you must use:</p>
+<pre><code>sudo apt-get install python-software-properties
+</code></pre>
+<p>Run the following commands:</p>
+<pre><code>sudo add-apt-repository ppa:neovim-ppa/stable
+sudo apt-get update
+sudo apt-get install neovim
+</code></pre>
+<p>Prerequisites for the Python modules:</p>
+<pre><code>sudo apt-get install python-dev python-pip python3-dev python3-pip
+</code></pre>
+<p>If you're using an older version Ubuntu you must use:</p>
+<pre><code>sudo apt-get install python-dev python-pip python3-dev
+sudo apt-get install python3-setuptools
+sudo easy_install3 pip
+</code></pre>
+<p>For instructions to install the Python modules, see [<code>:help provider-python</code>].</p>
+<p>If you want to use Neovim for some (or all) of the editor alternatives, use the following commands:</p>
+<pre><code>sudo update-alternatives --install /usr/bin/vi vi /usr/bin/nvim 60
+sudo update-alternatives --config vi
+sudo update-alternatives --install /usr/bin/vim vim /usr/bin/nvim 60
+sudo update-alternatives --config vim
+sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
+sudo update-alternatives --config editor
+</code></pre>
+<p>Note, however, that special interfaces, like <code>view</code> for <code>nvim -R</code>, are not supported.  (See <a href="https://github.com/neovim/neovim/issues/1646">#1646</a> and <a href="https://github.com/neovim/neovim/pull/2008">#2008</a>.)</p>
+<h3 id="void-linux">Void-Linux</h3>
+<p>Neovim can be installed using the xbps package manager</p>
+<pre><code>sudo xbps-install -S neovim
+</code></pre>
+<h2 id="bsd">BSD</h2>
+<h3 id="freebsd">FreeBSD</h3>
+<p>Neovim can be installed using <a href="http://man.freebsd.org/pkg/8"><code>pkg(8)</code></a>:</p>
+<pre><code>pkg install neovim
+</code></pre>
+<p>or <a href="https://www.freshports.org/editors/neovim/">from the ports tree</a>:</p>
+<pre><code>cd /usr/ports/editors/neovim/ &amp;&amp; make install clean
+</code></pre>
+<p>To install the pynvim Python modules using <a href="http://man.freebsd.org/pkg/8"><code>pkg(8)</code></a> run:</p>
+<pre><code>pkg install py27-pynvim py36-pynvim
+</code></pre>
+<h3 id="openbsd">OpenBSD</h3>
+<p>Neovim can be installed using <a href="https://man.openbsd.org/pkg_add"><code>pkg_add(1)</code></a>:</p>
+<pre><code>pkg_add neovim
+</code></pre>
+<p>or <a href="https://cvsweb.openbsd.org/cgi-bin/cvsweb/ports/editors/neovim/">from the ports tree</a>:</p>
+<pre><code>cd /usr/ports/editors/neovim/ &amp;&amp; make install
+</code></pre>
+<h2 id="android">Android</h2>
+<p><a href="https://play.google.com/store/apps/details?id=com.termux">Termux on the Google Play store</a> offers a Neovim package.</p>
+<h1 id="install-from-source">Install from source</h1>
+<p>If a package is not provided for your platform, you can build Neovim from source. See <a href="https://github.com/neovim/neovim/wiki/Building-Neovim">Building-Neovim</a> for details.  If you have the <a href="https://github.com/neovim/neovim/wiki/Building-Neovim#build-prerequisites">prerequisites</a> then building is easy:</p>
+<pre><code>make CMAKE_BUILD_TYPE=Release
+sudo make install
+</code></pre>
+<p>For Unix-like systems this installs Neovim to <code>/usr/local</code>, while for Windows to <code>C:\Program Files</code>. Note, however, that this can complicate uninstallation. The following example avoids this by isolating an installation under <code>$HOME/neovim</code>:</p>
+<pre><code>rm -r build/  # clear the CMake cache
+make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/neovim"
+make install
+export PATH="$HOME/neovim/bin:$PATH"
+</code></pre>
+<h2 id="uninstall">Uninstall</h2>
+<p>To <em>uninstall</em> after <code>make install</code>, just delete the <code>CMAKE_INSTALL_PREFIX</code> artifacts:</p>
+<div class="highlight"><pre><span></span>sudo rm /usr/local/bin/nvim
+sudo rm -r /usr/local/share/nvim/
+</pre></div>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../GSoC/" title="GSoC" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                GSoC
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Integer-types-refactoring-guidelines/" title="Integer-types-refactoring-guidelines" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Integer-types-refactoring-guidelines
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>

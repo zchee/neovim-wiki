@@ -1,0 +1,1105 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Neovim Wiki">
+      
+      
+        <link rel="canonical" href="https://zchee.github.io/neovim-wiki/Merging-patches-from-upstream-Vim/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>Merging-patches-from-upstream-Vim - Neovim Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-89201129-1", "https://zchee.github.io/neovim-wiki/")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#quickstart" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://zchee.github.io/neovim-wiki/" title="Neovim Wiki" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Neovim Wiki
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Merging-patches-from-upstream-Vim
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/zchee/neovim-wiki/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    zchee/neovim-wiki
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://zchee.github.io/neovim-wiki/" title="Neovim Wiki" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Neovim Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/zchee/neovim-wiki/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    zchee/neovim-wiki
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Home/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Architectural-musing-and-ideas/" title="Architectural-musing-and-ideas" class="md-nav__link">
+      Architectural-musing-and-ideas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Building-Neovim/" title="Building-Neovim" class="md-nav__link">
+      Building-Neovim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../C-programming/" title="C-programming" class="md-nav__link">
+      C-programming
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../C-Refactorings-and-Code-Smells-Catalog/" title="C-Refactorings-and-Code-Smells-Catalog" class="md-nav__link">
+      C-Refactorings-and-Code-Smells-Catalog
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Code-overview/" title="Code-overview" class="md-nav__link">
+      Code-overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Code-review-checklist/" title="Code-review-checklist" class="md-nav__link">
+      Code-review-checklist
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Contributing/" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Deps/" title="Deps" class="md-nav__link">
+      Deps
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Development-tips/" title="Development-tips" class="md-nav__link">
+      Development-tips
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../FAQ/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Following-HEAD/" title="Following-HEAD" class="md-nav__link">
+      Following-HEAD
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Generate-callgraphs-with-Doxygen/" title="Generate-callgraphs-with-Doxygen" class="md-nav__link">
+      Generate-callgraphs-with-Doxygen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../GSoC-2018-Ideas/" title="GSoC-2018-Ideas" class="md-nav__link">
+      GSoC-2018-Ideas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../GSoC-2019-Ideas/" title="GSoC-2019-Ideas" class="md-nav__link">
+      GSoC-2019-Ideas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../GSoC/" title="GSoC" class="md-nav__link">
+      GSoC
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Installing-Neovim/" title="Installing-Neovim" class="md-nav__link">
+      Installing-Neovim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Integer-types-refactoring-guidelines/" title="Integer-types-refactoring-guidelines" class="md-nav__link">
+      Integer-types-refactoring-guidelines
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../List-management-in-Neovim/" title="List-management-in-Neovim" class="md-nav__link">
+      List-management-in-Neovim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Merging-patches-from-upstream-Vim
+      </label>
+    
+    <a href="./" title="Merging-patches-from-upstream-Vim" class="md-nav__link md-nav__link--active">
+      Merging-patches-from-upstream-Vim
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quickstart" class="md-nav__link">
+    Quickstart
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    Notes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pull-requests" class="md-nav__link">
+    Pull requests
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#na-not-applicable-patches" class="md-nav__link">
+    NA ("Not Applicable") patches
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-not-applicable-vim-patches" class="md-nav__link">
+    Types of "Not Applicable" Vim patches:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versionc" class="md-nav__link">
+    version.c
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-differences" class="md-nav__link">
+    Code differences
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-differences" class="md-nav__link">
+    Documentation differences
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Plugin-UI-architecture/" title="Plugin-UI-architecture" class="md-nav__link">
+      Plugin-UI-architecture
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Progress/" title="Progress" class="md-nav__link">
+      Progress
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Refactor-Vim-into-a-library/" title="Refactor-Vim-into-a-library" class="md-nav__link">
+      Refactor-Vim-into-a-library
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Refactoring/" title="Refactoring" class="md-nav__link">
+      Refactoring
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Related-projects/" title="Related-projects" class="md-nav__link">
+      Related-projects
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Troubleshooting/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../UI-architecture/" title="UI-architecture" class="md-nav__link">
+      UI-architecture
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Unit-tests/" title="Unit-tests" class="md-nav__link">
+      Unit-tests
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quickstart" class="md-nav__link">
+    Quickstart
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    Notes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pull-requests" class="md-nav__link">
+    Pull requests
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#na-not-applicable-patches" class="md-nav__link">
+    NA ("Not Applicable") patches
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-not-applicable-vim-patches" class="md-nav__link">
+    Types of "Not Applicable" Vim patches:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versionc" class="md-nav__link">
+    version.c
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-differences" class="md-nav__link">
+    Code differences
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-differences" class="md-nav__link">
+    Documentation differences
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/zchee/neovim-wiki/edit/master/docs/Merging-patches-from-upstream-Vim.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Merging-patches-from-upstream-Vim</h1>
+                
+                <p><em>See <strong><a href="#quickstart">Quickstart</a></strong> to get started immediately. Also note the section on <a href="#na-not-applicable-patches"><strong>Not Applicable</strong></a> patches.</em></p>
+<p>Neovim was forked from Vim 7.4.160; it is kept up-to-date with relevant Vim patches in order to avoid duplicate work.  Run <a href="https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh"><code>vim-patch.sh</code></a> to see the status of Vim patches: </p>
+<pre><code>./scripts/vim-patch.sh -l
+</code></pre>
+<p>Everyone is welcome to <a href="#pull-requests">send pull requests</a> for relevant Vim patches, but some types of patches are <a href="#na-not-applicable-patches">not applicable</a>.</p>
+<h2 id="quickstart">Quickstart</h2>
+<ol>
+<li>Pull down the Neovim source:
+   <div class="highlight"><pre><span></span>git clone https://github.com/neovim/neovim.git
+</pre></div></li>
+<li>Run <code>./scripts/vim-patch.sh -l</code> to see the list of missing Vim patches.</li>
+<li>Choose a patch from the list (usually the <em>oldest</em> one), e.g. <code>8.0.0123</code>.</li>
+<li>Check for <a href="https://github.com/neovim/neovim/pulls?q=is%3Apr+is%3Aopen+label%3Avim-patch">open vim-patch PRs</a>.</li>
+<li>Run <code>./scripts/vim-patch.sh -p 8.0.0123</code></li>
+<li>Follow the instructions given by the script.</li>
+</ol>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>It's strongly recommended to work on the <em>oldest</em> missing patch, because later patches might depend on the changes.</li>
+<li>Use <code>git log -G</code> to search the Nvim/Vim source history (even <em>deleted</em> code). E.g. to find <code>reset_option_was_set</code>:
+  <div class="highlight"><pre><span></span>git log -p -G reset_option_was_set
+</pre></div></li>
+</ul>
+<h2 id="pull-requests">Pull requests</h2>
+<p><em>Note:</em> <strong><a href="https://github.com/neovim/neovim/blob/master/scripts/vim-patch.sh">vim-patch.sh</a></strong> automates these steps for you. Use it!</p>
+<ul>
+<li>Install <a href="https://github.com/github/hub">hub</a> or git-hub if you want to use <code>vim-patch.sh</code> to create PRs automatically<ul>
+<li>There should be a <a href="https://github.com/github/hub/issues/978">configuration file</a> <code>~/.config/hub</code> when you are using 2FA in GitHub</li>
+</ul>
+</li>
+<li>The pull request <em>title</em> should include <code>vim-patch:8.0.xxxx</code> (no whitespace) </li>
+<li>The <a href="https://github.com/neovim/neovim/commit/4ccf1125ff569eccfc34abc4ad794044c5ab7455"><em>commit message</em></a> should include:<ul>
+<li>A token indicating the Vim patch number, formatted as follows: <br/>
+ <code>vim-patch:8.0.0123</code> (no whitespace)</li>
+<li>A URL pointing to the Vim commit:<ul>
+<li><a href="https://github.com/vim/vim/commit/c8020ee825b9d9196b1329c0e097424576fc9b3a">https://github.com/vim/vim/commit/c8020ee825b9d9196b1329c0e097424576fc9b3a</a></li>
+</ul>
+</li>
+<li>The original Vim commit message, including author</li>
+</ul>
+</li>
+</ul>
+<p><strong>Reviewers:</strong> <a href="https://github.com/neovim/neovim/pull/1744#issuecomment-68202876">hint for reviewing <code>runtime/</code> patches</a></p>
+<h2 id="na-not-applicable-patches">NA ("Not Applicable") patches</h2>
+<p>Many Vim patches are not applicable to Neovim. If you find NA patches, visit the <a href="https://github.com/neovim/neovim/pulls/marvim">"version.c: update" pull request</a> and mention the NA patches in a comment (please edit/update <em>one</em> comment, rather than adding a new comment for each patch).</p>
+<p>If you are working on a series of patches, you may notice some "Not Applicable" patches. In that case you may want to mark the NA patches a commit message, using this format <em>exactly</em> (each patch on a separate line):</p>
+<pre><code>vim-patch:&lt;version-or-commit&gt;
+vim-patch:&lt;version-or-commit&gt;
+...
+</code></pre>
+<p>where <code>&lt;version-or-commit&gt;</code> is a valid Vim version (like <code>8.0.0123</code>) or commit-id (SHA).</p>
+<h3 id="types-of-not-applicable-vim-patches">Types of "Not Applicable" Vim patches:</h3>
+<ul>
+<li>Updates to <code>testdir/Makefile</code> are usually NA because the Makefile <a href="https://github.com/neovim/neovim/commit/8a677f8a4bff6005fa39f090c14e970c3dfdbe6e#diff-b3c6ad6680a25a1b42095879e3a87104R52">implicitly finds</a> all <code>test_*.vim</code> files.</li>
+<li><strong>Compiler warning fixes</strong>: Neovim strives to have no warnings at all, and has a very different build system from Vim.<ul>
+<li><strong>Note:</strong> Coverity fixes in Vim <em>are</em> relevant to Neovim.</li>
+</ul>
+</li>
+<li><strong>#ifdef tweaking</strong>: For example, Vim decided to enable <code>FEAT_VISUAL</code> for all platforms — but Neovim already does that. Adding new <code>FEAT_</code> guards also isn't relevant to Neovim.</li>
+<li><strong>Legacy system support</strong>: Fixes for legacy systems such as Amiga, OS/2 Xenix, Mac OS 9, Windows older than XP SP2, are not needed because they are not supported by Neovim.</li>
+<li><strong><code>if_*.c</code></strong> changes: <code>if_python.c</code> et. al. were removed.</li>
+<li><strong>term.c</strong> changes: the Neovim TUI uses libtermkey to read terminal sequences; Vim's <code>term.c</code> was removed.</li>
+<li><code>:terminal</code> patches</li>
+<li><code>defaults.vim</code> patches</li>
+<li>Most <strong>GUI-related</strong> changes: Neovim GUIs are implemented external to the core C codebase.</li>
+<li>Anything else might be relevant; err on the side of caution, and post an issue if you aren't sure. </li>
+</ul>
+<h2 id="versionc">version.c</h2>
+<p>The list of Vim patches in <code>src/nvim/version.c</code> is <a href="https://github.com/neovim/neovim/pull/7780">automatically updated</a> based on the presence of <code>vim-patch:xxx</code> tokens in the Neovim git log.</p>
+<ul>
+<li>Don't update <code>src/nvim/version.c</code> yourself.</li>
+<li><code>scripts/vim-patch.sh -p</code> intentionally omits <code>version.c</code> to avoid merge conflicts and save time when porting a patch.</li>
+<li>The automation script (<code>scripts/vimpatch.lua</code>) only recognizes tokens like <code>vim-patch:8.0.1206</code>, not <code>vim-patch:&lt;hash&gt;</code>.</li>
+</ul>
+<h2 id="code-differences">Code differences</h2>
+<p>The following functions have been removed or deprecated in favor of newer alternatives.
+See the <a href="http://neovim.io/doc/dev/memory_8c.html"><code>memory.c</code> Doxygen page</a> for more information.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Deprecated or removed</th>
+<th align="center">Replacement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>vim_free</code></td>
+<td align="center"><code>xfree</code></td>
+</tr>
+<tr>
+<td align="left"><code>VIM_CLEAR(&amp;foo)</code></td>
+<td align="center"><code>XFREE_CLEAR(foo)</code></td>
+</tr>
+<tr>
+<td align="left"><code>malloc</code> <code>alloc</code> <code>lalloc</code> <code>lalloc_id</code></td>
+<td align="center"><code>xmalloc</code></td>
+</tr>
+<tr>
+<td align="left"><code>calloc</code> <code>lalloc_clear</code></td>
+<td align="center"><code>xcalloc</code></td>
+</tr>
+<tr>
+<td align="left"><code>realloc</code> <code>vim_realloc</code></td>
+<td align="center"><code>xrealloc</code></td>
+</tr>
+<tr>
+<td align="left"><code>mch_memmove</code></td>
+<td align="center"><code>memmove</code></td>
+</tr>
+<tr>
+<td align="left"><code>vim_memset</code> <code>copy_chars</code> <code>copy_spaces</code></td>
+<td align="center"><a href="https://github.com/neovim/neovim/pull/1635"><code>memset</code></a></td>
+</tr>
+<tr>
+<td align="left"><code>vim_strncpy</code> <code>strncpy</code></td>
+<td align="center"><code>xstrlcpy</code></td>
+</tr>
+<tr>
+<td align="left"><code>vim_strcat</code> <code>strncat</code></td>
+<td align="center"><code>xstrlcat</code></td>
+</tr>
+<tr>
+<td align="left"><code>vim_islower</code> <code>vim_isupper</code></td>
+<td align="center"><code>mb_islower</code> <code>mb_isupper</code></td>
+</tr>
+<tr>
+<td align="left"><code>vim_tolower</code> <code>vim_toupper</code></td>
+<td align="center"><code>mb_tolower</code> <code>mb_toupper</code></td>
+</tr>
+<tr>
+<td align="left"><code>mb_ptr2len</code></td>
+<td align="center"><code>utfc_ptr2len</code></td>
+</tr>
+<tr>
+<td align="left"><code>mb_ptr2len_len</code></td>
+<td align="center"><code>utfc_ptr2len_len</code></td>
+</tr>
+<tr>
+<td align="left"><code>mb_char2len</code></td>
+<td align="center"><code>utf_char2len</code></td>
+</tr>
+<tr>
+<td align="left"><code>mb_char2bytes</code></td>
+<td align="center"><code>utf_char2bytes</code></td>
+</tr>
+<tr>
+<td align="left"><code>mb_ptr2cells</code></td>
+<td align="center"><code>utf_ptr2cells</code></td>
+</tr>
+<tr>
+<td align="left"><code>mb_ptr2cells_len</code></td>
+<td align="center"><code>utf_ptr2cells_len</code></td>
+</tr>
+<tr>
+<td align="left"><code>mb_char2cells</code></td>
+<td align="center"><code>utf_char2cells</code></td>
+</tr>
+<tr>
+<td align="left"><code>mb_off2cells</code></td>
+<td align="center"><code>utf_off2cells</code></td>
+</tr>
+<tr>
+<td align="left"><code>mb_ptr2char</code></td>
+<td align="center"><code>utf_ptr2char</code></td>
+</tr>
+<tr>
+<td align="left"><code>mb_head_off</code></td>
+<td align="center"><code>utf_head_off</code></td>
+</tr>
+<tr>
+<td align="left"><code>mb_lefthalve</code></td>
+<td align="center"><code>grid_lefthalve</code></td>
+</tr>
+<tr>
+<td align="left"><code>mb_fix_col</code></td>
+<td align="center"><code>grid_fix_col</code></td>
+</tr>
+<tr>
+<td align="left"><code>utf_off2cells</code></td>
+<td align="center"><code>grid_off2cells</code></td>
+</tr>
+<tr>
+<td align="left"><code>screen_char</code></td>
+<td align="center"><code>ui_line</code></td>
+</tr>
+<tr>
+<td align="left"><code>screen_line</code></td>
+<td align="center"><code>grid_put_linebuf</code></td>
+</tr>
+<tr>
+<td align="left"><code>screen_*</code> (most functions)</td>
+<td align="center"><code>grid_*</code></td>
+</tr>
+<tr>
+<td align="left"><code>update_prepare</code>, <code>update_finish</code> <a href="https://github.com/neovim/neovim/pull/9484">#9484</a></td>
+<td align="center">removed; use <code>update_screen</code> only</td>
+</tr>
+</tbody>
+</table>
+<p>Make sure to note the difference between <code>utf_</code> and <code>utfc_</code> when replacing <code>mb_</code> functions. Also indirect call syntax <code>(*mb_ptr2len)(...)</code> should be replaced with an ordinary function call <code>utfc_ptr2len(...)</code>.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Data type</th>
+<th align="left">Format (Vim source)</th>
+<th align="left">Portable format (Nvim source)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>long long</code></td>
+<td align="left"><code>"%lld"</code></td>
+<td align="left"><code>"%" PRId64</code></td>
+</tr>
+<tr>
+<td align="left"><code>size_t</code></td>
+<td align="left"><code>"%ld"</code></td>
+<td align="left"><code>"%zu"</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>See also: <a href="https://github.com/neovim/neovim/pull/1729#discussion_r22423779">https://github.com/neovim/neovim/pull/1729#discussion_r22423779</a></li>
+<li>Vim's <code>ga_init2</code> was renamed to <code>ga_init</code> and the original <code>ga_init</code> is gone.</li>
+<li>"Old style" Vim tests (<code>src/testdir/*.in</code>) should be converted to Lua tests (see <a href="https://github.com/neovim/neovim/issues/1286">#1286</a> and <a href="https://github.com/neovim/neovim/pull/1328">#1328</a>). See <a href="https://github.com/neovim/neovim/blob/master/test/README.md#checklist-for-migrating-legacy-tests">Checklist for migrating legacy tests</a>. <ul>
+<li>However, please <em>do not</em> convert "new style" Vim tests (<code>src/testdir/*.vim</code>) to Lua. The "new style" Vim tests are faster than the old ones, and converting them takes time and effort better spent elsewhere. Just copy them to <code>src/nvim/testdir/*.vim</code> and update <code>src/nvim/testdir/Makefile</code>.</li>
+</ul>
+</li>
+<li>Conditions that check <code>enc_utf8</code> or <code>has_mbyte</code> are obsolete (only the "true" case is applicable).</li>
+<li>List management has changed in Neovim, see this <a href="https://github.com/neovim/neovim/wiki/List-management-in-Neovim">wiki page</a>.</li>
+</ul>
+<h2 id="documentation-differences">Documentation differences</h2>
+<p>The following should be removed from all imported documentation, and not be used in new documentation:</p>
+<ul>
+<li><code>{not in Vi}</code> : we don't care about compatibility with Vi (see <a href="https://github.com/neovim/neovim/commit/818f7aefd2fe7eacd7135c5e3154934f24c85ca7"><code>818f7ae</code></a>).</li>
+<li><code>{Only when compiled with ...}</code> - the vast majority of features have been made non-optional (see <a href="Introduction#legacy-support-and-compile-time-features">Introduction</a>)</li>
+</ul>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../List-management-in-Neovim/" title="List-management-in-Neovim" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                List-management-in-Neovim
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Plugin-UI-architecture/" title="Plugin-UI-architecture" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Plugin-UI-architecture
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>

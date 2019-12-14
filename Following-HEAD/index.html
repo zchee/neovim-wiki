@@ -1,0 +1,1124 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Neovim Wiki">
+      
+      
+        <link rel="canonical" href="https://zchee.github.io/neovim-wiki/Following-HEAD/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>Following-HEAD - Neovim Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-89201129-1", "https://zchee.github.io/neovim-wiki/")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#20190707" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://zchee.github.io/neovim-wiki/" title="Neovim Wiki" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Neovim Wiki
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Following-HEAD
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/zchee/neovim-wiki/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    zchee/neovim-wiki
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://zchee.github.io/neovim-wiki/" title="Neovim Wiki" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Neovim Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/zchee/neovim-wiki/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    zchee/neovim-wiki
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Home/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Architectural-musing-and-ideas/" title="Architectural-musing-and-ideas" class="md-nav__link">
+      Architectural-musing-and-ideas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Building-Neovim/" title="Building-Neovim" class="md-nav__link">
+      Building-Neovim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../C-programming/" title="C-programming" class="md-nav__link">
+      C-programming
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../C-Refactorings-and-Code-Smells-Catalog/" title="C-Refactorings-and-Code-Smells-Catalog" class="md-nav__link">
+      C-Refactorings-and-Code-Smells-Catalog
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Code-overview/" title="Code-overview" class="md-nav__link">
+      Code-overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Code-review-checklist/" title="Code-review-checklist" class="md-nav__link">
+      Code-review-checklist
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Contributing/" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Deps/" title="Deps" class="md-nav__link">
+      Deps
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Development-tips/" title="Development-tips" class="md-nav__link">
+      Development-tips
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../FAQ/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Following-HEAD
+      </label>
+    
+    <a href="./" title="Following-HEAD" class="md-nav__link md-nav__link--active">
+      Following-HEAD
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#20190707" class="md-nav__link">
+    2019/07/07
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20190610" class="md-nav__link">
+    2019/06/10
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20190331" class="md-nav__link">
+    2019/03/31
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20190120" class="md-nav__link">
+    2019/01/20
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20181118" class="md-nav__link">
+    2018/11/18
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps-to-update-pynvim-formerly-neovim-python-package" class="md-nav__link">
+    Steps to update "pynvim" (formerly "neovim") Python package:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20180922" class="md-nav__link">
+    2018/09/22
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20180610" class="md-nav__link">
+    2018/06/10
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20180223" class="md-nav__link">
+    2018/02/23
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20171118" class="md-nav__link">
+    2017/11/18
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20170821" class="md-nav__link">
+    2017/08/21
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20170515" class="md-nav__link">
+    2017/05/15
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20170403" class="md-nav__link">
+    2017/04/03
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20170402" class="md-nav__link">
+    2017/04/02
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20161212" class="md-nav__link">
+    2016/12/12
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20161105" class="md-nav__link">
+    2016/11/05
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20160214" class="md-nav__link">
+    2016/02/14
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20151017" class="md-nav__link">
+    2015/10/17
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20150726" class="md-nav__link">
+    2015/07/26
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Generate-callgraphs-with-Doxygen/" title="Generate-callgraphs-with-Doxygen" class="md-nav__link">
+      Generate-callgraphs-with-Doxygen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../GSoC-2018-Ideas/" title="GSoC-2018-Ideas" class="md-nav__link">
+      GSoC-2018-Ideas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../GSoC-2019-Ideas/" title="GSoC-2019-Ideas" class="md-nav__link">
+      GSoC-2019-Ideas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../GSoC/" title="GSoC" class="md-nav__link">
+      GSoC
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Installing-Neovim/" title="Installing-Neovim" class="md-nav__link">
+      Installing-Neovim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Integer-types-refactoring-guidelines/" title="Integer-types-refactoring-guidelines" class="md-nav__link">
+      Integer-types-refactoring-guidelines
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../List-management-in-Neovim/" title="List-management-in-Neovim" class="md-nav__link">
+      List-management-in-Neovim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Merging-patches-from-upstream-Vim/" title="Merging-patches-from-upstream-Vim" class="md-nav__link">
+      Merging-patches-from-upstream-Vim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Plugin-UI-architecture/" title="Plugin-UI-architecture" class="md-nav__link">
+      Plugin-UI-architecture
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Progress/" title="Progress" class="md-nav__link">
+      Progress
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Refactor-Vim-into-a-library/" title="Refactor-Vim-into-a-library" class="md-nav__link">
+      Refactor-Vim-into-a-library
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Refactoring/" title="Refactoring" class="md-nav__link">
+      Refactoring
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Related-projects/" title="Related-projects" class="md-nav__link">
+      Related-projects
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Troubleshooting/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../UI-architecture/" title="UI-architecture" class="md-nav__link">
+      UI-architecture
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Unit-tests/" title="Unit-tests" class="md-nav__link">
+      Unit-tests
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#20190707" class="md-nav__link">
+    2019/07/07
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20190610" class="md-nav__link">
+    2019/06/10
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20190331" class="md-nav__link">
+    2019/03/31
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20190120" class="md-nav__link">
+    2019/01/20
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20181118" class="md-nav__link">
+    2018/11/18
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps-to-update-pynvim-formerly-neovim-python-package" class="md-nav__link">
+    Steps to update "pynvim" (formerly "neovim") Python package:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20180922" class="md-nav__link">
+    2018/09/22
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20180610" class="md-nav__link">
+    2018/06/10
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20180223" class="md-nav__link">
+    2018/02/23
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20171118" class="md-nav__link">
+    2017/11/18
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20170821" class="md-nav__link">
+    2017/08/21
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20170515" class="md-nav__link">
+    2017/05/15
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20170403" class="md-nav__link">
+    2017/04/03
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20170402" class="md-nav__link">
+    2017/04/02
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20161212" class="md-nav__link">
+    2016/12/12
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20161105" class="md-nav__link">
+    2016/11/05
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20160214" class="md-nav__link">
+    2016/02/14
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20151017" class="md-nav__link">
+    2015/10/17
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20150726" class="md-nav__link">
+    2015/07/26
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/zchee/neovim-wiki/edit/master/docs/Following-HEAD.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Following-HEAD</h1>
+                
+                <p>The following changes may require users to update configuration, plugins, or expectations. Only <strong>breaking changes</strong> are mentioned here, this is not a reference for new features (see <a href="http://neovim.io/doc/user/nvim.html"><code>:help nvim</code></a> instead). </p>
+<ul>
+<li>If you don't have Neovim, see <a href="Building-Neovim">Building Neovim</a> or <a href="Installing-Neovim">Installing Neovim</a>.</li>
+<li>Use <code>:checkhealth</code> to detect and fix common problems.</li>
+</ul>
+<hr />
+<h3 id="20190707">2019/07/07</h3>
+<p>Floating windows no longer implicitly disables the number column. Instead use <code>style='minimal'</code> argument to <code>nvim_open_win()</code> to disable UI features like number column, End-of-buffer lines etc.</p>
+<h3 id="20190610">2019/06/10</h3>
+<p><a href="https://github.com/neovim/neovim/pull/10123">#10123</a> Nvim core requires <a href="https://github.com/luvit/luv/">libluv</a>. This may require building with <code>-DUSE_BUNDLED_LUV=ON</code> if you were previously using <code>-DUSE_BUNDLED_LUV=OFF</code>. Previously <code>luv</code> was only needed for running tests; now <code>nvim</code> statically links <code>libluv</code> in order to provide the <a href="https://neovim.io/doc/user/if_lua.html#lua-loop">vim.loop</a> Lua interface.</p>
+<h3 id="20190331">2019/03/31</h3>
+<p><a href="https://github.com/neovim/neovim/pull/9819">#9819</a> <code>MenuPopupChanged</code> renamed to <code>CompleteChanged</code>.</p>
+<h3 id="20190120">2019/01/20</h3>
+<p><a href="https://github.com/neovim/neovim/pull/9526">#9526</a>: Neovim always uses the system allocator, instead of jemalloc. </p>
+<h3 id="20181118">2018/11/18</h3>
+<p>The Python package <code>neovim</code> was renamed to <a href="https://github.com/neovim/pynvim"><code>pynvim</code></a>.</p>
+<p>"Neovim" can mean a lot of things. It can relate to the editor, or the project, or (prior to this change) the Python module, or the Ruby gem, etc. Especially confusing was the fact that the Python side would refer to it as <code>neovim</code> whereas the Neovim side referred to it as <code>python-client</code>. Now, both sides call it <code>pynvim</code> for the greater good.</p>
+<p>For the time being, <code>neovim</code> acts as a transitional package for the new <code>pynvim</code>. Unfortunately, due to limitations in pip, the <code>neovim</code> package cannot be safely upgraded with <code>pip install --upgrade neovim</code> on all systems.</p>
+<h4 id="steps-to-update-pynvim-formerly-neovim-python-package">Steps to update "pynvim" (formerly "neovim") Python package:</h4>
+<pre><code>pip uninstall neovim pynvim
+pip install pynvim
+</code></pre>
+<ul>
+<li>After those steps, it is safe to <code>pip install neovim</code> again, if any third-party package has it as a formal dependency. Otherwise it shouldn't be necessary.</li>
+<li><code>import neovim</code> is still supported, both in plugins and third-party software using it as a library. If <code>import neovim</code> fails, then the upgrade wasn't successful. Follow the instructions above. </li>
+</ul>
+<h3 id="20180922">2018/09/22</h3>
+<p><a href="https://github.com/neovim/neovim/pull/9024">#9024</a>: The meaning of the <code>--embed</code> and <code>--headless</code> flags changed to facilitate better startup behaviour with external UIs. UI embedders (any user of <code>nvim_ui_attach</code>) must start Nvim <strong>without</strong> <code>--headless</code>:</p>
+<pre><code>nvim --embed
+</code></pre>
+<p>Embedders <em>not</em> using the UI protocol must use:</p>
+<pre><code>nvim --embed --headless
+</code></pre>
+<p>In the "<code>--embed</code> only" case Nvim waits for <code>nvim_ui_attach</code> <strong>before continuing startup</strong> (user config, reading buffers) so that UIs can deterministically handle (display) early messages, dialogs, etc.  The client can do other requests before <code>nvim_ui_attach</code> (e.g. <code>nvim_get_api_info</code> for feature-detection). During this pre-startup phase the user config is of course not available (similar to <code>--cmd</code>).</p>
+<p>For most UI embedders this improves startup behavior automatically, by supporting startup messages
+and swapfile dialogs. For others it is potentially a breaking change, which can be easily avoided by specifying <code>--headless</code> (which is <em>backwards-compatible</em> for that use-case).</p>
+<p>UIs that need additional initialization after <code>init.vim</code> can use this pattern:</p>
+<ul>
+<li>Before <code>nvim_ui_attach</code> send a single <code>nvim_command</code> request with the command <code>"autocmd VimEnter * call rpcrequest(1, 'vimenter')"</code>.</li>
+<li>In the <code>vimenter</code> method handler the UI can then safely execute any requests.</li>
+<li>Nvim will only enter normal mode when the handler returns (because <code>rpcrequest()</code> is a blocking call).</li>
+</ul>
+<h3 id="20180610">2018/06/10</h3>
+<p>Changes from <a href="https://github.com/neovim/neovim/pull/7679">#7679</a>:</p>
+<ul>
+<li>Nvim treats a stdin stream as <em>text</em> by default:
+  <div class="highlight"><pre><span></span>echo foo | nvim
+</pre></div></li>
+<li>To get the old behavior, pass stdin to <code>-s</code>:
+    <div class="highlight"><pre><span></span>echo foo | nvim -s -
+</pre></div></li>
+<li><strong>Windows only:</strong> <code>nvim *.txt</code> (glob/wildcard expression) is <a href="https://github.com/neovim/neovim/pull/7679/commits/1f300e08b8c0c35b2f3d79506ae9817cd8591624">treated literally</a>. Use the <code>:next</code> (<code>:n</code>) command instead:
+  <div class="highlight"><pre><span></span>nvim +&quot;n *.txt&quot;
+</pre></div></li>
+</ul>
+<h3 id="20180223">2018/02/23</h3>
+<p>Default fillchars for 'vert' and 'sep' changed from respectively <code>|</code> and <code>-</code> to <code>│</code> and <code>·</code> when the <code>ambiwidth</code> setting is different from <code>double</code>, else old defaults apply. <a href="https://github.com/neovim/neovim/pull/8035">#8035</a></p>
+<h3 id="20171118">2017/11/18</h3>
+<p>VimL (Vimscript) compatibility: <code>count</code> is no longer an alias to <code>v:count</code>.
+This helps avoid mistakes in scripts. <a href="https://github.com/neovim/neovim/pull/7407">#7407</a></p>
+<h3 id="20170821">2017/08/21</h3>
+<p><code>:terminal</code> now starts in normal mode (<a href="https://github.com/neovim/neovim/pull/6808">#6808</a>), like any other buffer, instead of terminal mode.  This avoids the cursor getting "trapped" when a terminal is started.</p>
+<h3 id="20170515">2017/05/15</h3>
+<p>The <code>highlight</code> option is now read-only (<a href="https://github.com/neovim/neovim/pull/6737">#6737</a>), so that the built-in highlight groups (and their behaviors) are predictable and can be used as keys for features like <code>winhighlight</code>. </p>
+<h3 id="20170403">2017/04/03</h3>
+<p>Default 'mouse' setting changed from <code>mouse=a</code> to <code>mouse=</code> (empty). This will change again in the future after <code>mouse=a</code> is improved. To continue using mouse, add this to your init.vim:</p>
+<pre><code>set mouse=a
+</code></pre>
+<h3 id="20170402">2017/04/02</h3>
+<p>Support for <code>$NVIM_TUI_ENABLE_CURSOR_SHAPE</code> was removed. Use the <code>guicursor</code> option to control cursor styling. See <a href="https://github.com/neovim/neovim/wiki/FAQ#how-can-i-change-the-cursor-shape-in-the-terminal">FAQ</a>. </p>
+<ul>
+<li>To <strong>disable</strong> cursor style changes, set <code>guicursor</code> to empty:
+  <div class="highlight"><pre><span></span>:set guicursor=
+</pre></div></li>
+<li><strong>Note:</strong> <code>guicursor</code> is enabled by <em>default</em> only if Nvim is certain it won't cause problems on your terminal. If you know that cursor shaping works on your terminal, set <code>guicursor</code> in your init.vim:
+  <div class="highlight"><pre><span></span>:set guicursor=n-v-c:block-Cursor/lCursor-blinkon0,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
+</pre></div></li>
+</ul>
+<h3 id="20161212">2016/12/12</h3>
+<p><a href="https://github.com/neovim/neovim/pull/5529">#5529</a> merged Vim's support for "partial functions" which made Nvim more strict about when the implicit <code>self</code> variable is available.  Functions that reference <code>self</code> (which is common with job callbacks) must either be declared as <code>dict</code> functions:</p>
+<div class="highlight"><pre><span></span><span class="k">function</span><span class="p">!</span> s:on_stdout<span class="p">(</span>id<span class="p">,</span> data<span class="p">,</span> <span class="nb">event</span><span class="p">)</span> <span class="nb">dict</span> abort
+</pre></div>
+
+<p>or as part of the job options dictionary:</p>
+<div class="highlight"><pre><span></span><span class="k">let</span> s:opts <span class="p">=</span> { ... }
+<span class="k">function</span><span class="p">!</span> s:opts.on_stdout<span class="p">(</span>id<span class="p">,</span> data<span class="p">,</span> <span class="nb">event</span><span class="p">)</span> abort
+</pre></div>
+
+<p>Job callbacks also must have at least 3 parameters now. See <a href="https://github.com/neovim/neovim/issues/5763#issuecomment-266722407">https://github.com/neovim/neovim/issues/5763#issuecomment-266722407</a></p>
+<h3 id="20161105">2016/11/05</h3>
+<p>[<code>'encoding'</code>][encoding] cannot be changed to a value other than "utf-8", even during initialization. <a href="https://github.com/neovim/neovim/pull/2905">#2905</a></p>
+<p>(Background: [#2929][2929] restricted <code>'encoding'</code> to be modifiable only during initialization. One year later, we've found no problems with UTF-8 as the internal encoding, and are now making this mandatory. This only affects the internals of Nvim, it doesn't affect file encodings or plugins.)</p>
+<h3 id="20160214">2016/02/14</h3>
+<p><code>:filetype plugin indent on</code> and <code>:syntax on</code> are now executed by default <a href="https://github.com/neovim/neovim/blob/4bfac00aa389487c4f11d34e7a3e96e4a1116800/runtime/doc/starting.txt#L431-L444">after your vimrc</a>. </p>
+<ul>
+<li>If your vimrc calls <code>:filetype</code>, Neovim will <em>not</em> change your preference. </li>
+<li>If your vimrc calls <code>:filetype off</code> or <code>:syntax off</code>, that will be respected.</li>
+<li>If <code>filetype plugin indent on</code> and/or <code>syntax on</code> is in your vimrc, you can delete those lines.</li>
+</ul>
+<p>See <code>:help startup</code> for complete details.</p>
+<h3 id="20151017">2015/10/17</h3>
+<p>The <a href="http://neovim.io/doc/user/options.html#%27viminfo%27"><code>'viminfo'</code></a> option is now an alias for <a href="http://neovim.io/doc/user/options.html#%27shada%27"><code>'shada'</code></a>. <a href="http://neovim.io/doc/user/options.html#%27viminfo%27"><code>'viminfo'</code></a> can no longer include <code>n</code> and it can no longer be shared with Vim.</p>
+<p>See <a href="https://github.com/neovim/neovim/issues/3469">#3469</a> for more information.</p>
+<h3 id="20150726">2015/07/26</h3>
+<p>The behavior of the <a href="http://neovim.io/doc/user/eval.html#mkdir%28%29"><code>mkdir()</code></a> function has changed:</p>
+<ol>
+<li>Assuming /tmp/foo does not exist and /tmp can be written to,
+   <code>mkdir('/tmp/foo/bar', 'p', 0700)</code> will create both /tmp/foo and /tmp/foo/bar
+   with the octal permissions 0700.
+   Vim's mkdir() will create /tmp/foo with 0755.</li>
+<li>If you try to create an existing directory with <code>'p'</code>, such as with <code>mkdir('/', 'p'))</code>, mkdir() will silently fail. In Vim this was an error.</li>
+<li>Upon failure, mkdir() related error messages now include strerror() text.</li>
+</ol>
+<p>See <a href="https://github.com/neovim/neovim/pull/3041">#3041</a> for more information.</p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../FAQ/" title="FAQ" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                FAQ
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Generate-callgraphs-with-Doxygen/" title="Generate-callgraphs-with-Doxygen" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Generate-callgraphs-with-Doxygen
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>

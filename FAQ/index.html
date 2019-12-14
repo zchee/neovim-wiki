@@ -1,0 +1,1091 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Neovim Wiki">
+      
+      
+        <link rel="canonical" href="https://zchee.github.io/neovim-wiki/FAQ/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>FAQ - Neovim Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-89201129-1", "https://zchee.github.io/neovim-wiki/")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#where-should-i-put-my-config-vimrc" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://zchee.github.io/neovim-wiki/" title="Neovim Wiki" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Neovim Wiki
+            </span>
+            <span class="md-header-nav__topic">
+              
+                FAQ
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/zchee/neovim-wiki/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    zchee/neovim-wiki
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://zchee.github.io/neovim-wiki/" title="Neovim Wiki" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Neovim Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/zchee/neovim-wiki/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    zchee/neovim-wiki
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Home/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Architectural-musing-and-ideas/" title="Architectural-musing-and-ideas" class="md-nav__link">
+      Architectural-musing-and-ideas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Building-Neovim/" title="Building-Neovim" class="md-nav__link">
+      Building-Neovim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../C-programming/" title="C-programming" class="md-nav__link">
+      C-programming
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../C-Refactorings-and-Code-Smells-Catalog/" title="C-Refactorings-and-Code-Smells-Catalog" class="md-nav__link">
+      C-Refactorings-and-Code-Smells-Catalog
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Code-overview/" title="Code-overview" class="md-nav__link">
+      Code-overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Code-review-checklist/" title="Code-review-checklist" class="md-nav__link">
+      Code-review-checklist
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Contributing/" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Deps/" title="Deps" class="md-nav__link">
+      Deps
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Development-tips/" title="Development-tips" class="md-nav__link">
+      Development-tips
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="FAQ" class="md-nav__link md-nav__link--active">
+      FAQ
+    </a>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Following-HEAD/" title="Following-HEAD" class="md-nav__link">
+      Following-HEAD
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Generate-callgraphs-with-Doxygen/" title="Generate-callgraphs-with-Doxygen" class="md-nav__link">
+      Generate-callgraphs-with-Doxygen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../GSoC-2018-Ideas/" title="GSoC-2018-Ideas" class="md-nav__link">
+      GSoC-2018-Ideas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../GSoC-2019-Ideas/" title="GSoC-2019-Ideas" class="md-nav__link">
+      GSoC-2019-Ideas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../GSoC/" title="GSoC" class="md-nav__link">
+      GSoC
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Installing-Neovim/" title="Installing-Neovim" class="md-nav__link">
+      Installing-Neovim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Integer-types-refactoring-guidelines/" title="Integer-types-refactoring-guidelines" class="md-nav__link">
+      Integer-types-refactoring-guidelines
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../List-management-in-Neovim/" title="List-management-in-Neovim" class="md-nav__link">
+      List-management-in-Neovim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Merging-patches-from-upstream-Vim/" title="Merging-patches-from-upstream-Vim" class="md-nav__link">
+      Merging-patches-from-upstream-Vim
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Plugin-UI-architecture/" title="Plugin-UI-architecture" class="md-nav__link">
+      Plugin-UI-architecture
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Progress/" title="Progress" class="md-nav__link">
+      Progress
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Refactor-Vim-into-a-library/" title="Refactor-Vim-into-a-library" class="md-nav__link">
+      Refactor-Vim-into-a-library
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Refactoring/" title="Refactoring" class="md-nav__link">
+      Refactoring
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Related-projects/" title="Related-projects" class="md-nav__link">
+      Related-projects
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Troubleshooting/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../UI-architecture/" title="UI-architecture" class="md-nav__link">
+      UI-architecture
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Unit-tests/" title="Unit-tests" class="md-nav__link">
+      Unit-tests
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/zchee/neovim-wiki/edit/master/docs/FAQ.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <ul>
+<li>To start Neovim, run <code>nvim</code> (not <code>neovim</code>).</li>
+<li>If something broke after upgrading, check <a href="https://github.com/neovim/neovim/wiki/Following-HEAD">Following-HEAD</a>.</li>
+<li><code>:checkhealth</code> detects and resolves many of the problems in this FAQ. Try it!</li>
+</ul>
+<hr />
+<h3 id="where-should-i-put-my-config-vimrc">Where should I put my config (<code>vimrc</code>)?</h3>
+<p>See <a href="https://neovim.io/doc/user/starting.html#vimrc"><code>:help vimrc</code></a>.</p>
+<p>You can copy your existing vimrc, or symlink to it. <a href="https://neovim.io/doc/user/nvim.html#nvim-from-vim"><code>:help nvim-from-vim</code></a></p>
+<h3 id="how-stable-is-the-development-pre-release-version">How stable is the development (pre-release) version?</h3>
+<p>The <a href="https://github.com/neovim/neovim/releases/tag/nightly">unstable (pre-release)</a> version of Neovim ("HEAD", i.e. the <code>master</code> branch) is used to aggressively stage new features and changes. It's usually stable, but will occasionally break your workflow. We depend on HEAD users to report "blind spots" that were not caught by automated tests.</p>
+<p>Use the <a href="https://github.com/neovim/neovim/releases/latest">stable (release)</a> version for a more predictable experience.</p>
+<h3 id="can-i-use-ruby-based-vim-plugins-eg-lustyexplorer">Can I use Ruby-based Vim plugins (e.g. <a href="https://github.com/sjbach/lusty">LustyExplorer</a>)?</h3>
+<p>Yes, starting with Neovim 0.1.5 <a href="https://github.com/neovim/neovim/pull/4980">PR #4980</a> the legacy Vim <code>if_ruby</code> interface is supported.</p>
+<h3 id="can-i-use-lua-based-vim-plugins-eg-neocomplete">Can I use Lua-based Vim plugins (e.g. <a href="https://github.com/Shougo/neocomplete.vim">neocomplete</a>)?</h3>
+<p>No. Starting with Neovim 0.2 <a href="https://github.com/neovim/neovim/pull/4411">PR #4411</a> Lua is built-in, but the legacy Vim <code>if_lua</code> interface is not supported.</p>
+<h3 id="how-can-i-use-true-color-in-the-terminal">How can I use "true color" in the terminal?</h3>
+<p>Add this to your <code>init.vim</code>:</p>
+<div class="highlight"><pre><span></span><span class="k">set</span> termguicolors
+</pre></div>
+
+<ul>
+<li>See <a href="https://gist.github.com/XVilka/8346728">this gist</a> for more information.</li>
+<li>See <a href="https://www.reddit.com/r/neovim/comments/825dj7/the_endless_litany_of_tmux_and_nvim_color_problems/dvc2boh/">this thread</a> for guidance on how to check your system capabilities.</li>
+</ul>
+<h3 id="nvim-shows-weird-symbols-2-q-when-changing-modes">Nvim shows weird symbols (<code>�[2 q</code>) when changing modes</h3>
+<p>This is a bug in your terminal emulator.  It happens because Nvim sends cursor-shape termcodes by default, if the terminal appears to be xterm-compatible (<code>TERM=xterm-256color</code>).</p>
+<p>To workaround the issue, you can:</p>
+<ul>
+<li>Use a different terminal emulator</li>
+<li>Disable <code>guicursor</code> in your Nvim config:
+  <div class="highlight"><pre><span></span>:set guicursor=
+&quot; Workaround some broken plugins which set guicursor indiscriminately.
+:autocmd OptionSet guicursor noautocmd set guicursor=
+</pre></div></li>
+</ul>
+<p>See also <code>:help $TERM</code> for recommended values of <code>$TERM</code>.</p>
+<h3 id="how-to-change-cursor-shape-in-the-terminal">How to change cursor <em>shape</em> in the terminal?</h3>
+<ul>
+<li>For Nvim 0.1.7 or older: see the note about <code>NVIM_TUI_ENABLE_CURSOR_SHAPE</code> in <code>man nvim</code>.</li>
+<li>For Nvim 0.2 or newer: cursor styling is controlled by the <code>guicursor</code> option.</li>
+<li>To <em>disable</em> cursor-styling, set <code>guicursor</code> to empty:
+    <div class="highlight"><pre><span></span>:set guicursor=
+&quot; Workaround some broken plugins which set guicursor indiscriminately.
+:autocmd OptionSet guicursor noautocmd set guicursor=
+</pre></div></li>
+<li>If you want a non-blinking cursor, use <code>blinkon0</code>. See <code>:help 'guicursor'</code>.</li>
+<li><code>guicursor</code> is enabled by default, unless Nvim thinks your terminal doesn't support it. If you're sure that your terminal supports cursor-shaping, set <code>guicursor</code> in your init.vim, as described in <code>:help 'guicursor'</code>.</li>
+<li>The Vim terminal options <code>t_SI</code> and <code>t_EI</code> are ignored, like all other <code>t_XX</code> options. </li>
+<li>Old versions of libvte (gnome-terminal, roxterm, terminator, ...) do not support cursor style control codes. <a href="https://github.com/neovim/neovim/issues/2537">#2537</a></li>
+</ul>
+<h3 id="how-to-change-cursor-color-in-the-terminal">How to change cursor <em>color</em> in the terminal?</h3>
+<p>Cursor styling (shape, color, behavior) is controlled by <code>guicursor</code>, even in the terminal. 
+Cursor <em>color</em> (as opposed to shape) <strong><em>only</em></strong> works if <code>termguicolors</code> is set.</p>
+<p><code>:help 'guicursor'</code> gives an example, but here's a more complicated example which sets different colors in insert-mode and normal-mode:</p>
+<div class="highlight"><pre><span></span><span class="p">:</span><span class="k">set</span> termguicolors 
+<span class="p">:</span><span class="k">hi</span> Cursor guifg<span class="p">=</span>green guibg<span class="p">=</span>green
+<span class="p">:</span><span class="k">hi</span> Cursor2 guifg<span class="p">=</span><span class="k">red</span> guibg<span class="p">=</span><span class="k">red</span>
+<span class="p">:</span><span class="k">set</span> <span class="nb">guicursor</span><span class="p">=</span><span class="k">n</span><span class="p">-</span><span class="k">v</span><span class="p">-</span><span class="k">c</span>:block<span class="p">-</span>Cursor<span class="sr">/lCursor,i-ci-ve:ver25-Cursor2/</span>lCursor2<span class="p">,</span><span class="k">r</span><span class="p">-</span><span class="k">cr</span>:hor20<span class="p">,</span><span class="k">o</span>:hor50
+</pre></div>
+
+<h3 id="cursor-style-isnt-restored-after-exiting-nvim">Cursor style isn't restored after exiting Nvim</h3>
+<p>Terminals do not provide a way to query the cursor style. Use a <code>VimLeave</code> autocommand to set the cursor style when Nvim exits:</p>
+<pre><code>au VimLeave * set guicursor=a:block-blinkon0
+</code></pre>
+<h3 id="cursor-shape-doesnt-change-in-tmux">Cursor shape doesn't change in tmux</h3>
+<p>tmux decides that, not Nvim. See <a href="https://neovim.io/doc/user/term.html#tui-cursor-shape">:help tui-cursor-shape</a> for a fix.</p>
+<p>See <a href="https://github.com/neovim/neovim/pull/3165">#3165</a> for discussion.</p>
+<h3 id="is-windows-supported">Is Windows supported?</h3>
+<p>Yes, starting with the <a href="https://github.com/neovim/neovim/milestones/0.2"><code>0.2</code> release</a>.
+See the <a href="https://github.com/neovim/neovim/wiki/Installing-Neovim#windows">Install</a> page. </p>
+<h3 id="how-to-use-the-windows-clipboard-from-wsl">How to use the Windows clipboard from WSL?</h3>
+<p>To use the Windows clipboard from within WSL, Neovim has to be installed on both Windows and WSL.
+The <code>win32yank.exe</code> provided by the Neovim Windows installation has to be symlinked to a directory included in your <code>$PATH</code> so it can be found by Neovim on WSL. Replace <code>$NEOVIM_WIN_DIR</code> with the path to your Neovim Windows installation, e.g. <code>/mnt/c/Program Files/Neovim</code>. The command can then be symlinked using:</p>
+<pre><code>sudo ln -s "$NEOVIM_WIN_DIR/bin/win32yank.exe" "/usr/local/bin/win32yank.exe"
+</code></pre>
+<p>Also, don't forget to set your clipboard to <code>unnamedplus</code> using <code>set clipboard=unnamedplus</code> to make Neovim use the system's clipboard (now Windows' clipboard) by default.</p>
+<p>See <a href="https://github.com/neovim/neovim/issues/6227">#6227</a> for more information.</p>
+<h3 id="what-happened-to-remote-and-friends">What happened to --remote and friends?</h3>
+<p>The code for that family of command-line arguments was removed. It may eventually be reimplemented using the Neovim API, but until then <a href="https://github.com/mhinz/neovim-remote"><code>neovim-remote</code></a> can be used instead.</p>
+<p>See <a href="https://github.com/neovim/neovim/issues/1750">#1750</a> for more information.</p>
+<h1 id="runtime-issues">Runtime issues</h1>
+<h3 id="copying-to-x11-primary-selection-with-the-mouse-doesnt-work">Copying to X11 primary selection with the mouse doesn't work</h3>
+<p><code>clipboard=autoselect</code> is <a href="https://github.com/neovim/neovim/issues/2325">not implemented yet</a>. You may find this <em>partial</em> workaround to be useful:</p>
+<pre><code>vnoremap &lt;LeftRelease&gt; "*ygv
+</code></pre>
+<p>Note that this is only a partial workaround. It <a href="https://github.com/neovim/neovim/issues/7013">doesn't work</a> for double-click (word selection) nor triple-click (line selection). But it's better than nothing.</p>
+<h3 id="my-ctrl-h-mapping-doesnt-work">My CTRL-H mapping doesn't work</h3>
+<p>This was fixed in Neovim <strong>0.2</strong>.
+If you are running Neovim <strong>0.1.7 or older</strong>, adjust your terminal's "kbs" (key_backspace) terminfo entry:</p>
+<div class="highlight"><pre><span></span>infocmp $TERM | sed &#39;s/kbs=^[hH]/kbs=\\177/&#39; &gt; $TERM.ti
+tic $TERM.ti
+</pre></div>
+
+<p>(Feel free to delete the temporary <code>*.ti</code> file created after running the above commands).</p>
+<h3 id="home-or-some-other-special-key-doesnt-work"><code>&lt;Home&gt;</code> or some other "special" key doesn't work</h3>
+<p>Make sure <code>$TERM</code> is set correctly.</p>
+<ul>
+<li>For screen or tmux, <code>TERM</code> should be <code>screen-256color</code>  (<em>Not</em> <code>xterm-256color</code>)</li>
+<li>In other cases if "256" does not appear in the string it's probably wrong. Try <code>TERM=xterm-256color</code>.</li>
+</ul>
+<h3 id="and-system-do-weird-things-with-interactive-processes"><code>:!</code> and <code>system()</code> do weird things with interactive processes</h3>
+<p>Interactive commands are supported by <code>:terminal</code> in Neovim. But <code>:!</code> and <code>system()</code> do not support interactive commands, primarily because Neovim UIs use stdio for msgpack communication, but also for performance, reliability, and consistency across platforms (see <a href="http://vimhelp.appspot.com/gui_x11.txt.html#gui-pty"><code>:help gui-pty</code></a>). </p>
+<p>See also <a href="https://github.com/neovim/neovim/issues/1496">#1496</a> and <a href="https://github.com/neovim/neovim/issues/8217#issuecomment-402152307">#8217</a>.</p>
+<h3 id="python-support-isnt-working">Python support isn't working</h3>
+<p>Run <code>:checkhealth</code> in Nvim for automatic diagnosis.</p>
+<p>Other hints:</p>
+<ul>
+<li>The python <code>neovim</code> module was renamed to <code>pynvim</code>. See <a href="https://github.com/neovim/neovim/wiki/Following-HEAD#20181118">Following-HEAD</a>.</li>
+<li>If you're using pyenv or virtualenv for the <a href="https://pypi.python.org/pypi/pynvim/"><code>pynvim</code> module</a>, you must set <code>g:python_host_prog</code> and/or <code>g:python3_host_prog</code> to the virtualenv's interpreter path.</li>
+<li>Read <a href="https://neovim.io/doc/user/provider.html#provider-python"><code>:help provider-python</code></a>. </li>
+<li>Be sure you have the <strong>latest version</strong> of the <code>pynvim</code> Python module:
+  <div class="highlight"><pre><span></span>python -m pip install setuptools
+python -m pip install --upgrade pynvim
+python2 -m pip install --upgrade pynvim
+python3 -m pip install --upgrade pynvim
+</pre></div></li>
+<li>Try with <code>nvim -u NORC</code> to make sure your config (<code>init.vim</code>) isn't causing a problem. If you get <code>E117: Unknown function</code>, that means <a href="#neovim-cant-find-its-runtime">Neovim can't find its runtime</a>.</li>
+</ul>
+<h3 id="checkhealth-reports-e5009-invalid-vimruntime"><code>:checkhealth</code> reports <code>E5009: Invalid $VIMRUNTIME</code></h3>
+<p>This means <code>health#check()</code> couldn't load, which suggests that <code>$VIMRUNTIME</code> or <code>&amp;runtimepath</code> is broken.</p>
+<ul>
+<li><code>$VIMRUNTIME</code> must point to Neovim's runtime files, not Vim's.</li>
+<li>The <code>$VIMRUNTIME</code> directory contents should be readable by the current user.</li>
+<li>Verify that <code>:echo &amp;runtimepath</code> contains the $VIMRUNTIME path.</li>
+<li>Check the output of:
+  <div class="highlight"><pre><span></span>:call health#check()
+:verbose func health#check
+</pre></div></li>
+</ul>
+<h3 id="neovim-cant-find-its-runtime">Neovim can't find its runtime</h3>
+<p>This is the case if <code>:help nvim</code> shows <code>E149: Sorry, no help for nvim</code>.</p>
+<p>Make sure that <code>$VIM</code> and <code>$VIMRUNTIME</code> point to Neovim's (as opposed to Vim's) runtime by checking <code>:echo $VIM</code> and <code>:echo $VIMRUNTIME</code>. This should give something like <code>/usr/share/nvim</code> resp. <code>/usr/share/nvim/runtime</code>.</p>
+<p>Also make sure that you don't accidentally overwrite your runtimepath (<code>:set runtimepath?</code>), which includes the above <code>$VIMRUNTIME</code> by default (see <code>:help 'runtimepath'</code>).</p>
+<h3 id="e518-unknown-option-option"><code>E518: Unknown option: [option]</code></h3>
+<p>Some very old/unnecessary options have been removed from Neovim. See <a href="http://neovim.io/doc/user/vim_diff.html#nvim-features-removed"><code>:help nvim-features-removed</code></a> for the complete list.</p>
+<h3 id="neovim-is-slow">Neovim is slow</h3>
+<h4 id="use-a-fast-terminal-emulator">Use a fast terminal emulator</h4>
+<ul>
+<li><a href="https://github.com/kovidgoyal/kitty">kitty</a></li>
+<li><a href="https://github.com/jwilm/alacritty">alacritty</a></li>
+</ul>
+<h4 id="use-an-optimized-build">Use an optimized build</h4>
+<p><code>:checkhealth nvim</code> should report one of these "build types":</p>
+<div class="highlight"><pre><span></span>Build type: RelWithDebInfo
+Build type: MinSizeRel
+Build type: Release
+</pre></div>
+
+<p>If it reports <code>Build type: Debug</code> and you're building Neovim from source, see <a href="Building-Neovim#optimized-builds">Building Neovim#optimized-builds</a>.</p>
+<h3 id="colors-arent-displayed-correctly">Colors aren't displayed correctly</h3>
+<p>Ensure that <code>$TERM</code> is set correctly. See [:help <span><span class="MathJax_Preview">TERM](https://neovim.io/doc/user/term.html#</span><script type="math/tex">TERM](https://neovim.io/doc/user/term.html#</script></span>TERM) for recommended values.</p>
+<p>From a shell, run <code>TERM=xterm-256color nvim</code>. If colors are displayed correctly, then export that value of <code>TERM</code> in your user profile (usually <code>~/.profile</code>):</p>
+<div class="highlight"><pre><span></span>export TERM=xterm-256color
+</pre></div>
+
+<p>If you're using <code>tmux</code>, instead add this to your <code>tmux.conf</code>:</p>
+<pre><code>set -g default-terminal "tmux-256color"
+</code></pre>
+<p>For GNU <code>screen</code>, <a href="https://wiki.archlinux.org/index.php/GNU_Screen#Use_256_colors">configure your <code>.screenrc</code></a>:</p>
+<pre><code>term screen-256color
+</code></pre>
+<p><strong>Note:</strong> Neovim ignores <code>t_Co</code> and other terminal codes.</p>
+<h3 id="neovim-cant-read-utf-8-characters">Neovim can't read UTF-8 characters</h3>
+<p>Run the following from the command line:
+<div class="highlight"><pre><span></span>locale | grep -E &#39;(LANG|LC_CTYPE|LC_ALL)=(.*\.)?(UTF|utf)-?8&#39;
+</pre></div>
+If there's no results, then you might not be using a UTF-8 locale. See the following issues: <a href="https://github.com/neovim/neovim/issues/1601">#1601</a> <a href="https://github.com/neovim/neovim/issues/1858">#1858</a> <a href="https://github.com/neovim/neovim/issues/2386">#2386</a></p>
+<h3 id="esc-in-tmux-or-gnu-screen-is-delayed"><code>ESC</code> in tmux or GNU Screen is delayed</h3>
+<p>This is a <a href="https://www.google.com/?q=tmux%20vim%20escape%20delay">common problem</a> 
+in <code>tmux</code> / <code>screen</code> (see also <a href="https://github.com/tmux/tmux/issues/131#issuecomment-145853211">tmux/#131</a>). The corresponding timeout needs to be tweaked to a low value (10-20ms).</p>
+<p><code>.tmux.conf</code>:</p>
+<pre><code>set -g escape-time 10
+# Or for tmux &gt;= 2.6
+set -sg escape-time 10
+</code></pre>
+<p><code>.screenrc</code>:</p>
+<pre><code>maptimeout 10
+</code></pre>
+<h4 id="why-doesnt-this-happen-in-vim">"Why doesn't this happen in Vim?"</h4>
+<p>It <em>does</em> happen (try <code>vim -N -u NONE</code>), but <em>if you hit a key quickly after ESC</em> then Vim interprets the ESC as ESC instead of ALT (META). You won't notice the delay unless you closely observe the cursor. The tradeoff is that Vim won't understand ALT (META) key-chords, so for example <code>nnoremap &lt;M-a&gt;</code> won't work. ALT (META) key-chords always work in Nvim. See also <code>:help xterm-cursor-keys</code> in Vim.</p>
+<p>Nvim 0.3 mimics the Vim behavior while still fully supporting ALT mappings. See <code>:help i_ALT</code>.</p>
+<h1 id="installation-issues">Installation issues</h1>
+<h3 id="generating-helptags-failed">Generating helptags failed</h3>
+<p>If re-installation fails with <code>Generating helptags failed</code>, try removing the previously installed runtime directory (if <code>CMAKE_INSTALL_PREFIX</code> is not set during building, the default is <code>/usr/local/share/nvim</code>):</p>
+<div class="highlight"><pre><span></span># rm -r /usr/local/share/nvim
+</pre></div>
+
+<h1 id="build-issues">Build issues</h1>
+<h3 id="general-build-issues">General build issues</h3>
+<p>Run <code>make distclean &amp;&amp; make</code> to rule out a stale build environment causing the failure.</p>
+<h3 id="proxy-issues-2482">Proxy issues <a href="https://github.com/neovim/neovim/issues/2482">#2482</a></h3>
+<p>If your machine is behind a network proxy and you see this error:</p>
+<pre><code>Error: Failed installing dependency: https://rocks.moonscript.org/penlight-1.3.2-2.rockspec 
+Error fetching file: Failed downloading http://stevedonovan.github.io/files/penlight-1.3.2-core.zip
+</code></pre>
+<p>this can be fixed by setting the <a href="http://curl.haxx.se/docs/manpage.html"><code>https_proxy</code> environment variable (for cURL)</a>.</p>
+<h3 id="settings-in-localmk-dont-take-effect">Settings in <code>local.mk</code> don't take effect</h3>
+<p>CMake caches build settings, so you might need to run <code>rm -r build &amp;&amp; make</code> after modifying <code>local.mk</code>.</p>
+<h3 id="cmake-errors">CMake errors</h3>
+<p><code>configure_file Problem configuring file</code></p>
+<p>This is probably a permissions issue, which can happen if you run <code>make</code> as the root user, then later run an unprivileged <code>make</code>. To fix this, run <code>rm -rf build</code> and try again.</p>
+<p><code>A suitable Lua interpreter was not found.</code></p>
+<p>This can be caused by a local LuaRocks installation. Try unsetting the <code>LUA_PATH</code> and <code>LUA_CPATH</code> environment variables (via <code>unset</code>) before building.</p>
+<h3 id="lua-packages">Lua packages</h3>
+<p>The Lua packages required by the build process should be automatically installed by <a href="http://luarocks.org/">LuaRocks</a> (invoked by CMake automatically). If that fails, it could mean:</p>
+<ul>
+<li>The LuaRocks servers are down.</li>
+<li>Your network is down.</li>
+<li><code>unzip</code> isn't found. In that case LuaRocks will report something like this: <code>Warning: Failed searching manifest: Failed loading manifest: Failed extracting manifest file</code>.</li>
+<li>The <code>$CDPATH</code> environment variable is interfering with the build, so it should be unset prior to running <code>make</code>.</li>
+</ul>
+<p>To try a different LuaRocks mirror, create the file <code>.deps/usr/etc/luarocks/config-5.1.lua</code> with these contents:</p>
+<div class="highlight"><pre><span></span>rocks_servers={ 
+ &quot;http://luarocks.giga.puc-rio.br/&quot; 
+}
+</pre></div>
+
+<p>Then run <code>make cmake</code>.</p>
+<h3 id="anaconda-error">Anaconda error</h3>
+<p>Error message:
+<code>anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc: not found</code></p>
+<p>Solution:
+<code>conda install gxx_linux-64</code></p>
+<h1 id="develop">Develop</h1>
+<h3 id="plugins">Plugins</h3>
+<ul>
+<li><a href="https://github.com/neovim/nvimdev.nvim">nvimdev.nvim</a>: Neomake integration with Lua/C + Neovim codebase</li>
+<li><a href="https://github.com/tweekmonster/helpful.vim">helpful.vim</a>: get the version of Vim/Neovim where a feature was introduced.</li>
+<li><a href="https://github.com/neomake/neomake">Neomake</a>: Async linting</li>
+<li><a href="https://github.com/Shougo/deoplete.nvim">deoplete.nvim</a>: auto-completion<ul>
+<li><a href="https://github.com/tweekmonster/deoplete-clang2">deoplete-clang2</a>: clang2 completion support for deoplete.nvim</li>
+</ul>
+</li>
+<li><a href="https://github.com/neoclide/coc.nvim/">coc.nvim</a>: auto-completion, code navigation</li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li><a href="https://github.com/mpeterv/hererocks">hererocks</a> (very similar to Python's <code>virtualenv</code>) is useful for installing Luarocks, LuaJIT, and Lua:
+  <div class="highlight"><pre><span></span>curl -LO https://raw.githubusercontent.com/mpeterv/hererocks/latest/hererocks.py
+chmod u+x hererocks.py
+# Install LuaJit and LuaRocks 3.0 to the &quot;myenv&quot; directory.
+./hererocks.py myenv --luajit latest -r3.0
+</pre></div></li>
+<li><a href="https://github.com/giann/croissant">croissant</a> is a Lua REPL</li>
+</ul>
+<h1 id="debug">Debug</h1>
+<h3 id="backtrace-linux">Backtrace (Linux)</h3>
+<p>Core dumps are <a href="http://stackoverflow.com/a/18368068/152142">disabled  by default on Ubuntu</a>, CentOS and others. To enable core dumps:</p>
+<pre><code>ulimit -c unlimited
+</code></pre>
+<p>On systemd-based systems getting a backtrace is as easy as:</p>
+<pre><code>coredumpctl -1 gdb
+</code></pre>
+<p>It's an optional tool, so you may need to install it:</p>
+<pre><code>sudo apt install systemd-coredump
+</code></pre>
+<p>The <strong>full backtrace</strong> is most useful, send us the <code>bt.txt</code> file:</p>
+<pre><code>2&gt;&amp;1 coredumpctl -1 gdb | tee -a bt.txt
+thread apply all bt full
+</code></pre>
+<p><strong>On older systems</strong> a <code>core</code> file will appear in the current directory. To get a backtrace from the <code>core</code> file:</p>
+<pre><code>gdb build/bin/nvim core 2&gt;&amp;1 | tee backtrace.txt
+thread apply all bt full
+</code></pre>
+<h3 id="backtrace-macos-osx">Backtrace (macOS / OSX)</h3>
+<p>If <code>nvim</code> crashes, you can see the backtrace in Console.app (under "Crash Reports" or "User Diagnostic Reports" for older macOS versions).</p>
+<pre><code>open -a Console
+</code></pre>
+<p>You may also want to <a href="https://developer.apple.com/library/mac/technotes/tn2124/_index.html#//apple_ref/doc/uid/DTS10003391-CH1-SECCOREDUMPS">enable core dumps on macOS</a>. The <code>/cores/</code> directory must exist and be writable.</p>
+<h3 id="using-gdb-to-step-through-functional-tests">Using <code>gdb</code> to step through functional tests</h3>
+<p>Use <code>TEST_TAG</code> to run tests matching busted tags (of the form <code>#foo</code> e.g. <code>it("test #foo ...", ...)</code>):</p>
+<div class="highlight"><pre><span></span>GDB=1 TEST_TAG=foo make functionaltest
+</pre></div>
+
+<p>Then, in another terminal:</p>
+<div class="highlight"><pre><span></span>gdb build/bin/nvim
+target remote localhost:7777
+</pre></div>
+
+<ul>
+<li>See also <a href="https://github.com/neovim/neovim/blob/3098b18a2b63a841351f6d5e3697cb69db3035ef/test/functional/helpers.lua#L38-L44">test/functional/helpers.lua</a>.</li>
+</ul>
+<h3 id="using-lldb-to-step-through-unit-tests">Using <code>lldb</code> to step through unit tests</h3>
+<div class="highlight"><pre><span></span>lldb .deps/usr/bin/luajit -- .deps/usr/bin/busted --lpath=&quot;./build/?.lua&quot; test/unit/
+</pre></div>
+
+<h3 id="using-gdb">Using <code>gdb</code></h3>
+<p>To attach to a running <code>nvim</code> process with a pid of 1234:</p>
+<pre><code>gdb -tui -p 1234 build/bin/nvim
+</code></pre>
+<p>The <code>gdb</code> interactive prompt will appear. At any time you can:</p>
+<ul>
+<li><code>break foo</code> to set a breakpoint on the <code>foo()</code> function</li>
+<li><code>n</code> to <strong>step over</strong> the next statement<ul>
+<li><code>&lt;Enter&gt;</code> to repeat the last command</li>
+</ul>
+</li>
+<li><code>s</code> to <strong>step into</strong> the next statement</li>
+<li><code>c</code> to <strong>continue</strong></li>
+<li><code>finish</code> to <strong>step out</strong> of the current function</li>
+<li><code>p zub</code> to print the value of <code>zub</code> </li>
+<li><code>bt</code> to see a <strong>backtrace</strong> (callstack) from the current location</li>
+<li><code>CTRL-x CTRL-a</code> or <code>tui enable</code> to <strong>show a TUI view of the source file</strong> in the current debugging context. This can be extremely useful as it avoids the need for a gdb "frontend".<ul>
+<li><code>&lt;up&gt;</code> and <code>&lt;down&gt;</code> to scroll the source file view</li>
+</ul>
+</li>
+</ul>
+<h4 id="gdb-reverse-debugging">gdb "reverse debugging"</h4>
+<ul>
+<li><code>set record full insn-number-max unlimited</code></li>
+<li><code>continue</code> for a bit (at least until <code>main()</code> is executed</li>
+<li><code>record</code></li>
+<li>provoke the bug, then use <code>revert-next</code>, <code>reverse-step</code>, etc. to rewind the debugger</li>
+</ul>
+<h3 id="using-gdbserver">Using <code>gdbserver</code></h3>
+<p>You may want to connect multiple <code>gdb</code> clients to the same running <code>nvim</code> process, or you may want to connect to a remote <code>nvim</code> process with a local <code>gdb</code>. Using <code>gdbserver</code>, you can attach to a single process and control it from multiple <code>gdb</code> clients. </p>
+<p>Open a terminal and start <code>gdbserver</code> attached to <code>nvim</code> like this:</p>
+<pre><code>gdbserver :6666 build/bin/nvim 2&gt; gdbserver.log
+</code></pre>
+<p><code>gdbserver</code> is now listening on port 6666. You then need to attach to this debugging session in another terminal:</p>
+<pre><code>gdb build/bin/nvim
+</code></pre>
+<p>Once you've entered <code>gdb</code>, you need to attach to the remote session:</p>
+<pre><code>target remote localhost:6666
+</code></pre>
+<p>In case gdbserver puts the TUI as a background process, the TUI can become unable to read input from pty (and receives SIGTTIN signal) and/or output data (SIGTTOU signal). To force the TUI as the foreground process, you can add</p>
+<pre><code>signal (SIGTTOU, SIG_IGN);
+if (!tcsetpgrp(data-&gt;input.in_fd, getpid())) {
+    perror("tcsetpgrp failed");
+}
+</code></pre>
+<p>to tui.c:terminfo_start.</p>
+<h3 id="using-gdbserver-in-tmux">Using <code>gdbserver</code> in <code>tmux</code></h3>
+<p>Consider using a <a href="Building-Neovim#custom-makefile">custom makefile</a> to quickly start debugging sessions using the <code>gdbserver</code> method mentioned above. This example <code>local.mk</code> will create the debugging session when you type <code>make debug</code>.</p>
+<div class="highlight"><pre><span></span><span class="nf">.PHONY</span><span class="o">:</span> <span class="n">dbg</span>-<span class="n">start</span> <span class="n">dbg</span>-<span class="n">attach</span> <span class="n">debug</span> <span class="n">build</span>
+
+<span class="nf">build</span><span class="o">:</span>
+    @<span class="k">$(</span>MAKE<span class="k">)</span> nvim
+
+<span class="nf">dbg-start</span><span class="o">:</span> <span class="n">build</span>
+    @tmux new-window -n <span class="s1">&#39;dbg-neovim&#39;</span> <span class="s1">&#39;gdbserver :6666 ./build/bin/nvim -D&#39;</span>
+
+<span class="nf">dbg-attach</span><span class="o">:</span>
+    @tmux new-window -n <span class="s1">&#39;dbg-cgdb&#39;</span> <span class="s1">&#39;cgdb -x gdb_start.sh ./build/bin/nvim&#39;</span>
+
+<span class="nf">debug</span><span class="o">:</span> <span class="n">dbg</span>-<span class="n">start</span> <span class="n">dbg</span>-<span class="n">attach</span>
+</pre></div>
+
+<p>Here <code>gdb_start.sh</code> includes <code>gdb</code> commands to be called when the debugger starts. It needs to attach to the server started by the <code>dbg-start</code> rule. For example:</p>
+<div class="highlight"><pre><span></span>target remote localhost:6666
+br main
+</pre></div>
+
+<h3 id="log-file-location">Log file location</h3>
+<p>Nvim's low-level logs are written to <code>~/.local/share/nvim/log</code> (usually; see <code>:help $NVIM_LOG_FILE</code>).
+Debug builds write INFO-level messages to this log file. You can specify the location with the <code>$NVIM_LOG_FILE</code> environment variable. Non-debug builds only log ERROR-level messages.</p>
+<h1 id="design">Design</h1>
+<h3 id="why-not-use-json-for-rpc">Why not use JSON for RPC?</h3>
+<ul>
+<li>JSON cannot easily/efficiently handle binary data</li>
+<li>JSON specification is ambiguous: <a href="http://seriot.ch/parsing_json.php">http://seriot.ch/parsing_json.php</a></li>
+</ul>
+<h3 id="why-embed-lua-instead-of-x">Why embed Lua instead of X?</h3>
+<ul>
+<li>Lua is a very small language, ideal for embedding. The biggest advantage of Python/Ruby/etc is their huge collection of libraries, but that isn't relevant for Nvim, where Nvim <em>is</em> the "batteries included" library: introducing another stdlib would be redundant.</li>
+<li>Lua 5.1 is a <em>complete</em> language: the syntax is frozen. This is great for backwards compatibility.</li>
+<li><strong>Nvim also uses Lua <em>internally</em> as an alternative to C.</strong>  Extra performance is useful there, as opposed to a slow language like Python.</li>
+<li>LuaJIT is one of the fastest runtimes on the planet. It is at least 10x faster than Python.</li>
+<li>Python/JS cost more than Lua in terms of size and portability, and there are already numerous Python/JS-based editors.  So Python/JS would make Nvim bigger and less portable, in exchange for a non-differentiating feature.</li>
+</ul>
+<p>See also:</p>
+<ul>
+<li><a href="https://web.archive.org/web/20150219224654/http://blog.datamules.com/blog/2012/01/30/why-lua/">Why Lua</a></li>
+<li><a href="http://oldblog.antirez.com/post/redis-and-scripting.html">Redis and scripting</a></li>
+<li><a href="https://cacm.acm.org/magazines/2018/11/232214-a-look-at-the-design-of-lua/fulltext">The Design of Lua</a></li>
+<li><a href="https://github.com/vim/vim/pull/5198#issuecomment-554693754">Discussion of JavaScript vs Lua</a></li>
+</ul>
+<h3 id="why-lua-51-instead-of-lua-53">Why Lua 5.1 instead of Lua 5.3+?</h3>
+<p>Lua 5.1 is a different language than 5.3.  The Lua org makes breaking changes with every new version, so even if we switched (not upgraded, but <em>switched</em>) to 5.3 we gain nothing when they create the next new language in 5.4, 5.5, etc. And we would lose LuaJit, which is far more valuable than Lua 5.3+.</p>
+<p>Lua 5.1 is a complete language. To "upgrade" it, add libraries, not syntax. Nvim itself already is a pretty good "stdlib" for Lua, and we will continue to grow and enhance it. Changing the rules of Lua gains nothing in this context.</p>
+<h3 id="will-neovim-translate-viml-to-lua-instead-of-executing-viml-directly">Will Neovim translate VimL to Lua, instead of executing VimL directly?</h3>
+<p><strong>Update (2016):</strong> <a href="https://github.com/neovim/neovim/pull/243">PR #243</a> implements the VimL-to-Lua translator. But it is blocked by <a href="https://github.com/neovim/neovim/pull/243#issuecomment-153318119">technical concerns</a>. Much of the work in that PR was re-used/re-purposed (viz. <a href="https://github.com/neovim/neovim/pull/4607"><code>typval_T</code>/<code>vim_to_object</code> refactor</a>, <a href="https://github.com/neovim/neovim/pull/5119"><code>eval.c</code> refactor</a>).</p>
+<h3 id="are-plugin-authors-encouraged-to-port-their-plugins-from-vimscript-to-lua-do-you-plan-on-supporting-vimscript-indefinitely-1152">Are plugin authors encouraged to port their plugins from Vimscript to Lua? Do you plan on supporting Vimscript indefinitely? (<a href="https://github.com/neovim/neovim/issues/1152">#1152</a>)</h3>
+<p>We don't anticipate any reason to deprecate Vimscript, which is a valuable <a href="https://en.wikipedia.org/wiki/Domain-specific_language">DSL</a> for text-editing tasks. Maintaining Vimscript compatibility is less costly than a mass migration of existing Vim plugins.</p>
+<p>Porting from Vimscript to Lua just for the heck of it gains nothing. Neovim is emphatically a <em>fork of Vim</em> in order to leverage the work already spent on thousands of Vim plugins, while enabling <em>new</em> types of plugins and integrations.</p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Development-tips/" title="Development-tips" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Development-tips
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Following-HEAD/" title="Following-HEAD" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Following-HEAD
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>
